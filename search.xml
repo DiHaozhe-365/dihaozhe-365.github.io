@@ -19,12 +19,17 @@
 <p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
 <p>Java分为三个体系：</p>
 <ul>
-<li>Java SE（J2SE）（Java2 Platform Standard Edition，java 平台标准版）</li>
-<li>Java EE（J2EE）（Java 2 Platform，Enterprise Edition，java 平台企业版）</li>
-<li>Java ME（J2ME）（Java 2 Platform Micro Edition，java 平台微型版）</li>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
 </ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 Java SE 6。</p>
-<p>此时，Java 的各种版本已经更名，以取消其中的数字 “2”：J2EE 更名为 Java EE，J2SE 更名为Java SE，J2ME 更名为 Java ME。</p>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
 <h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
 <li><p>Java 语言是<strong>简单的</strong>：</p>
 <p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
@@ -76,23 +81,23 @@
 <li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
 <li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
 <li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
-<li>1999 年 6月，SUN 公司发布 Java 的三个版本：标准版（JavaSE, 以前是 J2SE）、企业版（JavaEE 以前是 J2EE）和微型版（JavaME，以前是 J2ME）</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
 <li>2000 年 5 月 8 日，JDK1.3 发布</li>
 <li>2000 年 5 月 29 日，JDK1.4 发布</li>
 <li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
 <li>2001 年 9 月 24 日，J2EE1.3 发布</li>
 <li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日 18:00PM，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 Java SE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 Java SE 6。此时，Java 的各种版本已经更名，以取消其中的数字 “2”：J2EE 更名为 Java EE，J2SE 更名为 Java SE，J2ME 更名为 Java ME</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
 <li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 04 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
 <li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
 <li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 Java SE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 Java SE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 Java SE 10</li>
-<li>2018 年 9 月 25 日，Java SE 11 发布</li>
-<li>2019 年 3 月 20 日，Java SE 12 发布</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
 </ul>
 <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
