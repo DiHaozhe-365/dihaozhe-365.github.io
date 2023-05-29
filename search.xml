@@ -102,112 +102,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第3章 理解云计算</title>
-    <url>/posts/cloud003.html</url>
-    <content><![CDATA[<h1 id="第3章-理解云计算"><a href="#第3章-理解云计算" class="headerlink" title="第3章 理解云计算"></a>第3章 理解云计算</h1><h2 id="起源与影响"><a href="#起源与影响" class="headerlink" title="起源与影响"></a>起源与影响</h2><h3 id="简要历史"><a href="#简要历史" class="headerlink" title="简要历史"></a>简要历史</h3><ul>
-<li>1961年，John McCarthy 公开提出“效用计算”（utility computing）。</li>
-<li>1969年， Leonard Kleinrock 在 ARPANET 项目中表示“计算机应用的扩展”（spread of computer utilities）。</li>
-<li>20世纪90年代中期，普通大众开始以各种形式使用基于 Internet 的计算机应用（internet-based computer utilities）。</li>
-<li>20世纪90年代后期，Salesforce.com 率先在企业中引入“远程提供服务”的概念（remotely provisioned services）。</li>
-<li>2002年，Amazon.com 启用 Amazon Web 服务（Amazon Web Service，AWS）平台。</li>
-<li>2006年，“云计算”（cloud computing）这一术语出现在商业领域。</li>
-<li>2009年，Google 应用引擎（Google App Engine）成为了另一个里程碑。</li>
-</ul>
-<p>  <img src="https://img01.anzhiy.cn/useruploads/158/2023/05/06/64562de594952.png" alt="云计算历史"></p>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
-<li><p><strong>Gartner （高德纳咨询公司）定义（了解）：</strong></p>
-<p>a style of computing in which scalable and elastic IT-enabled capabilities are delivered as a service to external customers using Internet technologies.</p>
-<p>一种能通过Internet技术将可扩展性和弹性的IT能力作为服务交付给外部用户的计算方式。</p>
-</li>
-<li><p><strong>Forrester Research （弗雷斯特研究公司）定义（了解）：</strong></p>
-<p>a standardized IT capability (services, software, or infrastructure) delivered via Internet technologies in a pay-per-use, self-service way.</p>
-<p>一种标准化的IT性能（服务、软件或者基础设施），按使用付费和自助服务方式，通过Internet技术进行交付。</p>
-</li>
-<li><p><strong>美国国家标准与技术研究院（NIST）制定（2011年9月 修订版）：</strong></p>
-<p>Cloud computing is a model for enabling <strong>ubiquitous</strong>, <strong>convenient</strong>, <strong>on-demand</strong> network access to a shared <strong>pool</strong> of configurable computing resources (e.g. networks, servers, storage, applications, and services) that can be <strong>rapidly provisioned and released</strong> with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.</p>
-<p>云计算是一种模型，可以实现随时随地、便携地、按需地从可配置计算资源共享池中获取所需的资源（例如，网络、服务器、存储、应用程序及服务），资源可以快速供给和释放，只需提供很少的管理工作，或与服务提供者进行很少的交互。这种云模型由五个基本特征、三种服务模型和四种部署模型构成。</p>
-</li>
-<li><p><strong>云计算的基本特征：</strong></p>
-<ol>
-<li>ubiquitous access 随处访问</li>
-<li>on-demand usage 按需使用</li>
-<li>measured usage 可测量的使用</li>
-<li>resource pool 资源池</li>
-<li>elasticity 弹性</li>
-</ol>
-</li>
-<li><p><strong>本书给出了云计算更为简洁的定义：</strong></p>
-<p>Cloud computing is a specialized form of <strong>distributed computing</strong> that introduces <strong>utilization models</strong> for <strong>remotely</strong> provisioning <strong>scalable</strong> and <strong>measured</strong> resources.</p>
-<p>云计算是分布式计算的一种特殊形式，它引入效用模型来远程供给可扩展和可测量的资源。</p>
-</li>
-</ul>
-<h2 id="基本概念与术语"><a href="#基本概念与术语" class="headerlink" title="基本概念与术语"></a>基本概念与术语</h2><h3 id="云"><a href="#云" class="headerlink" title="云"></a>云</h3><ul>
-<li><p>A cloud refers to <strong>a distinct IT environment</strong> that is designed for the purpose of <strong>remotely provisioning scalable and measured IT resources</strong>.</p>
-<p>云是指一个独特的IT环境，设计目的是为了远程供给可扩展和可测量的IT资源。</p>
-</li>
-</ul>
-<h3 id="IT-资源"><a href="#IT-资源" class="headerlink" title="IT 资源"></a>IT 资源</h3><ul>
-<li><p>An IT resource is a <strong>physical or virtual</strong> IT-related artifact that can be either <strong>software-based</strong>, such as a virtual server or a custom software program, or <strong>hardware-based</strong>, such as a physical server or a network device.</p>
-<p>IT 资源是指一个与 IT 相关的物理的或虚拟的事物，它既可以是基于软件的（虚拟服务器或定制软件程序），也可以是基于硬件的（物理服务器或网络设备）。</p>
-<p><img src="https://img01.anzhiy.cn/useruploads/158/2023/05/06/64562e13ac827.png" alt="IT资源"></p>
-</li>
-</ul>
-<h3 id="企业内部的"><a href="#企业内部的" class="headerlink" title="企业内部的"></a>企业内部的</h3><ul>
-<li><p>An IT resource that is hosted in a conventional IT enterprise within an organizational boundary that does not specifically represent a cloud is considered to be located on the premises of the IT enterprise, or <strong>on-premise</strong> for short.</p>
-<p>处于一个组织边界中的传统 IT 企业内部承载的IT资源被认为是位于 IT 企业内部的</p>
-</li>
-<li><p>An IT resource that is on-premise cannot be cloud-based, and vice-versa.</p>
-<p>一个内部的 IT 资源不可能是基于云的，反之亦然。</p>
-</li>
-<li><p>有三点需要注意：</p>
-<ol>
-<li><p>An on-premise IT resource can access and interact with a cloud-based IT resource.</p>
-<p>一个内部的 IT 资源可以访问一个基于云的 IT 资源，并与之交互。</p>
-</li>
-<li><p>An on-premise IT resource can be moved to a cloud, thereby changing it to a cloud-based IT resource.</p>
-<p>一个内部的 IT 资源可以迁移到云中，从而成为一个基于云的 IT 资源。</p>
-</li>
-<li><p>Redundant deployments of an IT resource can exist in both on-premise and cloud-based environments.</p>
-<p>IT 资源既可以冗余部署在企业内部，也可以在云环境中。</p>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="云用户与云提供者"><a href="#云用户与云提供者" class="headerlink" title="云用户与云提供者"></a>云用户与云提供者</h3><ul>
-<li><p>The party that provides cloud-based IT resources is the <strong>cloud provider</strong>.</p>
-<p>提供基于云的 IT 资源的一方称为云提供者。</p>
-</li>
-<li><p>The party that uses cloud-based IT resources is the <strong>cloud consumer</strong>.</p>
-<p>使用基于云的 IT 资源的一方称为云用户。</p>
-</li>
-</ul>
-<h3 id="可扩展性"><a href="#可扩展性" class="headerlink" title="可扩展性"></a>可扩展性</h3><ul>
-<li><p>From an IT resource perspective, <strong>scaling</strong> represents the ability of the IT resource to handle increased or decreased usage demands.</p>
-<p>可扩展性是指 IT 资源可以处理增加或减少的使用需求的能力。</p>
-</li>
-<li><p>可扩展性有两种类型：</p>
-<ol>
-<li><strong>Horizontal Scaling</strong> – scaling out and scaling in 水平扩展</li>
-<li><strong>Vertical Scaling</strong> – scaling up and scaling down 垂直扩展</li>
-</ol>
-</li>
-</ul>
-<h3 id="云服务"><a href="#云服务" class="headerlink" title="云服务"></a>云服务</h3><ul>
-<li><p>A <strong>cloud service</strong> is any IT resource that is made remotely accessible via a cloud.</p>
-<p>云服务是指任何可以通过云远程访问的 IT 资源。</p>
-</li>
-</ul>
-<h3 id="云服务用户"><a href="#云服务用户" class="headerlink" title="云服务用户"></a>云服务用户</h3><ul>
-<li><p>The <strong>cloud service consumer</strong> is a temporary runtime role assumed by a software program when it accesses a cloud service.</p>
-<p>云服务用户是一个临时的运行时角色，由访问云服务的软件程序担任。</p>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第11章 基本云架构</title>
     <url>/posts/cloud011.html</url>
     <content><![CDATA[<h1 id="第11章-基本云架构"><a href="#第11章-基本云架构" class="headerlink" title="第11章 基本云架构"></a>第11章 基本云架构</h1><h2 id="负载分布架构"><a href="#负载分布架构" class="headerlink" title="负载分布架构"></a>负载分布架构</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
@@ -519,6 +413,112 @@
 </ul>
 </li>
 <li><p>Inter-Cloud 互联云</p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第3章 理解云计算</title>
+    <url>/posts/cloud003.html</url>
+    <content><![CDATA[<h1 id="第3章-理解云计算"><a href="#第3章-理解云计算" class="headerlink" title="第3章 理解云计算"></a>第3章 理解云计算</h1><h2 id="起源与影响"><a href="#起源与影响" class="headerlink" title="起源与影响"></a>起源与影响</h2><h3 id="简要历史"><a href="#简要历史" class="headerlink" title="简要历史"></a>简要历史</h3><ul>
+<li>1961年，John McCarthy 公开提出“效用计算”（utility computing）。</li>
+<li>1969年， Leonard Kleinrock 在 ARPANET 项目中表示“计算机应用的扩展”（spread of computer utilities）。</li>
+<li>20世纪90年代中期，普通大众开始以各种形式使用基于 Internet 的计算机应用（internet-based computer utilities）。</li>
+<li>20世纪90年代后期，Salesforce.com 率先在企业中引入“远程提供服务”的概念（remotely provisioned services）。</li>
+<li>2002年，Amazon.com 启用 Amazon Web 服务（Amazon Web Service，AWS）平台。</li>
+<li>2006年，“云计算”（cloud computing）这一术语出现在商业领域。</li>
+<li>2009年，Google 应用引擎（Google App Engine）成为了另一个里程碑。</li>
+</ul>
+<p>  <img src="https://img01.anzhiy.cn/useruploads/158/2023/05/06/64562de594952.png" alt="云计算历史"></p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li><p><strong>Gartner （高德纳咨询公司）定义（了解）：</strong></p>
+<p>a style of computing in which scalable and elastic IT-enabled capabilities are delivered as a service to external customers using Internet technologies.</p>
+<p>一种能通过Internet技术将可扩展性和弹性的IT能力作为服务交付给外部用户的计算方式。</p>
+</li>
+<li><p><strong>Forrester Research （弗雷斯特研究公司）定义（了解）：</strong></p>
+<p>a standardized IT capability (services, software, or infrastructure) delivered via Internet technologies in a pay-per-use, self-service way.</p>
+<p>一种标准化的IT性能（服务、软件或者基础设施），按使用付费和自助服务方式，通过Internet技术进行交付。</p>
+</li>
+<li><p><strong>美国国家标准与技术研究院（NIST）制定（2011年9月 修订版）：</strong></p>
+<p>Cloud computing is a model for enabling <strong>ubiquitous</strong>, <strong>convenient</strong>, <strong>on-demand</strong> network access to a shared <strong>pool</strong> of configurable computing resources (e.g. networks, servers, storage, applications, and services) that can be <strong>rapidly provisioned and released</strong> with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.</p>
+<p>云计算是一种模型，可以实现随时随地、便携地、按需地从可配置计算资源共享池中获取所需的资源（例如，网络、服务器、存储、应用程序及服务），资源可以快速供给和释放，只需提供很少的管理工作，或与服务提供者进行很少的交互。这种云模型由五个基本特征、三种服务模型和四种部署模型构成。</p>
+</li>
+<li><p><strong>云计算的基本特征：</strong></p>
+<ol>
+<li>ubiquitous access 随处访问</li>
+<li>on-demand usage 按需使用</li>
+<li>measured usage 可测量的使用</li>
+<li>resource pool 资源池</li>
+<li>elasticity 弹性</li>
+</ol>
+</li>
+<li><p><strong>本书给出了云计算更为简洁的定义：</strong></p>
+<p>Cloud computing is a specialized form of <strong>distributed computing</strong> that introduces <strong>utilization models</strong> for <strong>remotely</strong> provisioning <strong>scalable</strong> and <strong>measured</strong> resources.</p>
+<p>云计算是分布式计算的一种特殊形式，它引入效用模型来远程供给可扩展和可测量的资源。</p>
+</li>
+</ul>
+<h2 id="基本概念与术语"><a href="#基本概念与术语" class="headerlink" title="基本概念与术语"></a>基本概念与术语</h2><h3 id="云"><a href="#云" class="headerlink" title="云"></a>云</h3><ul>
+<li><p>A cloud refers to <strong>a distinct IT environment</strong> that is designed for the purpose of <strong>remotely provisioning scalable and measured IT resources</strong>.</p>
+<p>云是指一个独特的IT环境，设计目的是为了远程供给可扩展和可测量的IT资源。</p>
+</li>
+</ul>
+<h3 id="IT-资源"><a href="#IT-资源" class="headerlink" title="IT 资源"></a>IT 资源</h3><ul>
+<li><p>An IT resource is a <strong>physical or virtual</strong> IT-related artifact that can be either <strong>software-based</strong>, such as a virtual server or a custom software program, or <strong>hardware-based</strong>, such as a physical server or a network device.</p>
+<p>IT 资源是指一个与 IT 相关的物理的或虚拟的事物，它既可以是基于软件的（虚拟服务器或定制软件程序），也可以是基于硬件的（物理服务器或网络设备）。</p>
+<p><img src="https://img01.anzhiy.cn/useruploads/158/2023/05/06/64562e13ac827.png" alt="IT资源"></p>
+</li>
+</ul>
+<h3 id="企业内部的"><a href="#企业内部的" class="headerlink" title="企业内部的"></a>企业内部的</h3><ul>
+<li><p>An IT resource that is hosted in a conventional IT enterprise within an organizational boundary that does not specifically represent a cloud is considered to be located on the premises of the IT enterprise, or <strong>on-premise</strong> for short.</p>
+<p>处于一个组织边界中的传统 IT 企业内部承载的IT资源被认为是位于 IT 企业内部的</p>
+</li>
+<li><p>An IT resource that is on-premise cannot be cloud-based, and vice-versa.</p>
+<p>一个内部的 IT 资源不可能是基于云的，反之亦然。</p>
+</li>
+<li><p>有三点需要注意：</p>
+<ol>
+<li><p>An on-premise IT resource can access and interact with a cloud-based IT resource.</p>
+<p>一个内部的 IT 资源可以访问一个基于云的 IT 资源，并与之交互。</p>
+</li>
+<li><p>An on-premise IT resource can be moved to a cloud, thereby changing it to a cloud-based IT resource.</p>
+<p>一个内部的 IT 资源可以迁移到云中，从而成为一个基于云的 IT 资源。</p>
+</li>
+<li><p>Redundant deployments of an IT resource can exist in both on-premise and cloud-based environments.</p>
+<p>IT 资源既可以冗余部署在企业内部，也可以在云环境中。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="云用户与云提供者"><a href="#云用户与云提供者" class="headerlink" title="云用户与云提供者"></a>云用户与云提供者</h3><ul>
+<li><p>The party that provides cloud-based IT resources is the <strong>cloud provider</strong>.</p>
+<p>提供基于云的 IT 资源的一方称为云提供者。</p>
+</li>
+<li><p>The party that uses cloud-based IT resources is the <strong>cloud consumer</strong>.</p>
+<p>使用基于云的 IT 资源的一方称为云用户。</p>
+</li>
+</ul>
+<h3 id="可扩展性"><a href="#可扩展性" class="headerlink" title="可扩展性"></a>可扩展性</h3><ul>
+<li><p>From an IT resource perspective, <strong>scaling</strong> represents the ability of the IT resource to handle increased or decreased usage demands.</p>
+<p>可扩展性是指 IT 资源可以处理增加或减少的使用需求的能力。</p>
+</li>
+<li><p>可扩展性有两种类型：</p>
+<ol>
+<li><strong>Horizontal Scaling</strong> – scaling out and scaling in 水平扩展</li>
+<li><strong>Vertical Scaling</strong> – scaling up and scaling down 垂直扩展</li>
+</ol>
+</li>
+</ul>
+<h3 id="云服务"><a href="#云服务" class="headerlink" title="云服务"></a>云服务</h3><ul>
+<li><p>A <strong>cloud service</strong> is any IT resource that is made remotely accessible via a cloud.</p>
+<p>云服务是指任何可以通过云远程访问的 IT 资源。</p>
+</li>
+</ul>
+<h3 id="云服务用户"><a href="#云服务用户" class="headerlink" title="云服务用户"></a>云服务用户</h3><ul>
+<li><p>The <strong>cloud service consumer</strong> is a temporary runtime role assumed by a software program when it accesses a cloud service.</p>
+<p>云服务用户是一个临时的运行时角色，由访问云服务的软件程序担任。</p>
 </li>
 </ul>
 ]]></content>
