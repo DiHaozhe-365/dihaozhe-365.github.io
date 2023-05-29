@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>《云计算：概念、技术与架构》</title>
-    <url>/posts/cloud000.html</url>
-    <content><![CDATA[<h1 id="《云计算：概念、技术与架构》"><a href="#《云计算：概念、技术与架构》" class="headerlink" title="《云计算：概念、技术与架构》"></a>《云计算：概念、技术与架构》</h1><h2 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h2><p> <a href="http://georgedi.top/posts/cloud003.html">第3章 理解云计算</a><br> <a href="http://georgedi.top/posts/cloud004.html">第4章 基本概念与模型</a><br> <a href="http://georgedi.top/posts/cloud009.html">第9章 云管理机制</a><br> <a href="http://georgedi.top/posts/cloud011.html">第11章 基本云架构</a><br> <!-- [第5章 云使能技术](http://georgedi.top//posts/云使能技术/) 
- [第6章 基本云安全](http://georgedi.top/2023/05/06/基本云安全/) 
- [第7章 云基础设施机制](http://georgedi.top/2023/05/06/云基础设施机制/) 
- [第8章 特殊云机制](http://georgedi.top/2023/05/06/特殊云机制/)   --><br> <!--  
- [第12章 高级云架构](http://georgedi.top/2023/05/06/高级云架构/)  --></p>
-]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第9章 云管理机制</title>
     <url>/posts/cloud009.html</url>
     <content><![CDATA[<h1 id="第9章-云管理机制"><a href="#第9章-云管理机制" class="headerlink" title="第9章 云管理机制"></a>第9章 云管理机制</h1><h2 id="远程管理系统"><a href="#远程管理系统" class="headerlink" title="远程管理系统"></a>远程管理系统</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
@@ -97,6 +81,22 @@
 <li>Billing arrangements be based on <strong>pre-usage and post-usage payments</strong>. The later type can include <strong>pre-defined limits or unlimited usage</strong>.</li>
 </ul>
 <h3 id="工作流程-2"><a href="#工作流程-2" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.8.png" alt="计费管理系统的工作流程" style="zoom:67%;" />]]></content>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《云计算：概念、技术与架构》</title>
+    <url>/posts/cloud000.html</url>
+    <content><![CDATA[<h1 id="《云计算：概念、技术与架构》"><a href="#《云计算：概念、技术与架构》" class="headerlink" title="《云计算：概念、技术与架构》"></a>《云计算：概念、技术与架构》</h1><h2 id="目录："><a href="#目录：" class="headerlink" title="目录："></a>目录：</h2><p> <a href="http://georgedi.top/posts/cloud003.html">第3章 理解云计算</a><br> <a href="http://georgedi.top/posts/cloud004.html">第4章 基本概念与模型</a><br> <a href="http://georgedi.top/posts/cloud009.html">第9章 云管理机制</a><br> <a href="http://georgedi.top/posts/cloud011.html">第11章 基本云架构</a><br> <!-- [第5章 云使能技术](http://georgedi.top//posts/云使能技术/) 
+ [第6章 基本云安全](http://georgedi.top/2023/05/06/基本云安全/) 
+ [第7章 云基础设施机制](http://georgedi.top/2023/05/06/云基础设施机制/) 
+ [第8章 特殊云机制](http://georgedi.top/2023/05/06/特殊云机制/)   --><br> <!--  
+ [第12章 高级云架构](http://georgedi.top/2023/05/06/高级云架构/)  --></p>
+]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
       <tags>
         <tag>云计算</tag>
       </tags>
