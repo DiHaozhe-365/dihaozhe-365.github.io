@@ -395,14 +395,14 @@
             <th colspan="2">基本工作量 M<sub>0</sub></th>
             <th colspan="2">开发工期 T<sub>d</sub></th>  
         </tr>
-    </thead>
-    <tbody>
         <tr align="center">
             <td>r</td>
             <td>k</td>
             <td>h</td>
             <td>d</td>
         </tr>
+    </thead>
+    <tbody>
         <tr align="center">
             <td>有机型</td>
             <td>3.2</td>
@@ -426,6 +426,7 @@
         </tr>
     </tbody>
 </table>
+
 
 <p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
 <table>
