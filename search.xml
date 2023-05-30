@@ -12,44 +12,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Java 基础知识</title>
-    <url>/posts/java0000.html</url>
-    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h3><ul>
-<li><a href="https://georgedi.top/posts/java0001.html">第1章 Java 语言概述</a></li>
-<li><a href="https://georgedi.top/posts/java0002.html">第2章 变量与运算符</a></li>
-<li><a href="https://georgedi.top/posts/java0003.html">第3章 流程控制语句</a></li>
-<li><a href="https://georgedi.top/posts/java0004.html">第4章 数组</a></li>
-</ul>
-<h3 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h3><ul>
-<li><a href="https://georgedi.top/posts/java0005.html">第5章 面向对象编程基础</a></li>
-<li><a href="https://georgedi.top/posts/java0006.html">第6章 面向对象编程进阶</a></li>
-<li><a href="https://georgedi.top/posts/java0007.html">第7章 面向对象编程高级</a></li>
-</ul>
-<h3 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h3><ul>
-<li><a href="https://georgedi.top/posts/java0008.html">第8章 异常处理</a></li>
-<li><a href="https://georgedi.top/posts/java0009.html">第9章 多线程</a></li>
-<li><a href="https://georgedi.top/posts/java0010.html">第10章 常用类</a></li>
-<li><a href="https://georgedi.top/posts/java0011.html">第11章 基础 API</a></li>
-<li><a href="https://georgedi.top/posts/java0012.html">第12章 集合框架</a></li>
-<li><a href="https://georgedi.top/posts/java0013.html">第13章 泛型</a></li>
-<li><a href="https://georgedi.top/posts/java0014.html">第14章 数据结构与集合源码</a></li>
-<li><a href="https://georgedi.top/posts/java0015.html">第15章 File 类与 IO 流</a></li>
-<li><a href="https://georgedi.top/posts/java0016.html">第16章 网络编程</a></li>
-<li><a href="https://georgedi.top/posts/java0017.html">第17章 反射机制</a></li>
-</ul>
-<h3 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h3><ul>
-<li><a href="https://georgedi.top/posts/java0018.html">Java番外一：JDK 的安装与环境配置</a></li>
-<li><a href="https://georgedi.top/posts/java0019.html">Java番外二：JDK 8-17 新特性</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>后端技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第1章 Java 语言概述</title>
     <url>/posts/java0001.html</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
@@ -143,6 +105,44 @@
 <h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 基础知识</title>
+    <url>/posts/java0000.html</url>
+    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h3><ul>
+<li><a href="https://georgedi.top/posts/java0001.html">第1章 Java 语言概述</a></li>
+<li><a href="https://georgedi.top/posts/java0002.html">第2章 变量与运算符</a></li>
+<li><a href="https://georgedi.top/posts/java0003.html">第3章 流程控制语句</a></li>
+<li><a href="https://georgedi.top/posts/java0004.html">第4章 数组</a></li>
+</ul>
+<h3 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h3><ul>
+<li><a href="https://georgedi.top/posts/java0005.html">第5章 面向对象编程基础</a></li>
+<li><a href="https://georgedi.top/posts/java0006.html">第6章 面向对象编程进阶</a></li>
+<li><a href="https://georgedi.top/posts/java0007.html">第7章 面向对象编程高级</a></li>
+</ul>
+<h3 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h3><ul>
+<li><a href="https://georgedi.top/posts/java0008.html">第8章 异常处理</a></li>
+<li><a href="https://georgedi.top/posts/java0009.html">第9章 多线程</a></li>
+<li><a href="https://georgedi.top/posts/java0010.html">第10章 常用类</a></li>
+<li><a href="https://georgedi.top/posts/java0011.html">第11章 基础 API</a></li>
+<li><a href="https://georgedi.top/posts/java0012.html">第12章 集合框架</a></li>
+<li><a href="https://georgedi.top/posts/java0013.html">第13章 泛型</a></li>
+<li><a href="https://georgedi.top/posts/java0014.html">第14章 数据结构与集合源码</a></li>
+<li><a href="https://georgedi.top/posts/java0015.html">第15章 File 类与 IO 流</a></li>
+<li><a href="https://georgedi.top/posts/java0016.html">第16章 网络编程</a></li>
+<li><a href="https://georgedi.top/posts/java0017.html">第17章 反射机制</a></li>
+</ul>
+<h3 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h3><ul>
+<li><a href="https://georgedi.top/posts/java0018.html">Java番外一：JDK 的安装与环境配置</a></li>
+<li><a href="https://georgedi.top/posts/java0019.html">Java番外二：JDK 8-17 新特性</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>后端技术</category>
+      </categories>
       <tags>
         <tag>Java</tag>
       </tags>
