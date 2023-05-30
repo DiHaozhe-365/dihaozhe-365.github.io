@@ -50,26 +50,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《软件工程经济学》</title>
-    <url>/posts/a0090000.html</url>
-    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li><a href="https://georgedi.top/posts/a0090001.html">第1章 绪论</a></li>
-<li><a href="https://georgedi.top/posts/a0090002.html">第2章 软件工程经济学基础</a></li>
-<li><a href="https://georgedi.top/posts/a0090003.html">第3章 软件的成本管理与定价分析</a></li>
-<li><a href="https://georgedi.top/posts/a0090004.html">第4章 软件工程项目评价方法与经济效果评价</a></li>
-<li><a href="https://georgedi.top/posts/a0090005.html">第5章 软件生产函数、效益分析及不确定性分析</a></li>
-<li><a href="https://georgedi.top/posts/a0090006.html">第6章 软件工程项目进度计划的制订</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第1章 Java 语言概述</title>
     <url>/posts/c0010001.html</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
@@ -174,6 +154,26 @@
 ]]></content>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《软件工程经济学》</title>
+    <url>/posts/a0090000.html</url>
+    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="https://georgedi.top/posts/a0090001.html">第1章 绪论</a></li>
+<li><a href="https://georgedi.top/posts/a0090002.html">第2章 软件工程经济学基础</a></li>
+<li><a href="https://georgedi.top/posts/a0090003.html">第3章 软件的成本管理与定价分析</a></li>
+<li><a href="https://georgedi.top/posts/a0090004.html">第4章 软件工程项目评价方法与经济效果评价</a></li>
+<li><a href="https://georgedi.top/posts/a0090005.html">第5章 软件生产函数、效益分析及不确定性分析</a></li>
+<li><a href="https://georgedi.top/posts/a0090006.html">第6章 软件工程项目进度计划的制订</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
@@ -389,191 +389,200 @@
 </tbody></table>
 <p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
 <table>
-    <tr align="center">
-        <th rowspan="2">软件总体类型</th>
-        <th colspan="2">基本工作量 M<sub>0</sub></th>
-        <th colspan="2">开发工期 T<sub>d</sub></th>  
-    </tr>
-    <tr align="center">
-        <td>r</td>
-        <td>k</td>
-        <td>h</td>
-        <td>d</td>
-    </tr>
-    <tr align="center">
-        <td>有机型</td>
-        <td>3.2</td>
-        <td>1.05</td>
-        <td>2.5</td>
-        <td>0.38</td>
-    </tr>
-    <tr align="center">
-        <td>嵌入型</td>
-        <td>2.8</td>
-        <td>1.20</td>
-        <td>2.5</td>
-        <td>0.32</td>
-    </tr>
-    <tr align="center">
-        <td>半独立型</td>
-        <td>3.0</td>
-        <td>1.12</td>
-        <td>2.5</td>
-        <td>0.35</td>
-    </tr>
+    <thead>
+        <tr align="center">
+            <th rowspan="2">软件总体类型</th>
+            <th colspan="2">基本工作量 M<sub>0</sub></th>
+            <th colspan="2">开发工期 T<sub>d</sub></th>  
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>r</td>
+            <td>k</td>
+            <td>h</td>
+            <td>d</td>
+        </tr>
+        <tr align="center">
+            <td>有机型</td>
+            <td>3.2</td>
+            <td>1.05</td>
+            <td>2.5</td>
+            <td>0.38</td>
+        </tr>
+        <tr align="center">
+            <td>嵌入型</td>
+            <td>2.8</td>
+            <td>1.20</td>
+            <td>2.5</td>
+            <td>0.32</td>
+        </tr>
+        <tr align="center">
+            <td>半独立型</td>
+            <td>3.0</td>
+            <td>1.12</td>
+            <td>2.5</td>
+            <td>0.35</td>
+        </tr>
+    </tbody>
 </table>
 
 <p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
 <table>
-    <tr align="center">
-        <th colspan="2">工作量影响要素 U</th>
-        <th>非常低</th>
-        <th>低</th>
-        <th>正常</th>
-        <th>高</th>
-        <th>非常高</th>
-        <th>超高</th>
-    </tr>
-    <tr align="center">
-        <td rowspan="3">产品因素类</td>
-        <td>软件可靠性 U<sub>1</sub></td>
-        <td>0.75</td>
-        <td>0.88</td>
-        <td>1.00</td>
-        <td>1.15</td>
-        <td>1.40</td>
-        <td>-</td>
-    </tr>
-    <tr align="center">
-        <td>数据库规模 U<sub>2</sub></td>
-        <td>-</td>
-        <td>0.94</td>
-        <td>1.00</td>
-        <td>1.08</td>
-        <td>1.16</td>
-        <td>-</td>
-    </tr>
-     <tr align="center">
-        <td>产品复杂性 U<sub>3</sub></td>
-        <td>0.70</td>
-        <td>0.85</td>
-        <td>1.00</td>
-        <td>1.15</td>
-        <td>1.30</td>
-        <td>1.65</td>
-    </tr>
-    <tr align="center">
-        <td rowspan="4">计算机因素类</td>
-        <td>执行时间限制 U<sub>4</sub></td>
-        <td>-</td>
-        <td>-</td>
-        <td>1.00</td>
-        <td>1.10</td>
-        <td>1.30</td>
-        <td>1.65</td>
-    </tr>
-    <tr align="center">
-        <td>主存储限制 U<sub>5</sub></td>
-        <td>-</td>
-        <td>-</td>
-        <td>1.00</td>
-        <td>1.06</td>
-        <td>1.21</td>
-        <td>1.65</td>
-    </tr>
-     <tr align="center">
-        <td>易变性 U<sub>6</sub></td>
-        <td>-</td>
-        <td>0.87</td>
-        <td>1.00</td>
-        <td>1.15</td>
-        <td>1.30</td>
-        <td>-</td>
-    </tr>
-     <tr align="center">
-        <td>环境周转时间 U<sub>7</sub></td>
-        <td>-</td>
-        <td>0.87</td>
-        <td>1.00</td>
-        <td>1.07</td>
-        <td>1.15</td>
-        <td>-</td>
-    </tr>
-    <tr align="center">
-        <td rowspan="5">人员因素类</td>
-        <td>分析员能力 U<sub>8</sub></td>
-        <td>1.46</td>
-        <td>1.19</td>
-        <td>1.00</td>
-        <td>0.86</td>
-        <td>0.71</td>
-        <td>-</td>
-    </tr>
-    <tr align="center">
-        <td>应用领域实际经验 U<sub>9</sub></td>
-        <td>1.29</td>
-        <td>1.13</td>
-        <td>1.00</td>
-        <td>0.91</td>
-        <td>0.82</td>
-        <td>-</td>
-    </tr>
-     <tr align="center">
-        <td>程序员能力 U<sub>10</sub></td>
-        <td>1.42</td>
-        <td>1.17</td>
-        <td>1.00</td>
-        <td>0.86</td>
-        <td>0.70</td>
-        <td>-</td>
-    </tr>
-     <tr align="center">
-        <td>使用经验 U<sub>11</sub></td>
-        <td>1.21</td>
-        <td>1.10</td>
-        <td>1.00</td>
-        <td>0.90</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-     <tr align="center">
-        <td>程序语言使用经验 U<sub>12</sub></td>
-        <td>1.41</td>
-        <td>1.07</td>
-        <td>1.00</td>
-        <td>0.95</td>
-        <td>-</td>
-        <td>-</td>
-    </tr>
-    <tr align="center">
-        <td rowspan="3">项目因素类</td>
-        <td>现代程序设计技术 U<sub>13</sub></td>
-        <td>1.24</td>
-        <td>1.10</td>
-        <td>1.00</td>
-        <td>0.91</td>
-        <td>0.82</td>
-        <td>-</td>
-    </tr>
-    <tr align="center">
-        <td>软件工具的使用 U<sub>14</sub></td>
-        <td>1.24</td>
-        <td>1.10</td>
-        <td>1.00</td>
-        <td>0.91</td>
-        <td>0.83</td>
-        <td>-</td>
-    </tr>
-     <tr align="center">
-        <td>开发进度限制 U<sub>15</sub></td>
-        <td>1.23</td>
-        <td>1.08</td>
-        <td>1.00</td>
-        <td>1.04</td>
-        <td>1.10</td>
-        <td>-</td>
-    </tr>
+    <thead>
+        <tr align="center">
+            <th colspan="2">工作量影响要素 U</th>
+            <th>非常低</th>
+            <th>低</th>
+            <th>正常</th>
+            <th>高</th>
+            <th>非常高</th>
+            <th>超高</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td rowspan="3">产品因素类</td>
+            <td>软件可靠性 U<sub>1</sub></td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>数据库规模 U<sub>2</sub></td>
+            <td>-</td>
+            <td>0.94</td>
+            <td>1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>产品复杂性 U<sub>3</sub></td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="4">计算机因素类</td>
+            <td>执行时间限制 U<sub>4</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.10</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>主存储限制 U<sub>5</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>易变性 U<sub>6</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>环境周转时间 U<sub>7</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="5">人员因素类</td>
+            <td>分析员能力 U<sub>8</sub></td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>应用领域实际经验 U<sub>9</sub></td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序员能力 U<sub>10</sub></td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>使用经验 U<sub>11</sub></td>
+            <td>1.21</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序语言使用经验 U<sub>12</sub></td>
+            <td>1.41</td>
+            <td>1.07</td>
+            <td>1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">项目因素类</td>
+            <td>现代程序设计技术 U<sub>13</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>软件工具的使用 U<sub>14</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>开发进度限制 U<sub>15</sub></td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td>1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
 </table>
+
 
 <h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3>]]></content>
       <tags>
