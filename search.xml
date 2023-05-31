@@ -12,6 +12,26 @@
       </tags>
   </entry>
   <entry>
+    <title>《软件工程经济学》</title>
+    <url>/posts/a0090000.html</url>
+    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="https://georgedi.top/posts/a0090001.html">第1章 绪论</a></li>
+<li><a href="https://georgedi.top/posts/a0090002.html">第2章 软件工程经济学基础</a></li>
+<li><a href="https://georgedi.top/posts/a0090003.html">第3章 软件的成本管理与定价分析</a></li>
+<li><a href="https://georgedi.top/posts/a0090004.html">第4章 软件工程项目评价方法与经济效果评价</a></li>
+<li><a href="https://georgedi.top/posts/a0090005.html">第5章 软件生产函数、效益分析及不确定性分析</a></li>
+<li><a href="https://georgedi.top/posts/a0090006.html">第6章 软件工程项目进度计划的制订</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Java 基础</title>
     <url>/posts/c0010000.html</url>
     <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h3><ul>
@@ -47,26 +67,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《软件工程经济学》</title>
-    <url>/posts/a0090000.html</url>
-    <content><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li><a href="https://georgedi.top/posts/a0090001.html">第1章 绪论</a></li>
-<li><a href="https://georgedi.top/posts/a0090002.html">第2章 软件工程经济学基础</a></li>
-<li><a href="https://georgedi.top/posts/a0090003.html">第3章 软件的成本管理与定价分析</a></li>
-<li><a href="https://georgedi.top/posts/a0090004.html">第4章 软件工程项目评价方法与经济效果评价</a></li>
-<li><a href="https://georgedi.top/posts/a0090005.html">第5章 软件生产函数、效益分析及不确定性分析</a></li>
-<li><a href="https://georgedi.top/posts/a0090006.html">第6章 软件工程项目进度计划的制订</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
