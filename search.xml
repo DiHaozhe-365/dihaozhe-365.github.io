@@ -14,17 +14,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《算法设计与分析》</title>
-    <url>/posts/a0060000.html</url>
-    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3><h3 id="第5章-回溯法"><a href="#第5章-回溯法" class="headerlink" title="第5章 回溯法"></a><a href="https://georgedi.top/posts/a0060005.html">第5章 回溯法</a></h3><h3 id="第7章-贪心法"><a href="#第7章-贪心法" class="headerlink" title="第7章 贪心法"></a><a href="https://georgedi.top/posts/a0060007.html">第7章 贪心法</a></h3><h3 id="第8章-动态规划"><a href="#第8章-动态规划" class="headerlink" title="第8章 动态规划"></a><a href="https://georgedi.top/posts/a0060008.html">第8章 动态规划</a></h3>]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第1章 概论</title>
     <url>/posts/a0060001.html</url>
     <content><![CDATA[<h2 id="1-1-算法的概念"><a href="#1-1-算法的概念" class="headerlink" title="1.1 算法的概念"></a>1.1 算法的概念</h2><h3 id="1-1-1-什么是算法"><a href="#1-1-1-什么是算法" class="headerlink" title="1.1.1 什么是算法"></a>1.1.1 什么是算法</h3><p>算法（ algorithm ）是<strong>求解问题的一系列计算步骤</strong>，用来将<strong>输入数据</strong>转换成<strong>输出结果</strong>。</p>
@@ -66,10 +55,30 @@
 <h3 id="1-1-3-算法和数据结构"><a href="#1-1-3-算法和数据结构" class="headerlink" title="1.1.3 算法和数据结构"></a>1.1.3 算法和数据结构</h3><p>算法与数据结构既有联系又有区别。</p>
 <p>数据结构是算法设计的基础。算法的操作对象是数据结构，在设计算法时通常要构建适合这种算法的数据结构。数据结构设计主要是选择数据的存储方式，例如确定求解问题中的数据采用数组存储还是采用链表存储等。算法设计就是在选定的存储结构上设计一个满足要求的好算法。</p>
 <p>另外，数据结构关注的是数据的逻辑结构、存储结构以及基本操作，而算法更多的是关注如何在数据结构的基础上解决实际问题。算法是编程思想，数据结构则是这些思想的逻辑基础。</p>
-<h3 id="1-1-4-算法设计的基本步骤"><a href="#1-1-4-算法设计的基本步骤" class="headerlink" title="1.1.4 算法设计的基本步骤"></a>1.1.4 算法设计的基本步骤</h3><h2 id="1-2-算法分析"><a href="#1-2-算法分析" class="headerlink" title="1.2 算法分析"></a>1.2 算法分析</h2><h3 id="1-2-1-算法时间复杂度分析"><a href="#1-2-1-算法时间复杂度分析" class="headerlink" title="1.2.1 算法时间复杂度分析"></a>1.2.1 算法时间复杂度分析</h3><h3 id="1-2-2-算法空间复杂度分析"><a href="#1-2-2-算法空间复杂度分析" class="headerlink" title="1.2.2 算法空间复杂度分析"></a>1.2.2 算法空间复杂度分析</h3><h2 id="1-3-算法设计工具——STL"><a href="#1-3-算法设计工具——STL" class="headerlink" title="1.3 算法设计工具——STL"></a>1.3 算法设计工具——STL</h2><h3 id="1-3-1-STL-概述"><a href="#1-3-1-STL-概述" class="headerlink" title="1.3.1 STL 概述"></a>1.3.1 STL 概述</h3><h3 id="1-3-2-常用的-STL-容器"><a href="#1-3-2-常用的-STL-容器" class="headerlink" title="1.3.2 常用的 STL 容器"></a>1.3.2 常用的 STL 容器</h3><h3 id="1-3-3-STL-在算法设计中的应用"><a href="#1-3-3-STL-在算法设计中的应用" class="headerlink" title="1.3.3 STL 在算法设计中的应用"></a>1.3.3 STL 在算法设计中的应用</h3><hr>
+<h3 id="1-1-4-算法设计的基本步骤"><a href="#1-1-4-算法设计的基本步骤" class="headerlink" title="1.1.4 算法设计的基本步骤"></a>1.1.4 算法设计的基本步骤</h3><p>算法是求解问题的解决方案，这个解决方案本身并不是问题的答案，而是能获得答案的指令序列，即算法，通过算法的执行获得求解问题的答案。</p>
+<p>算法设计是一个灵活的充满智慧的过程，其基本步骤如下所示：</p>
+<ol>
+<li>分析求解问题：确定求解问题的目标（功能）、给定的条件（输入）和生成的结果（输出）。</li>
+<li>选择数据结构和算法设计策略：设计数据对象的存储结构，因为算法的效率取决于数据对象的存储表示。算法设计有一些通用策略，例如迭代法、分治法、动态规划和回溯法等，需要针对求解问题选择合适的算法设计策略。</li>
+<li>描述算法：在构思和设计好一个算法后必须清楚、准确地将所设计的求解步骤记录下来，即描述算法。</li>
+<li>证明算法正确性：算法正确性证明与数学证明有类似之处，因此可以采用数学证明方法，但用纯数字方法证明算法的正确不仅耗时，而且对大型软件开发也不适用。一般而言，为所有算法都给出完全的数学证明并不现实，因此选择那些已知是正确的算法自然能大大减少出错的机会。</li>
+<li>算法分析：同一问题的求解算法可能有多种，可以通过算法分析找到好的算法。一般来说，一个好的算法应该比同类算法的时间和空间效率高</li>
+</ol>
+<h2 id="1-2-算法分析"><a href="#1-2-算法分析" class="headerlink" title="1.2 算法分析"></a>1.2 算法分析</h2><h3 id="1-2-1-算法时间复杂度分析"><a href="#1-2-1-算法时间复杂度分析" class="headerlink" title="1.2.1 算法时间复杂度分析"></a>1.2.1 算法时间复杂度分析</h3><h3 id="1-2-2-算法空间复杂度分析"><a href="#1-2-2-算法空间复杂度分析" class="headerlink" title="1.2.2 算法空间复杂度分析"></a>1.2.2 算法空间复杂度分析</h3><h2 id="1-3-算法设计工具——STL"><a href="#1-3-算法设计工具——STL" class="headerlink" title="1.3 算法设计工具——STL"></a>1.3 算法设计工具——STL</h2><h3 id="1-3-1-STL-概述"><a href="#1-3-1-STL-概述" class="headerlink" title="1.3.1 STL 概述"></a>1.3.1 STL 概述</h3><h3 id="1-3-2-常用的-STL-容器"><a href="#1-3-2-常用的-STL-容器" class="headerlink" title="1.3.2 常用的 STL 容器"></a>1.3.2 常用的 STL 容器</h3><h3 id="1-3-3-STL-在算法设计中的应用"><a href="#1-3-3-STL-在算法设计中的应用" class="headerlink" title="1.3.3 STL 在算法设计中的应用"></a>1.3.3 STL 在算法设计中的应用</h3><hr>
 <h2 id="1-4-练习题"><a href="#1-4-练习题" class="headerlink" title="1.4 练习题"></a>1.4 练习题</h2><h2 id="1-5-上机实验题"><a href="#1-5-上机实验题" class="headerlink" title="1.5 上机实验题"></a>1.5 上机实验题</h2><h2 id="1-6-在线编程题"><a href="#1-6-在线编程题" class="headerlink" title="1.6 在线编程题"></a>1.6 在线编程题</h2><hr>
 <p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
 ]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《算法设计与分析》</title>
+    <url>/posts/a0060000.html</url>
+    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3><h3 id="第5章-回溯法"><a href="#第5章-回溯法" class="headerlink" title="第5章 回溯法"></a><a href="https://georgedi.top/posts/a0060005.html">第5章 回溯法</a></h3><h3 id="第7章-贪心法"><a href="#第7章-贪心法" class="headerlink" title="第7章 贪心法"></a><a href="https://georgedi.top/posts/a0060007.html">第7章 贪心法</a></h3><h3 id="第8章-动态规划"><a href="#第8章-动态规划" class="headerlink" title="第8章 动态规划"></a><a href="https://georgedi.top/posts/a0060008.html">第8章 动态规划</a></h3>]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
       <tags>
         <tag>算法</tag>
       </tags>
@@ -97,17 +106,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第7章 贪心法</title>
-    <url>/posts/a0060007.html</url>
-    <content><![CDATA[<h2 id="7-1-贪心法概述"><a href="#7-1-贪心法概述" class="headerlink" title="7.1 贪心法概述"></a>7.1 贪心法概述</h2><h3 id="7-1-1-什么是贪心法"><a href="#7-1-1-什么是贪心法" class="headerlink" title="7.1.1 什么是贪心法"></a>7.1.1 什么是贪心法</h3><h3 id="7-1-2-用贪心法求解的问题应具有的性质"><a href="#7-1-2-用贪心法求解的问题应具有的性质" class="headerlink" title="7.1.2 用贪心法求解的问题应具有的性质"></a>7.1.2 用贪心法求解的问题应具有的性质</h3><h3 id="7-1-3-贪心法的一般求解过程"><a href="#7-1-3-贪心法的一般求解过程" class="headerlink" title="7.1.3 贪心法的一般求解过程"></a>7.1.3 贪心法的一般求解过程</h3><h2 id="7-2-求解活动安排问题"><a href="#7-2-求解活动安排问题" class="headerlink" title="7.2 求解活动安排问题"></a>7.2 求解活动安排问题</h2><h2 id="7-3-求解背包问题"><a href="#7-3-求解背包问题" class="headerlink" title="7.3 求解背包问题"></a>7.3 求解背包问题</h2><h2 id="7-4-求解最优装载问题"><a href="#7-4-求解最优装载问题" class="headerlink" title="7.4 求解最优装载问题"></a>7.4 求解最优装载问题</h2><h2 id="7-5-求解田忌赛马问题"><a href="#7-5-求解田忌赛马问题" class="headerlink" title="7.5 求解田忌赛马问题"></a>7.5 求解田忌赛马问题</h2><h2 id="7-6-求解多机调度问题"><a href="#7-6-求解多机调度问题" class="headerlink" title="7.6 求解多机调度问题"></a>7.6 求解多机调度问题</h2><h2 id="7-7-哈夫曼编码"><a href="#7-7-哈夫曼编码" class="headerlink" title="7.7 哈夫曼编码"></a>7.7 哈夫曼编码</h2><h2 id="7-8-求解流水作业调度问题"><a href="#7-8-求解流水作业调度问题" class="headerlink" title="7.8 求解流水作业调度问题"></a>7.8 求解流水作业调度问题</h2><hr>
-<h2 id="7-9-练习题"><a href="#7-9-练习题" class="headerlink" title="7.9 练习题"></a>7.9 练习题</h2><h2 id="7-10-上机实验题"><a href="#7-10-上机实验题" class="headerlink" title="7.10 上机实验题"></a>7.10 上机实验题</h2><h2 id="7-11-在线编程题"><a href="#7-11-在线编程题" class="headerlink" title="7.11 在线编程题"></a>7.11 在线编程题</h2><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第5章 回溯法</title>
     <url>/posts/a0060005.html</url>
     <content><![CDATA[<h2 id="5-1-回溯法概述"><a href="#5-1-回溯法概述" class="headerlink" title="5.1 回溯法概述"></a>5.1 回溯法概述</h2><h3 id="5-1-1-问题的解空间"><a href="#5-1-1-问题的解空间" class="headerlink" title="5.1.1 问题的解空间"></a>5.1.1 问题的解空间</h3><h3 id="5-1-2-什么是回溯法"><a href="#5-1-2-什么是回溯法" class="headerlink" title="5.1.2 什么是回溯法"></a>5.1.2 什么是回溯法</h3><h3 id="5-1-3-回溯法的算法框架及其应用"><a href="#5-1-3-回溯法的算法框架及其应用" class="headerlink" title="5.1.3 回溯法的算法框架及其应用"></a>5.1.3 回溯法的算法框架及其应用</h3><h3 id="5-1-4-回溯法与深度优先遍历的异同"><a href="#5-1-4-回溯法与深度优先遍历的异同" class="headerlink" title="5.1.4 回溯法与深度优先遍历的异同"></a>5.1.4 回溯法与深度优先遍历的异同</h3><h3 id="5-1-5-回溯法的时间分析"><a href="#5-1-5-回溯法的时间分析" class="headerlink" title="5.1.5 回溯法的时间分析"></a>5.1.5 回溯法的时间分析</h3><h2 id="5-2-求解-0-x2F-1-背包问题"><a href="#5-2-求解-0-x2F-1-背包问题" class="headerlink" title="5.2 求解 0&#x2F;1 背包问题"></a>5.2 求解 0&#x2F;1 背包问题</h2><h2 id="5-3-求解装载问题"><a href="#5-3-求解装载问题" class="headerlink" title="5.3 求解装载问题"></a>5.3 求解装载问题</h2><h3 id="5-3-1-求解简单装载问题"><a href="#5-3-1-求解简单装载问题" class="headerlink" title="5.3.1 求解简单装载问题"></a>5.3.1 求解简单装载问题</h3><h3 id="5-3-2-求解复杂装载问题"><a href="#5-3-2-求解复杂装载问题" class="headerlink" title="5.3.2 求解复杂装载问题"></a>5.3.2 求解复杂装载问题</h3><h2 id="5-4-求解子集和问题"><a href="#5-4-求解子集和问题" class="headerlink" title="5.4 求解子集和问题"></a>5.4 求解子集和问题</h2><h3 id="5-4-1-求子集和问题的解"><a href="#5-4-1-求子集和问题的解" class="headerlink" title="5.4.1 求子集和问题的解"></a>5.4.1 求子集和问题的解</h3><h3 id="5-4-2-判断子集和问题是否存在解"><a href="#5-4-2-判断子集和问题是否存在解" class="headerlink" title="5.4.2 判断子集和问题是否存在解"></a>5.4.2 判断子集和问题是否存在解</h3><h2 id="5-5-求解-n-皇后问题"><a href="#5-5-求解-n-皇后问题" class="headerlink" title="5.5 求解 n 皇后问题"></a>5.5 求解 n 皇后问题</h2><h2 id="5-6-求解图的-m-着色问题"><a href="#5-6-求解图的-m-着色问题" class="headerlink" title="5.6 求解图的 m 着色问题"></a>5.6 求解图的 m 着色问题</h2><h2 id="5-7-求解任务分配问题"><a href="#5-7-求解任务分配问题" class="headerlink" title="5.7 求解任务分配问题"></a>5.7 求解任务分配问题</h2><h2 id="5-8-求解活动安排问题"><a href="#5-8-求解活动安排问题" class="headerlink" title="5.8 求解活动安排问题"></a>5.8 求解活动安排问题</h2><h2 id="5-9-求解流水作业调度问题"><a href="#5-9-求解流水作业调度问题" class="headerlink" title="5.9 求解流水作业调度问题"></a>5.9 求解流水作业调度问题</h2><hr>
@@ -123,6 +121,17 @@
     <url>/posts/a0060008.html</url>
     <content><![CDATA[<h2 id="8-1-动态规划概述"><a href="#8-1-动态规划概述" class="headerlink" title="8.1 动态规划概述"></a>8.1 动态规划概述</h2><h3 id="8-1-1-从求解斐波那契数列看动态规划法"><a href="#8-1-1-从求解斐波那契数列看动态规划法" class="headerlink" title="8.1.1 从求解斐波那契数列看动态规划法"></a>8.1.1 从求解斐波那契数列看动态规划法</h3><h3 id="8-1-2-动态规划的原理"><a href="#8-1-2-动态规划的原理" class="headerlink" title="8.1.2 动态规划的原理"></a>8.1.2 动态规划的原理</h3><h3 id="8-1-3-动态规划求解的基本步骤"><a href="#8-1-3-动态规划求解的基本步骤" class="headerlink" title="8.1.3 动态规划求解的基本步骤"></a>8.1.3 动态规划求解的基本步骤</h3><h3 id="8-1-4-动态规划与其他方法的比较"><a href="#8-1-4-动态规划与其他方法的比较" class="headerlink" title="8.1.4 动态规划与其他方法的比较"></a>8.1.4 动态规划与其他方法的比较</h3><h2 id="8-2-求解整数拆分问题"><a href="#8-2-求解整数拆分问题" class="headerlink" title="8.2 求解整数拆分问题"></a>8.2 求解整数拆分问题</h2><h2 id="8-3-求解最大连续子序列和问题"><a href="#8-3-求解最大连续子序列和问题" class="headerlink" title="8.3 求解最大连续子序列和问题"></a>8.3 求解最大连续子序列和问题</h2><h2 id="8-4-求解三角形最小路径问题"><a href="#8-4-求解三角形最小路径问题" class="headerlink" title="8.4 求解三角形最小路径问题"></a>8.4 求解三角形最小路径问题</h2><h2 id="8-5-求解最长公共子序列问题"><a href="#8-5-求解最长公共子序列问题" class="headerlink" title="8.5 求解最长公共子序列问题"></a>8.5 求解最长公共子序列问题</h2><h2 id="8-6-求解最长递增子序列问题"><a href="#8-6-求解最长递增子序列问题" class="headerlink" title="8.6 求解最长递增子序列问题"></a>8.6 求解最长递增子序列问题</h2><h2 id="8-7-求解编辑距离问题"><a href="#8-7-求解编辑距离问题" class="headerlink" title="8.7 求解编辑距离问题"></a>8.7 求解编辑距离问题</h2><h2 id="8-8-求解-0-x2F-1-问题"><a href="#8-8-求解-0-x2F-1-问题" class="headerlink" title="8.8 求解 0&#x2F;1 问题"></a>8.8 求解 0&#x2F;1 问题</h2><h2 id="8-9-求解完全背包问题"><a href="#8-9-求解完全背包问题" class="headerlink" title="8.9 求解完全背包问题"></a>8.9 求解完全背包问题</h2><h2 id="8-10-求解资源分配问题"><a href="#8-10-求解资源分配问题" class="headerlink" title="8.10 求解资源分配问题"></a>8.10 求解资源分配问题</h2><h2 id="8-11-求解会议安排问题"><a href="#8-11-求解会议安排问题" class="headerlink" title="8.11 求解会议安排问题"></a>8.11 求解会议安排问题</h2><h2 id="8-12-滚动数组"><a href="#8-12-滚动数组" class="headerlink" title="8.12 滚动数组"></a>8.12 滚动数组</h2><h3 id="8-12-1-什么是滚动数组"><a href="#8-12-1-什么是滚动数组" class="headerlink" title="8.12.1 什么是滚动数组"></a>8.12.1 什么是滚动数组</h3><h3 id="8-12-2-用滚动数组求解-0-x2F-1-背包问题"><a href="#8-12-2-用滚动数组求解-0-x2F-1-背包问题" class="headerlink" title="8.12.2 用滚动数组求解 0&#x2F;1 背包问题"></a>8.12.2 用滚动数组求解 0&#x2F;1 背包问题</h3><hr>
 <h2 id="8-13-练习题"><a href="#8-13-练习题" class="headerlink" title="8.13 练习题"></a>8.13 练习题</h2><h2 id="8-14-上机实验题"><a href="#8-14-上机实验题" class="headerlink" title="8.14 上机实验题"></a>8.14 上机实验题</h2><h2 id="8-15-在线编程题"><a href="#8-15-在线编程题" class="headerlink" title="8.15 在线编程题"></a>8.15 在线编程题</h2><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第7章 贪心法</title>
+    <url>/posts/a0060007.html</url>
+    <content><![CDATA[<h2 id="7-1-贪心法概述"><a href="#7-1-贪心法概述" class="headerlink" title="7.1 贪心法概述"></a>7.1 贪心法概述</h2><h3 id="7-1-1-什么是贪心法"><a href="#7-1-1-什么是贪心法" class="headerlink" title="7.1.1 什么是贪心法"></a>7.1.1 什么是贪心法</h3><h3 id="7-1-2-用贪心法求解的问题应具有的性质"><a href="#7-1-2-用贪心法求解的问题应具有的性质" class="headerlink" title="7.1.2 用贪心法求解的问题应具有的性质"></a>7.1.2 用贪心法求解的问题应具有的性质</h3><h3 id="7-1-3-贪心法的一般求解过程"><a href="#7-1-3-贪心法的一般求解过程" class="headerlink" title="7.1.3 贪心法的一般求解过程"></a>7.1.3 贪心法的一般求解过程</h3><h2 id="7-2-求解活动安排问题"><a href="#7-2-求解活动安排问题" class="headerlink" title="7.2 求解活动安排问题"></a>7.2 求解活动安排问题</h2><h2 id="7-3-求解背包问题"><a href="#7-3-求解背包问题" class="headerlink" title="7.3 求解背包问题"></a>7.3 求解背包问题</h2><h2 id="7-4-求解最优装载问题"><a href="#7-4-求解最优装载问题" class="headerlink" title="7.4 求解最优装载问题"></a>7.4 求解最优装载问题</h2><h2 id="7-5-求解田忌赛马问题"><a href="#7-5-求解田忌赛马问题" class="headerlink" title="7.5 求解田忌赛马问题"></a>7.5 求解田忌赛马问题</h2><h2 id="7-6-求解多机调度问题"><a href="#7-6-求解多机调度问题" class="headerlink" title="7.6 求解多机调度问题"></a>7.6 求解多机调度问题</h2><h2 id="7-7-哈夫曼编码"><a href="#7-7-哈夫曼编码" class="headerlink" title="7.7 哈夫曼编码"></a>7.7 哈夫曼编码</h2><h2 id="7-8-求解流水作业调度问题"><a href="#7-8-求解流水作业调度问题" class="headerlink" title="7.8 求解流水作业调度问题"></a>7.8 求解流水作业调度问题</h2><hr>
+<h2 id="7-9-练习题"><a href="#7-9-练习题" class="headerlink" title="7.9 练习题"></a>7.9 练习题</h2><h2 id="7-10-上机实验题"><a href="#7-10-上机实验题" class="headerlink" title="7.10 上机实验题"></a>7.10 上机实验题</h2><h2 id="7-11-在线编程题"><a href="#7-11-在线编程题" class="headerlink" title="7.11 在线编程题"></a>7.11 在线编程题</h2><hr>
 <p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
 ]]></content>
       <tags>
@@ -739,6 +748,460 @@
       </tags>
   </entry>
   <entry>
+    <title>第3章 软件的成本管理与定价分析</title>
+    <url>/posts/a0090003.html</url>
+    <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
+<p>成本的分类方法一般可以按照不同的准则进行划分：</p>
+<ol>
+<li><strong>按照企业的主要经营活动</strong>可分为采购成本、研究与开发成本、生产成本、经营成本以及管理费用。</li>
+<li><strong>按照生产费用计入成本</strong>的方法，可分为直接成本和间接成本。</li>
+<li><strong>按照成本与所完成项目工作量的关系</strong>，可分为固定成本和变动成本。</li>
+<li><strong>按照成本所确定的时间</strong>，可分为预算成本、计划成本及实际成本。</li>
+</ol>
+<h3 id="3-1-1-软件工程项目的成本构成"><a href="#3-1-1-软件工程项目的成本构成" class="headerlink" title="3.1.1 软件工程项目的成本构成"></a>3.1.1 软件工程项目的成本构成</h3><p>软件成本是软件在其生存周期内为取得各种软、硬件资源的支持以及维持系统的研究、生产经营及管理工作所支付的所有费用。</p>
+<p>软件工程项目成本又称为软件工程项目支出，是指为了实现软件工程项目目标所耗用资源的成本总和。软件工程项目成本主要由<strong>硬件成本</strong>、<strong>软件开发成本</strong>、<strong>人员培训费用</strong>和<strong>项目管理费用</strong>等构成。</p>
+<p>软件工程项目成本主要涉及以下 15 类：</p>
+<ol>
+<li>调研费用</li>
+<li>环境建设费用</li>
+<li>工具购置费</li>
+<li>基建费用</li>
+<li>软件开发&#x2F;测试费用</li>
+<li>人力资源费用</li>
+<li>水、电、运输费</li>
+<li>第三方评测费</li>
+<li>软件产品制作费用</li>
+<li>培训费用</li>
+<li>现场实施费用</li>
+<li>营销费用</li>
+<li>售后服务运行维护费</li>
+<li>管理费用</li>
+<li>其他费用</li>
+</ol>
+<h3 id="3-1-2-软件成本测算的影响因素"><a href="#3-1-2-软件成本测算的影响因素" class="headerlink" title="3.1.2 软件成本测算的影响因素"></a>3.1.2 软件成本测算的影响因素</h3><h3 id="3-1-3-软件成本测算的流程"><a href="#3-1-3-软件成本测算的流程" class="headerlink" title="3.1.3 软件成本测算的流程"></a>3.1.3 软件成本测算的流程</h3><h2 id="3-2-软件的成本核算"><a href="#3-2-软件的成本核算" class="headerlink" title="3.2 软件的成本核算"></a>3.2 软件的成本核算</h2><p>对软件工程项目的成本与工期测算的方法较多，通常有功能分解法、统计模型法、价值工程法、表格法、驱动因子法、计算机模拟法、类比法、专门成本测算工具软件预算等方法。</p>
+<p>以下主要分析<strong>驱动因子法</strong>和<strong>类比法</strong>。</p>
+<h3 id="3-2-1-功能分解法"><a href="#3-2-1-功能分解法" class="headerlink" title="3.2.1 功能分解法"></a>3.2.1 功能分解法</h3><p>功能分解法主要从结构上将软件系统按照功能或者性能与生存周期各阶段进行二维分解。</p>
+<h3 id="3-2-2-驱动因子法"><a href="#3-2-2-驱动因子法" class="headerlink" title="3.2.2 驱动因子法"></a>3.2.2 驱动因子法</h3><p>驱动因子法又称为影响因子法，是一种在统计模型的基础上通过引入更多对 y 有影响的要素，来完成统计模型估计值的修正的一种定性与定量相结合的方法。</p>
+<ol>
+<li><p><strong>驱动因子法的求解方法</strong></p>
+<ol>
+<li><p>确定对因变量 y 做出估计的统计模型 y&#x3D;g(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)，其中x<sub>j</sub>（1~n）是指通过定量估算法求得的对 y 有较大影响的几个要素。</p>
+</li>
+<li><p>引入综合要素 U，U 是指除了 x<sub>j</sub> 以外对 y 有影响的估计值，如下列公式所示：<br>$$<br>y &#x3D; U · g(x_{1},x_{2},…,x_{n})<br>$$</p>
+<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{n} U_{j}<br>$$</p>
+</li>
+</ol>
+</li>
+<li><p><strong>影响要素引入 x<sub>j</sub> （1~n）的基本原则</strong></p>
+<ol>
+<li>对 y 有重要影响的要素归入 x<sub>j</sub>，其他归入 U<sub>j</sub>。</li>
+<li>易于定量的影响要素归入 x<sub>j</sub>，不易于定量的影响要素归入 U<sub>j</sub>。</li>
+<li>x<sub>j</sub> 的数量不宜太多，否则求解统计模型较困难。</li>
+</ol>
+</li>
+<li><p><strong>结构化成本模型</strong></p>
+<p>结构化成本模型（ COCOMO ）主要有基本模型、中级模型和详细模型三种。</p>
+<p>中级模型适用于系统规划阶段作软件成本估算的模型，其求解方式如下列公式所示：<br>$$<br>C_{s} &#x3D; a · M_{s}<br>$$</p>
+<p>$$<br>T_{d} &#x3D; h(M_{s})^d<br>$$</p>
+<p>$$<br>M_{s} &#x3D; U · M_{0}<br>$$</p>
+<p>$$<br>M_{0} &#x3D; r · L^{k}<br>$$</p>
+<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{15} U_{j}<br>$$</p>
+</li>
+</ol>
+<p><strong>中级 COCOMO 变量参数明细表如下。</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">变量名称</th>
+<th align="center">经济含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">C<sub>s</sub></td>
+<td align="center">软件开发成本</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">a</td>
+<td align="center">软件开发阶段的工时费用率</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">M<sub>s</sub></td>
+<td align="center">软件开发阶段的修正工作量</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">M<sub>0</sub></td>
+<td align="center">软件开发阶段的基本工作量</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">L</td>
+<td align="center">软件开发规模</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">U</td>
+<td align="center">软件综合影响要素</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">U<sub>j</sub></td>
+<td align="center">对成本有一定影响的第 j 个影响要素</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">T<sub>d</sub></td>
+<td align="center">工期（开发周期）</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">r，k，h，d</td>
+<td align="center">形式参数</td>
+</tr>
+</tbody></table>
+<p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th rowspan="2">软件总体类型</th>
+            <th colspan="2">基本工作量 M<sub>0</sub></th>
+            <th colspan="2">开发工期 T<sub>d</sub></th>  
+        </tr>
+        <tr align="center">
+            <td>r</td>
+            <td>k</td>
+            <td>h</td>
+            <td>d</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>有机型</td>
+            <td>3.2</td>
+            <td>1.05</td>
+            <td>2.5</td>
+            <td>0.38</td>
+        </tr>
+        <tr align="center">
+            <td>嵌入型</td>
+            <td>2.8</td>
+            <td>1.20</td>
+            <td>2.5</td>
+            <td>0.32</td>
+        </tr>
+        <tr align="center">
+            <td>半独立型</td>
+            <td>3.0</td>
+            <td>1.12</td>
+            <td>2.5</td>
+            <td>0.35</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th colspan="2">工作量影响要素 U</th>
+            <th>非常低</th>
+            <th>低</th>
+            <th>正常</th>
+            <th>高</th>
+            <th>非常高</th>
+            <th>超高</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td rowspan="3">产品因素类</td>
+            <td>软件可靠性 U<sub>1</sub></td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>数据库规模 U<sub>2</sub></td>
+            <td>-</td>
+            <td>0.94</td>
+            <td>1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>产品复杂性 U<sub>3</sub></td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="4">计算机因素类</td>
+            <td>执行时间限制 U<sub>4</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.10</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>主存储限制 U<sub>5</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>易变性 U<sub>6</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>环境周转时间 U<sub>7</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="5">人员因素类</td>
+            <td>分析员能力 U<sub>8</sub></td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>应用领域实际经验 U<sub>9</sub></td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序员能力 U<sub>10</sub></td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>使用经验 U<sub>11</sub></td>
+            <td>1.21</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序语言使用经验 U<sub>12</sub></td>
+            <td>1.41</td>
+            <td>1.07</td>
+            <td>1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">项目因素类</td>
+            <td>现代程序设计技术 U<sub>13</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>软件工具的使用 U<sub>14</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>开发进度限制 U<sub>15</sub></td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td>1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+【例3.1】某软件企业中标了某嵌入型软件工程项目，预计 10k DSI 代码量，根据该软件的需求以及开发投入情况，用 COCOMO 求得该项目的综合影响要素 U 为 1.36，从该企业的信息数据库得知工时费用率 a = 9000 元/人·月，试对该软件的成本、工作量与工期做出估算。
+
+<p>解：根据题意以及嵌入型软件的形式参数值可得：<br>$$<br>M_0 &#x3D; r·L^k &#x3D; 2.8 × 10^{1.2} &#x3D; 44.38 （人·月）<br>$$</p>
+<p>$$<br>M_s &#x3D; U·M_0 &#x3D; 1.36 × 44.38 &#x3D; 60.4（人·月）<br>$$</p>
+<p>$$<br>T_d &#x3D; h(M_s)^d &#x3D; 2.5 × 60.4^{0.32} &#x3D; 9.29（个月）<br>$$</p>
+<p>$$<br>C_s &#x3D; a · M_s &#x3D; 9000 × 60.4 &#x3D; 54.36（万元）<br>$$</p>
+<h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><p>软件企业开发软件通常有两种情况：①全新开发方式；②目标软件与以往开发的某款或者某些软件有许多相同或类似的结构，涉及的开发人员变化也较少，则可采用类比法来估算目标软件的成本。</p>
+<p>假设某软件企业以往开发过一个类似的软件 S<sub>X</sub>，其软件规模为 L<sub>X</sub>；目标开发软件为 S<sub>Y</sub>,其软件规模为 L<sub>Y</sub>。由于目标开发软件的功能结构与原软件 S<sub>X</sub> 有很多类似之处，因此决定在 S<sub>X</sub> 的基础上改编成 S<sub>Y</sub>。</p>
+<p>故引入调整系数 AC，主要通过设计修改 DMC、代码修改 CMC，以及集成修改 IMC 三部分构成。</p>
+<p>调整系数 AC 可用下列公式表示：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC<br>$$</p>
+<p>式中 W<sub>j</sub>（j&#x3D;1，2，3）表示权重系数，其加权和必须等于 1。</p>
+<p>B.W.Boehm 建议权重系数 W<sub>1</sub>，W<sub>2</sub>，W<sub>3</sub> 分别取值为 0.4、0.3 和 0.3。也就是下列公式。<br>$$<br>AC &#x3D; 0.4 · DMC + 0.3 · CMC + 0.3 · IMC<br>$$<br>由此可得 S<sub>Y</sub> 软件的开发规模 L<sub>Y</sub> 可以用下列公式表示。<br>$$<br>L_{Y} &#x3D; L_{X} · AC &#x3D; L_{X} · (0.4 · DMC + 0.3 · CMC + 0.3 · IMC)<br>$$</p>
+<p>【例3.2】某软件公司曾开发过一种规模为 20k 代码量的软件 S<sub>X</sub>，现欲将其改编为嵌入型软件 S<sub>Y</sub>，经估算其设计、代码与集成修改的系数分别是 30%、40% 和 110%，工作量综合影响要素 U &#x3D; 1.2，工时费用率 a &#x3D; 8000 元&#x2F;人·月。试用类比法估算目标软件 S<sub>Y</sub> 的成本。</p>
+<p>解：根据题意可得：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC &#x3D; 0.4 × 0.3 + 0.3 × 0.4 + 0.3 × 1.10 &#x3D; 0.57<br>$$</p>
+<p>$$<br>L_Y &#x3D; L_{X} · AC &#x3D; 20 kLOC × 0.57 &#x3D; 11.4 kLOC<br>$$</p>
+<p>由题意可知，该软件属于嵌入型软件，查表可知相对应的形式参数值：<br>$$<br>M_s &#x3D; U·M_0 &#x3D; U · r · L^k &#x3D; 1.2 × 2.8 × 11.4^{1.20} &#x3D; 62.32（人·月）<br>$$</p>
+<p>$$<br>C_s &#x3D; a·M_s &#x3D; 8000 × 62.32 &#x3D; 498560（元）<br>$$</p>
+<h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><ol>
+<li><p><strong>设备的磨损</strong></p>
+<ol>
+<li><p>设备的<strong>有形磨损</strong></p>
+<p>有形磨损是指设备在生产使用或者闲置过程中，由于使用或者受自然环境的影响所产生的损耗。</p>
+<p>设备的有形磨损根据导致其磨损的不同原因可分为：</p>
+<ul>
+<li>第 Ⅰ 类有形磨损</li>
+<li>第 Ⅱ 类有形磨损</li>
+</ul>
+</li>
+<li><p>设备的<strong>无形磨损</strong></p>
+<p>无形磨损是指随着科技的进步等原因导致设备价值不断降低的现象。</p>
+<p>设备的无形磨损根据导致其磨损的不同原因可分为：</p>
+<ul>
+<li>第 Ⅰ 类无形磨损</li>
+<li>第 Ⅱ 类无形磨损</li>
+</ul>
+</li>
+<li><p>设备的<strong>综合磨损</strong></p>
+<p>综合磨损是指设备购置后既产生了<strong>有形磨损</strong>又产生了<strong>无形磨损</strong>。</p>
+<p>假设设备发生有形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>p</sub>；而设备产生无形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>q</sub>，及设备的综合磨损的计算公式如下：<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q)<br>$$<br>【例3.3】某 IT 企业原始购买价值为 23000 元的 A 电子设备在使用过程中发生磨损，需要修理，修理费用为 4000 元，若重置同类设备价值为 20000 元，若新旧设备生产率及单位产品消耗是相同的，试求该电子设备的综合磨损程度及剩余价值。</p>
+<p>解：由题意可知， K<sub>0</sub> &#x3D; 23000（元），R &#x3D; 4000（元），K<sub>1</sub> &#x3D; 20000（元）。</p>
+<p>A 电子设备的有形磨损程度为<br>$$<br>α_p &#x3D; \frac{R}{K_{1}} &#x3D; \frac{4000}{20000} &#x3D; 0.2<br>$$<br>A 电子设备的无形磨损程度为<br>$$<br>α_q &#x3D; 1 - \frac{K_{1}}{K_{0}} &#x3D; 1 - \frac{20000}{23000} &#x3D; 0.13<br>$$<br>A 电子设备的综合磨损程度为<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q) &#x3D; 1-(1-0.2)(1-0.13) &#x3D; 0.304<br>$$<br>A 电子设备的剩余价值为<br>$$<br>K &#x3D; K_1 - R &#x3D; 20000 - 4000 &#x3D; 16000（元）<br>$$<br>故该电子设备的综合磨损程度是 30.4%，其剩余价值是 16000 元。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>设备的折旧</strong></p>
+<p>我国现行财会制度规定的固定资产折旧法主要有<strong>平均年限法</strong>和<strong>双倍余额递减法</strong>。</p>
+</li>
+</ol>
+<h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><p>价值工程设计的三个基本概念：<strong>价值（ Value ）</strong>、<strong>功能（ Function ）</strong>和<strong>全寿命周期成本（ Cost ）</strong>。</p>
+<ol>
+<li><p><strong>提高软件工程项目价值的途径</strong></p>
+<ol>
+<li>双向型</li>
+<li>节约型</li>
+<li>改进型</li>
+<li>牺牲型</li>
+<li>投资型</li>
+</ol>
+<p>上述提高价值的方法中，1、2 属于降低成本，3、5 属于提高功能，1 是对功能与成本同时进行改善，是最积极、最理想的提高价值的方法。</p>
+</li>
+<li><p><strong>价值工程的主要特征</strong></p>
+<ol>
+<li>价值工程以用户的功能需求为出发点；</li>
+<li>价值工程以功能分析为核心，系统地研究功能和成本之间的关系；</li>
+<li>价值工程是致力于提高价值的创造性活动；</li>
+<li>价值工程是有计划、有组织地按照一定地工序来进行。</li>
+</ol>
+</li>
+</ol>
+<h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><ol>
+<li>百分比法</li>
+<li>ABC 分类法</li>
+<li>价值系数法</li>
+</ol>
+<h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><p>功能分析主要包括<strong>功能定义</strong>与<strong>功能整理</strong>两方面的内容。</p>
+<p>功能整理的步骤如下：</p>
+<ol>
+<li>分析软件产品的基本功能与辅助功能；</li>
+<li>明确功能的上下位与并列关系；</li>
+<li>排列功能系统图。</li>
+</ol>
+<h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><ol>
+<li><strong>挣值分析的基本概念</strong><ol>
+<li>计划价值</li>
+<li>实际成本</li>
+<li>挣值</li>
+<li>完工预算</li>
+</ol>
+</li>
+<li><strong>挣值分析的绩效指标</strong><ol>
+<li>成本偏差</li>
+<li>进度偏差</li>
+<li>进度绩效指标</li>
+<li>成本绩效指标</li>
+</ol>
+</li>
+<li><strong>挣值分析的预测指标</strong><ol>
+<li>完工尚需估算</li>
+<li>完工估算</li>
+<li>完工尚需绩效指标</li>
+</ol>
+</li>
+</ol>
+<h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><p>软件企业的定价策略：</p>
+<ol>
+<li>捆绑定价策略</li>
+<li>撇脂和渗透定价策略<ul>
+<li>撇脂定价法</li>
+<li>渗透定价法</li>
+</ul>
+</li>
+<li>歧视定价策略</li>
+<li>免费使用定价策略</li>
+</ol>
+<h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3><p>软件产品的促销策略确定：</p>
+<p>促销是促进营销的简称，是指采用人员或非人员的方式来帮助或说服客户购买某软件元产品／软件服务，或者让消费者对某个或者某些软件产品产生好感的一种活动。</p>
+<p>促销策略主要包括<strong>直接促销</strong>和<strong>间接促销</strong>。直接促销是指人员上门推销软件产品的活动；间接促销是指采用各种媒体广告、营销推广与公共关系宣传等方式进行推销软件产品的活动。</p>
+<p>软件作为一种特殊的无形产品，除了上述促销手段外，还有一些特殊的促销手段，如<strong>品牌促销</strong>、<strong>教育促销</strong>以及<strong>人员促销</strong>等。</p>
+<ol>
+<li><p>品牌促销</p>
+<p>软件产品／软件服务是一种高技术产品，一般用户在购买软件产品前往往都会心存疑虑。一个良好的软件产品形象能大大消除用户的购买疑虑，让用户产生安全感和信任感。因此，软件企业要大力提高品牌知名度，让客户对软件企业产生信任感，放心购买其产品。软件企业可以通过树立品牌形象，引入企业形象识别系统以及发布产品广告、企业形象广告，建立企业网站、媒体宣传等多种手段来扩大企业的品牌知名度。</p>
+</li>
+<li><p>教育促销</p>
+<p>软件的高科技特性会导致用户较难理解与掌握，软件企业需要利用各种场合来演示自己的产品，如通过软件博览会、展销会等，让目标用户与潜在用户了解该产品的主要功能。教育促销可通过向媒体发送免费的测试软件、认证培训、举办讲座等方式进行普及知识；利用展会进行产品展示等多种手段来扩大软件产品的宣传。</p>
+</li>
+<li><p>人员促销</p>
+<p>人员促销应注重沟通能力以及人际关系。软件企业通过专业的服务人员与用户实现有效的沟通，为客户做好完备的前期咨询工作。这种方式针对性强，让客户觉得自己备受重视，无效劳动少，因此促销成功的概率会比较高。人员促销也有利于软件企业了解市场，能够给软件企业营销决策提供有效的建议与意见。人员促销需要注意以下问题：</p>
+<ol>
+<li>挑选专业技术能力强、个人素质高的促销人员；</li>
+<li>软件企业要根据目标市场的特点、产品的特点等，对促销人员进行资源、促销区域、促销时间等进行合理分配；</li>
+<li>软件企业要对促销人员实施有效的管理与激励，以确保促销目标的实现。</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第2章 软件工程经济学基础</title>
     <url>/posts/a0090002.html</url>
     <content><![CDATA[<h2 id="2-1-软件工程经济分析的基本要素"><a href="#2-1-软件工程经济分析的基本要素" class="headerlink" title="2.1 软件工程经济分析的基本要素"></a>2.1 软件工程经济分析的基本要素</h2><p>软件工程经济分析的基本要素有<strong>投资</strong>、<strong>筹资与融资</strong>、<strong>成本与费用</strong>、<strong>销售收入与利润</strong>、<strong>主要税金</strong>等。</p>
@@ -1270,460 +1733,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第3章 软件的成本管理与定价分析</title>
-    <url>/posts/a0090003.html</url>
-    <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
-<p>成本的分类方法一般可以按照不同的准则进行划分：</p>
-<ol>
-<li><strong>按照企业的主要经营活动</strong>可分为采购成本、研究与开发成本、生产成本、经营成本以及管理费用。</li>
-<li><strong>按照生产费用计入成本</strong>的方法，可分为直接成本和间接成本。</li>
-<li><strong>按照成本与所完成项目工作量的关系</strong>，可分为固定成本和变动成本。</li>
-<li><strong>按照成本所确定的时间</strong>，可分为预算成本、计划成本及实际成本。</li>
-</ol>
-<h3 id="3-1-1-软件工程项目的成本构成"><a href="#3-1-1-软件工程项目的成本构成" class="headerlink" title="3.1.1 软件工程项目的成本构成"></a>3.1.1 软件工程项目的成本构成</h3><p>软件成本是软件在其生存周期内为取得各种软、硬件资源的支持以及维持系统的研究、生产经营及管理工作所支付的所有费用。</p>
-<p>软件工程项目成本又称为软件工程项目支出，是指为了实现软件工程项目目标所耗用资源的成本总和。软件工程项目成本主要由<strong>硬件成本</strong>、<strong>软件开发成本</strong>、<strong>人员培训费用</strong>和<strong>项目管理费用</strong>等构成。</p>
-<p>软件工程项目成本主要涉及以下 15 类：</p>
-<ol>
-<li>调研费用</li>
-<li>环境建设费用</li>
-<li>工具购置费</li>
-<li>基建费用</li>
-<li>软件开发&#x2F;测试费用</li>
-<li>人力资源费用</li>
-<li>水、电、运输费</li>
-<li>第三方评测费</li>
-<li>软件产品制作费用</li>
-<li>培训费用</li>
-<li>现场实施费用</li>
-<li>营销费用</li>
-<li>售后服务运行维护费</li>
-<li>管理费用</li>
-<li>其他费用</li>
-</ol>
-<h3 id="3-1-2-软件成本测算的影响因素"><a href="#3-1-2-软件成本测算的影响因素" class="headerlink" title="3.1.2 软件成本测算的影响因素"></a>3.1.2 软件成本测算的影响因素</h3><h3 id="3-1-3-软件成本测算的流程"><a href="#3-1-3-软件成本测算的流程" class="headerlink" title="3.1.3 软件成本测算的流程"></a>3.1.3 软件成本测算的流程</h3><h2 id="3-2-软件的成本核算"><a href="#3-2-软件的成本核算" class="headerlink" title="3.2 软件的成本核算"></a>3.2 软件的成本核算</h2><p>对软件工程项目的成本与工期测算的方法较多，通常有功能分解法、统计模型法、价值工程法、表格法、驱动因子法、计算机模拟法、类比法、专门成本测算工具软件预算等方法。</p>
-<p>以下主要分析<strong>驱动因子法</strong>和<strong>类比法</strong>。</p>
-<h3 id="3-2-1-功能分解法"><a href="#3-2-1-功能分解法" class="headerlink" title="3.2.1 功能分解法"></a>3.2.1 功能分解法</h3><p>功能分解法主要从结构上将软件系统按照功能或者性能与生存周期各阶段进行二维分解。</p>
-<h3 id="3-2-2-驱动因子法"><a href="#3-2-2-驱动因子法" class="headerlink" title="3.2.2 驱动因子法"></a>3.2.2 驱动因子法</h3><p>驱动因子法又称为影响因子法，是一种在统计模型的基础上通过引入更多对 y 有影响的要素，来完成统计模型估计值的修正的一种定性与定量相结合的方法。</p>
-<ol>
-<li><p><strong>驱动因子法的求解方法</strong></p>
-<ol>
-<li><p>确定对因变量 y 做出估计的统计模型 y&#x3D;g(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)，其中x<sub>j</sub>（1~n）是指通过定量估算法求得的对 y 有较大影响的几个要素。</p>
-</li>
-<li><p>引入综合要素 U，U 是指除了 x<sub>j</sub> 以外对 y 有影响的估计值，如下列公式所示：<br>$$<br>y &#x3D; U · g(x_{1},x_{2},…,x_{n})<br>$$</p>
-<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{n} U_{j}<br>$$</p>
-</li>
-</ol>
-</li>
-<li><p><strong>影响要素引入 x<sub>j</sub> （1~n）的基本原则</strong></p>
-<ol>
-<li>对 y 有重要影响的要素归入 x<sub>j</sub>，其他归入 U<sub>j</sub>。</li>
-<li>易于定量的影响要素归入 x<sub>j</sub>，不易于定量的影响要素归入 U<sub>j</sub>。</li>
-<li>x<sub>j</sub> 的数量不宜太多，否则求解统计模型较困难。</li>
-</ol>
-</li>
-<li><p><strong>结构化成本模型</strong></p>
-<p>结构化成本模型（ COCOMO ）主要有基本模型、中级模型和详细模型三种。</p>
-<p>中级模型适用于系统规划阶段作软件成本估算的模型，其求解方式如下列公式所示：<br>$$<br>C_{s} &#x3D; a · M_{s}<br>$$</p>
-<p>$$<br>T_{d} &#x3D; h(M_{s})^d<br>$$</p>
-<p>$$<br>M_{s} &#x3D; U · M_{0}<br>$$</p>
-<p>$$<br>M_{0} &#x3D; r · L^{k}<br>$$</p>
-<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{15} U_{j}<br>$$</p>
-</li>
-</ol>
-<p><strong>中级 COCOMO 变量参数明细表如下。</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">变量名称</th>
-<th align="center">经济含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">C<sub>s</sub></td>
-<td align="center">软件开发成本</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">a</td>
-<td align="center">软件开发阶段的工时费用率</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">M<sub>s</sub></td>
-<td align="center">软件开发阶段的修正工作量</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">M<sub>0</sub></td>
-<td align="center">软件开发阶段的基本工作量</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">L</td>
-<td align="center">软件开发规模</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">U</td>
-<td align="center">软件综合影响要素</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">U<sub>j</sub></td>
-<td align="center">对成本有一定影响的第 j 个影响要素</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">T<sub>d</sub></td>
-<td align="center">工期（开发周期）</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="center">r，k，h，d</td>
-<td align="center">形式参数</td>
-</tr>
-</tbody></table>
-<p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th rowspan="2">软件总体类型</th>
-            <th colspan="2">基本工作量 M<sub>0</sub></th>
-            <th colspan="2">开发工期 T<sub>d</sub></th>  
-        </tr>
-        <tr align="center">
-            <td>r</td>
-            <td>k</td>
-            <td>h</td>
-            <td>d</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td>有机型</td>
-            <td>3.2</td>
-            <td>1.05</td>
-            <td>2.5</td>
-            <td>0.38</td>
-        </tr>
-        <tr align="center">
-            <td>嵌入型</td>
-            <td>2.8</td>
-            <td>1.20</td>
-            <td>2.5</td>
-            <td>0.32</td>
-        </tr>
-        <tr align="center">
-            <td>半独立型</td>
-            <td>3.0</td>
-            <td>1.12</td>
-            <td>2.5</td>
-            <td>0.35</td>
-        </tr>
-    </tbody>
-</table>
-
-
-<p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th colspan="2">工作量影响要素 U</th>
-            <th>非常低</th>
-            <th>低</th>
-            <th>正常</th>
-            <th>高</th>
-            <th>非常高</th>
-            <th>超高</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td rowspan="3">产品因素类</td>
-            <td>软件可靠性 U<sub>1</sub></td>
-            <td>0.75</td>
-            <td>0.88</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.40</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>数据库规模 U<sub>2</sub></td>
-            <td>-</td>
-            <td>0.94</td>
-            <td>1.00</td>
-            <td>1.08</td>
-            <td>1.16</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>产品复杂性 U<sub>3</sub></td>
-            <td>0.70</td>
-            <td>0.85</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.30</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="4">计算机因素类</td>
-            <td>执行时间限制 U<sub>4</sub></td>
-            <td>-</td>
-            <td>-</td>
-            <td>1.00</td>
-            <td>1.10</td>
-            <td>1.30</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td>主存储限制 U<sub>5</sub></td>
-            <td>-</td>
-            <td>-</td>
-            <td>1.00</td>
-            <td>1.06</td>
-            <td>1.21</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td>易变性 U<sub>6</sub></td>
-            <td>-</td>
-            <td>0.87</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.30</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>环境周转时间 U<sub>7</sub></td>
-            <td>-</td>
-            <td>0.87</td>
-            <td>1.00</td>
-            <td>1.07</td>
-            <td>1.15</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="5">人员因素类</td>
-            <td>分析员能力 U<sub>8</sub></td>
-            <td>1.46</td>
-            <td>1.19</td>
-            <td>1.00</td>
-            <td>0.86</td>
-            <td>0.71</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>应用领域实际经验 U<sub>9</sub></td>
-            <td>1.29</td>
-            <td>1.13</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.82</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>程序员能力 U<sub>10</sub></td>
-            <td>1.42</td>
-            <td>1.17</td>
-            <td>1.00</td>
-            <td>0.86</td>
-            <td>0.70</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>使用经验 U<sub>11</sub></td>
-            <td>1.21</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.90</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>程序语言使用经验 U<sub>12</sub></td>
-            <td>1.41</td>
-            <td>1.07</td>
-            <td>1.00</td>
-            <td>0.95</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="3">项目因素类</td>
-            <td>现代程序设计技术 U<sub>13</sub></td>
-            <td>1.24</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.82</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>软件工具的使用 U<sub>14</sub></td>
-            <td>1.24</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.83</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>开发进度限制 U<sub>15</sub></td>
-            <td>1.23</td>
-            <td>1.08</td>
-            <td>1.00</td>
-            <td>1.04</td>
-            <td>1.10</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
-【例3.1】某软件企业中标了某嵌入型软件工程项目，预计 10k DSI 代码量，根据该软件的需求以及开发投入情况，用 COCOMO 求得该项目的综合影响要素 U 为 1.36，从该企业的信息数据库得知工时费用率 a = 9000 元/人·月，试对该软件的成本、工作量与工期做出估算。
-
-<p>解：根据题意以及嵌入型软件的形式参数值可得：<br>$$<br>M_0 &#x3D; r·L^k &#x3D; 2.8 × 10^{1.2} &#x3D; 44.38 （人·月）<br>$$</p>
-<p>$$<br>M_s &#x3D; U·M_0 &#x3D; 1.36 × 44.38 &#x3D; 60.4（人·月）<br>$$</p>
-<p>$$<br>T_d &#x3D; h(M_s)^d &#x3D; 2.5 × 60.4^{0.32} &#x3D; 9.29（个月）<br>$$</p>
-<p>$$<br>C_s &#x3D; a · M_s &#x3D; 9000 × 60.4 &#x3D; 54.36（万元）<br>$$</p>
-<h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><p>软件企业开发软件通常有两种情况：①全新开发方式；②目标软件与以往开发的某款或者某些软件有许多相同或类似的结构，涉及的开发人员变化也较少，则可采用类比法来估算目标软件的成本。</p>
-<p>假设某软件企业以往开发过一个类似的软件 S<sub>X</sub>，其软件规模为 L<sub>X</sub>；目标开发软件为 S<sub>Y</sub>,其软件规模为 L<sub>Y</sub>。由于目标开发软件的功能结构与原软件 S<sub>X</sub> 有很多类似之处，因此决定在 S<sub>X</sub> 的基础上改编成 S<sub>Y</sub>。</p>
-<p>故引入调整系数 AC，主要通过设计修改 DMC、代码修改 CMC，以及集成修改 IMC 三部分构成。</p>
-<p>调整系数 AC 可用下列公式表示：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC<br>$$</p>
-<p>式中 W<sub>j</sub>（j&#x3D;1，2，3）表示权重系数，其加权和必须等于 1。</p>
-<p>B.W.Boehm 建议权重系数 W<sub>1</sub>，W<sub>2</sub>，W<sub>3</sub> 分别取值为 0.4、0.3 和 0.3。也就是下列公式。<br>$$<br>AC &#x3D; 0.4 · DMC + 0.3 · CMC + 0.3 · IMC<br>$$<br>由此可得 S<sub>Y</sub> 软件的开发规模 L<sub>Y</sub> 可以用下列公式表示。<br>$$<br>L_{Y} &#x3D; L_{X} · AC &#x3D; L_{X} · (0.4 · DMC + 0.3 · CMC + 0.3 · IMC)<br>$$</p>
-<p>【例3.2】某软件公司曾开发过一种规模为 20k 代码量的软件 S<sub>X</sub>，现欲将其改编为嵌入型软件 S<sub>Y</sub>，经估算其设计、代码与集成修改的系数分别是 30%、40% 和 110%，工作量综合影响要素 U &#x3D; 1.2，工时费用率 a &#x3D; 8000 元&#x2F;人·月。试用类比法估算目标软件 S<sub>Y</sub> 的成本。</p>
-<p>解：根据题意可得：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC &#x3D; 0.4 × 0.3 + 0.3 × 0.4 + 0.3 × 1.10 &#x3D; 0.57<br>$$</p>
-<p>$$<br>L_Y &#x3D; L_{X} · AC &#x3D; 20 kLOC × 0.57 &#x3D; 11.4 kLOC<br>$$</p>
-<p>由题意可知，该软件属于嵌入型软件，查表可知相对应的形式参数值：<br>$$<br>M_s &#x3D; U·M_0 &#x3D; U · r · L^k &#x3D; 1.2 × 2.8 × 11.4^{1.20} &#x3D; 62.32（人·月）<br>$$</p>
-<p>$$<br>C_s &#x3D; a·M_s &#x3D; 8000 × 62.32 &#x3D; 498560（元）<br>$$</p>
-<h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><ol>
-<li><p><strong>设备的磨损</strong></p>
-<ol>
-<li><p>设备的<strong>有形磨损</strong></p>
-<p>有形磨损是指设备在生产使用或者闲置过程中，由于使用或者受自然环境的影响所产生的损耗。</p>
-<p>设备的有形磨损根据导致其磨损的不同原因可分为：</p>
-<ul>
-<li>第 Ⅰ 类有形磨损</li>
-<li>第 Ⅱ 类有形磨损</li>
-</ul>
-</li>
-<li><p>设备的<strong>无形磨损</strong></p>
-<p>无形磨损是指随着科技的进步等原因导致设备价值不断降低的现象。</p>
-<p>设备的无形磨损根据导致其磨损的不同原因可分为：</p>
-<ul>
-<li>第 Ⅰ 类无形磨损</li>
-<li>第 Ⅱ 类无形磨损</li>
-</ul>
-</li>
-<li><p>设备的<strong>综合磨损</strong></p>
-<p>综合磨损是指设备购置后既产生了<strong>有形磨损</strong>又产生了<strong>无形磨损</strong>。</p>
-<p>假设设备发生有形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>p</sub>；而设备产生无形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>q</sub>，及设备的综合磨损的计算公式如下：<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q)<br>$$<br>【例3.3】某 IT 企业原始购买价值为 23000 元的 A 电子设备在使用过程中发生磨损，需要修理，修理费用为 4000 元，若重置同类设备价值为 20000 元，若新旧设备生产率及单位产品消耗是相同的，试求该电子设备的综合磨损程度及剩余价值。</p>
-<p>解：由题意可知， K<sub>0</sub> &#x3D; 23000（元），R &#x3D; 4000（元），K<sub>1</sub> &#x3D; 20000（元）。</p>
-<p>A 电子设备的有形磨损程度为<br>$$<br>α_p &#x3D; \frac{R}{K_{1}} &#x3D; \frac{4000}{20000} &#x3D; 0.2<br>$$<br>A 电子设备的无形磨损程度为<br>$$<br>α_q &#x3D; 1 - \frac{K_{1}}{K_{0}} &#x3D; 1 - \frac{20000}{23000} &#x3D; 0.13<br>$$<br>A 电子设备的综合磨损程度为<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q) &#x3D; 1-(1-0.2)(1-0.13) &#x3D; 0.304<br>$$<br>A 电子设备的剩余价值为<br>$$<br>K &#x3D; K_1 - R &#x3D; 20000 - 4000 &#x3D; 16000（元）<br>$$<br>故该电子设备的综合磨损程度是 30.4%，其剩余价值是 16000 元。</p>
-</li>
-</ol>
-</li>
-<li><p><strong>设备的折旧</strong></p>
-<p>我国现行财会制度规定的固定资产折旧法主要有<strong>平均年限法</strong>和<strong>双倍余额递减法</strong>。</p>
-</li>
-</ol>
-<h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><p>价值工程设计的三个基本概念：<strong>价值（ Value ）</strong>、<strong>功能（ Function ）</strong>和<strong>全寿命周期成本（ Cost ）</strong>。</p>
-<ol>
-<li><p><strong>提高软件工程项目价值的途径</strong></p>
-<ol>
-<li>双向型</li>
-<li>节约型</li>
-<li>改进型</li>
-<li>牺牲型</li>
-<li>投资型</li>
-</ol>
-<p>上述提高价值的方法中，1、2 属于降低成本，3、5 属于提高功能，1 是对功能与成本同时进行改善，是最积极、最理想的提高价值的方法。</p>
-</li>
-<li><p><strong>价值工程的主要特征</strong></p>
-<ol>
-<li>价值工程以用户的功能需求为出发点；</li>
-<li>价值工程以功能分析为核心，系统地研究功能和成本之间的关系；</li>
-<li>价值工程是致力于提高价值的创造性活动；</li>
-<li>价值工程是有计划、有组织地按照一定地工序来进行。</li>
-</ol>
-</li>
-</ol>
-<h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><ol>
-<li>百分比法</li>
-<li>ABC 分类法</li>
-<li>价值系数法</li>
-</ol>
-<h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><p>功能分析主要包括<strong>功能定义</strong>与<strong>功能整理</strong>两方面的内容。</p>
-<p>功能整理的步骤如下：</p>
-<ol>
-<li>分析软件产品的基本功能与辅助功能；</li>
-<li>明确功能的上下位与并列关系；</li>
-<li>排列功能系统图。</li>
-</ol>
-<h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><ol>
-<li><strong>挣值分析的基本概念</strong><ol>
-<li>计划价值</li>
-<li>实际成本</li>
-<li>挣值</li>
-<li>完工预算</li>
-</ol>
-</li>
-<li><strong>挣值分析的绩效指标</strong><ol>
-<li>成本偏差</li>
-<li>进度偏差</li>
-<li>进度绩效指标</li>
-<li>成本绩效指标</li>
-</ol>
-</li>
-<li><strong>挣值分析的预测指标</strong><ol>
-<li>完工尚需估算</li>
-<li>完工估算</li>
-<li>完工尚需绩效指标</li>
-</ol>
-</li>
-</ol>
-<h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><p>软件企业的定价策略：</p>
-<ol>
-<li>捆绑定价策略</li>
-<li>撇脂和渗透定价策略<ul>
-<li>撇脂定价法</li>
-<li>渗透定价法</li>
-</ul>
-</li>
-<li>歧视定价策略</li>
-<li>免费使用定价策略</li>
-</ol>
-<h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3><p>软件产品的促销策略确定：</p>
-<p>促销是促进营销的简称，是指采用人员或非人员的方式来帮助或说服客户购买某软件元产品／软件服务，或者让消费者对某个或者某些软件产品产生好感的一种活动。</p>
-<p>促销策略主要包括<strong>直接促销</strong>和<strong>间接促销</strong>。直接促销是指人员上门推销软件产品的活动；间接促销是指采用各种媒体广告、营销推广与公共关系宣传等方式进行推销软件产品的活动。</p>
-<p>软件作为一种特殊的无形产品，除了上述促销手段外，还有一些特殊的促销手段，如<strong>品牌促销</strong>、<strong>教育促销</strong>以及<strong>人员促销</strong>等。</p>
-<ol>
-<li><p>品牌促销</p>
-<p>软件产品／软件服务是一种高技术产品，一般用户在购买软件产品前往往都会心存疑虑。一个良好的软件产品形象能大大消除用户的购买疑虑，让用户产生安全感和信任感。因此，软件企业要大力提高品牌知名度，让客户对软件企业产生信任感，放心购买其产品。软件企业可以通过树立品牌形象，引入企业形象识别系统以及发布产品广告、企业形象广告，建立企业网站、媒体宣传等多种手段来扩大企业的品牌知名度。</p>
-</li>
-<li><p>教育促销</p>
-<p>软件的高科技特性会导致用户较难理解与掌握，软件企业需要利用各种场合来演示自己的产品，如通过软件博览会、展销会等，让目标用户与潜在用户了解该产品的主要功能。教育促销可通过向媒体发送免费的测试软件、认证培训、举办讲座等方式进行普及知识；利用展会进行产品展示等多种手段来扩大软件产品的宣传。</p>
-</li>
-<li><p>人员促销</p>
-<p>人员促销应注重沟通能力以及人际关系。软件企业通过专业的服务人员与用户实现有效的沟通，为客户做好完备的前期咨询工作。这种方式针对性强，让客户觉得自己备受重视，无效劳动少，因此促销成功的概率会比较高。人员促销也有利于软件企业了解市场，能够给软件企业营销决策提供有效的建议与意见。人员促销需要注意以下问题：</p>
-<ol>
-<li>挑选专业技术能力强、个人素质高的促销人员；</li>
-<li>软件企业要根据目标市场的特点、产品的特点等，对促销人员进行资源、促销区域、促销时间等进行合理分配；</li>
-<li>软件企业要对促销人员实施有效的管理与激励，以确保促销目标的实现。</li>
-</ol>
-</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第4章 软件工程项目评价方法与经济效果评价</title>
     <url>/posts/a0090004.html</url>
     <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
@@ -1822,6 +1831,17 @@
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 基础</title>
+    <url>/posts/c0010000.html</url>
+    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
+      <categories>
+        <category>后端技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -2066,17 +2086,6 @@
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 基础</title>
-    <url>/posts/c0010000.html</url>
-    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
-      <categories>
-        <category>后端技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
