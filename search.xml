@@ -14,34 +14,12 @@
       </tags>
   </entry>
   <entry>
-    <title>第3章 分治法</title>
-    <url>/posts/a0060003.html</url>
-    <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><h2 id="3-4-求解组合问题"><a href="#3-4-求解组合问题" class="headerlink" title="3.4 求解组合问题"></a>3.4 求解组合问题</h2><h3 id="3-4-1-求解最大连续子序列和问题"><a href="#3-4-1-求解最大连续子序列和问题" class="headerlink" title="3.4.1 求解最大连续子序列和问题"></a>3.4.1 求解最大连续子序列和问题</h3><h3 id="3-4-2-求解棋盘覆盖问题"><a href="#3-4-2-求解棋盘覆盖问题" class="headerlink" title="3.4.2 求解棋盘覆盖问题"></a>3.4.2 求解棋盘覆盖问题</h3><h3 id="3-4-3-求解循环日程安排问题"><a href="#3-4-3-求解循环日程安排问题" class="headerlink" title="3.4.3 求解循环日程安排问题"></a>3.4.3 求解循环日程安排问题</h3><h2 id="3-5-求解大整数乘法和矩阵乘法问题"><a href="#3-5-求解大整数乘法和矩阵乘法问题" class="headerlink" title="3.5 求解大整数乘法和矩阵乘法问题"></a>3.5 求解大整数乘法和矩阵乘法问题</h2><h3 id="3-5-1-求解大整数乘法问题"><a href="#3-5-1-求解大整数乘法问题" class="headerlink" title="3.5.1 求解大整数乘法问题"></a>3.5.1 求解大整数乘法问题</h3><h3 id="3-5-2-求解矩阵乘法问题"><a href="#3-5-2-求解矩阵乘法问题" class="headerlink" title="3.5.2 求解矩阵乘法问题"></a>3.5.2 求解矩阵乘法问题</h3><h2 id="3-6-并行计算简介"><a href="#3-6-并行计算简介" class="headerlink" title="3.6 并行计算简介"></a>3.6 并行计算简介</h2><h3 id="3-6-1-并行计算概述"><a href="#3-6-1-并行计算概述" class="headerlink" title="3.6.1 并行计算概述"></a>3.6.1 并行计算概述</h3><h3 id="3-6-2-并行计算模型"><a href="#3-6-2-并行计算模型" class="headerlink" title="3.6.2 并行计算模型"></a>3.6.2 并行计算模型</h3><h3 id="3-6-3-快速排序的并行算法"><a href="#3-6-3-快速排序的并行算法" class="headerlink" title="3.6.3 快速排序的并行算法"></a>3.6.3 快速排序的并行算法</h3><hr>
-<h2 id="3-7-练习题"><a href="#3-7-练习题" class="headerlink" title="3.7 练习题"></a>3.7 练习题</h2><h2 id="3-8-上机实验题"><a href="#3-8-上机实验题" class="headerlink" title="3.8 上机实验题"></a>3.8 上机实验题</h2><h2 id="3-9-在线编程题"><a href="#3-9-在线编程题" class="headerlink" title="3.9 在线编程题"></a>3.9 在线编程题</h2><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《算法设计与分析》</title>
     <url>/posts/a0060000.html</url>
     <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3><h3 id="第5章-回溯法"><a href="#第5章-回溯法" class="headerlink" title="第5章 回溯法"></a><a href="https://georgedi.top/posts/a0060005.html">第5章 回溯法</a></h3><h3 id="第7章-贪心法"><a href="#第7章-贪心法" class="headerlink" title="第7章 贪心法"></a><a href="https://georgedi.top/posts/a0060007.html">第7章 贪心法</a></h3><h3 id="第8章-动态规划"><a href="#第8章-动态规划" class="headerlink" title="第8章 动态规划"></a><a href="https://georgedi.top/posts/a0060008.html">第8章 动态规划</a></h3>]]></content>
       <categories>
         <category>科班基础</category>
       </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第2章 递归算法设计技术</title>
-    <url>/posts/a0060002.html</url>
-    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><h3 id="2-2-4-基于归纳思想的递归算法设计"><a href="#2-2-4-基于归纳思想的递归算法设计" class="headerlink" title="2.2.4 基于归纳思想的递归算法设计"></a>2.2.4 基于归纳思想的递归算法设计</h3><h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><h3 id="2-3-2-求解-n-皇后问题"><a href="#2-3-2-求解-n-皇后问题" class="headerlink" title="2.3.2 求解 n 皇后问题"></a>2.3.2 求解 n 皇后问题</h3><h2 id="2-4-递归算法转化为非递归算法"><a href="#2-4-递归算法转化为非递归算法" class="headerlink" title="2.4 递归算法转化为非递归算法"></a>2.4 递归算法转化为非递归算法</h2><h3 id="2-4-1-用循环结构替代递归过程"><a href="#2-4-1-用循环结构替代递归过程" class="headerlink" title="2.4.1 用循环结构替代递归过程"></a>2.4.1 用循环结构替代递归过程</h3><h3 id="2-4-2-用栈消除递归过程"><a href="#2-4-2-用栈消除递归过程" class="headerlink" title="2.4.2 用栈消除递归过程"></a>2.4.2 用栈消除递归过程</h3><h2 id="2-5-递推式的计算"><a href="#2-5-递推式的计算" class="headerlink" title="2.5 递推式的计算"></a>2.5 递推式的计算</h2><h3 id="2-5-1-用特征方程求解递归方程"><a href="#2-5-1-用特征方程求解递归方程" class="headerlink" title="2.5.1 用特征方程求解递归方程"></a>2.5.1 用特征方程求解递归方程</h3><h3 id="2-5-2-用递归树求解递归方程"><a href="#2-5-2-用递归树求解递归方程" class="headerlink" title="2.5.2 用递归树求解递归方程"></a>2.5.2 用递归树求解递归方程</h3><h3 id="2-5-3-用主方法求解递归方程"><a href="#2-5-3-用主方法求解递归方程" class="headerlink" title="2.5.3 用主方法求解递归方程"></a>2.5.3 用主方法求解递归方程</h3><hr>
-<h2 id="2-6-练习题"><a href="#2-6-练习题" class="headerlink" title="2.6 练习题"></a>2.6 练习题</h2><h2 id="2-7-上机实验题"><a href="#2-7-上机实验题" class="headerlink" title="2.7 上机实验题"></a>2.7 上机实验题</h2><h2 id="2-8-在线编程题"><a href="#2-8-在线编程题" class="headerlink" title="2.8 在线编程题"></a>2.8 在线编程题</h2><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
       <tags>
         <tag>算法</tag>
       </tags>
@@ -101,6 +79,13 @@
 <p>那么如何评价算法的效率呢？通常有两种衡量算法效率的方法：<strong>事后统计法</strong>和<strong>事前分析估算法</strong>。</p>
 <p>前者存在这些缺点：一是必须执行程序，二是存在其他因素掩盖算法本质。</p>
 <p>所以下面均采用事前分析估算法来分析算法效率。</p>
+<p>分析算法占用计算机资源的情况，占用资源越多、算法复杂度越高，效率越低，反之占用的资源少、复杂度越低，效率越高。</p>
+<p>衡量算法复杂性有2个维度：</p>
+<ul>
+<li>时间复杂度 𝑇(𝑛)：抽象计算机上运行所需时间。</li>
+<li>空间复杂度 𝑆(𝑛) ：抽象计算机上运行所需空间。</li>
+</ul>
+<p>※𝑛：要解决的问题规模。</p>
 <h3 id="1-2-1-算法时间复杂度分析"><a href="#1-2-1-算法时间复杂度分析" class="headerlink" title="1.2.1 算法时间复杂度分析"></a>1.2.1 算法时间复杂度分析</h3><h4 id="1-时间复杂度分析概述"><a href="#1-时间复杂度分析概述" class="headerlink" title="1.时间复杂度分析概述"></a>1.时间复杂度分析概述</h4><p>一个算法用高级语言实现后，在计算机上运行时所消耗的时间与很多因素有关，例如计算机的运行速度、编写程序采用的计算机语言、编译产生的机器语言代码质量和问题的规模等。</p>
 <p>在这些因素中，前 3 个都与具体的机器有关。撇开这些与计算机硬件、软件有关的因素，仅考虑算法本身的效率高低，可以认为一个特定算法的“运行工作量”的大小只依赖于问题的规模（通常用整数量 n 表示），或者说它是问题规模的函数。这便是事前分析估算法。</p>
 <p>算法的执行时间主要与<strong>问题规模</strong>有关，例如数组的元素个数、矩阵的阶数等都可作为问题规模。</p>
@@ -181,10 +166,128 @@
 <h3 id="1-3-1-STL-概述"><a href="#1-3-1-STL-概述" class="headerlink" title="1.3.1 STL 概述"></a>1.3.1 STL 概述</h3><p>STL 主要由 container（容器）、algorithm（算法）和 iterator（迭代器）三大部分构成，容器用于存放数据对象（元素），算法用于操作容器中的数据对象。</p>
 <p>尽管各种容器的内部结构各异，但其外部给人的感觉通常是相似的，即将容器数据的操作设计成通用算法，也就是将算法和容器分离开来。算法和容器之间的中介就是迭代器。</p>
 <p><strong>容器</strong>、<strong>算法</strong>和<strong>迭代器</strong>称为 STL 的三大件，它们之间的关系如下图所示：</p>
-<img src="https://s1.ax1x.com/2023/06/04/pCCPy8A.jpg" alt="STL三大件" style="zoom:67%;" />
+<img src="https://s1.ax1x.com/2023/06/04/pCCPy8A.jpg" alt="STL三大件"  />
 
-<h4 id="1-什么是-STL-容器"><a href="#1-什么是-STL-容器" class="headerlink" title="1.什么是 STL 容器"></a>1.什么是 STL 容器</h4><h4 id="2-什么是-STL-算法"><a href="#2-什么是-STL-算法" class="headerlink" title="2.什么是 STL 算法"></a>2.什么是 STL 算法</h4><h4 id="3-什么是-STL-迭代器"><a href="#3-什么是-STL-迭代器" class="headerlink" title="3.什么是 STL 迭代器"></a>3.什么是 STL 迭代器</h4><h3 id="1-3-2-常用的-STL-容器"><a href="#1-3-2-常用的-STL-容器" class="headerlink" title="1.3.2 常用的 STL 容器"></a>1.3.2 常用的 STL 容器</h3><h3 id="1-3-3-STL-在算法设计中的应用"><a href="#1-3-3-STL-在算法设计中的应用" class="headerlink" title="1.3.3 STL 在算法设计中的应用"></a>1.3.3 STL 在算法设计中的应用</h3><hr>
+<h4 id="1-什么是-STL-容器"><a href="#1-什么是-STL-容器" class="headerlink" title="1.什么是 STL 容器"></a>1.什么是 STL 容器</h4><p>简单地说，一个 STL 容器就是一种数据结构，例如链表、栈和队列等，这些数据结构在 STL 中都已经实现好了，在算法设计中可以直接使用它们。</p>
+<p>以下是常用的数据结构和相应的头文件：</p>
+<table>
+<thead>
+<tr>
+<th align="center">数据结构</th>
+<th align="center">说明</th>
+<th align="center">实现头文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">向量（ vector ）</td>
+<td align="center">连续存储元素。底层数据结构为数组。支持快速随机访问。</td>
+<td align="center">&lt; vector &gt;</td>
+</tr>
+<tr>
+<td align="center">字符串（ string ）</td>
+<td align="center">字符串处理容器。</td>
+<td align="center">&lt; string &gt;</td>
+</tr>
+<tr>
+<td align="center">双端队列（ deque ）</td>
+<td align="center">连续存储的指向不同元素的指针所组成的数组。底层数据结构为一个中央控制器和多个缓冲区，支持首尾元素（中间不能）快速增删，也支持随机访问。</td>
+<td align="center">&lt; deque &gt;</td>
+</tr>
+<tr>
+<td align="center">链表（ list ）</td>
+<td align="center">由结点组成的链表，每个结点包含着一个元素。底层数据结构为双向链表，支持结点的快速增删。</td>
+<td align="center">&lt; list &gt;</td>
+</tr>
+<tr>
+<td align="center">栈（ stack ）</td>
+<td align="center">后进先出的序列。底层一般用 deque 或者 list 实现。</td>
+<td align="center">&lt; stack &gt;</td>
+</tr>
+<tr>
+<td align="center">队列（ queue ）</td>
+<td align="center">先进先出的序列。底层一般用 deque 或者 list 实现。</td>
+<td align="center">&lt; queue &gt;</td>
+</tr>
+<tr>
+<td align="center">优先队列（ priority_queue ）</td>
+<td align="center">元素的进出队顺序由某个谓词或者关系函数决定的一种队列。底层数据结构一般为 vector 或者 deque。</td>
+<td align="center">&lt; queue &gt;</td>
+</tr>
+<tr>
+<td align="center">集合（ set ）&#x2F;多重集合（ multiset ）</td>
+<td align="center">由结点组成的红黑树，每个结点都包含着一个元素，set 中的所有元素有序但不重复，multiset 中的所有关键字有序但不重复。</td>
+<td align="center">&lt; set &gt;</td>
+</tr>
+<tr>
+<td align="center">映射（ map ）&#x2F;多重映射（ multimap ）</td>
+<td align="center">由（关键字，值）对组成的集合，底层数据结构为红黑树，map 中的所有关键字有序但不重复，multimap 中的所有关键字有序但可以重复。</td>
+<td align="center">&lt; map &gt;</td>
+</tr>
+</tbody></table>
+<p>C++ 中引入了命名空间的概念，在不同命名空间中可以存在相同名字的标识符。STL 的 sort() 以及其标识符都封装在命名空间 std 中，使用 STL 时必须将下面语句插入到源代码中：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std; </span><br></pre></td></tr></table></figure>
+
+<h4 id="2-什么是-STL-算法"><a href="#2-什么是-STL-算法" class="headerlink" title="2.什么是 STL 算法"></a>2.什么是 STL 算法</h4><p>STL 算法是用来操作容器中数据的模板函数。</p>
+<p>STL 算法部分主要由头文件 &lt; algorithm &gt;、&lt; numeric &gt; 和 &lt; functional &gt; 组成。</p>
+<ul>
+<li>&lt; algorithm &gt; 是所有 STL 头文件中最大的一个，它由一大堆模板函数组成，功能范围涉及容器元素的比较、交换、查找、遍历、复制、修改、删除、排序和合并等操作。</li>
+<li>&lt; numeric &gt; 的体积很小，只包括几个简单数学运算的模板函数。</li>
+<li>&lt; functional &gt; 中定义了一些模板类，用于声明关系函数对象。</li>
+</ul>
+<h4 id="3-什么是-STL-迭代器"><a href="#3-什么是-STL-迭代器" class="headerlink" title="3.什么是 STL 迭代器"></a>3.什么是 STL 迭代器</h4><p>简单地说，STL 迭代器用于访问容器中的数据对象。每个容器都有自己的迭代器，只有容器自己知道如何访问自己的元素。</p>
+<p>迭代器像 C&#x2F;C++ 中的指针，算法通过迭代器来定位和操作容器中的元素。</p>
+<p>迭代器有各种不同的创建方法，程序可能把迭代器作为一个变量创建，一个 STL 容器类可能为了使用一个特定类型的数据而创建一个迭代器。作为指针，必须能够使用 * 操作符来获取数据值。</p>
+<p>程序员可以使用相关运算符来操作迭代器。例如，++ 运算符用来递增迭代器，以访问容器中的下一个数据对象。如果迭代器到达了容器中的最后一个元素的后面，则迭代器变成一个特殊的值，就好像使用 NULL 或未初始化的指针一样。</p>
+<p>常用的迭代器如下：</p>
+<ul>
+<li>iterator：指向容器中存放元素的迭代器，用于正向遍历容器中的元素。</li>
+<li>const_iterator：指向容器中存放元素的常量迭代器，只能读取容器中的元素。</li>
+<li>reverse_iterator：指向容器中存放元素的反向迭代器，用于反向遍历容器中的元素。</li>
+<li>const_reverse_iterator：指向容器中存放元素的常量反向迭代器，只能读取容器中的元素。</li>
+</ul>
+<p>迭代器的常用运算如下：</p>
+<ul>
+<li>++：正向移动迭代器。</li>
+<li>–：反向移动迭代器。</li>
+<li>*：返回迭代器所指的元素值。</li>
+</ul>
+<p>例如，以下语句定义一个存放 int 型整数的 vector 容器。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector &lt;<span class="type">int</span>&gt; myv;</span><br></pre></td></tr></table></figure>
+
+<p>用户可以使用 vector 容器的成员函数 push _ back (）在 myv 的末尾插入元素：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">1</span>);</span><br><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">2</span>);</span><br><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这样 myv 中包含 3 个元素，依次是 1、2、3。如果要正向输出所有元素，可以使用正向迭代器：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator it	<span class="comment">//定义正向迭代器 it</span></span><br><span class="line"><span class="keyword">for</span>(it=myv.<span class="built_in">begin</span>();it!=myv.<span class="built_in">end</span>();++it)	<span class="comment">//从头到尾遍历所有元素</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,*it);	<span class="comment">//输出：1 2 3</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>如果要反向输出所有元素，可以使用反向迭代器：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::reverse_iterator rit	<span class="comment">//定义反向迭代器 rit</span></span><br><span class="line"><span class="keyword">for</span>(rit=myv.<span class="built_in">rbegin</span>();rit!=myv.<span class="built_in">rend</span>();++rit)	<span class="comment">//从尾到头遍历所有元素</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,*rit);	<span class="comment">//输出：3 2 1</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-2-常用的-STL-容器"><a href="#1-3-2-常用的-STL-容器" class="headerlink" title="1.3.2 常用的 STL 容器"></a>1.3.2 常用的 STL 容器</h3><p>STL 容器很多，每一个容器就是一个类模板，大致分为<strong>顺序容器</strong>、<strong>适配器容器</strong>和<strong>关联容器</strong> 3 种类型。</p>
+<h4 id="1-顺序容器"><a href="#1-顺序容器" class="headerlink" title="1.顺序容器"></a>1.顺序容器</h4><h4 id="2-适配器容器"><a href="#2-适配器容器" class="headerlink" title="2.适配器容器"></a>2.适配器容器</h4><h4 id="3-关联容器"><a href="#3-关联容器" class="headerlink" title="3.关联容器"></a>3.关联容器</h4><h3 id="1-3-3-STL-在算法设计中的应用"><a href="#1-3-3-STL-在算法设计中的应用" class="headerlink" title="1.3.3 STL 在算法设计中的应用"></a>1.3.3 STL 在算法设计中的应用</h3><h4 id="1-存放主数据"><a href="#1-存放主数据" class="headerlink" title="1.存放主数据"></a>1.存放主数据</h4><h4 id="2-存放临时数据"><a href="#2-存放临时数据" class="headerlink" title="2.存放临时数据"></a>2.存放临时数据</h4><h4 id="3-检测数据元素的唯一性"><a href="#3-检测数据元素的唯一性" class="headerlink" title="3.检测数据元素的唯一性"></a>3.检测数据元素的唯一性</h4><h4 id="4-数据的排序"><a href="#4-数据的排序" class="headerlink" title="4.数据的排序"></a>4.数据的排序</h4><h4 id="5-优先队列作为堆"><a href="#5-优先队列作为堆" class="headerlink" title="5.优先队列作为堆"></a>5.优先队列作为堆</h4><hr>
 <h2 id="1-4-练习题"><a href="#1-4-练习题" class="headerlink" title="1.4 练习题"></a>1.4 练习题</h2><h2 id="1-5-上机实验题"><a href="#1-5-上机实验题" class="headerlink" title="1.5 上机实验题"></a>1.5 上机实验题</h2><h2 id="1-6-在线编程题"><a href="#1-6-在线编程题" class="headerlink" title="1.6 在线编程题"></a>1.6 在线编程题</h2><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第2章 递归算法设计技术</title>
+    <url>/posts/a0060002.html</url>
+    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><h3 id="2-2-4-基于归纳思想的递归算法设计"><a href="#2-2-4-基于归纳思想的递归算法设计" class="headerlink" title="2.2.4 基于归纳思想的递归算法设计"></a>2.2.4 基于归纳思想的递归算法设计</h3><h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><h3 id="2-3-2-求解-n-皇后问题"><a href="#2-3-2-求解-n-皇后问题" class="headerlink" title="2.3.2 求解 n 皇后问题"></a>2.3.2 求解 n 皇后问题</h3><h2 id="2-4-递归算法转化为非递归算法"><a href="#2-4-递归算法转化为非递归算法" class="headerlink" title="2.4 递归算法转化为非递归算法"></a>2.4 递归算法转化为非递归算法</h2><h3 id="2-4-1-用循环结构替代递归过程"><a href="#2-4-1-用循环结构替代递归过程" class="headerlink" title="2.4.1 用循环结构替代递归过程"></a>2.4.1 用循环结构替代递归过程</h3><h3 id="2-4-2-用栈消除递归过程"><a href="#2-4-2-用栈消除递归过程" class="headerlink" title="2.4.2 用栈消除递归过程"></a>2.4.2 用栈消除递归过程</h3><h2 id="2-5-递推式的计算"><a href="#2-5-递推式的计算" class="headerlink" title="2.5 递推式的计算"></a>2.5 递推式的计算</h2><h3 id="2-5-1-用特征方程求解递归方程"><a href="#2-5-1-用特征方程求解递归方程" class="headerlink" title="2.5.1 用特征方程求解递归方程"></a>2.5.1 用特征方程求解递归方程</h3><h3 id="2-5-2-用递归树求解递归方程"><a href="#2-5-2-用递归树求解递归方程" class="headerlink" title="2.5.2 用递归树求解递归方程"></a>2.5.2 用递归树求解递归方程</h3><h3 id="2-5-3-用主方法求解递归方程"><a href="#2-5-3-用主方法求解递归方程" class="headerlink" title="2.5.3 用主方法求解递归方程"></a>2.5.3 用主方法求解递归方程</h3><hr>
+<h2 id="2-6-练习题"><a href="#2-6-练习题" class="headerlink" title="2.6 练习题"></a>2.6 练习题</h2><h2 id="2-7-上机实验题"><a href="#2-7-上机实验题" class="headerlink" title="2.7 上机实验题"></a>2.7 上机实验题</h2><h2 id="2-8-在线编程题"><a href="#2-8-在线编程题" class="headerlink" title="2.8 在线编程题"></a>2.8 在线编程题</h2><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第3章 分治法</title>
+    <url>/posts/a0060003.html</url>
+    <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><h2 id="3-4-求解组合问题"><a href="#3-4-求解组合问题" class="headerlink" title="3.4 求解组合问题"></a>3.4 求解组合问题</h2><h3 id="3-4-1-求解最大连续子序列和问题"><a href="#3-4-1-求解最大连续子序列和问题" class="headerlink" title="3.4.1 求解最大连续子序列和问题"></a>3.4.1 求解最大连续子序列和问题</h3><h3 id="3-4-2-求解棋盘覆盖问题"><a href="#3-4-2-求解棋盘覆盖问题" class="headerlink" title="3.4.2 求解棋盘覆盖问题"></a>3.4.2 求解棋盘覆盖问题</h3><h3 id="3-4-3-求解循环日程安排问题"><a href="#3-4-3-求解循环日程安排问题" class="headerlink" title="3.4.3 求解循环日程安排问题"></a>3.4.3 求解循环日程安排问题</h3><h2 id="3-5-求解大整数乘法和矩阵乘法问题"><a href="#3-5-求解大整数乘法和矩阵乘法问题" class="headerlink" title="3.5 求解大整数乘法和矩阵乘法问题"></a>3.5 求解大整数乘法和矩阵乘法问题</h2><h3 id="3-5-1-求解大整数乘法问题"><a href="#3-5-1-求解大整数乘法问题" class="headerlink" title="3.5.1 求解大整数乘法问题"></a>3.5.1 求解大整数乘法问题</h3><h3 id="3-5-2-求解矩阵乘法问题"><a href="#3-5-2-求解矩阵乘法问题" class="headerlink" title="3.5.2 求解矩阵乘法问题"></a>3.5.2 求解矩阵乘法问题</h3><h2 id="3-6-并行计算简介"><a href="#3-6-并行计算简介" class="headerlink" title="3.6 并行计算简介"></a>3.6 并行计算简介</h2><h3 id="3-6-1-并行计算概述"><a href="#3-6-1-并行计算概述" class="headerlink" title="3.6.1 并行计算概述"></a>3.6.1 并行计算概述</h3><h3 id="3-6-2-并行计算模型"><a href="#3-6-2-并行计算模型" class="headerlink" title="3.6.2 并行计算模型"></a>3.6.2 并行计算模型</h3><h3 id="3-6-3-快速排序的并行算法"><a href="#3-6-3-快速排序的并行算法" class="headerlink" title="3.6.3 快速排序的并行算法"></a>3.6.3 快速排序的并行算法</h3><hr>
+<h2 id="3-7-练习题"><a href="#3-7-练习题" class="headerlink" title="3.7 练习题"></a>3.7 练习题</h2><h2 id="3-8-上机实验题"><a href="#3-8-上机实验题" class="headerlink" title="3.8 上机实验题"></a>3.8 上机实验题</h2><h2 id="3-9-在线编程题"><a href="#3-9-在线编程题" class="headerlink" title="3.9 在线编程题"></a>3.9 在线编程题</h2><hr>
 <p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
 ]]></content>
       <tags>
@@ -211,6 +314,29 @@
 ]]></content>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第8章 动态规划</title>
+    <url>/posts/a0060008.html</url>
+    <content><![CDATA[<h2 id="8-1-动态规划概述"><a href="#8-1-动态规划概述" class="headerlink" title="8.1 动态规划概述"></a>8.1 动态规划概述</h2><h3 id="8-1-1-从求解斐波那契数列看动态规划法"><a href="#8-1-1-从求解斐波那契数列看动态规划法" class="headerlink" title="8.1.1 从求解斐波那契数列看动态规划法"></a>8.1.1 从求解斐波那契数列看动态规划法</h3><h3 id="8-1-2-动态规划的原理"><a href="#8-1-2-动态规划的原理" class="headerlink" title="8.1.2 动态规划的原理"></a>8.1.2 动态规划的原理</h3><h3 id="8-1-3-动态规划求解的基本步骤"><a href="#8-1-3-动态规划求解的基本步骤" class="headerlink" title="8.1.3 动态规划求解的基本步骤"></a>8.1.3 动态规划求解的基本步骤</h3><h3 id="8-1-4-动态规划与其他方法的比较"><a href="#8-1-4-动态规划与其他方法的比较" class="headerlink" title="8.1.4 动态规划与其他方法的比较"></a>8.1.4 动态规划与其他方法的比较</h3><h2 id="8-2-求解整数拆分问题"><a href="#8-2-求解整数拆分问题" class="headerlink" title="8.2 求解整数拆分问题"></a>8.2 求解整数拆分问题</h2><h2 id="8-3-求解最大连续子序列和问题"><a href="#8-3-求解最大连续子序列和问题" class="headerlink" title="8.3 求解最大连续子序列和问题"></a>8.3 求解最大连续子序列和问题</h2><h2 id="8-4-求解三角形最小路径问题"><a href="#8-4-求解三角形最小路径问题" class="headerlink" title="8.4 求解三角形最小路径问题"></a>8.4 求解三角形最小路径问题</h2><h2 id="8-5-求解最长公共子序列问题"><a href="#8-5-求解最长公共子序列问题" class="headerlink" title="8.5 求解最长公共子序列问题"></a>8.5 求解最长公共子序列问题</h2><h2 id="8-6-求解最长递增子序列问题"><a href="#8-6-求解最长递增子序列问题" class="headerlink" title="8.6 求解最长递增子序列问题"></a>8.6 求解最长递增子序列问题</h2><h2 id="8-7-求解编辑距离问题"><a href="#8-7-求解编辑距离问题" class="headerlink" title="8.7 求解编辑距离问题"></a>8.7 求解编辑距离问题</h2><h2 id="8-8-求解-0-x2F-1-问题"><a href="#8-8-求解-0-x2F-1-问题" class="headerlink" title="8.8 求解 0&#x2F;1 问题"></a>8.8 求解 0&#x2F;1 问题</h2><h2 id="8-9-求解完全背包问题"><a href="#8-9-求解完全背包问题" class="headerlink" title="8.9 求解完全背包问题"></a>8.9 求解完全背包问题</h2><h2 id="8-10-求解资源分配问题"><a href="#8-10-求解资源分配问题" class="headerlink" title="8.10 求解资源分配问题"></a>8.10 求解资源分配问题</h2><h2 id="8-11-求解会议安排问题"><a href="#8-11-求解会议安排问题" class="headerlink" title="8.11 求解会议安排问题"></a>8.11 求解会议安排问题</h2><h2 id="8-12-滚动数组"><a href="#8-12-滚动数组" class="headerlink" title="8.12 滚动数组"></a>8.12 滚动数组</h2><h3 id="8-12-1-什么是滚动数组"><a href="#8-12-1-什么是滚动数组" class="headerlink" title="8.12.1 什么是滚动数组"></a>8.12.1 什么是滚动数组</h3><h3 id="8-12-2-用滚动数组求解-0-x2F-1-背包问题"><a href="#8-12-2-用滚动数组求解-0-x2F-1-背包问题" class="headerlink" title="8.12.2 用滚动数组求解 0&#x2F;1 背包问题"></a>8.12.2 用滚动数组求解 0&#x2F;1 背包问题</h3><hr>
+<h2 id="8-13-练习题"><a href="#8-13-练习题" class="headerlink" title="8.13 练习题"></a>8.13 练习题</h2><h2 id="8-14-上机实验题"><a href="#8-14-上机实验题" class="headerlink" title="8.14 上机实验题"></a>8.14 上机实验题</h2><h2 id="8-15-在线编程题"><a href="#8-15-在线编程题" class="headerlink" title="8.15 在线编程题"></a>8.15 在线编程题</h2><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《软件工程经济学》</title>
+    <url>/posts/a0090000.html</url>
+    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-绪论"><a href="#第1章-绪论" class="headerlink" title="第1章 绪论"></a><a href="https://georgedi.top/posts/a0090001.html">第1章 绪论</a></h3><h3 id="第2章-软件工程经济学基础"><a href="#第2章-软件工程经济学基础" class="headerlink" title="第2章 软件工程经济学基础"></a><a href="https://georgedi.top/posts/a0090002.html">第2章 软件工程经济学基础</a></h3><h3 id="第3章-软件的成本管理与定价分析"><a href="#第3章-软件的成本管理与定价分析" class="headerlink" title="第3章 软件的成本管理与定价分析"></a><a href="https://georgedi.top/posts/a0090003.html">第3章 软件的成本管理与定价分析</a></h3><h3 id="第4章-软件工程项目评价方法与经济效果评价"><a href="#第4章-软件工程项目评价方法与经济效果评价" class="headerlink" title="第4章 软件工程项目评价方法与经济效果评价"></a><a href="https://georgedi.top/posts/a0090004.html">第4章 软件工程项目评价方法与经济效果评价</a></h3><h3 id="第5章-软件生产函数、效益分析及不确定性分析"><a href="#第5章-软件生产函数、效益分析及不确定性分析" class="headerlink" title="第5章 软件生产函数、效益分析及不确定性分析"></a><a href="https://georgedi.top/posts/a0090005.html">第5章 软件生产函数、效益分析及不确定性分析</a></h3><h3 id="第6章-软件工程项目进度计划的制订"><a href="#第6章-软件工程项目进度计划的制订" class="headerlink" title="第6章 软件工程项目进度计划的制订"></a><a href="https://georgedi.top/posts/a0090006.html">第6章 软件工程项目进度计划的制订</a></h3><h3 id="第7章-软件工程项目的团队建设、风险管理及质量管理"><a href="#第7章-软件工程项目的团队建设、风险管理及质量管理" class="headerlink" title="第7章 软件工程项目的团队建设、风险管理及质量管理"></a><a href="https://georgedi.top/posts/a0090007.html">第7章 软件工程项目的团队建设、风险管理及质量管理</a></h3><h3 id="第8章-软件测试"><a href="#第8章-软件测试" class="headerlink" title="第8章 软件测试"></a><a href="https://georgedi.top/posts/a0090008.html">第8章 软件测试</a></h3>]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
@@ -811,17 +937,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第8章 动态规划</title>
-    <url>/posts/a0060008.html</url>
-    <content><![CDATA[<h2 id="8-1-动态规划概述"><a href="#8-1-动态规划概述" class="headerlink" title="8.1 动态规划概述"></a>8.1 动态规划概述</h2><h3 id="8-1-1-从求解斐波那契数列看动态规划法"><a href="#8-1-1-从求解斐波那契数列看动态规划法" class="headerlink" title="8.1.1 从求解斐波那契数列看动态规划法"></a>8.1.1 从求解斐波那契数列看动态规划法</h3><h3 id="8-1-2-动态规划的原理"><a href="#8-1-2-动态规划的原理" class="headerlink" title="8.1.2 动态规划的原理"></a>8.1.2 动态规划的原理</h3><h3 id="8-1-3-动态规划求解的基本步骤"><a href="#8-1-3-动态规划求解的基本步骤" class="headerlink" title="8.1.3 动态规划求解的基本步骤"></a>8.1.3 动态规划求解的基本步骤</h3><h3 id="8-1-4-动态规划与其他方法的比较"><a href="#8-1-4-动态规划与其他方法的比较" class="headerlink" title="8.1.4 动态规划与其他方法的比较"></a>8.1.4 动态规划与其他方法的比较</h3><h2 id="8-2-求解整数拆分问题"><a href="#8-2-求解整数拆分问题" class="headerlink" title="8.2 求解整数拆分问题"></a>8.2 求解整数拆分问题</h2><h2 id="8-3-求解最大连续子序列和问题"><a href="#8-3-求解最大连续子序列和问题" class="headerlink" title="8.3 求解最大连续子序列和问题"></a>8.3 求解最大连续子序列和问题</h2><h2 id="8-4-求解三角形最小路径问题"><a href="#8-4-求解三角形最小路径问题" class="headerlink" title="8.4 求解三角形最小路径问题"></a>8.4 求解三角形最小路径问题</h2><h2 id="8-5-求解最长公共子序列问题"><a href="#8-5-求解最长公共子序列问题" class="headerlink" title="8.5 求解最长公共子序列问题"></a>8.5 求解最长公共子序列问题</h2><h2 id="8-6-求解最长递增子序列问题"><a href="#8-6-求解最长递增子序列问题" class="headerlink" title="8.6 求解最长递增子序列问题"></a>8.6 求解最长递增子序列问题</h2><h2 id="8-7-求解编辑距离问题"><a href="#8-7-求解编辑距离问题" class="headerlink" title="8.7 求解编辑距离问题"></a>8.7 求解编辑距离问题</h2><h2 id="8-8-求解-0-x2F-1-问题"><a href="#8-8-求解-0-x2F-1-问题" class="headerlink" title="8.8 求解 0&#x2F;1 问题"></a>8.8 求解 0&#x2F;1 问题</h2><h2 id="8-9-求解完全背包问题"><a href="#8-9-求解完全背包问题" class="headerlink" title="8.9 求解完全背包问题"></a>8.9 求解完全背包问题</h2><h2 id="8-10-求解资源分配问题"><a href="#8-10-求解资源分配问题" class="headerlink" title="8.10 求解资源分配问题"></a>8.10 求解资源分配问题</h2><h2 id="8-11-求解会议安排问题"><a href="#8-11-求解会议安排问题" class="headerlink" title="8.11 求解会议安排问题"></a>8.11 求解会议安排问题</h2><h2 id="8-12-滚动数组"><a href="#8-12-滚动数组" class="headerlink" title="8.12 滚动数组"></a>8.12 滚动数组</h2><h3 id="8-12-1-什么是滚动数组"><a href="#8-12-1-什么是滚动数组" class="headerlink" title="8.12.1 什么是滚动数组"></a>8.12.1 什么是滚动数组</h3><h3 id="8-12-2-用滚动数组求解-0-x2F-1-背包问题"><a href="#8-12-2-用滚动数组求解-0-x2F-1-背包问题" class="headerlink" title="8.12.2 用滚动数组求解 0&#x2F;1 背包问题"></a>8.12.2 用滚动数组求解 0&#x2F;1 背包问题</h3><hr>
-<h2 id="8-13-练习题"><a href="#8-13-练习题" class="headerlink" title="8.13 练习题"></a>8.13 练习题</h2><h2 id="8-14-上机实验题"><a href="#8-14-上机实验题" class="headerlink" title="8.14 上机实验题"></a>8.14 上机实验题</h2><h2 id="8-15-在线编程题"><a href="#8-15-在线编程题" class="headerlink" title="8.15 在线编程题"></a>8.15 在线编程题</h2><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第2章 软件工程经济学基础</title>
     <url>/posts/a0090002.html</url>
     <content><![CDATA[<h2 id="2-1-软件工程经济分析的基本要素"><a href="#2-1-软件工程经济分析的基本要素" class="headerlink" title="2.1 软件工程经济分析的基本要素"></a>2.1 软件工程经济分析的基本要素</h2><p>软件工程经济分析的基本要素有<strong>投资</strong>、<strong>筹资与融资</strong>、<strong>成本与费用</strong>、<strong>销售收入与利润</strong>、<strong>主要税金</strong>等。</p>
@@ -1347,18 +1462,6 @@
 <hr>
 <p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
 ]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《软件工程经济学》</title>
-    <url>/posts/a0090000.html</url>
-    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-绪论"><a href="#第1章-绪论" class="headerlink" title="第1章 绪论"></a><a href="https://georgedi.top/posts/a0090001.html">第1章 绪论</a></h3><h3 id="第2章-软件工程经济学基础"><a href="#第2章-软件工程经济学基础" class="headerlink" title="第2章 软件工程经济学基础"></a><a href="https://georgedi.top/posts/a0090002.html">第2章 软件工程经济学基础</a></h3><h3 id="第3章-软件的成本管理与定价分析"><a href="#第3章-软件的成本管理与定价分析" class="headerlink" title="第3章 软件的成本管理与定价分析"></a><a href="https://georgedi.top/posts/a0090003.html">第3章 软件的成本管理与定价分析</a></h3><h3 id="第4章-软件工程项目评价方法与经济效果评价"><a href="#第4章-软件工程项目评价方法与经济效果评价" class="headerlink" title="第4章 软件工程项目评价方法与经济效果评价"></a><a href="https://georgedi.top/posts/a0090004.html">第4章 软件工程项目评价方法与经济效果评价</a></h3><h3 id="第5章-软件生产函数、效益分析及不确定性分析"><a href="#第5章-软件生产函数、效益分析及不确定性分析" class="headerlink" title="第5章 软件生产函数、效益分析及不确定性分析"></a><a href="https://georgedi.top/posts/a0090005.html">第5章 软件生产函数、效益分析及不确定性分析</a></h3><h3 id="第6章-软件工程项目进度计划的制订"><a href="#第6章-软件工程项目进度计划的制订" class="headerlink" title="第6章 软件工程项目进度计划的制订"></a><a href="https://georgedi.top/posts/a0090006.html">第6章 软件工程项目进度计划的制订</a></h3><h3 id="第7章-软件工程项目的团队建设、风险管理及质量管理"><a href="#第7章-软件工程项目的团队建设、风险管理及质量管理" class="headerlink" title="第7章 软件工程项目的团队建设、风险管理及质量管理"></a><a href="https://georgedi.top/posts/a0090007.html">第7章 软件工程项目的团队建设、风险管理及质量管理</a></h3><h3 id="第8章-软件测试"><a href="#第8章-软件测试" class="headerlink" title="第8章 软件测试"></a><a href="https://georgedi.top/posts/a0090008.html">第8章 软件测试</a></h3>]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
@@ -1920,6 +2023,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Java 基础</title>
+    <url>/posts/c0010000.html</url>
+    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
+      <categories>
+        <category>后端技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第5章 软件生产函数、效益分析及不确定性分析</title>
     <url>/posts/a0090005.html</url>
     <content><![CDATA[<h2 id="5-1-生产函数与软件生产函数"><a href="#5-1-生产函数与软件生产函数" class="headerlink" title="5.1 生产函数与软件生产函数"></a>5.1 生产函数与软件生产函数</h2><p>生产是指<strong>厂商对各种生产要素加以组合制成产品的过程</strong>。</p>
@@ -2075,6 +2189,95 @@
       </tags>
   </entry>
   <entry>
+    <title>第6章 软件工程项目进度计划的制订</title>
+    <url>/posts/a0090006.html</url>
+    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
+<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
+<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
+<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
+<ol>
+<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
+<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
+<li>WBS 必须与项目实际工作中的执行方式一样。</li>
+<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
+</ol>
+<p>WBS 的创建步骤如下：</p>
+<ol>
+<li>识别可交付成果及相关工作。</li>
+<li>确定 WBS 的分解方式和编排结构。</li>
+<li>创建 WBS。</li>
+<li>验证 WBS 的合理性及正确性。</li>
+<li>建立 WBS 编码系统。</li>
+</ol>
+<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
+<ol>
+<li><p>完成对开始</p>
+</li>
+<li><p>开始对开始</p>
+</li>
+<li><p>完成对完成</p>
+</li>
+<li><p>开始对完成</p>
+</li>
+<li><p><strong>双代号网络计划图的绘制规则</strong></p>
+<ol>
+<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
+<li>不得出现回路。</li>
+<li>不得出现双箭头或者不带箭头的活动。</li>
+<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
+<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
+<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
+<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
+<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
+<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
+<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
+</ol>
+</li>
+<li><p><strong>项目工作时长的算法</strong></p>
+<ol>
+<li><p>三点估算法</p>
+<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
+</li>
+<li><p>专家估算法</p>
+<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
+<ol>
+<li>总时差最少的项目工作应确定为关键工作。</li>
+<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
+<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
+</ol>
+<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
+<li><strong>通过时间参数确定关键线路</strong></li>
+<li><strong>通过标号法确定关键线路</strong></li>
+</ol>
+<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
+<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
+<ol>
+<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
+<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
+<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
+<li>选择缩短工作时长的关键工作。</li>
+<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
+<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
+</ol>
+<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
+<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
+<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
+<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
+<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第7章 软件工程项目的团队建设、风险管理及质量管理</title>
     <url>/posts/a0090007.html</url>
     <content><![CDATA[<h2 id="7-1-软件工程项目的团队建设"><a href="#7-1-软件工程项目的团队建设" class="headerlink" title="7.1 软件工程项目的团队建设"></a>7.1 软件工程项目的团队建设</h2><h3 id="7-1-1-软件工程项目团队的特点"><a href="#7-1-1-软件工程项目团队的特点" class="headerlink" title="7.1.1 软件工程项目团队的特点"></a>7.1.1 软件工程项目团队的特点</h3><p>软件工程项目团队的特点主要有：</p>
@@ -2178,106 +2381,6 @@
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第6章 软件工程项目进度计划的制订</title>
-    <url>/posts/a0090006.html</url>
-    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
-<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
-<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
-<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
-<ol>
-<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
-<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
-<li>WBS 必须与项目实际工作中的执行方式一样。</li>
-<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
-</ol>
-<p>WBS 的创建步骤如下：</p>
-<ol>
-<li>识别可交付成果及相关工作。</li>
-<li>确定 WBS 的分解方式和编排结构。</li>
-<li>创建 WBS。</li>
-<li>验证 WBS 的合理性及正确性。</li>
-<li>建立 WBS 编码系统。</li>
-</ol>
-<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
-<ol>
-<li><p>完成对开始</p>
-</li>
-<li><p>开始对开始</p>
-</li>
-<li><p>完成对完成</p>
-</li>
-<li><p>开始对完成</p>
-</li>
-<li><p><strong>双代号网络计划图的绘制规则</strong></p>
-<ol>
-<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
-<li>不得出现回路。</li>
-<li>不得出现双箭头或者不带箭头的活动。</li>
-<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
-<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
-<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
-<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
-<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
-<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
-<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
-</ol>
-</li>
-<li><p><strong>项目工作时长的算法</strong></p>
-<ol>
-<li><p>三点估算法</p>
-<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
-</li>
-<li><p>专家估算法</p>
-<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
-<ol>
-<li>总时差最少的项目工作应确定为关键工作。</li>
-<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
-<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
-</ol>
-<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
-<li><strong>通过时间参数确定关键线路</strong></li>
-<li><strong>通过标号法确定关键线路</strong></li>
-</ol>
-<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
-<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
-<ol>
-<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
-<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
-<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
-<li>选择缩短工作时长的关键工作。</li>
-<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
-<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
-</ol>
-<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
-<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
-<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
-<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
-<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 基础</title>
-    <url>/posts/c0010000.html</url>
-    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
-      <categories>
-        <category>后端技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
