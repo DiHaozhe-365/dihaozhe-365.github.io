@@ -14,6 +14,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Java 基础</title>
+    <url>/posts/c0010000.html</url>
+    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
+      <categories>
+        <category>后端技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《算法设计与分析》</title>
     <url>/posts/a0060000.html</url>
     <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3><h3 id="第5章-回溯法"><a href="#第5章-回溯法" class="headerlink" title="第5章 回溯法"></a><a href="https://georgedi.top/posts/a0060005.html">第5章 回溯法</a></h3><h3 id="第7章-贪心法"><a href="#第7章-贪心法" class="headerlink" title="第7章 贪心法"></a><a href="https://georgedi.top/posts/a0060007.html">第7章 贪心法</a></h3><h3 id="第8章-动态规划"><a href="#第8章-动态规划" class="headerlink" title="第8章 动态规划"></a><a href="https://georgedi.top/posts/a0060008.html">第8章 动态规划</a></h3>]]></content>
@@ -22,6 +33,213 @@
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第1章 Java 语言概述</title>
+    <url>/posts/c0010001.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
+<ul>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
+</ul>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+</li>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+</li>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+</li>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+</li>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+</li>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
+</li>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+</li>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+</li>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+</li>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+</li>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
+</li>
+</ul>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 Java 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 Java 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，Java2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
+<ul>
+<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
+<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
+<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
+<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
+<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/c0010000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第2章 变量与运算符</title>
+    <url>/posts/c0010002.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
+<ul>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
+</ul>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+</li>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+</li>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+</li>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+</li>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+</li>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
+</li>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+</li>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+</li>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+</li>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+</li>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
+</li>
+</ul>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -273,26 +491,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第3章 分治法</title>
-    <url>/posts/a0060003.html</url>
-    <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><h2 id="3-4-求解组合问题"><a href="#3-4-求解组合问题" class="headerlink" title="3.4 求解组合问题"></a>3.4 求解组合问题</h2><h3 id="3-4-1-求解最大连续子序列和问题"><a href="#3-4-1-求解最大连续子序列和问题" class="headerlink" title="3.4.1 求解最大连续子序列和问题"></a>3.4.1 求解最大连续子序列和问题</h3><h3 id="3-4-2-求解棋盘覆盖问题"><a href="#3-4-2-求解棋盘覆盖问题" class="headerlink" title="3.4.2 求解棋盘覆盖问题"></a>3.4.2 求解棋盘覆盖问题</h3><h3 id="3-4-3-求解循环日程安排问题"><a href="#3-4-3-求解循环日程安排问题" class="headerlink" title="3.4.3 求解循环日程安排问题"></a>3.4.3 求解循环日程安排问题</h3><h2 id="3-5-求解大整数乘法和矩阵乘法问题"><a href="#3-5-求解大整数乘法和矩阵乘法问题" class="headerlink" title="3.5 求解大整数乘法和矩阵乘法问题"></a>3.5 求解大整数乘法和矩阵乘法问题</h2><h3 id="3-5-1-求解大整数乘法问题"><a href="#3-5-1-求解大整数乘法问题" class="headerlink" title="3.5.1 求解大整数乘法问题"></a>3.5.1 求解大整数乘法问题</h3><h3 id="3-5-2-求解矩阵乘法问题"><a href="#3-5-2-求解矩阵乘法问题" class="headerlink" title="3.5.2 求解矩阵乘法问题"></a>3.5.2 求解矩阵乘法问题</h3><h2 id="3-6-并行计算简介"><a href="#3-6-并行计算简介" class="headerlink" title="3.6 并行计算简介"></a>3.6 并行计算简介</h2><h3 id="3-6-1-并行计算概述"><a href="#3-6-1-并行计算概述" class="headerlink" title="3.6.1 并行计算概述"></a>3.6.1 并行计算概述</h3><h3 id="3-6-2-并行计算模型"><a href="#3-6-2-并行计算模型" class="headerlink" title="3.6.2 并行计算模型"></a>3.6.2 并行计算模型</h3><h3 id="3-6-3-快速排序的并行算法"><a href="#3-6-3-快速排序的并行算法" class="headerlink" title="3.6.3 快速排序的并行算法"></a>3.6.3 快速排序的并行算法</h3><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第5章 回溯法</title>
-    <url>/posts/a0060005.html</url>
-    <content><![CDATA[<h2 id="5-1-回溯法概述"><a href="#5-1-回溯法概述" class="headerlink" title="5.1 回溯法概述"></a>5.1 回溯法概述</h2><h3 id="5-1-1-问题的解空间"><a href="#5-1-1-问题的解空间" class="headerlink" title="5.1.1 问题的解空间"></a>5.1.1 问题的解空间</h3><h3 id="5-1-2-什么是回溯法"><a href="#5-1-2-什么是回溯法" class="headerlink" title="5.1.2 什么是回溯法"></a>5.1.2 什么是回溯法</h3><h3 id="5-1-3-回溯法的算法框架及其应用"><a href="#5-1-3-回溯法的算法框架及其应用" class="headerlink" title="5.1.3 回溯法的算法框架及其应用"></a>5.1.3 回溯法的算法框架及其应用</h3><h3 id="5-1-4-回溯法与深度优先遍历的异同"><a href="#5-1-4-回溯法与深度优先遍历的异同" class="headerlink" title="5.1.4 回溯法与深度优先遍历的异同"></a>5.1.4 回溯法与深度优先遍历的异同</h3><h3 id="5-1-5-回溯法的时间分析"><a href="#5-1-5-回溯法的时间分析" class="headerlink" title="5.1.5 回溯法的时间分析"></a>5.1.5 回溯法的时间分析</h3><h2 id="5-2-求解-0-x2F-1-背包问题"><a href="#5-2-求解-0-x2F-1-背包问题" class="headerlink" title="5.2 求解 0&#x2F;1 背包问题"></a>5.2 求解 0&#x2F;1 背包问题</h2><h2 id="5-3-求解装载问题"><a href="#5-3-求解装载问题" class="headerlink" title="5.3 求解装载问题"></a>5.3 求解装载问题</h2><h3 id="5-3-1-求解简单装载问题"><a href="#5-3-1-求解简单装载问题" class="headerlink" title="5.3.1 求解简单装载问题"></a>5.3.1 求解简单装载问题</h3><h3 id="5-3-2-求解复杂装载问题"><a href="#5-3-2-求解复杂装载问题" class="headerlink" title="5.3.2 求解复杂装载问题"></a>5.3.2 求解复杂装载问题</h3><h2 id="5-4-求解子集和问题"><a href="#5-4-求解子集和问题" class="headerlink" title="5.4 求解子集和问题"></a>5.4 求解子集和问题</h2><h3 id="5-4-1-求子集和问题的解"><a href="#5-4-1-求子集和问题的解" class="headerlink" title="5.4.1 求子集和问题的解"></a>5.4.1 求子集和问题的解</h3><h3 id="5-4-2-判断子集和问题是否存在解"><a href="#5-4-2-判断子集和问题是否存在解" class="headerlink" title="5.4.2 判断子集和问题是否存在解"></a>5.4.2 判断子集和问题是否存在解</h3><h2 id="5-5-求解-n-皇后问题"><a href="#5-5-求解-n-皇后问题" class="headerlink" title="5.5 求解 n 皇后问题"></a>5.5 求解 n 皇后问题</h2><h2 id="5-6-求解图的-m-着色问题"><a href="#5-6-求解图的-m-着色问题" class="headerlink" title="5.6 求解图的 m 着色问题"></a>5.6 求解图的 m 着色问题</h2><h2 id="5-7-求解任务分配问题"><a href="#5-7-求解任务分配问题" class="headerlink" title="5.7 求解任务分配问题"></a>5.7 求解任务分配问题</h2><h2 id="5-8-求解活动安排问题"><a href="#5-8-求解活动安排问题" class="headerlink" title="5.8 求解活动安排问题"></a>5.8 求解活动安排问题</h2><h2 id="5-9-求解流水作业调度问题"><a href="#5-9-求解流水作业调度问题" class="headerlink" title="5.9 求解流水作业调度问题"></a>5.9 求解流水作业调度问题</h2><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第2章 递归算法设计技术</title>
     <url>/posts/a0060002.html</url>
     <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><p>在数学与计算机科学中，<strong>递归</strong>（ recursion ）是指在函数的定义中又调用函数自身的方法。</p>
@@ -351,7 +549,38 @@
 <p>对应的完整求解程序如下：</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> tmp = x;</span><br><span class="line">    x=y; y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> i;</span><br><span class="line"> 	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的冒泡排序</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> j;</span><br><span class="line"> 	<span class="type">bool</span> exchange;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">    &#123;	exchange=<span class="literal">false</span>;	<span class="comment">//置 exchange 为 false</span></span><br><span class="line">		<span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)</span><br><span class="line">			<span class="keyword">if</span>(a[j]&lt;a[j<span class="number">-1</span>])	<span class="comment">//当相邻元素反序时</span></span><br><span class="line">            &#123;	<span class="built_in">swap</span>(a[j],a[j<span class="number">-1</span>]);</span><br><span class="line">				exchange=<span class="literal">true</span>;	<span class="comment">//发生交换置 exchange 为 true</span></span><br><span class="line">			&#125;</span><br><span class="line">		<span class="keyword">if</span>(exchange==<span class="literal">false</span>)	<span class="comment">//未发生交换时直接返回</span></span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">else</span>	<span class="comment">//发生交换时继续递归调用</span></span><br><span class="line">			<span class="built_in">BubbleSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line"> 	<span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line"> 	<span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-4-递归算法转化为非递归算法"><a href="#2-4-递归算法转化为非递归算法" class="headerlink" title="2.4 递归算法转化为非递归算法"></a>2.4 递归算法转化为非递归算法</h2><h3 id="2-4-1-用循环结构替代递归过程"><a href="#2-4-1-用循环结构替代递归过程" class="headerlink" title="2.4.1 用循环结构替代递归过程"></a>2.4.1 用循环结构替代递归过程</h3><h3 id="2-4-2-用栈消除递归过程"><a href="#2-4-2-用栈消除递归过程" class="headerlink" title="2.4.2 用栈消除递归过程"></a>2.4.2 用栈消除递归过程</h3><h2 id="2-5-递推式的计算"><a href="#2-5-递推式的计算" class="headerlink" title="2.5 递推式的计算"></a>2.5 递推式的计算</h2><h3 id="2-5-1-用特征方程求解递归方程"><a href="#2-5-1-用特征方程求解递归方程" class="headerlink" title="2.5.1 用特征方程求解递归方程"></a>2.5.1 用特征方程求解递归方程</h3><h3 id="2-5-2-用递归树求解递归方程"><a href="#2-5-2-用递归树求解递归方程" class="headerlink" title="2.5.2 用递归树求解递归方程"></a>2.5.2 用递归树求解递归方程</h3><h3 id="2-5-3-用主方法求解递归方程"><a href="#2-5-3-用主方法求解递归方程" class="headerlink" title="2.5.3 用主方法求解递归方程"></a>2.5.3 用主方法求解递归方程</h3><hr>
+<h2 id="2-4-递归小结"><a href="#2-4-递归小结" class="headerlink" title="2.4 递归小结"></a>2.4 递归小结</h2><ul>
+<li><p><strong>优点</strong></p>
+<p>结构清晰，可读性强，而且容易用数学归纳法来证明算法的正确性，因此它为设计算法、调试程序带来很大方便。</p>
+</li>
+<li><p><strong>缺点</strong></p>
+<p>递归算法的运行效率较低，无论是耗费的计算时间还是占用的存储空间都比非递归算法要多。</p>
+</li>
+<li><p><strong>解决方法</strong></p>
+<p>在递归算法中消除递归调用，使其转化为非递归算法（递推）。</p>
+</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第3章 分治法</title>
+    <url>/posts/a0060003.html</url>
+    <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><h2 id="3-4-求解组合问题"><a href="#3-4-求解组合问题" class="headerlink" title="3.4 求解组合问题"></a>3.4 求解组合问题</h2><h3 id="3-4-1-求解最大连续子序列和问题"><a href="#3-4-1-求解最大连续子序列和问题" class="headerlink" title="3.4.1 求解最大连续子序列和问题"></a>3.4.1 求解最大连续子序列和问题</h3><h3 id="3-4-2-求解棋盘覆盖问题"><a href="#3-4-2-求解棋盘覆盖问题" class="headerlink" title="3.4.2 求解棋盘覆盖问题"></a>3.4.2 求解棋盘覆盖问题</h3><h3 id="3-4-3-求解循环日程安排问题"><a href="#3-4-3-求解循环日程安排问题" class="headerlink" title="3.4.3 求解循环日程安排问题"></a>3.4.3 求解循环日程安排问题</h3><h2 id="3-5-求解大整数乘法和矩阵乘法问题"><a href="#3-5-求解大整数乘法和矩阵乘法问题" class="headerlink" title="3.5 求解大整数乘法和矩阵乘法问题"></a>3.5 求解大整数乘法和矩阵乘法问题</h2><h3 id="3-5-1-求解大整数乘法问题"><a href="#3-5-1-求解大整数乘法问题" class="headerlink" title="3.5.1 求解大整数乘法问题"></a>3.5.1 求解大整数乘法问题</h3><h3 id="3-5-2-求解矩阵乘法问题"><a href="#3-5-2-求解矩阵乘法问题" class="headerlink" title="3.5.2 求解矩阵乘法问题"></a>3.5.2 求解矩阵乘法问题</h3><h2 id="3-6-并行计算简介"><a href="#3-6-并行计算简介" class="headerlink" title="3.6 并行计算简介"></a>3.6 并行计算简介</h2><h3 id="3-6-1-并行计算概述"><a href="#3-6-1-并行计算概述" class="headerlink" title="3.6.1 并行计算概述"></a>3.6.1 并行计算概述</h3><h3 id="3-6-2-并行计算模型"><a href="#3-6-2-并行计算模型" class="headerlink" title="3.6.2 并行计算模型"></a>3.6.2 并行计算模型</h3><h3 id="3-6-3-快速排序的并行算法"><a href="#3-6-3-快速排序的并行算法" class="headerlink" title="3.6.3 快速排序的并行算法"></a>3.6.3 快速排序的并行算法</h3><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第5章 回溯法</title>
+    <url>/posts/a0060005.html</url>
+    <content><![CDATA[<h2 id="5-1-回溯法概述"><a href="#5-1-回溯法概述" class="headerlink" title="5.1 回溯法概述"></a>5.1 回溯法概述</h2><h3 id="5-1-1-问题的解空间"><a href="#5-1-1-问题的解空间" class="headerlink" title="5.1.1 问题的解空间"></a>5.1.1 问题的解空间</h3><h3 id="5-1-2-什么是回溯法"><a href="#5-1-2-什么是回溯法" class="headerlink" title="5.1.2 什么是回溯法"></a>5.1.2 什么是回溯法</h3><h3 id="5-1-3-回溯法的算法框架及其应用"><a href="#5-1-3-回溯法的算法框架及其应用" class="headerlink" title="5.1.3 回溯法的算法框架及其应用"></a>5.1.3 回溯法的算法框架及其应用</h3><h3 id="5-1-4-回溯法与深度优先遍历的异同"><a href="#5-1-4-回溯法与深度优先遍历的异同" class="headerlink" title="5.1.4 回溯法与深度优先遍历的异同"></a>5.1.4 回溯法与深度优先遍历的异同</h3><h3 id="5-1-5-回溯法的时间分析"><a href="#5-1-5-回溯法的时间分析" class="headerlink" title="5.1.5 回溯法的时间分析"></a>5.1.5 回溯法的时间分析</h3><h2 id="5-2-求解-0-x2F-1-背包问题"><a href="#5-2-求解-0-x2F-1-背包问题" class="headerlink" title="5.2 求解 0&#x2F;1 背包问题"></a>5.2 求解 0&#x2F;1 背包问题</h2><h2 id="5-3-求解装载问题"><a href="#5-3-求解装载问题" class="headerlink" title="5.3 求解装载问题"></a>5.3 求解装载问题</h2><h3 id="5-3-1-求解简单装载问题"><a href="#5-3-1-求解简单装载问题" class="headerlink" title="5.3.1 求解简单装载问题"></a>5.3.1 求解简单装载问题</h3><h3 id="5-3-2-求解复杂装载问题"><a href="#5-3-2-求解复杂装载问题" class="headerlink" title="5.3.2 求解复杂装载问题"></a>5.3.2 求解复杂装载问题</h3><h2 id="5-4-求解子集和问题"><a href="#5-4-求解子集和问题" class="headerlink" title="5.4 求解子集和问题"></a>5.4 求解子集和问题</h2><h3 id="5-4-1-求子集和问题的解"><a href="#5-4-1-求子集和问题的解" class="headerlink" title="5.4.1 求子集和问题的解"></a>5.4.1 求子集和问题的解</h3><h3 id="5-4-2-判断子集和问题是否存在解"><a href="#5-4-2-判断子集和问题是否存在解" class="headerlink" title="5.4.2 判断子集和问题是否存在解"></a>5.4.2 判断子集和问题是否存在解</h3><h2 id="5-5-求解-n-皇后问题"><a href="#5-5-求解-n-皇后问题" class="headerlink" title="5.5 求解 n 皇后问题"></a>5.5 求解 n 皇后问题</h2><h2 id="5-6-求解图的-m-着色问题"><a href="#5-6-求解图的-m-着色问题" class="headerlink" title="5.6 求解图的 m 着色问题"></a>5.6 求解图的 m 着色问题</h2><h2 id="5-7-求解任务分配问题"><a href="#5-7-求解任务分配问题" class="headerlink" title="5.7 求解任务分配问题"></a>5.7 求解任务分配问题</h2><h2 id="5-8-求解活动安排问题"><a href="#5-8-求解活动安排问题" class="headerlink" title="5.8 求解活动安排问题"></a>5.8 求解活动安排问题</h2><h2 id="5-9-求解流水作业调度问题"><a href="#5-9-求解流水作业调度问题" class="headerlink" title="5.9 求解流水作业调度问题"></a>5.9 求解流水作业调度问题</h2><hr>
 <p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
 ]]></content>
       <tags>
@@ -388,991 +617,6 @@
 ]]></content>
       <tags>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第2章 软件工程经济学基础</title>
-    <url>/posts/a0090002.html</url>
-    <content><![CDATA[<h2 id="2-1-软件工程经济分析的基本要素"><a href="#2-1-软件工程经济分析的基本要素" class="headerlink" title="2.1 软件工程经济分析的基本要素"></a>2.1 软件工程经济分析的基本要素</h2><p>软件工程经济分析的基本要素有<strong>投资</strong>、<strong>筹资与融资</strong>、<strong>成本与费用</strong>、<strong>销售收入与利润</strong>、<strong>主要税金</strong>等。</p>
-<h3 id="2-1-1-投资的基本概念及其构成"><a href="#2-1-1-投资的基本概念及其构成" class="headerlink" title="2.1.1 投资的基本概念及其构成"></a>2.1.1 投资的基本概念及其构成</h3><p>投资是指国家、企业或者个人，为了实特定的目的，与对方签订协议，实现互惠互利、输送资金的过程或者相关经济活动。</p>
-<p>投资通常有广义和狭义之分。</p>
-<ul>
-<li>广义的投资一般指人们为了获取将来的报酬，事先投入一定资源的经济行为</li>
-<li>狭义的投资指人们在社会生产活动中为了实现某项预定的生产而预先垫付的资金</li>
-</ul>
-<p>本章涉及的投资主要指<strong>狭义的投资</strong>。</p>
-<p>企业的投资活动主要分为<strong>生产性投资</strong>和<strong>非生产性投资</strong>。</p>
-<ul>
-<li>生产性投资主要是企业为了实现对内扩大再生产建设而进行的投资，如购置固定资产、无形资产和其他长期资产。</li>
-<li>非生产性投资主要是企业为了实现对外扩张而投入到非物质生产领域的投资，如对外购买股权、债券、股票等。</li>
-</ul>
-<p>本章主要研究<strong>生产性投资</strong>。</p>
-<p>建设项目投资指企业为完成工程项目的建设，在建设期投入的全部费用的总和，主要包括固定资产、流动资产、无形资产和其他资产等。其铺底流动资金一般为项目正常营运流动资金的 30%。</p>
-<p>软件工程项目的建设属于建设项目投资的范畴。</p>
-<ol>
-<li><p><strong>固定资产</strong></p>
-<p>固定资产是指企业为了生产产品、提供劳务、出租或经营管理而持有的使用周期超过一年，且价值达到一定标准的非货币资产。</p>
-<p>固定资产投资主要用于扩大再生产和技术设备更新。</p>
-<p>固定资产在使用的过程中能保持原有的实物形态，但其价值随着使用会造成损耗，其损耗一般按照折旧的方式计入产品成本。</p>
-<p>固定资产的折旧是指固定资产在一定时期内为弥补其损耗而按照规定的固定资产折旧率提取的固定资产折旧费用。</p>
-<p>固定资产的损耗分为有形损耗和无形损耗。</p>
-<p>有形损耗又称为物理损耗，指的是固定资产由于使用及自然力的影响而引起的价值损失；而无形损耗则指的是机器设备由于技术进步而引起的价值损耗。</p>
-<p>固定资产的折旧费需要按其使用过程中的每个会计期间进行提取，作为折旧基金累计，由每个会计期间的产品销售收入逐步补偿。</p>
-<p>固定资产的原值减去累计的折旧费为固定资产的净值。</p>
-<p>软件企业的固定资产主要有厂房及其附属物、电子设备（如计算机及其外围设备、打印机、复印机、各种开发工具等）、运输工具及其他固定资产。</p>
-</li>
-<li><p><strong>流动资产</strong></p>
-<p>流动资产指企业可在一年或者超过一年的一个营业周期内变现或使用的资产。</p>
-<p>流动资产投资主要用于保证企业正常的生产经营，是一次性计人产品成本，并由当期的产品销售收入来补偿的。</p>
-<p>流动资产主要包括货币资金、各种存款、应收账款、预付账款、短期投资以及存货等。</p>
-</li>
-<li><p><strong>无形资产</strong></p>
-<p>无形资产是指企业拥有或者控制的没有实物形态但可辨认的非货币性资产。</p>
-<p>无形资产主要包括商标权、专利权、软件著作权、商誉、长期股权投资以及土地使用权等。</p>
-<p>无形资产自其使用之日开始，在其有效使用期内以平均摊销的方式计入每个会计期间的“管理费用”。</p>
-</li>
-<li><p><strong>其他资产</strong></p>
-<p>其他资产是指不能被包括在固定资产、流动资产和无形资产等项目之内的资产。</p>
-<p>在软件工程项目或者系统集成项目筹建期内实际发生的各项费用，除应计入固定资产与无形资产的，都应计入其他资产。</p>
-<p>其他资产投资指企业形成其他资产而发生的各项费用支出，如租入固定资产的改良支出等。</p>
-</li>
-</ol>
-<h3 id="2-1-2-筹资与融资"><a href="#2-1-2-筹资与融资" class="headerlink" title="2.1.2 筹资与融资"></a>2.1.2 筹资与融资</h3><p>资金是任何一个投资方案存续的基础。资金的筹集是软件工程项目建设和运行的基本保证。软件工程项目的资金来源，按照所取得资金的权益特性不同可分为权益资金和负债资金。以权益方式筹集的资金，资金的提供方将取得企业的产权；而以负债方式筹集的资金，资金的提供方只取得对于企业的债权，一般债权人优先于股权受偿，但对企业没有控制权。</p>
-<ol>
-<li><p><strong>筹资</strong></p>
-<ol>
-<li><p>权益资金</p>
-<p>权益资金主要分为<strong>企业融资项目资本金</strong>和<strong>项目融资项目资本金</strong>。</p>
-<ol>
-<li><strong>软件企业现有资金</strong></li>
-<li><strong>软件企业未来生产经营中获得的可用于软件工程项目建设的资金</strong></li>
-<li><strong>软件企业资产变现资金</strong></li>
-<li><strong>软件企业增资扩股资金</strong></li>
-</ol>
-</li>
-<li><p>负债资金<br>负债资金是指软件工程项目筹资过程中除去资本金外，以负债的方式所筹集的资金。</p>
-<ol>
-<li><strong>银行贷款</strong></li>
-<li><strong>出口信贷</strong></li>
-<li><strong>外国政府贷款</strong></li>
-<li><strong>国际金融机构贷款</strong></li>
-<li><strong>发行债券</strong></li>
-<li><strong>融资租赁</strong></li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p><strong>融资</strong></p>
-<p>传统融资是指企业运用各种方式向金融机构筹集资金的一种业务活动，包括取得发行股票、银行贷款、发行债券等。</p>
-<p>相对于传统融资来说，项目融资是一种新型融资方式。</p>
-<p>项目融资是以项目公司为融资主体，以项目未来收益和资产为融资基础，由项目参与各方共同承担风险，具有有限追索权性质的特定融资方式。</p>
-<p>项目融得的资金是一种仅有有限追索权或无限追索权的贷款，且需要的资金量较大，因而其风险也较大。</p>
-<p>项目融资分为<strong>无限追索权融资</strong>和<strong>有限追索权融资</strong>两类。</p>
-<p>软件工程项目的融资从投资决策到最后完成融资通常要经过五个阶段：</p>
-<p><strong>第 1 阶段 投资决策</strong></p>
-<p>① 软件工程项目可行性研究</p>
-<p>② 投资决策：初步确定项目投资结构</p>
-<p><strong>第 2 阶段 融资决策</strong></p>
-<p>① 选择融资结构，确定融资方式</p>
-<p>② 明确融资目标及其任务</p>
-<p><strong>第 3 阶段 融资结构</strong></p>
-<p>① 分析软件工程项目风险因素</p>
-<p>② 设计融资结构</p>
-<p>③ 修正风险控制方式建立法律框架</p>
-<p><strong>第 4 阶段 融资谈判</strong></p>
-<p>① 选择银行，发出项目融资建议书</p>
-<p>② 组织贷款</p>
-<p>③ 起草融资法律文件</p>
-<p>④ 融资谈判</p>
-<p><strong>第 5 阶段 融资执行</strong></p>
-<p>① 签署融资文件</p>
-<p>② 执行项目投资计划</p>
-<p>③ 贷款银行监督并参与决策</p>
-<p>④ 项目风险控制与管理</p>
-<ol>
-<li><p><strong>资金成本</strong></p>
-<p>资金成本是指企业在筹集资金的时候所支付的费用，主要包括资金占用费与筹资费。</p>
-<p>资金占用费是指占用资金应付的费用，如使用发行股票所筹集的资金需要向其股东支付红利、股息以及向银行借款支付的利息等。</p>
-<p>筹资费是指在企业筹集资金的过程中发生的各项费用，如向银行借款所支付的手续费，委托金融机构发行股票所支付的代理费和注册费，发行债券所支付的律师费、印刷费、公证费及广告宣传费等。</p>
-<p>由于不同项目所筹集的资金数额不一样，为了方便比较，资金成本通常以相对数来表示，即资金的成本数，如下列公式所示：<br>$$<br>K &#x3D; \frac{D}{P-F} 或 K &#x3D; \frac{D}{P(1-f)}<br>$$<br>式中， K 指资金成本率； D 指使用费； P 指筹集资金的总额； F 指筹资费； f 指筹资费费率（筹资费和筹资总额的比率）。</p>
-<p>资金成本是企业财务管理中一个非常重要的概念，在软件企业生产经营活动中用途广泛。</p>
-<ol>
-<li>资金成本是选择资金来源、设计筹资方案的主要依据。筹资决策主要通过优选各种筹资方式，在满足企业资金需求的前提下，使其资金成本达到最低。</li>
-<li>资金成本是评价软件工程项目投资可行性的主要经济依据。只有资金利润率高于资金成本率的项目才值得筹资。</li>
-<li>资金成本可以作为评价软件企业财务经营成果的依据之一。</li>
-</ol>
-</li>
-<li><p><strong>自有资金成本计算</strong></p>
-<ol>
-<li><p>普通股资金成本。</p>
-<p>普通股持有者拥有企业的普通股权，企业的资产以及经营收益扣除负债与优先股之后归普通股股权所有，企业的权益归普通股股东所有。</p>
-<p>普通股股东对于企业投资的预期收益要求，可征询投资方的意见得知，当不具备征询条件时，可采用资本定价模型，根据同行业的类似项目收益确定。采用风险系数 β 的资本定价模型，如下列公式所示：<br>$$<br>i &#x3D; i_0 + β (i_m - i_0)<br>$$<br>式中， i 表示普通股资金成本； i<sub>0</sub> 表示社会无风险投资收益率；i<sub>m</sub> 表示社会平均投资收益率；β 表示行业的资本投资风险系数。</p>
-<ol start="2">
-<li><p>优先股资金成本。</p>
-<p>优先股类似于负债融资，资金成本按照优先股股息与发行优先股所取得的资金之比进行计算，如下列公式所示：<br>$$<br>i &#x3D; \frac{优先股股息}{优先股发行价格-发行成本} &#x3D; \frac{优先股面值 × 股息}{优先股发行价格 - 优先股面值 × 发行成本所占比重}<br>$$<br>式中，i 表示优先股资金成本。</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>【例2.1】某 IT 企业优先股面值50元，发行价格为55元，发行成本占优先股面值的 4%，每年付息一次，固定股息为 6%，试求此优先股的资金成本。</p>
-<p>解：</p>
-<p>i &#x3D; (50 × 6%) &#x2F; (55 - 50 × 4%) ×100% &#x3D; 3 &#x2F; 53 × 100% &#x3D; 5.66% </p>
-<p>答：此优先股的资金成本为 5.66%。</p>
-</li>
-<li><p><strong>保留利润的资本本金</strong></p>
-<p>保留利润又称为利润留存，是指企业从税后利润总额中扣除股利后的剩余部分，所有权是企业投资者。</p>
-<p>这些未分配保留利润的最低成本是股票本身的资金成本（ i<sub>s</sub> )，也可采用普通股资金成本的方法进行确定。</p>
-</li>
-<li><p><strong>综合资金成本</strong></p>
-<p>当一个企业的不同资金来源的资金成本计算出来后，如果把某一时期内的全部投资视为一个整体的话，就应在分别计算得到各类资金的资金成本的基础上，用加权平均法计算出综合资金成本值，如下列公式所示：<br>$$<br>i_w &#x3D; \sum{i_kf_k}<br>$$<br>式中， i<sub>w</sub> 表示加权平均资金成本； i<sub>k</sub> 表示第 k 种融资的资金成本； f<sub>k</sub> 表示第 k 种融资所占的资金权重，Σ f<sub>k</sub> &#x3D; 1。</p>
-<p>综合资金成本可以作为软件工程项目的最低期望收益率，也可称为基准收益率，作为软件工程项目财务内部收益率的判别标准。当软件工程项目财务内部收益率高于综合资金收益成本时，就表示该项目的投资收益水平可以满足项目筹资的资金成本要求，否则表示不满足筹资的资金成本要求。</p>
-<p>【例2.2】某 IT 企业的某信息化项目总融资金额为 6000 万元人民币，其中银行贷款 3000 万元，利率为 8%，每年计息两次；发行优先股 2000 万元，股息 9%，发行成本为 3%,平价发行，每年付息一次；发行普通股 1000 万元，据调查其长期国债利率（社会无风险投资收益）为 6%，社会平均收益 14%，投资风险系数为 1.3。请计算该信息化项目的基准收益率（企业所得税按 25％ 计算）。</p>
-<p>解：</p>
-<p>① 先计算各种资金的税前资金成本：</p>
-<p>银行借款资金成本 ＝ [ ( 1 + 8% &#x2F; 2 )<sup>2</sup> - 1 ] × 100% &#x3D; 8.16%</p>
-<p>优先股资金的资金成本 ＝ { [ 9% &#x2F; ( 1 - 3% ) ] &#x2F; ( 1 - 25% ) } × 100% &#x3D; 12.37%</p>
-<p>普通股资金的资金成本 ＝ [ 6% + 1.3 × ( 14% - 6% ) ] &#x2F; ( 1 - 25% ) × 100% &#x3D; 21.87%</p>
-<p>② 计算各种资金的税前加权平均资金成本，即该信息化项目的基准收益率为：</p>
-<p>i<sub>w</sub> &#x3D; 8.16% × ( 3000 &#x2F; 6000 ) + 12.37% × ( 2000 &#x2F; 6000 ) + 21.87% × ( 1000&#x2F;6000 ) &#x3D; 11.85%</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-1-3-项目可行性研究"><a href="#2-1-3-项目可行性研究" class="headerlink" title="2.1.3 项目可行性研究"></a>2.1.3 项目可行性研究</h3><ol>
-<li><p><strong>可行性研究概述</strong></p>
-<p>可行性研究（ Feasibility Study ）是指项目投资之前，在深入调查研究的基础上，通过市场分析、财务分析、技术分析以及国民经济分析，对拟建项目的技术可行性与经济合理性的综合评价。</p>
-<p>此外，可行性研究还是银行贷款、工程设计等的有力依据，是决策科学化的必要步骤。</p>
-</li>
-<li><p><strong>可行性研究的阶段</strong></p>
-<p>项目的投资通常有投资前期、投资期以及生产期三个阶段。</p>
-<p>其中，投资前期是决定项目效果的关键阶段，也是可行性研究的重点。</p>
-<p>项目投资前期可分为投资机会研究、初步可行性研究、详细可行性研究（又称为可行性研究）、评估和投资决策四个阶段。</p>
-<ol>
-<li><strong>投资机会研究</strong></li>
-<li><strong>初步可行性研究</strong></li>
-<li><strong>详细可行性研究</strong></li>
-<li><strong>评估和投资决策</strong></li>
-</ol>
-</li>
-<li><p><strong>可行性研究的工作流程</strong></p>
-<p>可行性研究的基本工作流程有<strong>签订委托协议</strong>、<strong>组建工作小组</strong>、<strong>制订工作方案</strong>、<strong>市场调查与预测</strong>、<strong>可行性方案研制与优化</strong>、<strong>项目评价</strong>和<strong>编写并提交可行性研究报告</strong>。</p>
-</li>
-<li><p><strong>可行性研究报告</strong></p>
-<ol>
-<li><p>可行性研究报告的作用</p>
-<ol>
-<li>作为经济主体投资决策的主要依据。</li>
-<li>为筹资和向银行申请贷款的依据。</li>
-<li>作为从国外引进技术、设备以及与国外厂商谈判签约的依据。</li>
-<li>作为与项目协作单位（如项目分包）签订经济合同的依据。</li>
-<li>作为向当地政府、相关部分申请有关建设许可文件的依据。</li>
-<li>作为该项目基础设施建设的基础资料。</li>
-<li>作为项目有关生产组织工作、职工培训等的依据。</li>
-<li>作为对项目考核以及项目后评价的依据。</li>
-</ol>
-</li>
-<li><p>项目可行性研究报告的编制要求</p>
-<ol>
-<li>要能充分反映项目可行性研究工作的成果，要内容齐全、数据准确、结论明确，以满足决策者确定方案和项目决策的要求。</li>
-<li>信息资料必须满足时效性、可靠性及充足性的要求。</li>
-<li>项目中选用的主要设备的规格、各项参数必须满足预定设备的要求。</li>
-<li>可行性研究报告里的重大技术或者经济方案必须要有两个以上，以进行优选。</li>
-<li>报告里确定的主要工程技术数据必须满足项目初步设计的要求。</li>
-<li>对建设性投资与生产成本必须分项详细地估算，其误差要控制在士10％以内。</li>
-<li>报告中所构造的融资筹资方案必须满足金融部门信贷决策的要求。</li>
-<li>报告中要如实反映可行性研究过程中出现的某些方案的重大分歧或者未被采纳的原因，以便投资者能客观地权衡利弊并进行决策。</li>
-<li>报告中应该附有评估、决策所必需的合同、意向书、协议以及政府批文等相关佐证材料。</li>
-</ol>
-</li>
-<li><p>项目可行性研究报告的主要内容</p>
-<p>项目可行性研究报告通常要求具备以下内容：</p>
-<ol>
-<li>项目总论：主要对拟建项目进行概括性的论述，包括项目提出的背景与概况、可行性研究工作的主要依据、研究结论的概要、项目所存在的问题和建议等。</li>
-<li>市场预测：是项目可行性研究的重要环节，需要进行市场现状调查、产品的供需预测、价格预测、各种竞争力分析以及市场风险分析。</li>
-<li>项目资源条件的评价：主要包括资源的开发价值、资源的品质及可利用情况等。</li>
-<li>项目建设规模和产品方案：主要包括项目建设规模以及产品方案的构成及其比较和选择；推荐的项目建设规模和产品方案；技术改造类项目推荐方案及原企业设施利用的合理性。</li>
-<li>场址选择：主要包括场址现状介绍及其方案比较和选择、推荐的场址方案介绍，对于技术改造类项目，应有场址利用情况的介绍。</li>
-<li>技术方案、设备方案与工程方案的比较和选择。</li>
-<li>主要原材料供应方案的比较和选择。</li>
-<li>总体布置方案、场内外运输方案及供应辅助工程的情况。</li>
-<li>节能措施分析。</li>
-<li>节水措施分析。</li>
-<li>环境影响评价：主要包括环境条件的调查、影响环境因素的分析、环境保护措施等。</li>
-<li>劳动安全卫生与消防：主要包括危险因素及其危害程度的客观分析、相关安全防范措施、相关环保措施、技术改造类项目和原有企业环境状况的比较。</li>
-<li>组织机构、人力资源配置以及项目员工的培训。</li>
-<li>项目实施进度：主要包括项目建设的工期、项目实施进度的相关安排、技术改造类项目的建设与生产的相关衔接内容。</li>
-<li>项目投资估算：主要包括项目投资估算的范围与依据、项目建设投资估算、流动资金的估算、项目总投入资金与分年投入的计划等。</li>
-<li>融资方案：主要包括融资的组织形式，资本金、债务资金的筹措，融资方案的分析等。</li>
-<li>财务评估：主要包括项目财务评价的基础数据和参数的选取、成本费用及销售收入的估算、财务评价报表、盈利及偿债能力分析、不确定因素分析、财务评价的结论等。</li>
-<li>国民经济评价：主要包括国民经济评价报表、评价指标及评价结论等。</li>
-<li>社会评价：主要包括项目对社会的影响、项目与所在地的相互适应性分析、社会风险分析以及社会评价结论。</li>
-<li>风险分析：主要包括项目的主要风险识别、相关风险分析及风险防范对策。</li>
-<li>研究结论与建议：主要包括推荐方案总体的描述、推荐方案优缺点的描述、主要对比方案介绍以及结论与建议。</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><p><strong>市场调查</strong></p>
-<ol>
-<li><strong>市场调查的方法</strong><ol>
-<li>文案调查法</li>
-<li>访问调查法</li>
-<li>观察调查法</li>
-<li>实验调查法</li>
-<li>网络调查法</li>
-</ol>
-</li>
-<li><strong>市场预测的方法</strong><ol>
-<li>消费者意图预测法</li>
-<li>专家意见集合法</li>
-<li>德尔菲法</li>
-<li>经济计量模型预测法</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-1-4-成本与费用、销售收入与利润、主要税金"><a href="#2-1-4-成本与费用、销售收入与利润、主要税金" class="headerlink" title="2.1.4 成本与费用、销售收入与利润、主要税金"></a>2.1.4 成本与费用、销售收入与利润、主要税金</h3><ol>
-<li><p><strong>成本与费用</strong></p>
-<p>总成本费用是指软件工程在一定时期内，为生产和销售产品而花费的全部成本及其费用。</p>
-<p>总成本费用主要有<strong>生产成本</strong>、<strong>经营成本</strong>和<strong>期间费用</strong>。</p>
-<ul>
-<li><p>生产成本</p>
-<p>生产成本即生产费用或者制造成本，是指企业为了生产产品或者提供劳务所发生的各种资源耗费。</p>
-<p>生产成本要素按照经济用途，可分为<strong>直接材料费</strong>（是指企业在生产过程中实际所耗费的直接材料、设备配件、辅助材料、燃料、包装物、外购半成品、低值易耗品、动力及其他直接材料）、<strong>直接工资费</strong>（又称为直接人工费，是指企业直接从事产品生产的工作人员的工资、津贴、奖金、补贴及福利等）、<strong>间接成本</strong>（又称为制造费用，如企业的分厂、车间管理人员、相关技术人员的工资及其福利，各种固定资产的维修费、物料消耗、水电费、修理期停工损失费等）以及<strong>其他直接支出</strong>。</p>
-</li>
-<li><p>经营成本</p>
-<p>经营成本是软件工程经济学分析时需要从总成本费用中分离出来的一部分费用，是指 IT 企业在一定会计期间内由于生产、销售以及提供劳务所发生的费用。</p>
-</li>
-<li><p>期间费用</p>
-<p>期间费用是指企业日常活动不能直接归属于某个特定成本核算对象，且在发生时应直接计入当期损益的各种费用。</p>
-<p>期间费用包括<strong>管理费用</strong>、<strong>销售费用</strong>、<strong>财务费用</strong>和<strong>研发费用</strong>。</p>
-<p>管理费用是指企业为了组织和管理企业的生产经营活动所发生的各项费用。管理费用主要包括单位经费、劳动保险费、工会经费、董事会费、业务招待费、技术转让费、无形资产摊销、住房公积金、职工教育经费、存货的盘亏或者盘盈、计提存货跌价准备、诉讼费、聘请中介机构费用、计提坏账准备等。</p>
-<p>销售费用是指企业在销售产品或者提供劳务等经营过程中所发生的各项费用，主要包括企业为销售商品所设置的销售部门或机构的人员工资、办公费、职工福利费等，还有企业在销售过程中所发生的广告费、包装费、运输费、保险费、装卸费、展览费、委托代销费等。</p>
-<p>财务费用是指企业为筹集生产经营所需资金而发生的各项费用，主要包括企业在生产经营活动中的利息支出净额（即利息支出减去利息收入之差）、汇兑净损失（即汇兑损失减去汇兑收益之差）、金融机构的相关手续费及其他费用等。</p>
-<p>研发费用是指研究与开发某项目所支付的费用，主要包括研发活动直接消耗的材料、燃料和动力费用，研发人员的工资、津贴、奖金、补贴及福利等，以及用于研发活动的软件、专利权等无形资产的推销费用等。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>销售收入与利润</strong></p>
-<ol>
-<li><p>销售收入</p>
-<p>销售收入又称为营业收入，是指企业通过销售商品、提供劳务所获得的经济利益的总收入，即<br>$$<br>销售收入 &#x3D; 商品销售量 × 商品的单价<br>$$</p>
-</li>
-<li><p>营业外收入</p>
-<p>营业外收入又称为营业外收益，是指和企业的生产经营活动没有直接关系，应计入当期利润的各种收入。</p>
-<p>营业外收入是不需要耗费企业经营资金的，是一种纯收入。</p>
-<p>营业外收人主要包括非货币性的资产交换利得、债务重组利得、非流动资产处置利得、出售无形资产收益、存货盘盈利得、企业合并损益、政府补助、罚款收入、教育费附加返还款以及捐赠利得等。</p>
-</li>
-<li><p>利润及其分配</p>
-<p>利润是指企业在一定会计期间内所获得的经营成果。利润是企业销售商品所得收入扣除成本及税金后的余额，即<br>$$<br>利润 &#x3D; 销售收入-总成本费用-销售税金及附加<br>$$<br>其中，销售税金及附加是指与企业销售收入相关的税金及附加，主要包括营业税、资源税、消费税、城市维护建设税、教育费附加等税费。应交增值税不计入”主营业务及附加”。净利润又称为税后利润，是指在利润总额中缴纳了所得税后企业的利润留存。</p>
-</li>
-</ol>
-</li>
-<li><p><strong>主要税金</strong></p>
-<p>根据纳税对象的不同，税收可分为所得税、资源税、流转税、农业税、财产行为税和关税。</p>
-</li>
-</ol>
-<h2 id="2-2-资金的时间价值及其贴现与预算"><a href="#2-2-资金的时间价值及其贴现与预算" class="headerlink" title="2.2 资金的时间价值及其贴现与预算"></a>2.2 资金的时间价值及其贴现与预算</h2><h3 id="2-2-1-资金的时间价值"><a href="#2-2-1-资金的时间价值" class="headerlink" title="2.2.1 资金的时间价值"></a>2.2.1 资金的时间价值</h3><p>资金的时间价值是指<strong>资金经过一定时间的投资和再投资所产生的价值增加量</strong>。</p>
-<ol>
-<li><p><strong>利息</strong></p>
-<p>利息是衡量资金时间价值的<strong>绝对衡量尺度</strong>。</p>
-<p>利息的计算公式如下：<br>$$<br>I &#x3D; F - P<br>$$<br>式中，I 表示利息；F 表示还本付息总额；P 表示本金。</p>
-</li>
-<li><p><strong>利率</strong></p>
-<p>利率是衡量资金时间价值的<strong>相对衡量尺度</strong>，又称为“利息率”。</p>
-<p>下列公式乘以 100% 即为利率的计算公式：<br>$$<br>i &#x3D; \frac{I_t}{P}<br>$$<br>式中，i 表示利率；I<sub>t</sub> 表示单位时间内的利息；P 表示借款本金。</p>
-</li>
-<li><p><strong>单利</strong></p>
-<p>单利（ Simple Interest ）是指仅仅以本金作为基数来计算利息，即不论年限有多长，每年都按原始本金计息，已取得的利息在后续年度不再计息的计息方法。</p>
-<p>其计算公式如下所示：<br>$$<br>I_t &#x3D; P × i_d<br>$$<br>式中，I<sub>t</sub> 表示第 t 期的利息额度；P 表示本金；i<sub>d</sub> 表示计息单利利率。</p>
-</li>
-<li><p><strong>复利</strong></p>
-<p>复利（ Compound Interest ）是指计算利息时以本金和累计利息和作为基数的计息方法，即“利生利”的计息方法。</p>
-<p>其计算公式如下所示：<br>$$<br>I_t &#x3D; i × F_{t-1}<br>$$<br>式中，I<sub>t</sub> 表示第 t 期的利息额度；i 表示计息期的利率；F<sub>t-1</sub> 表示第 t-1 年年末的复利本利和。</p>
-<p>由此可推导出第 t 年年末复利和的计算公式：<br>$$<br>F_t &#x3D; F_{t-1} × (1+i)<br>$$</p>
-</li>
-</ol>
-<h3 id="2-2-2-现金流量的内涵"><a href="#2-2-2-现金流量的内涵" class="headerlink" title="2.2.2 现金流量的内涵"></a>2.2.2 现金流量的内涵</h3><ol>
-<li><p><strong>现金流量的概念</strong></p>
-<p>现金流量（ Cash Flows , CF ）是指特定经济系统（某个项目、企业、地区或部门）在某一时点发生了所有权或使用权转移的现金或其等价物（如银行承兑汇票、短期国库券、可转让定期存单等）的数量。软件工程经济学中的现金流量是指拟建设项目在整个项目计算期内各个时点上实际发生的现金流入、流出以及流入和流出的差额。</p>
-<p>现金流入（ Cash Inflows , CI ）是指流入特定经济系统的现金。如 IT 企业销售商品或提供劳务等获得的现金、从银行获得的借款等都属于现金流入。现金流出（ Cash Outflows , CO ）是指流出特定经济系统的现金，如企业购买固定资产、租赁设备、偿还债务等支付的现金。同一时点上的现金流入和流出之差称为净现金流量，通常用 CI - CO 表示。</p>
-<p>净现金流量分为正现金流量和负现金流量。</p>
-<p>正现金流量是指一定时期的净收入，负现金流量是指一定时期的净支出。</p>
-</li>
-<li><p><strong>现金流量的分类</strong></p>
-<p>在现金流量表中，通常将现金流量分为以下三大类：</p>
-<ol>
-<li>经营活动产生的现金流量</li>
-<li>投资活动产生的现金流量</li>
-<li>筹资活动产生的现金流量</li>
-</ol>
-</li>
-<li><p><strong>软件企业确定现金流量需要注意的问题</strong></p>
-<ol>
-<li>对于每一笔现金流入和流出都要有明确的发生时点。</li>
-<li>现金流量必须是企业实际发生的，且每一笔现金流量都必须有可靠的凭证作为验证，不应将应收账款、应付账款、暂时不能兑现的有价证券以及不能立即出让的固定资产账面价值等记入现金流量。</li>
-<li>同一个软件工程项目或者集成项目的现金流量，因立场及出发点不同会产生不同的结果。例如，某软件工程项目的投资方和承建方是不同的两个单位，当投资方支付项目款给承建方时，对于投资方而言是现金流出，而对于承建方而言则是现金流人。</li>
-<li>所有权或者使用权未发生转移的现金，其等价物不是现金流量。例如，企业的固定资产在未被使用之前不能将固定资产折旧列入现金流量。</li>
-</ol>
-</li>
-<li><p><strong>现金流量图</strong><br>现金流量图（ Cash - Flows Diagrams ）是指<strong>在时间坐标轴上，用带箭头的短线表示一个建设项目或者一个企业资金活动规律的图形。</strong></p>
-<p>软件企业可以依据现金流量图来考察软件工程项目或者系统集成项目在其整个生命周期内每个阶段的资金变化情况，进而分析其经济效果。</p>
-</li>
-<li><p><strong>现金流量的作用</strong></p>
-<p>现金流量的作用主要体现在以下三个方面：</p>
-<ol>
-<li>能对软件企业获取现金的能力作出评估。</li>
-<li>能对软件企业的偿债能力作出评价。</li>
-<li>能对软件工程项目收益的质量及投资、筹资活动作出评价。</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-2-3-资金等值的计算及其应用"><a href="#2-2-3-资金等值的计算及其应用" class="headerlink" title="2.2.3 资金等值的计算及其应用"></a>2.2.3 资金等值的计算及其应用</h3><ol>
-<li><p><strong>资金等值</strong></p>
-<p>资金具有时间价值。</p>
-<p>在软件工程项目中，资金的等值计算所涉及的概念有：</p>
-<ul>
-<li><p><strong>贴现（ Discount ）和贴现率（ Discount Rate )：</strong>贴现又称为折现，是指把将来某个时点的资金金额换算成现在时点的等值金额：贴现率是指贴现时所使用的利率（ i )，又称为折现率。</p>
-</li>
-<li><p><strong>现值 P ( Present Value )：</strong>是指资金贴现到现在时刻的价值。现值是一个相对的概念，如将 t + n 个时点上所发生的资金折现到第1个时点，所得的等值金额就是 t + n 个时点上的资金额在 t 时点的现值。</p>
-</li>
-<li><p><strong>终值 F ( Future Value )：</strong>又称为将来值或未来值，是指计息期期末的资金价值，或者表示现在某个时点的资金价值在未来某个时点的资金价值。</p>
-</li>
-<li><p><strong>年金 A ( Annual Value )：</strong>又称为年值或等额年值，是指每期都发生的等额现金流的金额，如租金、利息、折旧、保险金等。</p>
-<p>年金又分为<strong>普通年金</strong>、<strong>预付年金</strong>和<strong>延期年金</strong>三种。普通年金又称为后付年金，是指每期期末收、付款的现金流量序列，是最常用的年金形式；预付年金是指每期期初收、付款的现金流量序列；而延期年金是指距今若干期以后所发生的每期期末收、付款的现金流量序列。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>资金等值的计算</strong></p>
-<ol>
-<li><p><strong>一次性支付复利终值公式（已知 P，求 F ）</strong></p>
-<p>n 年末的本利和 F 与本金 P 的关系如下公式所示：<br>$$<br>F &#x3D; P(1+i)^n<br>$$</p>
-<p>式中，( 1+i )<sup>n</sup> 称为<strong>复利终值系数</strong>。</p>
-<p>【例2.9】某软件企业向银行贷款 100 万元，按年利率 8% 进行复利计息，试求该企业第 4 年年末连本带利一次偿还银行的金额，并画出其现金流量图。</p>
-<p>解：</p>
-<p>根据题意可得：<br>$$<br>F &#x3D; P (1+i)^n &#x3D; 100 × (1+0.08)^4 &#x3D; 100 × 1.3605 &#x3D; 136.05（万元）<br>$$<br>现金流量图如下所示：</p>
-<p><img src="https://s1.ax1x.com/2023/06/02/pCpCgmD.jpg" alt="例2.9现金流量图"></p>
-</li>
-<li><p><strong>一次性支付复利现值公式（已知 F，求 P ）</strong></p>
-<p>由上述公式可求出现值 P，如下公式所示：<br>$$<br>P &#x3D; F(1+i)^{-n}<br>$$<br>式中，( 1+i )<sup>-n</sup> 称为<strong>复利现值系数</strong>。</p>
-<p>【例2.10】某软件企业希望通过某信息化项目投资在第 4 年年末得到 200 万元的资金，若按年利率为 8% 进行复利计息，该企业需要一次性投入多少资金？</p>
-<p>解：</p>
-<p>根据题意可得：<br>$$<br>P &#x3D; F(1+i)^{-n} &#x3D; 200 × (1+0.08)^{-4} &#x3D; 200 × 0.735 &#x3D; 147（万元）<br>$$</p>
-</li>
-<li><p><strong>等额支付终值公式（又称为年金终值公式，已知 A，求 F ）</strong></p>
-<p>对于某个软件工程项目相应的经济系统，在其每个计息周期的期末（不含第 0 期）都支付相同数额的 A，在年利率为 i 时，求该系统 n 年后的终值，即等额支付终值的计算问题，其现金流量图如下所示：</p>
-<p><img src="https://s1.ax1x.com/2023/06/02/pCpiKGn.jpg" alt="等额支付终值现金流量图"></p>
-<p>根据等比数列的求和公式可推导出下列公式：<br>$$<br>F &#x3D; A \frac{(1+i)^n-1}{i}<br>$$</p>
-<p>上述公式即为<strong>等额支付终值公式</strong>。</p>
-<p>【例2.11】某企业软件在 6 年内，每年年末存入银行 200 万元，按年利率均为 6% 的复利计算，在第 6 年年末该企业可以连本带利取出多少资金？</p>
-<p>解：</p>
-<p>根据题意可得：<br>$$<br>F &#x3D; A \frac{(1+i)^n-1}{i} &#x3D; 200 × \frac{(1+0.06)^6-1}{0.06} &#x3D; 200 × 6.9753 &#x3D; 1395.06（万元）<br>$$</p>
-</li>
-<li><p><strong>等额支付偿债基金公式（已知 F，求 A ）</strong></p>
-<p>等额支付偿债基金的计算是等额支付终值计算的逆运算。已知当年利率为 i，求 n 年年末的资金 F 换算为与其等值的 n 年中每年年末的等额资金 A，即为偿债基金的计算问题。</p>
-<p>等额支付偿债基金公式如下：<br>$$<br>A &#x3D; F \frac{i}{(1+i)^n-1}<br>$$<br>【例2.12】某 ERP 企业计划自筹资金在 6 年后获得 500 万元资金进行某新技术开发，依据市场行情，银行利率为 6%，则从今年开始每年年末应筹集多少资金存入银行？</p>
-<p>解：</p>
-<p>根据题意可得：<br>$$<br>A &#x3D; F \frac{i}{(1+i)^n-1} &#x3D; 500 × \frac{0.06}{(1+0.06)^6-1} &#x3D; 500 × 0.1434 &#x3D; 71.7（万元）<br>$$</p>
-</li>
-<li><p><strong>等额支付现值公式（又称为年金现值公式，已知 A，求 P ）</strong></p>
-<p>等额支付现值公式如下：<br>$$<br>P &#x3D; F(1+i)^{-n} &#x3D; A \frac{(1+i)^n-1}{i}·(1+i)^{-n} &#x3D; A\frac{(1+i)^n-1}{i(1+i)^{n}}<br>$$<br>【例2.13】假设某 IT 企业期望在 8 年时间内每年年末能从银行取回 200 万元，如果按 6% 的复利计息，则该企业现在需要存入银行多少资金？</p>
-<p>解：</p>
-<p>根据题意可得：<br>$$<br>P &#x3D; A\frac{(1+i)^n-1}{i(1+i)^{n}} &#x3D; 200 × \frac{(1+0.06)^8-1}{0.06(1+0.06)^{8}} &#x3D; 200 × 6.2098 &#x3D; 1241.96（万元）<br>$$</p>
-</li>
-<li><p><strong>等额支付资金回收公式（已知 P，求 A ）</strong></p>
-<p>等额支付资金回收的计算是等额支付现值公式的逆运算。<br>$$<br>A &#x3D; P\frac{i(1+i)^{n}}{(1+i)^n-1}<br>$$<br>【例2.14】某 IT 企业向银行贷款 3500 万元投入某项目建设，按年利率 8% 的复利计算，若在 6 年内每年年末按等额还款的方式，则每年年末应还款的资金是多少？</p>
-<p>解：</p>
-<p>根据题意可得：<br>$$<br>A &#x3D; P\frac{i(1+i)^{n}}{(1+i)^n-1} &#x3D; 3500 × \frac{0.08(1+0.08)^{6}}{(1+0.08)^6-1} &#x3D; 3500 × 0.2163 &#x3D; 757.05（万元）<br>$$</p>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="2-3-招标与投标"><a href="#2-3-招标与投标" class="headerlink" title="2.3 招标与投标"></a>2.3 招标与投标</h2><p>软件工程类项目的经费来源一般分为三类：</p>
-<p>第一类：国家、省级自然基金，国家信息化工程及国防科研基金项目；</p>
-<p>第二类：企业自行筹资项目；</p>
-<p>第三类：经过投标竞争获取的企业或政府部门招标项目。本节将介绍第三类项目有关软件招标与投标的法律法规相关内容。</p>
-<h3 id="2-3-1-招标、投标概述"><a href="#2-3-1-招标、投标概述" class="headerlink" title="2.3.1 招标、投标概述"></a>2.3.1 招标、投标概述</h3><p>依据《中华人民共和国招标投标法》《中华人民共和国招标投标法实施条例《国家发展计划委工程建设项目招标范围和规模标准规定》（国家发展计划委令第3号）以及《国家发展改革委必须招标的工程项目规定》（国家发展改革委令第16号）相关要求，下列工程建设项目的勘察、设计、施工、监理以及建设有关的重要设备、材料等的采购，必须进行招标：</p>
-<ol>
-<li>大型基础设施、公用事业等关系社会公共利益、公众安全的项目；</li>
-<li>全部或部分使用国有资金投资或者国家融资的项目；</li>
-<li>使用国际组织或者外国政府贷款、援助资金的项目。</li>
-</ol>
-<p>任何单位与个人都不得将依法必须进行招标的项目化整为零或者以其他任何方式规避招标。招标、投标活动应当遵循公开、公平、公正和诚实信用的原则。依法必须进行招标的项目，其招标、投标活动不受地区或者部门的限制。任何单位和个人不得违法限制或者排斥本地区、本系统以外的法人或者其他组织参加投标，不得以任何方式非法干涉招标、投标活动。</p>
-<h3 id="2-3-2-招标人及其权利与义务"><a href="#2-3-2-招标人及其权利与义务" class="headerlink" title="2.3.2 招标人及其权利与义务"></a>2.3.2 招标人及其权利与义务</h3><p>招标人是依照《中华人民共和国招标投标法》规定提出招标项目、进行招标的法人或者其他组织。招标人应该有进行招标项目的相应资金或者资金来源已经落实，并应该在招标文件中如实载明。</p>
-<ol>
-<li><strong>招标人的权利</strong><ol>
-<li>招标人可自行办理招标事宜，也可自行选择招标代理机构，委托其办理招标事宜；</li>
-<li>招标人可根据招标项目本身的要求，在招标公告或投标邀请书中要求潜在投标人提供相关资质文件和业绩情况，并对潜在投标人进行资格审查；</li>
-<li>招标人可对已发出的资格预审文件或者招标文件进行必要的澄清或者修改；</li>
-<li>招标人有权拒收在招标文件要求提交的截止时间后送达的投标文件。</li>
-</ol>
-</li>
-<li><strong>招标人的义务</strong><ol>
-<li>招标人委托招标代理机构时，应向其提供招标所需的全部相关资料并支付委托费；</li>
-<li>招标人不得以不合理条件限制或者排斥潜在投标人，不得对潜在投标人实行歧视待遇；</li>
-<li>招标文件不得要求或者标明特定的生产供应者，以及含有倾向或者排斥潜在投标人的内容；</li>
-<li>招标人不得向他人透露已获取招标文件的潜在投标人的名称、数量，以及可能影响公平竞争的有关招标投标的其他情况；</li>
-<li>招标人应当明确投标人编制投标文件所需要的合理时间，最短不得少于20日；</li>
-<li>在招标文件要求提交投标文件的截止时间前收到的所有投标文件，开标时都应当众拆封与宣读；</li>
-<li>招标人应当采取必要的措施，保证评标在严格保密的情况下进行；</li>
-<li>在确定中标人后，招标人应当向中标人发出中标通知书，并同时将中标结果通知所有未中标的投标人；</li>
-<li>招标人与中标人应当自中标通知书发出之日起30日内，按照招标文件和中标的投标文件签订书面合同。</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-3-3-招标代理机构及其权利与义务"><a href="#2-3-3-招标代理机构及其权利与义务" class="headerlink" title="2.3.3 招标代理机构及其权利与义务"></a>2.3.3 招标代理机构及其权利与义务</h3><p>招标代理机构是依法设立、从事招标代理业务并提供相关服务的社会中介组织，与行政机关和其他国家机关不得存在隶属关系或者其他利益关系，应该具备从事招标代理业务的营业场所与相应资金，必须要有能够编制招标文件以及组织评标的相应专业力量。</p>
-<ol>
-<li><strong>招标代理机构的权利</strong><ol>
-<li>组织和参与招标活动；</li>
-<li>依据招标文件规定，审查投标人的资质；</li>
-<li>按规定标准收取招标代理费。</li>
-</ol>
-</li>
-<li><strong>招标代理机构的义务</strong><ol>
-<li>维护招标人和投标人的合法利益；</li>
-<li>组织编制和解释招标文件；</li>
-<li>接受国家招标、投标管理机构等有关行政监督部门的指导、监督；</li>
-<li>应当在招标人委托的招标范围内办理招标事宜，并遵守《中华人民共和国招标投标法》关于招标人的规定。</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-3-4-招标、投标的基本特性与基本原则"><a href="#2-3-4-招标、投标的基本特性与基本原则" class="headerlink" title="2.3.4 招标、投标的基本特性与基本原则"></a>2.3.4 招标、投标的基本特性与基本原则</h3><ol>
-<li><strong>招标、投标工作的基本特性</strong><ol>
-<li>招标、投标的公平竞争。</li>
-<li>招标、投标的交易规范。</li>
-<li>招标、投标的一次机会。</li>
-<li>招标、投标的定制方案特性。</li>
-<li>招标、投标的复合职业特性。</li>
-</ol>
-</li>
-<li><strong>招标、投标工作的基本原则</strong><ol>
-<li>公开原则</li>
-<li>公平原则</li>
-<li>公正原则</li>
-<li>诚实信用原则</li>
-</ol>
-</li>
-</ol>
-<h3 id="2-3-5-招标的方式"><a href="#2-3-5-招标的方式" class="headerlink" title="2.3.5 招标的方式"></a>2.3.5 招标的方式</h3><p>招标分为<strong>公开招标</strong>和<strong>邀请招标</strong>。</p>
-<p>公开招标是指<strong>招标人以招标公告的方式邀请不特定的法人或者其他组织投标。</strong></p>
-<p>邀请招标是指<strong>招标人以投标邀请书的方式邀请特定的法人或者其他组织投标。</strong></p>
-<p>国有资金占控股或者主导地位的依法必须进行招标的项目，应当公开招标；但有下列情况之一的，可以邀请招标：</p>
-<ol>
-<li>技术复杂、有特殊要求或者受自然环境限制，只有少量潜在投标人可供选择；</li>
-<li>采用公开招标方式的费用占项目合同金额的比例过大。</li>
-</ol>
-<p>招标人采用公开招标方式的，应当发布招标公告。依法进行招标项目的招标公告，应当通过国家指定的报刊、信息网络或者其他媒介发布。招标公告应当载明招标人的名称和地址，招标项目的性质、数量、实施地点和时间以及获取招标文件的办法等相关事项。</p>
-<p>招标人采用邀请招标方式的，应当向三个及以上具备承担所招标项目的能力、资信良好的特定的法人或者其他组织发出投标邀请书。投标邀请书应当载明的事项必须与公开招标公告规定的事项要求完全一致。</p>
-<p><strong>公开招标和邀请招标的区别：</strong></p>
-<ol>
-<li>发布信息的方式不同。</li>
-<li>选择的范围不同。</li>
-<li>竞争的范围不同。</li>
-<li>公开的程度不同。</li>
-<li>时间与费用不同。</li>
-</ol>
-<h3 id="2-3-6-投标"><a href="#2-3-6-投标" class="headerlink" title="2.3.6 投标"></a>2.3.6 投标</h3><p>投标人是响应招标、参加投标竞争的法人或者其他组织，依法招标的科研项目也可允许个人参与投标。</p>
-<p>投标人与招标人存在利害关系，如可能影响招标公正性的法人、其他组织或者个人，不得参与投标。</p>
-<p>投标人的义务有：</p>
-<ol>
-<li>投标人应当按照招标文件的要求编制投标文件。投标文件应当对招标文件提出的实质性要求与条件做出实质性响应。</li>
-<li>投标人应当在招标文件要求提交投标文件的截止时间前，将投标文件送达招标文件指定的投标地点。</li>
-<li>投标人可以在招标文件要求的提交投标文件截止时间前，补充、修改或撤回已提交的投标文件，并书面通知招标人。</li>
-<li>投标人根据招标文件载明的项目实际情况，拟在中标后将中标项目的部分非主体、非关键性工作进行分包的，应当在投标文件中载明。</li>
-</ol>
-<h3 id="2-3-7-开标、评标和中标"><a href="#2-3-7-开标、评标和中标" class="headerlink" title="2.3.7 开标、评标和中标"></a>2.3.7 开标、评标和中标</h3><ol>
-<li><p><strong>开标</strong></p>
-<p>开标原则上应当在招标文件规定的提交投标文件截止时间的同一时间公开进行；开标地点必须是招标文件中预先规定的地点。开标由招标人主持，邀请所有投标人参加。开标时，由投标人或者其推选的代表检查投标文件密封情况，也可以由招标人委托的公证机构检查并进行公证；经确认无误后，由工作人员当众拆封，并宣读投标人名称、投标价格与投标文件的其他主要内容。招标人在招标文件要求提交投标文件的截止时间前收到的所有投标文件，开标时都应该当众予以拆封和宣读。开标过程必须作好记录，并存档备查。</p>
-</li>
-<li><p><strong>评标</strong></p>
-<p>评标工作由招标人依法组建的评标委员会负责。依法必须进行招标的软件工程项目，其评标委员会由招标人的代表以及相关技术、经济等方面的专家组成，成员人数为五人以上单数，其中技术、经济等方面的专家不得少于评标成员总人数的三分之二。评标委员会专家资质应依据《中华人民共和国招标投标法》有关条款来确定。</p>
-<p>评标委员会可以要求投标人对投标文件中含义不明确的内容作必要的澄清或说明，但是澄清或说明不得超出投标文件的范围或改变投标文件的实质性内容。<br>评标委员会应当按照招标文件确定的评标标准和方法，对投标文件进行评审和比较；设有标底的，应当参考标底。评标委员会完成评标后，应当向招标人提出书面评标报告，并推荐合格的候选中标人。招标人根据评标委员会提出的书面评标报告与所推荐的中标候选人确定中标人，也可以授权评标委员会直接确定中标人。</p>
-<p>中标人的投标应当符合下列条件之一：</p>
-<ol>
-<li><p>能够最大限度地满足招标文件中规定的各项综合评价标准；</p>
-</li>
-<li><p>能够满足招标文件的实质性要求，并且经评审的投标价格最低，但是投标价格低于成本的除外。少数软件工程项目的投资方为了保证项目的质量，采用价格按所有投标方报价的算术平均值作为最高分的，必须按招标文件中明确的评分标准计算。</p>
-<p>评标委员会经评审，如果认为所有投标方全都不符合招标文件要求的，可以否决所有投标。</p>
-</li>
-</ol>
-</li>
-<li><p><strong>中标</strong></p>
-<p>中标人确定后，招标人应当向中标人发出中标通知书，并同时将中标结果通知所有未中标的投标人。中标通知书对招标人和中标人具有同等法律效力。中标通知书发出后，招标人改变中标结果的，或者中标人放弃中标项目的，应当依法承担法律责任。</p>
-<p>招标人和中标人应当自中标通知书发出之日起三十日内，按照招标文件与中标人的投标文件的合同约定签订书面合同。招标人与中标人不得再行订立背离合同实质性内容的其他协议。招标文件要求中标人提交履约保证金的，中标人必须按招标文件的要求提交，履约保证金不得超过中标合同金额的 10%。</p>
-</li>
-</ol>
-<h3 id="2-3-8-招标、投标的程序"><a href="#2-3-8-招标、投标的程序" class="headerlink" title="2.3.8 招标、投标的程序"></a>2.3.8 招标、投标的程序</h3><p>尽管招标方式不同，但招投标的程序基本相同，一般要经过<strong>确定采购需求与招标方式</strong>、<strong>发布招标公告或投标邀请书</strong>、<strong>编制投标文件</strong>、<strong>递交投标文件</strong>、<strong>开标</strong>、<strong>评标</strong>、<strong>确定中标人</strong>以及<strong>签订合同</strong>的流程。</p>
-<h3 id="2-3-9-招标、投标的法律责任"><a href="#2-3-9-招标、投标的法律责任" class="headerlink" title="2.3.9 招标、投标的法律责任"></a>2.3.9 招标、投标的法律责任</h3><p>法律责任是指违法者对违法行为所应承担的具有强制性的法律责任。</p>
-<p>在《中华人民共和国招投标法》中明确了招标过程中各方的法律责任，涉及招标人、招标代理机构、投标人、评标委员会成员、中标人、有关行政监督部门等。</p>
-<p>就投标人承担的法律责任来说，具体规定如下：</p>
-<ol>
-<li>投标人相互串通投标或者与招标人串通投标的，投标人以向招标人或者评标委员会成员行贿的手段谋取中标的，中标无效，并处以中标项目金额千分之五以上千分之十以下的罚款，对单位直接负责的主管人员和其他直接责任人员处以中标项目金额百分之五以上百分之十以下的罚款；有违法所得的，没收违法所得；情节严重的，取消其一至二年内参加投标的资格并予以公告，直至由工商行政管理机关吊销营业执照；构成犯罪的，依法追究刑事责任；给他人造成损失的，依法承担赔偿责任。</li>
-<li>投标人以他人名义投标或者以其他方式弄虚作假骗取中标的，中标无效；给招标人造成损失的，依法承担赔偿责任；构成犯罪的，依法追究刑事责任。</li>
-</ol>
-<h3 id="2-3-10-软件工程项目投标文件的案例"><a href="#2-3-10-软件工程项目投标文件的案例" class="headerlink" title="2.3.10 软件工程项目投标文件的案例"></a>2.3.10 软件工程项目投标文件的案例</h3><p>软件工程项目投标文件的内容包括两大部分：</p>
-<p>第一部分是投标人的相关材料，包括从事软件工程项目的研究经历（合同书、鉴定、评审意见书、获奖证明、市场销售量、相关部门的效益评价书等）；技术水平（通信系统、计算机软硬分析设计、测试人才数量、主要技术人员的职称证明文件、从事相关项目研究经历等）；信息资源拥有量；资金与财务状况的银行、会计、审计部门证明文件；企业管理人员简历以及履约能力证明文件等。</p>
-<p>第二部分是软件工程项目的技术设计文件。</p>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第3章 软件的成本管理与定价分析</title>
-    <url>/posts/a0090003.html</url>
-    <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
-<p>成本的分类方法一般可以按照不同的准则进行划分：</p>
-<ol>
-<li><strong>按照企业的主要经营活动</strong>可分为采购成本、研究与开发成本、生产成本、经营成本以及管理费用。</li>
-<li><strong>按照生产费用计入成本</strong>的方法，可分为直接成本和间接成本。</li>
-<li><strong>按照成本与所完成项目工作量的关系</strong>，可分为固定成本和变动成本。</li>
-<li><strong>按照成本所确定的时间</strong>，可分为预算成本、计划成本及实际成本。</li>
-</ol>
-<h3 id="3-1-1-软件工程项目的成本构成"><a href="#3-1-1-软件工程项目的成本构成" class="headerlink" title="3.1.1 软件工程项目的成本构成"></a>3.1.1 软件工程项目的成本构成</h3><p>软件成本是软件在其生存周期内为取得各种软、硬件资源的支持以及维持系统的研究、生产经营及管理工作所支付的所有费用。</p>
-<p>软件工程项目成本又称为软件工程项目支出，是指为了实现软件工程项目目标所耗用资源的成本总和。软件工程项目成本主要由<strong>硬件成本</strong>、<strong>软件开发成本</strong>、<strong>人员培训费用</strong>和<strong>项目管理费用</strong>等构成。</p>
-<p>软件工程项目成本主要涉及以下 15 类：</p>
-<ol>
-<li>调研费用</li>
-<li>环境建设费用</li>
-<li>工具购置费</li>
-<li>基建费用</li>
-<li>软件开发&#x2F;测试费用</li>
-<li>人力资源费用</li>
-<li>水、电、运输费</li>
-<li>第三方评测费</li>
-<li>软件产品制作费用</li>
-<li>培训费用</li>
-<li>现场实施费用</li>
-<li>营销费用</li>
-<li>售后服务运行维护费</li>
-<li>管理费用</li>
-<li>其他费用</li>
-</ol>
-<h3 id="3-1-2-软件成本测算的影响因素"><a href="#3-1-2-软件成本测算的影响因素" class="headerlink" title="3.1.2 软件成本测算的影响因素"></a>3.1.2 软件成本测算的影响因素</h3><h3 id="3-1-3-软件成本测算的流程"><a href="#3-1-3-软件成本测算的流程" class="headerlink" title="3.1.3 软件成本测算的流程"></a>3.1.3 软件成本测算的流程</h3><h2 id="3-2-软件的成本核算"><a href="#3-2-软件的成本核算" class="headerlink" title="3.2 软件的成本核算"></a>3.2 软件的成本核算</h2><p>对软件工程项目的成本与工期测算的方法较多，通常有功能分解法、统计模型法、价值工程法、表格法、驱动因子法、计算机模拟法、类比法、专门成本测算工具软件预算等方法。</p>
-<p>以下主要分析<strong>驱动因子法</strong>和<strong>类比法</strong>。</p>
-<h3 id="3-2-1-功能分解法"><a href="#3-2-1-功能分解法" class="headerlink" title="3.2.1 功能分解法"></a>3.2.1 功能分解法</h3><p>功能分解法主要从结构上将软件系统按照功能或者性能与生存周期各阶段进行二维分解。</p>
-<h3 id="3-2-2-驱动因子法"><a href="#3-2-2-驱动因子法" class="headerlink" title="3.2.2 驱动因子法"></a>3.2.2 驱动因子法</h3><p>驱动因子法又称为影响因子法，是一种在统计模型的基础上通过引入更多对 y 有影响的要素，来完成统计模型估计值的修正的一种定性与定量相结合的方法。</p>
-<ol>
-<li><p><strong>驱动因子法的求解方法</strong></p>
-<ol>
-<li><p>确定对因变量 y 做出估计的统计模型 y&#x3D;g(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)，其中x<sub>j</sub>（1~n）是指通过定量估算法求得的对 y 有较大影响的几个要素。</p>
-</li>
-<li><p>引入综合要素 U，U 是指除了 x<sub>j</sub> 以外对 y 有影响的估计值，如下列公式所示：<br>$$<br>y &#x3D; U · g(x_{1},x_{2},…,x_{n})<br>$$</p>
-<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{n} U_{j}<br>$$</p>
-</li>
-</ol>
-</li>
-<li><p><strong>影响要素引入 x<sub>j</sub> （1~n）的基本原则</strong></p>
-<ol>
-<li>对 y 有重要影响的要素归入 x<sub>j</sub>，其他归入 U<sub>j</sub>。</li>
-<li>易于定量的影响要素归入 x<sub>j</sub>，不易于定量的影响要素归入 U<sub>j</sub>。</li>
-<li>x<sub>j</sub> 的数量不宜太多，否则求解统计模型较困难。</li>
-</ol>
-</li>
-<li><p><strong>结构化成本模型</strong></p>
-<p>结构化成本模型（ COCOMO ）主要有基本模型、中级模型和详细模型三种。</p>
-<p>中级模型适用于系统规划阶段作软件成本估算的模型，其求解方式如下列公式所示：<br>$$<br>C_{s} &#x3D; a · M_{s}<br>$$</p>
-<p>$$<br>T_{d} &#x3D; h(M_{s})^d<br>$$</p>
-<p>$$<br>M_{s} &#x3D; U · M_{0}<br>$$</p>
-<p>$$<br>M_{0} &#x3D; r · L^{k}<br>$$</p>
-<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{15} U_{j}<br>$$</p>
-</li>
-</ol>
-<p><strong>中级 COCOMO 变量参数明细表如下。</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">变量名称</th>
-<th align="center">经济含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">C<sub>s</sub></td>
-<td align="center">软件开发成本</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">a</td>
-<td align="center">软件开发阶段的工时费用率</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">M<sub>s</sub></td>
-<td align="center">软件开发阶段的修正工作量</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">M<sub>0</sub></td>
-<td align="center">软件开发阶段的基本工作量</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">L</td>
-<td align="center">软件开发规模</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">U</td>
-<td align="center">软件综合影响要素</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">U<sub>j</sub></td>
-<td align="center">对成本有一定影响的第 j 个影响要素</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">T<sub>d</sub></td>
-<td align="center">工期（开发周期）</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="center">r，k，h，d</td>
-<td align="center">形式参数</td>
-</tr>
-</tbody></table>
-<p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th rowspan="2">软件总体类型</th>
-            <th colspan="2">基本工作量 M<sub>0</sub></th>
-            <th colspan="2">开发工期 T<sub>d</sub></th>  
-        </tr>
-        <tr align="center">
-            <td>r</td>
-            <td>k</td>
-            <td>h</td>
-            <td>d</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td>有机型</td>
-            <td>3.2</td>
-            <td>1.05</td>
-            <td>2.5</td>
-            <td>0.38</td>
-        </tr>
-        <tr align="center">
-            <td>嵌入型</td>
-            <td>2.8</td>
-            <td>1.20</td>
-            <td>2.5</td>
-            <td>0.32</td>
-        </tr>
-        <tr align="center">
-            <td>半独立型</td>
-            <td>3.0</td>
-            <td>1.12</td>
-            <td>2.5</td>
-            <td>0.35</td>
-        </tr>
-    </tbody>
-</table>
-
-
-<p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th colspan="2">工作量影响要素 U</th>
-            <th>非常低</th>
-            <th>低</th>
-            <th>正常</th>
-            <th>高</th>
-            <th>非常高</th>
-            <th>超高</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td rowspan="3">产品因素类</td>
-            <td>软件可靠性 U<sub>1</sub></td>
-            <td>0.75</td>
-            <td>0.88</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.40</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>数据库规模 U<sub>2</sub></td>
-            <td>-</td>
-            <td>0.94</td>
-            <td>1.00</td>
-            <td>1.08</td>
-            <td>1.16</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>产品复杂性 U<sub>3</sub></td>
-            <td>0.70</td>
-            <td>0.85</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.30</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="4">计算机因素类</td>
-            <td>执行时间限制 U<sub>4</sub></td>
-            <td>-</td>
-            <td>-</td>
-            <td>1.00</td>
-            <td>1.10</td>
-            <td>1.30</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td>主存储限制 U<sub>5</sub></td>
-            <td>-</td>
-            <td>-</td>
-            <td>1.00</td>
-            <td>1.06</td>
-            <td>1.21</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td>易变性 U<sub>6</sub></td>
-            <td>-</td>
-            <td>0.87</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.30</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>环境周转时间 U<sub>7</sub></td>
-            <td>-</td>
-            <td>0.87</td>
-            <td>1.00</td>
-            <td>1.07</td>
-            <td>1.15</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="5">人员因素类</td>
-            <td>分析员能力 U<sub>8</sub></td>
-            <td>1.46</td>
-            <td>1.19</td>
-            <td>1.00</td>
-            <td>0.86</td>
-            <td>0.71</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>应用领域实际经验 U<sub>9</sub></td>
-            <td>1.29</td>
-            <td>1.13</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.82</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>程序员能力 U<sub>10</sub></td>
-            <td>1.42</td>
-            <td>1.17</td>
-            <td>1.00</td>
-            <td>0.86</td>
-            <td>0.70</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>使用经验 U<sub>11</sub></td>
-            <td>1.21</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.90</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>程序语言使用经验 U<sub>12</sub></td>
-            <td>1.41</td>
-            <td>1.07</td>
-            <td>1.00</td>
-            <td>0.95</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="3">项目因素类</td>
-            <td>现代程序设计技术 U<sub>13</sub></td>
-            <td>1.24</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.82</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>软件工具的使用 U<sub>14</sub></td>
-            <td>1.24</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.83</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>开发进度限制 U<sub>15</sub></td>
-            <td>1.23</td>
-            <td>1.08</td>
-            <td>1.00</td>
-            <td>1.04</td>
-            <td>1.10</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
-【例3.1】某软件企业中标了某嵌入型软件工程项目，预计 10k DSI 代码量，根据该软件的需求以及开发投入情况，用 COCOMO 求得该项目的综合影响要素 U 为 1.36，从该企业的信息数据库得知工时费用率 a = 9000 元/人·月，试对该软件的成本、工作量与工期做出估算。
-
-<p>解：根据题意以及嵌入型软件的形式参数值可得：<br>$$<br>M_0 &#x3D; r·L^k &#x3D; 2.8 × 10^{1.2} &#x3D; 44.38 （人·月）<br>$$</p>
-<p>$$<br>M_s &#x3D; U·M_0 &#x3D; 1.36 × 44.38 &#x3D; 60.4（人·月）<br>$$</p>
-<p>$$<br>T_d &#x3D; h(M_s)^d &#x3D; 2.5 × 60.4^{0.32} &#x3D; 9.29（个月）<br>$$</p>
-<p>$$<br>C_s &#x3D; a · M_s &#x3D; 9000 × 60.4 &#x3D; 54.36（万元）<br>$$</p>
-<h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><p>软件企业开发软件通常有两种情况：①全新开发方式；②目标软件与以往开发的某款或者某些软件有许多相同或类似的结构，涉及的开发人员变化也较少，则可采用类比法来估算目标软件的成本。</p>
-<p>假设某软件企业以往开发过一个类似的软件 S<sub>X</sub>，其软件规模为 L<sub>X</sub>；目标开发软件为 S<sub>Y</sub>,其软件规模为 L<sub>Y</sub>。由于目标开发软件的功能结构与原软件 S<sub>X</sub> 有很多类似之处，因此决定在 S<sub>X</sub> 的基础上改编成 S<sub>Y</sub>。</p>
-<p>故引入调整系数 AC，主要通过设计修改 DMC、代码修改 CMC，以及集成修改 IMC 三部分构成。</p>
-<p>调整系数 AC 可用下列公式表示：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC<br>$$</p>
-<p>式中 W<sub>j</sub>（j&#x3D;1，2，3）表示权重系数，其加权和必须等于 1。</p>
-<p>B.W.Boehm 建议权重系数 W<sub>1</sub>，W<sub>2</sub>，W<sub>3</sub> 分别取值为 0.4、0.3 和 0.3。也就是下列公式。<br>$$<br>AC &#x3D; 0.4 · DMC + 0.3 · CMC + 0.3 · IMC<br>$$<br>由此可得 S<sub>Y</sub> 软件的开发规模 L<sub>Y</sub> 可以用下列公式表示。<br>$$<br>L_{Y} &#x3D; L_{X} · AC &#x3D; L_{X} · (0.4 · DMC + 0.3 · CMC + 0.3 · IMC)<br>$$</p>
-<p>【例3.2】某软件公司曾开发过一种规模为 20k 代码量的软件 S<sub>X</sub>，现欲将其改编为嵌入型软件 S<sub>Y</sub>，经估算其设计、代码与集成修改的系数分别是 30%、40% 和 110%，工作量综合影响要素 U &#x3D; 1.2，工时费用率 a &#x3D; 8000 元&#x2F;人·月。试用类比法估算目标软件 S<sub>Y</sub> 的成本。</p>
-<p>解：根据题意可得：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC &#x3D; 0.4 × 0.3 + 0.3 × 0.4 + 0.3 × 1.10 &#x3D; 0.57<br>$$</p>
-<p>$$<br>L_Y &#x3D; L_{X} · AC &#x3D; 20 kLOC × 0.57 &#x3D; 11.4 kLOC<br>$$</p>
-<p>由题意可知，该软件属于嵌入型软件，查表可知相对应的形式参数值：<br>$$<br>M_s &#x3D; U·M_0 &#x3D; U · r · L^k &#x3D; 1.2 × 2.8 × 11.4^{1.20} &#x3D; 62.32（人·月）<br>$$</p>
-<p>$$<br>C_s &#x3D; a·M_s &#x3D; 8000 × 62.32 &#x3D; 498560（元）<br>$$</p>
-<h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><ol>
-<li><p><strong>设备的磨损</strong></p>
-<ol>
-<li><p>设备的<strong>有形磨损</strong></p>
-<p>有形磨损是指设备在生产使用或者闲置过程中，由于使用或者受自然环境的影响所产生的损耗。</p>
-<p>设备的有形磨损根据导致其磨损的不同原因可分为：</p>
-<ul>
-<li>第 Ⅰ 类有形磨损</li>
-<li>第 Ⅱ 类有形磨损</li>
-</ul>
-</li>
-<li><p>设备的<strong>无形磨损</strong></p>
-<p>无形磨损是指随着科技的进步等原因导致设备价值不断降低的现象。</p>
-<p>设备的无形磨损根据导致其磨损的不同原因可分为：</p>
-<ul>
-<li>第 Ⅰ 类无形磨损</li>
-<li>第 Ⅱ 类无形磨损</li>
-</ul>
-</li>
-<li><p>设备的<strong>综合磨损</strong></p>
-<p>综合磨损是指设备购置后既产生了<strong>有形磨损</strong>又产生了<strong>无形磨损</strong>。</p>
-<p>假设设备发生有形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>p</sub>；而设备产生无形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>q</sub>，及设备的综合磨损的计算公式如下：<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q)<br>$$<br>【例3.3】某 IT 企业原始购买价值为 23000 元的 A 电子设备在使用过程中发生磨损，需要修理，修理费用为 4000 元，若重置同类设备价值为 20000 元，若新旧设备生产率及单位产品消耗是相同的，试求该电子设备的综合磨损程度及剩余价值。</p>
-<p>解：由题意可知， K<sub>0</sub> &#x3D; 23000（元），R &#x3D; 4000（元），K<sub>1</sub> &#x3D; 20000（元）。</p>
-<p>A 电子设备的有形磨损程度为<br>$$<br>α_p &#x3D; \frac{R}{K_{1}} &#x3D; \frac{4000}{20000} &#x3D; 0.2<br>$$<br>A 电子设备的无形磨损程度为<br>$$<br>α_q &#x3D; 1 - \frac{K_{1}}{K_{0}} &#x3D; 1 - \frac{20000}{23000} &#x3D; 0.13<br>$$<br>A 电子设备的综合磨损程度为<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q) &#x3D; 1-(1-0.2)(1-0.13) &#x3D; 0.304<br>$$<br>A 电子设备的剩余价值为<br>$$<br>K &#x3D; K_1 - R &#x3D; 20000 - 4000 &#x3D; 16000（元）<br>$$<br>故该电子设备的综合磨损程度是 30.4%，其剩余价值是 16000 元。</p>
-</li>
-</ol>
-</li>
-<li><p><strong>设备的折旧</strong></p>
-<p>我国现行财会制度规定的固定资产折旧法主要有<strong>平均年限法</strong>和<strong>双倍余额递减法</strong>。</p>
-</li>
-</ol>
-<h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><p>价值工程设计的三个基本概念：<strong>价值（ Value ）</strong>、<strong>功能（ Function ）</strong>和<strong>全寿命周期成本（ Cost ）</strong>。</p>
-<ol>
-<li><p><strong>提高软件工程项目价值的途径</strong></p>
-<ol>
-<li>双向型</li>
-<li>节约型</li>
-<li>改进型</li>
-<li>牺牲型</li>
-<li>投资型</li>
-</ol>
-<p>上述提高价值的方法中，1、2 属于降低成本，3、5 属于提高功能，1 是对功能与成本同时进行改善，是最积极、最理想的提高价值的方法。</p>
-</li>
-<li><p><strong>价值工程的主要特征</strong></p>
-<ol>
-<li>价值工程以用户的功能需求为出发点；</li>
-<li>价值工程以功能分析为核心，系统地研究功能和成本之间的关系；</li>
-<li>价值工程是致力于提高价值的创造性活动；</li>
-<li>价值工程是有计划、有组织地按照一定地工序来进行。</li>
-</ol>
-</li>
-</ol>
-<h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><ol>
-<li>百分比法</li>
-<li>ABC 分类法</li>
-<li>价值系数法</li>
-</ol>
-<h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><p>功能分析主要包括<strong>功能定义</strong>与<strong>功能整理</strong>两方面的内容。</p>
-<p>功能整理的步骤如下：</p>
-<ol>
-<li>分析软件产品的基本功能与辅助功能；</li>
-<li>明确功能的上下位与并列关系；</li>
-<li>排列功能系统图。</li>
-</ol>
-<h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><ol>
-<li><strong>挣值分析的基本概念</strong><ol>
-<li>计划价值</li>
-<li>实际成本</li>
-<li>挣值</li>
-<li>完工预算</li>
-</ol>
-</li>
-<li><strong>挣值分析的绩效指标</strong><ol>
-<li>成本偏差</li>
-<li>进度偏差</li>
-<li>进度绩效指标</li>
-<li>成本绩效指标</li>
-</ol>
-</li>
-<li><strong>挣值分析的预测指标</strong><ol>
-<li>完工尚需估算</li>
-<li>完工估算</li>
-<li>完工尚需绩效指标</li>
-</ol>
-</li>
-</ol>
-<h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><p>软件企业的定价策略：</p>
-<ol>
-<li>捆绑定价策略</li>
-<li>撇脂和渗透定价策略<ul>
-<li>撇脂定价法</li>
-<li>渗透定价法</li>
-</ul>
-</li>
-<li>歧视定价策略</li>
-<li>免费使用定价策略</li>
-</ol>
-<h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3><p>软件产品的促销策略确定：</p>
-<p>促销是促进营销的简称，是指采用人员或非人员的方式来帮助或说服客户购买某软件元产品／软件服务，或者让消费者对某个或者某些软件产品产生好感的一种活动。</p>
-<p>促销策略主要包括<strong>直接促销</strong>和<strong>间接促销</strong>。直接促销是指人员上门推销软件产品的活动；间接促销是指采用各种媒体广告、营销推广与公共关系宣传等方式进行推销软件产品的活动。</p>
-<p>软件作为一种特殊的无形产品，除了上述促销手段外，还有一些特殊的促销手段，如<strong>品牌促销</strong>、<strong>教育促销</strong>以及<strong>人员促销</strong>等。</p>
-<ol>
-<li><p>品牌促销</p>
-<p>软件产品／软件服务是一种高技术产品，一般用户在购买软件产品前往往都会心存疑虑。一个良好的软件产品形象能大大消除用户的购买疑虑，让用户产生安全感和信任感。因此，软件企业要大力提高品牌知名度，让客户对软件企业产生信任感，放心购买其产品。软件企业可以通过树立品牌形象，引入企业形象识别系统以及发布产品广告、企业形象广告，建立企业网站、媒体宣传等多种手段来扩大企业的品牌知名度。</p>
-</li>
-<li><p>教育促销</p>
-<p>软件的高科技特性会导致用户较难理解与掌握，软件企业需要利用各种场合来演示自己的产品，如通过软件博览会、展销会等，让目标用户与潜在用户了解该产品的主要功能。教育促销可通过向媒体发送免费的测试软件、认证培训、举办讲座等方式进行普及知识；利用展会进行产品展示等多种手段来扩大软件产品的宣传。</p>
-</li>
-<li><p>人员促销</p>
-<p>人员促销应注重沟通能力以及人际关系。软件企业通过专业的服务人员与用户实现有效的沟通，为客户做好完备的前期咨询工作。这种方式针对性强，让客户觉得自己备受重视，无效劳动少，因此促销成功的概率会比较高。人员促销也有利于软件企业了解市场，能够给软件企业营销决策提供有效的建议与意见。人员促销需要注意以下问题：</p>
-<ol>
-<li>挑选专业技术能力强、个人素质高的促销人员；</li>
-<li>软件企业要根据目标市场的特点、产品的特点等，对促销人员进行资源、促销区域、促销时间等进行合理分配；</li>
-<li>软件企业要对促销人员实施有效的管理与激励，以确保促销目标的实现。</li>
-</ol>
-</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
@@ -1973,6 +1217,991 @@
       </tags>
   </entry>
   <entry>
+    <title>第3章 软件的成本管理与定价分析</title>
+    <url>/posts/a0090003.html</url>
+    <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
+<p>成本的分类方法一般可以按照不同的准则进行划分：</p>
+<ol>
+<li><strong>按照企业的主要经营活动</strong>可分为采购成本、研究与开发成本、生产成本、经营成本以及管理费用。</li>
+<li><strong>按照生产费用计入成本</strong>的方法，可分为直接成本和间接成本。</li>
+<li><strong>按照成本与所完成项目工作量的关系</strong>，可分为固定成本和变动成本。</li>
+<li><strong>按照成本所确定的时间</strong>，可分为预算成本、计划成本及实际成本。</li>
+</ol>
+<h3 id="3-1-1-软件工程项目的成本构成"><a href="#3-1-1-软件工程项目的成本构成" class="headerlink" title="3.1.1 软件工程项目的成本构成"></a>3.1.1 软件工程项目的成本构成</h3><p>软件成本是软件在其生存周期内为取得各种软、硬件资源的支持以及维持系统的研究、生产经营及管理工作所支付的所有费用。</p>
+<p>软件工程项目成本又称为软件工程项目支出，是指为了实现软件工程项目目标所耗用资源的成本总和。软件工程项目成本主要由<strong>硬件成本</strong>、<strong>软件开发成本</strong>、<strong>人员培训费用</strong>和<strong>项目管理费用</strong>等构成。</p>
+<p>软件工程项目成本主要涉及以下 15 类：</p>
+<ol>
+<li>调研费用</li>
+<li>环境建设费用</li>
+<li>工具购置费</li>
+<li>基建费用</li>
+<li>软件开发&#x2F;测试费用</li>
+<li>人力资源费用</li>
+<li>水、电、运输费</li>
+<li>第三方评测费</li>
+<li>软件产品制作费用</li>
+<li>培训费用</li>
+<li>现场实施费用</li>
+<li>营销费用</li>
+<li>售后服务运行维护费</li>
+<li>管理费用</li>
+<li>其他费用</li>
+</ol>
+<h3 id="3-1-2-软件成本测算的影响因素"><a href="#3-1-2-软件成本测算的影响因素" class="headerlink" title="3.1.2 软件成本测算的影响因素"></a>3.1.2 软件成本测算的影响因素</h3><h3 id="3-1-3-软件成本测算的流程"><a href="#3-1-3-软件成本测算的流程" class="headerlink" title="3.1.3 软件成本测算的流程"></a>3.1.3 软件成本测算的流程</h3><h2 id="3-2-软件的成本核算"><a href="#3-2-软件的成本核算" class="headerlink" title="3.2 软件的成本核算"></a>3.2 软件的成本核算</h2><p>对软件工程项目的成本与工期测算的方法较多，通常有功能分解法、统计模型法、价值工程法、表格法、驱动因子法、计算机模拟法、类比法、专门成本测算工具软件预算等方法。</p>
+<p>以下主要分析<strong>驱动因子法</strong>和<strong>类比法</strong>。</p>
+<h3 id="3-2-1-功能分解法"><a href="#3-2-1-功能分解法" class="headerlink" title="3.2.1 功能分解法"></a>3.2.1 功能分解法</h3><p>功能分解法主要从结构上将软件系统按照功能或者性能与生存周期各阶段进行二维分解。</p>
+<h3 id="3-2-2-驱动因子法"><a href="#3-2-2-驱动因子法" class="headerlink" title="3.2.2 驱动因子法"></a>3.2.2 驱动因子法</h3><p>驱动因子法又称为影响因子法，是一种在统计模型的基础上通过引入更多对 y 有影响的要素，来完成统计模型估计值的修正的一种定性与定量相结合的方法。</p>
+<ol>
+<li><p><strong>驱动因子法的求解方法</strong></p>
+<ol>
+<li><p>确定对因变量 y 做出估计的统计模型 y&#x3D;g(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)，其中x<sub>j</sub>（1~n）是指通过定量估算法求得的对 y 有较大影响的几个要素。</p>
+</li>
+<li><p>引入综合要素 U，U 是指除了 x<sub>j</sub> 以外对 y 有影响的估计值，如下列公式所示：<br>$$<br>y &#x3D; U · g(x_{1},x_{2},…,x_{n})<br>$$</p>
+<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{n} U_{j}<br>$$</p>
+</li>
+</ol>
+</li>
+<li><p><strong>影响要素引入 x<sub>j</sub> （1~n）的基本原则</strong></p>
+<ol>
+<li>对 y 有重要影响的要素归入 x<sub>j</sub>，其他归入 U<sub>j</sub>。</li>
+<li>易于定量的影响要素归入 x<sub>j</sub>，不易于定量的影响要素归入 U<sub>j</sub>。</li>
+<li>x<sub>j</sub> 的数量不宜太多，否则求解统计模型较困难。</li>
+</ol>
+</li>
+<li><p><strong>结构化成本模型</strong></p>
+<p>结构化成本模型（ COCOMO ）主要有基本模型、中级模型和详细模型三种。</p>
+<p>中级模型适用于系统规划阶段作软件成本估算的模型，其求解方式如下列公式所示：<br>$$<br>C_{s} &#x3D; a · M_{s}<br>$$</p>
+<p>$$<br>T_{d} &#x3D; h(M_{s})^d<br>$$</p>
+<p>$$<br>M_{s} &#x3D; U · M_{0}<br>$$</p>
+<p>$$<br>M_{0} &#x3D; r · L^{k}<br>$$</p>
+<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{15} U_{j}<br>$$</p>
+</li>
+</ol>
+<p><strong>中级 COCOMO 变量参数明细表如下。</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">变量名称</th>
+<th align="center">经济含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">C<sub>s</sub></td>
+<td align="center">软件开发成本</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">a</td>
+<td align="center">软件开发阶段的工时费用率</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">M<sub>s</sub></td>
+<td align="center">软件开发阶段的修正工作量</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">M<sub>0</sub></td>
+<td align="center">软件开发阶段的基本工作量</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">L</td>
+<td align="center">软件开发规模</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">U</td>
+<td align="center">软件综合影响要素</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">U<sub>j</sub></td>
+<td align="center">对成本有一定影响的第 j 个影响要素</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">T<sub>d</sub></td>
+<td align="center">工期（开发周期）</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">r，k，h，d</td>
+<td align="center">形式参数</td>
+</tr>
+</tbody></table>
+<p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th rowspan="2">软件总体类型</th>
+            <th colspan="2">基本工作量 M<sub>0</sub></th>
+            <th colspan="2">开发工期 T<sub>d</sub></th>  
+        </tr>
+        <tr align="center">
+            <td>r</td>
+            <td>k</td>
+            <td>h</td>
+            <td>d</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>有机型</td>
+            <td>3.2</td>
+            <td>1.05</td>
+            <td>2.5</td>
+            <td>0.38</td>
+        </tr>
+        <tr align="center">
+            <td>嵌入型</td>
+            <td>2.8</td>
+            <td>1.20</td>
+            <td>2.5</td>
+            <td>0.32</td>
+        </tr>
+        <tr align="center">
+            <td>半独立型</td>
+            <td>3.0</td>
+            <td>1.12</td>
+            <td>2.5</td>
+            <td>0.35</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th colspan="2">工作量影响要素 U</th>
+            <th>非常低</th>
+            <th>低</th>
+            <th>正常</th>
+            <th>高</th>
+            <th>非常高</th>
+            <th>超高</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td rowspan="3">产品因素类</td>
+            <td>软件可靠性 U<sub>1</sub></td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>数据库规模 U<sub>2</sub></td>
+            <td>-</td>
+            <td>0.94</td>
+            <td>1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>产品复杂性 U<sub>3</sub></td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="4">计算机因素类</td>
+            <td>执行时间限制 U<sub>4</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.10</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>主存储限制 U<sub>5</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>易变性 U<sub>6</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>环境周转时间 U<sub>7</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="5">人员因素类</td>
+            <td>分析员能力 U<sub>8</sub></td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>应用领域实际经验 U<sub>9</sub></td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序员能力 U<sub>10</sub></td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>使用经验 U<sub>11</sub></td>
+            <td>1.21</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序语言使用经验 U<sub>12</sub></td>
+            <td>1.41</td>
+            <td>1.07</td>
+            <td>1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">项目因素类</td>
+            <td>现代程序设计技术 U<sub>13</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>软件工具的使用 U<sub>14</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>开发进度限制 U<sub>15</sub></td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td>1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+【例3.1】某软件企业中标了某嵌入型软件工程项目，预计 10k DSI 代码量，根据该软件的需求以及开发投入情况，用 COCOMO 求得该项目的综合影响要素 U 为 1.36，从该企业的信息数据库得知工时费用率 a = 9000 元/人·月，试对该软件的成本、工作量与工期做出估算。
+
+<p>解：根据题意以及嵌入型软件的形式参数值可得：<br>$$<br>M_0 &#x3D; r·L^k &#x3D; 2.8 × 10^{1.2} &#x3D; 44.38 （人·月）<br>$$</p>
+<p>$$<br>M_s &#x3D; U·M_0 &#x3D; 1.36 × 44.38 &#x3D; 60.4（人·月）<br>$$</p>
+<p>$$<br>T_d &#x3D; h(M_s)^d &#x3D; 2.5 × 60.4^{0.32} &#x3D; 9.29（个月）<br>$$</p>
+<p>$$<br>C_s &#x3D; a · M_s &#x3D; 9000 × 60.4 &#x3D; 54.36（万元）<br>$$</p>
+<h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><p>软件企业开发软件通常有两种情况：①全新开发方式；②目标软件与以往开发的某款或者某些软件有许多相同或类似的结构，涉及的开发人员变化也较少，则可采用类比法来估算目标软件的成本。</p>
+<p>假设某软件企业以往开发过一个类似的软件 S<sub>X</sub>，其软件规模为 L<sub>X</sub>；目标开发软件为 S<sub>Y</sub>,其软件规模为 L<sub>Y</sub>。由于目标开发软件的功能结构与原软件 S<sub>X</sub> 有很多类似之处，因此决定在 S<sub>X</sub> 的基础上改编成 S<sub>Y</sub>。</p>
+<p>故引入调整系数 AC，主要通过设计修改 DMC、代码修改 CMC，以及集成修改 IMC 三部分构成。</p>
+<p>调整系数 AC 可用下列公式表示：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC<br>$$</p>
+<p>式中 W<sub>j</sub>（j&#x3D;1，2，3）表示权重系数，其加权和必须等于 1。</p>
+<p>B.W.Boehm 建议权重系数 W<sub>1</sub>，W<sub>2</sub>，W<sub>3</sub> 分别取值为 0.4、0.3 和 0.3。也就是下列公式。<br>$$<br>AC &#x3D; 0.4 · DMC + 0.3 · CMC + 0.3 · IMC<br>$$<br>由此可得 S<sub>Y</sub> 软件的开发规模 L<sub>Y</sub> 可以用下列公式表示。<br>$$<br>L_{Y} &#x3D; L_{X} · AC &#x3D; L_{X} · (0.4 · DMC + 0.3 · CMC + 0.3 · IMC)<br>$$</p>
+<p>【例3.2】某软件公司曾开发过一种规模为 20k 代码量的软件 S<sub>X</sub>，现欲将其改编为嵌入型软件 S<sub>Y</sub>，经估算其设计、代码与集成修改的系数分别是 30%、40% 和 110%，工作量综合影响要素 U &#x3D; 1.2，工时费用率 a &#x3D; 8000 元&#x2F;人·月。试用类比法估算目标软件 S<sub>Y</sub> 的成本。</p>
+<p>解：根据题意可得：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC &#x3D; 0.4 × 0.3 + 0.3 × 0.4 + 0.3 × 1.10 &#x3D; 0.57<br>$$</p>
+<p>$$<br>L_Y &#x3D; L_{X} · AC &#x3D; 20 kLOC × 0.57 &#x3D; 11.4 kLOC<br>$$</p>
+<p>由题意可知，该软件属于嵌入型软件，查表可知相对应的形式参数值：<br>$$<br>M_s &#x3D; U·M_0 &#x3D; U · r · L^k &#x3D; 1.2 × 2.8 × 11.4^{1.20} &#x3D; 62.32（人·月）<br>$$</p>
+<p>$$<br>C_s &#x3D; a·M_s &#x3D; 8000 × 62.32 &#x3D; 498560（元）<br>$$</p>
+<h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><ol>
+<li><p><strong>设备的磨损</strong></p>
+<ol>
+<li><p>设备的<strong>有形磨损</strong></p>
+<p>有形磨损是指设备在生产使用或者闲置过程中，由于使用或者受自然环境的影响所产生的损耗。</p>
+<p>设备的有形磨损根据导致其磨损的不同原因可分为：</p>
+<ul>
+<li>第 Ⅰ 类有形磨损</li>
+<li>第 Ⅱ 类有形磨损</li>
+</ul>
+</li>
+<li><p>设备的<strong>无形磨损</strong></p>
+<p>无形磨损是指随着科技的进步等原因导致设备价值不断降低的现象。</p>
+<p>设备的无形磨损根据导致其磨损的不同原因可分为：</p>
+<ul>
+<li>第 Ⅰ 类无形磨损</li>
+<li>第 Ⅱ 类无形磨损</li>
+</ul>
+</li>
+<li><p>设备的<strong>综合磨损</strong></p>
+<p>综合磨损是指设备购置后既产生了<strong>有形磨损</strong>又产生了<strong>无形磨损</strong>。</p>
+<p>假设设备发生有形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>p</sub>；而设备产生无形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>q</sub>，及设备的综合磨损的计算公式如下：<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q)<br>$$<br>【例3.3】某 IT 企业原始购买价值为 23000 元的 A 电子设备在使用过程中发生磨损，需要修理，修理费用为 4000 元，若重置同类设备价值为 20000 元，若新旧设备生产率及单位产品消耗是相同的，试求该电子设备的综合磨损程度及剩余价值。</p>
+<p>解：由题意可知， K<sub>0</sub> &#x3D; 23000（元），R &#x3D; 4000（元），K<sub>1</sub> &#x3D; 20000（元）。</p>
+<p>A 电子设备的有形磨损程度为<br>$$<br>α_p &#x3D; \frac{R}{K_{1}} &#x3D; \frac{4000}{20000} &#x3D; 0.2<br>$$<br>A 电子设备的无形磨损程度为<br>$$<br>α_q &#x3D; 1 - \frac{K_{1}}{K_{0}} &#x3D; 1 - \frac{20000}{23000} &#x3D; 0.13<br>$$<br>A 电子设备的综合磨损程度为<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q) &#x3D; 1-(1-0.2)(1-0.13) &#x3D; 0.304<br>$$<br>A 电子设备的剩余价值为<br>$$<br>K &#x3D; K_1 - R &#x3D; 20000 - 4000 &#x3D; 16000（元）<br>$$<br>故该电子设备的综合磨损程度是 30.4%，其剩余价值是 16000 元。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>设备的折旧</strong></p>
+<p>我国现行财会制度规定的固定资产折旧法主要有<strong>平均年限法</strong>和<strong>双倍余额递减法</strong>。</p>
+</li>
+</ol>
+<h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><p>价值工程设计的三个基本概念：<strong>价值（ Value ）</strong>、<strong>功能（ Function ）</strong>和<strong>全寿命周期成本（ Cost ）</strong>。</p>
+<ol>
+<li><p><strong>提高软件工程项目价值的途径</strong></p>
+<ol>
+<li>双向型</li>
+<li>节约型</li>
+<li>改进型</li>
+<li>牺牲型</li>
+<li>投资型</li>
+</ol>
+<p>上述提高价值的方法中，1、2 属于降低成本，3、5 属于提高功能，1 是对功能与成本同时进行改善，是最积极、最理想的提高价值的方法。</p>
+</li>
+<li><p><strong>价值工程的主要特征</strong></p>
+<ol>
+<li>价值工程以用户的功能需求为出发点；</li>
+<li>价值工程以功能分析为核心，系统地研究功能和成本之间的关系；</li>
+<li>价值工程是致力于提高价值的创造性活动；</li>
+<li>价值工程是有计划、有组织地按照一定地工序来进行。</li>
+</ol>
+</li>
+</ol>
+<h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><ol>
+<li>百分比法</li>
+<li>ABC 分类法</li>
+<li>价值系数法</li>
+</ol>
+<h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><p>功能分析主要包括<strong>功能定义</strong>与<strong>功能整理</strong>两方面的内容。</p>
+<p>功能整理的步骤如下：</p>
+<ol>
+<li>分析软件产品的基本功能与辅助功能；</li>
+<li>明确功能的上下位与并列关系；</li>
+<li>排列功能系统图。</li>
+</ol>
+<h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><ol>
+<li><strong>挣值分析的基本概念</strong><ol>
+<li>计划价值</li>
+<li>实际成本</li>
+<li>挣值</li>
+<li>完工预算</li>
+</ol>
+</li>
+<li><strong>挣值分析的绩效指标</strong><ol>
+<li>成本偏差</li>
+<li>进度偏差</li>
+<li>进度绩效指标</li>
+<li>成本绩效指标</li>
+</ol>
+</li>
+<li><strong>挣值分析的预测指标</strong><ol>
+<li>完工尚需估算</li>
+<li>完工估算</li>
+<li>完工尚需绩效指标</li>
+</ol>
+</li>
+</ol>
+<h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><p>软件企业的定价策略：</p>
+<ol>
+<li>捆绑定价策略</li>
+<li>撇脂和渗透定价策略<ul>
+<li>撇脂定价法</li>
+<li>渗透定价法</li>
+</ul>
+</li>
+<li>歧视定价策略</li>
+<li>免费使用定价策略</li>
+</ol>
+<h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3><p>软件产品的促销策略确定：</p>
+<p>促销是促进营销的简称，是指采用人员或非人员的方式来帮助或说服客户购买某软件元产品／软件服务，或者让消费者对某个或者某些软件产品产生好感的一种活动。</p>
+<p>促销策略主要包括<strong>直接促销</strong>和<strong>间接促销</strong>。直接促销是指人员上门推销软件产品的活动；间接促销是指采用各种媒体广告、营销推广与公共关系宣传等方式进行推销软件产品的活动。</p>
+<p>软件作为一种特殊的无形产品，除了上述促销手段外，还有一些特殊的促销手段，如<strong>品牌促销</strong>、<strong>教育促销</strong>以及<strong>人员促销</strong>等。</p>
+<ol>
+<li><p>品牌促销</p>
+<p>软件产品／软件服务是一种高技术产品，一般用户在购买软件产品前往往都会心存疑虑。一个良好的软件产品形象能大大消除用户的购买疑虑，让用户产生安全感和信任感。因此，软件企业要大力提高品牌知名度，让客户对软件企业产生信任感，放心购买其产品。软件企业可以通过树立品牌形象，引入企业形象识别系统以及发布产品广告、企业形象广告，建立企业网站、媒体宣传等多种手段来扩大企业的品牌知名度。</p>
+</li>
+<li><p>教育促销</p>
+<p>软件的高科技特性会导致用户较难理解与掌握，软件企业需要利用各种场合来演示自己的产品，如通过软件博览会、展销会等，让目标用户与潜在用户了解该产品的主要功能。教育促销可通过向媒体发送免费的测试软件、认证培训、举办讲座等方式进行普及知识；利用展会进行产品展示等多种手段来扩大软件产品的宣传。</p>
+</li>
+<li><p>人员促销</p>
+<p>人员促销应注重沟通能力以及人际关系。软件企业通过专业的服务人员与用户实现有效的沟通，为客户做好完备的前期咨询工作。这种方式针对性强，让客户觉得自己备受重视，无效劳动少，因此促销成功的概率会比较高。人员促销也有利于软件企业了解市场，能够给软件企业营销决策提供有效的建议与意见。人员促销需要注意以下问题：</p>
+<ol>
+<li>挑选专业技术能力强、个人素质高的促销人员；</li>
+<li>软件企业要根据目标市场的特点、产品的特点等，对促销人员进行资源、促销区域、促销时间等进行合理分配；</li>
+<li>软件企业要对促销人员实施有效的管理与激励，以确保促销目标的实现。</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第2章 软件工程经济学基础</title>
+    <url>/posts/a0090002.html</url>
+    <content><![CDATA[<h2 id="2-1-软件工程经济分析的基本要素"><a href="#2-1-软件工程经济分析的基本要素" class="headerlink" title="2.1 软件工程经济分析的基本要素"></a>2.1 软件工程经济分析的基本要素</h2><p>软件工程经济分析的基本要素有<strong>投资</strong>、<strong>筹资与融资</strong>、<strong>成本与费用</strong>、<strong>销售收入与利润</strong>、<strong>主要税金</strong>等。</p>
+<h3 id="2-1-1-投资的基本概念及其构成"><a href="#2-1-1-投资的基本概念及其构成" class="headerlink" title="2.1.1 投资的基本概念及其构成"></a>2.1.1 投资的基本概念及其构成</h3><p>投资是指国家、企业或者个人，为了实特定的目的，与对方签订协议，实现互惠互利、输送资金的过程或者相关经济活动。</p>
+<p>投资通常有广义和狭义之分。</p>
+<ul>
+<li>广义的投资一般指人们为了获取将来的报酬，事先投入一定资源的经济行为</li>
+<li>狭义的投资指人们在社会生产活动中为了实现某项预定的生产而预先垫付的资金</li>
+</ul>
+<p>本章涉及的投资主要指<strong>狭义的投资</strong>。</p>
+<p>企业的投资活动主要分为<strong>生产性投资</strong>和<strong>非生产性投资</strong>。</p>
+<ul>
+<li>生产性投资主要是企业为了实现对内扩大再生产建设而进行的投资，如购置固定资产、无形资产和其他长期资产。</li>
+<li>非生产性投资主要是企业为了实现对外扩张而投入到非物质生产领域的投资，如对外购买股权、债券、股票等。</li>
+</ul>
+<p>本章主要研究<strong>生产性投资</strong>。</p>
+<p>建设项目投资指企业为完成工程项目的建设，在建设期投入的全部费用的总和，主要包括固定资产、流动资产、无形资产和其他资产等。其铺底流动资金一般为项目正常营运流动资金的 30%。</p>
+<p>软件工程项目的建设属于建设项目投资的范畴。</p>
+<ol>
+<li><p><strong>固定资产</strong></p>
+<p>固定资产是指企业为了生产产品、提供劳务、出租或经营管理而持有的使用周期超过一年，且价值达到一定标准的非货币资产。</p>
+<p>固定资产投资主要用于扩大再生产和技术设备更新。</p>
+<p>固定资产在使用的过程中能保持原有的实物形态，但其价值随着使用会造成损耗，其损耗一般按照折旧的方式计入产品成本。</p>
+<p>固定资产的折旧是指固定资产在一定时期内为弥补其损耗而按照规定的固定资产折旧率提取的固定资产折旧费用。</p>
+<p>固定资产的损耗分为有形损耗和无形损耗。</p>
+<p>有形损耗又称为物理损耗，指的是固定资产由于使用及自然力的影响而引起的价值损失；而无形损耗则指的是机器设备由于技术进步而引起的价值损耗。</p>
+<p>固定资产的折旧费需要按其使用过程中的每个会计期间进行提取，作为折旧基金累计，由每个会计期间的产品销售收入逐步补偿。</p>
+<p>固定资产的原值减去累计的折旧费为固定资产的净值。</p>
+<p>软件企业的固定资产主要有厂房及其附属物、电子设备（如计算机及其外围设备、打印机、复印机、各种开发工具等）、运输工具及其他固定资产。</p>
+</li>
+<li><p><strong>流动资产</strong></p>
+<p>流动资产指企业可在一年或者超过一年的一个营业周期内变现或使用的资产。</p>
+<p>流动资产投资主要用于保证企业正常的生产经营，是一次性计人产品成本，并由当期的产品销售收入来补偿的。</p>
+<p>流动资产主要包括货币资金、各种存款、应收账款、预付账款、短期投资以及存货等。</p>
+</li>
+<li><p><strong>无形资产</strong></p>
+<p>无形资产是指企业拥有或者控制的没有实物形态但可辨认的非货币性资产。</p>
+<p>无形资产主要包括商标权、专利权、软件著作权、商誉、长期股权投资以及土地使用权等。</p>
+<p>无形资产自其使用之日开始，在其有效使用期内以平均摊销的方式计入每个会计期间的“管理费用”。</p>
+</li>
+<li><p><strong>其他资产</strong></p>
+<p>其他资产是指不能被包括在固定资产、流动资产和无形资产等项目之内的资产。</p>
+<p>在软件工程项目或者系统集成项目筹建期内实际发生的各项费用，除应计入固定资产与无形资产的，都应计入其他资产。</p>
+<p>其他资产投资指企业形成其他资产而发生的各项费用支出，如租入固定资产的改良支出等。</p>
+</li>
+</ol>
+<h3 id="2-1-2-筹资与融资"><a href="#2-1-2-筹资与融资" class="headerlink" title="2.1.2 筹资与融资"></a>2.1.2 筹资与融资</h3><p>资金是任何一个投资方案存续的基础。资金的筹集是软件工程项目建设和运行的基本保证。软件工程项目的资金来源，按照所取得资金的权益特性不同可分为权益资金和负债资金。以权益方式筹集的资金，资金的提供方将取得企业的产权；而以负债方式筹集的资金，资金的提供方只取得对于企业的债权，一般债权人优先于股权受偿，但对企业没有控制权。</p>
+<ol>
+<li><p><strong>筹资</strong></p>
+<ol>
+<li><p>权益资金</p>
+<p>权益资金主要分为<strong>企业融资项目资本金</strong>和<strong>项目融资项目资本金</strong>。</p>
+<ol>
+<li><strong>软件企业现有资金</strong></li>
+<li><strong>软件企业未来生产经营中获得的可用于软件工程项目建设的资金</strong></li>
+<li><strong>软件企业资产变现资金</strong></li>
+<li><strong>软件企业增资扩股资金</strong></li>
+</ol>
+</li>
+<li><p>负债资金<br>负债资金是指软件工程项目筹资过程中除去资本金外，以负债的方式所筹集的资金。</p>
+<ol>
+<li><strong>银行贷款</strong></li>
+<li><strong>出口信贷</strong></li>
+<li><strong>外国政府贷款</strong></li>
+<li><strong>国际金融机构贷款</strong></li>
+<li><strong>发行债券</strong></li>
+<li><strong>融资租赁</strong></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>融资</strong></p>
+<p>传统融资是指企业运用各种方式向金融机构筹集资金的一种业务活动，包括取得发行股票、银行贷款、发行债券等。</p>
+<p>相对于传统融资来说，项目融资是一种新型融资方式。</p>
+<p>项目融资是以项目公司为融资主体，以项目未来收益和资产为融资基础，由项目参与各方共同承担风险，具有有限追索权性质的特定融资方式。</p>
+<p>项目融得的资金是一种仅有有限追索权或无限追索权的贷款，且需要的资金量较大，因而其风险也较大。</p>
+<p>项目融资分为<strong>无限追索权融资</strong>和<strong>有限追索权融资</strong>两类。</p>
+<p>软件工程项目的融资从投资决策到最后完成融资通常要经过五个阶段：</p>
+<p><strong>第 1 阶段 投资决策</strong></p>
+<p>① 软件工程项目可行性研究</p>
+<p>② 投资决策：初步确定项目投资结构</p>
+<p><strong>第 2 阶段 融资决策</strong></p>
+<p>① 选择融资结构，确定融资方式</p>
+<p>② 明确融资目标及其任务</p>
+<p><strong>第 3 阶段 融资结构</strong></p>
+<p>① 分析软件工程项目风险因素</p>
+<p>② 设计融资结构</p>
+<p>③ 修正风险控制方式建立法律框架</p>
+<p><strong>第 4 阶段 融资谈判</strong></p>
+<p>① 选择银行，发出项目融资建议书</p>
+<p>② 组织贷款</p>
+<p>③ 起草融资法律文件</p>
+<p>④ 融资谈判</p>
+<p><strong>第 5 阶段 融资执行</strong></p>
+<p>① 签署融资文件</p>
+<p>② 执行项目投资计划</p>
+<p>③ 贷款银行监督并参与决策</p>
+<p>④ 项目风险控制与管理</p>
+<ol>
+<li><p><strong>资金成本</strong></p>
+<p>资金成本是指企业在筹集资金的时候所支付的费用，主要包括资金占用费与筹资费。</p>
+<p>资金占用费是指占用资金应付的费用，如使用发行股票所筹集的资金需要向其股东支付红利、股息以及向银行借款支付的利息等。</p>
+<p>筹资费是指在企业筹集资金的过程中发生的各项费用，如向银行借款所支付的手续费，委托金融机构发行股票所支付的代理费和注册费，发行债券所支付的律师费、印刷费、公证费及广告宣传费等。</p>
+<p>由于不同项目所筹集的资金数额不一样，为了方便比较，资金成本通常以相对数来表示，即资金的成本数，如下列公式所示：<br>$$<br>K &#x3D; \frac{D}{P-F} 或 K &#x3D; \frac{D}{P(1-f)}<br>$$<br>式中， K 指资金成本率； D 指使用费； P 指筹集资金的总额； F 指筹资费； f 指筹资费费率（筹资费和筹资总额的比率）。</p>
+<p>资金成本是企业财务管理中一个非常重要的概念，在软件企业生产经营活动中用途广泛。</p>
+<ol>
+<li>资金成本是选择资金来源、设计筹资方案的主要依据。筹资决策主要通过优选各种筹资方式，在满足企业资金需求的前提下，使其资金成本达到最低。</li>
+<li>资金成本是评价软件工程项目投资可行性的主要经济依据。只有资金利润率高于资金成本率的项目才值得筹资。</li>
+<li>资金成本可以作为评价软件企业财务经营成果的依据之一。</li>
+</ol>
+</li>
+<li><p><strong>自有资金成本计算</strong></p>
+<ol>
+<li><p>普通股资金成本。</p>
+<p>普通股持有者拥有企业的普通股权，企业的资产以及经营收益扣除负债与优先股之后归普通股股权所有，企业的权益归普通股股东所有。</p>
+<p>普通股股东对于企业投资的预期收益要求，可征询投资方的意见得知，当不具备征询条件时，可采用资本定价模型，根据同行业的类似项目收益确定。采用风险系数 β 的资本定价模型，如下列公式所示：<br>$$<br>i &#x3D; i_0 + β (i_m - i_0)<br>$$<br>式中， i 表示普通股资金成本； i<sub>0</sub> 表示社会无风险投资收益率；i<sub>m</sub> 表示社会平均投资收益率；β 表示行业的资本投资风险系数。</p>
+<ol start="2">
+<li><p>优先股资金成本。</p>
+<p>优先股类似于负债融资，资金成本按照优先股股息与发行优先股所取得的资金之比进行计算，如下列公式所示：<br>$$<br>i &#x3D; \frac{优先股股息}{优先股发行价格-发行成本} &#x3D; \frac{优先股面值 × 股息}{优先股发行价格 - 优先股面值 × 发行成本所占比重}<br>$$<br>式中，i 表示优先股资金成本。</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>【例2.1】某 IT 企业优先股面值50元，发行价格为55元，发行成本占优先股面值的 4%，每年付息一次，固定股息为 6%，试求此优先股的资金成本。</p>
+<p>解：</p>
+<p>i &#x3D; (50 × 6%) &#x2F; (55 - 50 × 4%) ×100% &#x3D; 3 &#x2F; 53 × 100% &#x3D; 5.66% </p>
+<p>答：此优先股的资金成本为 5.66%。</p>
+</li>
+<li><p><strong>保留利润的资本本金</strong></p>
+<p>保留利润又称为利润留存，是指企业从税后利润总额中扣除股利后的剩余部分，所有权是企业投资者。</p>
+<p>这些未分配保留利润的最低成本是股票本身的资金成本（ i<sub>s</sub> )，也可采用普通股资金成本的方法进行确定。</p>
+</li>
+<li><p><strong>综合资金成本</strong></p>
+<p>当一个企业的不同资金来源的资金成本计算出来后，如果把某一时期内的全部投资视为一个整体的话，就应在分别计算得到各类资金的资金成本的基础上，用加权平均法计算出综合资金成本值，如下列公式所示：<br>$$<br>i_w &#x3D; \sum{i_kf_k}<br>$$<br>式中， i<sub>w</sub> 表示加权平均资金成本； i<sub>k</sub> 表示第 k 种融资的资金成本； f<sub>k</sub> 表示第 k 种融资所占的资金权重，Σ f<sub>k</sub> &#x3D; 1。</p>
+<p>综合资金成本可以作为软件工程项目的最低期望收益率，也可称为基准收益率，作为软件工程项目财务内部收益率的判别标准。当软件工程项目财务内部收益率高于综合资金收益成本时，就表示该项目的投资收益水平可以满足项目筹资的资金成本要求，否则表示不满足筹资的资金成本要求。</p>
+<p>【例2.2】某 IT 企业的某信息化项目总融资金额为 6000 万元人民币，其中银行贷款 3000 万元，利率为 8%，每年计息两次；发行优先股 2000 万元，股息 9%，发行成本为 3%,平价发行，每年付息一次；发行普通股 1000 万元，据调查其长期国债利率（社会无风险投资收益）为 6%，社会平均收益 14%，投资风险系数为 1.3。请计算该信息化项目的基准收益率（企业所得税按 25％ 计算）。</p>
+<p>解：</p>
+<p>① 先计算各种资金的税前资金成本：</p>
+<p>银行借款资金成本 ＝ [ ( 1 + 8% &#x2F; 2 )<sup>2</sup> - 1 ] × 100% &#x3D; 8.16%</p>
+<p>优先股资金的资金成本 ＝ { [ 9% &#x2F; ( 1 - 3% ) ] &#x2F; ( 1 - 25% ) } × 100% &#x3D; 12.37%</p>
+<p>普通股资金的资金成本 ＝ [ 6% + 1.3 × ( 14% - 6% ) ] &#x2F; ( 1 - 25% ) × 100% &#x3D; 21.87%</p>
+<p>② 计算各种资金的税前加权平均资金成本，即该信息化项目的基准收益率为：</p>
+<p>i<sub>w</sub> &#x3D; 8.16% × ( 3000 &#x2F; 6000 ) + 12.37% × ( 2000 &#x2F; 6000 ) + 21.87% × ( 1000&#x2F;6000 ) &#x3D; 11.85%</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-1-3-项目可行性研究"><a href="#2-1-3-项目可行性研究" class="headerlink" title="2.1.3 项目可行性研究"></a>2.1.3 项目可行性研究</h3><ol>
+<li><p><strong>可行性研究概述</strong></p>
+<p>可行性研究（ Feasibility Study ）是指项目投资之前，在深入调查研究的基础上，通过市场分析、财务分析、技术分析以及国民经济分析，对拟建项目的技术可行性与经济合理性的综合评价。</p>
+<p>此外，可行性研究还是银行贷款、工程设计等的有力依据，是决策科学化的必要步骤。</p>
+</li>
+<li><p><strong>可行性研究的阶段</strong></p>
+<p>项目的投资通常有投资前期、投资期以及生产期三个阶段。</p>
+<p>其中，投资前期是决定项目效果的关键阶段，也是可行性研究的重点。</p>
+<p>项目投资前期可分为投资机会研究、初步可行性研究、详细可行性研究（又称为可行性研究）、评估和投资决策四个阶段。</p>
+<ol>
+<li><strong>投资机会研究</strong></li>
+<li><strong>初步可行性研究</strong></li>
+<li><strong>详细可行性研究</strong></li>
+<li><strong>评估和投资决策</strong></li>
+</ol>
+</li>
+<li><p><strong>可行性研究的工作流程</strong></p>
+<p>可行性研究的基本工作流程有<strong>签订委托协议</strong>、<strong>组建工作小组</strong>、<strong>制订工作方案</strong>、<strong>市场调查与预测</strong>、<strong>可行性方案研制与优化</strong>、<strong>项目评价</strong>和<strong>编写并提交可行性研究报告</strong>。</p>
+</li>
+<li><p><strong>可行性研究报告</strong></p>
+<ol>
+<li><p>可行性研究报告的作用</p>
+<ol>
+<li>作为经济主体投资决策的主要依据。</li>
+<li>为筹资和向银行申请贷款的依据。</li>
+<li>作为从国外引进技术、设备以及与国外厂商谈判签约的依据。</li>
+<li>作为与项目协作单位（如项目分包）签订经济合同的依据。</li>
+<li>作为向当地政府、相关部分申请有关建设许可文件的依据。</li>
+<li>作为该项目基础设施建设的基础资料。</li>
+<li>作为项目有关生产组织工作、职工培训等的依据。</li>
+<li>作为对项目考核以及项目后评价的依据。</li>
+</ol>
+</li>
+<li><p>项目可行性研究报告的编制要求</p>
+<ol>
+<li>要能充分反映项目可行性研究工作的成果，要内容齐全、数据准确、结论明确，以满足决策者确定方案和项目决策的要求。</li>
+<li>信息资料必须满足时效性、可靠性及充足性的要求。</li>
+<li>项目中选用的主要设备的规格、各项参数必须满足预定设备的要求。</li>
+<li>可行性研究报告里的重大技术或者经济方案必须要有两个以上，以进行优选。</li>
+<li>报告里确定的主要工程技术数据必须满足项目初步设计的要求。</li>
+<li>对建设性投资与生产成本必须分项详细地估算，其误差要控制在士10％以内。</li>
+<li>报告中所构造的融资筹资方案必须满足金融部门信贷决策的要求。</li>
+<li>报告中要如实反映可行性研究过程中出现的某些方案的重大分歧或者未被采纳的原因，以便投资者能客观地权衡利弊并进行决策。</li>
+<li>报告中应该附有评估、决策所必需的合同、意向书、协议以及政府批文等相关佐证材料。</li>
+</ol>
+</li>
+<li><p>项目可行性研究报告的主要内容</p>
+<p>项目可行性研究报告通常要求具备以下内容：</p>
+<ol>
+<li>项目总论：主要对拟建项目进行概括性的论述，包括项目提出的背景与概况、可行性研究工作的主要依据、研究结论的概要、项目所存在的问题和建议等。</li>
+<li>市场预测：是项目可行性研究的重要环节，需要进行市场现状调查、产品的供需预测、价格预测、各种竞争力分析以及市场风险分析。</li>
+<li>项目资源条件的评价：主要包括资源的开发价值、资源的品质及可利用情况等。</li>
+<li>项目建设规模和产品方案：主要包括项目建设规模以及产品方案的构成及其比较和选择；推荐的项目建设规模和产品方案；技术改造类项目推荐方案及原企业设施利用的合理性。</li>
+<li>场址选择：主要包括场址现状介绍及其方案比较和选择、推荐的场址方案介绍，对于技术改造类项目，应有场址利用情况的介绍。</li>
+<li>技术方案、设备方案与工程方案的比较和选择。</li>
+<li>主要原材料供应方案的比较和选择。</li>
+<li>总体布置方案、场内外运输方案及供应辅助工程的情况。</li>
+<li>节能措施分析。</li>
+<li>节水措施分析。</li>
+<li>环境影响评价：主要包括环境条件的调查、影响环境因素的分析、环境保护措施等。</li>
+<li>劳动安全卫生与消防：主要包括危险因素及其危害程度的客观分析、相关安全防范措施、相关环保措施、技术改造类项目和原有企业环境状况的比较。</li>
+<li>组织机构、人力资源配置以及项目员工的培训。</li>
+<li>项目实施进度：主要包括项目建设的工期、项目实施进度的相关安排、技术改造类项目的建设与生产的相关衔接内容。</li>
+<li>项目投资估算：主要包括项目投资估算的范围与依据、项目建设投资估算、流动资金的估算、项目总投入资金与分年投入的计划等。</li>
+<li>融资方案：主要包括融资的组织形式，资本金、债务资金的筹措，融资方案的分析等。</li>
+<li>财务评估：主要包括项目财务评价的基础数据和参数的选取、成本费用及销售收入的估算、财务评价报表、盈利及偿债能力分析、不确定因素分析、财务评价的结论等。</li>
+<li>国民经济评价：主要包括国民经济评价报表、评价指标及评价结论等。</li>
+<li>社会评价：主要包括项目对社会的影响、项目与所在地的相互适应性分析、社会风险分析以及社会评价结论。</li>
+<li>风险分析：主要包括项目的主要风险识别、相关风险分析及风险防范对策。</li>
+<li>研究结论与建议：主要包括推荐方案总体的描述、推荐方案优缺点的描述、主要对比方案介绍以及结论与建议。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p><strong>市场调查</strong></p>
+<ol>
+<li><strong>市场调查的方法</strong><ol>
+<li>文案调查法</li>
+<li>访问调查法</li>
+<li>观察调查法</li>
+<li>实验调查法</li>
+<li>网络调查法</li>
+</ol>
+</li>
+<li><strong>市场预测的方法</strong><ol>
+<li>消费者意图预测法</li>
+<li>专家意见集合法</li>
+<li>德尔菲法</li>
+<li>经济计量模型预测法</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-1-4-成本与费用、销售收入与利润、主要税金"><a href="#2-1-4-成本与费用、销售收入与利润、主要税金" class="headerlink" title="2.1.4 成本与费用、销售收入与利润、主要税金"></a>2.1.4 成本与费用、销售收入与利润、主要税金</h3><ol>
+<li><p><strong>成本与费用</strong></p>
+<p>总成本费用是指软件工程在一定时期内，为生产和销售产品而花费的全部成本及其费用。</p>
+<p>总成本费用主要有<strong>生产成本</strong>、<strong>经营成本</strong>和<strong>期间费用</strong>。</p>
+<ul>
+<li><p>生产成本</p>
+<p>生产成本即生产费用或者制造成本，是指企业为了生产产品或者提供劳务所发生的各种资源耗费。</p>
+<p>生产成本要素按照经济用途，可分为<strong>直接材料费</strong>（是指企业在生产过程中实际所耗费的直接材料、设备配件、辅助材料、燃料、包装物、外购半成品、低值易耗品、动力及其他直接材料）、<strong>直接工资费</strong>（又称为直接人工费，是指企业直接从事产品生产的工作人员的工资、津贴、奖金、补贴及福利等）、<strong>间接成本</strong>（又称为制造费用，如企业的分厂、车间管理人员、相关技术人员的工资及其福利，各种固定资产的维修费、物料消耗、水电费、修理期停工损失费等）以及<strong>其他直接支出</strong>。</p>
+</li>
+<li><p>经营成本</p>
+<p>经营成本是软件工程经济学分析时需要从总成本费用中分离出来的一部分费用，是指 IT 企业在一定会计期间内由于生产、销售以及提供劳务所发生的费用。</p>
+</li>
+<li><p>期间费用</p>
+<p>期间费用是指企业日常活动不能直接归属于某个特定成本核算对象，且在发生时应直接计入当期损益的各种费用。</p>
+<p>期间费用包括<strong>管理费用</strong>、<strong>销售费用</strong>、<strong>财务费用</strong>和<strong>研发费用</strong>。</p>
+<p>管理费用是指企业为了组织和管理企业的生产经营活动所发生的各项费用。管理费用主要包括单位经费、劳动保险费、工会经费、董事会费、业务招待费、技术转让费、无形资产摊销、住房公积金、职工教育经费、存货的盘亏或者盘盈、计提存货跌价准备、诉讼费、聘请中介机构费用、计提坏账准备等。</p>
+<p>销售费用是指企业在销售产品或者提供劳务等经营过程中所发生的各项费用，主要包括企业为销售商品所设置的销售部门或机构的人员工资、办公费、职工福利费等，还有企业在销售过程中所发生的广告费、包装费、运输费、保险费、装卸费、展览费、委托代销费等。</p>
+<p>财务费用是指企业为筹集生产经营所需资金而发生的各项费用，主要包括企业在生产经营活动中的利息支出净额（即利息支出减去利息收入之差）、汇兑净损失（即汇兑损失减去汇兑收益之差）、金融机构的相关手续费及其他费用等。</p>
+<p>研发费用是指研究与开发某项目所支付的费用，主要包括研发活动直接消耗的材料、燃料和动力费用，研发人员的工资、津贴、奖金、补贴及福利等，以及用于研发活动的软件、专利权等无形资产的推销费用等。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>销售收入与利润</strong></p>
+<ol>
+<li><p>销售收入</p>
+<p>销售收入又称为营业收入，是指企业通过销售商品、提供劳务所获得的经济利益的总收入，即<br>$$<br>销售收入 &#x3D; 商品销售量 × 商品的单价<br>$$</p>
+</li>
+<li><p>营业外收入</p>
+<p>营业外收入又称为营业外收益，是指和企业的生产经营活动没有直接关系，应计入当期利润的各种收入。</p>
+<p>营业外收入是不需要耗费企业经营资金的，是一种纯收入。</p>
+<p>营业外收人主要包括非货币性的资产交换利得、债务重组利得、非流动资产处置利得、出售无形资产收益、存货盘盈利得、企业合并损益、政府补助、罚款收入、教育费附加返还款以及捐赠利得等。</p>
+</li>
+<li><p>利润及其分配</p>
+<p>利润是指企业在一定会计期间内所获得的经营成果。利润是企业销售商品所得收入扣除成本及税金后的余额，即<br>$$<br>利润 &#x3D; 销售收入-总成本费用-销售税金及附加<br>$$<br>其中，销售税金及附加是指与企业销售收入相关的税金及附加，主要包括营业税、资源税、消费税、城市维护建设税、教育费附加等税费。应交增值税不计入”主营业务及附加”。净利润又称为税后利润，是指在利润总额中缴纳了所得税后企业的利润留存。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>主要税金</strong></p>
+<p>根据纳税对象的不同，税收可分为所得税、资源税、流转税、农业税、财产行为税和关税。</p>
+</li>
+</ol>
+<h2 id="2-2-资金的时间价值及其贴现与预算"><a href="#2-2-资金的时间价值及其贴现与预算" class="headerlink" title="2.2 资金的时间价值及其贴现与预算"></a>2.2 资金的时间价值及其贴现与预算</h2><h3 id="2-2-1-资金的时间价值"><a href="#2-2-1-资金的时间价值" class="headerlink" title="2.2.1 资金的时间价值"></a>2.2.1 资金的时间价值</h3><p>资金的时间价值是指<strong>资金经过一定时间的投资和再投资所产生的价值增加量</strong>。</p>
+<ol>
+<li><p><strong>利息</strong></p>
+<p>利息是衡量资金时间价值的<strong>绝对衡量尺度</strong>。</p>
+<p>利息的计算公式如下：<br>$$<br>I &#x3D; F - P<br>$$<br>式中，I 表示利息；F 表示还本付息总额；P 表示本金。</p>
+</li>
+<li><p><strong>利率</strong></p>
+<p>利率是衡量资金时间价值的<strong>相对衡量尺度</strong>，又称为“利息率”。</p>
+<p>下列公式乘以 100% 即为利率的计算公式：<br>$$<br>i &#x3D; \frac{I_t}{P}<br>$$<br>式中，i 表示利率；I<sub>t</sub> 表示单位时间内的利息；P 表示借款本金。</p>
+</li>
+<li><p><strong>单利</strong></p>
+<p>单利（ Simple Interest ）是指仅仅以本金作为基数来计算利息，即不论年限有多长，每年都按原始本金计息，已取得的利息在后续年度不再计息的计息方法。</p>
+<p>其计算公式如下所示：<br>$$<br>I_t &#x3D; P × i_d<br>$$<br>式中，I<sub>t</sub> 表示第 t 期的利息额度；P 表示本金；i<sub>d</sub> 表示计息单利利率。</p>
+</li>
+<li><p><strong>复利</strong></p>
+<p>复利（ Compound Interest ）是指计算利息时以本金和累计利息和作为基数的计息方法，即“利生利”的计息方法。</p>
+<p>其计算公式如下所示：<br>$$<br>I_t &#x3D; i × F_{t-1}<br>$$<br>式中，I<sub>t</sub> 表示第 t 期的利息额度；i 表示计息期的利率；F<sub>t-1</sub> 表示第 t-1 年年末的复利本利和。</p>
+<p>由此可推导出第 t 年年末复利和的计算公式：<br>$$<br>F_t &#x3D; F_{t-1} × (1+i)<br>$$</p>
+</li>
+</ol>
+<h3 id="2-2-2-现金流量的内涵"><a href="#2-2-2-现金流量的内涵" class="headerlink" title="2.2.2 现金流量的内涵"></a>2.2.2 现金流量的内涵</h3><ol>
+<li><p><strong>现金流量的概念</strong></p>
+<p>现金流量（ Cash Flows , CF ）是指特定经济系统（某个项目、企业、地区或部门）在某一时点发生了所有权或使用权转移的现金或其等价物（如银行承兑汇票、短期国库券、可转让定期存单等）的数量。软件工程经济学中的现金流量是指拟建设项目在整个项目计算期内各个时点上实际发生的现金流入、流出以及流入和流出的差额。</p>
+<p>现金流入（ Cash Inflows , CI ）是指流入特定经济系统的现金。如 IT 企业销售商品或提供劳务等获得的现金、从银行获得的借款等都属于现金流入。现金流出（ Cash Outflows , CO ）是指流出特定经济系统的现金，如企业购买固定资产、租赁设备、偿还债务等支付的现金。同一时点上的现金流入和流出之差称为净现金流量，通常用 CI - CO 表示。</p>
+<p>净现金流量分为正现金流量和负现金流量。</p>
+<p>正现金流量是指一定时期的净收入，负现金流量是指一定时期的净支出。</p>
+</li>
+<li><p><strong>现金流量的分类</strong></p>
+<p>在现金流量表中，通常将现金流量分为以下三大类：</p>
+<ol>
+<li>经营活动产生的现金流量</li>
+<li>投资活动产生的现金流量</li>
+<li>筹资活动产生的现金流量</li>
+</ol>
+</li>
+<li><p><strong>软件企业确定现金流量需要注意的问题</strong></p>
+<ol>
+<li>对于每一笔现金流入和流出都要有明确的发生时点。</li>
+<li>现金流量必须是企业实际发生的，且每一笔现金流量都必须有可靠的凭证作为验证，不应将应收账款、应付账款、暂时不能兑现的有价证券以及不能立即出让的固定资产账面价值等记入现金流量。</li>
+<li>同一个软件工程项目或者集成项目的现金流量，因立场及出发点不同会产生不同的结果。例如，某软件工程项目的投资方和承建方是不同的两个单位，当投资方支付项目款给承建方时，对于投资方而言是现金流出，而对于承建方而言则是现金流人。</li>
+<li>所有权或者使用权未发生转移的现金，其等价物不是现金流量。例如，企业的固定资产在未被使用之前不能将固定资产折旧列入现金流量。</li>
+</ol>
+</li>
+<li><p><strong>现金流量图</strong><br>现金流量图（ Cash - Flows Diagrams ）是指<strong>在时间坐标轴上，用带箭头的短线表示一个建设项目或者一个企业资金活动规律的图形。</strong></p>
+<p>软件企业可以依据现金流量图来考察软件工程项目或者系统集成项目在其整个生命周期内每个阶段的资金变化情况，进而分析其经济效果。</p>
+</li>
+<li><p><strong>现金流量的作用</strong></p>
+<p>现金流量的作用主要体现在以下三个方面：</p>
+<ol>
+<li>能对软件企业获取现金的能力作出评估。</li>
+<li>能对软件企业的偿债能力作出评价。</li>
+<li>能对软件工程项目收益的质量及投资、筹资活动作出评价。</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-2-3-资金等值的计算及其应用"><a href="#2-2-3-资金等值的计算及其应用" class="headerlink" title="2.2.3 资金等值的计算及其应用"></a>2.2.3 资金等值的计算及其应用</h3><ol>
+<li><p><strong>资金等值</strong></p>
+<p>资金具有时间价值。</p>
+<p>在软件工程项目中，资金的等值计算所涉及的概念有：</p>
+<ul>
+<li><p><strong>贴现（ Discount ）和贴现率（ Discount Rate )：</strong>贴现又称为折现，是指把将来某个时点的资金金额换算成现在时点的等值金额：贴现率是指贴现时所使用的利率（ i )，又称为折现率。</p>
+</li>
+<li><p><strong>现值 P ( Present Value )：</strong>是指资金贴现到现在时刻的价值。现值是一个相对的概念，如将 t + n 个时点上所发生的资金折现到第1个时点，所得的等值金额就是 t + n 个时点上的资金额在 t 时点的现值。</p>
+</li>
+<li><p><strong>终值 F ( Future Value )：</strong>又称为将来值或未来值，是指计息期期末的资金价值，或者表示现在某个时点的资金价值在未来某个时点的资金价值。</p>
+</li>
+<li><p><strong>年金 A ( Annual Value )：</strong>又称为年值或等额年值，是指每期都发生的等额现金流的金额，如租金、利息、折旧、保险金等。</p>
+<p>年金又分为<strong>普通年金</strong>、<strong>预付年金</strong>和<strong>延期年金</strong>三种。普通年金又称为后付年金，是指每期期末收、付款的现金流量序列，是最常用的年金形式；预付年金是指每期期初收、付款的现金流量序列；而延期年金是指距今若干期以后所发生的每期期末收、付款的现金流量序列。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>资金等值的计算</strong></p>
+<ol>
+<li><p><strong>一次性支付复利终值公式（已知 P，求 F ）</strong></p>
+<p>n 年末的本利和 F 与本金 P 的关系如下公式所示：<br>$$<br>F &#x3D; P(1+i)^n<br>$$</p>
+<p>式中，( 1+i )<sup>n</sup> 称为<strong>复利终值系数</strong>。</p>
+<p>【例2.9】某软件企业向银行贷款 100 万元，按年利率 8% 进行复利计息，试求该企业第 4 年年末连本带利一次偿还银行的金额，并画出其现金流量图。</p>
+<p>解：</p>
+<p>根据题意可得：<br>$$<br>F &#x3D; P (1+i)^n &#x3D; 100 × (1+0.08)^4 &#x3D; 100 × 1.3605 &#x3D; 136.05（万元）<br>$$<br>现金流量图如下所示：</p>
+<p><img src="https://s1.ax1x.com/2023/06/02/pCpCgmD.jpg" alt="例2.9现金流量图"></p>
+</li>
+<li><p><strong>一次性支付复利现值公式（已知 F，求 P ）</strong></p>
+<p>由上述公式可求出现值 P，如下公式所示：<br>$$<br>P &#x3D; F(1+i)^{-n}<br>$$<br>式中，( 1+i )<sup>-n</sup> 称为<strong>复利现值系数</strong>。</p>
+<p>【例2.10】某软件企业希望通过某信息化项目投资在第 4 年年末得到 200 万元的资金，若按年利率为 8% 进行复利计息，该企业需要一次性投入多少资金？</p>
+<p>解：</p>
+<p>根据题意可得：<br>$$<br>P &#x3D; F(1+i)^{-n} &#x3D; 200 × (1+0.08)^{-4} &#x3D; 200 × 0.735 &#x3D; 147（万元）<br>$$</p>
+</li>
+<li><p><strong>等额支付终值公式（又称为年金终值公式，已知 A，求 F ）</strong></p>
+<p>对于某个软件工程项目相应的经济系统，在其每个计息周期的期末（不含第 0 期）都支付相同数额的 A，在年利率为 i 时，求该系统 n 年后的终值，即等额支付终值的计算问题，其现金流量图如下所示：</p>
+<p><img src="https://s1.ax1x.com/2023/06/02/pCpiKGn.jpg" alt="等额支付终值现金流量图"></p>
+<p>根据等比数列的求和公式可推导出下列公式：<br>$$<br>F &#x3D; A \frac{(1+i)^n-1}{i}<br>$$</p>
+<p>上述公式即为<strong>等额支付终值公式</strong>。</p>
+<p>【例2.11】某企业软件在 6 年内，每年年末存入银行 200 万元，按年利率均为 6% 的复利计算，在第 6 年年末该企业可以连本带利取出多少资金？</p>
+<p>解：</p>
+<p>根据题意可得：<br>$$<br>F &#x3D; A \frac{(1+i)^n-1}{i} &#x3D; 200 × \frac{(1+0.06)^6-1}{0.06} &#x3D; 200 × 6.9753 &#x3D; 1395.06（万元）<br>$$</p>
+</li>
+<li><p><strong>等额支付偿债基金公式（已知 F，求 A ）</strong></p>
+<p>等额支付偿债基金的计算是等额支付终值计算的逆运算。已知当年利率为 i，求 n 年年末的资金 F 换算为与其等值的 n 年中每年年末的等额资金 A，即为偿债基金的计算问题。</p>
+<p>等额支付偿债基金公式如下：<br>$$<br>A &#x3D; F \frac{i}{(1+i)^n-1}<br>$$<br>【例2.12】某 ERP 企业计划自筹资金在 6 年后获得 500 万元资金进行某新技术开发，依据市场行情，银行利率为 6%，则从今年开始每年年末应筹集多少资金存入银行？</p>
+<p>解：</p>
+<p>根据题意可得：<br>$$<br>A &#x3D; F \frac{i}{(1+i)^n-1} &#x3D; 500 × \frac{0.06}{(1+0.06)^6-1} &#x3D; 500 × 0.1434 &#x3D; 71.7（万元）<br>$$</p>
+</li>
+<li><p><strong>等额支付现值公式（又称为年金现值公式，已知 A，求 P ）</strong></p>
+<p>等额支付现值公式如下：<br>$$<br>P &#x3D; F(1+i)^{-n} &#x3D; A \frac{(1+i)^n-1}{i}·(1+i)^{-n} &#x3D; A\frac{(1+i)^n-1}{i(1+i)^{n}}<br>$$<br>【例2.13】假设某 IT 企业期望在 8 年时间内每年年末能从银行取回 200 万元，如果按 6% 的复利计息，则该企业现在需要存入银行多少资金？</p>
+<p>解：</p>
+<p>根据题意可得：<br>$$<br>P &#x3D; A\frac{(1+i)^n-1}{i(1+i)^{n}} &#x3D; 200 × \frac{(1+0.06)^8-1}{0.06(1+0.06)^{8}} &#x3D; 200 × 6.2098 &#x3D; 1241.96（万元）<br>$$</p>
+</li>
+<li><p><strong>等额支付资金回收公式（已知 P，求 A ）</strong></p>
+<p>等额支付资金回收的计算是等额支付现值公式的逆运算。<br>$$<br>A &#x3D; P\frac{i(1+i)^{n}}{(1+i)^n-1}<br>$$<br>【例2.14】某 IT 企业向银行贷款 3500 万元投入某项目建设，按年利率 8% 的复利计算，若在 6 年内每年年末按等额还款的方式，则每年年末应还款的资金是多少？</p>
+<p>解：</p>
+<p>根据题意可得：<br>$$<br>A &#x3D; P\frac{i(1+i)^{n}}{(1+i)^n-1} &#x3D; 3500 × \frac{0.08(1+0.08)^{6}}{(1+0.08)^6-1} &#x3D; 3500 × 0.2163 &#x3D; 757.05（万元）<br>$$</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2-3-招标与投标"><a href="#2-3-招标与投标" class="headerlink" title="2.3 招标与投标"></a>2.3 招标与投标</h2><p>软件工程类项目的经费来源一般分为三类：</p>
+<p>第一类：国家、省级自然基金，国家信息化工程及国防科研基金项目；</p>
+<p>第二类：企业自行筹资项目；</p>
+<p>第三类：经过投标竞争获取的企业或政府部门招标项目。本节将介绍第三类项目有关软件招标与投标的法律法规相关内容。</p>
+<h3 id="2-3-1-招标、投标概述"><a href="#2-3-1-招标、投标概述" class="headerlink" title="2.3.1 招标、投标概述"></a>2.3.1 招标、投标概述</h3><p>依据《中华人民共和国招标投标法》《中华人民共和国招标投标法实施条例《国家发展计划委工程建设项目招标范围和规模标准规定》（国家发展计划委令第3号）以及《国家发展改革委必须招标的工程项目规定》（国家发展改革委令第16号）相关要求，下列工程建设项目的勘察、设计、施工、监理以及建设有关的重要设备、材料等的采购，必须进行招标：</p>
+<ol>
+<li>大型基础设施、公用事业等关系社会公共利益、公众安全的项目；</li>
+<li>全部或部分使用国有资金投资或者国家融资的项目；</li>
+<li>使用国际组织或者外国政府贷款、援助资金的项目。</li>
+</ol>
+<p>任何单位与个人都不得将依法必须进行招标的项目化整为零或者以其他任何方式规避招标。招标、投标活动应当遵循公开、公平、公正和诚实信用的原则。依法必须进行招标的项目，其招标、投标活动不受地区或者部门的限制。任何单位和个人不得违法限制或者排斥本地区、本系统以外的法人或者其他组织参加投标，不得以任何方式非法干涉招标、投标活动。</p>
+<h3 id="2-3-2-招标人及其权利与义务"><a href="#2-3-2-招标人及其权利与义务" class="headerlink" title="2.3.2 招标人及其权利与义务"></a>2.3.2 招标人及其权利与义务</h3><p>招标人是依照《中华人民共和国招标投标法》规定提出招标项目、进行招标的法人或者其他组织。招标人应该有进行招标项目的相应资金或者资金来源已经落实，并应该在招标文件中如实载明。</p>
+<ol>
+<li><strong>招标人的权利</strong><ol>
+<li>招标人可自行办理招标事宜，也可自行选择招标代理机构，委托其办理招标事宜；</li>
+<li>招标人可根据招标项目本身的要求，在招标公告或投标邀请书中要求潜在投标人提供相关资质文件和业绩情况，并对潜在投标人进行资格审查；</li>
+<li>招标人可对已发出的资格预审文件或者招标文件进行必要的澄清或者修改；</li>
+<li>招标人有权拒收在招标文件要求提交的截止时间后送达的投标文件。</li>
+</ol>
+</li>
+<li><strong>招标人的义务</strong><ol>
+<li>招标人委托招标代理机构时，应向其提供招标所需的全部相关资料并支付委托费；</li>
+<li>招标人不得以不合理条件限制或者排斥潜在投标人，不得对潜在投标人实行歧视待遇；</li>
+<li>招标文件不得要求或者标明特定的生产供应者，以及含有倾向或者排斥潜在投标人的内容；</li>
+<li>招标人不得向他人透露已获取招标文件的潜在投标人的名称、数量，以及可能影响公平竞争的有关招标投标的其他情况；</li>
+<li>招标人应当明确投标人编制投标文件所需要的合理时间，最短不得少于20日；</li>
+<li>在招标文件要求提交投标文件的截止时间前收到的所有投标文件，开标时都应当众拆封与宣读；</li>
+<li>招标人应当采取必要的措施，保证评标在严格保密的情况下进行；</li>
+<li>在确定中标人后，招标人应当向中标人发出中标通知书，并同时将中标结果通知所有未中标的投标人；</li>
+<li>招标人与中标人应当自中标通知书发出之日起30日内，按照招标文件和中标的投标文件签订书面合同。</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-3-3-招标代理机构及其权利与义务"><a href="#2-3-3-招标代理机构及其权利与义务" class="headerlink" title="2.3.3 招标代理机构及其权利与义务"></a>2.3.3 招标代理机构及其权利与义务</h3><p>招标代理机构是依法设立、从事招标代理业务并提供相关服务的社会中介组织，与行政机关和其他国家机关不得存在隶属关系或者其他利益关系，应该具备从事招标代理业务的营业场所与相应资金，必须要有能够编制招标文件以及组织评标的相应专业力量。</p>
+<ol>
+<li><strong>招标代理机构的权利</strong><ol>
+<li>组织和参与招标活动；</li>
+<li>依据招标文件规定，审查投标人的资质；</li>
+<li>按规定标准收取招标代理费。</li>
+</ol>
+</li>
+<li><strong>招标代理机构的义务</strong><ol>
+<li>维护招标人和投标人的合法利益；</li>
+<li>组织编制和解释招标文件；</li>
+<li>接受国家招标、投标管理机构等有关行政监督部门的指导、监督；</li>
+<li>应当在招标人委托的招标范围内办理招标事宜，并遵守《中华人民共和国招标投标法》关于招标人的规定。</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-3-4-招标、投标的基本特性与基本原则"><a href="#2-3-4-招标、投标的基本特性与基本原则" class="headerlink" title="2.3.4 招标、投标的基本特性与基本原则"></a>2.3.4 招标、投标的基本特性与基本原则</h3><ol>
+<li><strong>招标、投标工作的基本特性</strong><ol>
+<li>招标、投标的公平竞争。</li>
+<li>招标、投标的交易规范。</li>
+<li>招标、投标的一次机会。</li>
+<li>招标、投标的定制方案特性。</li>
+<li>招标、投标的复合职业特性。</li>
+</ol>
+</li>
+<li><strong>招标、投标工作的基本原则</strong><ol>
+<li>公开原则</li>
+<li>公平原则</li>
+<li>公正原则</li>
+<li>诚实信用原则</li>
+</ol>
+</li>
+</ol>
+<h3 id="2-3-5-招标的方式"><a href="#2-3-5-招标的方式" class="headerlink" title="2.3.5 招标的方式"></a>2.3.5 招标的方式</h3><p>招标分为<strong>公开招标</strong>和<strong>邀请招标</strong>。</p>
+<p>公开招标是指<strong>招标人以招标公告的方式邀请不特定的法人或者其他组织投标。</strong></p>
+<p>邀请招标是指<strong>招标人以投标邀请书的方式邀请特定的法人或者其他组织投标。</strong></p>
+<p>国有资金占控股或者主导地位的依法必须进行招标的项目，应当公开招标；但有下列情况之一的，可以邀请招标：</p>
+<ol>
+<li>技术复杂、有特殊要求或者受自然环境限制，只有少量潜在投标人可供选择；</li>
+<li>采用公开招标方式的费用占项目合同金额的比例过大。</li>
+</ol>
+<p>招标人采用公开招标方式的，应当发布招标公告。依法进行招标项目的招标公告，应当通过国家指定的报刊、信息网络或者其他媒介发布。招标公告应当载明招标人的名称和地址，招标项目的性质、数量、实施地点和时间以及获取招标文件的办法等相关事项。</p>
+<p>招标人采用邀请招标方式的，应当向三个及以上具备承担所招标项目的能力、资信良好的特定的法人或者其他组织发出投标邀请书。投标邀请书应当载明的事项必须与公开招标公告规定的事项要求完全一致。</p>
+<p><strong>公开招标和邀请招标的区别：</strong></p>
+<ol>
+<li>发布信息的方式不同。</li>
+<li>选择的范围不同。</li>
+<li>竞争的范围不同。</li>
+<li>公开的程度不同。</li>
+<li>时间与费用不同。</li>
+</ol>
+<h3 id="2-3-6-投标"><a href="#2-3-6-投标" class="headerlink" title="2.3.6 投标"></a>2.3.6 投标</h3><p>投标人是响应招标、参加投标竞争的法人或者其他组织，依法招标的科研项目也可允许个人参与投标。</p>
+<p>投标人与招标人存在利害关系，如可能影响招标公正性的法人、其他组织或者个人，不得参与投标。</p>
+<p>投标人的义务有：</p>
+<ol>
+<li>投标人应当按照招标文件的要求编制投标文件。投标文件应当对招标文件提出的实质性要求与条件做出实质性响应。</li>
+<li>投标人应当在招标文件要求提交投标文件的截止时间前，将投标文件送达招标文件指定的投标地点。</li>
+<li>投标人可以在招标文件要求的提交投标文件截止时间前，补充、修改或撤回已提交的投标文件，并书面通知招标人。</li>
+<li>投标人根据招标文件载明的项目实际情况，拟在中标后将中标项目的部分非主体、非关键性工作进行分包的，应当在投标文件中载明。</li>
+</ol>
+<h3 id="2-3-7-开标、评标和中标"><a href="#2-3-7-开标、评标和中标" class="headerlink" title="2.3.7 开标、评标和中标"></a>2.3.7 开标、评标和中标</h3><ol>
+<li><p><strong>开标</strong></p>
+<p>开标原则上应当在招标文件规定的提交投标文件截止时间的同一时间公开进行；开标地点必须是招标文件中预先规定的地点。开标由招标人主持，邀请所有投标人参加。开标时，由投标人或者其推选的代表检查投标文件密封情况，也可以由招标人委托的公证机构检查并进行公证；经确认无误后，由工作人员当众拆封，并宣读投标人名称、投标价格与投标文件的其他主要内容。招标人在招标文件要求提交投标文件的截止时间前收到的所有投标文件，开标时都应该当众予以拆封和宣读。开标过程必须作好记录，并存档备查。</p>
+</li>
+<li><p><strong>评标</strong></p>
+<p>评标工作由招标人依法组建的评标委员会负责。依法必须进行招标的软件工程项目，其评标委员会由招标人的代表以及相关技术、经济等方面的专家组成，成员人数为五人以上单数，其中技术、经济等方面的专家不得少于评标成员总人数的三分之二。评标委员会专家资质应依据《中华人民共和国招标投标法》有关条款来确定。</p>
+<p>评标委员会可以要求投标人对投标文件中含义不明确的内容作必要的澄清或说明，但是澄清或说明不得超出投标文件的范围或改变投标文件的实质性内容。<br>评标委员会应当按照招标文件确定的评标标准和方法，对投标文件进行评审和比较；设有标底的，应当参考标底。评标委员会完成评标后，应当向招标人提出书面评标报告，并推荐合格的候选中标人。招标人根据评标委员会提出的书面评标报告与所推荐的中标候选人确定中标人，也可以授权评标委员会直接确定中标人。</p>
+<p>中标人的投标应当符合下列条件之一：</p>
+<ol>
+<li><p>能够最大限度地满足招标文件中规定的各项综合评价标准；</p>
+</li>
+<li><p>能够满足招标文件的实质性要求，并且经评审的投标价格最低，但是投标价格低于成本的除外。少数软件工程项目的投资方为了保证项目的质量，采用价格按所有投标方报价的算术平均值作为最高分的，必须按招标文件中明确的评分标准计算。</p>
+<p>评标委员会经评审，如果认为所有投标方全都不符合招标文件要求的，可以否决所有投标。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>中标</strong></p>
+<p>中标人确定后，招标人应当向中标人发出中标通知书，并同时将中标结果通知所有未中标的投标人。中标通知书对招标人和中标人具有同等法律效力。中标通知书发出后，招标人改变中标结果的，或者中标人放弃中标项目的，应当依法承担法律责任。</p>
+<p>招标人和中标人应当自中标通知书发出之日起三十日内，按照招标文件与中标人的投标文件的合同约定签订书面合同。招标人与中标人不得再行订立背离合同实质性内容的其他协议。招标文件要求中标人提交履约保证金的，中标人必须按招标文件的要求提交，履约保证金不得超过中标合同金额的 10%。</p>
+</li>
+</ol>
+<h3 id="2-3-8-招标、投标的程序"><a href="#2-3-8-招标、投标的程序" class="headerlink" title="2.3.8 招标、投标的程序"></a>2.3.8 招标、投标的程序</h3><p>尽管招标方式不同，但招投标的程序基本相同，一般要经过<strong>确定采购需求与招标方式</strong>、<strong>发布招标公告或投标邀请书</strong>、<strong>编制投标文件</strong>、<strong>递交投标文件</strong>、<strong>开标</strong>、<strong>评标</strong>、<strong>确定中标人</strong>以及<strong>签订合同</strong>的流程。</p>
+<h3 id="2-3-9-招标、投标的法律责任"><a href="#2-3-9-招标、投标的法律责任" class="headerlink" title="2.3.9 招标、投标的法律责任"></a>2.3.9 招标、投标的法律责任</h3><p>法律责任是指违法者对违法行为所应承担的具有强制性的法律责任。</p>
+<p>在《中华人民共和国招投标法》中明确了招标过程中各方的法律责任，涉及招标人、招标代理机构、投标人、评标委员会成员、中标人、有关行政监督部门等。</p>
+<p>就投标人承担的法律责任来说，具体规定如下：</p>
+<ol>
+<li>投标人相互串通投标或者与招标人串通投标的，投标人以向招标人或者评标委员会成员行贿的手段谋取中标的，中标无效，并处以中标项目金额千分之五以上千分之十以下的罚款，对单位直接负责的主管人员和其他直接责任人员处以中标项目金额百分之五以上百分之十以下的罚款；有违法所得的，没收违法所得；情节严重的，取消其一至二年内参加投标的资格并予以公告，直至由工商行政管理机关吊销营业执照；构成犯罪的，依法追究刑事责任；给他人造成损失的，依法承担赔偿责任。</li>
+<li>投标人以他人名义投标或者以其他方式弄虚作假骗取中标的，中标无效；给招标人造成损失的，依法承担赔偿责任；构成犯罪的，依法追究刑事责任。</li>
+</ol>
+<h3 id="2-3-10-软件工程项目投标文件的案例"><a href="#2-3-10-软件工程项目投标文件的案例" class="headerlink" title="2.3.10 软件工程项目投标文件的案例"></a>2.3.10 软件工程项目投标文件的案例</h3><p>软件工程项目投标文件的内容包括两大部分：</p>
+<p>第一部分是投标人的相关材料，包括从事软件工程项目的研究经历（合同书、鉴定、评审意见书、获奖证明、市场销售量、相关部门的效益评价书等）；技术水平（通信系统、计算机软硬分析设计、测试人才数量、主要技术人员的职称证明文件、从事相关项目研究经历等）；信息资源拥有量；资金与财务状况的银行、会计、审计部门证明文件；企业管理人员简历以及履约能力证明文件等。</p>
+<p>第二部分是软件工程项目的技术设计文件。</p>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第4章 软件工程项目评价方法与经济效果评价</title>
     <url>/posts/a0090004.html</url>
     <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
@@ -2229,175 +2458,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第6章 软件工程项目进度计划的制订</title>
-    <url>/posts/a0090006.html</url>
-    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
-<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
-<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
-<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
-<ol>
-<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
-<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
-<li>WBS 必须与项目实际工作中的执行方式一样。</li>
-<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
-</ol>
-<p>WBS 的创建步骤如下：</p>
-<ol>
-<li>识别可交付成果及相关工作。</li>
-<li>确定 WBS 的分解方式和编排结构。</li>
-<li>创建 WBS。</li>
-<li>验证 WBS 的合理性及正确性。</li>
-<li>建立 WBS 编码系统。</li>
-</ol>
-<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
-<ol>
-<li><p>完成对开始</p>
-</li>
-<li><p>开始对开始</p>
-</li>
-<li><p>完成对完成</p>
-</li>
-<li><p>开始对完成</p>
-</li>
-<li><p><strong>双代号网络计划图的绘制规则</strong></p>
-<ol>
-<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
-<li>不得出现回路。</li>
-<li>不得出现双箭头或者不带箭头的活动。</li>
-<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
-<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
-<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
-<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
-<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
-<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
-<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
-</ol>
-</li>
-<li><p><strong>项目工作时长的算法</strong></p>
-<ol>
-<li><p>三点估算法</p>
-<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
-</li>
-<li><p>专家估算法</p>
-<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
-<ol>
-<li>总时差最少的项目工作应确定为关键工作。</li>
-<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
-<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
-</ol>
-<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
-<li><strong>通过时间参数确定关键线路</strong></li>
-<li><strong>通过标号法确定关键线路</strong></li>
-</ol>
-<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
-<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
-<ol>
-<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
-<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
-<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
-<li>选择缩短工作时长的关键工作。</li>
-<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
-<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
-</ol>
-<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
-<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
-<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
-<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
-<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第8章 软件测试</title>
-    <url>/posts/a0090008.html</url>
-    <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
-<h3 id="8-2-2-按测试实施组织划分"><a href="#8-2-2-按测试实施组织划分" class="headerlink" title="8.2.2 按测试实施组织划分"></a>8.2.2 按测试实施组织划分</h3><p>按照测试实施组织划分，软件测试可分为<strong>开发方测试</strong>、<strong>用户方测试</strong>与<strong>第三方测试</strong>。</p>
-<h3 id="8-2-3-按测试技术划分"><a href="#8-2-3-按测试技术划分" class="headerlink" title="8.2.3 按测试技术划分"></a>8.2.3 按测试技术划分</h3><p>按照测试技术划分，软件测试可分为<strong>黑盒测试</strong>、<strong>白盒测试</strong>与<strong>灰盒测试</strong>。</p>
-<h3 id="8-2-4-按测试执行方式划分"><a href="#8-2-4-按测试执行方式划分" class="headerlink" title="8.2.4 按测试执行方式划分"></a>8.2.4 按测试执行方式划分</h3><p>按照测试执行的方式划分，软件测试可分为<strong>静态测试</strong>和<strong>动态测试</strong>。</p>
-<h3 id="8-2-5-按测试对象类型划分"><a href="#8-2-5-按测试对象类型划分" class="headerlink" title="8.2.5 按测试对象类型划分"></a>8.2.5 按测试对象类型划分</h3><p>按照测试的对象类型划分，软件测试可分为<strong>功能测试</strong>、<strong>界面测试</strong>、<strong>流程测试</strong>、<strong>接口测试</strong>、<strong>安装测试</strong>、<strong>文档测试</strong>、<strong>源代码测试</strong>、<strong>数据库测试</strong>、<strong>网络测试</strong>以及<strong>性能测试</strong>等。</p>
-<h3 id="8-2-6-按质量属性划分"><a href="#8-2-6-按质量属性划分" class="headerlink" title="8.2.6 按质量属性划分"></a>8.2.6 按质量属性划分</h3><p>按照质量属性划分，软件测试可分为<strong>容错性测试</strong>、<strong>可靠性测试</strong>、<strong>兼容性测试</strong>、<strong>维护性测试</strong>、<strong>安全性测试</strong>和<strong>可移植性测试</strong>。</p>
-<h3 id="8-2-7-按测试地域划分"><a href="#8-2-7-按测试地域划分" class="headerlink" title="8.2.7 按测试地域划分"></a>8.2.7 按测试地域划分</h3><p>按照测试地域划分，软件测试可分为<strong>本地化测试</strong>与<strong>国际化测试</strong>两类。</p>
-<h2 id="8-3-常用软件测试技术"><a href="#8-3-常用软件测试技术" class="headerlink" title="8.3 常用软件测试技术"></a>8.3 常用软件测试技术</h2><p>常用的软件测试技术主要有<strong>黑盒测试法</strong>与<strong>白盒测试法</strong>。</p>
-<h3 id="8-3-1-黑盒测试法"><a href="#8-3-1-黑盒测试法" class="headerlink" title="8.3.1 黑盒测试法"></a>8.3.1 黑盒测试法</h3><p>黑盒测试的测试用例设计方法主要有<strong>测试区域确定法</strong>、<strong>组合覆盖法</strong>、<strong>逻辑推断法</strong>、<strong>业务路径覆盖法</strong>等。</p>
-<ol>
-<li><p><strong>测试区域确定法</strong></p>
-<p>测试区域确定法分为<strong>等价类划分法</strong>与<strong>边界值分析法</strong>。</p>
-</li>
-<li><p><strong>组合覆盖法</strong></p>
-<p>根据覆盖程度不同，组合覆盖法可分为<strong>全组合覆盖法</strong>、<strong>成对组合覆盖法</strong>以及<strong>正交实验设计法</strong>三类。</p>
-</li>
-<li><p><strong>逻辑推断法</strong></p>
-<p>逻辑推断法分为<strong>因果图法</strong>、<strong>判定表法</strong>和<strong>大纲法</strong>等。</p>
-</li>
-<li><p><strong>业务路径覆盖法</strong></p>
-<p>业务路径覆盖法主要分为<strong>场景分析法</strong>和<strong>功能图法</strong>。</p>
-</li>
-</ol>
-<h3 id="8-3-2-白盒测试法"><a href="#8-3-2-白盒测试法" class="headerlink" title="8.3.2 白盒测试法"></a>8.3.2 白盒测试法</h3><p>白盒测试（ White-box Testing ），又称为透明盒测试、结构测试、基于代码的测试或者逻辑驱动测试，主要分为<strong>静态白盒测试</strong>、<strong>动态白盒测试</strong>与<strong>其他白盒测试</strong>三种。</p>
-<p>白盒测试是一种测试用例设计方法，盒子是指被测试的软件，白盒是指清楚盒子内部的代码、注释以及看到内部的运作情况。</p>
-<p>白盒测试法需要全面了解程序的内部逻辑结构，对所有的逻辑路径进行测试，是一种典型的穷举路径测试。在使用白盒测试时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。</p>
-<p>白盒测试常用的工具：内存泄漏检查工具、性能测试工具以及代码覆盖率检查工具。采用白盒测试法需遵循以下原则。</p>
-<ol>
-<li><p>确保一个模块中的所有独立路径至少被测试一次。</p>
-</li>
-<li><p>所有逻辑值均需测试真和假两种情况。</p>
-</li>
-<li><p>检查程序的内部数据结构，确保其结构的有效性。</p>
-</li>
-<li><p>必须在上、下边界及可操作范围内运行所有循环。</p>
-</li>
-<li><p><strong>静态白盒测试法</strong></p>
-<p>静态白盒测试法是在不执行代码的前提条件下，有条理地审查软件设计、体系结构与代码，从而找出软件缺陷的过程。</p>
-<p>其优点是能尽早发现软件缺陷，为黑盒测试人员进行测试时设计测试用例提供思路。静态白盒测试主要有以下三种技术：</p>
-<ol>
-<li>代码检查法。</li>
-<li>静态结构分析法。</li>
-<li>静态质量度量法。</li>
-</ol>
-</li>
-<li><p><strong>动态白盒测试法</strong></p>
-<p>动态白盒测试又称为结构测试，是指利用查看代码功能与实现方式所得到的信息来确定需要或者不需要测试的内容，以及开展测试的方式。</p>
-<p>软件测试人员可根据查看并使用代码的内部结构，进而设计与执行测试。</p>
-<p>动态白盒测试不仅要查看代码，还要查看直接参数与控制软件，主要包括以下四个部分。</p>
-<ol>
-<li>直接测试底层的功能、过程、子程序以及库，即应用程序接口（ API ）。</li>
-<li>以完整的程序方式从顶层来测试软件，但要根据对软件运行的了解调整测试案例。</li>
-<li>从软件获得读取变量与状态信息的访问权，以便确定测试与预期结果是否相符，与此同时，还要强制软件以正常测试难以实现的方式运行。</li>
-<li>估算执行测试时”命中”的代码量与具体代码，然后调整测试，去掉多余的，补充遗漏的。</li>
-</ol>
-<p>动态白盒测试主要有以下三种技术：</p>
-<ol>
-<li>覆盖测试。</li>
-<li>控制结构测试。</li>
-<li>循环测试。</li>
-</ol>
-</li>
-<li><p><strong>其他白盒测试法</strong></p>
-<ol>
-<li>程序插桩。</li>
-<li>程序变异测试。</li>
-</ol>
-</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第7章 软件工程项目的团队建设、风险管理及质量管理</title>
     <url>/posts/a0090007.html</url>
     <content><![CDATA[<h2 id="7-1-软件工程项目的团队建设"><a href="#7-1-软件工程项目的团队建设" class="headerlink" title="7.1 软件工程项目的团队建设"></a>7.1 软件工程项目的团队建设</h2><h3 id="7-1-1-软件工程项目团队的特点"><a href="#7-1-1-软件工程项目团队的特点" class="headerlink" title="7.1.1 软件工程项目团队的特点"></a>7.1.1 软件工程项目团队的特点</h3><p>软件工程项目团队的特点主要有：</p>
@@ -2504,221 +2564,172 @@
       </tags>
   </entry>
   <entry>
-    <title>Java 基础</title>
-    <url>/posts/c0010000.html</url>
-    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
-      <categories>
-        <category>后端技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第1章 Java 语言概述</title>
-    <url>/posts/c0010001.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+    <title>第8章 软件测试</title>
+    <url>/posts/a0090008.html</url>
+    <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
+<h3 id="8-2-2-按测试实施组织划分"><a href="#8-2-2-按测试实施组织划分" class="headerlink" title="8.2.2 按测试实施组织划分"></a>8.2.2 按测试实施组织划分</h3><p>按照测试实施组织划分，软件测试可分为<strong>开发方测试</strong>、<strong>用户方测试</strong>与<strong>第三方测试</strong>。</p>
+<h3 id="8-2-3-按测试技术划分"><a href="#8-2-3-按测试技术划分" class="headerlink" title="8.2.3 按测试技术划分"></a>8.2.3 按测试技术划分</h3><p>按照测试技术划分，软件测试可分为<strong>黑盒测试</strong>、<strong>白盒测试</strong>与<strong>灰盒测试</strong>。</p>
+<h3 id="8-2-4-按测试执行方式划分"><a href="#8-2-4-按测试执行方式划分" class="headerlink" title="8.2.4 按测试执行方式划分"></a>8.2.4 按测试执行方式划分</h3><p>按照测试执行的方式划分，软件测试可分为<strong>静态测试</strong>和<strong>动态测试</strong>。</p>
+<h3 id="8-2-5-按测试对象类型划分"><a href="#8-2-5-按测试对象类型划分" class="headerlink" title="8.2.5 按测试对象类型划分"></a>8.2.5 按测试对象类型划分</h3><p>按照测试的对象类型划分，软件测试可分为<strong>功能测试</strong>、<strong>界面测试</strong>、<strong>流程测试</strong>、<strong>接口测试</strong>、<strong>安装测试</strong>、<strong>文档测试</strong>、<strong>源代码测试</strong>、<strong>数据库测试</strong>、<strong>网络测试</strong>以及<strong>性能测试</strong>等。</p>
+<h3 id="8-2-6-按质量属性划分"><a href="#8-2-6-按质量属性划分" class="headerlink" title="8.2.6 按质量属性划分"></a>8.2.6 按质量属性划分</h3><p>按照质量属性划分，软件测试可分为<strong>容错性测试</strong>、<strong>可靠性测试</strong>、<strong>兼容性测试</strong>、<strong>维护性测试</strong>、<strong>安全性测试</strong>和<strong>可移植性测试</strong>。</p>
+<h3 id="8-2-7-按测试地域划分"><a href="#8-2-7-按测试地域划分" class="headerlink" title="8.2.7 按测试地域划分"></a>8.2.7 按测试地域划分</h3><p>按照测试地域划分，软件测试可分为<strong>本地化测试</strong>与<strong>国际化测试</strong>两类。</p>
+<h2 id="8-3-常用软件测试技术"><a href="#8-3-常用软件测试技术" class="headerlink" title="8.3 常用软件测试技术"></a>8.3 常用软件测试技术</h2><p>常用的软件测试技术主要有<strong>黑盒测试法</strong>与<strong>白盒测试法</strong>。</p>
+<h3 id="8-3-1-黑盒测试法"><a href="#8-3-1-黑盒测试法" class="headerlink" title="8.3.1 黑盒测试法"></a>8.3.1 黑盒测试法</h3><p>黑盒测试的测试用例设计方法主要有<strong>测试区域确定法</strong>、<strong>组合覆盖法</strong>、<strong>逻辑推断法</strong>、<strong>业务路径覆盖法</strong>等。</p>
+<ol>
+<li><p><strong>测试区域确定法</strong></p>
+<p>测试区域确定法分为<strong>等价类划分法</strong>与<strong>边界值分析法</strong>。</p>
 </li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+<li><p><strong>组合覆盖法</strong></p>
+<p>根据覆盖程度不同，组合覆盖法可分为<strong>全组合覆盖法</strong>、<strong>成对组合覆盖法</strong>以及<strong>正交实验设计法</strong>三类。</p>
 </li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+<li><p><strong>逻辑推断法</strong></p>
+<p>逻辑推断法分为<strong>因果图法</strong>、<strong>判定表法</strong>和<strong>大纲法</strong>等。</p>
 </li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+<li><p><strong>业务路径覆盖法</strong></p>
+<p>业务路径覆盖法主要分为<strong>场景分析法</strong>和<strong>功能图法</strong>。</p>
 </li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+</ol>
+<h3 id="8-3-2-白盒测试法"><a href="#8-3-2-白盒测试法" class="headerlink" title="8.3.2 白盒测试法"></a>8.3.2 白盒测试法</h3><p>白盒测试（ White-box Testing ），又称为透明盒测试、结构测试、基于代码的测试或者逻辑驱动测试，主要分为<strong>静态白盒测试</strong>、<strong>动态白盒测试</strong>与<strong>其他白盒测试</strong>三种。</p>
+<p>白盒测试是一种测试用例设计方法，盒子是指被测试的软件，白盒是指清楚盒子内部的代码、注释以及看到内部的运作情况。</p>
+<p>白盒测试法需要全面了解程序的内部逻辑结构，对所有的逻辑路径进行测试，是一种典型的穷举路径测试。在使用白盒测试时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。</p>
+<p>白盒测试常用的工具：内存泄漏检查工具、性能测试工具以及代码覆盖率检查工具。采用白盒测试法需遵循以下原则。</p>
+<ol>
+<li><p>确保一个模块中的所有独立路径至少被测试一次。</p>
 </li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
+<li><p>所有逻辑值均需测试真和假两种情况。</p>
 </li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+<li><p>检查程序的内部数据结构，确保其结构的有效性。</p>
 </li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+<li><p>必须在上、下边界及可操作范围内运行所有循环。</p>
 </li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+<li><p><strong>静态白盒测试法</strong></p>
+<p>静态白盒测试法是在不执行代码的前提条件下，有条理地审查软件设计、体系结构与代码，从而找出软件缺陷的过程。</p>
+<p>其优点是能尽早发现软件缺陷，为黑盒测试人员进行测试时设计测试用例提供思路。静态白盒测试主要有以下三种技术：</p>
+<ol>
+<li>代码检查法。</li>
+<li>静态结构分析法。</li>
+<li>静态质量度量法。</li>
+</ol>
 </li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+<li><p><strong>动态白盒测试法</strong></p>
+<p>动态白盒测试又称为结构测试，是指利用查看代码功能与实现方式所得到的信息来确定需要或者不需要测试的内容，以及开展测试的方式。</p>
+<p>软件测试人员可根据查看并使用代码的内部结构，进而设计与执行测试。</p>
+<p>动态白盒测试不仅要查看代码，还要查看直接参数与控制软件，主要包括以下四个部分。</p>
+<ol>
+<li>直接测试底层的功能、过程、子程序以及库，即应用程序接口（ API ）。</li>
+<li>以完整的程序方式从顶层来测试软件，但要根据对软件运行的了解调整测试案例。</li>
+<li>从软件获得读取变量与状态信息的访问权，以便确定测试与预期结果是否相符，与此同时，还要强制软件以正常测试难以实现的方式运行。</li>
+<li>估算执行测试时”命中”的代码量与具体代码，然后调整测试，去掉多余的，补充遗漏的。</li>
+</ol>
+<p>动态白盒测试主要有以下三种技术：</p>
+<ol>
+<li>覆盖测试。</li>
+<li>控制结构测试。</li>
+<li>循环测试。</li>
+</ol>
 </li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
+<li><p><strong>其他白盒测试法</strong></p>
+<ol>
+<li>程序插桩。</li>
+<li>程序变异测试。</li>
+</ol>
 </li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 Java 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 Java 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，Java2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
-<ul>
-<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
-<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
-<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
-<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
-<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
-</ul>
+</ol>
 <hr>
-<p><a href="https://georgedi.top/posts/c0010000.html">返回目录</a></p>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
 ]]></content>
       <tags>
-        <tag>Java</tag>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
-    <title>第2章 变量与运算符</title>
-    <url>/posts/c0010002.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+    <title>第6章 软件工程项目进度计划的制订</title>
+    <url>/posts/a0090006.html</url>
+    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
+<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
+<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
+<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
+<ol>
+<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
+<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
+<li>WBS 必须与项目实际工作中的执行方式一样。</li>
+<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
+</ol>
+<p>WBS 的创建步骤如下：</p>
+<ol>
+<li>识别可交付成果及相关工作。</li>
+<li>确定 WBS 的分解方式和编排结构。</li>
+<li>创建 WBS。</li>
+<li>验证 WBS 的合理性及正确性。</li>
+<li>建立 WBS 编码系统。</li>
+</ol>
+<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
+<ol>
+<li><p>完成对开始</p>
 </li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+<li><p>开始对开始</p>
 </li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+<li><p>完成对完成</p>
 </li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+<li><p>开始对完成</p>
 </li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+<li><p><strong>双代号网络计划图的绘制规则</strong></p>
+<ol>
+<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
+<li>不得出现回路。</li>
+<li>不得出现双箭头或者不带箭头的活动。</li>
+<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
+<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
+<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
+<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
+<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
+<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
+<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
+</ol>
 </li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
+<li><p><strong>项目工作时长的算法</strong></p>
+<ol>
+<li><p>三点估算法</p>
+<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
 </li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+<li><p>专家估算法</p>
+<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
 </li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+</ol>
 </li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
-</li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
-</li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
-</li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</ol>
+<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
+<ol>
+<li>总时差最少的项目工作应确定为关键工作。</li>
+<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
+<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
+</ol>
+<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
+<li><strong>通过时间参数确定关键线路</strong></li>
+<li><strong>通过标号法确定关键线路</strong></li>
+</ol>
+<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
+<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
+<ol>
+<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
+<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
+<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
+<li>选择缩短工作时长的关键工作。</li>
+<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
+<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
+</ol>
+<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
+<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
+<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
+<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
+<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
 ]]></content>
       <tags>
-        <tag>Java</tag>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
       </tags>
   </entry>
 </search>
