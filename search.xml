@@ -14,6 +14,17 @@
       </tags>
   </entry>
   <entry>
+    <title>《算法设计与分析》</title>
+    <url>/posts/a0060000.html</url>
+    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3><h3 id="第5章-回溯法"><a href="#第5章-回溯法" class="headerlink" title="第5章 回溯法"></a><a href="https://georgedi.top/posts/a0060005.html">第5章 回溯法</a></h3><h3 id="第7章-贪心法"><a href="#第7章-贪心法" class="headerlink" title="第7章 贪心法"></a><a href="https://georgedi.top/posts/a0060007.html">第7章 贪心法</a></h3><h3 id="第8章-动态规划"><a href="#第8章-动态规划" class="headerlink" title="第8章 动态规划"></a><a href="https://georgedi.top/posts/a0060008.html">第8章 动态规划</a></h3>]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第1章 概论</title>
     <url>/posts/a0060001.html</url>
     <content><![CDATA[<h2 id="1-1-算法的概念"><a href="#1-1-算法的概念" class="headerlink" title="1.1 算法的概念"></a>1.1 算法的概念</h2><h3 id="1-1-1-什么是算法"><a href="#1-1-1-什么是算法" class="headerlink" title="1.1.1 什么是算法"></a>1.1.1 什么是算法</h3><p>算法（ algorithm ）是<strong>求解问题的一系列计算步骤</strong>，用来将<strong>输入数据</strong>转换成<strong>输出结果</strong>。</p>
@@ -262,27 +273,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《算法设计与分析》</title>
-    <url>/posts/a0060000.html</url>
-    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3><h3 id="第5章-回溯法"><a href="#第5章-回溯法" class="headerlink" title="第5章 回溯法"></a><a href="https://georgedi.top/posts/a0060005.html">第5章 回溯法</a></h3><h3 id="第7章-贪心法"><a href="#第7章-贪心法" class="headerlink" title="第7章 贪心法"></a><a href="https://georgedi.top/posts/a0060007.html">第7章 贪心法</a></h3><h3 id="第8章-动态规划"><a href="#第8章-动态规划" class="headerlink" title="第8章 动态规划"></a><a href="https://georgedi.top/posts/a0060008.html">第8章 动态规划</a></h3>]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第2章 递归算法设计技术</title>
-    <url>/posts/a0060002.html</url>
-    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><h3 id="2-2-4-基于归纳思想的递归算法设计"><a href="#2-2-4-基于归纳思想的递归算法设计" class="headerlink" title="2.2.4 基于归纳思想的递归算法设计"></a>2.2.4 基于归纳思想的递归算法设计</h3><h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><h3 id="2-3-2-求解-n-皇后问题"><a href="#2-3-2-求解-n-皇后问题" class="headerlink" title="2.3.2 求解 n 皇后问题"></a>2.3.2 求解 n 皇后问题</h3><h2 id="2-4-递归算法转化为非递归算法"><a href="#2-4-递归算法转化为非递归算法" class="headerlink" title="2.4 递归算法转化为非递归算法"></a>2.4 递归算法转化为非递归算法</h2><h3 id="2-4-1-用循环结构替代递归过程"><a href="#2-4-1-用循环结构替代递归过程" class="headerlink" title="2.4.1 用循环结构替代递归过程"></a>2.4.1 用循环结构替代递归过程</h3><h3 id="2-4-2-用栈消除递归过程"><a href="#2-4-2-用栈消除递归过程" class="headerlink" title="2.4.2 用栈消除递归过程"></a>2.4.2 用栈消除递归过程</h3><h2 id="2-5-递推式的计算"><a href="#2-5-递推式的计算" class="headerlink" title="2.5 递推式的计算"></a>2.5 递推式的计算</h2><h3 id="2-5-1-用特征方程求解递归方程"><a href="#2-5-1-用特征方程求解递归方程" class="headerlink" title="2.5.1 用特征方程求解递归方程"></a>2.5.1 用特征方程求解递归方程</h3><h3 id="2-5-2-用递归树求解递归方程"><a href="#2-5-2-用递归树求解递归方程" class="headerlink" title="2.5.2 用递归树求解递归方程"></a>2.5.2 用递归树求解递归方程</h3><h3 id="2-5-3-用主方法求解递归方程"><a href="#2-5-3-用主方法求解递归方程" class="headerlink" title="2.5.3 用主方法求解递归方程"></a>2.5.3 用主方法求解递归方程</h3><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第3章 分治法</title>
     <url>/posts/a0060003.html</url>
     <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><h2 id="3-4-求解组合问题"><a href="#3-4-求解组合问题" class="headerlink" title="3.4 求解组合问题"></a>3.4 求解组合问题</h2><h3 id="3-4-1-求解最大连续子序列和问题"><a href="#3-4-1-求解最大连续子序列和问题" class="headerlink" title="3.4.1 求解最大连续子序列和问题"></a>3.4.1 求解最大连续子序列和问题</h3><h3 id="3-4-2-求解棋盘覆盖问题"><a href="#3-4-2-求解棋盘覆盖问题" class="headerlink" title="3.4.2 求解棋盘覆盖问题"></a>3.4.2 求解棋盘覆盖问题</h3><h3 id="3-4-3-求解循环日程安排问题"><a href="#3-4-3-求解循环日程安排问题" class="headerlink" title="3.4.3 求解循环日程安排问题"></a>3.4.3 求解循环日程安排问题</h3><h2 id="3-5-求解大整数乘法和矩阵乘法问题"><a href="#3-5-求解大整数乘法和矩阵乘法问题" class="headerlink" title="3.5 求解大整数乘法和矩阵乘法问题"></a>3.5 求解大整数乘法和矩阵乘法问题</h2><h3 id="3-5-1-求解大整数乘法问题"><a href="#3-5-1-求解大整数乘法问题" class="headerlink" title="3.5.1 求解大整数乘法问题"></a>3.5.1 求解大整数乘法问题</h3><h3 id="3-5-2-求解矩阵乘法问题"><a href="#3-5-2-求解矩阵乘法问题" class="headerlink" title="3.5.2 求解矩阵乘法问题"></a>3.5.2 求解矩阵乘法问题</h3><h2 id="3-6-并行计算简介"><a href="#3-6-并行计算简介" class="headerlink" title="3.6 并行计算简介"></a>3.6 并行计算简介</h2><h3 id="3-6-1-并行计算概述"><a href="#3-6-1-并行计算概述" class="headerlink" title="3.6.1 并行计算概述"></a>3.6.1 并行计算概述</h3><h3 id="3-6-2-并行计算模型"><a href="#3-6-2-并行计算模型" class="headerlink" title="3.6.2 并行计算模型"></a>3.6.2 并行计算模型</h3><h3 id="3-6-3-快速排序的并行算法"><a href="#3-6-3-快速排序的并行算法" class="headerlink" title="3.6.3 快速排序的并行算法"></a>3.6.3 快速排序的并行算法</h3><hr>
@@ -303,6 +293,72 @@
       </tags>
   </entry>
   <entry>
+    <title>第2章 递归算法设计技术</title>
+    <url>/posts/a0060002.html</url>
+    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><p>在数学与计算机科学中，<strong>递归</strong>（ recursion ）是指在函数的定义中又调用函数自身的方法。</p>
+<p>若 p 函数定义中调用 p 函数，称之为<strong>直接递归</strong>；若 p 函数定义中调用 q 函数，而 q 函数定义中又调用 p 函数，称之为<strong>间接递归</strong>。</p>
+<p>任何间接递归都可以等价地转化为直接递归。</p>
+<p>如果一个递归过程或递归函数中的递归调用语句是最后一条执行语句，则称这种递归调用为<strong>尾递归</strong>。</p>
+<blockquote>
+<p>递归既是一种奇妙的现象，又是一种思考问题的方法，通过递归可简化问题的定义和求解过程。</p>
+<p>实际上在现实世界中递归无处不在，例如在人类的发展繁衍中，人之间的辈分就是一种递归，祖先的递归定义是 x 的父母是 x 的祖先， x 祖先的双亲同样是 x 的祖先。</p>
+</blockquote>
+<p>【例2.1】设计求 n!（ n 为正整数）的递归算法。</p>
+<p>对应的递归函数如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> (<span class="built_in">fun</span>(n<span class="number">-1</span>)*n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在函数 fun(n) 的求解过程中直接调用 fun(n-1)，所以它是一个直接递归函数；又由于递归调用是最后一条语句，所以它又属于尾递归。</p>
+<p>递归算法通常把一个大的复杂问题层层转化为一个或多个与原问题相似的规模较小的问题来求解，递归策略只需少量的代码就可以描述出解题过程所需要的多次重复计算，大大减少了算法的代码量。</p>
+<p>一般来说，能够用递归解决的问题应该满足以下 3 个条件：</p>
+<ol>
+<li>需要解决的问题可以转化为一个或多个子问题来求解，而这些子问题的求解方法与原问题完全相同，只是在数量规模上不同。</li>
+<li>递归调用的次数必须是有限的。</li>
+<li>必须有结束递归的条件来终止递归。</li>
+</ol>
+<h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><p>在以下 3 种情况下经常要用到递归的方法。</p>
+<h4 id="1-定义是递归的"><a href="#1-定义是递归的" class="headerlink" title="1.定义是递归的"></a>1.定义是递归的</h4><p>有许多数学公式、数列和概念的定义是递归的，例如求 n! 和斐波那契（ Fibonacci ）数列等。</p>
+<p>对于这些问题的求解过程，可以将其递归定义直接转化为对应的递归算法，例如求 n! 可以转化为【例2.1】的递归算法。</p>
+<h4 id="2-数据结构是递归的"><a href="#2-数据结构是递归的" class="headerlink" title="2.数据结构是递归的"></a>2.数据结构是递归的</h4><p>算法是用于数据处理的，有些存储数据的数据结构是递归的，对于递归数据结构，采用递归的方法设计算法既方便又有效。</p>
+<p>例如，单链表就是一种递归数据结构，其结点类型声明如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Node</span> </span><br><span class="line">&#123;	ElemType data;</span><br><span class="line">	<span class="keyword">struct</span> <span class="title class_">Node</span> * next;</span><br><span class="line">&#125; LinkNode;	<span class="comment">//单链表结点类型</span></span><br></pre></td></tr></table></figure>
+
+<p>其中，结构体 Node 的声明中用到了它自身，即指针域 next 是一种指向自身类型的指针。</p>
+<h4 id="3-问题的求解方法是递归的"><a href="#3-问题的求解方法是递归的" class="headerlink" title="3.问题的求解方法是递归的"></a>3.问题的求解方法是递归的</h4><p>有些问题的解法是递归的，典型的有梵塔问题求解。</p>
+<p>该问题的描述是设有 3 个分别命名为 x、y 和 z 的塔座，在塔座 x 上有 n 个直径各不相同、从小到大依次编号为 1~n 的盘片，现要求将 x 塔座上的 n 个盘片移到塔座 z 上并仍按同样的顺序叠放。在盘片移动时必须遵守以下规则：每次只能移动一个盘片；盘片可以插在 x、y 和 z 中的任一塔座；任何时候都不能将一个较大的盘片放在较小的盘片上。</p>
+<h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><p>一般地，一个递归模型由<strong>递归出口</strong>和<strong>递归体</strong>两部分组成，前者确定递归到何时结束，即指出明确的递归结束条件，后者确定递归求解时的递推关系。</p>
+<h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><p>在执行递归函数时会直接调用自身，但如果仅有这种操作，将会出现由于无休止地调用而陷入死循环。因此，一个正确的递归函数虽然每次调用的是相同的代码，但它的参数、输入数据等均有变化，并且在正常情况下随着调用的不断深入必定会出现调用到某一层的函数时不再执行递归调用而终止函数的执行，即遇到递归出口。</p>
+<p>递归函数可以看成是一种特殊的函数，递归函数调用是函数调用的一种特殊情况，即它是调用自身代码，因此也可以把每一次递归调用理解成调用自身代码的一个复制件。由于每次调用时它的参数和局部变量值均不相同，所以保证了各个复制件执行时的独立性。</p>
+<p>但递归调用在内部实现时并不是每次调用真的复制一个函数复制件存放到内存中，而是采用代码共享的方式，也就是它们都是调用同一个函数的代码。为此系统设置了一个系统栈，为每一次调用开辟一组存储单元，用来存放本次调用的返回地址以及被中断的函数参数值（即一个栈帧，可以理解为一个栈元素），然后将其进入系统栈（栈元素进栈），再执行被调用函数代码。当被调用函数执行完毕后，对应的栈帧被弹出（栈元素出栈），返回计算后的函数值，控制转到相应的返回地址继续执行。显然当前正在执行的调用函数的栈帧总是处于系统栈的最顶端。</p>
+<p>所以一个函数调用过程就是将数据（包括参数和返回值）和控制信息（返回地址等）从一个函数传递到另一个函数。另外，在执行被调函数的过程中还要为被调函数的局部变量分配空间，在函数返回时释放这些空间，这些工作都是由系统栈来完成的。</p>
+<p>从以上过程可以得出：</p>
+<ol>
+<li>递归执行是通过系统栈实现的。</li>
+<li>每递归调用一次就需将参数、局部变量和返回地址等作为一个栈元素进栈一次，最多的进栈元素个数称为递归深度，n 越大，递归深度越深。</li>
+<li>每当遇到递归出口或本次递归调用执行完毕时需退栈一次，并恢复参数值等，当全部执行完毕时栈应该为空。</li>
+</ol>
+<h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><p>递归是算法和程序设计的一种实现技术，数学归纳法是一种论证方法，数学归纳法是递归的<strong>理论基础</strong>。</p>
+<h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><p>递归算法设计首先要提炼出递归模型，再转换成对应的程序设计语言。</p>
+<p>提炼递归模型过程中最重要的是找递归体，即确定<strong>大问题</strong>和<strong>小问题</strong>的关系。</p>
+<h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><p><strong>定义</strong>：采用递归方式定义的数据结构称为递归数据结构。在递归数据结构定义中包含的递归运算称为基本递归运算。</p>
+<h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><p>本节通过几个典型示例介绍递归算法设计方法。</p>
+<h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><p>【问题描述】对于给定的含有 n 个元素的数组 a，分别采用简单选择排序和冒泡排序方法按元素值递增排序。</p>
+<p>简单选择排序和冒泡排序方法都是将 a[0..n-1] 分为有序区 a[0..i-1] 和无序区两个部分，有序区中的所有元素都不大于无序区中的元素，初始时有序区为空（即 i&#x3D;0 ）。经过 n-1 趟排序（ i&#x3D;1~n-2 ），每趟排序采用不同方式将无序区中的最小元素移动到无序区的开头，即 a[i] 处。</p>
+<h4 id="1-简单选择排序"><a href="#1-简单选择排序" class="headerlink" title="1.简单选择排序"></a>1.简单选择排序</h4><p>简单选择排序采用简单比较方式在无序区中选择最小元素并放到开头处。</p>
+<p>对应的完整求解程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> tmp = x;</span><br><span class="line">    x=y; y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> i;</span><br><span class="line"> 	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">SelectSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的简单选择排序</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> j,k;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">    &#123;	k=i;	<span class="comment">//k 记录 a[i..n-1] 中最小元素的下标</span></span><br><span class="line">		<span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)	<span class="comment">//在 a[i..n-1] 中找最小元素</span></span><br><span class="line">			<span class="keyword">if</span>(a[j]&lt;a[k])</span><br><span class="line">				k=j;</span><br><span class="line">		<span class="keyword">if</span> (k!=i)	<span class="comment">//若最小元素不是 a[i]</span></span><br><span class="line">			<span class="built_in">swap</span>(a[i],a[k]);	<span class="comment">//a[i] 和 a[k] 交换</span></span><br><span class="line">		<span class="built_in">SelectSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line"> 	<span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line"> 	<span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-冒泡排序"><a href="#2-冒泡排序" class="headerlink" title="2.冒泡排序"></a>2.冒泡排序</h4><p>冒泡排序采用交换方式将无序区中的最小元素放到开头处。</p>
+<p>对应的完整求解程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> tmp = x;</span><br><span class="line">    x=y; y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> i;</span><br><span class="line"> 	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的冒泡排序</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> j;</span><br><span class="line"> 	<span class="type">bool</span> exchange;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">    &#123;	exchange=<span class="literal">false</span>;	<span class="comment">//置 exchange 为 false</span></span><br><span class="line">		<span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)</span><br><span class="line">			<span class="keyword">if</span>(a[j]&lt;a[j<span class="number">-1</span>])	<span class="comment">//当相邻元素反序时</span></span><br><span class="line">            &#123;	<span class="built_in">swap</span>(a[j],a[j<span class="number">-1</span>]);</span><br><span class="line">				exchange=<span class="literal">true</span>;	<span class="comment">//发生交换置 exchange 为 true</span></span><br><span class="line">			&#125;</span><br><span class="line">		<span class="keyword">if</span>(exchange==<span class="literal">false</span>)	<span class="comment">//未发生交换时直接返回</span></span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		<span class="keyword">else</span>	<span class="comment">//发生交换时继续递归调用</span></span><br><span class="line">			<span class="built_in">BubbleSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;	<span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line"> 	<span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line"> 	<span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line"> 	<span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-递归算法转化为非递归算法"><a href="#2-4-递归算法转化为非递归算法" class="headerlink" title="2.4 递归算法转化为非递归算法"></a>2.4 递归算法转化为非递归算法</h2><h3 id="2-4-1-用循环结构替代递归过程"><a href="#2-4-1-用循环结构替代递归过程" class="headerlink" title="2.4.1 用循环结构替代递归过程"></a>2.4.1 用循环结构替代递归过程</h3><h3 id="2-4-2-用栈消除递归过程"><a href="#2-4-2-用栈消除递归过程" class="headerlink" title="2.4.2 用栈消除递归过程"></a>2.4.2 用栈消除递归过程</h3><h2 id="2-5-递推式的计算"><a href="#2-5-递推式的计算" class="headerlink" title="2.5 递推式的计算"></a>2.5 递推式的计算</h2><h3 id="2-5-1-用特征方程求解递归方程"><a href="#2-5-1-用特征方程求解递归方程" class="headerlink" title="2.5.1 用特征方程求解递归方程"></a>2.5.1 用特征方程求解递归方程</h3><h3 id="2-5-2-用递归树求解递归方程"><a href="#2-5-2-用递归树求解递归方程" class="headerlink" title="2.5.2 用递归树求解递归方程"></a>2.5.2 用递归树求解递归方程</h3><h3 id="2-5-3-用主方法求解递归方程"><a href="#2-5-3-用主方法求解递归方程" class="headerlink" title="2.5.3 用主方法求解递归方程"></a>2.5.3 用主方法求解递归方程</h3><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第7章 贪心法</title>
     <url>/posts/a0060007.html</url>
     <content><![CDATA[<h2 id="7-1-贪心法概述"><a href="#7-1-贪心法概述" class="headerlink" title="7.1 贪心法概述"></a>7.1 贪心法概述</h2><h3 id="7-1-1-什么是贪心法"><a href="#7-1-1-什么是贪心法" class="headerlink" title="7.1.1 什么是贪心法"></a>7.1.1 什么是贪心法</h3><h3 id="7-1-2-用贪心法求解的问题应具有的性质"><a href="#7-1-2-用贪心法求解的问题应具有的性质" class="headerlink" title="7.1.2 用贪心法求解的问题应具有的性质"></a>7.1.2 用贪心法求解的问题应具有的性质</h3><h3 id="7-1-3-贪心法的一般求解过程"><a href="#7-1-3-贪心法的一般求解过程" class="headerlink" title="7.1.3 贪心法的一般求解过程"></a>7.1.3 贪心法的一般求解过程</h3><h2 id="7-2-求解活动安排问题"><a href="#7-2-求解活动安排问题" class="headerlink" title="7.2 求解活动安排问题"></a>7.2 求解活动安排问题</h2><h2 id="7-3-求解背包问题"><a href="#7-3-求解背包问题" class="headerlink" title="7.3 求解背包问题"></a>7.3 求解背包问题</h2><h2 id="7-4-求解最优装载问题"><a href="#7-4-求解最优装载问题" class="headerlink" title="7.4 求解最优装载问题"></a>7.4 求解最优装载问题</h2><h2 id="7-5-求解田忌赛马问题"><a href="#7-5-求解田忌赛马问题" class="headerlink" title="7.5 求解田忌赛马问题"></a>7.5 求解田忌赛马问题</h2><h2 id="7-6-求解多机调度问题"><a href="#7-6-求解多机调度问题" class="headerlink" title="7.6 求解多机调度问题"></a>7.6 求解多机调度问题</h2><h2 id="7-7-哈夫曼编码"><a href="#7-7-哈夫曼编码" class="headerlink" title="7.7 哈夫曼编码"></a>7.7 哈夫曼编码</h2><h2 id="7-8-求解流水作业调度问题"><a href="#7-8-求解流水作业调度问题" class="headerlink" title="7.8 求解流水作业调度问题"></a>7.8 求解流水作业调度问题</h2><hr>
@@ -310,136 +366,6 @@
 ]]></content>
       <tags>
         <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第8章 动态规划</title>
-    <url>/posts/a0060008.html</url>
-    <content><![CDATA[<h2 id="8-1-动态规划概述"><a href="#8-1-动态规划概述" class="headerlink" title="8.1 动态规划概述"></a>8.1 动态规划概述</h2><h3 id="8-1-1-从求解斐波那契数列看动态规划法"><a href="#8-1-1-从求解斐波那契数列看动态规划法" class="headerlink" title="8.1.1 从求解斐波那契数列看动态规划法"></a>8.1.1 从求解斐波那契数列看动态规划法</h3><h3 id="8-1-2-动态规划的原理"><a href="#8-1-2-动态规划的原理" class="headerlink" title="8.1.2 动态规划的原理"></a>8.1.2 动态规划的原理</h3><h3 id="8-1-3-动态规划求解的基本步骤"><a href="#8-1-3-动态规划求解的基本步骤" class="headerlink" title="8.1.3 动态规划求解的基本步骤"></a>8.1.3 动态规划求解的基本步骤</h3><h3 id="8-1-4-动态规划与其他方法的比较"><a href="#8-1-4-动态规划与其他方法的比较" class="headerlink" title="8.1.4 动态规划与其他方法的比较"></a>8.1.4 动态规划与其他方法的比较</h3><h2 id="8-2-求解整数拆分问题"><a href="#8-2-求解整数拆分问题" class="headerlink" title="8.2 求解整数拆分问题"></a>8.2 求解整数拆分问题</h2><h2 id="8-3-求解最大连续子序列和问题"><a href="#8-3-求解最大连续子序列和问题" class="headerlink" title="8.3 求解最大连续子序列和问题"></a>8.3 求解最大连续子序列和问题</h2><h2 id="8-4-求解三角形最小路径问题"><a href="#8-4-求解三角形最小路径问题" class="headerlink" title="8.4 求解三角形最小路径问题"></a>8.4 求解三角形最小路径问题</h2><h2 id="8-5-求解最长公共子序列问题"><a href="#8-5-求解最长公共子序列问题" class="headerlink" title="8.5 求解最长公共子序列问题"></a>8.5 求解最长公共子序列问题</h2><h2 id="8-6-求解最长递增子序列问题"><a href="#8-6-求解最长递增子序列问题" class="headerlink" title="8.6 求解最长递增子序列问题"></a>8.6 求解最长递增子序列问题</h2><h2 id="8-7-求解编辑距离问题"><a href="#8-7-求解编辑距离问题" class="headerlink" title="8.7 求解编辑距离问题"></a>8.7 求解编辑距离问题</h2><h2 id="8-8-求解-0-x2F-1-问题"><a href="#8-8-求解-0-x2F-1-问题" class="headerlink" title="8.8 求解 0&#x2F;1 问题"></a>8.8 求解 0&#x2F;1 问题</h2><h2 id="8-9-求解完全背包问题"><a href="#8-9-求解完全背包问题" class="headerlink" title="8.9 求解完全背包问题"></a>8.9 求解完全背包问题</h2><h2 id="8-10-求解资源分配问题"><a href="#8-10-求解资源分配问题" class="headerlink" title="8.10 求解资源分配问题"></a>8.10 求解资源分配问题</h2><h2 id="8-11-求解会议安排问题"><a href="#8-11-求解会议安排问题" class="headerlink" title="8.11 求解会议安排问题"></a>8.11 求解会议安排问题</h2><h2 id="8-12-滚动数组"><a href="#8-12-滚动数组" class="headerlink" title="8.12 滚动数组"></a>8.12 滚动数组</h2><h3 id="8-12-1-什么是滚动数组"><a href="#8-12-1-什么是滚动数组" class="headerlink" title="8.12.1 什么是滚动数组"></a>8.12.1 什么是滚动数组</h3><h3 id="8-12-2-用滚动数组求解-0-x2F-1-背包问题"><a href="#8-12-2-用滚动数组求解-0-x2F-1-背包问题" class="headerlink" title="8.12.2 用滚动数组求解 0&#x2F;1 背包问题"></a>8.12.2 用滚动数组求解 0&#x2F;1 背包问题</h3><hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 基础</title>
-    <url>/posts/c0010000.html</url>
-    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
-      <categories>
-        <category>后端技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第1章 Java 语言概述</title>
-    <url>/posts/c0010001.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
-</li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
-</li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
-</li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
-</li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
-</li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
-</li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
-</li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
-</li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
-</li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
-</li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
-</li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 Java 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 Java 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，Java2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
-<ul>
-<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
-<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
-<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
-<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
-<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
-</ul>
-<hr>
-<p><a href="https://georgedi.top/posts/c0010000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -455,698 +381,13 @@
       </tags>
   </entry>
   <entry>
-    <title>第2章 变量与运算符</title>
-    <url>/posts/c0010002.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
-</li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
-</li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
-</li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
-</li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
-</li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
-</li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
-</li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
-</li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
-</li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
-</li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
-</li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>第8章 动态规划</title>
+    <url>/posts/a0060008.html</url>
+    <content><![CDATA[<h2 id="8-1-动态规划概述"><a href="#8-1-动态规划概述" class="headerlink" title="8.1 动态规划概述"></a>8.1 动态规划概述</h2><h3 id="8-1-1-从求解斐波那契数列看动态规划法"><a href="#8-1-1-从求解斐波那契数列看动态规划法" class="headerlink" title="8.1.1 从求解斐波那契数列看动态规划法"></a>8.1.1 从求解斐波那契数列看动态规划法</h3><h3 id="8-1-2-动态规划的原理"><a href="#8-1-2-动态规划的原理" class="headerlink" title="8.1.2 动态规划的原理"></a>8.1.2 动态规划的原理</h3><h3 id="8-1-3-动态规划求解的基本步骤"><a href="#8-1-3-动态规划求解的基本步骤" class="headerlink" title="8.1.3 动态规划求解的基本步骤"></a>8.1.3 动态规划求解的基本步骤</h3><h3 id="8-1-4-动态规划与其他方法的比较"><a href="#8-1-4-动态规划与其他方法的比较" class="headerlink" title="8.1.4 动态规划与其他方法的比较"></a>8.1.4 动态规划与其他方法的比较</h3><h2 id="8-2-求解整数拆分问题"><a href="#8-2-求解整数拆分问题" class="headerlink" title="8.2 求解整数拆分问题"></a>8.2 求解整数拆分问题</h2><h2 id="8-3-求解最大连续子序列和问题"><a href="#8-3-求解最大连续子序列和问题" class="headerlink" title="8.3 求解最大连续子序列和问题"></a>8.3 求解最大连续子序列和问题</h2><h2 id="8-4-求解三角形最小路径问题"><a href="#8-4-求解三角形最小路径问题" class="headerlink" title="8.4 求解三角形最小路径问题"></a>8.4 求解三角形最小路径问题</h2><h2 id="8-5-求解最长公共子序列问题"><a href="#8-5-求解最长公共子序列问题" class="headerlink" title="8.5 求解最长公共子序列问题"></a>8.5 求解最长公共子序列问题</h2><h2 id="8-6-求解最长递增子序列问题"><a href="#8-6-求解最长递增子序列问题" class="headerlink" title="8.6 求解最长递增子序列问题"></a>8.6 求解最长递增子序列问题</h2><h2 id="8-7-求解编辑距离问题"><a href="#8-7-求解编辑距离问题" class="headerlink" title="8.7 求解编辑距离问题"></a>8.7 求解编辑距离问题</h2><h2 id="8-8-求解-0-x2F-1-问题"><a href="#8-8-求解-0-x2F-1-问题" class="headerlink" title="8.8 求解 0&#x2F;1 问题"></a>8.8 求解 0&#x2F;1 问题</h2><h2 id="8-9-求解完全背包问题"><a href="#8-9-求解完全背包问题" class="headerlink" title="8.9 求解完全背包问题"></a>8.9 求解完全背包问题</h2><h2 id="8-10-求解资源分配问题"><a href="#8-10-求解资源分配问题" class="headerlink" title="8.10 求解资源分配问题"></a>8.10 求解资源分配问题</h2><h2 id="8-11-求解会议安排问题"><a href="#8-11-求解会议安排问题" class="headerlink" title="8.11 求解会议安排问题"></a>8.11 求解会议安排问题</h2><h2 id="8-12-滚动数组"><a href="#8-12-滚动数组" class="headerlink" title="8.12 滚动数组"></a>8.12 滚动数组</h2><h3 id="8-12-1-什么是滚动数组"><a href="#8-12-1-什么是滚动数组" class="headerlink" title="8.12.1 什么是滚动数组"></a>8.12.1 什么是滚动数组</h3><h3 id="8-12-2-用滚动数组求解-0-x2F-1-背包问题"><a href="#8-12-2-用滚动数组求解-0-x2F-1-背包问题" class="headerlink" title="8.12.2 用滚动数组求解 0&#x2F;1 背包问题"></a>8.12.2 用滚动数组求解 0&#x2F;1 背包问题</h3><hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
 ]]></content>
       <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第1章 绪论</title>
-    <url>/posts/a0090001.html</url>
-    <content><![CDATA[<h2 id="1-1-软件、软件产业与软件企业"><a href="#1-1-软件、软件产业与软件企业" class="headerlink" title="1.1 软件、软件产业与软件企业"></a>1.1 软件、软件产业与软件企业</h2><p>本书所涉及的软件沿用传统的定义，指包括<strong>程序</strong>、<strong>数据</strong>及其<strong>相关文档</strong>的完整集合。</p>
-<h3 id="1-1-1-软件的分类及其特点"><a href="#1-1-1-软件的分类及其特点" class="headerlink" title="1.1.1 软件的分类及其特点"></a>1.1.1 软件的分类及其特点</h3><ol>
-<li><p><strong>软件的分类</strong></p>
-<p>学术界和产业界对软件并没有严格的分类标准，通常可以按照<strong>软件的功能</strong>、<strong>软件的工作方式</strong>、<strong>软件的权益</strong>、<strong>软件的标准化程度</strong>、<strong>软件与硬件的关联程度</strong>、<strong>软件所处的层次</strong>等不同角度进行分类。</p>
-<p>下面是几种常用的软件分类方法。</p>
-<ul>
-<li><p>按<strong>软件的功能</strong>进行分类</p>
-<ol>
-<li><p><strong>系统软件</strong></p>
-<p>系统软件指能与计算机硬件紧密地配合在一起，使计算机系统各个部件、相关的程序和数据协调、高效工作的软件，如操作系统、数据库管理软件、设备驱动程序、通信处理程序等。</p>
-</li>
-<li><p><strong>支撑软件</strong></p>
-<p>支撑软件是指协助用户开发软件的工具性软件和中间件，既包括程序人员开发软件产品的工具，也包括帮助管理人员控制开发进程的工具，如文字处理软件、数据模型构造器、商业图形软件、 C &#x2F; S 开发工具等。</p>
-</li>
-<li><p><strong>应用软件</strong></p>
-<p>应用软件是指在特定领域内开发，为特定目的服务的一类软件。</p>
-<p>相较于系统软件和支撑软件，应用软件的涉及面最宽，如呼叫中心控制软件、铁路调度软件、通信控制软件、办公软件、图像处理软件等。</p>
-</li>
-</ol>
-</li>
-<li><p>按<strong>软件的工作方式</strong>进行分类</p>
-<ol>
-<li><p><strong>实时处理软件</strong></p>
-<p>实时处理软件是指在当前时间，对当前任务进行处理的软件，如智慧卫生监督软件、实验室信息管理软件等。</p>
-</li>
-<li><p><strong>多用户分时软件</strong></p>
-<p>多用户分时软件指按照一定的时间间隔，阶段性地处理任务的软件，如交通信号灯管理软件等。</p>
-</li>
-<li><p><strong>交互式软件</strong></p>
-<p>交互式软件是指可以互动交流的软件，如电子白板软件、各种移动应用软件等。交互指实现操作者和程序的对话。例如操作者点击某软件的“退出”按钮，软件界面会弹出一个窗口“您真的要退出吗？”，然后操作者可自行选择。</p>
-</li>
-<li><p><strong>批处理软件</strong></p>
-<p>批处理软件指一次可以执行多条指令的软件，如垃圾处理软件等。</p>
-</li>
-</ol>
-</li>
-<li><p>按<strong>软件的权益</strong>进行分类</p>
-<ol>
-<li><p><strong>商品软件</strong></p>
-<p>商品软件是指用户需要付费（一般需要购买其软件许可证）才能获得其使用权的软件。</p>
-</li>
-<li><p><strong>共享软件</strong></p>
-<p>共享软件是指一种具有版权的“买前免费试用”软件，通常允许用户试用一段时间，允许用户进行拷贝或散发给其他人，但不允许销售，过了试用期后需要交一笔注册费，成为注册用户方可继续使用。</p>
-</li>
-<li><p><strong>自由软件</strong></p>
-<p>自由软件的创始人是理查德·斯托曼（ Richard Stallman )，他在 1984 年启动了开发类 UNIX 系统的自由软件工程，创建了自由软件基金会，拟订了通用公共版权许可证，倡导自由软件的非版权原则（该原则是：用户可以共享自由软件，允许随意拷贝、修改其源代码，允许销售和自由传播，但对软件源代码的任何修改都必须向所有用户公开，还必须允许此后的用户享有进一步拷贝和修改的权利）。</p>
-<p>自由软件有利于软件共享和技术创新，它的出现成就了 TCP &#x2F; IP 协议、 Apache 服务器软件和 Linux 操作系统等一大批精品软件的产生。</p>
-</li>
-</ol>
-</li>
-<li><p>按<strong>软件的标准化程度</strong>进行分类</p>
-<ol>
-<li><p><strong>标准化软件</strong></p>
-<p>标准化软件指可以封装发售、购买后就可以直接使用的软件。此类软件标准化程度高，销量大，售价也相对较低，如 Office 办公软件、 Windows 各版本的操作系统等。</p>
-</li>
-<li><p><strong>半定制软件</strong></p>
-<p>半定制软件指具有相当一部分共性，但仍需要一定的客户化开发工作才能满足客户需要的软件，如 ERP ( Enterprise Resource Planning ，企业资源计划）软件、财务软件等。</p>
-</li>
-<li><p><strong>定制软件</strong></p>
-<p>定制软件（又称软件服务）指需要根据特定客户的需求来量身定制的软件，如各种系统集成服务、外包软件等。</p>
-</li>
-</ol>
-</li>
-<li><p>按<strong>软件与硬件的关联程度</strong>进行分类</p>
-<ol>
-<li><p><strong>嵌入型软件</strong></p>
-<p>嵌入型软件要求在紧密联系的硬件、软件和操作的限制条件下运行，通常与某些硬件设备结合在一起。因此，嵌入型软件对接口、数据结构、算法要求较高。</p>
-<p>嵌人型软件规模可大可小，大如复杂的事务处理系统、大型／超大型的操作系统、航天测控系统、大型指挥系统等，小如手机软件、MP3 播放软件等。</p>
-</li>
-<li><p><strong>组织型软件</strong></p>
-<p>组织型软件（又称有机型软件）指规模相对较小，结构简单的软件。此类软件需求不是很苛刻，开发人员对此类软件产品开发目标的理解充分，工作经验丰富，对软件的使用环境很熟悉，软件受硬件的约束较少，程序的规模不是很大（&lt;5 万行），如住房摇号软件、 OA ( OfficeAutomation ，办公自动化）系统等。</p>
-</li>
-<li><p><strong>半独立型软件</strong></p>
-<p>半独立型软件指介于嵌人型软件和组织型软件之间的软件，其规模和复杂度都属于中等以上，最大可达 30 万行，如财务应用软件等。</p>
-</li>
-</ol>
-</li>
-<li><p>按<strong>软件所处的层次</strong>进行分类</p>
-<ol>
-<li><p><strong>平台软件</strong></p>
-<p>平台软件指直接控制和协调计算机、通信设备及其他外部设备，使之发生作用并方便用户使用以及提供中间支持和运行环境的软件。这些软件结合起来可以提供应用软件运行的平台，如操作系统、基于其上的数据库管理系统及开发工具、网络管理软件、中文处理平台软件、图形图像管理软件、人机接口交互软件等。</p>
-</li>
-<li><p><strong>中间软件</strong></p>
-<p>中间软件处于操作系统软件与用户应用软件中间，是为处于自己上层的应用软件提供运行与开发的环境，帮助用户灵活、高效地开发和集成的复杂应用软件。</p>
-<p>中间软件主要包括中间件软件和计算机安全软件产品，如交易中间件、消息中间件、应用服务器（ J2EE )、系统集成中间件、企业服务中间件、安全中间件、门户中间件、计算机语言集成中间件、数字电视中间件等。</p>
-</li>
-<li><p><strong>应用软件</strong></p>
-<p>应用软件指直接完成某种具体应用，无需用户重新编程的软件，其应用范围最广、产品最多。应用软件又分为通用应用软件和行业应用软件两类。</p>
-<p>通用应用软件包括办公及文字处理软件、通用财会软件、教育软件、游戏与娱乐软件等，行业应用软件涉及金融、电信、政府、教育、能源等。</p>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p><strong>软件的特点</strong><br>软件作为一个产品或服务，与硬件产品相比，具有如下特点：</p>
-<ol>
-<li><strong>软件是信息产品，具有无形性、抽象性、可复制性和共享性。</strong></li>
-<li><strong>软件的生产过程几乎都是从零开始。</strong></li>
-<li><strong>软件的价值以及成本构成与传统的工业制品不同，如没有库存成本。</strong></li>
-<li><strong>软件开发和运行常常受不同的计算机软件和硬件平台的限制，对计算机软件和硬件系统有不同程度的依赖性。</strong></li>
-<li><strong>软件的开发过程很复杂。</strong></li>
-<li><strong>软件开发是一项创造性活动。</strong></li>
-<li><strong>软件开发需要大量的资金投入。</strong></li>
-<li><strong>软件产品对用户有黏性。</strong></li>
-<li><strong>软件产品的更新速度快。</strong></li>
-</ol>
-</li>
-</ol>
-<h3 id="1-1-2-软件产业"><a href="#1-1-2-软件产业" class="headerlink" title="1.1.2 软件产业"></a>1.1.2 软件产业</h3><p>目前，国家有关部门并未对软件产业给出明确的定义。</p>
-<p>1996 年的《计算机软件产业技术创新战略研究》报告中对软件产业的定义是：</p>
-<p>​	<strong>为有效地利用计算机资源而从事计算机程序编制、信息系统开发和集成及从事相关服务的产业。</strong></p>
-<ol>
-<li><p><strong>软件产业的分类</strong></p>
-<ul>
-<li><p>麦肯锡公司（ McKinsey &amp;. Company ）出版发行的《软件业的成功奥秘》中，将软件产业分为<strong>专业化服务</strong>和<strong>软件产品</strong>两类，其中软件产品又分为<strong>企业解决方案</strong>和<strong>大众市场成套软件</strong>。</p>
-</li>
-<li><p>国际数据公司（ International Data Corporation , IDC ）在做市场研究时，将软件产业细分为如下三大领域：</p>
-<ol>
-<li><p><strong>应用解决方案（ Solutions )</strong></p>
-</li>
-<li><p><strong>应用开发与配置软件（ Application Development and Deployment Software ）</strong></p>
-</li>
-<li><p><strong>系统基础软件（ System Infrastructure Software ）</strong></p>
-</li>
-</ol>
-<p>其中，应用解决方案包括消费应用（如家庭、游戏和娱乐）、协作应用（如集成协作环境、消息应用）、内容管理应用（如内容及文件管理应用）、写作应用（如文字加工）等子项；</p>
-<p>应用开发与配置软件包括信息数据管理、应用设计和建筑工具、应用软件生命周期管理等子项；</p>
-<p>系统基础软件包括系统管理软件、网络管理软件、安全软件、中间件和系统级软件等子项。</p>
-</li>
-<li><p>印度将 IT 软件服务产业分为<strong>产品和技术开发业</strong>、<strong>IT 服务业</strong>和 <strong>IT 关联服务业</strong>。</p>
-<p>印度将软件服务产业统一扩大为“<strong>IT 服务</strong>”的概念。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>软件产业的特点</strong></p>
-<ol>
-<li><strong>高技术、高附加值及高效益</strong></li>
-<li><strong>国际化</strong></li>
-<li><strong>服务化</strong></li>
-<li><strong>专业化分工越来越细</strong></li>
-<li><strong>高关联度</strong></li>
-</ol>
-</li>
-<li><p><strong>软件产业的发展模式</strong></p>
-<p>在世界各国的软件产业的发展过程中，形成了多种不同的发展模式，典型的代表有：</p>
-<ul>
-<li><strong>美国的“全面领先模式”</strong></li>
-<li><strong>日本和韩国的“整机带动模式”</strong></li>
-<li><strong>爱尔兰的“软件集散模式”</strong></li>
-<li><strong>印度的“外包服务模式”</strong></li>
-</ul>
-</li>
-<li><p><strong>我国软件产业的发展特征</strong></p>
-<p>相对于软件产业发达国家，我国软件产业发展的历程比较短，萌芽于 20 世纪 70 年代，起步于 20 世纪 80 年代末。随着社会的信息化进程加快，在进入 20 世纪 90 年代后我国软件产业就有了飞速发展。</p>
-<p>我国软件产业发展有如下几个特征：</p>
-<ul>
-<li><p><strong>产值和规模持续扩大</strong></p>
-<p>软件产业作为我国基础性、战略性的产业，在促进国民经济和社会发展中具有重要作用。</p>
-</li>
-<li><p><strong>呈现集聚化发展态势</strong>、</p>
-<p>我国软件产业发展聚集趋势从过去主要<strong>集中在京粤地区</strong>转向<strong>沿海地区</strong>。</p>
-</li>
-<li><p><strong>市场逐步扩大</strong></p>
-<p>目前，中国的软件产业仍以国内软件市场需求为主，出口外包为辅，但随着国家对软件产业的支持力度的增加，软件服务外包示范城市对促进产业集聚和培育壮大市场主体的作用越来越重要，中国软件企业正在快速地融入世界经济一体化新的产业分工链条之中。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>我国软件产业发展的不足</strong></p>
-<p>与国外的软件产业相比，我国的软件产业在发展中存在诸多不足：</p>
-<ul>
-<li><p><strong>关键核心技术缺乏，自主创新能力薄弱。</strong></p>
-<p>我国软件产业由于核心技术缺乏，造成企业产品的附加值低，产品同质化现象非常严重，企业的利润较低。国产基础软件在软件产业的基石作用没有发挥出来，产品主要集中在产业链低端的应用软件，严重缺乏持久的发展动力。我国对软件开发的核心技术不太重视，自主创新能力薄弱，导致在国际软件市场上话语权不足。</p>
-</li>
-<li><p><strong>软件企业规模小，人才结构不太合理。</strong></p>
-<p>我国软件企业 100 人以下的占 70%，且 60％ 的软件企业年营业收入在 50 万元以下。大量的小规模软件公司的存在使得软件市场的竞争非常恶劣，没有大规模的软件龙头企业与国外的大企业抗衡。此外，我国的软件人才结构是两头小、中间大的橄榄形，而不是正常的金字塔形。我国软件产业不仅缺乏软件编码和测试等低端人才，更缺乏包括系统分析师、项目管理人等高端人才。</p>
-</li>
-<li><p><strong>软件知识产权的保护力度不够。</strong></p>
-<p>盗版严重制约了中国软件业的发展，并损害了中国在软件市场上的国际形象。</p>
-</li>
-</ul>
-<p>综上，我们需要正视软件产业所存在的问题，必须抓住当前的机遇和挑战，内外兼修，摒弃自身的不足，积极探索符合中国特色的发展模式。</p>
-</li>
-</ol>
-<h3 id="1-1-3-软件企业"><a href="#1-1-3-软件企业" class="headerlink" title="1.1.3 软件企业"></a>1.1.3 软件企业</h3><p>按照规模的大小，软件企业可分为<strong>大型软件企业</strong>和<strong>中小型软件企业</strong>。</p>
-<p>按照所从事的业务范围，软件企业可以分为<strong>软件产品企业</strong>和<strong>软件服务企业</strong>，而软件产品企业又可以分为<strong>开发标准化软件的企业</strong>和<strong>开发半定制软件的企业</strong>。</p>
-<ol>
-<li><p><strong>软件企业的组织结构</strong></p>
-<p>软件企业的组织结构有如下四种：</p>
-<ol>
-<li><strong>直线职能式组织结构</strong></li>
-<li><strong>矩阵式组织结构</strong></li>
-<li><strong>事业部制式组织结构</strong></li>
-<li><strong>网络式组织结构</strong></li>
-</ol>
-</li>
-<li><p><strong>软件企业的管理</strong></p>
-<p>软件企业的管理包括：</p>
-<ol>
-<li><strong>软件企业的战略管理</strong></li>
-<li><strong>软件企业的市场管理</strong></li>
-<li><strong>软件企业的项目管理</strong></li>
-<li><strong>软件企业的质量管理</strong></li>
-<li><strong>软件企业的采购管理</strong></li>
-<li><strong>软件企业的人力资源管理</strong></li>
-<li><strong>软件企业的知识管理</strong></li>
-<li><strong>软件企业的成本管理</strong></li>
-<li><strong>软件企业的风险管理</strong></li>
-<li><strong>软件企业的文化管理</strong></li>
-</ol>
-</li>
-<li><p><strong>项目管理知识体系</strong></p>
-<p>项目管理知识体系的十大知识领域：</p>
-<ol>
-<li><strong>项目整合管理</strong></li>
-<li><strong>项目范围管理</strong></li>
-<li><strong>项目进度管理</strong></li>
-<li><strong>项目成本管理</strong></li>
-<li><strong>项目质量管理</strong></li>
-<li><strong>项目资源管理</strong></li>
-<li><strong>项目沟通管理</strong></li>
-<li><strong>项目风险管理</strong></li>
-<li><strong>项目采购管理</strong></li>
-<li><strong>项目相关方（干系人）管理</strong></li>
-</ol>
-</li>
-</ol>
-<h2 id="1-2-软件工程"><a href="#1-2-软件工程" class="headerlink" title="1.2 软件工程"></a>1.2 软件工程</h2><p>软件自计算机产生以来，虽然飞速发展，但是在早期发展过程中缺乏相关文档且没有较好的开发方法给予指导，导致 20 世纪 60 年代中期出现了“软件危机”。在 20 世纪 60 年代末的 NATO （北大西洋公约组织）会议上，首次提出了“软件工程”一词，即<strong>计划用工程化的方法来实施软件的开发</strong>。</p>
-<h3 id="1-2-1-软件工程的定义及其过程"><a href="#1-2-1-软件工程的定义及其过程" class="headerlink" title="1.2.1 软件工程的定义及其过程"></a>1.2.1 软件工程的定义及其过程</h3><p>20世纪90年代，美国电气与电子工程师学会（ Institute of Electrical and Electronics Engineers , IEEE ）给出<strong>软件工程的定义</strong>是：</p>
-<ol>
-<li><strong>将系统化的、规范化的、可量化的方法应用于软件的开发、运行和维护。</strong></li>
-<li><strong>对 1 中所述方法的研究。</strong></li>
-</ol>
-<p>软件工程可以说是一种<strong>层次化</strong>的技术，其根基就在于<strong>对质量的关注及其保障</strong>。</p>
-<h3 id="1-2-2-软件工程模型"><a href="#1-2-2-软件工程模型" class="headerlink" title="1.2.2 软件工程模型"></a>1.2.2 软件工程模型</h3><p>软件工程模型又称为<strong>软件开发模型</strong>，是软件从最初的构思到软件公开发行的<strong>全部过程</strong>、<strong>活动</strong>和<strong>任务</strong>的结构框架。</p>
-<p>典型的软件工程模型有<strong>瀑布模型</strong>、<strong>V 模型</strong>、<strong>增量模型</strong>、<strong>原型模型</strong>、<strong>螺旋模型</strong>、<strong>喷泉模型</strong>、<strong>基于构件的开发模型</strong>、<strong>形式化方法模型</strong>等。</p>
-<h3 id="1-2-3-软件规模度量"><a href="#1-2-3-软件规模度量" class="headerlink" title="1.2.3 软件规模度量"></a>1.2.3 软件规模度量</h3><p>在软件工程项目开始前，要估算该项目所需的开发时间和工作量，即度量软件的规模。</p>
-<p>软件规模的度量最主要的技术是<strong>代码行度量</strong>和<strong>功能点度量</strong>。</p>
-<ol>
-<li><p><strong>代码行度量</strong></p>
-<p>软件规模常用程序的<strong>代码行（ Line Of Code , LOC ）</strong>或者<strong>千行代码 kLOC ( 1000LOC ）</strong>来衡量。</p>
-<p>代码行度量是一种较为简单的定量估算软件规模的方法，该方法依据以往开发类似产品的经验以及历史数据来估计实现一个功能所需要的源程序行数（不包括注释）。当开发过类似项目且有相关历史数据可以参考时，该估算方法才会相对准确。</p>
-<p>为了使程序规模的估算更加接近实际值，可以由多名比较有经验的软件工程师来做出估算。每个人都估计程序的最小规模 a，最大规模 b 以及最可能的规模 m，然后分别算出这三种规模的平均值 <span style="text-decoration: overline">a</span>、<span style="text-decoration: overline">b</span> 和 <span style="text-decoration: overline">m</span>，之后再用下列公式计算程序规模的估算值 L：</p>
-<p>$$<br>L &#x3D; \frac{\bar{a} + 4 \bar{m} + \bar{b}}{6}<br>$$</p>
-</li>
-<li><p><strong>功能点度量</strong></p>
-<p>功能点度量主要基于<strong>信息域的特征</strong>以及<strong>软件的复杂性</strong>进行计算。</p>
-<p>功能点的计算步骤如下。</p>
-<ol>
-<li><p><strong>计算信息域特征值加权（ CT ）</strong></p>
-<p>表 1 给出了用于功能点度量的五个基本信息域（用户输入数、用户输出数、用户查询数、文件数以及外部接口数）的特征和含义，这些值都是通过直接测量所得。</p>
-<p>首先将这些值填入表 2 所示的特征值一栏；其次根据信息域的特征复杂程度来选择表中适当的加权因子；最后对其进行计算，得到总计 CT 值。</p>
-<p><strong>表 1 信息域特征及其含义</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">信息域特征名</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">用户输入数</td>
-<td align="center">对每个用户输入数进行计数，向软件提供不同的面向应用的数据（不含查询数）</td>
-</tr>
-<tr>
-<td align="center">用户输出数</td>
-<td align="center">对每个用户输出数进行计数，向用户提供面向应用的信息（输出是指报表、屏幕、出错消息等，一个报表中的单个数据项不做单独计数）</td>
-</tr>
-<tr>
-<td align="center">用户查询数</td>
-<td align="center">一个查询被定义为一次联机输入，它导致软件以联机输出的方式产生实时地响应，且每个不同的查询必须分别计算</td>
-</tr>
-<tr>
-<td align="center">文件数</td>
-<td align="center">对每个逻辑上的主文件进行计数（即数据的一个逻辑组合，可能是一个独立的文件或者某个大型数据库的一部分）</td>
-</tr>
-<tr>
-<td align="center">外部接口数</td>
-<td align="center">对所有机器可读的接口（如存储介质上的数据文件）进行计数</td>
-</tr>
-</tbody></table>
-<p><strong>表 2 信息域特征计数表</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th rowspan="2">基本信息域</th>
-            <th rowspan="2">特征值</th>
-            <th colspan="3">加权因子 a<sub>i</sub></th>
-            <th rowspan="2">结果（特征值*加权因子）</th>
-        </tr>
-        <tr align="center">
-            <td>简单</td>
-            <td>中间</td>
-            <td>复杂</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td>用户输入数</td>
-            <td></td>
-            <td>3</td>
-            <td>4</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <td>用户输出数</td>
-            <td></td>
-            <td>4</td>
-            <td>5</td>
-            <td>7</td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <td>用户查询数</td>
-            <td></td>
-            <td>3</td>
-            <td>4</td>
-            <td>6</td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <td>文件数</td>
-            <td></td>
-            <td>7</td>
-            <td>10</td>
-            <td>15</td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <td>外部接口数</td>
-            <td></td>
-            <td>5</td>
-            <td>7</td>
-            <td>10</td>
-            <td></td>
-        </tr>
-        <tr align="center">
-            <td>总计 CT 数</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
-<p>如果用 d,( 1≤ d ,≤5 ）分别表示 5 个基本信息域的特征值， a,( 1≤ a ,≤5 ）表示其对应的加权因子，则 CT 值的计算如下：</p>
-<p>$$<br>CT &#x3D; \sum_{j&#x3D;1}^{5}a_{j}d_{j}<br>$$</p>
-</li>
-<li><p><strong>计算技术复杂性因子（ Technology Complexity Factor , TCF )</strong></p>
-<p>环境复杂性因子 F<sub>i</sub>,( i &#x3D;1,2,…,14 ）是基于表 3 中对 14 个问题的评估所得到的值，对每个问题的取值范围是 0~5，如表 4 所示。</p>
-<p><strong>表 3 环境复杂性因子取值表</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th>问题</th>
-<th align="center">F<sub>i</sub>（0~5）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td>系统需要可靠的备份和恢复吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td>系统需要数据通信吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td>系统有分布处理功能吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td>系统的性能非常关键吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td>系统是否在一个现存的、重复的操作环境中运行？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td>联机数据登录是否需要在多屏幕或多操作之间切换以完成输入？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td>需要联机数据登录吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td>系统需要联机更新文件吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td>输入、输出文件或查询很复杂吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">10</td>
-<td>内部处理复杂吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">11</td>
-<td>代码需要设计成可复用的吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">12</td>
-<td>设计中需要包含转换及其安装吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">13</td>
-<td>系统的设计支持不同组织的多次安装吗？</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">14</td>
-<td>系统相关应用的设计便于用户修改和使用吗？</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p><strong>表 4 复杂度取值表</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">值</th>
-<th align="center">定义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">0</td>
-<td align="center">没有影响</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">偶然的</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">适中的</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">普通的</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">重要的</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">极其重要的</td>
-</tr>
-</tbody></table>
-<p>技术复杂性因子的计算公式如下所示：</p>
-<p>$$<br>TCF &#x3D; 0.65 + 0.01 \sum_{i&#x3D;1}^{14}F_{i}<br>$$</p>
-</li>
-<li><p><strong>计算功能点（ FP ）</strong></p>
-<p>功能点的计算公式如下所示：</p>
-<p>$$<br>FP &#x3D; CT · TCF<br>$$</p>
-</li>
-</ol>
-</li>
-</ol>
-<p>【例1.1】某软件企业根据客户需求对预定软件进行功能点度量，5 个基本信息域的特征值 d<sub>j</sub>，按照表 1 所示的顺序分别为：用户输入数 35、用户输出数 58、用户查询数 20、文件数 6、外部接口数 2；其对应的加权因子分别为中间（4）、中间（5）、中间（4）、中间（10）和简单（2）；对照表 3 和表 4 的各项指标得到 F<sub>i</sub> 的加权和为 20，试计算其功能点。</p>
-<p>解：</p>
-<p>（1）依据题目所给条件及表 2，则有<br>$$<br>CT &#x3D; \sum_{j&#x3D;1}^{5}a_{j}d_{j} &#x3D; 35 × 4 + 58 × 5 + 20 × 4 + 6 × 10 + 2 × 5 &#x3D; 580<br>$$<br>（2）根据技术复杂性因子计算公式，有<br>$$<br>TCF &#x3D; 0.65 + 0.01 \sum_{i&#x3D;1}^{14}F_{i} &#x3D; 0.65 + 0.01 × 20 &#x3D; 0.85<br>$$<br>（3）根据功能点计算公式，有<br>$$<br>FP &#x3D; CT · TCF &#x3D; 580 × 0.85 &#x3D; 493<br>$$<br>（4）答：该预定软件的功能点为 493。</p>
-<h3 id="1-2-4-程序复杂性度量"><a href="#1-2-4-程序复杂性度量" class="headerlink" title="1.2.4 程序复杂性度量"></a>1.2.4 程序复杂性度量</h3><p>软件的复杂性是指<strong>理解及处理软件的难易程度</strong>，既包括<strong>程序的复杂性</strong>，又包括<strong>文档的复杂性</strong>。</p>
-<p>软件的复杂性主要体现在程序的复杂性中，故本节主要介绍程序复杂性的度量。</p>
-<p>一般而言，开发规模相同、复杂性却不同的程序，所花费的时间和成本会有较大的差异， K . Magel 从以下六个方面来描述程序的复杂性：</p>
-<ol>
-<li>程序理解的难度。</li>
-<li>纠错、维护程序的难度。</li>
-<li>向他人解释程序的难度。</li>
-<li>按指定方法修改程序的难度。</li>
-<li>根据设计文件编写程序的工作量大小。</li>
-<li>执行程序时需要资源量的多少。</li>
-</ol>
-<p>程序的复杂性度量模型一般遵循以下基本原则：</p>
-<ol>
-<li>程序的复杂性与程序大小的关系不是线性的。</li>
-<li>控制结构复杂的程序比较复杂。</li>
-<li>数据结构复杂的程序比较复杂。</li>
-<li>转向语句使用不恰当的程序比较复杂。</li>
-<li>循环结构比选择结构复杂，选择结构比顺序结构复杂。</li>
-<li>语句、数据、子程序以及模块在程序中的次序对复杂性有影响。</li>
-<li>全局变量、非局部变量较多时的程序比较复杂。</li>
-<li>参数按地址调用比按值调用复杂。</li>
-<li>函数的隐式副作用比显式参数传递更难以理解。</li>
-<li>具有不同作用的变量共用一个名字时比较难理解。</li>
-<li>模块间、子程序间联系密切的程序较为复杂。</li>
-<li>嵌套深度越深的程序越复杂。</li>
-</ol>
-<p>比较典型的程序复杂性度量有 <strong>McCabe 环形复杂性度量</strong>以及 <strong>Halstead 复杂性度量</strong>。</p>
-<ol>
-<li><p><strong>McCabe 环形复杂性度量</strong></p>
-<ol>
-<li><p>20 世纪 70 年代， McCabe 提出了基于软件程序图的程序复杂性度量方法。</p>
-<p>该方法主要用一种退化的程序流程图来表示程序图。</p>
-<p>程序流程图中的每一个处理符号（如起点、终点、处理框以及判断框）用一个结点来表示，而原流程图中连接处理符号的控制流则用程序图中连接结点的有向弧来表示。</p>
-<p>McCabe 环形复杂性度量方法是基于图论，对于一个强连通的有向图 G ，若用 e 表示弧数， n 表示结点数， p 表示强连通分量的个数，则可用下列公式表示：</p>
-<p>$$<br>V(G) &#x3D; e - n + p<br>$$</p>
-<p>对于一个单入口且单出口的程序来说，从入口的结点能到达图中的任意结点，同理从任一结点都可以到达出口结点，故程序图都是连通的，其连通分量只有一个，即 p &#x3D; 1。</p>
-<p>但程序图经常不是强连通的，只有在程序图中增加一条从出口结点到入口结点的弧才能将程序图变成强连通的。</p>
-<p>为了简化环形的复杂性计算，通常用下列公式进行计算：</p>
-<p>$$<br>V(G) &#x3D; e - n + 2<br>$$</p>
-</li>
-</ol>
-</li>
-<li><p><strong>Halstead 复杂性度量</strong></p>
-<p>Halstead 提出通过定量的公式计算方法来度量软件的复杂性。</p>
-<p>Halstead 指出程序是由操作符与操作数组成的符号序列，操作符主要包括算术操作符、逻辑操作符、分界符、赋值符、括号及子程序调用符等，还包括一些单个操作符，如“begin … end”“for … do”“while … do”“repeat … until”以及“if then … else”等。</p>
-<p>操作数则是由程序定义且引用的操作对象，可以是常量、变量、记录、指针、数组等。</p>
-<p>用 n<sub>1</sub> 表示程序中不同操作符的个数，n<sub>2</sub> 表示程序中不同操作数的个数， N<sub>1</sub>  表示程序中操作符的总数，N<sub>2</sub>  表示程序中操作数的总数。</p>
-<p>则可用下列公式 1 表示<strong>程序的符号长度</strong>：</p>
-<p>$$<br>N &#x3D; N_{1} + N_{2}<br>$$</p>
-<p>用下列公式 2 表示<strong>程序的词汇量</strong>：</p>
-<p>$$<br>n &#x3D; n_{1} + n_{2}<br>$$</p>
-<p>用下列公式 3 表示<strong>程序量（即存储容量）</strong>，即长度方程：</p>
-<p>$$<br>V &#x3D; Nlog_{2}(n_{1} + n_{2}) &#x3D; (N_{1} + N_{2})log_{2}(n_{1} + n_{2})<br>$$</p>
-<p>一般认为最小的程序只有两个操作符，即函数调用与赋值，即 n<sub>1</sub> &#x3D; N<sub>1</sub> &#x3D; 2，操作数 n<sub>2</sub> 则是指赋予函数值的变量以及函数调用时的参数，即 n<sub>2</sub><sup>*</sup> &#x3D; n<sub>2</sub> &#x3D; N<sub>2</sub>。</p>
-<p>代入公式 3 可得下列<strong>最小程序量计算公式</strong>：<br>$$<br>V^* &#x3D; {(2 + n_2^*)}log_2{(2 + n_2^*)}<br>$$</p>
-<p><strong>预测程序长度</strong>如下列公式所示：<br>$$<br>N^{‘} &#x3D; 2 + n_{2}^{*}<br>$$</p>
-<p><strong>预测程序潜在的错误数</strong>如下列公式所示：<br>$$<br>B^{‘} &#x3D; \frac{V}{3000}<br>$$</p>
-</li>
-</ol>
-<h3 id="1-2-5-软件可靠性度量"><a href="#1-2-5-软件可靠性度量" class="headerlink" title="1.2.5 软件可靠性度量"></a>1.2.5 软件可靠性度量</h3><p>软件的可靠性是指在规定的时间内以及规定的条件下，软件按照规格说明要求不会引起系统失效的概率。软件的可靠性是关系到系统成败的重要因素。一般情况下，软件的可靠性和软件的故障率是紧密相关的。当软件出现故障时，就需要对其进行修复，而软件修复时间的长短也是直接影响软件可靠性的重要因素。</p>
-<p>软件可靠性通常用下列公式进行计算：</p>
-<p>$$<br>MTBF &#x3D; MTTF + MTTR<br>$$</p>
-<p>其中，MTBF（ Mean Time Between Failure ）是指平均故障间隔时间，MTTF（ Mean Time To Failure ）是指平均故障时间，而 MTTR（ Mean Time To Repair ）则是指平均修复时间。</p>
-<p>软件的可用性是指软件在投入使用时能实现其事先指定的相关系统功能的概率，可用下列公式乘以 100% 进行计算：</p>
-<p>$$<br>\frac{MTTF}{MTTF + MTTR}<br>$$</p>
-<h2 id="1-3-软件工程经济学简介"><a href="#1-3-软件工程经济学简介" class="headerlink" title="1.3 软件工程经济学简介"></a>1.3 软件工程经济学简介</h2><p><strong>经济学是研究人类在生产、消费、分配、交换等经济活动过程中的资源配置与资源利用的学科，属于社会科学。经济学的研究对象是由稀缺性引起的各种选择的问题。</strong></p>
-<ol>
-<li><p><strong>软件工程经济学的内涵与任务</strong></p>
-<p>软件工程经济学（ Software Engineering Economics , SEE ）是<strong>属于软件工程学和工程经济学之间的交叉学科</strong>。</p>
-<p>我们将其定义为<strong>以研究软件工程领域中的经济问题和经济规律为主的一门经济学分支学科，是为实现特定功能需求的软件工程项目而提出的一门系统方法学科。</strong></p>
-<p>软件工程经济学主要包括以下四部分的内容：</p>
-<ol>
-<li>学科研究的对象、任务、特征、研究范围与研究方法；</li>
-<li>软件系统的内部构成要素与经济活动及其关联分析，如投资、融资、工期、成本、效益、效率、质量保证、开发、管理、运行与维护等及其关联分析；</li>
-<li>软件系统的组织结构、管理决策以及与经营活动的关系；</li>
-<li>软件系统的资金流、物流、信息流的输入和输出以及对系统外部（如国家、地区社会、经济等）的影响。</li>
-</ol>
-<p>其中，1 是软件系统的基础概念与理论部分，2、3 为软件系统的微观经济分析部分，4 为软件系统的宏观经济分析部分。</p>
-</li>
-<li><p><strong>软件工程经济学的研究特点与方法体系</strong></p>
-<ul>
-<li><p>软件工程经济学的<strong>研究特点</strong></p>
-<p>软件工程经济学的研究特点主要有以下四点：</p>
-<ol>
-<li>软件工程经济学研究的重点始终围绕着软件产品的质量、成本／效益、项目进度、效率等目标要素的关联分析，以及人的组织与协调管理。</li>
-<li>软件工程经济学的研究思想主要来自系统工程，因此软件系统目标的整体性、勇素的层次性与关联性、系统环境的适应性等始终是人们研究的指导准则。</li>
-<li>软件工程经济学采用定量与定性分析相结合、理论与实践相结合的方式进行研究。</li>
-<li>考虑到我国与西方发达国家在文化与价值观念、技术水平、经营机制、管理水平与生产效率以及软件工程环境上的差异，我们在大力学习与借鉴西方发达国家有关软件工程经济学的理论、方法与应用成果的同时，还要注意环境的差异性对数量分析的影响，可在数学分析的思路与方法的通用性基础上来寻找适合于我国国情的研究结果。</li>
-</ol>
-</li>
-<li><p>软件工程经济学的<strong>方法体系</strong></p>
-<p>软件工程经济学作为一门交叉学科，其理论与方法体系与以下五类学科有着紧密的关系：</p>
-<ol>
-<li>管理学、社会学等；</li>
-<li>经济学，主要包括微观经济学、宏观经济学、工程经济学、管理经济学、信息经济学等；</li>
-<li>软件工程学，主要包括软件工程技术学、软件工程管理学；</li>
-<li>计算机通信网络与信息系统；</li>
-<li>系统工程与运筹学、应用统计学、模糊数学、系统动力学等。</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p><strong>软件工程经济学的研究与发展</strong></p>
-<p>软件工程诞生于“软件危机”。软件危机是指在计算机软件开发中的一系列问题，其中既有软件技术问题，也有经济问题，如软件开发过程中成本和进度估算往往不精确，软件目标（成本、工期）不确定等。因此，软件工程经济学的研究始终是伴随着软件工程的发展而发展的，且日渐成熟的运筹学、应用统计学、系统工程学、工程经济学也为其发展提供了科学而系统的方法论。20 世纪 70 年代，软件工程经济学的研究对象均来源于计算机科学与软件工程中的范例，希望通过建造、使用工具原型来降低软件开发与维护成本，此后逐渐发展为对软件成本、时间进度、可靠性、各种方案的比较和选优，对软件开发过程的系统动力学研究以及软件企业管理中的采购、计划、生产、销售、运行与维护等最优决策进行研究。目前，软件工程经济学已经发展到对软件工具的经济评价以及在软件开发与维护过程中提高劳动生产率的研究上。</p>
-<p>软件工程经济学的研究最早始于美、英等国家，其中较有影响的有 B . W . Boehm 、 Putnam L . H ．以及 Banard L ．等专家。 B . W . Boehm 在研究成本测算的过程中提出了结构化成本模型（ Constructive Cost Model , COCOMO )，给出了由软件规模计算工作量，进而确定成本与工期的经验统计模型，并于1981年出版了其专著《 Software Engineering Economics 》。在将该模型推向市场的同时， B . W . Boehm 不断收集用户反馈意见与建议，进而对模型进行不断修正与提高，以适应软件工程在生存周期、技术、组件、工具表示法以及企业文化等方面的明显变化，并提出了 COCOMOII 的模型与方法体系，并于 2000 年出版了他的第二本有重大影响力的著作《 Software Cost Estimation with COCOMOII 》。 Putnam L . H ．于1987年在其研究的 Noder - Rayleigh （诺顿﹣瑞利）曲线基础上，提出了软件开发与运行过程的系统动力学模型。1987年，美国卡内基一梅隆大学软件工程研究所在 Mitre 公司的支持以及美国国防部的指导下，经过广泛调查，开发了“软件工程评估”和“软件成熟度评价”两个模型。经过四年的使用与论证， Putnam L . H ．于1991年公布和发表了软件能力成熟度模型 CMM ( Capability Maturity Model for Software )。1999 年，美国国防部规定，承接美国国防部大型软件工程项目的承包商必须具备 CMM3 级认证。</p>
-<p>我国软件工程经济学的研究还处于初级发展阶段，1990 年和 1991 年由机械工业出版社相继出版了 B . W . Boehm 的著作《软件工程经济学》和 Londeix B ．的著作《软件开发成本估算》，对软件工程经济学的概念、方法宣传起到了一定的作用。西安电子科技大学的赵玮教授于 2008 年出版的《软件工程经济学》，对我国软件工程经济学的发展起到了指引作用。在国内的一些学术期刊上也常常有一些关于软件成本测算、定价策略、软件质量评估等方面的论文发表。不少软件企业也开始了 CMM 评估与认证工作。但从总体来看，我国软件工程产业对软件工程经济学不是特别熟知，从事软件工程经济学专门研究的人员也较少。近几年，由于大数据学科的飞速发展，很多软件企业开始重视信息数据的收集，为以后软件工程经济学的发展起到了很好的奠基作用。我们相信，在国家科技部门的领导下，在我国学术界与企业界的努力下，在不久的将来，我国软件工程经济学的理论与应用水平必将取得新的突破。</p>
-</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -2135,6 +1376,603 @@
       </tags>
   </entry>
   <entry>
+    <title>第1章 绪论</title>
+    <url>/posts/a0090001.html</url>
+    <content><![CDATA[<h2 id="1-1-软件、软件产业与软件企业"><a href="#1-1-软件、软件产业与软件企业" class="headerlink" title="1.1 软件、软件产业与软件企业"></a>1.1 软件、软件产业与软件企业</h2><p>本书所涉及的软件沿用传统的定义，指包括<strong>程序</strong>、<strong>数据</strong>及其<strong>相关文档</strong>的完整集合。</p>
+<h3 id="1-1-1-软件的分类及其特点"><a href="#1-1-1-软件的分类及其特点" class="headerlink" title="1.1.1 软件的分类及其特点"></a>1.1.1 软件的分类及其特点</h3><ol>
+<li><p><strong>软件的分类</strong></p>
+<p>学术界和产业界对软件并没有严格的分类标准，通常可以按照<strong>软件的功能</strong>、<strong>软件的工作方式</strong>、<strong>软件的权益</strong>、<strong>软件的标准化程度</strong>、<strong>软件与硬件的关联程度</strong>、<strong>软件所处的层次</strong>等不同角度进行分类。</p>
+<p>下面是几种常用的软件分类方法。</p>
+<ul>
+<li><p>按<strong>软件的功能</strong>进行分类</p>
+<ol>
+<li><p><strong>系统软件</strong></p>
+<p>系统软件指能与计算机硬件紧密地配合在一起，使计算机系统各个部件、相关的程序和数据协调、高效工作的软件，如操作系统、数据库管理软件、设备驱动程序、通信处理程序等。</p>
+</li>
+<li><p><strong>支撑软件</strong></p>
+<p>支撑软件是指协助用户开发软件的工具性软件和中间件，既包括程序人员开发软件产品的工具，也包括帮助管理人员控制开发进程的工具，如文字处理软件、数据模型构造器、商业图形软件、 C &#x2F; S 开发工具等。</p>
+</li>
+<li><p><strong>应用软件</strong></p>
+<p>应用软件是指在特定领域内开发，为特定目的服务的一类软件。</p>
+<p>相较于系统软件和支撑软件，应用软件的涉及面最宽，如呼叫中心控制软件、铁路调度软件、通信控制软件、办公软件、图像处理软件等。</p>
+</li>
+</ol>
+</li>
+<li><p>按<strong>软件的工作方式</strong>进行分类</p>
+<ol>
+<li><p><strong>实时处理软件</strong></p>
+<p>实时处理软件是指在当前时间，对当前任务进行处理的软件，如智慧卫生监督软件、实验室信息管理软件等。</p>
+</li>
+<li><p><strong>多用户分时软件</strong></p>
+<p>多用户分时软件指按照一定的时间间隔，阶段性地处理任务的软件，如交通信号灯管理软件等。</p>
+</li>
+<li><p><strong>交互式软件</strong></p>
+<p>交互式软件是指可以互动交流的软件，如电子白板软件、各种移动应用软件等。交互指实现操作者和程序的对话。例如操作者点击某软件的“退出”按钮，软件界面会弹出一个窗口“您真的要退出吗？”，然后操作者可自行选择。</p>
+</li>
+<li><p><strong>批处理软件</strong></p>
+<p>批处理软件指一次可以执行多条指令的软件，如垃圾处理软件等。</p>
+</li>
+</ol>
+</li>
+<li><p>按<strong>软件的权益</strong>进行分类</p>
+<ol>
+<li><p><strong>商品软件</strong></p>
+<p>商品软件是指用户需要付费（一般需要购买其软件许可证）才能获得其使用权的软件。</p>
+</li>
+<li><p><strong>共享软件</strong></p>
+<p>共享软件是指一种具有版权的“买前免费试用”软件，通常允许用户试用一段时间，允许用户进行拷贝或散发给其他人，但不允许销售，过了试用期后需要交一笔注册费，成为注册用户方可继续使用。</p>
+</li>
+<li><p><strong>自由软件</strong></p>
+<p>自由软件的创始人是理查德·斯托曼（ Richard Stallman )，他在 1984 年启动了开发类 UNIX 系统的自由软件工程，创建了自由软件基金会，拟订了通用公共版权许可证，倡导自由软件的非版权原则（该原则是：用户可以共享自由软件，允许随意拷贝、修改其源代码，允许销售和自由传播，但对软件源代码的任何修改都必须向所有用户公开，还必须允许此后的用户享有进一步拷贝和修改的权利）。</p>
+<p>自由软件有利于软件共享和技术创新，它的出现成就了 TCP &#x2F; IP 协议、 Apache 服务器软件和 Linux 操作系统等一大批精品软件的产生。</p>
+</li>
+</ol>
+</li>
+<li><p>按<strong>软件的标准化程度</strong>进行分类</p>
+<ol>
+<li><p><strong>标准化软件</strong></p>
+<p>标准化软件指可以封装发售、购买后就可以直接使用的软件。此类软件标准化程度高，销量大，售价也相对较低，如 Office 办公软件、 Windows 各版本的操作系统等。</p>
+</li>
+<li><p><strong>半定制软件</strong></p>
+<p>半定制软件指具有相当一部分共性，但仍需要一定的客户化开发工作才能满足客户需要的软件，如 ERP ( Enterprise Resource Planning ，企业资源计划）软件、财务软件等。</p>
+</li>
+<li><p><strong>定制软件</strong></p>
+<p>定制软件（又称软件服务）指需要根据特定客户的需求来量身定制的软件，如各种系统集成服务、外包软件等。</p>
+</li>
+</ol>
+</li>
+<li><p>按<strong>软件与硬件的关联程度</strong>进行分类</p>
+<ol>
+<li><p><strong>嵌入型软件</strong></p>
+<p>嵌入型软件要求在紧密联系的硬件、软件和操作的限制条件下运行，通常与某些硬件设备结合在一起。因此，嵌入型软件对接口、数据结构、算法要求较高。</p>
+<p>嵌人型软件规模可大可小，大如复杂的事务处理系统、大型／超大型的操作系统、航天测控系统、大型指挥系统等，小如手机软件、MP3 播放软件等。</p>
+</li>
+<li><p><strong>组织型软件</strong></p>
+<p>组织型软件（又称有机型软件）指规模相对较小，结构简单的软件。此类软件需求不是很苛刻，开发人员对此类软件产品开发目标的理解充分，工作经验丰富，对软件的使用环境很熟悉，软件受硬件的约束较少，程序的规模不是很大（&lt;5 万行），如住房摇号软件、 OA ( OfficeAutomation ，办公自动化）系统等。</p>
+</li>
+<li><p><strong>半独立型软件</strong></p>
+<p>半独立型软件指介于嵌人型软件和组织型软件之间的软件，其规模和复杂度都属于中等以上，最大可达 30 万行，如财务应用软件等。</p>
+</li>
+</ol>
+</li>
+<li><p>按<strong>软件所处的层次</strong>进行分类</p>
+<ol>
+<li><p><strong>平台软件</strong></p>
+<p>平台软件指直接控制和协调计算机、通信设备及其他外部设备，使之发生作用并方便用户使用以及提供中间支持和运行环境的软件。这些软件结合起来可以提供应用软件运行的平台，如操作系统、基于其上的数据库管理系统及开发工具、网络管理软件、中文处理平台软件、图形图像管理软件、人机接口交互软件等。</p>
+</li>
+<li><p><strong>中间软件</strong></p>
+<p>中间软件处于操作系统软件与用户应用软件中间，是为处于自己上层的应用软件提供运行与开发的环境，帮助用户灵活、高效地开发和集成的复杂应用软件。</p>
+<p>中间软件主要包括中间件软件和计算机安全软件产品，如交易中间件、消息中间件、应用服务器（ J2EE )、系统集成中间件、企业服务中间件、安全中间件、门户中间件、计算机语言集成中间件、数字电视中间件等。</p>
+</li>
+<li><p><strong>应用软件</strong></p>
+<p>应用软件指直接完成某种具体应用，无需用户重新编程的软件，其应用范围最广、产品最多。应用软件又分为通用应用软件和行业应用软件两类。</p>
+<p>通用应用软件包括办公及文字处理软件、通用财会软件、教育软件、游戏与娱乐软件等，行业应用软件涉及金融、电信、政府、教育、能源等。</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><strong>软件的特点</strong><br>软件作为一个产品或服务，与硬件产品相比，具有如下特点：</p>
+<ol>
+<li><strong>软件是信息产品，具有无形性、抽象性、可复制性和共享性。</strong></li>
+<li><strong>软件的生产过程几乎都是从零开始。</strong></li>
+<li><strong>软件的价值以及成本构成与传统的工业制品不同，如没有库存成本。</strong></li>
+<li><strong>软件开发和运行常常受不同的计算机软件和硬件平台的限制，对计算机软件和硬件系统有不同程度的依赖性。</strong></li>
+<li><strong>软件的开发过程很复杂。</strong></li>
+<li><strong>软件开发是一项创造性活动。</strong></li>
+<li><strong>软件开发需要大量的资金投入。</strong></li>
+<li><strong>软件产品对用户有黏性。</strong></li>
+<li><strong>软件产品的更新速度快。</strong></li>
+</ol>
+</li>
+</ol>
+<h3 id="1-1-2-软件产业"><a href="#1-1-2-软件产业" class="headerlink" title="1.1.2 软件产业"></a>1.1.2 软件产业</h3><p>目前，国家有关部门并未对软件产业给出明确的定义。</p>
+<p>1996 年的《计算机软件产业技术创新战略研究》报告中对软件产业的定义是：</p>
+<p>​	<strong>为有效地利用计算机资源而从事计算机程序编制、信息系统开发和集成及从事相关服务的产业。</strong></p>
+<ol>
+<li><p><strong>软件产业的分类</strong></p>
+<ul>
+<li><p>麦肯锡公司（ McKinsey &amp;. Company ）出版发行的《软件业的成功奥秘》中，将软件产业分为<strong>专业化服务</strong>和<strong>软件产品</strong>两类，其中软件产品又分为<strong>企业解决方案</strong>和<strong>大众市场成套软件</strong>。</p>
+</li>
+<li><p>国际数据公司（ International Data Corporation , IDC ）在做市场研究时，将软件产业细分为如下三大领域：</p>
+<ol>
+<li><p><strong>应用解决方案（ Solutions )</strong></p>
+</li>
+<li><p><strong>应用开发与配置软件（ Application Development and Deployment Software ）</strong></p>
+</li>
+<li><p><strong>系统基础软件（ System Infrastructure Software ）</strong></p>
+</li>
+</ol>
+<p>其中，应用解决方案包括消费应用（如家庭、游戏和娱乐）、协作应用（如集成协作环境、消息应用）、内容管理应用（如内容及文件管理应用）、写作应用（如文字加工）等子项；</p>
+<p>应用开发与配置软件包括信息数据管理、应用设计和建筑工具、应用软件生命周期管理等子项；</p>
+<p>系统基础软件包括系统管理软件、网络管理软件、安全软件、中间件和系统级软件等子项。</p>
+</li>
+<li><p>印度将 IT 软件服务产业分为<strong>产品和技术开发业</strong>、<strong>IT 服务业</strong>和 <strong>IT 关联服务业</strong>。</p>
+<p>印度将软件服务产业统一扩大为“<strong>IT 服务</strong>”的概念。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>软件产业的特点</strong></p>
+<ol>
+<li><strong>高技术、高附加值及高效益</strong></li>
+<li><strong>国际化</strong></li>
+<li><strong>服务化</strong></li>
+<li><strong>专业化分工越来越细</strong></li>
+<li><strong>高关联度</strong></li>
+</ol>
+</li>
+<li><p><strong>软件产业的发展模式</strong></p>
+<p>在世界各国的软件产业的发展过程中，形成了多种不同的发展模式，典型的代表有：</p>
+<ul>
+<li><strong>美国的“全面领先模式”</strong></li>
+<li><strong>日本和韩国的“整机带动模式”</strong></li>
+<li><strong>爱尔兰的“软件集散模式”</strong></li>
+<li><strong>印度的“外包服务模式”</strong></li>
+</ul>
+</li>
+<li><p><strong>我国软件产业的发展特征</strong></p>
+<p>相对于软件产业发达国家，我国软件产业发展的历程比较短，萌芽于 20 世纪 70 年代，起步于 20 世纪 80 年代末。随着社会的信息化进程加快，在进入 20 世纪 90 年代后我国软件产业就有了飞速发展。</p>
+<p>我国软件产业发展有如下几个特征：</p>
+<ul>
+<li><p><strong>产值和规模持续扩大</strong></p>
+<p>软件产业作为我国基础性、战略性的产业，在促进国民经济和社会发展中具有重要作用。</p>
+</li>
+<li><p><strong>呈现集聚化发展态势</strong>、</p>
+<p>我国软件产业发展聚集趋势从过去主要<strong>集中在京粤地区</strong>转向<strong>沿海地区</strong>。</p>
+</li>
+<li><p><strong>市场逐步扩大</strong></p>
+<p>目前，中国的软件产业仍以国内软件市场需求为主，出口外包为辅，但随着国家对软件产业的支持力度的增加，软件服务外包示范城市对促进产业集聚和培育壮大市场主体的作用越来越重要，中国软件企业正在快速地融入世界经济一体化新的产业分工链条之中。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>我国软件产业发展的不足</strong></p>
+<p>与国外的软件产业相比，我国的软件产业在发展中存在诸多不足：</p>
+<ul>
+<li><p><strong>关键核心技术缺乏，自主创新能力薄弱。</strong></p>
+<p>我国软件产业由于核心技术缺乏，造成企业产品的附加值低，产品同质化现象非常严重，企业的利润较低。国产基础软件在软件产业的基石作用没有发挥出来，产品主要集中在产业链低端的应用软件，严重缺乏持久的发展动力。我国对软件开发的核心技术不太重视，自主创新能力薄弱，导致在国际软件市场上话语权不足。</p>
+</li>
+<li><p><strong>软件企业规模小，人才结构不太合理。</strong></p>
+<p>我国软件企业 100 人以下的占 70%，且 60％ 的软件企业年营业收入在 50 万元以下。大量的小规模软件公司的存在使得软件市场的竞争非常恶劣，没有大规模的软件龙头企业与国外的大企业抗衡。此外，我国的软件人才结构是两头小、中间大的橄榄形，而不是正常的金字塔形。我国软件产业不仅缺乏软件编码和测试等低端人才，更缺乏包括系统分析师、项目管理人等高端人才。</p>
+</li>
+<li><p><strong>软件知识产权的保护力度不够。</strong></p>
+<p>盗版严重制约了中国软件业的发展，并损害了中国在软件市场上的国际形象。</p>
+</li>
+</ul>
+<p>综上，我们需要正视软件产业所存在的问题，必须抓住当前的机遇和挑战，内外兼修，摒弃自身的不足，积极探索符合中国特色的发展模式。</p>
+</li>
+</ol>
+<h3 id="1-1-3-软件企业"><a href="#1-1-3-软件企业" class="headerlink" title="1.1.3 软件企业"></a>1.1.3 软件企业</h3><p>按照规模的大小，软件企业可分为<strong>大型软件企业</strong>和<strong>中小型软件企业</strong>。</p>
+<p>按照所从事的业务范围，软件企业可以分为<strong>软件产品企业</strong>和<strong>软件服务企业</strong>，而软件产品企业又可以分为<strong>开发标准化软件的企业</strong>和<strong>开发半定制软件的企业</strong>。</p>
+<ol>
+<li><p><strong>软件企业的组织结构</strong></p>
+<p>软件企业的组织结构有如下四种：</p>
+<ol>
+<li><strong>直线职能式组织结构</strong></li>
+<li><strong>矩阵式组织结构</strong></li>
+<li><strong>事业部制式组织结构</strong></li>
+<li><strong>网络式组织结构</strong></li>
+</ol>
+</li>
+<li><p><strong>软件企业的管理</strong></p>
+<p>软件企业的管理包括：</p>
+<ol>
+<li><strong>软件企业的战略管理</strong></li>
+<li><strong>软件企业的市场管理</strong></li>
+<li><strong>软件企业的项目管理</strong></li>
+<li><strong>软件企业的质量管理</strong></li>
+<li><strong>软件企业的采购管理</strong></li>
+<li><strong>软件企业的人力资源管理</strong></li>
+<li><strong>软件企业的知识管理</strong></li>
+<li><strong>软件企业的成本管理</strong></li>
+<li><strong>软件企业的风险管理</strong></li>
+<li><strong>软件企业的文化管理</strong></li>
+</ol>
+</li>
+<li><p><strong>项目管理知识体系</strong></p>
+<p>项目管理知识体系的十大知识领域：</p>
+<ol>
+<li><strong>项目整合管理</strong></li>
+<li><strong>项目范围管理</strong></li>
+<li><strong>项目进度管理</strong></li>
+<li><strong>项目成本管理</strong></li>
+<li><strong>项目质量管理</strong></li>
+<li><strong>项目资源管理</strong></li>
+<li><strong>项目沟通管理</strong></li>
+<li><strong>项目风险管理</strong></li>
+<li><strong>项目采购管理</strong></li>
+<li><strong>项目相关方（干系人）管理</strong></li>
+</ol>
+</li>
+</ol>
+<h2 id="1-2-软件工程"><a href="#1-2-软件工程" class="headerlink" title="1.2 软件工程"></a>1.2 软件工程</h2><p>软件自计算机产生以来，虽然飞速发展，但是在早期发展过程中缺乏相关文档且没有较好的开发方法给予指导，导致 20 世纪 60 年代中期出现了“软件危机”。在 20 世纪 60 年代末的 NATO （北大西洋公约组织）会议上，首次提出了“软件工程”一词，即<strong>计划用工程化的方法来实施软件的开发</strong>。</p>
+<h3 id="1-2-1-软件工程的定义及其过程"><a href="#1-2-1-软件工程的定义及其过程" class="headerlink" title="1.2.1 软件工程的定义及其过程"></a>1.2.1 软件工程的定义及其过程</h3><p>20世纪90年代，美国电气与电子工程师学会（ Institute of Electrical and Electronics Engineers , IEEE ）给出<strong>软件工程的定义</strong>是：</p>
+<ol>
+<li><strong>将系统化的、规范化的、可量化的方法应用于软件的开发、运行和维护。</strong></li>
+<li><strong>对 1 中所述方法的研究。</strong></li>
+</ol>
+<p>软件工程可以说是一种<strong>层次化</strong>的技术，其根基就在于<strong>对质量的关注及其保障</strong>。</p>
+<h3 id="1-2-2-软件工程模型"><a href="#1-2-2-软件工程模型" class="headerlink" title="1.2.2 软件工程模型"></a>1.2.2 软件工程模型</h3><p>软件工程模型又称为<strong>软件开发模型</strong>，是软件从最初的构思到软件公开发行的<strong>全部过程</strong>、<strong>活动</strong>和<strong>任务</strong>的结构框架。</p>
+<p>典型的软件工程模型有<strong>瀑布模型</strong>、<strong>V 模型</strong>、<strong>增量模型</strong>、<strong>原型模型</strong>、<strong>螺旋模型</strong>、<strong>喷泉模型</strong>、<strong>基于构件的开发模型</strong>、<strong>形式化方法模型</strong>等。</p>
+<h3 id="1-2-3-软件规模度量"><a href="#1-2-3-软件规模度量" class="headerlink" title="1.2.3 软件规模度量"></a>1.2.3 软件规模度量</h3><p>在软件工程项目开始前，要估算该项目所需的开发时间和工作量，即度量软件的规模。</p>
+<p>软件规模的度量最主要的技术是<strong>代码行度量</strong>和<strong>功能点度量</strong>。</p>
+<ol>
+<li><p><strong>代码行度量</strong></p>
+<p>软件规模常用程序的<strong>代码行（ Line Of Code , LOC ）</strong>或者<strong>千行代码 kLOC ( 1000LOC ）</strong>来衡量。</p>
+<p>代码行度量是一种较为简单的定量估算软件规模的方法，该方法依据以往开发类似产品的经验以及历史数据来估计实现一个功能所需要的源程序行数（不包括注释）。当开发过类似项目且有相关历史数据可以参考时，该估算方法才会相对准确。</p>
+<p>为了使程序规模的估算更加接近实际值，可以由多名比较有经验的软件工程师来做出估算。每个人都估计程序的最小规模 a，最大规模 b 以及最可能的规模 m，然后分别算出这三种规模的平均值 <span style="text-decoration: overline">a</span>、<span style="text-decoration: overline">b</span> 和 <span style="text-decoration: overline">m</span>，之后再用下列公式计算程序规模的估算值 L：</p>
+<p>$$<br>L &#x3D; \frac{\bar{a} + 4 \bar{m} + \bar{b}}{6}<br>$$</p>
+</li>
+<li><p><strong>功能点度量</strong></p>
+<p>功能点度量主要基于<strong>信息域的特征</strong>以及<strong>软件的复杂性</strong>进行计算。</p>
+<p>功能点的计算步骤如下。</p>
+<ol>
+<li><p><strong>计算信息域特征值加权（ CT ）</strong></p>
+<p>表 1 给出了用于功能点度量的五个基本信息域（用户输入数、用户输出数、用户查询数、文件数以及外部接口数）的特征和含义，这些值都是通过直接测量所得。</p>
+<p>首先将这些值填入表 2 所示的特征值一栏；其次根据信息域的特征复杂程度来选择表中适当的加权因子；最后对其进行计算，得到总计 CT 值。</p>
+<p><strong>表 1 信息域特征及其含义</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">信息域特征名</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">用户输入数</td>
+<td align="center">对每个用户输入数进行计数，向软件提供不同的面向应用的数据（不含查询数）</td>
+</tr>
+<tr>
+<td align="center">用户输出数</td>
+<td align="center">对每个用户输出数进行计数，向用户提供面向应用的信息（输出是指报表、屏幕、出错消息等，一个报表中的单个数据项不做单独计数）</td>
+</tr>
+<tr>
+<td align="center">用户查询数</td>
+<td align="center">一个查询被定义为一次联机输入，它导致软件以联机输出的方式产生实时地响应，且每个不同的查询必须分别计算</td>
+</tr>
+<tr>
+<td align="center">文件数</td>
+<td align="center">对每个逻辑上的主文件进行计数（即数据的一个逻辑组合，可能是一个独立的文件或者某个大型数据库的一部分）</td>
+</tr>
+<tr>
+<td align="center">外部接口数</td>
+<td align="center">对所有机器可读的接口（如存储介质上的数据文件）进行计数</td>
+</tr>
+</tbody></table>
+<p><strong>表 2 信息域特征计数表</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th rowspan="2">基本信息域</th>
+            <th rowspan="2">特征值</th>
+            <th colspan="3">加权因子 a<sub>i</sub></th>
+            <th rowspan="2">结果（特征值*加权因子）</th>
+        </tr>
+        <tr align="center">
+            <td>简单</td>
+            <td>中间</td>
+            <td>复杂</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>用户输入数</td>
+            <td></td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td>用户输出数</td>
+            <td></td>
+            <td>4</td>
+            <td>5</td>
+            <td>7</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td>用户查询数</td>
+            <td></td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td>文件数</td>
+            <td></td>
+            <td>7</td>
+            <td>10</td>
+            <td>15</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td>外部接口数</td>
+            <td></td>
+            <td>5</td>
+            <td>7</td>
+            <td>10</td>
+            <td></td>
+        </tr>
+        <tr align="center">
+            <td>总计 CT 数</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<p>如果用 d,( 1≤ d ,≤5 ）分别表示 5 个基本信息域的特征值， a,( 1≤ a ,≤5 ）表示其对应的加权因子，则 CT 值的计算如下：</p>
+<p>$$<br>CT &#x3D; \sum_{j&#x3D;1}^{5}a_{j}d_{j}<br>$$</p>
+</li>
+<li><p><strong>计算技术复杂性因子（ Technology Complexity Factor , TCF )</strong></p>
+<p>环境复杂性因子 F<sub>i</sub>,( i &#x3D;1,2,…,14 ）是基于表 3 中对 14 个问题的评估所得到的值，对每个问题的取值范围是 0~5，如表 4 所示。</p>
+<p><strong>表 3 环境复杂性因子取值表</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th>问题</th>
+<th align="center">F<sub>i</sub>（0~5）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td>系统需要可靠的备份和恢复吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td>系统需要数据通信吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td>系统有分布处理功能吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td>系统的性能非常关键吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td>系统是否在一个现存的、重复的操作环境中运行？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td>联机数据登录是否需要在多屏幕或多操作之间切换以完成输入？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td>需要联机数据登录吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td>系统需要联机更新文件吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td>输入、输出文件或查询很复杂吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td>内部处理复杂吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td>代码需要设计成可复用的吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td>设计中需要包含转换及其安装吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">13</td>
+<td>系统的设计支持不同组织的多次安装吗？</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">14</td>
+<td>系统相关应用的设计便于用户修改和使用吗？</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><strong>表 4 复杂度取值表</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">值</th>
+<th align="center">定义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">没有影响</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">偶然的</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">适中的</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">普通的</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">重要的</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">极其重要的</td>
+</tr>
+</tbody></table>
+<p>技术复杂性因子的计算公式如下所示：</p>
+<p>$$<br>TCF &#x3D; 0.65 + 0.01 \sum_{i&#x3D;1}^{14}F_{i}<br>$$</p>
+</li>
+<li><p><strong>计算功能点（ FP ）</strong></p>
+<p>功能点的计算公式如下所示：</p>
+<p>$$<br>FP &#x3D; CT · TCF<br>$$</p>
+</li>
+</ol>
+</li>
+</ol>
+<p>【例1.1】某软件企业根据客户需求对预定软件进行功能点度量，5 个基本信息域的特征值 d<sub>j</sub>，按照表 1 所示的顺序分别为：用户输入数 35、用户输出数 58、用户查询数 20、文件数 6、外部接口数 2；其对应的加权因子分别为中间（4）、中间（5）、中间（4）、中间（10）和简单（2）；对照表 3 和表 4 的各项指标得到 F<sub>i</sub> 的加权和为 20，试计算其功能点。</p>
+<p>解：</p>
+<p>（1）依据题目所给条件及表 2，则有<br>$$<br>CT &#x3D; \sum_{j&#x3D;1}^{5}a_{j}d_{j} &#x3D; 35 × 4 + 58 × 5 + 20 × 4 + 6 × 10 + 2 × 5 &#x3D; 580<br>$$<br>（2）根据技术复杂性因子计算公式，有<br>$$<br>TCF &#x3D; 0.65 + 0.01 \sum_{i&#x3D;1}^{14}F_{i} &#x3D; 0.65 + 0.01 × 20 &#x3D; 0.85<br>$$<br>（3）根据功能点计算公式，有<br>$$<br>FP &#x3D; CT · TCF &#x3D; 580 × 0.85 &#x3D; 493<br>$$<br>（4）答：该预定软件的功能点为 493。</p>
+<h3 id="1-2-4-程序复杂性度量"><a href="#1-2-4-程序复杂性度量" class="headerlink" title="1.2.4 程序复杂性度量"></a>1.2.4 程序复杂性度量</h3><p>软件的复杂性是指<strong>理解及处理软件的难易程度</strong>，既包括<strong>程序的复杂性</strong>，又包括<strong>文档的复杂性</strong>。</p>
+<p>软件的复杂性主要体现在程序的复杂性中，故本节主要介绍程序复杂性的度量。</p>
+<p>一般而言，开发规模相同、复杂性却不同的程序，所花费的时间和成本会有较大的差异， K . Magel 从以下六个方面来描述程序的复杂性：</p>
+<ol>
+<li>程序理解的难度。</li>
+<li>纠错、维护程序的难度。</li>
+<li>向他人解释程序的难度。</li>
+<li>按指定方法修改程序的难度。</li>
+<li>根据设计文件编写程序的工作量大小。</li>
+<li>执行程序时需要资源量的多少。</li>
+</ol>
+<p>程序的复杂性度量模型一般遵循以下基本原则：</p>
+<ol>
+<li>程序的复杂性与程序大小的关系不是线性的。</li>
+<li>控制结构复杂的程序比较复杂。</li>
+<li>数据结构复杂的程序比较复杂。</li>
+<li>转向语句使用不恰当的程序比较复杂。</li>
+<li>循环结构比选择结构复杂，选择结构比顺序结构复杂。</li>
+<li>语句、数据、子程序以及模块在程序中的次序对复杂性有影响。</li>
+<li>全局变量、非局部变量较多时的程序比较复杂。</li>
+<li>参数按地址调用比按值调用复杂。</li>
+<li>函数的隐式副作用比显式参数传递更难以理解。</li>
+<li>具有不同作用的变量共用一个名字时比较难理解。</li>
+<li>模块间、子程序间联系密切的程序较为复杂。</li>
+<li>嵌套深度越深的程序越复杂。</li>
+</ol>
+<p>比较典型的程序复杂性度量有 <strong>McCabe 环形复杂性度量</strong>以及 <strong>Halstead 复杂性度量</strong>。</p>
+<ol>
+<li><p><strong>McCabe 环形复杂性度量</strong></p>
+<ol>
+<li><p>20 世纪 70 年代， McCabe 提出了基于软件程序图的程序复杂性度量方法。</p>
+<p>该方法主要用一种退化的程序流程图来表示程序图。</p>
+<p>程序流程图中的每一个处理符号（如起点、终点、处理框以及判断框）用一个结点来表示，而原流程图中连接处理符号的控制流则用程序图中连接结点的有向弧来表示。</p>
+<p>McCabe 环形复杂性度量方法是基于图论，对于一个强连通的有向图 G ，若用 e 表示弧数， n 表示结点数， p 表示强连通分量的个数，则可用下列公式表示：</p>
+<p>$$<br>V(G) &#x3D; e - n + p<br>$$</p>
+<p>对于一个单入口且单出口的程序来说，从入口的结点能到达图中的任意结点，同理从任一结点都可以到达出口结点，故程序图都是连通的，其连通分量只有一个，即 p &#x3D; 1。</p>
+<p>但程序图经常不是强连通的，只有在程序图中增加一条从出口结点到入口结点的弧才能将程序图变成强连通的。</p>
+<p>为了简化环形的复杂性计算，通常用下列公式进行计算：</p>
+<p>$$<br>V(G) &#x3D; e - n + 2<br>$$</p>
+</li>
+</ol>
+</li>
+<li><p><strong>Halstead 复杂性度量</strong></p>
+<p>Halstead 提出通过定量的公式计算方法来度量软件的复杂性。</p>
+<p>Halstead 指出程序是由操作符与操作数组成的符号序列，操作符主要包括算术操作符、逻辑操作符、分界符、赋值符、括号及子程序调用符等，还包括一些单个操作符，如“begin … end”“for … do”“while … do”“repeat … until”以及“if then … else”等。</p>
+<p>操作数则是由程序定义且引用的操作对象，可以是常量、变量、记录、指针、数组等。</p>
+<p>用 n<sub>1</sub> 表示程序中不同操作符的个数，n<sub>2</sub> 表示程序中不同操作数的个数， N<sub>1</sub>  表示程序中操作符的总数，N<sub>2</sub>  表示程序中操作数的总数。</p>
+<p>则可用下列公式 1 表示<strong>程序的符号长度</strong>：</p>
+<p>$$<br>N &#x3D; N_{1} + N_{2}<br>$$</p>
+<p>用下列公式 2 表示<strong>程序的词汇量</strong>：</p>
+<p>$$<br>n &#x3D; n_{1} + n_{2}<br>$$</p>
+<p>用下列公式 3 表示<strong>程序量（即存储容量）</strong>，即长度方程：</p>
+<p>$$<br>V &#x3D; Nlog_{2}(n_{1} + n_{2}) &#x3D; (N_{1} + N_{2})log_{2}(n_{1} + n_{2})<br>$$</p>
+<p>一般认为最小的程序只有两个操作符，即函数调用与赋值，即 n<sub>1</sub> &#x3D; N<sub>1</sub> &#x3D; 2，操作数 n<sub>2</sub> 则是指赋予函数值的变量以及函数调用时的参数，即 n<sub>2</sub><sup>*</sup> &#x3D; n<sub>2</sub> &#x3D; N<sub>2</sub>。</p>
+<p>代入公式 3 可得下列<strong>最小程序量计算公式</strong>：<br>$$<br>V^* &#x3D; {(2 + n_2^*)}log_2{(2 + n_2^*)}<br>$$</p>
+<p><strong>预测程序长度</strong>如下列公式所示：<br>$$<br>N^{‘} &#x3D; 2 + n_{2}^{*}<br>$$</p>
+<p><strong>预测程序潜在的错误数</strong>如下列公式所示：<br>$$<br>B^{‘} &#x3D; \frac{V}{3000}<br>$$</p>
+</li>
+</ol>
+<h3 id="1-2-5-软件可靠性度量"><a href="#1-2-5-软件可靠性度量" class="headerlink" title="1.2.5 软件可靠性度量"></a>1.2.5 软件可靠性度量</h3><p>软件的可靠性是指在规定的时间内以及规定的条件下，软件按照规格说明要求不会引起系统失效的概率。软件的可靠性是关系到系统成败的重要因素。一般情况下，软件的可靠性和软件的故障率是紧密相关的。当软件出现故障时，就需要对其进行修复，而软件修复时间的长短也是直接影响软件可靠性的重要因素。</p>
+<p>软件可靠性通常用下列公式进行计算：</p>
+<p>$$<br>MTBF &#x3D; MTTF + MTTR<br>$$</p>
+<p>其中，MTBF（ Mean Time Between Failure ）是指平均故障间隔时间，MTTF（ Mean Time To Failure ）是指平均故障时间，而 MTTR（ Mean Time To Repair ）则是指平均修复时间。</p>
+<p>软件的可用性是指软件在投入使用时能实现其事先指定的相关系统功能的概率，可用下列公式乘以 100% 进行计算：</p>
+<p>$$<br>\frac{MTTF}{MTTF + MTTR}<br>$$</p>
+<h2 id="1-3-软件工程经济学简介"><a href="#1-3-软件工程经济学简介" class="headerlink" title="1.3 软件工程经济学简介"></a>1.3 软件工程经济学简介</h2><p><strong>经济学是研究人类在生产、消费、分配、交换等经济活动过程中的资源配置与资源利用的学科，属于社会科学。经济学的研究对象是由稀缺性引起的各种选择的问题。</strong></p>
+<ol>
+<li><p><strong>软件工程经济学的内涵与任务</strong></p>
+<p>软件工程经济学（ Software Engineering Economics , SEE ）是<strong>属于软件工程学和工程经济学之间的交叉学科</strong>。</p>
+<p>我们将其定义为<strong>以研究软件工程领域中的经济问题和经济规律为主的一门经济学分支学科，是为实现特定功能需求的软件工程项目而提出的一门系统方法学科。</strong></p>
+<p>软件工程经济学主要包括以下四部分的内容：</p>
+<ol>
+<li>学科研究的对象、任务、特征、研究范围与研究方法；</li>
+<li>软件系统的内部构成要素与经济活动及其关联分析，如投资、融资、工期、成本、效益、效率、质量保证、开发、管理、运行与维护等及其关联分析；</li>
+<li>软件系统的组织结构、管理决策以及与经营活动的关系；</li>
+<li>软件系统的资金流、物流、信息流的输入和输出以及对系统外部（如国家、地区社会、经济等）的影响。</li>
+</ol>
+<p>其中，1 是软件系统的基础概念与理论部分，2、3 为软件系统的微观经济分析部分，4 为软件系统的宏观经济分析部分。</p>
+</li>
+<li><p><strong>软件工程经济学的研究特点与方法体系</strong></p>
+<ul>
+<li><p>软件工程经济学的<strong>研究特点</strong></p>
+<p>软件工程经济学的研究特点主要有以下四点：</p>
+<ol>
+<li>软件工程经济学研究的重点始终围绕着软件产品的质量、成本／效益、项目进度、效率等目标要素的关联分析，以及人的组织与协调管理。</li>
+<li>软件工程经济学的研究思想主要来自系统工程，因此软件系统目标的整体性、勇素的层次性与关联性、系统环境的适应性等始终是人们研究的指导准则。</li>
+<li>软件工程经济学采用定量与定性分析相结合、理论与实践相结合的方式进行研究。</li>
+<li>考虑到我国与西方发达国家在文化与价值观念、技术水平、经营机制、管理水平与生产效率以及软件工程环境上的差异，我们在大力学习与借鉴西方发达国家有关软件工程经济学的理论、方法与应用成果的同时，还要注意环境的差异性对数量分析的影响，可在数学分析的思路与方法的通用性基础上来寻找适合于我国国情的研究结果。</li>
+</ol>
+</li>
+<li><p>软件工程经济学的<strong>方法体系</strong></p>
+<p>软件工程经济学作为一门交叉学科，其理论与方法体系与以下五类学科有着紧密的关系：</p>
+<ol>
+<li>管理学、社会学等；</li>
+<li>经济学，主要包括微观经济学、宏观经济学、工程经济学、管理经济学、信息经济学等；</li>
+<li>软件工程学，主要包括软件工程技术学、软件工程管理学；</li>
+<li>计算机通信网络与信息系统；</li>
+<li>系统工程与运筹学、应用统计学、模糊数学、系统动力学等。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><strong>软件工程经济学的研究与发展</strong></p>
+<p>软件工程诞生于“软件危机”。软件危机是指在计算机软件开发中的一系列问题，其中既有软件技术问题，也有经济问题，如软件开发过程中成本和进度估算往往不精确，软件目标（成本、工期）不确定等。因此，软件工程经济学的研究始终是伴随着软件工程的发展而发展的，且日渐成熟的运筹学、应用统计学、系统工程学、工程经济学也为其发展提供了科学而系统的方法论。20 世纪 70 年代，软件工程经济学的研究对象均来源于计算机科学与软件工程中的范例，希望通过建造、使用工具原型来降低软件开发与维护成本，此后逐渐发展为对软件成本、时间进度、可靠性、各种方案的比较和选优，对软件开发过程的系统动力学研究以及软件企业管理中的采购、计划、生产、销售、运行与维护等最优决策进行研究。目前，软件工程经济学已经发展到对软件工具的经济评价以及在软件开发与维护过程中提高劳动生产率的研究上。</p>
+<p>软件工程经济学的研究最早始于美、英等国家，其中较有影响的有 B . W . Boehm 、 Putnam L . H ．以及 Banard L ．等专家。 B . W . Boehm 在研究成本测算的过程中提出了结构化成本模型（ Constructive Cost Model , COCOMO )，给出了由软件规模计算工作量，进而确定成本与工期的经验统计模型，并于1981年出版了其专著《 Software Engineering Economics 》。在将该模型推向市场的同时， B . W . Boehm 不断收集用户反馈意见与建议，进而对模型进行不断修正与提高，以适应软件工程在生存周期、技术、组件、工具表示法以及企业文化等方面的明显变化，并提出了 COCOMOII 的模型与方法体系，并于 2000 年出版了他的第二本有重大影响力的著作《 Software Cost Estimation with COCOMOII 》。 Putnam L . H ．于1987年在其研究的 Noder - Rayleigh （诺顿﹣瑞利）曲线基础上，提出了软件开发与运行过程的系统动力学模型。1987年，美国卡内基一梅隆大学软件工程研究所在 Mitre 公司的支持以及美国国防部的指导下，经过广泛调查，开发了“软件工程评估”和“软件成熟度评价”两个模型。经过四年的使用与论证， Putnam L . H ．于1991年公布和发表了软件能力成熟度模型 CMM ( Capability Maturity Model for Software )。1999 年，美国国防部规定，承接美国国防部大型软件工程项目的承包商必须具备 CMM3 级认证。</p>
+<p>我国软件工程经济学的研究还处于初级发展阶段，1990 年和 1991 年由机械工业出版社相继出版了 B . W . Boehm 的著作《软件工程经济学》和 Londeix B ．的著作《软件开发成本估算》，对软件工程经济学的概念、方法宣传起到了一定的作用。西安电子科技大学的赵玮教授于 2008 年出版的《软件工程经济学》，对我国软件工程经济学的发展起到了指引作用。在国内的一些学术期刊上也常常有一些关于软件成本测算、定价策略、软件质量评估等方面的论文发表。不少软件企业也开始了 CMM 评估与认证工作。但从总体来看，我国软件工程产业对软件工程经济学不是特别熟知，从事软件工程经济学专门研究的人员也较少。近几年，由于大数据学科的飞速发展，很多软件企业开始重视信息数据的收集，为以后软件工程经济学的发展起到了很好的奠基作用。我们相信，在国家科技部门的领导下，在我国学术界与企业界的努力下，在不久的将来，我国软件工程经济学的理论与应用水平必将取得新的突破。</p>
+</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第4章 软件工程项目评价方法与经济效果评价</title>
     <url>/posts/a0090004.html</url>
     <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
@@ -2480,6 +2318,86 @@
       </tags>
   </entry>
   <entry>
+    <title>第8章 软件测试</title>
+    <url>/posts/a0090008.html</url>
+    <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
+<h3 id="8-2-2-按测试实施组织划分"><a href="#8-2-2-按测试实施组织划分" class="headerlink" title="8.2.2 按测试实施组织划分"></a>8.2.2 按测试实施组织划分</h3><p>按照测试实施组织划分，软件测试可分为<strong>开发方测试</strong>、<strong>用户方测试</strong>与<strong>第三方测试</strong>。</p>
+<h3 id="8-2-3-按测试技术划分"><a href="#8-2-3-按测试技术划分" class="headerlink" title="8.2.3 按测试技术划分"></a>8.2.3 按测试技术划分</h3><p>按照测试技术划分，软件测试可分为<strong>黑盒测试</strong>、<strong>白盒测试</strong>与<strong>灰盒测试</strong>。</p>
+<h3 id="8-2-4-按测试执行方式划分"><a href="#8-2-4-按测试执行方式划分" class="headerlink" title="8.2.4 按测试执行方式划分"></a>8.2.4 按测试执行方式划分</h3><p>按照测试执行的方式划分，软件测试可分为<strong>静态测试</strong>和<strong>动态测试</strong>。</p>
+<h3 id="8-2-5-按测试对象类型划分"><a href="#8-2-5-按测试对象类型划分" class="headerlink" title="8.2.5 按测试对象类型划分"></a>8.2.5 按测试对象类型划分</h3><p>按照测试的对象类型划分，软件测试可分为<strong>功能测试</strong>、<strong>界面测试</strong>、<strong>流程测试</strong>、<strong>接口测试</strong>、<strong>安装测试</strong>、<strong>文档测试</strong>、<strong>源代码测试</strong>、<strong>数据库测试</strong>、<strong>网络测试</strong>以及<strong>性能测试</strong>等。</p>
+<h3 id="8-2-6-按质量属性划分"><a href="#8-2-6-按质量属性划分" class="headerlink" title="8.2.6 按质量属性划分"></a>8.2.6 按质量属性划分</h3><p>按照质量属性划分，软件测试可分为<strong>容错性测试</strong>、<strong>可靠性测试</strong>、<strong>兼容性测试</strong>、<strong>维护性测试</strong>、<strong>安全性测试</strong>和<strong>可移植性测试</strong>。</p>
+<h3 id="8-2-7-按测试地域划分"><a href="#8-2-7-按测试地域划分" class="headerlink" title="8.2.7 按测试地域划分"></a>8.2.7 按测试地域划分</h3><p>按照测试地域划分，软件测试可分为<strong>本地化测试</strong>与<strong>国际化测试</strong>两类。</p>
+<h2 id="8-3-常用软件测试技术"><a href="#8-3-常用软件测试技术" class="headerlink" title="8.3 常用软件测试技术"></a>8.3 常用软件测试技术</h2><p>常用的软件测试技术主要有<strong>黑盒测试法</strong>与<strong>白盒测试法</strong>。</p>
+<h3 id="8-3-1-黑盒测试法"><a href="#8-3-1-黑盒测试法" class="headerlink" title="8.3.1 黑盒测试法"></a>8.3.1 黑盒测试法</h3><p>黑盒测试的测试用例设计方法主要有<strong>测试区域确定法</strong>、<strong>组合覆盖法</strong>、<strong>逻辑推断法</strong>、<strong>业务路径覆盖法</strong>等。</p>
+<ol>
+<li><p><strong>测试区域确定法</strong></p>
+<p>测试区域确定法分为<strong>等价类划分法</strong>与<strong>边界值分析法</strong>。</p>
+</li>
+<li><p><strong>组合覆盖法</strong></p>
+<p>根据覆盖程度不同，组合覆盖法可分为<strong>全组合覆盖法</strong>、<strong>成对组合覆盖法</strong>以及<strong>正交实验设计法</strong>三类。</p>
+</li>
+<li><p><strong>逻辑推断法</strong></p>
+<p>逻辑推断法分为<strong>因果图法</strong>、<strong>判定表法</strong>和<strong>大纲法</strong>等。</p>
+</li>
+<li><p><strong>业务路径覆盖法</strong></p>
+<p>业务路径覆盖法主要分为<strong>场景分析法</strong>和<strong>功能图法</strong>。</p>
+</li>
+</ol>
+<h3 id="8-3-2-白盒测试法"><a href="#8-3-2-白盒测试法" class="headerlink" title="8.3.2 白盒测试法"></a>8.3.2 白盒测试法</h3><p>白盒测试（ White-box Testing ），又称为透明盒测试、结构测试、基于代码的测试或者逻辑驱动测试，主要分为<strong>静态白盒测试</strong>、<strong>动态白盒测试</strong>与<strong>其他白盒测试</strong>三种。</p>
+<p>白盒测试是一种测试用例设计方法，盒子是指被测试的软件，白盒是指清楚盒子内部的代码、注释以及看到内部的运作情况。</p>
+<p>白盒测试法需要全面了解程序的内部逻辑结构，对所有的逻辑路径进行测试，是一种典型的穷举路径测试。在使用白盒测试时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。</p>
+<p>白盒测试常用的工具：内存泄漏检查工具、性能测试工具以及代码覆盖率检查工具。采用白盒测试法需遵循以下原则。</p>
+<ol>
+<li><p>确保一个模块中的所有独立路径至少被测试一次。</p>
+</li>
+<li><p>所有逻辑值均需测试真和假两种情况。</p>
+</li>
+<li><p>检查程序的内部数据结构，确保其结构的有效性。</p>
+</li>
+<li><p>必须在上、下边界及可操作范围内运行所有循环。</p>
+</li>
+<li><p><strong>静态白盒测试法</strong></p>
+<p>静态白盒测试法是在不执行代码的前提条件下，有条理地审查软件设计、体系结构与代码，从而找出软件缺陷的过程。</p>
+<p>其优点是能尽早发现软件缺陷，为黑盒测试人员进行测试时设计测试用例提供思路。静态白盒测试主要有以下三种技术：</p>
+<ol>
+<li>代码检查法。</li>
+<li>静态结构分析法。</li>
+<li>静态质量度量法。</li>
+</ol>
+</li>
+<li><p><strong>动态白盒测试法</strong></p>
+<p>动态白盒测试又称为结构测试，是指利用查看代码功能与实现方式所得到的信息来确定需要或者不需要测试的内容，以及开展测试的方式。</p>
+<p>软件测试人员可根据查看并使用代码的内部结构，进而设计与执行测试。</p>
+<p>动态白盒测试不仅要查看代码，还要查看直接参数与控制软件，主要包括以下四个部分。</p>
+<ol>
+<li>直接测试底层的功能、过程、子程序以及库，即应用程序接口（ API ）。</li>
+<li>以完整的程序方式从顶层来测试软件，但要根据对软件运行的了解调整测试案例。</li>
+<li>从软件获得读取变量与状态信息的访问权，以便确定测试与预期结果是否相符，与此同时，还要强制软件以正常测试难以实现的方式运行。</li>
+<li>估算执行测试时”命中”的代码量与具体代码，然后调整测试，去掉多余的，补充遗漏的。</li>
+</ol>
+<p>动态白盒测试主要有以下三种技术：</p>
+<ol>
+<li>覆盖测试。</li>
+<li>控制结构测试。</li>
+<li>循环测试。</li>
+</ol>
+</li>
+<li><p><strong>其他白盒测试法</strong></p>
+<ol>
+<li>程序插桩。</li>
+<li>程序变异测试。</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第7章 软件工程项目的团队建设、风险管理及质量管理</title>
     <url>/posts/a0090007.html</url>
     <content><![CDATA[<h2 id="7-1-软件工程项目的团队建设"><a href="#7-1-软件工程项目的团队建设" class="headerlink" title="7.1 软件工程项目的团队建设"></a>7.1 软件工程项目的团队建设</h2><h3 id="7-1-1-软件工程项目团队的特点"><a href="#7-1-1-软件工程项目团队的特点" class="headerlink" title="7.1.1 软件工程项目团队的特点"></a>7.1.1 软件工程项目团队的特点</h3><p>软件工程项目团队的特点主要有：</p>
@@ -2586,83 +2504,221 @@
       </tags>
   </entry>
   <entry>
-    <title>第8章 软件测试</title>
-    <url>/posts/a0090008.html</url>
-    <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
-<h3 id="8-2-2-按测试实施组织划分"><a href="#8-2-2-按测试实施组织划分" class="headerlink" title="8.2.2 按测试实施组织划分"></a>8.2.2 按测试实施组织划分</h3><p>按照测试实施组织划分，软件测试可分为<strong>开发方测试</strong>、<strong>用户方测试</strong>与<strong>第三方测试</strong>。</p>
-<h3 id="8-2-3-按测试技术划分"><a href="#8-2-3-按测试技术划分" class="headerlink" title="8.2.3 按测试技术划分"></a>8.2.3 按测试技术划分</h3><p>按照测试技术划分，软件测试可分为<strong>黑盒测试</strong>、<strong>白盒测试</strong>与<strong>灰盒测试</strong>。</p>
-<h3 id="8-2-4-按测试执行方式划分"><a href="#8-2-4-按测试执行方式划分" class="headerlink" title="8.2.4 按测试执行方式划分"></a>8.2.4 按测试执行方式划分</h3><p>按照测试执行的方式划分，软件测试可分为<strong>静态测试</strong>和<strong>动态测试</strong>。</p>
-<h3 id="8-2-5-按测试对象类型划分"><a href="#8-2-5-按测试对象类型划分" class="headerlink" title="8.2.5 按测试对象类型划分"></a>8.2.5 按测试对象类型划分</h3><p>按照测试的对象类型划分，软件测试可分为<strong>功能测试</strong>、<strong>界面测试</strong>、<strong>流程测试</strong>、<strong>接口测试</strong>、<strong>安装测试</strong>、<strong>文档测试</strong>、<strong>源代码测试</strong>、<strong>数据库测试</strong>、<strong>网络测试</strong>以及<strong>性能测试</strong>等。</p>
-<h3 id="8-2-6-按质量属性划分"><a href="#8-2-6-按质量属性划分" class="headerlink" title="8.2.6 按质量属性划分"></a>8.2.6 按质量属性划分</h3><p>按照质量属性划分，软件测试可分为<strong>容错性测试</strong>、<strong>可靠性测试</strong>、<strong>兼容性测试</strong>、<strong>维护性测试</strong>、<strong>安全性测试</strong>和<strong>可移植性测试</strong>。</p>
-<h3 id="8-2-7-按测试地域划分"><a href="#8-2-7-按测试地域划分" class="headerlink" title="8.2.7 按测试地域划分"></a>8.2.7 按测试地域划分</h3><p>按照测试地域划分，软件测试可分为<strong>本地化测试</strong>与<strong>国际化测试</strong>两类。</p>
-<h2 id="8-3-常用软件测试技术"><a href="#8-3-常用软件测试技术" class="headerlink" title="8.3 常用软件测试技术"></a>8.3 常用软件测试技术</h2><p>常用的软件测试技术主要有<strong>黑盒测试法</strong>与<strong>白盒测试法</strong>。</p>
-<h3 id="8-3-1-黑盒测试法"><a href="#8-3-1-黑盒测试法" class="headerlink" title="8.3.1 黑盒测试法"></a>8.3.1 黑盒测试法</h3><p>黑盒测试的测试用例设计方法主要有<strong>测试区域确定法</strong>、<strong>组合覆盖法</strong>、<strong>逻辑推断法</strong>、<strong>业务路径覆盖法</strong>等。</p>
-<ol>
-<li><p><strong>测试区域确定法</strong></p>
-<p>测试区域确定法分为<strong>等价类划分法</strong>与<strong>边界值分析法</strong>。</p>
+    <title>Java 基础</title>
+    <url>/posts/c0010000.html</url>
+    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
+      <categories>
+        <category>后端技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第1章 Java 语言概述</title>
+    <url>/posts/c0010001.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
+<ul>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
+</ul>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
 </li>
-<li><p><strong>组合覆盖法</strong></p>
-<p>根据覆盖程度不同，组合覆盖法可分为<strong>全组合覆盖法</strong>、<strong>成对组合覆盖法</strong>以及<strong>正交实验设计法</strong>三类。</p>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
 </li>
-<li><p><strong>逻辑推断法</strong></p>
-<p>逻辑推断法分为<strong>因果图法</strong>、<strong>判定表法</strong>和<strong>大纲法</strong>等。</p>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
 </li>
-<li><p><strong>业务路径覆盖法</strong></p>
-<p>业务路径覆盖法主要分为<strong>场景分析法</strong>和<strong>功能图法</strong>。</p>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
 </li>
-</ol>
-<h3 id="8-3-2-白盒测试法"><a href="#8-3-2-白盒测试法" class="headerlink" title="8.3.2 白盒测试法"></a>8.3.2 白盒测试法</h3><p>白盒测试（ White-box Testing ），又称为透明盒测试、结构测试、基于代码的测试或者逻辑驱动测试，主要分为<strong>静态白盒测试</strong>、<strong>动态白盒测试</strong>与<strong>其他白盒测试</strong>三种。</p>
-<p>白盒测试是一种测试用例设计方法，盒子是指被测试的软件，白盒是指清楚盒子内部的代码、注释以及看到内部的运作情况。</p>
-<p>白盒测试法需要全面了解程序的内部逻辑结构，对所有的逻辑路径进行测试，是一种典型的穷举路径测试。在使用白盒测试时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。</p>
-<p>白盒测试常用的工具：内存泄漏检查工具、性能测试工具以及代码覆盖率检查工具。采用白盒测试法需遵循以下原则。</p>
-<ol>
-<li><p>确保一个模块中的所有独立路径至少被测试一次。</p>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
 </li>
-<li><p>所有逻辑值均需测试真和假两种情况。</p>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
 </li>
-<li><p>检查程序的内部数据结构，确保其结构的有效性。</p>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
 </li>
-<li><p>必须在上、下边界及可操作范围内运行所有循环。</p>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
 </li>
-<li><p><strong>静态白盒测试法</strong></p>
-<p>静态白盒测试法是在不执行代码的前提条件下，有条理地审查软件设计、体系结构与代码，从而找出软件缺陷的过程。</p>
-<p>其优点是能尽早发现软件缺陷，为黑盒测试人员进行测试时设计测试用例提供思路。静态白盒测试主要有以下三种技术：</p>
-<ol>
-<li>代码检查法。</li>
-<li>静态结构分析法。</li>
-<li>静态质量度量法。</li>
-</ol>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
 </li>
-<li><p><strong>动态白盒测试法</strong></p>
-<p>动态白盒测试又称为结构测试，是指利用查看代码功能与实现方式所得到的信息来确定需要或者不需要测试的内容，以及开展测试的方式。</p>
-<p>软件测试人员可根据查看并使用代码的内部结构，进而设计与执行测试。</p>
-<p>动态白盒测试不仅要查看代码，还要查看直接参数与控制软件，主要包括以下四个部分。</p>
-<ol>
-<li>直接测试底层的功能、过程、子程序以及库，即应用程序接口（ API ）。</li>
-<li>以完整的程序方式从顶层来测试软件，但要根据对软件运行的了解调整测试案例。</li>
-<li>从软件获得读取变量与状态信息的访问权，以便确定测试与预期结果是否相符，与此同时，还要强制软件以正常测试难以实现的方式运行。</li>
-<li>估算执行测试时”命中”的代码量与具体代码，然后调整测试，去掉多余的，补充遗漏的。</li>
-</ol>
-<p>动态白盒测试主要有以下三种技术：</p>
-<ol>
-<li>覆盖测试。</li>
-<li>控制结构测试。</li>
-<li>循环测试。</li>
-</ol>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
 </li>
-<li><p><strong>其他白盒测试法</strong></p>
-<ol>
-<li>程序插桩。</li>
-<li>程序变异测试。</li>
-</ol>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
 </li>
-</ol>
+</ul>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 Java 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 Java 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，Java2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
+<ul>
+<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
+<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
+<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
+<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
+<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
+</ul>
 <hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+<p><a href="https://georgedi.top/posts/c0010000.html">返回目录</a></p>
 ]]></content>
       <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第2章 变量与运算符</title>
+    <url>/posts/c0010002.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
+<ul>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
+</ul>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+</li>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+</li>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+</li>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+</li>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+</li>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
+</li>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+</li>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+</li>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+</li>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+</li>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
+</li>
+</ul>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
 </search>
