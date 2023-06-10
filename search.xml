@@ -83,6 +83,126 @@
       </categories>
   </entry>
   <entry>
+    <title>第1章 Java 语言概述</title>
+    <url>/posts/c0010001.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
+<ul>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
+</ul>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+</li>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+</li>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+</li>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+</li>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+</li>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
+</li>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+</li>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+</li>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+</li>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+</li>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
+</li>
+</ul>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 Java 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 Java 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，Java2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
+<ul>
+<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
+<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
+<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
+<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
+<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/c0010000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 基础</title>
+    <url>/posts/c0010000.html</url>
+    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
+      <categories>
+        <category>后端技术</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《软件项目管理案例教程》</title>
     <url>/posts/a0080000.html</url>
     <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><h4 id="第1章-软件项目管理概述"><a href="#第1章-软件项目管理概述" class="headerlink" title="第1章 软件项目管理概述"></a><a href="https://georgedi.top/posts/a0080001.html">第1章 软件项目管理概述</a></h4><hr>
@@ -91,6 +211,119 @@
 <h3 id="第三篇-项目执行控制"><a href="#第三篇-项目执行控制" class="headerlink" title="第三篇 项目执行控制"></a>第三篇 项目执行控制</h3><h4 id="第13章-项目集成计划执行控制"><a href="#第13章-项目集成计划执行控制" class="headerlink" title="第13章 项目集成计划执行控制"></a><a href="https://georgedi.top/posts/a0080013.html">第13章 项目集成计划执行控制</a></h4><h4 id="第14章-项目核心计划执行控制"><a href="#第14章-项目核心计划执行控制" class="headerlink" title="第14章 项目核心计划执行控制"></a><a href="https://georgedi.top/posts/a0080014.html">第14章 项目核心计划执行控制</a></h4><h4 id="第15章-软件辅助计划执行控制"><a href="#第15章-软件辅助计划执行控制" class="headerlink" title="第15章 软件辅助计划执行控制"></a><a href="https://georgedi.top/posts/a0080015.html">第15章 软件辅助计划执行控制</a></h4><hr>
 <h3 id="第四篇-项目结束"><a href="#第四篇-项目结束" class="headerlink" title="第四篇 项目结束"></a>第四篇 项目结束</h3><h4 id="第16章-项目结束过程"><a href="#第16章-项目结束过程" class="headerlink" title="第16章 项目结束过程"></a><a href="https://georgedi.top/posts/a0080016.html">第16章 项目结束过程</a></h4><hr>
 <h3 id="第五篇-项目实践"><a href="#第五篇-项目实践" class="headerlink" title="第五篇 项目实践"></a>第五篇 项目实践</h3><h4 id="第17章-基于敏捷平台的软件项目管理实践"><a href="#第17章-基于敏捷平台的软件项目管理实践" class="headerlink" title="第17章 基于敏捷平台的软件项目管理实践"></a><a href="https://georgedi.top/posts/a0080017.html">第17章 基于敏捷平台的软件项目管理实践</a></h4>]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>项目管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第2章 变量与运算符</title>
+    <url>/posts/c0010002.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
+<ul>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
+</ul>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
+</ul>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
+</li>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
+</li>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
+</li>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
+</li>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
+</li>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
+</li>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
+</li>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
+</li>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+</li>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+</li>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
+</li>
+</ul>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
+</ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第1章 软件项目管理概述</title>
+    <url>/posts/a0080001.html</url>
+    <content><![CDATA[<h2 id="1-1-项目与软件项目"><a href="#1-1-项目与软件项目" class="headerlink" title="1.1 项目与软件项目"></a>1.1 项目与软件项目</h2><h3 id="1-1-1-项目及其特征"><a href="#1-1-1-项目及其特征" class="headerlink" title="1.1.1 项目及其特征"></a>1.1.1 项目及其特征</h3><p>项目（project）就是为了创造一个<strong>唯一的产品</strong>或提供一个<strong>唯一的服务</strong>而进行的临时性的努力；是以一套独特而相互联系的任务为前提，有效地利用资源，在一定时间内满足一系列特定目标的多项相关工作的总称。</p>
+<h3 id="1-1-2-项目群与项目、项目与子项目的关系"><a href="#1-1-2-项目群与项目、项目与子项目的关系" class="headerlink" title="1.1.2 项目群与项目、项目与子项目的关系"></a>1.1.2 项目群与项目、项目与子项目的关系</h3><h3 id="1-1-3-软件项目"><a href="#1-1-3-软件项目" class="headerlink" title="1.1.3 软件项目"></a>1.1.3 软件项目</h3><h3 id="1-1-4-软件项目组成要素"><a href="#1-1-4-软件项目组成要素" class="headerlink" title="1.1.4 软件项目组成要素"></a>1.1.4 软件项目组成要素</h3><h3 id="1-1-5-项目目标实现的制约因素"><a href="#1-1-5-项目目标实现的制约因素" class="headerlink" title="1.1.5 项目目标实现的制约因素"></a>1.1.5 项目目标实现的制约因素</h3><h2 id="1-2-项目管理"><a href="#1-2-项目管理" class="headerlink" title="1.2 项目管理"></a>1.2 项目管理</h2><h3 id="1-2-1-项目管理背景"><a href="#1-2-1-项目管理背景" class="headerlink" title="1.2.1 项目管理背景"></a>1.2.1 项目管理背景</h3><h3 id="1-2-2-项目管理定义"><a href="#1-2-2-项目管理定义" class="headerlink" title="1.2.2 项目管理定义"></a>1.2.2 项目管理定义</h3><h3 id="1-2-3-软件项目管理的特征及重要性"><a href="#1-2-3-软件项目管理的特征及重要性" class="headerlink" title="1.2.3 软件项目管理的特征及重要性"></a>1.2.3 软件项目管理的特征及重要性</h3><h2 id="1-3-项目管理知识体系"><a href="#1-3-项目管理知识体系" class="headerlink" title="1.3 项目管理知识体系"></a>1.3 项目管理知识体系</h2><h3 id="1-3-1-项目管理的知识领域"><a href="#1-3-1-项目管理的知识领域" class="headerlink" title="1.3.1 项目管理的知识领域"></a>1.3.1 项目管理的知识领域</h3><h3 id="1-3-2-标准化过程组"><a href="#1-3-2-标准化过程组" class="headerlink" title="1.3.2 标准化过程组"></a>1.3.2 标准化过程组</h3><h2 id="1-4-软件项目管理知识体系"><a href="#1-4-软件项目管理知识体系" class="headerlink" title="1.4 软件项目管理知识体系"></a>1.4 软件项目管理知识体系</h2><h3 id="1-4-1-软件过程定义"><a href="#1-4-1-软件过程定义" class="headerlink" title="1.4.1 软件过程定义"></a>1.4.1 软件过程定义</h3><h3 id="1-4-2-过程管理在软件项目中的作用"><a href="#1-4-2-过程管理在软件项目中的作用" class="headerlink" title="1.4.2 过程管理在软件项目中的作用"></a>1.4.2 过程管理在软件项目中的作用</h3><h3 id="1-4-3-过程管理与项目管理知识体系的关系"><a href="#1-4-3-过程管理与项目管理知识体系的关系" class="headerlink" title="1.4.3 过程管理与项目管理知识体系的关系"></a>1.4.3 过程管理与项目管理知识体系的关系</h3><h2 id="1-5-敏捷项目管理"><a href="#1-5-敏捷项目管理" class="headerlink" title="1.5 敏捷项目管理"></a>1.5 敏捷项目管理</h2><h3 id="1-5-1-软件项目面临的挑战"><a href="#1-5-1-软件项目面临的挑战" class="headerlink" title="1.5.1 软件项目面临的挑战"></a>1.5.1 软件项目面临的挑战</h3><h3 id="1-5-2-敏捷思维"><a href="#1-5-2-敏捷思维" class="headerlink" title="1.5.2 敏捷思维"></a>1.5.2 敏捷思维</h3><h2 id="1-6-本知识库的组织结构"><a href="#1-6-本知识库的组织结构" class="headerlink" title="1.6 本知识库的组织结构"></a>1.6 本知识库的组织结构</h2><h2 id="1-7-小结"><a href="#1-7-小结" class="headerlink" title="1.7 小结"></a>1.7 小结</h2><hr>
+<h2 id="1-8-练习题"><a href="#1-8-练习题" class="headerlink" title="1.8 练习题"></a>1.8 练习题</h2><hr>
+<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
+]]></content>
       <categories>
         <category>科班基础</category>
       </categories>
@@ -108,6 +341,422 @@
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第1章 概论</title>
+    <url>/posts/a0060001.html</url>
+    <content><![CDATA[<h2 id="1-1-算法的概念"><a href="#1-1-算法的概念" class="headerlink" title="1.1 算法的概念"></a>1.1 算法的概念</h2><h3 id="1-1-1-什么是算法"><a href="#1-1-1-什么是算法" class="headerlink" title="1.1.1 什么是算法"></a>1.1.1 什么是算法</h3><p>算法（ algorithm ）是<strong>求解问题的一系列计算步骤</strong>，用来将<strong>输入数据</strong>转换成<strong>输出结果</strong>。</p>
+<p>如果一个算法对其每一个输入实例都能输出正确的结果并停止，则称它是正确的。一个正确的算法解决了给定的求解问题，不正确的算法对于某些输入来说可能根本不会停止，或者停止时给出的不是预期的结果。</p>
+<p>算法设计应满足以下几个目标：</p>
+<ol>
+<li><strong>正确性</strong>：要求算法能够正确地执行预先规定的功能和性能要求。这是最重要也是最基本的标准。</li>
+<li><strong>可使用性</strong>：要求算法能够很方便地使用。这个特性也叫作用户友好性。</li>
+<li><strong>可读性</strong>：算法应该易于人的理解，也就是可读性好。为了达到这个要求，算法的逻辑必须是清晰的、简单的和结构化的。</li>
+<li><strong>健壮性</strong>：要求算法具有很好的容错性，即提供异常处理，能够对不合理的数据进行检查，不经常出现异常中断或死机现象。</li>
+<li><strong>高效率与低存储量需求</strong>：通常，算法的效率主要指算法的执行时间。对于同一个问题如果有多种算法可以求解，执行时间短的算法效率高。算法存储量指的是算法执行过程中所需的最大存储空间。效率和低存储量都与问题的规模有关。</li>
+</ol>
+<p>算法具有以下 5 个重要特性：</p>
+<ol>
+<li><strong>有限性</strong>：一个算法必须总是（对任何合法的输入值）在执行有限步之后结束，且每一步都可在有限时间内完成。</li>
+<li><strong>确定性</strong>：算法中的每一条指令必须有确切的含义，不会产生二义性。</li>
+<li><strong>可行性</strong>：算法中的每一条运算都必须是足够基本的，也就是说它们在原则上都能精确地执行，甚至人们仅用笔和纸做有限次运算就能完成。</li>
+<li><strong>输入性</strong>：一个算法有零个或多个输入。大多数算法的输入参数是必要的，但对于较简单的算法，如计算 1+2 的值，不需要任何输入参数，因此算法的输入可以是零个。</li>
+<li><strong>输出性</strong>：一个算法有一个或多个输出。算法用于某种数据处理，如果没有输出，这样的算法是没有意义的，这些输出是和输入有着某些特定关系的量。</li>
+</ol>
+<h3 id="1-1-2-算法描述"><a href="#1-1-2-算法描述" class="headerlink" title="1.1.2 算法描述"></a>1.1.2 算法描述</h3><p>描述算法的方式很多，有的采用类 Pascal 语言，有的采用自然语言伪码。</p>
+<p>本知识库采用 C&#x2F;C++ 语言描述算法的实现过程，通常用 C&#x2F;C++ 函数来描述算法。</p>
+<p>以设计求 1+2+…+n 的值的算法为例说明 C&#x2F;C++ 语言描述算法的一般形式，该算法如下所示：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;	<span class="comment">//当参数错误时返回 false</span></span><br><span class="line">    s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        s+=i;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;	<span class="comment">//当参数正确并产生正确结果时返回 true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>通常用函数的返回值表示算法能否正确执行，当算法只有一个返回值或者返回值可以区分算法是否正确执行时用函数返回值来表示算法的执行结果，另外还可以带有形参表示算法的输入&#x2F;输出。</p>
+<p>任何算法（用函数描述）都是被调用的（在 C&#x2F;C++ 语言中除 main 函数外任何一个函数都会被其他函数调用，如果一个函数不被调用，这样的函数是没有意义的）。在 C 语言中调用函数时只有从实参到形参的单向值传递，在执行函数时若改变了形参，对应的实参不会同步改变。例如设计以下主函数调用上面的 fun 函数。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a=<span class="number">10</span>,b=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">fun</span>(a,b)) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,b);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span> (<span class="string">&quot;参数错误＼n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在执行时发现输出结果为 0，因为 b 对应的形参为 s，fun 执行后 s&#x3D;55，但 s 并没有回传给实参 b。在 C 语言中可以用传指针方式来实现形参的回传，但增加了函数的复杂性。为此在 C++ 语言中增加了引用型参数的概念，<strong>引用型参数名前需加上 &amp;，表示这样的形参在执行后会将结果回传给对应的实参。</strong></p>
+<p>上例采用 C++ 语言描述算法如下所示：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> &amp;s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;	<span class="comment">//当参数错误时返回 false</span></span><br><span class="line">    s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        s+=i;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;	<span class="comment">//当参数正确并产生正确结果时返回 true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当将形参 s 改为引用类型的参数后，在执行时 main 函数的输出结果就正确了，即输出 55。</p>
+<p>由于 C 语言不支持引用类型，C++ 语言支持引用类型，所以本知识库的算法描述语言为 C&#x2F;C++ 语言。需要注意的是，在 C&#x2F;C++ 语言中数组本身就是一种引用类型，所以当数组作为形参需要回传数据时其数组名之前不需要加 &amp;，它自动将形参数组的值回传给实参数组。</p>
+<blockquote>
+<p>在设计算法时，如果某个形参需要将执行结果回传给实参，则将该形参设计为引用型参数。带有引用型参数的程序不能在 Turbo C 中运行，可以在 BC++、Visual C++、Dev C++ 等编译环境中运行，通常程序文件扩展名为 .cpp 而不是 .c。</p>
+</blockquote>
+<h3 id="1-1-3-算法和数据结构"><a href="#1-1-3-算法和数据结构" class="headerlink" title="1.1.3 算法和数据结构"></a>1.1.3 算法和数据结构</h3><p>算法与数据结构既有联系又有区别。</p>
+<p>数据结构是算法设计的基础。算法的操作对象是数据结构，在设计算法时通常要构建适合这种算法的数据结构。数据结构设计主要是选择数据的存储方式，例如确定求解问题中的数据采用数组存储还是采用链表存储等。算法设计就是在选定的存储结构上设计一个满足要求的好算法。</p>
+<p>另外，数据结构关注的是数据的逻辑结构、存储结构以及基本操作，而算法更多的是关注如何在数据结构的基础上解决实际问题。算法是编程思想，数据结构则是这些思想的逻辑基础。</p>
+<h3 id="1-1-4-算法设计的基本步骤"><a href="#1-1-4-算法设计的基本步骤" class="headerlink" title="1.1.4 算法设计的基本步骤"></a>1.1.4 算法设计的基本步骤</h3><p>算法是求解问题的解决方案，这个解决方案本身并不是问题的答案，而是能获得答案的指令序列，即算法，通过算法的执行获得求解问题的答案。</p>
+<p>算法设计是一个灵活的充满智慧的过程，其基本步骤如下所示：</p>
+<ol>
+<li>分析求解问题：确定求解问题的目标（功能）、给定的条件（输入）和生成的结果（输出）。</li>
+<li>选择数据结构和算法设计策略：设计数据对象的存储结构，因为算法的效率取决于数据对象的存储表示。算法设计有一些通用策略，例如迭代法、分治法、动态规划和回溯法等，需要针对求解问题选择合适的算法设计策略。</li>
+<li>描述算法：在构思和设计好一个算法后必须清楚、准确地将所设计的求解步骤记录下来，即描述算法。</li>
+<li>证明算法正确性：算法正确性证明与数学证明有类似之处，因此可以采用数学证明方法，但用纯数字方法证明算法的正确不仅耗时，而且对大型软件开发也不适用。一般而言，为所有算法都给出完全的数学证明并不现实，因此选择那些已知是正确的算法自然能大大减少出错的机会。</li>
+<li>算法分析：同一问题的求解算法可能有多种，可以通过算法分析找到好的算法。一般来说，一个好的算法应该比同类算法的时间和空间效率高。</li>
+</ol>
+<h2 id="1-2-算法分析"><a href="#1-2-算法分析" class="headerlink" title="1.2 算法分析"></a>1.2 算法分析</h2><p>计算机资源主要包括计算时间和内存空间，算法分析是分析算法占用计算机资源的情况，所以算法分析的两个主要方面是分析算法的时间复杂度和空间复杂度，其目的不是分析算法是否正确或是否容易阅读，主要是考察算法的时间和空间效率，以求改进算法或对不同的算法进行比较。</p>
+<p>那么如何评价算法的效率呢？通常有两种衡量算法效率的方法：<strong>事后统计法</strong>和<strong>事前分析估算法</strong>。</p>
+<p>前者存在这些缺点：一是必须执行程序，二是存在其他因素掩盖算法本质。</p>
+<p>所以下面均采用事前分析估算法来分析算法效率。</p>
+<p>分析算法占用计算机资源的情况，占用资源越多、算法复杂度越高，效率越低，反之占用的资源少、复杂度越低，效率越高。</p>
+<p>衡量算法复杂性有2个维度：</p>
+<ul>
+<li>时间复杂度 𝑇(𝑛)：抽象计算机上运行所需时间。</li>
+<li>空间复杂度 𝑆(𝑛) ：抽象计算机上运行所需空间。</li>
+</ul>
+<p>※𝑛：要解决的问题规模。</p>
+<h3 id="1-2-1-算法时间复杂度分析"><a href="#1-2-1-算法时间复杂度分析" class="headerlink" title="1.2.1 算法时间复杂度分析"></a>1.2.1 算法时间复杂度分析</h3><h4 id="1-时间复杂度分析概述"><a href="#1-时间复杂度分析概述" class="headerlink" title="1.时间复杂度分析概述"></a>1.时间复杂度分析概述</h4><p>一个算法用高级语言实现后，在计算机上运行时所消耗的时间与很多因素有关，例如计算机的运行速度、编写程序采用的计算机语言、编译产生的机器语言代码质量和问题的规模等。</p>
+<p>在这些因素中，前 3 个都与具体的机器有关。撇开这些与计算机硬件、软件有关的因素，仅考虑算法本身的效率高低，可以认为一个特定算法的“运行工作量”的大小只依赖于问题的规模（通常用整数量 n 表示），或者说它是问题规模的函数。这便是事前分析估算法。</p>
+<p>算法的执行时间主要与<strong>问题规模</strong>有关，例如数组的元素个数、矩阵的阶数等都可作为问题规模。</p>
+<p>算法执行时间是算法中所有语句的执行时间之和，显然与算法中所有语句的执行次数成正比。</p>
+<p>为了客观地反映一个算法的执行时间，可以用算法中基本语句的执行次数来度量，算法中的<strong>基本语句</strong>是执行次数与整个算法的执行次数成正比的语句，它对算法执行时间的贡献最大，是算法中最重要的操作。</p>
+<p>通常基本语句是算法中最深层循环内的语句。</p>
+<p>采用渐进符号表示的算法时间复杂度也称为渐进时间复杂度，它反映的是一种增长趋势。</p>
+<p>假设机器速度是每秒 10<sup>8</sup> 次基本运算，有阶分别为 n<sup>3</sup>、n<sup>2</sup>、nlog<sub>2</sub>n、n、2<sup>n</sup> 和 n! 的算法，在 1 秒之内能够解决的最大问题规模 n 如下所示：</p>
+<table>
+<thead>
+<tr>
+<th align="center">算法的阶</th>
+<th align="center">n!</th>
+<th align="center">2<sup>n</sup></th>
+<th align="center">n<sup>3</sup></th>
+<th align="center">n<sup>2</sup></th>
+<th align="center">nlog<sub>2</sub>n</th>
+<th align="center">n</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1 秒解决的最大问题规模 n</td>
+<td align="center">11</td>
+<td align="center">26</td>
+<td align="center">464</td>
+<td align="center">10,000</td>
+<td align="center">4.5×106</td>
+<td align="center">100,000,000</td>
+</tr>
+<tr>
+<td align="center">机器速度提高 2 倍后 1 秒解决的最大问题规模 n</td>
+<td align="center">11</td>
+<td align="center">27</td>
+<td align="center">584</td>
+<td align="center">14,142</td>
+<td align="center">8.6×106</td>
+<td align="center">200,000,000</td>
+</tr>
+</tbody></table>
+<p>从中看出，阶为 n! 和 2<sup>n</sup> 的算法不仅解决的问题规模非常小，而且增长缓慢；执行速度最快的阶为 nlog<sub>2</sub>n 和 n 的算法不仅解决的问题规模大，而且增长快。</p>
+<p>通常称渐进时间复杂度为多项式的算法为有效算法，而称 n! 或 2<sup>n</sup> 这样的低效算法为指数时间算法。</p>
+<h4 id="2-渐进符号（-O、Ω-和-Θ）"><a href="#2-渐进符号（-O、Ω-和-Θ）" class="headerlink" title="2.渐进符号（ O、Ω 和 Θ）"></a>2.渐进符号（ O、Ω 和 Θ）</h4><ul>
+<li><p><strong>定义 1（大 O 符号）</strong>：f(n)&#x3D;O(g(n))（读作“f(n) 是 g(n) 的大 O”），当且仅当存在正常量 c 和 n<sub>0</sub>，使当 n≥n<sub>0</sub> 时 f(n)≤cg(n)，即 <strong>g(n）为 f(n) 的上界</strong>。</p>
+<p>大 O 符号用来描述增长率的上界，表示 f(n) 的增长最多像 g(n) 的增长那样快，也就是说当输入规模为 n 时算法消耗时间的最大值。</p>
+<p>这个上界的阶越低，结果就越有价值。</p>
+<p>当一个算法的时间用大 O 符号表示时，总是采用最有价值的 g(n) 表示，称之为“紧凑上界”或“紧确上界”。</p>
+<p>说明：在算法分析中，大 O 符号的应用非常广泛。因为它简化了增长数量级上界的描述，甚至也适合一些无法进行精确分析的复杂算法。</p>
+</li>
+<li><p><strong>定义 2（大 Ω 符号）</strong>: f(n)&#x3D;Ω(g(n))（读作”f(n) 是 g(n) 的大 Ω”），当且仅当存在正常量 c 和 n<sub>0</sub>，使当 n≥n<sub>0</sub> 时 f(n)≥cg(n)，即 <strong>g(n) 为 f(n) 的下界</strong>。</p>
+<p>大 Ω 符号用来描述增长率的下界，表示 f(n) 的增长最少像 g(n) 的增长那样快，也就是说，当输入规模为 n 时算法消耗时间的最小值。</p>
+<p>与大 O 符号相反，这个下界的阶越高，结果就越有价值。</p>
+</li>
+<li><p><strong>定义 3（大 Θ 符号）</strong>：f(n)&#x3D;Θ(g(n))（读作”f(n) 是 g(n) 的大 Θ”），当且仅当存在正常量 c<sub>1</sub>、c<sub>2</sub> 和 n<sub>0</sub>，使当 n≥n<sub>0</sub> 时有 c<sub>1</sub>g(n)≤f(n)≤c<sub>2</sub>g(n)，即 <strong>g(n) 与 f(n) 的同阶</strong>。</p>
+<p>大 Θ 符号比大 O 符号和大 Ω 符号都精确，f(n)&#x3D;O(g(n))，当且仅当 g(n) 既是 f(n) 的上界又是 f(n) 的下界。</p>
+</li>
+</ul>
+<p>渐进符号具有以下特性：</p>
+<ol>
+<li><strong>传递性</strong></li>
+<li><strong>自反性</strong></li>
+<li><strong>对称性</strong></li>
+<li><strong>算术运算</strong></li>
+</ol>
+<h4 id="3-算法的最好、最坏和平均情况"><a href="#3-算法的最好、最坏和平均情况" class="headerlink" title="3.算法的最好、最坏和平均情况"></a>3.算法的最好、最坏和平均情况</h4><ul>
+<li><p><strong>定义 4</strong>：设一个算法的输入规模为 n，D<sub>n</sub> 是所有输入的集合，任一输入 I∈D<sub>n</sub>，P(I) 是 I 出现的概率，有 ΣP(I)&#x3D;1，T(I) 是算法在输入 I 下所执行的基本语句次数，则该算法的平均执行时间为 A(n)&#x3D;ΣP(I)*T(I)，也就是说算法的平均情况是指各种特定输入下的基本语句执行次数的带权平均值。</p>
+<p>算法的最好情况为 G(n)&#x3D;MIN{T(I)}，是指算法在所有输入 I 下所执行基本语句的最少执行次数。</p>
+<p>算法的最坏情况为 W(n)&#x3D;MAX{T(I)}，是指算法在所有输入 I 下所执行基本语句的最大执行次数。</p>
+</li>
+</ul>
+<h3 id="1-2-2-算法空间复杂度分析"><a href="#1-2-2-算法空间复杂度分析" class="headerlink" title="1.2.2 算法空间复杂度分析"></a>1.2.2 算法空间复杂度分析</h3><p>一个算法的存储量包括形参所占空间和临时变量所占空间。在对算法进行存储空间分析时只考察临时变量所占空间。</p>
+<p>若所需临时空间相对于输入数据量来说是常数，则称此算法为<strong>原地工作</strong>或<strong>就地工作</strong>算法。</p>
+<p>若所需临时空间依赖于特定的输入，则通常按最坏情况来考虑。</p>
+<h2 id="1-3-算法设计工具——STL"><a href="#1-3-算法设计工具——STL" class="headerlink" title="1.3 算法设计工具——STL"></a>1.3 算法设计工具——STL</h2><p>数据结构课程主要讲授一些常用的数据结构及其算法设计思想，对于计算机专业的学生，学习和掌握这些基本知识是十分必要的。另一方面，C++ 中已经实现了数据结构中的很多容器和算法，它们构成标准 C++ 库的子集，即标准模板类库（ Standard Template Library，STL ）。</p>
+<p>STL 是一个功能强大的基于模板的容器库，通过直接使用这些现成的标准化组件可以大大提高算法设计的效率和可靠性。</p>
+<blockquote>
+<p>说明：对于算法设计者而言，最好遵循“尽可能使用 STL 而不自己实现”的原则。</p>
+</blockquote>
+<h3 id="1-3-1-STL-概述"><a href="#1-3-1-STL-概述" class="headerlink" title="1.3.1 STL 概述"></a>1.3.1 STL 概述</h3><p>STL 主要由 container（容器）、algorithm（算法）和 iterator（迭代器）三大部分构成，容器用于存放数据对象（元素），算法用于操作容器中的数据对象。</p>
+<p>尽管各种容器的内部结构各异，但其外部给人的感觉通常是相似的，即将容器数据的操作设计成通用算法，也就是将算法和容器分离开来。算法和容器之间的中介就是迭代器。</p>
+<p><strong>容器</strong>、<strong>算法</strong>和<strong>迭代器</strong>称为 STL 的三大件，它们之间的关系如下图所示：</p>
+<img src="https://s1.ax1x.com/2023/06/04/pCCPy8A.jpg" alt="STL三大件" style="zoom:67%;" />
+
+<h4 id="1-什么是-STL-容器"><a href="#1-什么是-STL-容器" class="headerlink" title="1.什么是 STL 容器"></a>1.什么是 STL 容器</h4><p>简单地说，一个 STL 容器就是一种数据结构，例如链表、栈和队列等，这些数据结构在 STL 中都已经实现好了，在算法设计中可以直接使用它们。</p>
+<p>以下是常用的数据结构和相应的头文件：</p>
+<table>
+<thead>
+<tr>
+<th align="center">数据结构</th>
+<th align="center">说明</th>
+<th align="center">实现头文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">向量（ vector ）</td>
+<td align="center">连续存储元素。底层数据结构为数组。支持快速随机访问。</td>
+<td align="center">&lt; vector &gt;</td>
+</tr>
+<tr>
+<td align="center">字符串（ string ）</td>
+<td align="center">字符串处理容器。</td>
+<td align="center">&lt; string &gt;</td>
+</tr>
+<tr>
+<td align="center">双端队列（ deque ）</td>
+<td align="center">连续存储的指向不同元素的指针所组成的数组。底层数据结构为一个中央控制器和多个缓冲区，支持首尾元素（中间不能）快速增删，也支持随机访问。</td>
+<td align="center">&lt; deque &gt;</td>
+</tr>
+<tr>
+<td align="center">链表（ list ）</td>
+<td align="center">由结点组成的链表，每个结点包含着一个元素。底层数据结构为双向链表，支持结点的快速增删。</td>
+<td align="center">&lt; list &gt;</td>
+</tr>
+<tr>
+<td align="center">栈（ stack ）</td>
+<td align="center">后进先出的序列。底层一般用 deque 或者 list 实现。</td>
+<td align="center">&lt; stack &gt;</td>
+</tr>
+<tr>
+<td align="center">队列（ queue ）</td>
+<td align="center">先进先出的序列。底层一般用 deque 或者 list 实现。</td>
+<td align="center">&lt; queue &gt;</td>
+</tr>
+<tr>
+<td align="center">优先队列（ priority_queue ）</td>
+<td align="center">元素的进出队顺序由某个谓词或者关系函数决定的一种队列。底层数据结构一般为 vector 或者 deque。</td>
+<td align="center">&lt; queue &gt;</td>
+</tr>
+<tr>
+<td align="center">集合（ set ）&#x2F;多重集合（ multiset ）</td>
+<td align="center">由结点组成的红黑树，每个结点都包含着一个元素，set 中的所有元素有序但不重复，multiset 中的所有关键字有序但不重复。</td>
+<td align="center">&lt; set &gt;</td>
+</tr>
+<tr>
+<td align="center">映射（ map ）&#x2F;多重映射（ multimap ）</td>
+<td align="center">由（关键字，值）对组成的集合，底层数据结构为红黑树，map 中的所有关键字有序但不重复，multimap 中的所有关键字有序但可以重复。</td>
+<td align="center">&lt; map &gt;</td>
+</tr>
+</tbody></table>
+<p>C++ 中引入了命名空间的概念，在不同命名空间中可以存在相同名字的标识符。STL 的 sort() 以及其标识符都封装在命名空间 std 中，使用 STL 时必须将下面语句插入到源代码中：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std; </span><br></pre></td></tr></table></figure>
+
+<h4 id="2-什么是-STL-算法"><a href="#2-什么是-STL-算法" class="headerlink" title="2.什么是 STL 算法"></a>2.什么是 STL 算法</h4><p>STL 算法是用来操作容器中数据的模板函数。</p>
+<p>STL 算法部分主要由头文件 &lt; algorithm &gt;、&lt; numeric &gt; 和 &lt; functional &gt; 组成。</p>
+<ul>
+<li>&lt; algorithm &gt; 是所有 STL 头文件中最大的一个，它由一大堆模板函数组成，功能范围涉及容器元素的比较、交换、查找、遍历、复制、修改、删除、排序和合并等操作。</li>
+<li>&lt; numeric &gt; 的体积很小，只包括几个简单数学运算的模板函数。</li>
+<li>&lt; functional &gt; 中定义了一些模板类，用于声明关系函数对象。</li>
+</ul>
+<h4 id="3-什么是-STL-迭代器"><a href="#3-什么是-STL-迭代器" class="headerlink" title="3.什么是 STL 迭代器"></a>3.什么是 STL 迭代器</h4><p>简单地说，STL 迭代器用于访问容器中的数据对象。每个容器都有自己的迭代器，只有容器自己知道如何访问自己的元素。</p>
+<p>迭代器像 C&#x2F;C++ 中的指针，算法通过迭代器来定位和操作容器中的元素。</p>
+<p>迭代器有各种不同的创建方法，程序可能把迭代器作为一个变量创建，一个 STL 容器类可能为了使用一个特定类型的数据而创建一个迭代器。作为指针，必须能够使用 * 操作符来获取数据值。</p>
+<p>程序员可以使用相关运算符来操作迭代器。例如，++ 运算符用来递增迭代器，以访问容器中的下一个数据对象。如果迭代器到达了容器中的最后一个元素的后面，则迭代器变成一个特殊的值，就好像使用 NULL 或未初始化的指针一样。</p>
+<p>常用的迭代器如下：</p>
+<ul>
+<li>iterator：指向容器中存放元素的迭代器，用于正向遍历容器中的元素。</li>
+<li>const_iterator：指向容器中存放元素的常量迭代器，只能读取容器中的元素。</li>
+<li>reverse_iterator：指向容器中存放元素的反向迭代器，用于反向遍历容器中的元素。</li>
+<li>const_reverse_iterator：指向容器中存放元素的常量反向迭代器，只能读取容器中的元素。</li>
+</ul>
+<p>例如，以下语句定义一个存放 int 型整数的 vector 容器。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; myv;</span><br></pre></td></tr></table></figure>
+
+<p>用户可以使用 vector 容器的成员函数 push_back() 在 myv 的末尾插入元素：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">1</span>);</span><br><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">2</span>);</span><br><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这样 myv 中包含 3 个元素，依次是 1、2、3。如果要正向输出所有元素，可以使用正向迭代器：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator it	<span class="comment">//定义正向迭代器 it</span></span><br><span class="line"><span class="keyword">for</span>(it=myv.<span class="built_in">begin</span>();it!=myv.<span class="built_in">end</span>();++it)	<span class="comment">//从头到尾遍历所有元素</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,*it);	<span class="comment">//输出：1 2 3</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>如果要反向输出所有元素，可以使用反向迭代器：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::reverse_iterator rit	<span class="comment">//定义反向迭代器 rit</span></span><br><span class="line"><span class="keyword">for</span>(rit=myv.<span class="built_in">rbegin</span>();rit!=myv.<span class="built_in">rend</span>();++rit)	<span class="comment">//从尾到头遍历所有元素</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,*rit);	<span class="comment">//输出：3 2 1</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-3-2-常用的-STL-容器"><a href="#1-3-2-常用的-STL-容器" class="headerlink" title="1.3.2 常用的 STL 容器"></a>1.3.2 常用的 STL 容器</h3><p>STL 容器很多，每一个容器就是一个类模板，大致分为<strong>顺序容器</strong>、<strong>适配器容器</strong>和<strong>关联容器</strong> 3 种类型。</p>
+<h3 id="1-3-3-STL-在算法设计中的应用"><a href="#1-3-3-STL-在算法设计中的应用" class="headerlink" title="1.3.3 STL 在算法设计中的应用"></a>1.3.3 STL 在算法设计中的应用</h3><ol>
+<li>存放主数据</li>
+<li>存放临时数据</li>
+<li>检测数据元素的唯一性</li>
+<li>数据的排序</li>
+<li>优先队列作为堆</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第2章 递归算法设计技术</title>
+    <url>/posts/a0060002.html</url>
+    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><p>在数学与计算机科学中，<strong>递归</strong>（ recursion ）是指在函数的定义中又调用函数自身的方法。</p>
+<p>若 p 函数定义中调用 p 函数，称之为<strong>直接递归</strong>；若 p 函数定义中调用 q 函数，而 q 函数定义中又调用 p 函数，称之为<strong>间接递归</strong>。</p>
+<p>任何间接递归都可以等价地转化为直接递归。</p>
+<p>如果一个递归过程或递归函数中的递归调用语句是最后一条执行语句，则称这种递归调用为<strong>尾递归</strong>。</p>
+<blockquote>
+<p>递归既是一种奇妙的现象，又是一种思考问题的方法，通过递归可简化问题的定义和求解过程。</p>
+<p>实际上在现实世界中递归无处不在，例如在人类的发展繁衍中，人之间的辈分就是一种递归，祖先的递归定义是 x 的父母是 x 的祖先， x 祖先的双亲同样是 x 的祖先。</p>
+</blockquote>
+<p>【例2.1】设计求 n!（ n 为正整数）的递归算法。</p>
+<p>对应的递归函数如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> (<span class="built_in">fun</span>(n<span class="number">-1</span>)*n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在函数 fun(n) 的求解过程中直接调用 fun(n-1)，所以它是一个直接递归函数；又由于递归调用是最后一条语句，所以它又属于尾递归。</p>
+<p>递归算法通常把一个大的复杂问题层层转化为一个或多个与原问题相似的规模较小的问题来求解，递归策略只需少量的代码就可以描述出解题过程所需要的多次重复计算，大大减少了算法的代码量。</p>
+<p>一般来说，能够用递归解决的问题应该满足以下 3 个条件：</p>
+<ol>
+<li>需要解决的问题可以转化为一个或多个子问题来求解，而这些子问题的求解方法与原问题完全相同，只是在数量规模上不同。</li>
+<li>递归调用的次数必须是有限的。</li>
+<li>必须有结束递归的条件来终止递归。</li>
+</ol>
+<h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><p>在以下 3 种情况下经常要用到递归的方法。</p>
+<h4 id="1-定义是递归的"><a href="#1-定义是递归的" class="headerlink" title="1.定义是递归的"></a>1.定义是递归的</h4><p>有许多数学公式、数列和概念的定义是递归的，例如求 n! 和斐波那契（ Fibonacci ）数列等。</p>
+<p>对于这些问题的求解过程，可以将其递归定义直接转化为对应的递归算法，例如求 n! 可以转化为【例2.1】的递归算法。</p>
+<h4 id="2-数据结构是递归的"><a href="#2-数据结构是递归的" class="headerlink" title="2.数据结构是递归的"></a>2.数据结构是递归的</h4><p>算法是用于数据处理的，有些存储数据的数据结构是递归的，对于递归数据结构，采用递归的方法设计算法既方便又有效。</p>
+<p>例如，单链表就是一种递归数据结构，其结点类型声明如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Node</span> </span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Node</span> * next;</span><br><span class="line">&#125; LinkNode;	<span class="comment">//单链表结点类型</span></span><br></pre></td></tr></table></figure>
+
+<p>其中，结构体 Node 的声明中用到了它自身，即指针域 next 是一种指向自身类型的指针。</p>
+<h4 id="3-问题的求解方法是递归的"><a href="#3-问题的求解方法是递归的" class="headerlink" title="3.问题的求解方法是递归的"></a>3.问题的求解方法是递归的</h4><p>有些问题的解法是递归的，典型的有梵塔问题求解。</p>
+<p>该问题的描述是设有 3 个分别命名为 x、y 和 z 的塔座，在塔座 x 上有 n 个直径各不相同、从小到大依次编号为 1~n 的盘片，现要求将 x 塔座上的 n 个盘片移到塔座 z 上并仍按同样的顺序叠放。在盘片移动时必须遵守以下规则：每次只能移动一个盘片；盘片可以插在 x、y 和 z 中的任一塔座；任何时候都不能将一个较大的盘片放在较小的盘片上。</p>
+<h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><p>一般地，一个递归模型由<strong>递归出口</strong>和<strong>递归体</strong>两部分组成，前者确定递归到何时结束，即指出明确的递归结束条件，后者确定递归求解时的递推关系。</p>
+<h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><p>在执行递归函数时会直接调用自身，但如果仅有这种操作，将会出现由于无休止地调用而陷入死循环。因此，一个正确的递归函数虽然每次调用的是相同的代码，但它的参数、输入数据等均有变化，并且在正常情况下随着调用的不断深入必定会出现调用到某一层的函数时不再执行递归调用而终止函数的执行，即遇到递归出口。</p>
+<p>递归函数可以看成是一种特殊的函数，递归函数调用是函数调用的一种特殊情况，即它是调用自身代码，因此也可以把每一次递归调用理解成调用自身代码的一个复制件。由于每次调用时它的参数和局部变量值均不相同，所以保证了各个复制件执行时的独立性。</p>
+<p>但递归调用在内部实现时并不是每次调用真的复制一个函数复制件存放到内存中，而是采用代码共享的方式，也就是它们都是调用同一个函数的代码。为此系统设置了一个系统栈，为每一次调用开辟一组存储单元，用来存放本次调用的返回地址以及被中断的函数参数值（即一个栈帧，可以理解为一个栈元素），然后将其进入系统栈（栈元素进栈），再执行被调用函数代码。当被调用函数执行完毕后，对应的栈帧被弹出（栈元素出栈），返回计算后的函数值，控制转到相应的返回地址继续执行。显然当前正在执行的调用函数的栈帧总是处于系统栈的最顶端。</p>
+<p>所以一个函数调用过程就是将数据（包括参数和返回值）和控制信息（返回地址等）从一个函数传递到另一个函数。另外，在执行被调函数的过程中还要为被调函数的局部变量分配空间，在函数返回时释放这些空间，这些工作都是由系统栈来完成的。</p>
+<p>从以上过程可以得出：</p>
+<ol>
+<li>递归执行是通过系统栈实现的。</li>
+<li>每递归调用一次就需将参数、局部变量和返回地址等作为一个栈元素进栈一次，最多的进栈元素个数称为递归深度，n 越大，递归深度越深。</li>
+<li>每当遇到递归出口或本次递归调用执行完毕时需退栈一次，并恢复参数值等，当全部执行完毕时栈应该为空。</li>
+</ol>
+<h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><p>递归是算法和程序设计的一种实现技术，数学归纳法是一种论证方法，数学归纳法是递归的<strong>理论基础</strong>。</p>
+<h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><p>递归算法设计首先要提炼出递归模型，再转换成对应的程序设计语言。</p>
+<p>提炼递归模型过程中最重要的是找递归体，即确定<strong>大问题</strong>和<strong>小问题</strong>的关系。</p>
+<h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><p><strong>定义</strong>：采用递归方式定义的数据结构称为递归数据结构。在递归数据结构定义中包含的递归运算称为基本递归运算。</p>
+<h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><p>本节通过几个典型示例介绍递归算法设计方法。</p>
+<h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><p>【问题描述】对于给定的含有 n 个元素的数组 a，分别采用简单选择排序和冒泡排序方法按元素值递增排序。</p>
+<p>简单选择排序和冒泡排序方法都是将 a[0..n-1] 分为有序区 a[0..i-1] 和无序区两个部分，有序区中的所有元素都不大于无序区中的元素，初始时有序区为空（即 i&#x3D;0 ）。经过 n-1 趟排序（ i&#x3D;1~n-2 ），每趟排序采用不同方式将无序区中的最小元素移动到无序区的开头，即 a[i] 处。</p>
+<h4 id="1-简单选择排序"><a href="#1-简单选择排序" class="headerlink" title="1.简单选择排序"></a>1.简单选择排序</h4><p>简单选择排序采用简单比较方式在无序区中选择最小元素并放到开头处。</p>
+<p>对应的完整求解程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">SelectSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的简单选择排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j,k;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        k=i;	<span class="comment">//k 记录 a[i..n-1] 中最小元素的下标</span></span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)	<span class="comment">//在 a[i..n-1] 中找最小元素</span></span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[k])</span><br><span class="line">                k=j;</span><br><span class="line">        <span class="keyword">if</span>(k!=i)	<span class="comment">//若最小元素不是 a[i]</span></span><br><span class="line">            <span class="built_in">swap</span>(a[i],a[k]);	<span class="comment">//a[i] 和 a[k] 交换</span></span><br><span class="line">        <span class="built_in">SelectSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-冒泡排序"><a href="#2-冒泡排序" class="headerlink" title="2.冒泡排序"></a>2.冒泡排序</h4><p>冒泡排序采用交换方式将无序区中的最小元素放到开头处。</p>
+<p>对应的完整求解程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的冒泡排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j;</span><br><span class="line">    <span class="type">bool</span> exchange;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        exchange=<span class="literal">false</span>;	<span class="comment">//置 exchange 为 false</span></span><br><span class="line">        <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)</span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[j<span class="number">-1</span>])	<span class="comment">//当相邻元素反序时</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">swap</span>(a[j],a[j<span class="number">-1</span>]);</span><br><span class="line">                exchange=<span class="literal">true</span>;	<span class="comment">//发生交换置 exchange 为 true</span></span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">if</span>(exchange==<span class="literal">false</span>)	<span class="comment">//未发生交换时直接返回</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//发生交换时继续递归调用</span></span><br><span class="line">            <span class="built_in">BubbleSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-递归小结"><a href="#2-4-递归小结" class="headerlink" title="2.4 递归小结"></a>2.4 递归小结</h2><ul>
+<li><p><strong>优点</strong></p>
+<p>结构清晰，可读性强，而且容易用数学归纳法来证明算法的正确性，因此它为设计算法、调试程序带来很大方便。</p>
+</li>
+<li><p><strong>缺点</strong></p>
+<p>递归算法的运行效率较低，无论是耗费的计算时间还是占用的存储空间都比非递归算法要多。</p>
+</li>
+<li><p><strong>解决方法</strong></p>
+<p>在递归算法中消除递归调用，使其转化为非递归算法（递推）。</p>
+</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《算法设计与分析》</title>
+    <url>/posts/a0060000.html</url>
+    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3>]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第3章 分治法</title>
+    <url>/posts/a0060003.html</url>
+    <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><p>对于一个规模为 n 的问题，若该问题可以容易地解决（例如规模 n 较小）则直接解决，否则将其分解为 k 个规模较小的子问题，这些子问题互相独立且与原问题形式相同，递归地解这些子问题，然后将各子问题的解合成并得到原问题的解，这种算法设计策略叫<strong>分治法</strong>。</p>
+<p>分治法所能解决的问题一般具有以下几个特征：</p>
+<ol>
+<li><strong>该问题的规模缩小到一定的程度就可以容易地解决。</strong></li>
+<li><strong>该问题可以分解为若干个规模较小的相似问题。</strong></li>
+<li><strong>利用该问题分解出的子问题的解可以合并为该问题的解。</strong></li>
+<li><strong>该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共的子问题。</strong></li>
+</ol>
+<h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><p>递归特别适合解决结构自相似的问题，所谓结构自相似，是指构成原问题的子问题与原问题在结构上相似，可以采用类似的方法解决。所以分治法通常采用递归算法设计技术，在每一层递归上都有 3 个步骤：</p>
+<ol>
+<li><strong>分解成若干个子问题</strong>：将原问题分解为若干个规模较小、相互独立、与原问题形式相同的子问题。</li>
+<li><strong>求解子问题</strong>：若子问题规模较小，容易被解决，则直接求解，否则递归地求解各个子问题。</li>
+<li><strong>合并子问题</strong>：将各个子问题地解合并为原问题的解。</li>
+</ol>
+<h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><p>对于给定的含有 n 个元素的数组 a，对其按元素值递增排序。</p>
+<p><strong>快速排序</strong>和<strong>归并排序</strong>是典型的采用分治法进行排序的方法。</p>
+<h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><p>快速排序的基本思想是在待排序的 n 个元素中任取一个元素（通常取第一个元素）作为基准，把该元素放入最终位置后，整个数据序列被基准分割成两个子序列，所有小于基准的元素放置在前子序列中，所有大于基准的元素放置在后子序列中，并把基准排在这两个子序列的中间，这个过程称为划分。然后对两个子序列分别重复上述过程，直到每个子序列内只有一个元素或空为止。</p>
+<p>这是一种二分法思想，每次将整个无序序列一分为二，归位一个元素，对两个子序列采用同样的方式进行排序，直到子序列的长度为 1 或 0 为止。</p>
+<p>快速排序的分治策略如下。</p>
+<ol>
+<li>分解：将原序列 a[s..t] 分解成两个子序列 a[s..i-1] 和 a[i+1..t]，其中 i 为划分的基准位置，即将整个问题分解为两个子问题。</li>
+<li>求解子问题：若子序列的长度为0或1，则它是有序的，直接返回；否则递归地求解各个子问题。</li>
+<li>合并：由于整个序列存放在数组 a 中，排序过程是就地进行的，合并步骤不需要执行任何操作。</li>
+</ol>
+<p>实现快速排序的完整程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Partition</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s,<span class="type">int</span> t)</span>	<span class="comment">//划分算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i=s,j=t;</span><br><span class="line">    <span class="type">int</span> tmp=a[s];	<span class="comment">//用序列的第 1 个记录作为基准</span></span><br><span class="line">    <span class="keyword">while</span>(i!=j)	<span class="comment">//从序列两端交替向中间扫描，直到 i=j 为止</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(j&gt;i&amp;&amp;a[j]&gt;=tmp)</span><br><span class="line">            j--;	<span class="comment">//从右向左扫描，找第 1 个关键字小于 tmp 的 a[j]</span></span><br><span class="line">        a[i]=a[j];	<span class="comment">//将 a[j] 前移到 a[i] 的位置</span></span><br><span class="line">        <span class="keyword">while</span>(i&lt;j&amp;&amp;a[i]&lt;=tmp)</span><br><span class="line">            i++;	<span class="comment">//从左向右扫描，找第 1 个关键字大于 tmp 的 a[i]</span></span><br><span class="line">        a[j]=a[i];	<span class="comment">//将 a[i] 后移到 a[j] 的位置</span></span><br><span class="line">    &#125;</span><br><span class="line">    a[i]=tmp;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">QuickSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s,<span class="type">int</span> t)</span>	<span class="comment">//对 a[s..t] 元素序列进行递增排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(s&lt;t)	<span class="comment">//序列内至少存在两个元素的情况</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> i=<span class="built_in">Partition</span>(a,s,t);</span><br><span class="line">        <span class="built_in">QuickSort</span>(a,s,i<span class="number">-1</span>);	<span class="comment">//对左子序列递归排序</span></span><br><span class="line">        <span class="built_in">QuickSort</span>(a,i+<span class="number">1</span>,t);	<span class="comment">//对右子序列递归排序</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">QuickSort</span>(a,<span class="number">0</span>,n<span class="number">-1</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【算法分析】快速排序的时间主要耗费在划分操作上，对长度为 n 的区间进行划分，共需 n-1 次关键字的比较，时间复杂度为 O(n)。</p>
+<h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><p>归并排序的基本思想是首先将 a[O..n-1] 看成 n 个长度为 1 的有序表，将相邻的 k（ k≥2 ）个有序子表成对归并，得到 n&#x2F;k 个长度为 k 的有序子表；然后再将这些有序子表继续归并，得到 n&#x2F;k<sup>2</sup> 个长度为 k<sup>2</sup> 的有序子表，如此反复进行下去，最后得到一个长度为 n 的有序表。由于整个排序结果放在一个数组中，所以不需要特别地进行合并操作。</p>
+<p>若 k&#x3D;2，即归并是在相邻的两个有序子表中进行的，称为<strong>二路归并排序</strong>。</p>
+<p>若 k&gt;2，即归并操作在相邻的多个有序子表中进行，则叫<strong>多路归并排序</strong>。</p>
+<p>这里仅讨论二路归并排序算法。</p>
+<p>二路归并排序算法主要有两种，下面一一讨论。</p>
+<h4 id="1-自底向上的二路归并排序算法"><a href="#1-自底向上的二路归并排序算法" class="headerlink" title="1.自底向上的二路归并排序算法"></a>1.自底向上的二路归并排序算法</h4><p>实现自底向上的二路归并排序的完整程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;malloc.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Merge</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> mid,<span class="type">int</span> high)</span></span></span><br><span class="line"><span class="function"><span class="comment">//将 2 个相邻有序子序列归并为一个有序子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span>* tmpa;</span><br><span class="line">    <span class="type">int</span> i=low,j=mid+<span class="number">1</span>,k=<span class="number">0</span>;</span><br><span class="line">    tmpa=(<span class="type">int</span>*)<span class="built_in">malloc</span>((high-low+<span class="number">1</span>)*<span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=high)</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=a[j])	<span class="comment">//将第 1 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[i];</span><br><span class="line">            i++;k++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//将第 2 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[j];</span><br><span class="line">            j++;k++;</span><br><span class="line">        &#125; </span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)	<span class="comment">//将第 1 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[i];</span><br><span class="line">        i++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=high)	<span class="comment">//将第 2 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[j];</span><br><span class="line">        j++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">0</span>,i=low;i&lt;=high;k++,i++)	<span class="comment">//将 tmpa 复制回 a 中</span></span><br><span class="line">        a[i]=tmpa[k];</span><br><span class="line">    <span class="built_in">free</span>(tmpa);	<span class="comment">//释放 tmpa 所占内存空间</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MergePass</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> length,<span class="type">int</span> n)</span> <span class="comment">//一趟二路归并排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i+<span class="number">2</span>*length<span class="number">-1</span>&lt;n;i=i+<span class="number">2</span>*length) <span class="comment">//归并 length 长的两相邻子序列</span></span><br><span class="line">        <span class="built_in">Merge</span>(a,i,i+length<span class="number">-1</span>,i+<span class="number">2</span>*length<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span>(i+length<span class="number">-1</span>&lt;n)	<span class="comment">//余下 2 个子序列，后者长度小于 length</span></span><br><span class="line">        <span class="built_in">Merge</span>(a,i,i+length<span class="number">-1</span>,n<span class="number">-1</span>);	<span class="comment">//归并这 2 个子序列</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MergeSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//二路归并算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> length;</span><br><span class="line">    <span class="keyword">for</span>(length=<span class="number">1</span>;length&lt;n;length=<span class="number">2</span>*length)</span><br><span class="line">        <span class="built_in">MergePass</span>(a,length,n);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">MergeSort</span>(a,n);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【算法分析】对于上述二路归并排序算法，当有 n 个元素时需要 ⌈log<sub>2</sub>n⌉ 趟归并，每一趟归并，其元素比较词素不超过 n-1，元素移动次数都是 n，因此二路归并排序的时间复杂度为 O(nlog<sub>2</sub>n) 。</p>
+<h4 id="2-自顶向下的二路归并排序算法"><a href="#2-自顶向下的二路归并排序算法" class="headerlink" title="2.自顶向下的二路归并排序算法"></a>2.自顶向下的二路归并排序算法</h4><p>上述自底向上的二路归并排序算法虽然效率较高，但可读性较差。另一种是采用自顶向下的方法设计，算法更为简洁，属典型的二分法算法。</p>
+<p>实现自顶向下的二路归并排序的完整程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;malloc.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Merge</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> mid,<span class="type">int</span> high)</span></span></span><br><span class="line"><span class="function"><span class="comment">//将 2 个相邻有序子序列归并为一个有序子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span>* tmpa;</span><br><span class="line">    <span class="type">int</span> i=low,j=mid+<span class="number">1</span>,k=<span class="number">0</span>;</span><br><span class="line">    tmpa=(<span class="type">int</span>*)<span class="built_in">malloc</span>((high-low+<span class="number">1</span>)*<span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=high)</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=a[j])	<span class="comment">//将第 1 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[i];</span><br><span class="line">            i++;k++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//将第 2 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[j];</span><br><span class="line">            j++;k++;</span><br><span class="line">        &#125; </span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)	<span class="comment">//将第 1 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[i];</span><br><span class="line">        i++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=high)	<span class="comment">//将第 2 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[j];</span><br><span class="line">        j++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">0</span>,i=low;i&lt;=high;k++,i++)	<span class="comment">//将 tmpa 复制回 a 中</span></span><br><span class="line">        a[i]=tmpa[k];</span><br><span class="line">    <span class="built_in">free</span>(tmpa);	<span class="comment">//释放 tmpa 所占内存空间</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MergeSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> high)</span>	<span class="comment">//二路归并算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> mid;</span><br><span class="line">    <span class="keyword">if</span>(low&lt;high)	<span class="comment">//子序列有两个或以上元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        mid=(low+high)/<span class="number">2</span>;	<span class="comment">//取序列中间位置</span></span><br><span class="line">        <span class="built_in">MergeSort</span>(a,low,mid);	<span class="comment">//对左子序列递归排序</span></span><br><span class="line">        <span class="built_in">MergeSort</span>(a,mid+<span class="number">1</span>,high);	<span class="comment">//对右子序列递归排序</span></span><br><span class="line">        <span class="built_in">Merge</span>(a,low,mid,high);	<span class="comment">//将两子序列合并</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">MergeSort</span>(a,<span class="number">0</span>,n<span class="number">-1</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【算法分析】设 MergeSort(a,0,n-1) 算法的执行时间为 T(n)，显然 Merge(a,0,n&#x2F;2,n-1) 合并操作的执行时间为 O(n)，所以得到以下递推式：<br>$$<br>T(n) &#x3D; 1 （当 n&#x3D;1 时）<br>$$</p>
+<p>$$<br>T(n) &#x3D; 2T(n&#x2F;2) + O(n)（当 n&gt;1 时）<br>$$</p>
+<p>容易推出 T(n)&#x3D;O(nlog<sub>2</sub>n)。</p>
+<h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><p>【问题描述】对于给定的含有 n 个元素的无序序列，求这个序列中最大和次大的两个不同元素。</p>
+<p>【问题求解】对于无序序列 a[low..high]，采用分治法求最大元素 max1 和次大元素 max2 的算法程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> high,<span class="type">int</span> &amp;max1,<span class="type">int</span> &amp;max2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low==high)	<span class="comment">//区间中只有一个元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        max1=a[low];</span><br><span class="line">        max2=-INF;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(low==high<span class="number">-1</span>)	<span class="comment">//区间中只有两个元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        max1=<span class="built_in">max</span>(a[low],a[high]);</span><br><span class="line">        max2=<span class="built_in">min</span>(a[low],a[high]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>	<span class="comment">//区间中有两个以上元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> mid=(low+high)/<span class="number">2</span>;</span><br><span class="line">        <span class="type">int</span> lmax1,lmax2;</span><br><span class="line">        <span class="built_in">solve</span>(a,low,mid,lmax1,lamx2);	<span class="comment">//左区间求 lmax1 和 lmax2</span></span><br><span class="line">        <span class="type">int</span> rmax1,rmax2;</span><br><span class="line">        <span class="built_in">solve</span>(a,mid+<span class="number">1</span>,high,rmax1,rmax2);	<span class="comment">//右区间求 rmax1 和 rmax2</span></span><br><span class="line">        <span class="keyword">if</span>(lmax1&gt;rmax1)</span><br><span class="line">        &#123;</span><br><span class="line">            max1=lmax1;</span><br><span class="line">            max2=<span class="built_in">max</span>(lmax2,rmax1);	<span class="comment">//lmax2、rmax1 中求次大元素</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            max1=rmax1;</span><br><span class="line">            max2=<span class="built_in">max</span>(lmax1,rmax2);	<span class="comment">//lmax1、rmax2 中求次大元素</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【算法分析】对于 solve(a,0,n-1,max1,max2) 调用，其比较次数的递推式如下：<br>$$<br>T(1) &#x3D; T(2) &#x3D; 1<br>$$</p>
+<p>$$<br>T(n) &#x3D; 2T(n&#x2F;2) + 1 （合并的时间为O(1)）<br>$$</p>
+<p>容易推出 T(n)&#x3D;O(n)。</p>
+<h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><p>折半查找又称<strong>二分查找</strong>，它是一种效率较高的查找方法。</p>
+<p>但是折半查找要求查找序列中的元素是<strong>有序的</strong>，为了简单，假设是递增有序的。</p>
+<p>折半查找对应的完整程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">BinSearch</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> high,<span class="type">int</span> k)</span>	<span class="comment">//折半查找算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> mid;</span><br><span class="line">    <span class="keyword">if</span>(low&lt;=high)</span><br><span class="line">    &#123;</span><br><span class="line">        mid=(low+high)/<span class="number">2</span>;	<span class="comment">//求查找区间的中间位置</span></span><br><span class="line">        <span class="keyword">if</span>(a[mid]==k)	<span class="comment">//找到后返回其物理下标 mid</span></span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        <span class="keyword">if</span>(a[mid]&gt;k)	<span class="comment">//当 a[mid]&gt;k 时</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">BinSearch</span>(a,low,mid<span class="number">-1</span>,k);</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//当 a[mid]&lt;k 时</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">BinSearch</span>(a,mid+<span class="number">1</span>,high,k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">-1</span>;	<span class="comment">//若当前查找区间没有元素时返回 -1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>,i;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">6</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>&#125;;</span><br><span class="line">    i=<span class="built_in">BinSearch</span>(a,<span class="number">0</span>,n<span class="number">-1</span>,k);</span><br><span class="line">    <span class="keyword">if</span>(i&gt;=<span class="number">0</span>)<span class="built_in">printf</span>(<span class="string">&quot;a[%d]=%d\n&quot;</span>,i,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;未找到%d元素\n&quot;</span>,k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><p>【问题描述】对于给定的含有 n 个元素的无序序列，求这个序列中第 k（ 1&lt;&#x3D;k&lt;&#x3D;n ）小的元素。</p>
+<p>完整程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">QuickSelect</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s,<span class="type">int</span> t,<span class="type">int</span> k)</span>	<span class="comment">//在 a[s..t] 序列中找第 k 小的元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i=s,j=t;</span><br><span class="line">    <span class="type">int</span> tmp;</span><br><span class="line">    <span class="keyword">if</span>(s&lt;t)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp=a[s];</span><br><span class="line">        <span class="keyword">while</span>(i!=j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(j&gt;i&amp;&amp;a[j]&gt;=tmp)</span><br><span class="line">                j--;</span><br><span class="line">            a[i]=a[j];</span><br><span class="line">            <span class="keyword">while</span>(i&lt;j&amp;&amp;a[i]&lt;=tmp)</span><br><span class="line">                i++;</span><br><span class="line">            a[j]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        a[i]=tmp;</span><br><span class="line">        <span class="keyword">if</span>(k<span class="number">-1</span>==i) <span class="keyword">return</span> a[i];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(k<span class="number">-1</span>&lt;i) <span class="keyword">return</span> <span class="built_in">QuickSelect</span>(a,s,i<span class="number">-1</span>,k);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">QuickSelect</span>(a,i+<span class="number">1</span>,t,k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(s==t&amp;&amp;s==k<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">return</span> a[k<span class="number">-1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>,k;</span><br><span class="line">    <span class="type">int</span> e;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">1</span>;k&lt;=n;k++)</span><br><span class="line">    &#123;</span><br><span class="line">        e=<span class="built_in">QuickSelect</span>(a,<span class="number">0</span>,n<span class="number">-1</span>,k);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;第%d小的元素：%d\n&quot;</span>,k,e);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【算法分析】对于 QuickSelect(a,s,t,k) 算法，设序列 a 中含有 n 个元素，其比较次数的递推式为：<br>$$<br>T(n) &#x3D; T(n&#x2F;2) +O(n)<br>$$<br>可以推导出 T(n)&#x3D;O(n)，这是最好的情况，即每次划分的基准恰好是中位数，将一个序列划分为长度大致相等的两个子序列。</p>
+<p>在最坏的情况下，每次划分的基准恰好是序列中的最大值或最小值，则处理区间只比上一次减少 1 个元素，此时比较次数为 O(n<sup>2</sup>)。</p>
+<p>在平均情况下该算法的时间复杂度为 O(n)。</p>
+<h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><p>【问题描述】对于 1 个长度为 n 的有序序列（假设均为升序序列）a[0..n-1]，处于中间位置的元素称为 a 的中位数，求给定的 2 个有序序列的中位数。</p>
+<p>完整程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">prepart</span><span class="params">(<span class="type">int</span> &amp;s,<span class="type">int</span> &amp;t)</span>	<span class="comment">//求 a[s..t] 序列的前半子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m=(s+t)/<span class="number">2</span>;</span><br><span class="line">    t=m;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">postpart</span><span class="params">(<span class="type">int</span> &amp;s,<span class="type">int</span> &amp;t)</span>	<span class="comment">//求 a[s..t] 序列的后半子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m=(s+t)/<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>((s+t)%<span class="number">2</span>==<span class="number">0</span>)</span><br><span class="line">        s=m;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        s=m+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">midnum</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s1,<span class="type">int</span> t1,<span class="type">int</span> b[],<span class="type">int</span> s2,<span class="type">int</span> t2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m1,m2;</span><br><span class="line">    <span class="keyword">if</span>(s1==t1&amp;&amp;s2==t2)	<span class="comment">//2 个序列只有 1 个元素时，返回较小者</span></span><br><span class="line">        <span class="keyword">return</span> a[s1]&lt;b[s2]?a[s1]:b[s2];</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        m1=(s1+t1)/<span class="number">2</span>;	<span class="comment">//求 a 的中位数</span></span><br><span class="line">        m2=(s2+t2)/<span class="number">2</span>;	<span class="comment">//求 b 的中位数</span></span><br><span class="line">        <span class="keyword">if</span>(a[m1]==b[m2])	<span class="comment">//2 个中位数相等时，返回该中位数</span></span><br><span class="line">            <span class="keyword">return</span> a[m1];</span><br><span class="line">        <span class="keyword">if</span>(a[m1]&lt;b[m2])	<span class="comment">//当a[m1]&lt;b[m2]时</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">postpart</span>(s1,t1);	<span class="comment">//a 取后半部分</span></span><br><span class="line">            <span class="built_in">prepart</span>(s2,t2);	<span class="comment">//b 取前半部分</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">midnum</span>(a,s1,t1,b,s2,t2);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//当 a[m1]&gt;b[m2] 时</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">prepart</span>(s1,t1); <span class="comment">//a 取前半部分</span></span><br><span class="line">            <span class="built_in">postpart</span>(s2,t2); <span class="comment">//b 取后半部分</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">midnum</span>(a,s1,t1,b,s2,t2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">11</span>,<span class="number">13</span>,<span class="number">15</span>,<span class="number">17</span>,<span class="number">19</span>&#125;;</span><br><span class="line">    <span class="type">int</span> b[]=&#123;<span class="number">2</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">20</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;中位数：%d\n&quot;</span>,<span class="built_in">midnum</span>(a,<span class="number">0</span>,<span class="number">4</span>,b,<span class="number">0</span>,<span class="number">4</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【算法分析】对于含有 n 个元素的有序序列 a 和 b，设调用 midnum(a,0,n-1,b,0,n-1) 求中位数的执行时间为 T(n)，显然有以下递推式：<br>$$<br>T(n) &#x3D; 1 （当 n&#x3D;1 时）<br>$$</p>
+<p>$$<br>T(n) &#x3D; T(n&#x2F;2) + 1（当 n&gt;1 时）<br>$$</p>
+<p>容易推出 T(n)&#x3D;O(log<sub>2</sub>n)。</p>
+<hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -1239,6 +1888,107 @@
       </tags>
   </entry>
   <entry>
+    <title>第4章 软件工程项目评价方法与经济效果评价</title>
+    <url>/posts/a0090004.html</url>
+    <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
+<h3 id="4-1-2-层次分析法"><a href="#4-1-2-层次分析法" class="headerlink" title="4.1.2 层次分析法"></a>4.1.2 层次分析法</h3><p>层次分析法的步骤如下：</p>
+<ol>
+<li>建立层次结构模型</li>
+<li>构造判断比较矩阵</li>
+<li>进行层次单排序</li>
+<li>进行一致性检验</li>
+</ol>
+<h3 id="4-1-3-平均值法"><a href="#4-1-3-平均值法" class="headerlink" title="4.1.3 平均值法"></a>4.1.3 平均值法</h3><p>平均值法是指计算每个待评价方案 A<sub>k</sub> 在不同综合评价方法求解结果中的平均“优序”数，并依据每个待评价方案的平均优序数大小来决定该方案的排序位置的评价方法。、</p>
+<p>【例4.4】设有 5 个待评方案，采用 4 种综合评价方法求解，其求解所得的排序结果如下表所示，试运用平均值法确定这 5 种方案的最终排序。</p>
+<table>
+<thead>
+<tr>
+<th align="center">方案</th>
+<th align="center">M<sub>1</sub></th>
+<th align="center">M<sub>2</sub></th>
+<th align="center">M<sub>3</sub></th>
+<th align="center">M<sub>4</sub></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">A<sub>1</sub></td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">A<sub>2</sub></td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">A<sub>3</sub></td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">A<sub>4</sub></td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">A<sub>5</sub></td>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<p>解：根据题意和表数据可得：<br>$$<br>\bar{d_1} &#x3D; \frac{1+3+2+3}{4} &#x3D; 2.25<br>$$</p>
+<p>$$<br>\bar{d_2} &#x3D; \frac{3+1+3+5}{4} &#x3D; 3<br>$$</p>
+<p>$$<br>\bar{d_3} &#x3D; \frac{2+2+4+2}{4} &#x3D; 2.5<br>$$</p>
+<p>$$<br>\bar{d_4} &#x3D; \frac{4+5+1+4}{4} &#x3D; 3.5<br>$$</p>
+<p>$$<br>\bar{d_5} &#x3D; \frac{5+4+5+1}{4} &#x3D; 3.75<br>$$</p>
+<p>由于<br>$$<br>\bar{d_1}&lt;\bar{d_3}&lt;\bar{d_2}&lt;\bar{d_4}&lt;\bar{d_5}<br>$$<br>故有最终排序结果为<br>$$<br>A_1&gt;A_3&gt;A_2&gt;A_4&gt;A_5<br>$$</p>
+<h2 id="4-2-软件工程项目的现金流量"><a href="#4-2-软件工程项目的现金流量" class="headerlink" title="4.2 软件工程项目的现金流量"></a>4.2 软件工程项目的现金流量</h2><ol>
+<li>现金流入</li>
+<li>现金流出</li>
+<li>所得税前净现金流量</li>
+<li>累计所得税前净现金流量</li>
+<li>调整所得税</li>
+<li>所得税后净现金流量</li>
+<li>累计所得税后净现金流量</li>
+</ol>
+<h2 id="4-3-软件工程项目的经济效果评价"><a href="#4-3-软件工程项目的经济效果评价" class="headerlink" title="4.3 软件工程项目的经济效果评价"></a>4.3 软件工程项目的经济效果评价</h2><h3 id="4-3-1-独立方案项目评价"><a href="#4-3-1-独立方案项目评价" class="headerlink" title="4.3.1 独立方案项目评价"></a>4.3.1 独立方案项目评价</h3><p>所谓独立方案项目评价，是指<strong>对某一给定的软件工程项目投资方案从技术经济角度出发作出是否可行的判断或者评价。</strong></p>
+<p>主要采用以下两种方法进行评价。</p>
+<ol>
+<li><p>净现值法</p>
+<p>公式如下（无残值）：<br>$$<br>NPV &#x3D; \sum_{t&#x3D;0}^{N}\frac{B_t-C_t-K_t}{(1+i)^t}<br>$$<br>式中，NPV 表示软件项目工程的净现值；B<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的收益；C<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的成本或支出；K<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的投资额；N 表示软件工程项目的使用年限；i 表示基准贴现率。</p>
+<ul>
+<li>若 NPV ＞ 0，则说明在基准贴现率 i 的水平下，该软件工程项目可盈利，从经济效果角度来看，该项目可投资。</li>
+<li>若 NPV &lt;&#x3D; 0，则说明在基准贴现率 i 的水平下，该软件工程项目仅仅能够收支平衡甚至亏损，从经济效果角度来看，该项目投资不可行。</li>
+</ul>
+</li>
+<li><p>内部收益率法</p>
+</li>
+</ol>
+<h3 id="4-3-2-多方案项目评价"><a href="#4-3-2-多方案项目评价" class="headerlink" title="4.3.2 多方案项目评价"></a>4.3.2 多方案项目评价</h3><ol>
+<li>净现值法</li>
+<li>净年值法</li>
+<li>研究期法</li>
+<li>多方案组合排序法</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第3章 软件的成本管理与定价分析</title>
     <url>/posts/a0090003.html</url>
     <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
@@ -1693,107 +2443,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第4章 软件工程项目评价方法与经济效果评价</title>
-    <url>/posts/a0090004.html</url>
-    <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
-<h3 id="4-1-2-层次分析法"><a href="#4-1-2-层次分析法" class="headerlink" title="4.1.2 层次分析法"></a>4.1.2 层次分析法</h3><p>层次分析法的步骤如下：</p>
-<ol>
-<li>建立层次结构模型</li>
-<li>构造判断比较矩阵</li>
-<li>进行层次单排序</li>
-<li>进行一致性检验</li>
-</ol>
-<h3 id="4-1-3-平均值法"><a href="#4-1-3-平均值法" class="headerlink" title="4.1.3 平均值法"></a>4.1.3 平均值法</h3><p>平均值法是指计算每个待评价方案 A<sub>k</sub> 在不同综合评价方法求解结果中的平均“优序”数，并依据每个待评价方案的平均优序数大小来决定该方案的排序位置的评价方法。、</p>
-<p>【例4.4】设有 5 个待评方案，采用 4 种综合评价方法求解，其求解所得的排序结果如下表所示，试运用平均值法确定这 5 种方案的最终排序。</p>
-<table>
-<thead>
-<tr>
-<th align="center">方案</th>
-<th align="center">M<sub>1</sub></th>
-<th align="center">M<sub>2</sub></th>
-<th align="center">M<sub>3</sub></th>
-<th align="center">M<sub>4</sub></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">A<sub>1</sub></td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center">2</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="center">A<sub>2</sub></td>
-<td align="center">3</td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">A<sub>3</sub></td>
-<td align="center">2</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">A<sub>4</sub></td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">1</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">A<sub>5</sub></td>
-<td align="center">5</td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">1</td>
-</tr>
-</tbody></table>
-<p>解：根据题意和表数据可得：<br>$$<br>\bar{d_1} &#x3D; \frac{1+3+2+3}{4} &#x3D; 2.25<br>$$</p>
-<p>$$<br>\bar{d_2} &#x3D; \frac{3+1+3+5}{4} &#x3D; 3<br>$$</p>
-<p>$$<br>\bar{d_3} &#x3D; \frac{2+2+4+2}{4} &#x3D; 2.5<br>$$</p>
-<p>$$<br>\bar{d_4} &#x3D; \frac{4+5+1+4}{4} &#x3D; 3.5<br>$$</p>
-<p>$$<br>\bar{d_5} &#x3D; \frac{5+4+5+1}{4} &#x3D; 3.75<br>$$</p>
-<p>由于<br>$$<br>\bar{d_1}&lt;\bar{d_3}&lt;\bar{d_2}&lt;\bar{d_4}&lt;\bar{d_5}<br>$$<br>故有最终排序结果为<br>$$<br>A_1&gt;A_3&gt;A_2&gt;A_4&gt;A_5<br>$$</p>
-<h2 id="4-2-软件工程项目的现金流量"><a href="#4-2-软件工程项目的现金流量" class="headerlink" title="4.2 软件工程项目的现金流量"></a>4.2 软件工程项目的现金流量</h2><ol>
-<li>现金流入</li>
-<li>现金流出</li>
-<li>所得税前净现金流量</li>
-<li>累计所得税前净现金流量</li>
-<li>调整所得税</li>
-<li>所得税后净现金流量</li>
-<li>累计所得税后净现金流量</li>
-</ol>
-<h2 id="4-3-软件工程项目的经济效果评价"><a href="#4-3-软件工程项目的经济效果评价" class="headerlink" title="4.3 软件工程项目的经济效果评价"></a>4.3 软件工程项目的经济效果评价</h2><h3 id="4-3-1-独立方案项目评价"><a href="#4-3-1-独立方案项目评价" class="headerlink" title="4.3.1 独立方案项目评价"></a>4.3.1 独立方案项目评价</h3><p>所谓独立方案项目评价，是指<strong>对某一给定的软件工程项目投资方案从技术经济角度出发作出是否可行的判断或者评价。</strong></p>
-<p>主要采用以下两种方法进行评价。</p>
-<ol>
-<li><p>净现值法</p>
-<p>公式如下（无残值）：<br>$$<br>NPV &#x3D; \sum_{t&#x3D;0}^{N}\frac{B_t-C_t-K_t}{(1+i)^t}<br>$$<br>式中，NPV 表示软件项目工程的净现值；B<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的收益；C<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的成本或支出；K<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的投资额；N 表示软件工程项目的使用年限；i 表示基准贴现率。</p>
-<ul>
-<li>若 NPV ＞ 0，则说明在基准贴现率 i 的水平下，该软件工程项目可盈利，从经济效果角度来看，该项目可投资。</li>
-<li>若 NPV &lt;&#x3D; 0，则说明在基准贴现率 i 的水平下，该软件工程项目仅仅能够收支平衡甚至亏损，从经济效果角度来看，该项目投资不可行。</li>
-</ul>
-</li>
-<li><p>内部收益率法</p>
-</li>
-</ol>
-<h3 id="4-3-2-多方案项目评价"><a href="#4-3-2-多方案项目评价" class="headerlink" title="4.3.2 多方案项目评价"></a>4.3.2 多方案项目评价</h3><ol>
-<li>净现值法</li>
-<li>净年值法</li>
-<li>研究期法</li>
-<li>多方案组合排序法</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第5章 软件生产函数、效益分析及不确定性分析</title>
     <url>/posts/a0090005.html</url>
     <content><![CDATA[<h2 id="5-1-生产函数与软件生产函数"><a href="#5-1-生产函数与软件生产函数" class="headerlink" title="5.1 生产函数与软件生产函数"></a>5.1 生产函数与软件生产函数</h2><p>生产是指<strong>厂商对各种生产要素加以组合制成产品的过程</strong>。</p>
@@ -1949,14 +2598,92 @@
       </tags>
   </entry>
   <entry>
-    <title>《算法设计与分析》</title>
-    <url>/posts/a0060000.html</url>
-    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3>]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
+    <title>第6章 软件工程项目进度计划的制订</title>
+    <url>/posts/a0090006.html</url>
+    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
+<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
+<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
+<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
+<ol>
+<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
+<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
+<li>WBS 必须与项目实际工作中的执行方式一样。</li>
+<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
+</ol>
+<p>WBS 的创建步骤如下：</p>
+<ol>
+<li>识别可交付成果及相关工作。</li>
+<li>确定 WBS 的分解方式和编排结构。</li>
+<li>创建 WBS。</li>
+<li>验证 WBS 的合理性及正确性。</li>
+<li>建立 WBS 编码系统。</li>
+</ol>
+<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
+<ol>
+<li><p>完成对开始</p>
+</li>
+<li><p>开始对开始</p>
+</li>
+<li><p>完成对完成</p>
+</li>
+<li><p>开始对完成</p>
+</li>
+<li><p><strong>双代号网络计划图的绘制规则</strong></p>
+<ol>
+<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
+<li>不得出现回路。</li>
+<li>不得出现双箭头或者不带箭头的活动。</li>
+<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
+<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
+<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
+<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
+<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
+<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
+<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
+</ol>
+</li>
+<li><p><strong>项目工作时长的算法</strong></p>
+<ol>
+<li><p>三点估算法</p>
+<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
+</li>
+<li><p>专家估算法</p>
+<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
+<ol>
+<li>总时差最少的项目工作应确定为关键工作。</li>
+<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
+<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
+</ol>
+<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
+<li><strong>通过时间参数确定关键线路</strong></li>
+<li><strong>通过标号法确定关键线路</strong></li>
+</ol>
+<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
+<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
+<ol>
+<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
+<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
+<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
+<li>选择缩短工作时长的关键工作。</li>
+<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
+<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
+</ol>
+<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
+<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
+<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
+<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
+<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
+<hr>
+<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
+]]></content>
       <tags>
-        <tag>算法</tag>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
@@ -2066,95 +2793,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第6章 软件工程项目进度计划的制订</title>
-    <url>/posts/a0090006.html</url>
-    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
-<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
-<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
-<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
-<ol>
-<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
-<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
-<li>WBS 必须与项目实际工作中的执行方式一样。</li>
-<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
-</ol>
-<p>WBS 的创建步骤如下：</p>
-<ol>
-<li>识别可交付成果及相关工作。</li>
-<li>确定 WBS 的分解方式和编排结构。</li>
-<li>创建 WBS。</li>
-<li>验证 WBS 的合理性及正确性。</li>
-<li>建立 WBS 编码系统。</li>
-</ol>
-<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
-<ol>
-<li><p>完成对开始</p>
-</li>
-<li><p>开始对开始</p>
-</li>
-<li><p>完成对完成</p>
-</li>
-<li><p>开始对完成</p>
-</li>
-<li><p><strong>双代号网络计划图的绘制规则</strong></p>
-<ol>
-<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
-<li>不得出现回路。</li>
-<li>不得出现双箭头或者不带箭头的活动。</li>
-<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
-<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
-<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
-<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
-<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
-<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
-<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
-</ol>
-</li>
-<li><p><strong>项目工作时长的算法</strong></p>
-<ol>
-<li><p>三点估算法</p>
-<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
-</li>
-<li><p>专家估算法</p>
-<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
-<ol>
-<li>总时差最少的项目工作应确定为关键工作。</li>
-<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
-<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
-</ol>
-<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
-<li><strong>通过时间参数确定关键线路</strong></li>
-<li><strong>通过标号法确定关键线路</strong></li>
-</ol>
-<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
-<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
-<ol>
-<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
-<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
-<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
-<li>选择缩短工作时长的关键工作。</li>
-<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
-<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
-</ol>
-<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
-<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
-<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
-<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
-<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
-<hr>
-<p><a href="https://georgedi.top/posts/a0090000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第8章 软件测试</title>
     <url>/posts/a0090008.html</url>
     <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
@@ -2232,629 +2870,6 @@
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第1章 概论</title>
-    <url>/posts/a0060001.html</url>
-    <content><![CDATA[<h2 id="1-1-算法的概念"><a href="#1-1-算法的概念" class="headerlink" title="1.1 算法的概念"></a>1.1 算法的概念</h2><h3 id="1-1-1-什么是算法"><a href="#1-1-1-什么是算法" class="headerlink" title="1.1.1 什么是算法"></a>1.1.1 什么是算法</h3><p>算法（ algorithm ）是<strong>求解问题的一系列计算步骤</strong>，用来将<strong>输入数据</strong>转换成<strong>输出结果</strong>。</p>
-<p>如果一个算法对其每一个输入实例都能输出正确的结果并停止，则称它是正确的。一个正确的算法解决了给定的求解问题，不正确的算法对于某些输入来说可能根本不会停止，或者停止时给出的不是预期的结果。</p>
-<p>算法设计应满足以下几个目标：</p>
-<ol>
-<li><strong>正确性</strong>：要求算法能够正确地执行预先规定的功能和性能要求。这是最重要也是最基本的标准。</li>
-<li><strong>可使用性</strong>：要求算法能够很方便地使用。这个特性也叫作用户友好性。</li>
-<li><strong>可读性</strong>：算法应该易于人的理解，也就是可读性好。为了达到这个要求，算法的逻辑必须是清晰的、简单的和结构化的。</li>
-<li><strong>健壮性</strong>：要求算法具有很好的容错性，即提供异常处理，能够对不合理的数据进行检查，不经常出现异常中断或死机现象。</li>
-<li><strong>高效率与低存储量需求</strong>：通常，算法的效率主要指算法的执行时间。对于同一个问题如果有多种算法可以求解，执行时间短的算法效率高。算法存储量指的是算法执行过程中所需的最大存储空间。效率和低存储量都与问题的规模有关。</li>
-</ol>
-<p>算法具有以下 5 个重要特性：</p>
-<ol>
-<li><strong>有限性</strong>：一个算法必须总是（对任何合法的输入值）在执行有限步之后结束，且每一步都可在有限时间内完成。</li>
-<li><strong>确定性</strong>：算法中的每一条指令必须有确切的含义，不会产生二义性。</li>
-<li><strong>可行性</strong>：算法中的每一条运算都必须是足够基本的，也就是说它们在原则上都能精确地执行，甚至人们仅用笔和纸做有限次运算就能完成。</li>
-<li><strong>输入性</strong>：一个算法有零个或多个输入。大多数算法的输入参数是必要的，但对于较简单的算法，如计算 1+2 的值，不需要任何输入参数，因此算法的输入可以是零个。</li>
-<li><strong>输出性</strong>：一个算法有一个或多个输出。算法用于某种数据处理，如果没有输出，这样的算法是没有意义的，这些输出是和输入有着某些特定关系的量。</li>
-</ol>
-<h3 id="1-1-2-算法描述"><a href="#1-1-2-算法描述" class="headerlink" title="1.1.2 算法描述"></a>1.1.2 算法描述</h3><p>描述算法的方式很多，有的采用类 Pascal 语言，有的采用自然语言伪码。</p>
-<p>本知识库采用 C&#x2F;C++ 语言描述算法的实现过程，通常用 C&#x2F;C++ 函数来描述算法。</p>
-<p>以设计求 1+2+…+n 的值的算法为例说明 C&#x2F;C++ 语言描述算法的一般形式，该算法如下所示：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;	<span class="comment">//当参数错误时返回 false</span></span><br><span class="line">    s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        s+=i;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;	<span class="comment">//当参数正确并产生正确结果时返回 true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>通常用函数的返回值表示算法能否正确执行，当算法只有一个返回值或者返回值可以区分算法是否正确执行时用函数返回值来表示算法的执行结果，另外还可以带有形参表示算法的输入&#x2F;输出。</p>
-<p>任何算法（用函数描述）都是被调用的（在 C&#x2F;C++ 语言中除 main 函数外任何一个函数都会被其他函数调用，如果一个函数不被调用，这样的函数是没有意义的）。在 C 语言中调用函数时只有从实参到形参的单向值传递，在执行函数时若改变了形参，对应的实参不会同步改变。例如设计以下主函数调用上面的 fun 函数。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a=<span class="number">10</span>,b=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">fun</span>(a,b)) <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,b);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span> (<span class="string">&quot;参数错误＼n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在执行时发现输出结果为 0，因为 b 对应的形参为 s，fun 执行后 s&#x3D;55，但 s 并没有回传给实参 b。在 C 语言中可以用传指针方式来实现形参的回传，但增加了函数的复杂性。为此在 C++ 语言中增加了引用型参数的概念，<strong>引用型参数名前需加上 &amp;，表示这样的形参在执行后会将结果回传给对应的实参。</strong></p>
-<p>上例采用 C++ 语言描述算法如下所示：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> &amp;s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">if</span>(n&lt;=<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;	<span class="comment">//当参数错误时返回 false</span></span><br><span class="line">    s=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">        s+=i;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;	<span class="comment">//当参数正确并产生正确结果时返回 true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>当将形参 s 改为引用类型的参数后，在执行时 main 函数的输出结果就正确了，即输出 55。</p>
-<p>由于 C 语言不支持引用类型，C++ 语言支持引用类型，所以本知识库的算法描述语言为 C&#x2F;C++ 语言。需要注意的是，在 C&#x2F;C++ 语言中数组本身就是一种引用类型，所以当数组作为形参需要回传数据时其数组名之前不需要加 &amp;，它自动将形参数组的值回传给实参数组。</p>
-<blockquote>
-<p>在设计算法时，如果某个形参需要将执行结果回传给实参，则将该形参设计为引用型参数。带有引用型参数的程序不能在 Turbo C 中运行，可以在 BC++、Visual C++、Dev C++ 等编译环境中运行，通常程序文件扩展名为 .cpp 而不是 .c。</p>
-</blockquote>
-<h3 id="1-1-3-算法和数据结构"><a href="#1-1-3-算法和数据结构" class="headerlink" title="1.1.3 算法和数据结构"></a>1.1.3 算法和数据结构</h3><p>算法与数据结构既有联系又有区别。</p>
-<p>数据结构是算法设计的基础。算法的操作对象是数据结构，在设计算法时通常要构建适合这种算法的数据结构。数据结构设计主要是选择数据的存储方式，例如确定求解问题中的数据采用数组存储还是采用链表存储等。算法设计就是在选定的存储结构上设计一个满足要求的好算法。</p>
-<p>另外，数据结构关注的是数据的逻辑结构、存储结构以及基本操作，而算法更多的是关注如何在数据结构的基础上解决实际问题。算法是编程思想，数据结构则是这些思想的逻辑基础。</p>
-<h3 id="1-1-4-算法设计的基本步骤"><a href="#1-1-4-算法设计的基本步骤" class="headerlink" title="1.1.4 算法设计的基本步骤"></a>1.1.4 算法设计的基本步骤</h3><p>算法是求解问题的解决方案，这个解决方案本身并不是问题的答案，而是能获得答案的指令序列，即算法，通过算法的执行获得求解问题的答案。</p>
-<p>算法设计是一个灵活的充满智慧的过程，其基本步骤如下所示：</p>
-<ol>
-<li>分析求解问题：确定求解问题的目标（功能）、给定的条件（输入）和生成的结果（输出）。</li>
-<li>选择数据结构和算法设计策略：设计数据对象的存储结构，因为算法的效率取决于数据对象的存储表示。算法设计有一些通用策略，例如迭代法、分治法、动态规划和回溯法等，需要针对求解问题选择合适的算法设计策略。</li>
-<li>描述算法：在构思和设计好一个算法后必须清楚、准确地将所设计的求解步骤记录下来，即描述算法。</li>
-<li>证明算法正确性：算法正确性证明与数学证明有类似之处，因此可以采用数学证明方法，但用纯数字方法证明算法的正确不仅耗时，而且对大型软件开发也不适用。一般而言，为所有算法都给出完全的数学证明并不现实，因此选择那些已知是正确的算法自然能大大减少出错的机会。</li>
-<li>算法分析：同一问题的求解算法可能有多种，可以通过算法分析找到好的算法。一般来说，一个好的算法应该比同类算法的时间和空间效率高。</li>
-</ol>
-<h2 id="1-2-算法分析"><a href="#1-2-算法分析" class="headerlink" title="1.2 算法分析"></a>1.2 算法分析</h2><p>计算机资源主要包括计算时间和内存空间，算法分析是分析算法占用计算机资源的情况，所以算法分析的两个主要方面是分析算法的时间复杂度和空间复杂度，其目的不是分析算法是否正确或是否容易阅读，主要是考察算法的时间和空间效率，以求改进算法或对不同的算法进行比较。</p>
-<p>那么如何评价算法的效率呢？通常有两种衡量算法效率的方法：<strong>事后统计法</strong>和<strong>事前分析估算法</strong>。</p>
-<p>前者存在这些缺点：一是必须执行程序，二是存在其他因素掩盖算法本质。</p>
-<p>所以下面均采用事前分析估算法来分析算法效率。</p>
-<p>分析算法占用计算机资源的情况，占用资源越多、算法复杂度越高，效率越低，反之占用的资源少、复杂度越低，效率越高。</p>
-<p>衡量算法复杂性有2个维度：</p>
-<ul>
-<li>时间复杂度 𝑇(𝑛)：抽象计算机上运行所需时间。</li>
-<li>空间复杂度 𝑆(𝑛) ：抽象计算机上运行所需空间。</li>
-</ul>
-<p>※𝑛：要解决的问题规模。</p>
-<h3 id="1-2-1-算法时间复杂度分析"><a href="#1-2-1-算法时间复杂度分析" class="headerlink" title="1.2.1 算法时间复杂度分析"></a>1.2.1 算法时间复杂度分析</h3><h4 id="1-时间复杂度分析概述"><a href="#1-时间复杂度分析概述" class="headerlink" title="1.时间复杂度分析概述"></a>1.时间复杂度分析概述</h4><p>一个算法用高级语言实现后，在计算机上运行时所消耗的时间与很多因素有关，例如计算机的运行速度、编写程序采用的计算机语言、编译产生的机器语言代码质量和问题的规模等。</p>
-<p>在这些因素中，前 3 个都与具体的机器有关。撇开这些与计算机硬件、软件有关的因素，仅考虑算法本身的效率高低，可以认为一个特定算法的“运行工作量”的大小只依赖于问题的规模（通常用整数量 n 表示），或者说它是问题规模的函数。这便是事前分析估算法。</p>
-<p>算法的执行时间主要与<strong>问题规模</strong>有关，例如数组的元素个数、矩阵的阶数等都可作为问题规模。</p>
-<p>算法执行时间是算法中所有语句的执行时间之和，显然与算法中所有语句的执行次数成正比。</p>
-<p>为了客观地反映一个算法的执行时间，可以用算法中基本语句的执行次数来度量，算法中的<strong>基本语句</strong>是执行次数与整个算法的执行次数成正比的语句，它对算法执行时间的贡献最大，是算法中最重要的操作。</p>
-<p>通常基本语句是算法中最深层循环内的语句。</p>
-<p>采用渐进符号表示的算法时间复杂度也称为渐进时间复杂度，它反映的是一种增长趋势。</p>
-<p>假设机器速度是每秒 10<sup>8</sup> 次基本运算，有阶分别为 n<sup>3</sup>、n<sup>2</sup>、nlog<sub>2</sub>n、n、2<sup>n</sup> 和 n! 的算法，在 1 秒之内能够解决的最大问题规模 n 如下所示：</p>
-<table>
-<thead>
-<tr>
-<th align="center">算法的阶</th>
-<th align="center">n!</th>
-<th align="center">2<sup>n</sup></th>
-<th align="center">n<sup>3</sup></th>
-<th align="center">n<sup>2</sup></th>
-<th align="center">nlog<sub>2</sub>n</th>
-<th align="center">n</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1 秒解决的最大问题规模 n</td>
-<td align="center">11</td>
-<td align="center">26</td>
-<td align="center">464</td>
-<td align="center">10,000</td>
-<td align="center">4.5×106</td>
-<td align="center">100,000,000</td>
-</tr>
-<tr>
-<td align="center">机器速度提高 2 倍后 1 秒解决的最大问题规模 n</td>
-<td align="center">11</td>
-<td align="center">27</td>
-<td align="center">584</td>
-<td align="center">14,142</td>
-<td align="center">8.6×106</td>
-<td align="center">200,000,000</td>
-</tr>
-</tbody></table>
-<p>从中看出，阶为 n! 和 2<sup>n</sup> 的算法不仅解决的问题规模非常小，而且增长缓慢；执行速度最快的阶为 nlog<sub>2</sub>n 和 n 的算法不仅解决的问题规模大，而且增长快。</p>
-<p>通常称渐进时间复杂度为多项式的算法为有效算法，而称 n! 或 2<sup>n</sup> 这样的低效算法为指数时间算法。</p>
-<h4 id="2-渐进符号（-O、Ω-和-Θ）"><a href="#2-渐进符号（-O、Ω-和-Θ）" class="headerlink" title="2.渐进符号（ O、Ω 和 Θ）"></a>2.渐进符号（ O、Ω 和 Θ）</h4><ul>
-<li><p><strong>定义 1（大 O 符号）</strong>：f(n)&#x3D;O(g(n))（读作“f(n) 是 g(n) 的大 O”），当且仅当存在正常量 c 和 n<sub>0</sub>，使当 n≥n<sub>0</sub> 时 f(n)≤cg(n)，即 <strong>g(n）为 f(n) 的上界</strong>。</p>
-<p>大 O 符号用来描述增长率的上界，表示 f(n) 的增长最多像 g(n) 的增长那样快，也就是说当输入规模为 n 时算法消耗时间的最大值。</p>
-<p>这个上界的阶越低，结果就越有价值。</p>
-<p>当一个算法的时间用大 O 符号表示时，总是采用最有价值的 g(n) 表示，称之为“紧凑上界”或“紧确上界”。</p>
-<p>说明：在算法分析中，大 O 符号的应用非常广泛。因为它简化了增长数量级上界的描述，甚至也适合一些无法进行精确分析的复杂算法。</p>
-</li>
-<li><p><strong>定义 2（大 Ω 符号）</strong>: f(n)&#x3D;Ω(g(n))（读作”f(n) 是 g(n) 的大 Ω”），当且仅当存在正常量 c 和 n<sub>0</sub>，使当 n≥n<sub>0</sub> 时 f(n)≥cg(n)，即 <strong>g(n) 为 f(n) 的下界</strong>。</p>
-<p>大 Ω 符号用来描述增长率的下界，表示 f(n) 的增长最少像 g(n) 的增长那样快，也就是说，当输入规模为 n 时算法消耗时间的最小值。</p>
-<p>与大 O 符号相反，这个下界的阶越高，结果就越有价值。</p>
-</li>
-<li><p><strong>定义 3（大 Θ 符号）</strong>：f(n)&#x3D;Θ(g(n))（读作”f(n) 是 g(n) 的大 Θ”），当且仅当存在正常量 c<sub>1</sub>、c<sub>2</sub> 和 n<sub>0</sub>，使当 n≥n<sub>0</sub> 时有 c<sub>1</sub>g(n)≤f(n)≤c<sub>2</sub>g(n)，即 <strong>g(n) 与 f(n) 的同阶</strong>。</p>
-<p>大 Θ 符号比大 O 符号和大 Ω 符号都精确，f(n)&#x3D;O(g(n))，当且仅当 g(n) 既是 f(n) 的上界又是 f(n) 的下界。</p>
-</li>
-</ul>
-<p>渐进符号具有以下特性：</p>
-<ol>
-<li><strong>传递性</strong></li>
-<li><strong>自反性</strong></li>
-<li><strong>对称性</strong></li>
-<li><strong>算术运算</strong></li>
-</ol>
-<h4 id="3-算法的最好、最坏和平均情况"><a href="#3-算法的最好、最坏和平均情况" class="headerlink" title="3.算法的最好、最坏和平均情况"></a>3.算法的最好、最坏和平均情况</h4><ul>
-<li><p><strong>定义 4</strong>：设一个算法的输入规模为 n，D<sub>n</sub> 是所有输入的集合，任一输入 I∈D<sub>n</sub>，P(I) 是 I 出现的概率，有 ΣP(I)&#x3D;1，T(I) 是算法在输入 I 下所执行的基本语句次数，则该算法的平均执行时间为 A(n)&#x3D;ΣP(I)*T(I)，也就是说算法的平均情况是指各种特定输入下的基本语句执行次数的带权平均值。</p>
-<p>算法的最好情况为 G(n)&#x3D;MIN{T(I)}，是指算法在所有输入 I 下所执行基本语句的最少执行次数。</p>
-<p>算法的最坏情况为 W(n)&#x3D;MAX{T(I)}，是指算法在所有输入 I 下所执行基本语句的最大执行次数。</p>
-</li>
-</ul>
-<h3 id="1-2-2-算法空间复杂度分析"><a href="#1-2-2-算法空间复杂度分析" class="headerlink" title="1.2.2 算法空间复杂度分析"></a>1.2.2 算法空间复杂度分析</h3><p>一个算法的存储量包括形参所占空间和临时变量所占空间。在对算法进行存储空间分析时只考察临时变量所占空间。</p>
-<p>若所需临时空间相对于输入数据量来说是常数，则称此算法为<strong>原地工作</strong>或<strong>就地工作</strong>算法。</p>
-<p>若所需临时空间依赖于特定的输入，则通常按最坏情况来考虑。</p>
-<h2 id="1-3-算法设计工具——STL"><a href="#1-3-算法设计工具——STL" class="headerlink" title="1.3 算法设计工具——STL"></a>1.3 算法设计工具——STL</h2><p>数据结构课程主要讲授一些常用的数据结构及其算法设计思想，对于计算机专业的学生，学习和掌握这些基本知识是十分必要的。另一方面，C++ 中已经实现了数据结构中的很多容器和算法，它们构成标准 C++ 库的子集，即标准模板类库（ Standard Template Library，STL ）。</p>
-<p>STL 是一个功能强大的基于模板的容器库，通过直接使用这些现成的标准化组件可以大大提高算法设计的效率和可靠性。</p>
-<blockquote>
-<p>说明：对于算法设计者而言，最好遵循“尽可能使用 STL 而不自己实现”的原则。</p>
-</blockquote>
-<h3 id="1-3-1-STL-概述"><a href="#1-3-1-STL-概述" class="headerlink" title="1.3.1 STL 概述"></a>1.3.1 STL 概述</h3><p>STL 主要由 container（容器）、algorithm（算法）和 iterator（迭代器）三大部分构成，容器用于存放数据对象（元素），算法用于操作容器中的数据对象。</p>
-<p>尽管各种容器的内部结构各异，但其外部给人的感觉通常是相似的，即将容器数据的操作设计成通用算法，也就是将算法和容器分离开来。算法和容器之间的中介就是迭代器。</p>
-<p><strong>容器</strong>、<strong>算法</strong>和<strong>迭代器</strong>称为 STL 的三大件，它们之间的关系如下图所示：</p>
-<img src="https://s1.ax1x.com/2023/06/04/pCCPy8A.jpg" alt="STL三大件" style="zoom:67%;" />
-
-<h4 id="1-什么是-STL-容器"><a href="#1-什么是-STL-容器" class="headerlink" title="1.什么是 STL 容器"></a>1.什么是 STL 容器</h4><p>简单地说，一个 STL 容器就是一种数据结构，例如链表、栈和队列等，这些数据结构在 STL 中都已经实现好了，在算法设计中可以直接使用它们。</p>
-<p>以下是常用的数据结构和相应的头文件：</p>
-<table>
-<thead>
-<tr>
-<th align="center">数据结构</th>
-<th align="center">说明</th>
-<th align="center">实现头文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">向量（ vector ）</td>
-<td align="center">连续存储元素。底层数据结构为数组。支持快速随机访问。</td>
-<td align="center">&lt; vector &gt;</td>
-</tr>
-<tr>
-<td align="center">字符串（ string ）</td>
-<td align="center">字符串处理容器。</td>
-<td align="center">&lt; string &gt;</td>
-</tr>
-<tr>
-<td align="center">双端队列（ deque ）</td>
-<td align="center">连续存储的指向不同元素的指针所组成的数组。底层数据结构为一个中央控制器和多个缓冲区，支持首尾元素（中间不能）快速增删，也支持随机访问。</td>
-<td align="center">&lt; deque &gt;</td>
-</tr>
-<tr>
-<td align="center">链表（ list ）</td>
-<td align="center">由结点组成的链表，每个结点包含着一个元素。底层数据结构为双向链表，支持结点的快速增删。</td>
-<td align="center">&lt; list &gt;</td>
-</tr>
-<tr>
-<td align="center">栈（ stack ）</td>
-<td align="center">后进先出的序列。底层一般用 deque 或者 list 实现。</td>
-<td align="center">&lt; stack &gt;</td>
-</tr>
-<tr>
-<td align="center">队列（ queue ）</td>
-<td align="center">先进先出的序列。底层一般用 deque 或者 list 实现。</td>
-<td align="center">&lt; queue &gt;</td>
-</tr>
-<tr>
-<td align="center">优先队列（ priority_queue ）</td>
-<td align="center">元素的进出队顺序由某个谓词或者关系函数决定的一种队列。底层数据结构一般为 vector 或者 deque。</td>
-<td align="center">&lt; queue &gt;</td>
-</tr>
-<tr>
-<td align="center">集合（ set ）&#x2F;多重集合（ multiset ）</td>
-<td align="center">由结点组成的红黑树，每个结点都包含着一个元素，set 中的所有元素有序但不重复，multiset 中的所有关键字有序但不重复。</td>
-<td align="center">&lt; set &gt;</td>
-</tr>
-<tr>
-<td align="center">映射（ map ）&#x2F;多重映射（ multimap ）</td>
-<td align="center">由（关键字，值）对组成的集合，底层数据结构为红黑树，map 中的所有关键字有序但不重复，multimap 中的所有关键字有序但可以重复。</td>
-<td align="center">&lt; map &gt;</td>
-</tr>
-</tbody></table>
-<p>C++ 中引入了命名空间的概念，在不同命名空间中可以存在相同名字的标识符。STL 的 sort() 以及其标识符都封装在命名空间 std 中，使用 STL 时必须将下面语句插入到源代码中：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std; </span><br></pre></td></tr></table></figure>
-
-<h4 id="2-什么是-STL-算法"><a href="#2-什么是-STL-算法" class="headerlink" title="2.什么是 STL 算法"></a>2.什么是 STL 算法</h4><p>STL 算法是用来操作容器中数据的模板函数。</p>
-<p>STL 算法部分主要由头文件 &lt; algorithm &gt;、&lt; numeric &gt; 和 &lt; functional &gt; 组成。</p>
-<ul>
-<li>&lt; algorithm &gt; 是所有 STL 头文件中最大的一个，它由一大堆模板函数组成，功能范围涉及容器元素的比较、交换、查找、遍历、复制、修改、删除、排序和合并等操作。</li>
-<li>&lt; numeric &gt; 的体积很小，只包括几个简单数学运算的模板函数。</li>
-<li>&lt; functional &gt; 中定义了一些模板类，用于声明关系函数对象。</li>
-</ul>
-<h4 id="3-什么是-STL-迭代器"><a href="#3-什么是-STL-迭代器" class="headerlink" title="3.什么是 STL 迭代器"></a>3.什么是 STL 迭代器</h4><p>简单地说，STL 迭代器用于访问容器中的数据对象。每个容器都有自己的迭代器，只有容器自己知道如何访问自己的元素。</p>
-<p>迭代器像 C&#x2F;C++ 中的指针，算法通过迭代器来定位和操作容器中的元素。</p>
-<p>迭代器有各种不同的创建方法，程序可能把迭代器作为一个变量创建，一个 STL 容器类可能为了使用一个特定类型的数据而创建一个迭代器。作为指针，必须能够使用 * 操作符来获取数据值。</p>
-<p>程序员可以使用相关运算符来操作迭代器。例如，++ 运算符用来递增迭代器，以访问容器中的下一个数据对象。如果迭代器到达了容器中的最后一个元素的后面，则迭代器变成一个特殊的值，就好像使用 NULL 或未初始化的指针一样。</p>
-<p>常用的迭代器如下：</p>
-<ul>
-<li>iterator：指向容器中存放元素的迭代器，用于正向遍历容器中的元素。</li>
-<li>const_iterator：指向容器中存放元素的常量迭代器，只能读取容器中的元素。</li>
-<li>reverse_iterator：指向容器中存放元素的反向迭代器，用于反向遍历容器中的元素。</li>
-<li>const_reverse_iterator：指向容器中存放元素的常量反向迭代器，只能读取容器中的元素。</li>
-</ul>
-<p>例如，以下语句定义一个存放 int 型整数的 vector 容器。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; myv;</span><br></pre></td></tr></table></figure>
-
-<p>用户可以使用 vector 容器的成员函数 push_back() 在 myv 的末尾插入元素：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">1</span>);</span><br><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">2</span>);</span><br><span class="line">myv.<span class="built_in">push_back</span>(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
-
-<p>这样 myv 中包含 3 个元素，依次是 1、2、3。如果要正向输出所有元素，可以使用正向迭代器：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator it	<span class="comment">//定义正向迭代器 it</span></span><br><span class="line"><span class="keyword">for</span>(it=myv.<span class="built_in">begin</span>();it!=myv.<span class="built_in">end</span>();++it)	<span class="comment">//从头到尾遍历所有元素</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,*it);	<span class="comment">//输出：1 2 3</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>如果要反向输出所有元素，可以使用反向迭代器：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt;::reverse_iterator rit	<span class="comment">//定义反向迭代器 rit</span></span><br><span class="line"><span class="keyword">for</span>(rit=myv.<span class="built_in">rbegin</span>();rit!=myv.<span class="built_in">rend</span>();++rit)	<span class="comment">//从尾到头遍历所有元素</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,*rit);	<span class="comment">//输出：3 2 1</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-2-常用的-STL-容器"><a href="#1-3-2-常用的-STL-容器" class="headerlink" title="1.3.2 常用的 STL 容器"></a>1.3.2 常用的 STL 容器</h3><p>STL 容器很多，每一个容器就是一个类模板，大致分为<strong>顺序容器</strong>、<strong>适配器容器</strong>和<strong>关联容器</strong> 3 种类型。</p>
-<h3 id="1-3-3-STL-在算法设计中的应用"><a href="#1-3-3-STL-在算法设计中的应用" class="headerlink" title="1.3.3 STL 在算法设计中的应用"></a>1.3.3 STL 在算法设计中的应用</h3><ol>
-<li>存放主数据</li>
-<li>存放临时数据</li>
-<li>检测数据元素的唯一性</li>
-<li>数据的排序</li>
-<li>优先队列作为堆</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第3章 分治法</title>
-    <url>/posts/a0060003.html</url>
-    <content><![CDATA[<h2 id="3-1-分治法概述"><a href="#3-1-分治法概述" class="headerlink" title="3.1 分治法概述"></a>3.1 分治法概述</h2><h3 id="3-1-1-分治法的设计思想"><a href="#3-1-1-分治法的设计思想" class="headerlink" title="3.1.1 分治法的设计思想"></a>3.1.1 分治法的设计思想</h3><p>对于一个规模为 n 的问题，若该问题可以容易地解决（例如规模 n 较小）则直接解决，否则将其分解为 k 个规模较小的子问题，这些子问题互相独立且与原问题形式相同，递归地解这些子问题，然后将各子问题的解合成并得到原问题的解，这种算法设计策略叫<strong>分治法</strong>。</p>
-<p>分治法所能解决的问题一般具有以下几个特征：</p>
-<ol>
-<li><strong>该问题的规模缩小到一定的程度就可以容易地解决。</strong></li>
-<li><strong>该问题可以分解为若干个规模较小的相似问题。</strong></li>
-<li><strong>利用该问题分解出的子问题的解可以合并为该问题的解。</strong></li>
-<li><strong>该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共的子问题。</strong></li>
-</ol>
-<h3 id="3-1-2-分治法的求解过程"><a href="#3-1-2-分治法的求解过程" class="headerlink" title="3.1.2 分治法的求解过程"></a>3.1.2 分治法的求解过程</h3><p>递归特别适合解决结构自相似的问题，所谓结构自相似，是指构成原问题的子问题与原问题在结构上相似，可以采用类似的方法解决。所以分治法通常采用递归算法设计技术，在每一层递归上都有 3 个步骤：</p>
-<ol>
-<li><strong>分解成若干个子问题</strong>：将原问题分解为若干个规模较小、相互独立、与原问题形式相同的子问题。</li>
-<li><strong>求解子问题</strong>：若子问题规模较小，容易被解决，则直接求解，否则递归地求解各个子问题。</li>
-<li><strong>合并子问题</strong>：将各个子问题地解合并为原问题的解。</li>
-</ol>
-<h2 id="3-2-求解排序问题"><a href="#3-2-求解排序问题" class="headerlink" title="3.2 求解排序问题"></a>3.2 求解排序问题</h2><p>对于给定的含有 n 个元素的数组 a，对其按元素值递增排序。</p>
-<p><strong>快速排序</strong>和<strong>归并排序</strong>是典型的采用分治法进行排序的方法。</p>
-<h3 id="3-2-1-快速排序"><a href="#3-2-1-快速排序" class="headerlink" title="3.2.1 快速排序"></a>3.2.1 快速排序</h3><p>快速排序的基本思想是在待排序的 n 个元素中任取一个元素（通常取第一个元素）作为基准，把该元素放入最终位置后，整个数据序列被基准分割成两个子序列，所有小于基准的元素放置在前子序列中，所有大于基准的元素放置在后子序列中，并把基准排在这两个子序列的中间，这个过程称为划分。然后对两个子序列分别重复上述过程，直到每个子序列内只有一个元素或空为止。</p>
-<p>这是一种二分法思想，每次将整个无序序列一分为二，归位一个元素，对两个子序列采用同样的方式进行排序，直到子序列的长度为 1 或 0 为止。</p>
-<p>快速排序的分治策略如下。</p>
-<ol>
-<li>分解：将原序列 a[s..t] 分解成两个子序列 a[s..i-1] 和 a[i+1..t]，其中 i 为划分的基准位置，即将整个问题分解为两个子问题。</li>
-<li>求解子问题：若子序列的长度为0或1，则它是有序的，直接返回；否则递归地求解各个子问题。</li>
-<li>合并：由于整个序列存放在数组 a 中，排序过程是就地进行的，合并步骤不需要执行任何操作。</li>
-</ol>
-<p>实现快速排序的完整程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Partition</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s,<span class="type">int</span> t)</span>	<span class="comment">//划分算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i=s,j=t;</span><br><span class="line">    <span class="type">int</span> tmp=a[s];	<span class="comment">//用序列的第 1 个记录作为基准</span></span><br><span class="line">    <span class="keyword">while</span>(i!=j)	<span class="comment">//从序列两端交替向中间扫描，直到 i=j 为止</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(j&gt;i&amp;&amp;a[j]&gt;=tmp)</span><br><span class="line">            j--;	<span class="comment">//从右向左扫描，找第 1 个关键字小于 tmp 的 a[j]</span></span><br><span class="line">        a[i]=a[j];	<span class="comment">//将 a[j] 前移到 a[i] 的位置</span></span><br><span class="line">        <span class="keyword">while</span>(i&lt;j&amp;&amp;a[i]&lt;=tmp)</span><br><span class="line">            i++;	<span class="comment">//从左向右扫描，找第 1 个关键字大于 tmp 的 a[i]</span></span><br><span class="line">        a[j]=a[i];	<span class="comment">//将 a[i] 后移到 a[j] 的位置</span></span><br><span class="line">    &#125;</span><br><span class="line">    a[i]=tmp;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">QuickSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s,<span class="type">int</span> t)</span>	<span class="comment">//对 a[s..t] 元素序列进行递增排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(s&lt;t)	<span class="comment">//序列内至少存在两个元素的情况</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> i=<span class="built_in">Partition</span>(a,s,t);</span><br><span class="line">        <span class="built_in">QuickSort</span>(a,s,i<span class="number">-1</span>);	<span class="comment">//对左子序列递归排序</span></span><br><span class="line">        <span class="built_in">QuickSort</span>(a,i+<span class="number">1</span>,t);	<span class="comment">//对右子序列递归排序</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">QuickSort</span>(a,<span class="number">0</span>,n<span class="number">-1</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【算法分析】快速排序的时间主要耗费在划分操作上，对长度为 n 的区间进行划分，共需 n-1 次关键字的比较，时间复杂度为 O(n)。</p>
-<h3 id="3-2-2-归并排序"><a href="#3-2-2-归并排序" class="headerlink" title="3.2.2 归并排序"></a>3.2.2 归并排序</h3><p>归并排序的基本思想是首先将 a[O..n-1] 看成 n 个长度为 1 的有序表，将相邻的 k（ k≥2 ）个有序子表成对归并，得到 n&#x2F;k 个长度为 k 的有序子表；然后再将这些有序子表继续归并，得到 n&#x2F;k<sup>2</sup> 个长度为 k<sup>2</sup> 的有序子表，如此反复进行下去，最后得到一个长度为 n 的有序表。由于整个排序结果放在一个数组中，所以不需要特别地进行合并操作。</p>
-<p>若 k&#x3D;2，即归并是在相邻的两个有序子表中进行的，称为<strong>二路归并排序</strong>。</p>
-<p>若 k&gt;2，即归并操作在相邻的多个有序子表中进行，则叫<strong>多路归并排序</strong>。</p>
-<p>这里仅讨论二路归并排序算法。</p>
-<p>二路归并排序算法主要有两种，下面一一讨论。</p>
-<h4 id="1-自底向上的二路归并排序算法"><a href="#1-自底向上的二路归并排序算法" class="headerlink" title="1.自底向上的二路归并排序算法"></a>1.自底向上的二路归并排序算法</h4><p>实现自底向上的二路归并排序的完整程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;malloc.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Merge</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> mid,<span class="type">int</span> high)</span></span></span><br><span class="line"><span class="function"><span class="comment">//将 2 个相邻有序子序列归并为一个有序子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span>* tmpa;</span><br><span class="line">    <span class="type">int</span> i=low,j=mid+<span class="number">1</span>,k=<span class="number">0</span>;</span><br><span class="line">    tmpa=(<span class="type">int</span>*)<span class="built_in">malloc</span>((high-low+<span class="number">1</span>)*<span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=high)</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=a[j])	<span class="comment">//将第 1 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[i];</span><br><span class="line">            i++;k++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//将第 2 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[j];</span><br><span class="line">            j++;k++;</span><br><span class="line">        &#125; </span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)	<span class="comment">//将第 1 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[i];</span><br><span class="line">        i++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=high)	<span class="comment">//将第 2 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[j];</span><br><span class="line">        j++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">0</span>,i=low;i&lt;=high;k++,i++)	<span class="comment">//将 tmpa 复制回 a 中</span></span><br><span class="line">        a[i]=tmpa[k];</span><br><span class="line">    <span class="built_in">free</span>(tmpa);	<span class="comment">//释放 tmpa 所占内存空间</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MergePass</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> length,<span class="type">int</span> n)</span> <span class="comment">//一趟二路归并排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i+<span class="number">2</span>*length<span class="number">-1</span>&lt;n;i=i+<span class="number">2</span>*length) <span class="comment">//归并 length 长的两相邻子序列</span></span><br><span class="line">        <span class="built_in">Merge</span>(a,i,i+length<span class="number">-1</span>,i+<span class="number">2</span>*length<span class="number">-1</span>);</span><br><span class="line">    <span class="keyword">if</span>(i+length<span class="number">-1</span>&lt;n)	<span class="comment">//余下 2 个子序列，后者长度小于 length</span></span><br><span class="line">        <span class="built_in">Merge</span>(a,i,i+length<span class="number">-1</span>,n<span class="number">-1</span>);	<span class="comment">//归并这 2 个子序列</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MergeSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//二路归并算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> length;</span><br><span class="line">    <span class="keyword">for</span>(length=<span class="number">1</span>;length&lt;n;length=<span class="number">2</span>*length)</span><br><span class="line">        <span class="built_in">MergePass</span>(a,length,n);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">MergeSort</span>(a,n);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【算法分析】对于上述二路归并排序算法，当有 n 个元素时需要 ⌈log<sub>2</sub>n⌉ 趟归并，每一趟归并，其元素比较词素不超过 n-1，元素移动次数都是 n，因此二路归并排序的时间复杂度为 O(nlog<sub>2</sub>n) 。</p>
-<h4 id="2-自顶向下的二路归并排序算法"><a href="#2-自顶向下的二路归并排序算法" class="headerlink" title="2.自顶向下的二路归并排序算法"></a>2.自顶向下的二路归并排序算法</h4><p>上述自底向上的二路归并排序算法虽然效率较高，但可读性较差。另一种是采用自顶向下的方法设计，算法更为简洁，属典型的二分法算法。</p>
-<p>实现自顶向下的二路归并排序的完整程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;malloc.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Merge</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> mid,<span class="type">int</span> high)</span></span></span><br><span class="line"><span class="function"><span class="comment">//将 2 个相邻有序子序列归并为一个有序子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span>* tmpa;</span><br><span class="line">    <span class="type">int</span> i=low,j=mid+<span class="number">1</span>,k=<span class="number">0</span>;</span><br><span class="line">    tmpa=(<span class="type">int</span>*)<span class="built_in">malloc</span>((high-low+<span class="number">1</span>)*<span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid&amp;&amp;j&lt;=high)</span><br><span class="line">        <span class="keyword">if</span>(a[i]&lt;=a[j])	<span class="comment">//将第 1 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[i];</span><br><span class="line">            i++;k++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//将第 2 子序列中的元素放入 tmpa 中</span></span><br><span class="line">        &#123;</span><br><span class="line">            tmpa[k]=a[j];</span><br><span class="line">            j++;k++;</span><br><span class="line">        &#125; </span><br><span class="line">    <span class="keyword">while</span>(i&lt;=mid)	<span class="comment">//将第 1 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[i];</span><br><span class="line">        i++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(j&lt;=high)	<span class="comment">//将第 2 子序列余下部分复制到 tmpa</span></span><br><span class="line">    &#123;</span><br><span class="line">        tmpa[k]=a[j];</span><br><span class="line">        j++;k++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">0</span>,i=low;i&lt;=high;k++,i++)	<span class="comment">//将 tmpa 复制回 a 中</span></span><br><span class="line">        a[i]=tmpa[k];</span><br><span class="line">    <span class="built_in">free</span>(tmpa);	<span class="comment">//释放 tmpa 所占内存空间</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">MergeSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> high)</span>	<span class="comment">//二路归并算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> mid;</span><br><span class="line">    <span class="keyword">if</span>(low&lt;high)	<span class="comment">//子序列有两个或以上元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        mid=(low+high)/<span class="number">2</span>;	<span class="comment">//取序列中间位置</span></span><br><span class="line">        <span class="built_in">MergeSort</span>(a,low,mid);	<span class="comment">//对左子序列递归排序</span></span><br><span class="line">        <span class="built_in">MergeSort</span>(a,mid+<span class="number">1</span>,high);	<span class="comment">//对右子序列递归排序</span></span><br><span class="line">        <span class="built_in">Merge</span>(a,low,mid,high);	<span class="comment">//将两子序列合并</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">MergeSort</span>(a,<span class="number">0</span>,n<span class="number">-1</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【算法分析】设 MergeSort(a,0,n-1) 算法的执行时间为 T(n)，显然 Merge(a,0,n&#x2F;2,n-1) 合并操作的执行时间为 O(n)，所以得到以下递推式：<br>$$<br>T(n) &#x3D; 1 （当 n&#x3D;1 时）<br>$$</p>
-<p>$$<br>T(n) &#x3D; 2T(n&#x2F;2) + O(n)（当 n&gt;1 时）<br>$$</p>
-<p>容易推出 T(n)&#x3D;O(nlog<sub>2</sub>n)。</p>
-<h2 id="3-3-求解查找问题"><a href="#3-3-求解查找问题" class="headerlink" title="3.3 求解查找问题"></a>3.3 求解查找问题</h2><h3 id="3-3-1-查找最大和次大元素"><a href="#3-3-1-查找最大和次大元素" class="headerlink" title="3.3.1 查找最大和次大元素"></a>3.3.1 查找最大和次大元素</h3><p>【问题描述】对于给定的含有 n 个元素的无序序列，求这个序列中最大和次大的两个不同元素。</p>
-<p>【问题求解】对于无序序列 a[low..high]，采用分治法求最大元素 max1 和次大元素 max2 的算法程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> high,<span class="type">int</span> &amp;max1,<span class="type">int</span> &amp;max2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(low==high)	<span class="comment">//区间中只有一个元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        max1=a[low];</span><br><span class="line">        max2=-INF;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(low==high<span class="number">-1</span>)	<span class="comment">//区间中只有两个元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        max1=<span class="built_in">max</span>(a[low],a[high]);</span><br><span class="line">        max2=<span class="built_in">min</span>(a[low],a[high]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>	<span class="comment">//区间中有两个以上元素</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> mid=(low+high)/<span class="number">2</span>;</span><br><span class="line">        <span class="type">int</span> lmax1,lmax2;</span><br><span class="line">        <span class="built_in">solve</span>(a,low,mid,lmax1,lamx2);	<span class="comment">//左区间求 lmax1 和 lmax2</span></span><br><span class="line">        <span class="type">int</span> rmax1,rmax2;</span><br><span class="line">        <span class="built_in">solve</span>(a,mid+<span class="number">1</span>,high,rmax1,rmax2);	<span class="comment">//右区间求 rmax1 和 rmax2</span></span><br><span class="line">        <span class="keyword">if</span>(lmax1&gt;rmax1)</span><br><span class="line">        &#123;</span><br><span class="line">            max1=lmax1;</span><br><span class="line">            max2=<span class="built_in">max</span>(lmax2,rmax1);	<span class="comment">//lmax2、rmax1 中求次大元素</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            max1=rmax1;</span><br><span class="line">            max2=<span class="built_in">max</span>(lmax1,rmax2);	<span class="comment">//lmax1、rmax2 中求次大元素</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【算法分析】对于 solve(a,0,n-1,max1,max2) 调用，其比较次数的递推式如下：<br>$$<br>T(1) &#x3D; T(2) &#x3D; 1<br>$$</p>
-<p>$$<br>T(n) &#x3D; 2T(n&#x2F;2) + 1 （合并的时间为O(1)）<br>$$</p>
-<p>容易推出 T(n)&#x3D;O(n)。</p>
-<h3 id="3-3-2-折半查找"><a href="#3-3-2-折半查找" class="headerlink" title="3.3.2 折半查找"></a>3.3.2 折半查找</h3><p>折半查找又称<strong>二分查找</strong>，它是一种效率较高的查找方法。</p>
-<p>但是折半查找要求查找序列中的元素是<strong>有序的</strong>，为了简单，假设是递增有序的。</p>
-<p>折半查找对应的完整程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">BinSearch</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> low,<span class="type">int</span> high,<span class="type">int</span> k)</span>	<span class="comment">//折半查找算法</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> mid;</span><br><span class="line">    <span class="keyword">if</span>(low&lt;=high)</span><br><span class="line">    &#123;</span><br><span class="line">        mid=(low+high)/<span class="number">2</span>;	<span class="comment">//求查找区间的中间位置</span></span><br><span class="line">        <span class="keyword">if</span>(a[mid]==k)	<span class="comment">//找到后返回其物理下标 mid</span></span><br><span class="line">            <span class="keyword">return</span> mid;</span><br><span class="line">        <span class="keyword">if</span>(a[mid]&gt;k)	<span class="comment">//当 a[mid]&gt;k 时</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">BinSearch</span>(a,low,mid<span class="number">-1</span>,k);</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//当 a[mid]&lt;k 时</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">BinSearch</span>(a,mid+<span class="number">1</span>,high,k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="number">-1</span>;	<span class="comment">//若当前查找区间没有元素时返回 -1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>,i;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">6</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>&#125;;</span><br><span class="line">    i=<span class="built_in">BinSearch</span>(a,<span class="number">0</span>,n<span class="number">-1</span>,k);</span><br><span class="line">    <span class="keyword">if</span>(i&gt;=<span class="number">0</span>)<span class="built_in">printf</span>(<span class="string">&quot;a[%d]=%d\n&quot;</span>,i,k);</span><br><span class="line">    <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;未找到%d元素\n&quot;</span>,k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-3-寻找一个序列中第-k-小的元素"><a href="#3-3-3-寻找一个序列中第-k-小的元素" class="headerlink" title="3.3.3 寻找一个序列中第 k 小的元素"></a>3.3.3 寻找一个序列中第 k 小的元素</h3><p>【问题描述】对于给定的含有 n 个元素的无序序列，求这个序列中第 k（ 1&lt;&#x3D;k&lt;&#x3D;n ）小的元素。</p>
-<p>完整程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">QuickSelect</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s,<span class="type">int</span> t,<span class="type">int</span> k)</span>	<span class="comment">//在 a[s..t] 序列中找第 k 小的元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i=s,j=t;</span><br><span class="line">    <span class="type">int</span> tmp;</span><br><span class="line">    <span class="keyword">if</span>(s&lt;t)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp=a[s];</span><br><span class="line">        <span class="keyword">while</span>(i!=j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span>(j&gt;i&amp;&amp;a[j]&gt;=tmp)</span><br><span class="line">                j--;</span><br><span class="line">            a[i]=a[j];</span><br><span class="line">            <span class="keyword">while</span>(i&lt;j&amp;&amp;a[i]&lt;=tmp)</span><br><span class="line">                i++;</span><br><span class="line">            a[j]=a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        a[i]=tmp;</span><br><span class="line">        <span class="keyword">if</span>(k<span class="number">-1</span>==i) <span class="keyword">return</span> a[i];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(k<span class="number">-1</span>&lt;i) <span class="keyword">return</span> <span class="built_in">QuickSelect</span>(a,s,i<span class="number">-1</span>,k);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="built_in">QuickSelect</span>(a,i+<span class="number">1</span>,t,k);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(s==t&amp;&amp;s==k<span class="number">-1</span>)</span><br><span class="line">        <span class="keyword">return</span> a[k<span class="number">-1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>,k;</span><br><span class="line">    <span class="type">int</span> e;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span>(k=<span class="number">1</span>;k&lt;=n;k++)</span><br><span class="line">    &#123;</span><br><span class="line">        e=<span class="built_in">QuickSelect</span>(a,<span class="number">0</span>,n<span class="number">-1</span>,k);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;第%d小的元素：%d\n&quot;</span>,k,e);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【算法分析】对于 QuickSelect(a,s,t,k) 算法，设序列 a 中含有 n 个元素，其比较次数的递推式为：<br>$$<br>T(n) &#x3D; T(n&#x2F;2) +O(n)<br>$$<br>可以推导出 T(n)&#x3D;O(n)，这是最好的情况，即每次划分的基准恰好是中位数，将一个序列划分为长度大致相等的两个子序列。</p>
-<p>在最坏的情况下，每次划分的基准恰好是序列中的最大值或最小值，则处理区间只比上一次减少 1 个元素，此时比较次数为 O(n<sup>2</sup>)。</p>
-<p>在平均情况下该算法的时间复杂度为 O(n)。</p>
-<h3 id="3-3-4-寻找两个等长有序序列的中位数"><a href="#3-3-4-寻找两个等长有序序列的中位数" class="headerlink" title="3.3.4 寻找两个等长有序序列的中位数"></a>3.3.4 寻找两个等长有序序列的中位数</h3><p>【问题描述】对于 1 个长度为 n 的有序序列（假设均为升序序列）a[0..n-1]，处于中间位置的元素称为 a 的中位数，求给定的 2 个有序序列的中位数。</p>
-<p>完整程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">prepart</span><span class="params">(<span class="type">int</span> &amp;s,<span class="type">int</span> &amp;t)</span>	<span class="comment">//求 a[s..t] 序列的前半子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m=(s+t)/<span class="number">2</span>;</span><br><span class="line">    t=m;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">postpart</span><span class="params">(<span class="type">int</span> &amp;s,<span class="type">int</span> &amp;t)</span>	<span class="comment">//求 a[s..t] 序列的后半子序列</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m=(s+t)/<span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>((s+t)%<span class="number">2</span>==<span class="number">0</span>)</span><br><span class="line">        s=m;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        s=m+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">midnum</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> s1,<span class="type">int</span> t1,<span class="type">int</span> b[],<span class="type">int</span> s2,<span class="type">int</span> t2)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> m1,m2;</span><br><span class="line">    <span class="keyword">if</span>(s1==t1&amp;&amp;s2==t2)	<span class="comment">//2 个序列只有 1 个元素时，返回较小者</span></span><br><span class="line">        <span class="keyword">return</span> a[s1]&lt;b[s2]?a[s1]:b[s2];</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        m1=(s1+t1)/<span class="number">2</span>;	<span class="comment">//求 a 的中位数</span></span><br><span class="line">        m2=(s2+t2)/<span class="number">2</span>;	<span class="comment">//求 b 的中位数</span></span><br><span class="line">        <span class="keyword">if</span>(a[m1]==b[m2])	<span class="comment">//2 个中位数相等时，返回该中位数</span></span><br><span class="line">            <span class="keyword">return</span> a[m1];</span><br><span class="line">        <span class="keyword">if</span>(a[m1]&lt;b[m2])	<span class="comment">//当a[m1]&lt;b[m2]时</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">postpart</span>(s1,t1);	<span class="comment">//a 取后半部分</span></span><br><span class="line">            <span class="built_in">prepart</span>(s2,t2);	<span class="comment">//b 取前半部分</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">midnum</span>(a,s1,t1,b,s2,t2);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//当 a[m1]&gt;b[m2] 时</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">prepart</span>(s1,t1); <span class="comment">//a 取前半部分</span></span><br><span class="line">            <span class="built_in">postpart</span>(s2,t2); <span class="comment">//b 取后半部分</span></span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">midnum</span>(a,s1,t1,b,s2,t2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">11</span>,<span class="number">13</span>,<span class="number">15</span>,<span class="number">17</span>,<span class="number">19</span>&#125;;</span><br><span class="line">    <span class="type">int</span> b[]=&#123;<span class="number">2</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">20</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;中位数：%d\n&quot;</span>,<span class="built_in">midnum</span>(a,<span class="number">0</span>,<span class="number">4</span>,b,<span class="number">0</span>,<span class="number">4</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【算法分析】对于含有 n 个元素的有序序列 a 和 b，设调用 midnum(a,0,n-1,b,0,n-1) 求中位数的执行时间为 T(n)，显然有以下递推式：<br>$$<br>T(n) &#x3D; 1 （当 n&#x3D;1 时）<br>$$</p>
-<p>$$<br>T(n) &#x3D; T(n&#x2F;2) + 1（当 n&gt;1 时）<br>$$</p>
-<p>容易推出 T(n)&#x3D;O(log<sub>2</sub>n)。</p>
-<hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java 基础</title>
-    <url>/posts/c0010000.html</url>
-    <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/c0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/c0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/c0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/c0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/c0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/c0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/c0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/c0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/c0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/c0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/c0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/c0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/c0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/c0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/c0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/c0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/c0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/c0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/c0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
-      <categories>
-        <category>后端技术</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第2章 递归算法设计技术</title>
-    <url>/posts/a0060002.html</url>
-    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><p>在数学与计算机科学中，<strong>递归</strong>（ recursion ）是指在函数的定义中又调用函数自身的方法。</p>
-<p>若 p 函数定义中调用 p 函数，称之为<strong>直接递归</strong>；若 p 函数定义中调用 q 函数，而 q 函数定义中又调用 p 函数，称之为<strong>间接递归</strong>。</p>
-<p>任何间接递归都可以等价地转化为直接递归。</p>
-<p>如果一个递归过程或递归函数中的递归调用语句是最后一条执行语句，则称这种递归调用为<strong>尾递归</strong>。</p>
-<blockquote>
-<p>递归既是一种奇妙的现象，又是一种思考问题的方法，通过递归可简化问题的定义和求解过程。</p>
-<p>实际上在现实世界中递归无处不在，例如在人类的发展繁衍中，人之间的辈分就是一种递归，祖先的递归定义是 x 的父母是 x 的祖先， x 祖先的双亲同样是 x 的祖先。</p>
-</blockquote>
-<p>【例2.1】设计求 n!（ n 为正整数）的递归算法。</p>
-<p>对应的递归函数如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> (<span class="built_in">fun</span>(n<span class="number">-1</span>)*n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在函数 fun(n) 的求解过程中直接调用 fun(n-1)，所以它是一个直接递归函数；又由于递归调用是最后一条语句，所以它又属于尾递归。</p>
-<p>递归算法通常把一个大的复杂问题层层转化为一个或多个与原问题相似的规模较小的问题来求解，递归策略只需少量的代码就可以描述出解题过程所需要的多次重复计算，大大减少了算法的代码量。</p>
-<p>一般来说，能够用递归解决的问题应该满足以下 3 个条件：</p>
-<ol>
-<li>需要解决的问题可以转化为一个或多个子问题来求解，而这些子问题的求解方法与原问题完全相同，只是在数量规模上不同。</li>
-<li>递归调用的次数必须是有限的。</li>
-<li>必须有结束递归的条件来终止递归。</li>
-</ol>
-<h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><p>在以下 3 种情况下经常要用到递归的方法。</p>
-<h4 id="1-定义是递归的"><a href="#1-定义是递归的" class="headerlink" title="1.定义是递归的"></a>1.定义是递归的</h4><p>有许多数学公式、数列和概念的定义是递归的，例如求 n! 和斐波那契（ Fibonacci ）数列等。</p>
-<p>对于这些问题的求解过程，可以将其递归定义直接转化为对应的递归算法，例如求 n! 可以转化为【例2.1】的递归算法。</p>
-<h4 id="2-数据结构是递归的"><a href="#2-数据结构是递归的" class="headerlink" title="2.数据结构是递归的"></a>2.数据结构是递归的</h4><p>算法是用于数据处理的，有些存储数据的数据结构是递归的，对于递归数据结构，采用递归的方法设计算法既方便又有效。</p>
-<p>例如，单链表就是一种递归数据结构，其结点类型声明如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Node</span> </span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Node</span> * next;</span><br><span class="line">&#125; LinkNode;	<span class="comment">//单链表结点类型</span></span><br></pre></td></tr></table></figure>
-
-<p>其中，结构体 Node 的声明中用到了它自身，即指针域 next 是一种指向自身类型的指针。</p>
-<h4 id="3-问题的求解方法是递归的"><a href="#3-问题的求解方法是递归的" class="headerlink" title="3.问题的求解方法是递归的"></a>3.问题的求解方法是递归的</h4><p>有些问题的解法是递归的，典型的有梵塔问题求解。</p>
-<p>该问题的描述是设有 3 个分别命名为 x、y 和 z 的塔座，在塔座 x 上有 n 个直径各不相同、从小到大依次编号为 1~n 的盘片，现要求将 x 塔座上的 n 个盘片移到塔座 z 上并仍按同样的顺序叠放。在盘片移动时必须遵守以下规则：每次只能移动一个盘片；盘片可以插在 x、y 和 z 中的任一塔座；任何时候都不能将一个较大的盘片放在较小的盘片上。</p>
-<h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><p>一般地，一个递归模型由<strong>递归出口</strong>和<strong>递归体</strong>两部分组成，前者确定递归到何时结束，即指出明确的递归结束条件，后者确定递归求解时的递推关系。</p>
-<h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><p>在执行递归函数时会直接调用自身，但如果仅有这种操作，将会出现由于无休止地调用而陷入死循环。因此，一个正确的递归函数虽然每次调用的是相同的代码，但它的参数、输入数据等均有变化，并且在正常情况下随着调用的不断深入必定会出现调用到某一层的函数时不再执行递归调用而终止函数的执行，即遇到递归出口。</p>
-<p>递归函数可以看成是一种特殊的函数，递归函数调用是函数调用的一种特殊情况，即它是调用自身代码，因此也可以把每一次递归调用理解成调用自身代码的一个复制件。由于每次调用时它的参数和局部变量值均不相同，所以保证了各个复制件执行时的独立性。</p>
-<p>但递归调用在内部实现时并不是每次调用真的复制一个函数复制件存放到内存中，而是采用代码共享的方式，也就是它们都是调用同一个函数的代码。为此系统设置了一个系统栈，为每一次调用开辟一组存储单元，用来存放本次调用的返回地址以及被中断的函数参数值（即一个栈帧，可以理解为一个栈元素），然后将其进入系统栈（栈元素进栈），再执行被调用函数代码。当被调用函数执行完毕后，对应的栈帧被弹出（栈元素出栈），返回计算后的函数值，控制转到相应的返回地址继续执行。显然当前正在执行的调用函数的栈帧总是处于系统栈的最顶端。</p>
-<p>所以一个函数调用过程就是将数据（包括参数和返回值）和控制信息（返回地址等）从一个函数传递到另一个函数。另外，在执行被调函数的过程中还要为被调函数的局部变量分配空间，在函数返回时释放这些空间，这些工作都是由系统栈来完成的。</p>
-<p>从以上过程可以得出：</p>
-<ol>
-<li>递归执行是通过系统栈实现的。</li>
-<li>每递归调用一次就需将参数、局部变量和返回地址等作为一个栈元素进栈一次，最多的进栈元素个数称为递归深度，n 越大，递归深度越深。</li>
-<li>每当遇到递归出口或本次递归调用执行完毕时需退栈一次，并恢复参数值等，当全部执行完毕时栈应该为空。</li>
-</ol>
-<h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><p>递归是算法和程序设计的一种实现技术，数学归纳法是一种论证方法，数学归纳法是递归的<strong>理论基础</strong>。</p>
-<h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><p>递归算法设计首先要提炼出递归模型，再转换成对应的程序设计语言。</p>
-<p>提炼递归模型过程中最重要的是找递归体，即确定<strong>大问题</strong>和<strong>小问题</strong>的关系。</p>
-<h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><p><strong>定义</strong>：采用递归方式定义的数据结构称为递归数据结构。在递归数据结构定义中包含的递归运算称为基本递归运算。</p>
-<h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><p>本节通过几个典型示例介绍递归算法设计方法。</p>
-<h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><p>【问题描述】对于给定的含有 n 个元素的数组 a，分别采用简单选择排序和冒泡排序方法按元素值递增排序。</p>
-<p>简单选择排序和冒泡排序方法都是将 a[0..n-1] 分为有序区 a[0..i-1] 和无序区两个部分，有序区中的所有元素都不大于无序区中的元素，初始时有序区为空（即 i&#x3D;0 ）。经过 n-1 趟排序（ i&#x3D;1~n-2 ），每趟排序采用不同方式将无序区中的最小元素移动到无序区的开头，即 a[i] 处。</p>
-<h4 id="1-简单选择排序"><a href="#1-简单选择排序" class="headerlink" title="1.简单选择排序"></a>1.简单选择排序</h4><p>简单选择排序采用简单比较方式在无序区中选择最小元素并放到开头处。</p>
-<p>对应的完整求解程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">SelectSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的简单选择排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j,k;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        k=i;	<span class="comment">//k 记录 a[i..n-1] 中最小元素的下标</span></span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)	<span class="comment">//在 a[i..n-1] 中找最小元素</span></span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[k])</span><br><span class="line">                k=j;</span><br><span class="line">        <span class="keyword">if</span>(k!=i)	<span class="comment">//若最小元素不是 a[i]</span></span><br><span class="line">            <span class="built_in">swap</span>(a[i],a[k]);	<span class="comment">//a[i] 和 a[k] 交换</span></span><br><span class="line">        <span class="built_in">SelectSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-冒泡排序"><a href="#2-冒泡排序" class="headerlink" title="2.冒泡排序"></a>2.冒泡排序</h4><p>冒泡排序采用交换方式将无序区中的最小元素放到开头处。</p>
-<p>对应的完整求解程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的冒泡排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j;</span><br><span class="line">    <span class="type">bool</span> exchange;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        exchange=<span class="literal">false</span>;	<span class="comment">//置 exchange 为 false</span></span><br><span class="line">        <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)</span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[j<span class="number">-1</span>])	<span class="comment">//当相邻元素反序时</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">swap</span>(a[j],a[j<span class="number">-1</span>]);</span><br><span class="line">                exchange=<span class="literal">true</span>;	<span class="comment">//发生交换置 exchange 为 true</span></span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">if</span>(exchange==<span class="literal">false</span>)	<span class="comment">//未发生交换时直接返回</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//发生交换时继续递归调用</span></span><br><span class="line">            <span class="built_in">BubbleSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-4-递归小结"><a href="#2-4-递归小结" class="headerlink" title="2.4 递归小结"></a>2.4 递归小结</h2><ul>
-<li><p><strong>优点</strong></p>
-<p>结构清晰，可读性强，而且容易用数学归纳法来证明算法的正确性，因此它为设计算法、调试程序带来很大方便。</p>
-</li>
-<li><p><strong>缺点</strong></p>
-<p>递归算法的运行效率较低，无论是耗费的计算时间还是占用的存储空间都比非递归算法要多。</p>
-</li>
-<li><p><strong>解决方法</strong></p>
-<p>在递归算法中消除递归调用，使其转化为非递归算法（递推）。</p>
-</li>
-</ul>
-<hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>算法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第2章 变量与运算符</title>
-    <url>/posts/c0010002.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
-</li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
-</li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
-</li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
-</li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
-</li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
-</li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
-</li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
-</li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
-</li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
-</li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
-</li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第1章 Java 语言概述</title>
-    <url>/posts/c0010001.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
-</li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
-</li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
-</li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
-</li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
-</li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
-</li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
-</li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
-</li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
-</li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
-</li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
-</li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 Java 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 Java 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，Java2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
-<ul>
-<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
-<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
-<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
-<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
-<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
-</ul>
-<hr>
-<p><a href="https://georgedi.top/posts/c0010000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
 </search>
