@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>《算法设计与分析》</title>
+    <url>/posts/a0060000.html</url>
+    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3>]]></content>
+      <categories>
+        <category>科班基础</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>工作报告提交窗口</title>
     <url>/posts/s0000001.html</url>
     <content><![CDATA[<h2 id="提交须知"><a href="#提交须知" class="headerlink" title="提交须知"></a>提交须知</h2><h3 id="如果您是内容管理经理"><a href="#如果您是内容管理经理" class="headerlink" title="如果您是内容管理经理"></a>如果您是<strong>内容管理经理</strong></h3><p>请提交报告至××××××××××</p>
@@ -24,14 +35,96 @@
       </categories>
   </entry>
   <entry>
-    <title>《算法设计与分析》</title>
-    <url>/posts/a0060000.html</url>
-    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第1章-概论"><a href="#第1章-概论" class="headerlink" title="第1章 概论"></a><a href="https://georgedi.top/posts/a0060001.html">第1章 概论</a></h3><h3 id="第2章-递归算法设计技术"><a href="#第2章-递归算法设计技术" class="headerlink" title="第2章 递归算法设计技术"></a><a href="https://georgedi.top/posts/a0060002.html">第2章 递归算法设计技术</a></h3><h3 id="第3章-分治法"><a href="#第3章-分治法" class="headerlink" title="第3章 分治法"></a><a href="https://georgedi.top/posts/a0060003.html">第3章 分治法</a></h3>]]></content>
+    <title>第2章 递归算法设计技术</title>
+    <url>/posts/a0060002.html</url>
+    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><p>在数学与计算机科学中，<strong>递归</strong>（ recursion ）是指在函数的定义中又调用函数自身的方法。</p>
+<p>若 p 函数定义中调用 p 函数，称之为<strong>直接递归</strong>；若 p 函数定义中调用 q 函数，而 q 函数定义中又调用 p 函数，称之为<strong>间接递归</strong>。</p>
+<p>任何间接递归都可以等价地转化为直接递归。</p>
+<p>如果一个递归过程或递归函数中的递归调用语句是最后一条执行语句，则称这种递归调用为<strong>尾递归</strong>。</p>
+<blockquote>
+<p>递归既是一种奇妙的现象，又是一种思考问题的方法，通过递归可简化问题的定义和求解过程。</p>
+<p>实际上在现实世界中递归无处不在，例如在人类的发展繁衍中，人之间的辈分就是一种递归，祖先的递归定义是 x 的父母是 x 的祖先， x 祖先的双亲同样是 x 的祖先。</p>
+</blockquote>
+<p>【例2.1】设计求 n!（ n 为正整数）的递归算法。</p>
+<p>对应的递归函数如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> (<span class="built_in">fun</span>(n<span class="number">-1</span>)*n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在函数 fun(n) 的求解过程中直接调用 fun(n-1)，所以它是一个直接递归函数；又由于递归调用是最后一条语句，所以它又属于尾递归。</p>
+<p>递归算法通常把一个大的复杂问题层层转化为一个或多个与原问题相似的规模较小的问题来求解，递归策略只需少量的代码就可以描述出解题过程所需要的多次重复计算，大大减少了算法的代码量。</p>
+<p>一般来说，能够用递归解决的问题应该满足以下 3 个条件：</p>
+<ol>
+<li>需要解决的问题可以转化为一个或多个子问题来求解，而这些子问题的求解方法与原问题完全相同，只是在数量规模上不同。</li>
+<li>递归调用的次数必须是有限的。</li>
+<li>必须有结束递归的条件来终止递归。</li>
+</ol>
+<h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><p>在以下 3 种情况下经常要用到递归的方法。</p>
+<h4 id="1-定义是递归的"><a href="#1-定义是递归的" class="headerlink" title="1.定义是递归的"></a>1.定义是递归的</h4><p>有许多数学公式、数列和概念的定义是递归的，例如求 n! 和斐波那契（ Fibonacci ）数列等。</p>
+<p>对于这些问题的求解过程，可以将其递归定义直接转化为对应的递归算法，例如求 n! 可以转化为【例2.1】的递归算法。</p>
+<h4 id="2-数据结构是递归的"><a href="#2-数据结构是递归的" class="headerlink" title="2.数据结构是递归的"></a>2.数据结构是递归的</h4><p>算法是用于数据处理的，有些存储数据的数据结构是递归的，对于递归数据结构，采用递归的方法设计算法既方便又有效。</p>
+<p>例如，单链表就是一种递归数据结构，其结点类型声明如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Node</span> </span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Node</span> * next;</span><br><span class="line">&#125; LinkNode;	<span class="comment">//单链表结点类型</span></span><br></pre></td></tr></table></figure>
+
+<p>其中，结构体 Node 的声明中用到了它自身，即指针域 next 是一种指向自身类型的指针。</p>
+<h4 id="3-问题的求解方法是递归的"><a href="#3-问题的求解方法是递归的" class="headerlink" title="3.问题的求解方法是递归的"></a>3.问题的求解方法是递归的</h4><p>有些问题的解法是递归的，典型的有梵塔问题求解。</p>
+<p>该问题的描述是设有 3 个分别命名为 x、y 和 z 的塔座，在塔座 x 上有 n 个直径各不相同、从小到大依次编号为 1~n 的盘片，现要求将 x 塔座上的 n 个盘片移到塔座 z 上并仍按同样的顺序叠放。在盘片移动时必须遵守以下规则：每次只能移动一个盘片；盘片可以插在 x、y 和 z 中的任一塔座；任何时候都不能将一个较大的盘片放在较小的盘片上。</p>
+<h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><p>一般地，一个递归模型由<strong>递归出口</strong>和<strong>递归体</strong>两部分组成，前者确定递归到何时结束，即指出明确的递归结束条件，后者确定递归求解时的递推关系。</p>
+<h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><p>在执行递归函数时会直接调用自身，但如果仅有这种操作，将会出现由于无休止地调用而陷入死循环。因此，一个正确的递归函数虽然每次调用的是相同的代码，但它的参数、输入数据等均有变化，并且在正常情况下随着调用的不断深入必定会出现调用到某一层的函数时不再执行递归调用而终止函数的执行，即遇到递归出口。</p>
+<p>递归函数可以看成是一种特殊的函数，递归函数调用是函数调用的一种特殊情况，即它是调用自身代码，因此也可以把每一次递归调用理解成调用自身代码的一个复制件。由于每次调用时它的参数和局部变量值均不相同，所以保证了各个复制件执行时的独立性。</p>
+<p>但递归调用在内部实现时并不是每次调用真的复制一个函数复制件存放到内存中，而是采用代码共享的方式，也就是它们都是调用同一个函数的代码。为此系统设置了一个系统栈，为每一次调用开辟一组存储单元，用来存放本次调用的返回地址以及被中断的函数参数值（即一个栈帧，可以理解为一个栈元素），然后将其进入系统栈（栈元素进栈），再执行被调用函数代码。当被调用函数执行完毕后，对应的栈帧被弹出（栈元素出栈），返回计算后的函数值，控制转到相应的返回地址继续执行。显然当前正在执行的调用函数的栈帧总是处于系统栈的最顶端。</p>
+<p>所以一个函数调用过程就是将数据（包括参数和返回值）和控制信息（返回地址等）从一个函数传递到另一个函数。另外，在执行被调函数的过程中还要为被调函数的局部变量分配空间，在函数返回时释放这些空间，这些工作都是由系统栈来完成的。</p>
+<p>从以上过程可以得出：</p>
+<ol>
+<li>递归执行是通过系统栈实现的。</li>
+<li>每递归调用一次就需将参数、局部变量和返回地址等作为一个栈元素进栈一次，最多的进栈元素个数称为递归深度，n 越大，递归深度越深。</li>
+<li>每当遇到递归出口或本次递归调用执行完毕时需退栈一次，并恢复参数值等，当全部执行完毕时栈应该为空。</li>
+</ol>
+<h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><p>递归是算法和程序设计的一种实现技术，数学归纳法是一种论证方法，数学归纳法是递归的<strong>理论基础</strong>。</p>
+<h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><p>递归算法设计首先要提炼出递归模型，再转换成对应的程序设计语言。</p>
+<p>提炼递归模型过程中最重要的是找递归体，即确定<strong>大问题</strong>和<strong>小问题</strong>的关系。</p>
+<h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><p><strong>定义</strong>：采用递归方式定义的数据结构称为递归数据结构。在递归数据结构定义中包含的递归运算称为基本递归运算。</p>
+<h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><p>本节通过几个典型示例介绍递归算法设计方法。</p>
+<h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><p>【问题描述】对于给定的含有 n 个元素的数组 a，分别采用简单选择排序和冒泡排序方法按元素值递增排序。</p>
+<p>简单选择排序和冒泡排序方法都是将 a[0..n-1] 分为有序区 a[0..i-1] 和无序区两个部分，有序区中的所有元素都不大于无序区中的元素，初始时有序区为空（即 i&#x3D;0 ）。经过 n-1 趟排序（ i&#x3D;1~n-2 ），每趟排序采用不同方式将无序区中的最小元素移动到无序区的开头，即 a[i] 处。</p>
+<h4 id="1-简单选择排序"><a href="#1-简单选择排序" class="headerlink" title="1.简单选择排序"></a>1.简单选择排序</h4><p>简单选择排序采用简单比较方式在无序区中选择最小元素并放到开头处。</p>
+<p>对应的完整求解程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">SelectSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的简单选择排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j,k;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        k=i;	<span class="comment">//k 记录 a[i..n-1] 中最小元素的下标</span></span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)	<span class="comment">//在 a[i..n-1] 中找最小元素</span></span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[k])</span><br><span class="line">                k=j;</span><br><span class="line">        <span class="keyword">if</span>(k!=i)	<span class="comment">//若最小元素不是 a[i]</span></span><br><span class="line">            <span class="built_in">swap</span>(a[i],a[k]);	<span class="comment">//a[i] 和 a[k] 交换</span></span><br><span class="line">        <span class="built_in">SelectSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-冒泡排序"><a href="#2-冒泡排序" class="headerlink" title="2.冒泡排序"></a>2.冒泡排序</h4><p>冒泡排序采用交换方式将无序区中的最小元素放到开头处。</p>
+<p>对应的完整求解程序如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的冒泡排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j;</span><br><span class="line">    <span class="type">bool</span> exchange;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        exchange=<span class="literal">false</span>;	<span class="comment">//置 exchange 为 false</span></span><br><span class="line">        <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)</span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[j<span class="number">-1</span>])	<span class="comment">//当相邻元素反序时</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">swap</span>(a[j],a[j<span class="number">-1</span>]);</span><br><span class="line">                exchange=<span class="literal">true</span>;	<span class="comment">//发生交换置 exchange 为 true</span></span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">if</span>(exchange==<span class="literal">false</span>)	<span class="comment">//未发生交换时直接返回</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//发生交换时继续递归调用</span></span><br><span class="line">            <span class="built_in">BubbleSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-递归小结"><a href="#2-4-递归小结" class="headerlink" title="2.4 递归小结"></a>2.4 递归小结</h2><ul>
+<li><p><strong>优点</strong></p>
+<p>结构清晰，可读性强，而且容易用数学归纳法来证明算法的正确性，因此它为设计算法、调试程序带来很大方便。</p>
+</li>
+<li><p><strong>缺点</strong></p>
+<p>递归算法的运行效率较低，无论是耗费的计算时间还是占用的存储空间都比非递归算法要多。</p>
+</li>
+<li><p><strong>解决方法</strong></p>
+<p>在递归算法中消除递归调用，使其转化为非递归算法（递推）。</p>
+</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《云计算：概念、技术与架构》</title>
+    <url>/posts/a0070000.html</url>
+    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第3章-理解云计算"><a href="#第3章-理解云计算" class="headerlink" title="第3章 理解云计算"></a><a href="https://georgedi.top/posts/a0070003.html">第3章 理解云计算</a></h3><h3 id="第4章-基本概念与模型"><a href="#第4章-基本概念与模型" class="headerlink" title="第4章 基本概念与模型"></a><a href="https://georgedi.top/posts/a0070004.html">第4章 基本概念与模型</a></h3><h3 id="第9章-云管理机制"><a href="#第9章-云管理机制" class="headerlink" title="第9章 云管理机制"></a><a href="https://georgedi.top/posts/a0070009.html">第9章 云管理机制</a></h3><h3 id="第11章-基本云架构"><a href="#第11章-基本云架构" class="headerlink" title="第11章 基本云架构"></a><a href="https://georgedi.top/posts/a0070011.html">第11章 基本云架构</a></h3> <!-- [第5章 云使能技术](http://georgedi.top//posts/云使能技术/) 
+ [第6章 基本云安全](http://georgedi.top/2023/05/06/基本云安全/) 
+ [第7章 云基础设施机制](http://georgedi.top/2023/05/06/云基础设施机制/) 
+ [第8章 特殊云机制](http://georgedi.top/2023/05/06/特殊云机制/)   -->
+ <!--  
+ [第12章 高级云架构](http://georgedi.top/2023/05/06/高级云架构/)  -->]]></content>
       <categories>
         <category>科班基础</category>
       </categories>
       <tags>
-        <tag>算法</tag>
+        <tag>云计算</tag>
       </tags>
   </entry>
   <entry>
@@ -363,80 +456,420 @@
       </tags>
   </entry>
   <entry>
-    <title>第2章 递归算法设计技术</title>
-    <url>/posts/a0060002.html</url>
-    <content><![CDATA[<h2 id="2-1-什么是递归"><a href="#2-1-什么是递归" class="headerlink" title="2.1 什么是递归"></a>2.1 什么是递归</h2><h3 id="2-1-1-递归的定义"><a href="#2-1-1-递归的定义" class="headerlink" title="2.1.1 递归的定义"></a>2.1.1 递归的定义</h3><p>在数学与计算机科学中，<strong>递归</strong>（ recursion ）是指在函数的定义中又调用函数自身的方法。</p>
-<p>若 p 函数定义中调用 p 函数，称之为<strong>直接递归</strong>；若 p 函数定义中调用 q 函数，而 q 函数定义中又调用 p 函数，称之为<strong>间接递归</strong>。</p>
-<p>任何间接递归都可以等价地转化为直接递归。</p>
-<p>如果一个递归过程或递归函数中的递归调用语句是最后一条执行语句，则称这种递归调用为<strong>尾递归</strong>。</p>
-<blockquote>
-<p>递归既是一种奇妙的现象，又是一种思考问题的方法，通过递归可简化问题的定义和求解过程。</p>
-<p>实际上在现实世界中递归无处不在，例如在人类的发展繁衍中，人之间的辈分就是一种递归，祖先的递归定义是 x 的父母是 x 的祖先， x 祖先的双亲同样是 x 的祖先。</p>
-</blockquote>
-<p>【例2.1】设计求 n!（ n 为正整数）的递归算法。</p>
-<p>对应的递归函数如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">fun</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">return</span> (<span class="built_in">fun</span>(n<span class="number">-1</span>)*n);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>第3章 理解云计算</title>
+    <url>/posts/a0070003.html</url>
+    <content><![CDATA[<h2 id="起源与影响"><a href="#起源与影响" class="headerlink" title="起源与影响"></a>起源与影响</h2><h3 id="简要历史"><a href="#简要历史" class="headerlink" title="简要历史"></a>简要历史</h3><ul>
+<li><strong>1961年，John McCarthy 公开提出“效用计算”（utility computing）。</strong></li>
+<li>1969年， Leonard Kleinrock 在 ARPANET 项目中表示“计算机应用的扩展”（spread of computer utilities）。</li>
+<li>20世纪90年代中期，普通大众开始以各种形式使用基于 Internet 的计算机应用（internet-based computer utilities）。</li>
+<li>20世纪90年代后期，Salesforce.com 率先在企业中引入“远程提供服务”的概念（remotely provisioned services）。</li>
+<li>2002年，Amazon.com 启用 Amazon Web 服务（Amazon Web Service，AWS）平台。</li>
+<li><strong>2006年，“云计算”（cloud computing）这一术语出现在商业领域。</strong></li>
+<li>2009年，Google 应用引擎（Google App Engine）成为了另一个里程碑。</li>
+</ul>
+<img src="https://s1.ax1x.com/2023/06/11/pCV0cQ0.png" alt="云计算历史" style="zoom: 50%;" />
 
-<p>在函数 fun(n) 的求解过程中直接调用 fun(n-1)，所以它是一个直接递归函数；又由于递归调用是最后一条语句，所以它又属于尾递归。</p>
-<p>递归算法通常把一个大的复杂问题层层转化为一个或多个与原问题相似的规模较小的问题来求解，递归策略只需少量的代码就可以描述出解题过程所需要的多次重复计算，大大减少了算法的代码量。</p>
-<p>一般来说，能够用递归解决的问题应该满足以下 3 个条件：</p>
-<ol>
-<li>需要解决的问题可以转化为一个或多个子问题来求解，而这些子问题的求解方法与原问题完全相同，只是在数量规模上不同。</li>
-<li>递归调用的次数必须是有限的。</li>
-<li>必须有结束递归的条件来终止递归。</li>
-</ol>
-<h3 id="2-1-2-何时使用递归"><a href="#2-1-2-何时使用递归" class="headerlink" title="2.1.2 何时使用递归"></a>2.1.2 何时使用递归</h3><p>在以下 3 种情况下经常要用到递归的方法。</p>
-<h4 id="1-定义是递归的"><a href="#1-定义是递归的" class="headerlink" title="1.定义是递归的"></a>1.定义是递归的</h4><p>有许多数学公式、数列和概念的定义是递归的，例如求 n! 和斐波那契（ Fibonacci ）数列等。</p>
-<p>对于这些问题的求解过程，可以将其递归定义直接转化为对应的递归算法，例如求 n! 可以转化为【例2.1】的递归算法。</p>
-<h4 id="2-数据结构是递归的"><a href="#2-数据结构是递归的" class="headerlink" title="2.数据结构是递归的"></a>2.数据结构是递归的</h4><p>算法是用于数据处理的，有些存储数据的数据结构是递归的，对于递归数据结构，采用递归的方法设计算法既方便又有效。</p>
-<p>例如，单链表就是一种递归数据结构，其结点类型声明如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">Node</span> </span><br><span class="line">&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Node</span> * next;</span><br><span class="line">&#125; LinkNode;	<span class="comment">//单链表结点类型</span></span><br></pre></td></tr></table></figure>
-
-<p>其中，结构体 Node 的声明中用到了它自身，即指针域 next 是一种指向自身类型的指针。</p>
-<h4 id="3-问题的求解方法是递归的"><a href="#3-问题的求解方法是递归的" class="headerlink" title="3.问题的求解方法是递归的"></a>3.问题的求解方法是递归的</h4><p>有些问题的解法是递归的，典型的有梵塔问题求解。</p>
-<p>该问题的描述是设有 3 个分别命名为 x、y 和 z 的塔座，在塔座 x 上有 n 个直径各不相同、从小到大依次编号为 1~n 的盘片，现要求将 x 塔座上的 n 个盘片移到塔座 z 上并仍按同样的顺序叠放。在盘片移动时必须遵守以下规则：每次只能移动一个盘片；盘片可以插在 x、y 和 z 中的任一塔座；任何时候都不能将一个较大的盘片放在较小的盘片上。</p>
-<h3 id="2-1-3-递归模型"><a href="#2-1-3-递归模型" class="headerlink" title="2.1.3 递归模型"></a>2.1.3 递归模型</h3><p>一般地，一个递归模型由<strong>递归出口</strong>和<strong>递归体</strong>两部分组成，前者确定递归到何时结束，即指出明确的递归结束条件，后者确定递归求解时的递推关系。</p>
-<h3 id="2-1-4-递归算法的执行过程"><a href="#2-1-4-递归算法的执行过程" class="headerlink" title="2.1.4 递归算法的执行过程"></a>2.1.4 递归算法的执行过程</h3><p>在执行递归函数时会直接调用自身，但如果仅有这种操作，将会出现由于无休止地调用而陷入死循环。因此，一个正确的递归函数虽然每次调用的是相同的代码，但它的参数、输入数据等均有变化，并且在正常情况下随着调用的不断深入必定会出现调用到某一层的函数时不再执行递归调用而终止函数的执行，即遇到递归出口。</p>
-<p>递归函数可以看成是一种特殊的函数，递归函数调用是函数调用的一种特殊情况，即它是调用自身代码，因此也可以把每一次递归调用理解成调用自身代码的一个复制件。由于每次调用时它的参数和局部变量值均不相同，所以保证了各个复制件执行时的独立性。</p>
-<p>但递归调用在内部实现时并不是每次调用真的复制一个函数复制件存放到内存中，而是采用代码共享的方式，也就是它们都是调用同一个函数的代码。为此系统设置了一个系统栈，为每一次调用开辟一组存储单元，用来存放本次调用的返回地址以及被中断的函数参数值（即一个栈帧，可以理解为一个栈元素），然后将其进入系统栈（栈元素进栈），再执行被调用函数代码。当被调用函数执行完毕后，对应的栈帧被弹出（栈元素出栈），返回计算后的函数值，控制转到相应的返回地址继续执行。显然当前正在执行的调用函数的栈帧总是处于系统栈的最顶端。</p>
-<p>所以一个函数调用过程就是将数据（包括参数和返回值）和控制信息（返回地址等）从一个函数传递到另一个函数。另外，在执行被调函数的过程中还要为被调函数的局部变量分配空间，在函数返回时释放这些空间，这些工作都是由系统栈来完成的。</p>
-<p>从以上过程可以得出：</p>
-<ol>
-<li>递归执行是通过系统栈实现的。</li>
-<li>每递归调用一次就需将参数、局部变量和返回地址等作为一个栈元素进栈一次，最多的进栈元素个数称为递归深度，n 越大，递归深度越深。</li>
-<li>每当遇到递归出口或本次递归调用执行完毕时需退栈一次，并恢复参数值等，当全部执行完毕时栈应该为空。</li>
-</ol>
-<h2 id="2-2-递归算法设计"><a href="#2-2-递归算法设计" class="headerlink" title="2.2 递归算法设计"></a>2.2 递归算法设计</h2><h3 id="2-2-1-递归与数学归纳法"><a href="#2-2-1-递归与数学归纳法" class="headerlink" title="2.2.1 递归与数学归纳法"></a>2.2.1 递归与数学归纳法</h3><p>递归是算法和程序设计的一种实现技术，数学归纳法是一种论证方法，数学归纳法是递归的<strong>理论基础</strong>。</p>
-<h3 id="2-2-2-递归算法设计的一般步骤"><a href="#2-2-2-递归算法设计的一般步骤" class="headerlink" title="2.2.2 递归算法设计的一般步骤"></a>2.2.2 递归算法设计的一般步骤</h3><p>递归算法设计首先要提炼出递归模型，再转换成对应的程序设计语言。</p>
-<p>提炼递归模型过程中最重要的是找递归体，即确定<strong>大问题</strong>和<strong>小问题</strong>的关系。</p>
-<h3 id="2-2-3-递归数据结构及其递归算法设计"><a href="#2-2-3-递归数据结构及其递归算法设计" class="headerlink" title="2.2.3 递归数据结构及其递归算法设计"></a>2.2.3 递归数据结构及其递归算法设计</h3><p><strong>定义</strong>：采用递归方式定义的数据结构称为递归数据结构。在递归数据结构定义中包含的递归运算称为基本递归运算。</p>
-<h2 id="2-3-递归算法设计示例"><a href="#2-3-递归算法设计示例" class="headerlink" title="2.3 递归算法设计示例"></a>2.3 递归算法设计示例</h2><p>本节通过几个典型示例介绍递归算法设计方法。</p>
-<h3 id="2-3-1-简单选择排序和冒泡排序"><a href="#2-3-1-简单选择排序和冒泡排序" class="headerlink" title="2.3.1 简单选择排序和冒泡排序"></a>2.3.1 简单选择排序和冒泡排序</h3><p>【问题描述】对于给定的含有 n 个元素的数组 a，分别采用简单选择排序和冒泡排序方法按元素值递增排序。</p>
-<p>简单选择排序和冒泡排序方法都是将 a[0..n-1] 分为有序区 a[0..i-1] 和无序区两个部分，有序区中的所有元素都不大于无序区中的元素，初始时有序区为空（即 i&#x3D;0 ）。经过 n-1 趟排序（ i&#x3D;1~n-2 ），每趟排序采用不同方式将无序区中的最小元素移动到无序区的开头，即 a[i] 处。</p>
-<h4 id="1-简单选择排序"><a href="#1-简单选择排序" class="headerlink" title="1.简单选择排序"></a>1.简单选择排序</h4><p>简单选择排序采用简单比较方式在无序区中选择最小元素并放到开头处。</p>
-<p>对应的完整求解程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">SelectSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的简单选择排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j,k;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        k=i;	<span class="comment">//k 记录 a[i..n-1] 中最小元素的下标</span></span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;n;j++)	<span class="comment">//在 a[i..n-1] 中找最小元素</span></span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[k])</span><br><span class="line">                k=j;</span><br><span class="line">        <span class="keyword">if</span>(k!=i)	<span class="comment">//若最小元素不是 a[i]</span></span><br><span class="line">            <span class="built_in">swap</span>(a[i],a[k]);	<span class="comment">//a[i] 和 a[k] 交换</span></span><br><span class="line">        <span class="built_in">SelectSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-冒泡排序"><a href="#2-冒泡排序" class="headerlink" title="2.冒泡排序"></a>2.冒泡排序</h4><p>冒泡排序采用交换方式将无序区中的最小元素放到开头处。</p>
-<p>对应的完整求解程序如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">swap</span><span class="params">(<span class="type">int</span> &amp;x,<span class="type">int</span> &amp;y)</span>	<span class="comment">//交换 x 和 y 值</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> tmp = x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">disp</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n)</span>	<span class="comment">//输出 a 中的所有元素</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="type">int</span> a[],<span class="type">int</span> n,<span class="type">int</span> i)</span>	<span class="comment">//递归的冒泡排序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> j;</span><br><span class="line">    <span class="type">bool</span> exchange;</span><br><span class="line">    <span class="keyword">if</span>(i==n<span class="number">-1</span>) <span class="keyword">return</span>;	<span class="comment">//满足递归出口条件</span></span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        exchange=<span class="literal">false</span>;	<span class="comment">//置 exchange 为 false</span></span><br><span class="line">        <span class="keyword">for</span>(j=n<span class="number">-1</span>;j&gt;i;j--)</span><br><span class="line">            <span class="keyword">if</span>(a[j]&lt;a[j<span class="number">-1</span>])	<span class="comment">//当相邻元素反序时</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">swap</span>(a[j],a[j<span class="number">-1</span>]);</span><br><span class="line">                exchange=<span class="literal">true</span>;	<span class="comment">//发生交换置 exchange 为 true</span></span><br><span class="line">            &#125;</span><br><span class="line">        <span class="keyword">if</span>(exchange==<span class="literal">false</span>)	<span class="comment">//未发生交换时直接返回</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">else</span>	<span class="comment">//发生交换时继续递归调用</span></span><br><span class="line">            <span class="built_in">BubbleSort</span>(a,n,i+<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> n=<span class="number">10</span>;</span><br><span class="line">    <span class="type">int</span> a[]=&#123;<span class="number">2</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">7</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">8</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序前：&quot;</span>); <span class="built_in">disp</span>(a,n);</span><br><span class="line">    <span class="built_in">SelectSort</span>(a,n,<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;排序后：&quot;</span>); <span class="built_in">disp</span>(a,n);	<span class="comment">//输出：1 2 3 4 5 6 7 8 9 10</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-4-递归小结"><a href="#2-4-递归小结" class="headerlink" title="2.4 递归小结"></a>2.4 递归小结</h2><ul>
-<li><p><strong>优点</strong></p>
-<p>结构清晰，可读性强，而且容易用数学归纳法来证明算法的正确性，因此它为设计算法、调试程序带来很大方便。</p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li><p><strong>Gartner （高德纳咨询公司）定义：</strong></p>
+<p>一种能通过 Internet 技术将可扩展性和弹性的IT能力作为服务交付给外部用户的计算方式。</p>
+<p>A style of computing in which scalable and elastic IT-enabled capabilities are delivered as a service to external customers using Internet technologies.</p>
 </li>
-<li><p><strong>缺点</strong></p>
-<p>递归算法的运行效率较低，无论是耗费的计算时间还是占用的存储空间都比非递归算法要多。</p>
+<li><p><strong>Forrester Research （弗雷斯特研究公司）定义：</strong></p>
+<p>一种标准化的 IT 性能（服务、软件或者基础设施），按使用付费和自助服务方式，通过Internet技术进行交付。</p>
+<p>A standardized IT capability (services, software, or infrastructure) delivered via Internet technologies in a pay-per-use, self-service way.</p>
 </li>
-<li><p><strong>解决方法</strong></p>
-<p>在递归算法中消除递归调用，使其转化为非递归算法（递推）。</p>
+<li><p><strong>美国国家标准与技术研究院（NIST）制定（2011年9月 修订版）：</strong></p>
+<p>云计算是一种模型，可以实现<strong>随时随地、便携地、按需地</strong>从可配置计算资源共享<strong>池</strong>中获取所需的资源（例如，网络、服务器、存储、应用程序及服务），资源可以<strong>快速供给和释放</strong>，只需提供很少的管理工作，或与服务提供者进行很少的交互。这种云模型由五个基本特征、三种服务模型和四种部署模型构成。</p>
+<p>Cloud computing is a model for enabling <strong>ubiquitous</strong>, <strong>convenient</strong>, <strong>on-demand</strong> network access to a shared <strong>pool</strong> of configurable computing resources (e.g. networks, servers, storage, applications, and services) that can be <strong>rapidly provisioned and released</strong> with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.</p>
+</li>
+<li><p><strong>※云计算的六个基本特征：</strong></p>
+<ol>
+<li>On-demand usage 按需使用</li>
+<li>Ubiquitous access 随处访问</li>
+<li>Measured usage 可测量的使用</li>
+<li>Resource pool 资源池</li>
+<li>Elasticity 弹性</li>
+<li>Resiliency 可恢复性</li>
+</ol>
+</li>
+<li><p><strong>本书给出了云计算更为简洁的定义：</strong></p>
+<p>云计算是<strong>分布式计算</strong>的一种特殊形式，它引入<strong>效用模型</strong>来<strong>远程</strong>供给<strong>可扩展</strong>和<strong>可测量</strong>的资源。</p>
+<p>Cloud computing is a specialized form of <strong>distributed computing</strong> that introduces <strong>utilization models</strong> for <strong>remotely</strong> provisioning <strong>scalable</strong> and <strong>measured</strong> resources.</p>
+</li>
+</ul>
+<h2 id="基本概念与术语"><a href="#基本概念与术语" class="headerlink" title="基本概念与术语"></a>基本概念与术语</h2><h3 id="云"><a href="#云" class="headerlink" title="云"></a>云</h3><ul>
+<li><p>云是指<strong>一个独特的 IT 环境</strong>，设计目的是为了<strong>远程供给可扩展和可测量的 IT 资源</strong>。</p>
+<p>A cloud refers to <strong>a distinct IT environment</strong> that is designed for the purpose of <strong>remotely provisioning scalable and measured IT resources</strong>.</p>
+</li>
+</ul>
+<h3 id="IT-资源"><a href="#IT-资源" class="headerlink" title="IT 资源"></a>IT 资源</h3><ul>
+<li><p>IT 资源是指一个与 IT 相关的<strong>物理的或虚拟的</strong>事物，它既可以是<strong>基于软件</strong>的（虚拟服务器或定制软件程序），也可以是<strong>基于硬件</strong>的（物理服务器或网络设备）。</p>
+<p>An IT resource is a <strong>physical or virtual</strong> IT-related artifact that can be either <strong>software-based</strong>, such as a virtual server or a custom software program, or <strong>hardware-based</strong>, such as a physical server or a network device.</p>
+<img src="https://s1.ax1x.com/2023/06/11/pCV0WeU.png" alt="IT资源" style="zoom:50%;" /></li>
+</ul>
+<h3 id="云用户与云提供者"><a href="#云用户与云提供者" class="headerlink" title="云用户与云提供者"></a>云用户与云提供者</h3><ul>
+<li><p>提供基于云的 IT 资源的一方称为<strong>云提供者</strong>。</p>
+<p>The party that provides cloud-based IT resources is the <strong>cloud provider</strong>.</p>
+</li>
+<li><p>使用基于云的 IT 资源的一方称为<strong>云用户</strong>。</p>
+<p>The party that uses cloud-based IT resources is the <strong>cloud consumer</strong>.</p>
+</li>
+</ul>
+<h3 id="可扩展性"><a href="#可扩展性" class="headerlink" title="可扩展性"></a>可扩展性</h3><ul>
+<li><p><strong>可扩展性</strong>是指 IT 资源可以处理增加或减少的使用需求的能力。</p>
+<p>From an IT resource perspective, <strong>scaling</strong> represents the ability of the IT resource to handle increased or decreased usage demands.</p>
+</li>
+<li><p>可扩展性有两种类型：</p>
+<ol>
+<li><strong>Horizontal Scaling</strong> – scaling out and scaling in 水平扩展</li>
+<li><strong>Vertical Scaling</strong> – scaling up and scaling down 垂直扩展</li>
+</ol>
+</li>
+</ul>
+<h3 id="云服务"><a href="#云服务" class="headerlink" title="云服务"></a>云服务</h3><ul>
+<li><p><strong>云服务</strong>是指任何可以通过云远程访问的 IT 资源。</p>
+<p>A <strong>cloud service</strong> is any IT resource that is made remotely accessible via a cloud.</p>
+</li>
+</ul>
+<h3 id="云服务用户"><a href="#云服务用户" class="headerlink" title="云服务用户"></a>云服务用户</h3><ul>
+<li><p><strong>云服务用户</strong>是一个临时的运行时角色，由访问云服务的软件程序担任。</p>
+<p>The <strong>cloud service consumer</strong> is a temporary runtime role assumed by a software program when it accesses a cloud service.</p>
 </li>
 </ul>
 <hr>
-<p><a href="https://georgedi.top/posts/a0060000.html">返回目录</a></p>
+<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
 ]]></content>
       <tags>
-        <tag>算法</tag>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第11章 基本云架构</title>
+    <url>/posts/a0070011.html</url>
+    <content><![CDATA[<h2 id="负载分布架构"><a href="#负载分布架构" class="headerlink" title="负载分布架构"></a>负载分布架构</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>负载分布架构（Workload Distribution Architecture）通过增加一个或多个相同的 IT 资源可用进行 IT 资源<strong>水平扩展</strong>，而提供运行时逻辑的<strong>负载均衡器</strong>能够在可用的 IT 资源上均匀分配工作负载。</li>
+<li>IT resources can be <strong>horizontally scaled</strong> via the addition of one or more identical IT resources, and a <strong>load balancer</strong> that provides runtime logic capable of evenly distributing the workload among the available IT resources.</li>
+</ul>
+<h3 id="核心机制"><a href="#核心机制" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="负载均衡器-Load-Balancer"><a href="#负载均衡器-Load-Balancer" class="headerlink" title="负载均衡器 Load Balancer"></a>负载均衡器 Load Balancer</h4><ul>
+<li>在一定程度上依靠复杂的<strong>负载均衡算法</strong>和<strong>运行时逻辑</strong>，减少 IT 资源的<strong>过度使用</strong>和<strong>使用率不足</strong>的情况。</li>
+<li>reduces both IT resource <strong>over-utilization</strong> and <strong>under-utilization</strong> dependent upon the sophistication of the <strong>load  balancing algorithms</strong> and <strong>runtime logic</strong>.</li>
+<li>这种基本架构模型<strong>可以应用于任何 IT 资源</strong>。负载分布常常可以用来支持<strong>分布式虚拟服务器、云存储设备和云服务</strong>。</li>
+<li>This fundamental architectural model <strong>can be applied to any IT resource</strong>. Workload distribution commonly carried out in support of <strong>distributed virtual servers, cloud storage devices, and cloud services</strong>.</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/11.1.png" alt="负载分布架构" style="zoom:67%;" />
+
+<h3 id="特殊变化"><a href="#特殊变化" class="headerlink" title="特殊变化"></a>特殊变化</h3><p>结合负载均衡的各个方面，应用于特殊 IT 资源的负载均衡系统通常会形成这种架构的特殊变化：</p>
+<ul>
+<li>服务负载均衡架构 the service load balancing architecture</li>
+<li>负载均衡的虚拟服务器架构 the load balanced virtual server architecture</li>
+<li>负载均衡的虚拟交换机架构 the load balanced virtual switches architecture</li>
+</ul>
+<h3 id="其他机制"><a href="#其他机制" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
+<li>审核监控器 Audit Monitor</li>
+<li>云使用监控器 Cloud Usage Monitor</li>
+<li>虚拟机监控器 Hypervisor</li>
+<li>逻辑网络边界 Logical Network Perimeter</li>
+<li>资源集群 Resource Cluster</li>
+<li>资源复制 Resource Replication</li>
+</ul>
+<h2 id="资源池架构"><a href="#资源池架构" class="headerlink" title="资源池架构"></a>资源池架构</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>资源池架构（Resource Pooling Architecture）以使用一个或者多个资源池为基础，其中<strong>相同的 IT 资源</strong>由一个系统进行分组和维护，以自动确保它们<strong>保持同步</strong>。</li>
+<li>A resource pooling architecture is based on the use of one or more resource pools, in which <strong>identical IT resources</strong> are grouped and maintained by a system that automatically ensures that they <strong>remain  synchronized</strong>.</li>
+</ul>
+<h3 id="常见的资源池"><a href="#常见的资源池" class="headerlink" title="常见的资源池"></a>常见的资源池</h3><ul>
+<li><p>物理服务器池</p>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.4.png" alt="物理服务器池"></p>
+</li>
+<li><p>虚拟服务器池</p>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.5.png" alt="虚拟服务器池"></p>
+</li>
+<li><p>存储池</p>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.6.png" alt="存储池"></p>
+</li>
+<li><p>网络池</p>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.7.png" alt="网络池"></p>
+</li>
+<li><p>CPU 池</p>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.8.png" alt="CPU 池"></p>
+</li>
+<li><p>内存池</p>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.9.png" alt="内存池"></p>
+</li>
+</ul>
+<h3 id="资源池集合"><a href="#资源池集合" class="headerlink" title="资源池集合"></a>资源池集合</h3><ul>
+<li>可以将单个的池集合为一个更大的池，在这个更大的资源池中，每个单独的池成为了子资源池。</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/11.10.png" alt="资源池集合" style="zoom:67%;" />
+
+<h3 id="同级资源池（用户相互隔离）"><a href="#同级资源池（用户相互隔离）" class="headerlink" title="同级资源池（用户相互隔离）"></a>同级资源池（用户相互隔离）</h3><img src="http://cdn.georgedi.top//_note/cloud/11.11.png" alt="同级资源池" style="zoom:67%;" />
+
+<h3 id="嵌套资源池（IT-资源类型相同，数量可不同）"><a href="#嵌套资源池（IT-资源类型相同，数量可不同）" class="headerlink" title="嵌套资源池（IT 资源类型相同，数量可不同）"></a>嵌套资源池（IT 资源类型相同，数量可不同）</h3><img src="http://cdn.georgedi.top//_note/cloud/11.12.png" alt="嵌套资源池" style="zoom:67%;" />
+
+<h3 id="其他机制-1"><a href="#其他机制-1" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
+<li>审核监控器 Audit Monitor</li>
+<li>云使用监控器 Cloud Usage Monitor</li>
+<li>虚拟机监控器 Hypervisor</li>
+<li>逻辑网络边界 Logical Network Perimeter</li>
+<li>按使用付费监控器 Pay-Per-Use Monitor</li>
+<li>远程管理系统 Remote Administration System</li>
+<li>资源管理系统 Resource Management Ststem</li>
+<li>资源复制 Resource Replication</li>
+</ul>
+<h2 id="动态可扩展架构"><a href="#动态可扩展架构" class="headerlink" title="动态可扩展架构"></a>动态可扩展架构</h2><h3 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>动态可扩展架构（Dynamic Scalability Architecture）是一个架构模型，它基于<strong>预先定义扩展条件</strong>的系统，触发这些条件会导致从资源池中<strong>动态分配 IT 资源</strong>。</li>
+<li>The dynamic scalability architecture is an architectural model based on a system of <strong>predefined scaling conditions</strong> that trigger the <strong>dynamic allocation of IT resources</strong> from resource pools.</li>
+</ul>
+<h3 id="核心机制-1"><a href="#核心机制-1" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="自动扩展监听器-Automated-Scaling-Listener"><a href="#自动扩展监听器-Automated-Scaling-Listener" class="headerlink" title="自动扩展监听器 Automated Scaling Listener"></a>自动扩展监听器 Automated Scaling Listener</h4><ul>
+<li>自动扩展监听器配置了<strong>负载阈值</strong>，以决定何时为工作负载的处理<strong>添加新 IT 资源</strong>。</li>
+<li>The automated scaling listener is configured with <strong>workload thresholds</strong> that dictate when <strong>new IT resources need to be added</strong> to the workload processing.</li>
+<li>动态可扩展架构可以应用于<strong>一系列 IT 资源</strong>，包括虚拟服务器和云存储设备。</li>
+<li>The dynamic scalability architecture can be applied to <strong>a range of IT resources</strong>, including virtual servers and cloud storage devices.</li>
+</ul>
+<h4 id="资源复制-Resource-Replication"><a href="#资源复制-Resource-Replication" class="headerlink" title="资源复制 Resource Replication"></a>资源复制 Resource Replication</h4><h3 id="常用的动态扩展类型"><a href="#常用的动态扩展类型" class="headerlink" title="常用的动态扩展类型"></a>常用的动态扩展类型</h3><ul>
+<li>动态水平扩展（Dynamic Horizontal Scaling）<ul>
+<li><strong>向内或向外扩展</strong> IT 资源实例，以便处理<strong>工作负载的变化</strong>。</li>
+<li>IT resource instances are <strong>scaled out and in</strong> to handle <strong>fluctuating workloads</strong>.</li>
+</ul>
+</li>
+<li>动态垂直扩展（Dynamic Vertical Scaling）<ul>
+<li>当需要调整<strong>单个 IT 资源</strong>的处理容量时，<strong>向上或向下扩展</strong> IT 资源实例。</li>
+<li>IT resource instances are <strong>scaled up and down</strong> when there is a need to adjust the processing capacity of a <strong>single IT resource</strong>.</li>
+</ul>
+</li>
+<li>动态重定位（Dynamic Relocation）<ul>
+<li>将 IT 资源<strong>重放置</strong>到<strong>更大容量</strong>的主机上。</li>
+<li>The IT resource is <strong>relocated</strong> to a host with <strong>more capacity</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="动态水平扩展的过程"><a href="#动态水平扩展的过程" class="headerlink" title="动态水平扩展的过程"></a>动态水平扩展的过程</h3><ol>
+<li><p>监听</p>
+<img src="http://cdn.georgedi.top//_note/cloud/11.13.png" alt="动态水平扩展的过程1" style="zoom:67%;" />
+
+<p>① Cloud service consumers are sending requests to a cloud service.</p>
+<p>② The automated scaling listener monitors the cloud service to determine if predefined capacity thresholds are being exceeded.</p>
+</li>
+<li><p>判断</p>
+<img src="http://cdn.georgedi.top//_note/cloud/11.14.png" alt="动态水平扩展的过程2" style="zoom:67%;" />
+
+<p>③ The number of requests coming from cloud service consumers increases.</p>
+<p>④ The workload exceeds the performance thresholds. The automated scaling listener determines the next course of action based on a predefined scaling policy.</p>
+<p>⑤ If the cloud service implementation is deemed eligible for additional scaling, the automated scaling listener initiates the scaling process.</p>
+</li>
+<li><p>报告</p>
+<img src="http://cdn.georgedi.top//_note/cloud/11.15.png" alt="动态水平扩展的过程3" style="zoom:67%;" />
+
+<p>⑥ The automated scaling listener sends a signal to the resource replication mechanism.</p>
+<p>⑦ which creates more instances of the cloud service.</p>
+<p>⑧ Now that the increased workload has been accommodated, the automated scaling listener resumes monitoring and detracting and adding IT resources, as required.</p>
+</li>
+</ol>
+<h3 id="其他机制-2"><a href="#其他机制-2" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
+<li>云使用监控器 Cloud Usage Monitor</li>
+<li>虚拟机监控器 Hypervisor</li>
+<li>按使用付费监控器 Pay-Per-Use Monitor</li>
+</ul>
+<h2 id="弹性资源容量架构"><a href="#弹性资源容量架构" class="headerlink" title="弹性资源容量架构"></a>弹性资源容量架构</h2><h3 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>弹性资源容量架构（Elastic Resource Capacity Architecture）主要与<strong>虚拟服务器的动态供给</strong>相关，利用<strong>分配和回收 CPU 与 RAM 资源</strong>的系统，<strong>立即响应</strong>托管 IT 资源的<strong>处理请求变化</strong>。</li>
+<li>The elastic resource capacity architecture is primarily related to the <strong>dynamic provisioning of virtual servers</strong>, using a system that <strong>allocates and reclaims CPUs and RAM</strong> in <strong>immediate response</strong> to the <strong>fluctuating processing requirements</strong> of hosted IT resources</li>
+</ul>
+<h3 id="核心机制-2"><a href="#核心机制-2" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="自动扩展监听器-Automated-Scaling-Listener-1"><a href="#自动扩展监听器-Automated-Scaling-Listener-1" class="headerlink" title="自动扩展监听器 Automated Scaling Listener"></a>自动扩展监听器 Automated Scaling Listener</h4><ol>
+<li><p>监听</p>
+<img src="http://cdn.georgedi.top//_note/cloud/11.16.png" alt="弹性资源容量架构1" style="zoom:67%;" />
+
+<p>① Cloud service consumers are actively sending requests to a cloud service,</p>
+<p>② which are monitored by an automated scaling listener.</p>
+<p>③ An intelligent automation engine script is deployed with workflow logic</p>
+<p>④ that is capable of notifying the resource pool using allocation requests.</p>
+</li>
+<li><p>报告</p>
+<img src="http://cdn.georgedi.top//_note/cloud/11.17.png" alt="弹性资源容量架构2" style="zoom:67%;" />
+
+<p>⑤ Cloud service consumer requests increase,</p>
+<p>⑥ causing the automated scaling listener to signal the intelligent automation engine to execute the script.</p>
+<p>⑦ The script runs the workflow logic that signals the hypervisor to allocate more IT resources from the resource pools.</p>
+<p>⑧ The hypervisor allocates additional CPU and RAM to the virtual server, enabling the increased workload to be handled.</p>
+</li>
+</ol>
+<h3 id="其他机制-3"><a href="#其他机制-3" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
+<li>云使用监控器 Cloud Usage Monitor</li>
+<li>按使用付费监控器 Pay-Per-Use Monitor</li>
+<li>资源复制 Resource Replication</li>
+</ul>
+<h2 id="服务负载均衡架构"><a href="#服务负载均衡架构" class="headerlink" title="服务负载均衡架构"></a>服务负载均衡架构</h2><h3 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>服务负载均衡架构（Service Load Balancing Architecture）可以被认为是<strong>负载分布架构的一个特殊变种</strong>，它是专门针对<strong>扩展云服务</strong>实现的。</li>
+<li>The service load balancing architecture can be considered <strong>a specialized variation of the workload distribution architecture</strong> that is geared specifically for <strong>scaling cloud service</strong> implementations.</li>
+</ul>
+<h3 id="核心机制-3"><a href="#核心机制-3" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="负载均衡器-Load-Balancer-1"><a href="#负载均衡器-Load-Balancer-1" class="headerlink" title="负载均衡器 Load Balancer"></a>负载均衡器 Load Balancer</h4><ul>
+<li><strong>云服务实现的副本</strong>被组织为一个<strong>资源池</strong>，而负载均衡器则作为<strong>外部或内置组件</strong>（下图1），允许托管服务器自行平衡工作负载。</li>
+<li><strong>The duplicate cloud service implementations</strong> are organized into a <strong>resource pool</strong>, while the load balancer is positioned as either an <strong>external or built-in component</strong>  to allow the host servers to balance the workloads themselves.</li>
+<li>负载均衡器在位置上可以<strong>独立于云设备及其主机服务器</strong>（下图2），也可以成为应用程序或服务器环境的<strong>内置组件</strong>。</li>
+<li>The load balancer can be positioned either <strong>independent of the cloud services and their host servers</strong>, or <strong>built-in as part</strong> of the application or server’s environment.</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/11.2.png" alt="独立的负载均衡器" style="zoom:67%;" />
+
+<img src="http://cdn.georgedi.top//_note/cloud/11.3.png" alt="内置于云服务的负载均衡器" style="zoom:67%;" />
+
+<h3 id="其他机制-4"><a href="#其他机制-4" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
+<li>云使用监控器 Cloud Usage Monitor</li>
+<li>资源集群 Resource Cluster</li>
+<li>资源复制 Resource Replication</li>
+</ul>
+<h2 id="云爆发架构"><a href="#云爆发架构" class="headerlink" title="云爆发架构"></a>云爆发架构</h2><h3 id="定义-5"><a href="#定义-5" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>云爆发架构（Cloud Bursting Architecture）建立了一种<strong>动态扩展</strong>的形式，只要达到预先设置的容量阈值，就从企业内部的 IT 资源扩展或“<strong>爆发</strong>”到云中。</li>
+<li>The cloud bursting architecture establishes a form of <strong>dynamic scaling</strong> that scales or “<strong>bursts out</strong>” on-premise IT resources into a cloud whenever predefined capacity thresholds have been reached.</li>
+</ul>
+<h3 id="核心机制-4"><a href="#核心机制-4" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="自动扩展监听器-Automated-Scaling-Listener-2"><a href="#自动扩展监听器-Automated-Scaling-Listener-2" class="headerlink" title="自动扩展监听器 Automated Scaling Listener"></a>自动扩展监听器 Automated Scaling Listener</h4><ul>
+<li>自动扩展监听器决定何时将请求<strong>重定向到基于云的 IT 资源</strong>。</li>
+<li>The automated scaling listener determines when to <strong>redirect requests to cloud-based IT resources</strong>.</li>
+</ul>
+<h4 id="资源复制-Resource-Replication-1"><a href="#资源复制-Resource-Replication-1" class="headerlink" title="资源复制 Resource Replication"></a>资源复制 Resource Replication</h4><ul>
+<li>资源复制机制<strong>维持企业内部和基于云的 IT 资源之间</strong>的状态信息的<strong>同步</strong>。</li>
+<li>Resource replication is used to <strong>maintain synchronicity between on-premise and cloud-based IT resources</strong> in relation to state information.</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/11.18.png" alt="云爆发架构" style="zoom:67%;" />
+
+<h2 id="弹性磁盘供给架构"><a href="#弹性磁盘供给架构" class="headerlink" title="弹性磁盘供给架构"></a>弹性磁盘供给架构</h2><h3 id="定义-6"><a href="#定义-6" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>弹性磁盘供给架构（Elastic Disk Provisioning Architecture）建立了一个<strong>动态存储供给系统</strong>，它确保按照<strong>云用户实际使用的存储量</strong>进行精确计费。</li>
+<li>The elastic disk provisioning architecture establishes a <strong>dynamic storage provisioning system</strong> that ensures that <strong>the cloud consumer</strong> is granularly billed for <strong>the exact amount of storage</strong> that it actually uses.</li>
+<li>该系统采用<strong>自动精简供给技术</strong>实现存储空间的自动分配，并进一步支持<strong>运行时使用监控</strong>来收集<strong>准确的使用数据</strong>以便计费。</li>
+<li>This system uses <strong>thin-provisioning technology</strong> for the dynamic allocation of storage space, and is further supported by <strong>runtime usage monitoring</strong> to collect <strong>accurate usage data</strong> for billing purposes.</li>
+</ul>
+<h2 id="冗余存储架构"><a href="#冗余存储架构" class="headerlink" title="冗余存储架构"></a>冗余存储架构</h2><h3 id="定义-7"><a href="#定义-7" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>冗余存储架构（Redundant Storage Architecture）引入了<strong>复制的辅云存储设备</strong>作为故障系统的一部分，它要与主云存储设备中的<strong>数据保持同步</strong>。</li>
+<li>The redundant storage architecture introduces a <strong>secondary duplicate cloud storage device</strong> as part of a failover system that <strong>synchronizes its data</strong> with the data in the primary cloud storage device.</li>
+</ul>
+<h3 id="核心机制-5"><a href="#核心机制-5" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="逻辑单元号-Logical-Unit-Number（LUN）"><a href="#逻辑单元号-Logical-Unit-Number（LUN）" class="headerlink" title="逻辑单元号 Logical Unit Number（LUN）"></a>逻辑单元号 Logical Unit Number（LUN）</h4><ul>
+<li>逻辑单元号（LUN）是一个逻辑驱动器，它代表物理服务驱动器的一个分区。</li>
+<li>A logical unit number (LUN) is a logical drive that represents a partition of a physical drive.</li>
+</ul>
+<p><img src="http://cdn.georgedi.top//_note/cloud/11.20.png" alt="逻辑单元号"></p>
+<h4 id="存储设备网关-Storage-Service-Gateway"><a href="#存储设备网关-Storage-Service-Gateway" class="headerlink" title="存储设备网关 Storage Service Gateway"></a>存储设备网关 Storage Service Gateway</h4><ul>
+<li>当主设备失败时,存储服务网关将云消费请求<strong>向次要设备转移</strong>。</li>
+<li>A storage service gateway diverts cloud consumer requests <strong>to the secondary device</strong> whenever the primary device fails.</li>
+<li>存储设备网关是一个组件，是连接到云存储设备的<strong>外部接口</strong>。</li>
+<li>The storage service gateway is a component that acts as the <strong>external interface</strong> to cloud storage services.</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第4章 基本概念与模型</title>
+    <url>/posts/a0070004.html</url>
+    <content><![CDATA[<h2 id="角色与边界"><a href="#角色与边界" class="headerlink" title="角色与边界"></a>角色与边界</h2><h3 id="云提供者"><a href="#云提供者" class="headerlink" title="云提供者"></a>云提供者</h3><ul>
+<li><p>提供基于云的 IT 资源的<strong>组织机构</strong>。</p>
+<p><strong>The organization</strong> that provides cloud-based IT resources.</p>
+</li>
+</ul>
+<h3 id="云用户"><a href="#云用户" class="headerlink" title="云用户"></a>云用户</h3><ul>
+<li><p><strong>云用户</strong>是组织机构（或者人），他们与云提供者签订正式的合同或者约定来使用云提供者提供的可用的 IT 资源。具体来说，云用户使用云服务用户来访问云服务。</p>
+<p><strong>Cloud consumer</strong> is an organization (or a human) that has a formal contract or arrangement with a cloud provider to use IT resources made available by the cloud provider. Specifically, the cloud consumer uses a cloud service consumer to access a cloud service.</p>
+</li>
+</ul>
+<h3 id="云服务拥有者"><a href="#云服务拥有者" class="headerlink" title="云服务拥有者"></a>云服务拥有者</h3><ul>
+<li><p>在法律上<strong>拥有</strong>云服务的个人或者组织。</p>
+<p>The person or organization that legally <strong>owns</strong> a cloud service.</p>
+</li>
+</ul>
+<h3 id="云资源管理者"><a href="#云资源管理者" class="headerlink" title="云资源管理者"></a>云资源管理者</h3><ul>
+<li><p>负责管理基于云的 IT 资源（包括云服务）。</p>
+<p>Person or organization responsible for administering a cloud-based IT resource (including cloud services).</p>
+</li>
+</ul>
+<h3 id="其他角色"><a href="#其他角色" class="headerlink" title="其他角色"></a>其他角色</h3><ul>
+<li>Cloud Auditor 云审计–对云环境进行独立评估的第三方（通常通过认证的）。</li>
+<li>Cloud Broker 云代理–承担管理和协商云用户和云提供者之间云服务使用的责任。</li>
+<li>Cloud Carrier 云运营商–负责提供云用户和云提供者之间的线路级连接（这个角色通常由网络和电信提供商担任）。</li>
+</ul>
+<h3 id="组织边界"><a href="#组织边界" class="headerlink" title="组织边界"></a>组织边界</h3><ul>
+<li><p>代表一个组织拥有和管理的 IT 资源的<strong>物理范围</strong>。</p>
+<p>Represents the <strong>physical perimeter</strong> that surrounds a set of IT resources that are owned and governed by an organization.</p>
+</li>
+</ul>
+<h3 id="信任边界"><a href="#信任边界" class="headerlink" title="信任边界"></a>信任边界</h3><ul>
+<li><p>一个<strong>逻辑范围</strong>，包括一个组织信任的 IT 资源。</p>
+<p>A <strong>logical perimeter</strong> that typically spans beyond physical boundaries to represent the extent to which IT resources are trusted.</p>
+</li>
+</ul>
+<h2 id="云特性"><a href="#云特性" class="headerlink" title="云特性"></a>云特性</h2><ol>
+<li>按需使用 On-demand usage</li>
+<li>随处访问 Ubiquitous access</li>
+<li>多租户（和资源池）Multitenacy （and resource pool）</li>
+<li>弹性 Elasticity</li>
+<li>可测量的使用 Measured usage</li>
+<li>可恢复性 Resiliency（NIST 云计算定义不包括此性质）</li>
+</ol>
+<h2 id="云交付模型"><a href="#云交付模型" class="headerlink" title="云交付模型"></a>云交付模型</h2><h3 id="基础设施作为服务（IaaS）"><a href="#基础设施作为服务（IaaS）" class="headerlink" title="基础设施作为服务（IaaS）"></a>基础设施作为服务（IaaS）</h3><ul>
+<li>The IaaS delivery model represents a self-contained IT environment comprised of infrastructure-centric IT resources that can be accessed and managed via cloud service-based interfaces and tools.</li>
+<li>This environment can include hardware, network, connectivity，operating systems，and other “raw” （原始的）IT resources.</li>
+<li>The general purpose of an IaaS environment is to provide cloud consumers with a high level of control and responsibility over its configuration（配置） and utilization（使用）.</li>
+<li>The IT resources provided by IaaS are generally not pre-configured（未配置 ）, placing the administrative responsibility directly upon the cloud consumer.</li>
+<li>This model is therefore used by cloud consumers that require a high level of control （高控制权）over the cloud-based environment they intend to create.</li>
+</ul>
+<h3 id="平台作为服务（PaaS）"><a href="#平台作为服务（PaaS）" class="headerlink" title="平台作为服务（PaaS）"></a>平台作为服务（PaaS）</h3><ul>
+<li><p>The PaaS delivery model represents a pre-defined “ready-to-use（就绪可用）” environment typically comprised of already deployed（部署） and configured（配置） IT resources.</p>
+<p>PaaS 交付模型是预先定义好的“就绪可用”的环境，一般由已经部署好和配置好的 IT 资源组成。</p>
+</li>
+</ul>
+<h3 id="软件作为服务（SaaS）"><a href="#软件作为服务（SaaS）" class="headerlink" title="软件作为服务（SaaS）"></a>软件作为服务（SaaS）</h3><ul>
+<li><p>A software program positioned as a shared cloud service and made available as a “product” or generic utility（通用工具） represents the typical profile of a SaaS offering.</p>
+<p>SaaS 通常是把软件程序定位成共享的云服务，作为“产品”或通用的工具进行提供。</p>
+</li>
+<li><p>Be typically used to make a reusable（可重用的） cloud service widely available （often commercially） to a range of cloud consumers.</p>
+</li>
+</ul>
+<h3 id="云交付模型比较"><a href="#云交付模型比较" class="headerlink" title="云交付模型比较"></a>云交付模型比较</h3><p>A comparison of typical cloud delivery model control levels.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Cloud Delivery Model</th>
+<th align="center">Typical Level of Control Granted to Cloud Consumer</th>
+<th align="center">Typical Funcitionality Made Available to Cloud Consumer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">SaaS</td>
+<td align="center">usage and usage-related configuration</td>
+<td align="center">access to front-end user-interface</td>
+</tr>
+<tr>
+<td align="center">PaaS</td>
+<td align="center">limited administrative</td>
+<td align="center">moderate level of administrative control over IT resources relevant to cloud consumer’s usage of platform</td>
+</tr>
+<tr>
+<td align="center">IaaS</td>
+<td align="center">full administrative</td>
+<td align="center">full access to virtualized infrastructure-related IT resources and, possibly, to underlying physical IT resources</td>
+</tr>
+</tbody></table>
+<h2 id="云部署模型"><a href="#云部署模型" class="headerlink" title="云部署模型"></a>云部署模型</h2><h3 id="公有云"><a href="#公有云" class="headerlink" title="公有云"></a>公有云</h3><ul>
+<li>A publicly accessible cloud environment owned by a third-party cloud provider.</li>
+<li>The cloud provider is responsible for the creation and on-going （不间断的） maintenance of the public cloud and its IT resources.</li>
+</ul>
+<h3 id="社区云"><a href="#社区云" class="headerlink" title="社区云"></a>社区云</h3><ul>
+<li>A community cloud is similar to a public cloud except that its access is limited to a specific community of cloud consumers.</li>
+<li>Membership in the community does not necessarily guarantee access to or control of all the cloud’s IT resources. Parties outside the community are generally not granted access unless allowed by the community.</li>
+</ul>
+<h3 id="私有云"><a href="#私有云" class="headerlink" title="私有云"></a>私有云</h3><ul>
+<li>A private cloud is owned by a single organization.<ul>
+<li>a separate(单独的) organizational department typically assumes the responsibility for provisioning the cloud (and therefore assumes the cloud provider role)</li>
+<li>departments requiring access to the private cloud assume the cloud consumer role</li>
+</ul>
+</li>
+</ul>
+<h3 id="混合云"><a href="#混合云" class="headerlink" title="混合云"></a>混合云</h3><ul>
+<li>A hybrid cloud is a cloud environment comprised of two or more different cloud deployment models.</li>
+</ul>
+<hr>
+<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>云计算</tag>
       </tags>
   </entry>
   <entry>
@@ -446,6 +879,650 @@
       <categories>
         <category>科班基础</category>
       </categories>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第9章 云管理机制</title>
+    <url>/posts/a0070009.html</url>
+    <content><![CDATA[<h2 id="远程管理系统"><a href="#远程管理系统" class="headerlink" title="远程管理系统"></a>远程管理系统</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>远程管理系统机制向<strong>外部云资源管理者</strong>提供<strong>工具和用户界面</strong>来<strong>配置和管理</strong>基于云的 IT 资源。</li>
+<li>The remote administration system mechanism provides <strong>tools and user-interfaces</strong> for <strong>external cloud resource administrators</strong> to <strong>configure and administer</strong>  cloud-based IT resources.</li>
+</ul>
+<p><img src="http://cdn.georgedi.top//_note/cloud/9.1.png" alt="远程管理系统"></p>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><ul>
+<li>远程管理系统能够建立一个<strong>入口</strong>以便访问各种底层系统的<strong>控制与管理功能</strong>。</li>
+<li>The remote administration system can establish a <strong>portal</strong> for access to <strong>administration and management features</strong> of various underlying systems.</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/9.2.png" alt="远程管理系统的功能" style="zoom: 67%;" />
+
+<h3 id="入口类型"><a href="#入口类型" class="headerlink" title="入口类型"></a>入口类型</h3><ul>
+<li>远程管理系统提供的<strong>工具和 API</strong> 一般被云提供者用来<strong>开发和定制在线入口</strong>，这些入口向云用户提供各种管理控制。</li>
+<li><strong>The tools and APIs</strong> provided by a remote administration system are generally used by the cloud provider to <strong>develop and customize online portals</strong> that provide cloud consumers with a variety of administrative controls.</li>
+</ul>
+<ol>
+<li><strong>使用与管理入口（Usage And Administration Portal）</strong><ul>
+<li>一种<strong>通用入口</strong>，<strong>集中管理</strong>不同的基于云的 IT 资源，并<strong>提供 IT 资源使用报告</strong>。</li>
+<li>A <strong>general purpose portal</strong> that <strong>centralizes management controls</strong> to different cloud-based IT resources and can further <strong>provide IT resource usage reports</strong>.</li>
+</ul>
+</li>
+<li><strong>自助服务入口（Self-Service Portal）</strong> <ul>
+<li>该入口本质上是一个<strong>购买门户</strong>，它允许云用户搜索云提供者提供的<strong>最新云服务和 IT 资源（通常是租赁的）列表</strong>。然后云用户向云提供者<strong>提交其选项</strong>进行资源调配。</li>
+<li>This is essentially a <strong>shopping portal</strong> that allows cloud consumers to search an <strong>up-to-date list of cloud services and IT resources</strong> that are available from a cloud provider (usually for lease). The cloud consumer <strong>submits its chosen items</strong> to the cloud provider for provisioning.</li>
+</ul>
+</li>
+</ol>
+<h3 id="可执行的任务"><a href="#可执行的任务" class="headerlink" title="可执行的任务"></a>可执行的任务</h3><ul>
+<li>配置与建立云服务 configuring and setting up cloud services</li>
+<li>为按需云服务提供和释放 IT 资源 provisioning and releasing IT resource for on-demand cloud services</li>
+<li>监控云服务的状态、使用和性能 monitoring cloud service status, usage, and performance                         </li>
+<li>监控 QoS 和 SLA 的实行 monitoring QoS and SLA fulfillment</li>
+<li>管理租赁成本与使用费用 managing leasing costs and usage fees</li>
+<li>管理用户账户、安全凭证、授权和访问控制 managing user accounts, security credentials, authorization, and access control</li>
+<li>跟踪对租赁服务内部与外部的访问 tracking internal and external access to leased services                                          </li>
+<li>规划与评估 IT 资源供给 planning and assessing IT resource provisioning</li>
+<li>容量规划  capacity planning</li>
+</ul>
+<h2 id="资源管理系统"><a href="#资源管理系统" class="headerlink" title="资源管理系统"></a>资源管理系统</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>资源管理系统机制帮助<strong>协调 IT 资源</strong>，以便响应云用户和云提供者执行的管理操作。</li>
+<li>The resource management system mechanism helps <strong>coordinate IT resources</strong> in response to management actions performed by both cloud consumers and cloud providers</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/9.3.png" alt="资源管理系统" style="zoom:67%;" />
+
+<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><ul>
+<li>资源管理系统包含一个 <strong>VIM 平台</strong>和一个<strong>虚拟机映像库</strong>。VIM 也可能有额外的库，包括专门用来存放操作数据的。</li>
+<li>A resource management system encompassing a <strong>VIM platform</strong> and a <strong>virtual machine image repository</strong>. The VIM may have additional repositories, including one dedicated to storing operational data.</li>
+</ul>
+<h3 id="可执行的任务-1"><a href="#可执行的任务-1" class="headerlink" title="可执行的任务"></a>可执行的任务</h3><ul>
+<li>管理用来创建预构建实例的虚拟 IT 资源模板 managing virtual IT resource templates that are used to create pre-built instances</li>
+<li>分配和释放虚拟 IT 资源 allocating and releasing virtual IT resource</li>
+<li>协调 IT 资源 coordinating IT resources</li>
+<li>在云服务实例的生命周期内，强制执行使用策略与安全规定 enforcing usage and security policies throughout the lifecycle of cloud service instances</li>
+<li>监控 IT 资源的操作条件 monitoring operational conditions of IT resources</li>
+</ul>
+<h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.4.png" alt="资源管理系统的工作流程" style="zoom:67%;" />
+
+<h2 id="SLA-管理系统"><a href="#SLA-管理系统" class="headerlink" title="SLA 管理系统"></a>SLA 管理系统</h2><h3 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>SLA 管理系统机制代表的是<strong>一系列商品化的可用云管理产品</strong>，这些产品提供的功能包括：<strong>SLA 数据的管理、收集、存储、报告以及运行时通知</strong>。</li>
+<li>The SLA management system mechanism represents <strong>a range of commercially available cloud management products</strong> that provide features pertaining to the <strong>administration, collection, storage, reporting, and runtime notification of SLA data</strong>.</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/9.5.png" alt="SLA 管理系统" style="zoom:67%;" />
+
+<h3 id="工作流程-1"><a href="#工作流程-1" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.6.png" alt="SLA 管理系统的工作流程" style="zoom:67%;" />
+
+<h2 id="计费管理系统"><a href="#计费管理系统" class="headerlink" title="计费管理系统"></a>计费管理系统</h2><h3 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h3><ul>
+<li>计费管理系统机制<strong>专门用于收集和处理使用数据</strong>，它涉及<strong>云提供者的结算和云用户的计费</strong>。</li>
+<li>The billing management system mechanism is <strong>dedicated to the collection and processing of usage data</strong> as it pertains to <strong>cloud provider accounting and cloud consumer billing</strong>.</li>
+</ul>
+<img src="http://cdn.georgedi.top//_note/cloud/9.7.png" alt="计费管理系统" style="zoom:67%;" />
+
+<h3 id="不同定价规则"><a href="#不同定价规则" class="headerlink" title="不同定价规则"></a>不同定价规则</h3><ul>
+<li>定价模型可以是<strong>传统的按使用付费模式</strong>，也可以是<strong>固定费率或按分配付费模式</strong>，还可以是<strong>它们的组合</strong>。</li>
+<li>Pricing models  can vary from the <strong>traditional pay-per-use models</strong>, to <strong>flat-rate or pay-per-allocation modes</strong>, or <strong>combinations thereof</strong>.</li>
+<li>计费是根据<strong>使用前支付和使用后支付</strong>来安排的。后者支付类型又分为<strong>预定义限值和无限制使用</strong>。</li>
+<li>Billing arrangements be based on <strong>pre-usage and post-usage payments</strong>. The later type can include <strong>pre-defined limits or unlimited usage</strong>.</li>
+</ul>
+<h3 id="工作流程-2"><a href="#工作流程-2" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.8.png" alt="计费管理系统的工作流程" style="zoom:67%;" />
+
+<hr>
+<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>云计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第4章 软件工程项目评价方法与经济效果评价</title>
+    <url>/posts/a0080004.html</url>
+    <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
+<h3 id="4-1-2-层次分析法"><a href="#4-1-2-层次分析法" class="headerlink" title="4.1.2 层次分析法"></a>4.1.2 层次分析法</h3><p>层次分析法的步骤如下：</p>
+<ol>
+<li>建立层次结构模型</li>
+<li>构造判断比较矩阵</li>
+<li>进行层次单排序</li>
+<li>进行一致性检验</li>
+</ol>
+<h3 id="4-1-3-平均值法"><a href="#4-1-3-平均值法" class="headerlink" title="4.1.3 平均值法"></a>4.1.3 平均值法</h3><p>平均值法是指计算每个待评价方案 A<sub>k</sub> 在不同综合评价方法求解结果中的平均“优序”数，并依据每个待评价方案的平均优序数大小来决定该方案的排序位置的评价方法。、</p>
+<p>【例4.4】设有 5 个待评方案，采用 4 种综合评价方法求解，其求解所得的排序结果如下表所示，试运用平均值法确定这 5 种方案的最终排序。</p>
+<table>
+<thead>
+<tr>
+<th align="center">方案</th>
+<th align="center">M<sub>1</sub></th>
+<th align="center">M<sub>2</sub></th>
+<th align="center">M<sub>3</sub></th>
+<th align="center">M<sub>4</sub></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">A<sub>1</sub></td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">A<sub>2</sub></td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">A<sub>3</sub></td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">4</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">A<sub>4</sub></td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">A<sub>5</sub></td>
+<td align="center">5</td>
+<td align="center">4</td>
+<td align="center">5</td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<p>解：根据题意和表数据可得：<br>$$<br>\bar{d_1} &#x3D; \frac{1+3+2+3}{4} &#x3D; 2.25<br>$$</p>
+<p>$$<br>\bar{d_2} &#x3D; \frac{3+1+3+5}{4} &#x3D; 3<br>$$</p>
+<p>$$<br>\bar{d_3} &#x3D; \frac{2+2+4+2}{4} &#x3D; 2.5<br>$$</p>
+<p>$$<br>\bar{d_4} &#x3D; \frac{4+5+1+4}{4} &#x3D; 3.5<br>$$</p>
+<p>$$<br>\bar{d_5} &#x3D; \frac{5+4+5+1}{4} &#x3D; 3.75<br>$$</p>
+<p>由于<br>$$<br>\bar{d_1}&lt;\bar{d_3}&lt;\bar{d_2}&lt;\bar{d_4}&lt;\bar{d_5}<br>$$<br>故有最终排序结果为<br>$$<br>A_1&gt;A_3&gt;A_2&gt;A_4&gt;A_5<br>$$</p>
+<h2 id="4-2-软件工程项目的现金流量"><a href="#4-2-软件工程项目的现金流量" class="headerlink" title="4.2 软件工程项目的现金流量"></a>4.2 软件工程项目的现金流量</h2><ol>
+<li>现金流入</li>
+<li>现金流出</li>
+<li>所得税前净现金流量</li>
+<li>累计所得税前净现金流量</li>
+<li>调整所得税</li>
+<li>所得税后净现金流量</li>
+<li>累计所得税后净现金流量</li>
+</ol>
+<h2 id="4-3-软件工程项目的经济效果评价"><a href="#4-3-软件工程项目的经济效果评价" class="headerlink" title="4.3 软件工程项目的经济效果评价"></a>4.3 软件工程项目的经济效果评价</h2><h3 id="4-3-1-独立方案项目评价"><a href="#4-3-1-独立方案项目评价" class="headerlink" title="4.3.1 独立方案项目评价"></a>4.3.1 独立方案项目评价</h3><p>所谓独立方案项目评价，是指<strong>对某一给定的软件工程项目投资方案从技术经济角度出发作出是否可行的判断或者评价。</strong></p>
+<p>主要采用以下两种方法进行评价。</p>
+<ol>
+<li><p>净现值法</p>
+<p>公式如下（无残值）：<br>$$<br>NPV &#x3D; \sum_{t&#x3D;0}^{N}\frac{B_t-C_t-K_t}{(1+i)^t}<br>$$<br>式中，NPV 表示软件项目工程的净现值；B<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的收益；C<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的成本或支出；K<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的投资额；N 表示软件工程项目的使用年限；i 表示基准贴现率。</p>
+<ul>
+<li>若 NPV ＞ 0，则说明在基准贴现率 i 的水平下，该软件工程项目可盈利，从经济效果角度来看，该项目可投资。</li>
+<li>若 NPV &lt;&#x3D; 0，则说明在基准贴现率 i 的水平下，该软件工程项目仅仅能够收支平衡甚至亏损，从经济效果角度来看，该项目投资不可行。</li>
+</ul>
+</li>
+<li><p>内部收益率法</p>
+</li>
+</ol>
+<h3 id="4-3-2-多方案项目评价"><a href="#4-3-2-多方案项目评价" class="headerlink" title="4.3.2 多方案项目评价"></a>4.3.2 多方案项目评价</h3><ol>
+<li>净现值法</li>
+<li>净年值法</li>
+<li>研究期法</li>
+<li>多方案组合排序法</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
+]]></content>
+      <tags>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第3章 软件的成本管理与定价分析</title>
+    <url>/posts/a0080003.html</url>
+    <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
+<p>成本的分类方法一般可以按照不同的准则进行划分：</p>
+<ol>
+<li><strong>按照企业的主要经营活动</strong>可分为采购成本、研究与开发成本、生产成本、经营成本以及管理费用。</li>
+<li><strong>按照生产费用计入成本</strong>的方法，可分为直接成本和间接成本。</li>
+<li><strong>按照成本与所完成项目工作量的关系</strong>，可分为固定成本和变动成本。</li>
+<li><strong>按照成本所确定的时间</strong>，可分为预算成本、计划成本及实际成本。</li>
+</ol>
+<h3 id="3-1-1-软件工程项目的成本构成"><a href="#3-1-1-软件工程项目的成本构成" class="headerlink" title="3.1.1 软件工程项目的成本构成"></a>3.1.1 软件工程项目的成本构成</h3><p>软件成本是软件在其生存周期内为取得各种软、硬件资源的支持以及维持系统的研究、生产经营及管理工作所支付的所有费用。</p>
+<p>软件工程项目成本又称为软件工程项目支出，是指为了实现软件工程项目目标所耗用资源的成本总和。软件工程项目成本主要由<strong>硬件成本</strong>、<strong>软件开发成本</strong>、<strong>人员培训费用</strong>和<strong>项目管理费用</strong>等构成。</p>
+<p>软件工程项目成本主要涉及以下 15 类：</p>
+<ol>
+<li>调研费用</li>
+<li>环境建设费用</li>
+<li>工具购置费</li>
+<li>基建费用</li>
+<li>软件开发&#x2F;测试费用</li>
+<li>人力资源费用</li>
+<li>水、电、运输费</li>
+<li>第三方评测费</li>
+<li>软件产品制作费用</li>
+<li>培训费用</li>
+<li>现场实施费用</li>
+<li>营销费用</li>
+<li>售后服务运行维护费</li>
+<li>管理费用</li>
+<li>其他费用</li>
+</ol>
+<h3 id="3-1-2-软件成本测算的影响因素"><a href="#3-1-2-软件成本测算的影响因素" class="headerlink" title="3.1.2 软件成本测算的影响因素"></a>3.1.2 软件成本测算的影响因素</h3><h3 id="3-1-3-软件成本测算的流程"><a href="#3-1-3-软件成本测算的流程" class="headerlink" title="3.1.3 软件成本测算的流程"></a>3.1.3 软件成本测算的流程</h3><h2 id="3-2-软件的成本核算"><a href="#3-2-软件的成本核算" class="headerlink" title="3.2 软件的成本核算"></a>3.2 软件的成本核算</h2><p>对软件工程项目的成本与工期测算的方法较多，通常有功能分解法、统计模型法、价值工程法、表格法、驱动因子法、计算机模拟法、类比法、专门成本测算工具软件预算等方法。</p>
+<p>以下主要分析<strong>驱动因子法</strong>和<strong>类比法</strong>。</p>
+<h3 id="3-2-1-功能分解法"><a href="#3-2-1-功能分解法" class="headerlink" title="3.2.1 功能分解法"></a>3.2.1 功能分解法</h3><p>功能分解法主要从结构上将软件系统按照功能或者性能与生存周期各阶段进行二维分解。</p>
+<h3 id="3-2-2-驱动因子法"><a href="#3-2-2-驱动因子法" class="headerlink" title="3.2.2 驱动因子法"></a>3.2.2 驱动因子法</h3><p>驱动因子法又称为影响因子法，是一种在统计模型的基础上通过引入更多对 y 有影响的要素，来完成统计模型估计值的修正的一种定性与定量相结合的方法。</p>
+<ol>
+<li><p><strong>驱动因子法的求解方法</strong></p>
+<ol>
+<li><p>确定对因变量 y 做出估计的统计模型 y&#x3D;g(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)，其中x<sub>j</sub>（1~n）是指通过定量估算法求得的对 y 有较大影响的几个要素。</p>
+</li>
+<li><p>引入综合要素 U，U 是指除了 x<sub>j</sub> 以外对 y 有影响的估计值，如下列公式所示：<br>$$<br>y &#x3D; U · g(x_{1},x_{2},…,x_{n})<br>$$</p>
+<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{n} U_{j}<br>$$</p>
+</li>
+</ol>
+</li>
+<li><p><strong>影响要素引入 x<sub>j</sub> （1~n）的基本原则</strong></p>
+<ol>
+<li>对 y 有重要影响的要素归入 x<sub>j</sub>，其他归入 U<sub>j</sub>。</li>
+<li>易于定量的影响要素归入 x<sub>j</sub>，不易于定量的影响要素归入 U<sub>j</sub>。</li>
+<li>x<sub>j</sub> 的数量不宜太多，否则求解统计模型较困难。</li>
+</ol>
+</li>
+<li><p><strong>结构化成本模型</strong></p>
+<p>结构化成本模型（ COCOMO ）主要有基本模型、中级模型和详细模型三种。</p>
+<p>中级模型适用于系统规划阶段作软件成本估算的模型，其求解方式如下列公式所示：<br>$$<br>C_{s} &#x3D; a · M_{s}<br>$$</p>
+<p>$$<br>T_{d} &#x3D; h(M_{s})^d<br>$$</p>
+<p>$$<br>M_{s} &#x3D; U · M_{0}<br>$$</p>
+<p>$$<br>M_{0} &#x3D; r · L^{k}<br>$$</p>
+<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{15} U_{j}<br>$$</p>
+</li>
+</ol>
+<p><strong>中级 COCOMO 变量参数明细表如下。</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">序号</th>
+<th align="center">变量名称</th>
+<th align="center">经济含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">C<sub>s</sub></td>
+<td align="center">软件开发成本</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">a</td>
+<td align="center">软件开发阶段的工时费用率</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">M<sub>s</sub></td>
+<td align="center">软件开发阶段的修正工作量</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">M<sub>0</sub></td>
+<td align="center">软件开发阶段的基本工作量</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">L</td>
+<td align="center">软件开发规模</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">U</td>
+<td align="center">软件综合影响要素</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">U<sub>j</sub></td>
+<td align="center">对成本有一定影响的第 j 个影响要素</td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center">T<sub>d</sub></td>
+<td align="center">工期（开发周期）</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center">r，k，h，d</td>
+<td align="center">形式参数</td>
+</tr>
+</tbody></table>
+<p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th rowspan="2">软件总体类型</th>
+            <th colspan="2">基本工作量 M<sub>0</sub></th>
+            <th colspan="2">开发工期 T<sub>d</sub></th>  
+        </tr>
+        <tr align="center">
+            <td>r</td>
+            <td>k</td>
+            <td>h</td>
+            <td>d</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td>有机型</td>
+            <td>3.2</td>
+            <td>1.05</td>
+            <td>2.5</td>
+            <td>0.38</td>
+        </tr>
+        <tr align="center">
+            <td>嵌入型</td>
+            <td>2.8</td>
+            <td>1.20</td>
+            <td>2.5</td>
+            <td>0.32</td>
+        </tr>
+        <tr align="center">
+            <td>半独立型</td>
+            <td>3.0</td>
+            <td>1.12</td>
+            <td>2.5</td>
+            <td>0.35</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
+<table>
+    <thead>
+        <tr align="center">
+            <th colspan="2">工作量影响要素 U</th>
+            <th>非常低</th>
+            <th>低</th>
+            <th>正常</th>
+            <th>高</th>
+            <th>非常高</th>
+            <th>超高</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center">
+            <td rowspan="3">产品因素类</td>
+            <td>软件可靠性 U<sub>1</sub></td>
+            <td>0.75</td>
+            <td>0.88</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.40</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>数据库规模 U<sub>2</sub></td>
+            <td>-</td>
+            <td>0.94</td>
+            <td>1.00</td>
+            <td>1.08</td>
+            <td>1.16</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>产品复杂性 U<sub>3</sub></td>
+            <td>0.70</td>
+            <td>0.85</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="4">计算机因素类</td>
+            <td>执行时间限制 U<sub>4</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.10</td>
+            <td>1.30</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>主存储限制 U<sub>5</sub></td>
+            <td>-</td>
+            <td>-</td>
+            <td>1.00</td>
+            <td>1.06</td>
+            <td>1.21</td>
+            <td>1.65</td>
+        </tr>
+        <tr align="center">
+            <td>易变性 U<sub>6</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.15</td>
+            <td>1.30</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>环境周转时间 U<sub>7</sub></td>
+            <td>-</td>
+            <td>0.87</td>
+            <td>1.00</td>
+            <td>1.07</td>
+            <td>1.15</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="5">人员因素类</td>
+            <td>分析员能力 U<sub>8</sub></td>
+            <td>1.46</td>
+            <td>1.19</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.71</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>应用领域实际经验 U<sub>9</sub></td>
+            <td>1.29</td>
+            <td>1.13</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序员能力 U<sub>10</sub></td>
+            <td>1.42</td>
+            <td>1.17</td>
+            <td>1.00</td>
+            <td>0.86</td>
+            <td>0.70</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>使用经验 U<sub>11</sub></td>
+            <td>1.21</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.90</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>程序语言使用经验 U<sub>12</sub></td>
+            <td>1.41</td>
+            <td>1.07</td>
+            <td>1.00</td>
+            <td>0.95</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td rowspan="3">项目因素类</td>
+            <td>现代程序设计技术 U<sub>13</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.82</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>软件工具的使用 U<sub>14</sub></td>
+            <td>1.24</td>
+            <td>1.10</td>
+            <td>1.00</td>
+            <td>0.91</td>
+            <td>0.83</td>
+            <td>-</td>
+        </tr>
+        <tr align="center">
+            <td>开发进度限制 U<sub>15</sub></td>
+            <td>1.23</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>1.04</td>
+            <td>1.10</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+【例3.1】某软件企业中标了某嵌入型软件工程项目，预计 10k DSI 代码量，根据该软件的需求以及开发投入情况，用 COCOMO 求得该项目的综合影响要素 U 为 1.36，从该企业的信息数据库得知工时费用率 a = 9000 元/人·月，试对该软件的成本、工作量与工期做出估算。
+
+<p>解：根据题意以及嵌入型软件的形式参数值可得：<br>$$<br>M_0 &#x3D; r·L^k &#x3D; 2.8 × 10^{1.2} &#x3D; 44.38 （人·月）<br>$$</p>
+<p>$$<br>M_s &#x3D; U·M_0 &#x3D; 1.36 × 44.38 &#x3D; 60.4（人·月）<br>$$</p>
+<p>$$<br>T_d &#x3D; h(M_s)^d &#x3D; 2.5 × 60.4^{0.32} &#x3D; 9.29（个月）<br>$$</p>
+<p>$$<br>C_s &#x3D; a · M_s &#x3D; 9000 × 60.4 &#x3D; 54.36（万元）<br>$$</p>
+<h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><p>软件企业开发软件通常有两种情况：①全新开发方式；②目标软件与以往开发的某款或者某些软件有许多相同或类似的结构，涉及的开发人员变化也较少，则可采用类比法来估算目标软件的成本。</p>
+<p>假设某软件企业以往开发过一个类似的软件 S<sub>X</sub>，其软件规模为 L<sub>X</sub>；目标开发软件为 S<sub>Y</sub>,其软件规模为 L<sub>Y</sub>。由于目标开发软件的功能结构与原软件 S<sub>X</sub> 有很多类似之处，因此决定在 S<sub>X</sub> 的基础上改编成 S<sub>Y</sub>。</p>
+<p>故引入调整系数 AC，主要通过设计修改 DMC、代码修改 CMC，以及集成修改 IMC 三部分构成。</p>
+<p>调整系数 AC 可用下列公式表示：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC<br>$$</p>
+<p>式中 W<sub>j</sub>（j&#x3D;1，2，3）表示权重系数，其加权和必须等于 1。</p>
+<p>B.W.Boehm 建议权重系数 W<sub>1</sub>，W<sub>2</sub>，W<sub>3</sub> 分别取值为 0.4、0.3 和 0.3。也就是下列公式。<br>$$<br>AC &#x3D; 0.4 · DMC + 0.3 · CMC + 0.3 · IMC<br>$$<br>由此可得 S<sub>Y</sub> 软件的开发规模 L<sub>Y</sub> 可以用下列公式表示。<br>$$<br>L_{Y} &#x3D; L_{X} · AC &#x3D; L_{X} · (0.4 · DMC + 0.3 · CMC + 0.3 · IMC)<br>$$</p>
+<p>【例3.2】某软件公司曾开发过一种规模为 20k 代码量的软件 S<sub>X</sub>，现欲将其改编为嵌入型软件 S<sub>Y</sub>，经估算其设计、代码与集成修改的系数分别是 30%、40% 和 110%，工作量综合影响要素 U &#x3D; 1.2，工时费用率 a &#x3D; 8000 元&#x2F;人·月。试用类比法估算目标软件 S<sub>Y</sub> 的成本。</p>
+<p>解：根据题意可得：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC &#x3D; 0.4 × 0.3 + 0.3 × 0.4 + 0.3 × 1.10 &#x3D; 0.57<br>$$</p>
+<p>$$<br>L_Y &#x3D; L_{X} · AC &#x3D; 20 kLOC × 0.57 &#x3D; 11.4 kLOC<br>$$</p>
+<p>由题意可知，该软件属于嵌入型软件，查表可知相对应的形式参数值：<br>$$<br>M_s &#x3D; U·M_0 &#x3D; U · r · L^k &#x3D; 1.2 × 2.8 × 11.4^{1.20} &#x3D; 62.32（人·月）<br>$$</p>
+<p>$$<br>C_s &#x3D; a·M_s &#x3D; 8000 × 62.32 &#x3D; 498560（元）<br>$$</p>
+<h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><ol>
+<li><p><strong>设备的磨损</strong></p>
+<ol>
+<li><p>设备的<strong>有形磨损</strong></p>
+<p>有形磨损是指设备在生产使用或者闲置过程中，由于使用或者受自然环境的影响所产生的损耗。</p>
+<p>设备的有形磨损根据导致其磨损的不同原因可分为：</p>
+<ul>
+<li>第 Ⅰ 类有形磨损</li>
+<li>第 Ⅱ 类有形磨损</li>
+</ul>
+</li>
+<li><p>设备的<strong>无形磨损</strong></p>
+<p>无形磨损是指随着科技的进步等原因导致设备价值不断降低的现象。</p>
+<p>设备的无形磨损根据导致其磨损的不同原因可分为：</p>
+<ul>
+<li>第 Ⅰ 类无形磨损</li>
+<li>第 Ⅱ 类无形磨损</li>
+</ul>
+</li>
+<li><p>设备的<strong>综合磨损</strong></p>
+<p>综合磨损是指设备购置后既产生了<strong>有形磨损</strong>又产生了<strong>无形磨损</strong>。</p>
+<p>假设设备发生有形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>p</sub>；而设备产生无形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>q</sub>，及设备的综合磨损的计算公式如下：<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q)<br>$$<br>【例3.3】某 IT 企业原始购买价值为 23000 元的 A 电子设备在使用过程中发生磨损，需要修理，修理费用为 4000 元，若重置同类设备价值为 20000 元，若新旧设备生产率及单位产品消耗是相同的，试求该电子设备的综合磨损程度及剩余价值。</p>
+<p>解：由题意可知， K<sub>0</sub> &#x3D; 23000（元），R &#x3D; 4000（元），K<sub>1</sub> &#x3D; 20000（元）。</p>
+<p>A 电子设备的有形磨损程度为<br>$$<br>α_p &#x3D; \frac{R}{K_{1}} &#x3D; \frac{4000}{20000} &#x3D; 0.2<br>$$<br>A 电子设备的无形磨损程度为<br>$$<br>α_q &#x3D; 1 - \frac{K_{1}}{K_{0}} &#x3D; 1 - \frac{20000}{23000} &#x3D; 0.13<br>$$<br>A 电子设备的综合磨损程度为<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q) &#x3D; 1-(1-0.2)(1-0.13) &#x3D; 0.304<br>$$<br>A 电子设备的剩余价值为<br>$$<br>K &#x3D; K_1 - R &#x3D; 20000 - 4000 &#x3D; 16000（元）<br>$$<br>故该电子设备的综合磨损程度是 30.4%，其剩余价值是 16000 元。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>设备的折旧</strong></p>
+<p>我国现行财会制度规定的固定资产折旧法主要有<strong>平均年限法</strong>和<strong>双倍余额递减法</strong>。</p>
+</li>
+</ol>
+<h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><p>价值工程设计的三个基本概念：<strong>价值（ Value ）</strong>、<strong>功能（ Function ）</strong>和<strong>全寿命周期成本（ Cost ）</strong>。</p>
+<ol>
+<li><p><strong>提高软件工程项目价值的途径</strong></p>
+<ol>
+<li>双向型</li>
+<li>节约型</li>
+<li>改进型</li>
+<li>牺牲型</li>
+<li>投资型</li>
+</ol>
+<p>上述提高价值的方法中，1、2 属于降低成本，3、5 属于提高功能，1 是对功能与成本同时进行改善，是最积极、最理想的提高价值的方法。</p>
+</li>
+<li><p><strong>价值工程的主要特征</strong></p>
+<ol>
+<li>价值工程以用户的功能需求为出发点；</li>
+<li>价值工程以功能分析为核心，系统地研究功能和成本之间的关系；</li>
+<li>价值工程是致力于提高价值的创造性活动；</li>
+<li>价值工程是有计划、有组织地按照一定地工序来进行。</li>
+</ol>
+</li>
+</ol>
+<h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><ol>
+<li>百分比法</li>
+<li>ABC 分类法</li>
+<li>价值系数法</li>
+</ol>
+<h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><p>功能分析主要包括<strong>功能定义</strong>与<strong>功能整理</strong>两方面的内容。</p>
+<p>功能整理的步骤如下：</p>
+<ol>
+<li>分析软件产品的基本功能与辅助功能；</li>
+<li>明确功能的上下位与并列关系；</li>
+<li>排列功能系统图。</li>
+</ol>
+<h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><ol>
+<li><strong>挣值分析的基本概念</strong><ol>
+<li>计划价值</li>
+<li>实际成本</li>
+<li>挣值</li>
+<li>完工预算</li>
+</ol>
+</li>
+<li><strong>挣值分析的绩效指标</strong><ol>
+<li>成本偏差</li>
+<li>进度偏差</li>
+<li>进度绩效指标</li>
+<li>成本绩效指标</li>
+</ol>
+</li>
+<li><strong>挣值分析的预测指标</strong><ol>
+<li>完工尚需估算</li>
+<li>完工估算</li>
+<li>完工尚需绩效指标</li>
+</ol>
+</li>
+</ol>
+<h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><p>软件企业的定价策略：</p>
+<ol>
+<li>捆绑定价策略</li>
+<li>撇脂和渗透定价策略<ul>
+<li>撇脂定价法</li>
+<li>渗透定价法</li>
+</ul>
+</li>
+<li>歧视定价策略</li>
+<li>免费使用定价策略</li>
+</ol>
+<h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3><p>软件产品的促销策略确定：</p>
+<p>促销是促进营销的简称，是指采用人员或非人员的方式来帮助或说服客户购买某软件元产品／软件服务，或者让消费者对某个或者某些软件产品产生好感的一种活动。</p>
+<p>促销策略主要包括<strong>直接促销</strong>和<strong>间接促销</strong>。直接促销是指人员上门推销软件产品的活动；间接促销是指采用各种媒体广告、营销推广与公共关系宣传等方式进行推销软件产品的活动。</p>
+<p>软件作为一种特殊的无形产品，除了上述促销手段外，还有一些特殊的促销手段，如<strong>品牌促销</strong>、<strong>教育促销</strong>以及<strong>人员促销</strong>等。</p>
+<ol>
+<li><p>品牌促销</p>
+<p>软件产品／软件服务是一种高技术产品，一般用户在购买软件产品前往往都会心存疑虑。一个良好的软件产品形象能大大消除用户的购买疑虑，让用户产生安全感和信任感。因此，软件企业要大力提高品牌知名度，让客户对软件企业产生信任感，放心购买其产品。软件企业可以通过树立品牌形象，引入企业形象识别系统以及发布产品广告、企业形象广告，建立企业网站、媒体宣传等多种手段来扩大企业的品牌知名度。</p>
+</li>
+<li><p>教育促销</p>
+<p>软件的高科技特性会导致用户较难理解与掌握，软件企业需要利用各种场合来演示自己的产品，如通过软件博览会、展销会等，让目标用户与潜在用户了解该产品的主要功能。教育促销可通过向媒体发送免费的测试软件、认证培训、举办讲座等方式进行普及知识；利用展会进行产品展示等多种手段来扩大软件产品的宣传。</p>
+</li>
+<li><p>人员促销</p>
+<p>人员促销应注重沟通能力以及人际关系。软件企业通过专业的服务人员与用户实现有效的沟通，为客户做好完备的前期咨询工作。这种方式针对性强，让客户觉得自己备受重视，无效劳动少，因此促销成功的概率会比较高。人员促销也有利于软件企业了解市场，能够给软件企业营销决策提供有效的建议与意见。人员促销需要注意以下问题：</p>
+<ol>
+<li>挑选专业技术能力强、个人素质高的促销人员；</li>
+<li>软件企业要根据目标市场的特点、产品的特点等，对促销人员进行资源、促销区域、促销时间等进行合理分配；</li>
+<li>软件企业要对促销人员实施有效的管理与激励，以确保促销目标的实现。</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
+]]></content>
       <tags>
         <tag>软件工程</tag>
         <tag>经济学</tag>
@@ -1580,552 +2657,86 @@
       </tags>
   </entry>
   <entry>
-    <title>第3章 软件的成本管理与定价分析</title>
-    <url>/posts/a0080003.html</url>
-    <content><![CDATA[<h2 id="3-1-软件的成本构成及其影响因素"><a href="#3-1-软件的成本构成及其影响因素" class="headerlink" title="3.1 软件的成本构成及其影响因素"></a>3.1 软件的成本构成及其影响因素</h2><p>软件成本是指软件工程项目从设计到软件产品或软件工程项目完成期间所需费用的总和。</p>
-<p>成本的分类方法一般可以按照不同的准则进行划分：</p>
+    <title>第6章 软件工程项目进度计划的制订</title>
+    <url>/posts/a0080006.html</url>
+    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
+<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
+<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
+<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
 <ol>
-<li><strong>按照企业的主要经营活动</strong>可分为采购成本、研究与开发成本、生产成本、经营成本以及管理费用。</li>
-<li><strong>按照生产费用计入成本</strong>的方法，可分为直接成本和间接成本。</li>
-<li><strong>按照成本与所完成项目工作量的关系</strong>，可分为固定成本和变动成本。</li>
-<li><strong>按照成本所确定的时间</strong>，可分为预算成本、计划成本及实际成本。</li>
+<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
+<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
+<li>WBS 必须与项目实际工作中的执行方式一样。</li>
+<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
 </ol>
-<h3 id="3-1-1-软件工程项目的成本构成"><a href="#3-1-1-软件工程项目的成本构成" class="headerlink" title="3.1.1 软件工程项目的成本构成"></a>3.1.1 软件工程项目的成本构成</h3><p>软件成本是软件在其生存周期内为取得各种软、硬件资源的支持以及维持系统的研究、生产经营及管理工作所支付的所有费用。</p>
-<p>软件工程项目成本又称为软件工程项目支出，是指为了实现软件工程项目目标所耗用资源的成本总和。软件工程项目成本主要由<strong>硬件成本</strong>、<strong>软件开发成本</strong>、<strong>人员培训费用</strong>和<strong>项目管理费用</strong>等构成。</p>
-<p>软件工程项目成本主要涉及以下 15 类：</p>
+<p>WBS 的创建步骤如下：</p>
 <ol>
-<li>调研费用</li>
-<li>环境建设费用</li>
-<li>工具购置费</li>
-<li>基建费用</li>
-<li>软件开发&#x2F;测试费用</li>
-<li>人力资源费用</li>
-<li>水、电、运输费</li>
-<li>第三方评测费</li>
-<li>软件产品制作费用</li>
-<li>培训费用</li>
-<li>现场实施费用</li>
-<li>营销费用</li>
-<li>售后服务运行维护费</li>
-<li>管理费用</li>
-<li>其他费用</li>
+<li>识别可交付成果及相关工作。</li>
+<li>确定 WBS 的分解方式和编排结构。</li>
+<li>创建 WBS。</li>
+<li>验证 WBS 的合理性及正确性。</li>
+<li>建立 WBS 编码系统。</li>
 </ol>
-<h3 id="3-1-2-软件成本测算的影响因素"><a href="#3-1-2-软件成本测算的影响因素" class="headerlink" title="3.1.2 软件成本测算的影响因素"></a>3.1.2 软件成本测算的影响因素</h3><h3 id="3-1-3-软件成本测算的流程"><a href="#3-1-3-软件成本测算的流程" class="headerlink" title="3.1.3 软件成本测算的流程"></a>3.1.3 软件成本测算的流程</h3><h2 id="3-2-软件的成本核算"><a href="#3-2-软件的成本核算" class="headerlink" title="3.2 软件的成本核算"></a>3.2 软件的成本核算</h2><p>对软件工程项目的成本与工期测算的方法较多，通常有功能分解法、统计模型法、价值工程法、表格法、驱动因子法、计算机模拟法、类比法、专门成本测算工具软件预算等方法。</p>
-<p>以下主要分析<strong>驱动因子法</strong>和<strong>类比法</strong>。</p>
-<h3 id="3-2-1-功能分解法"><a href="#3-2-1-功能分解法" class="headerlink" title="3.2.1 功能分解法"></a>3.2.1 功能分解法</h3><p>功能分解法主要从结构上将软件系统按照功能或者性能与生存周期各阶段进行二维分解。</p>
-<h3 id="3-2-2-驱动因子法"><a href="#3-2-2-驱动因子法" class="headerlink" title="3.2.2 驱动因子法"></a>3.2.2 驱动因子法</h3><p>驱动因子法又称为影响因子法，是一种在统计模型的基础上通过引入更多对 y 有影响的要素，来完成统计模型估计值的修正的一种定性与定量相结合的方法。</p>
+<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
 <ol>
-<li><p><strong>驱动因子法的求解方法</strong></p>
+<li><p>完成对开始</p>
+</li>
+<li><p>开始对开始</p>
+</li>
+<li><p>完成对完成</p>
+</li>
+<li><p>开始对完成</p>
+</li>
+<li><p><strong>双代号网络计划图的绘制规则</strong></p>
 <ol>
-<li><p>确定对因变量 y 做出估计的统计模型 y&#x3D;g(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub>)，其中x<sub>j</sub>（1~n）是指通过定量估算法求得的对 y 有较大影响的几个要素。</p>
-</li>
-<li><p>引入综合要素 U，U 是指除了 x<sub>j</sub> 以外对 y 有影响的估计值，如下列公式所示：<br>$$<br>y &#x3D; U · g(x_{1},x_{2},…,x_{n})<br>$$</p>
-<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{n} U_{j}<br>$$</p>
-</li>
+<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
+<li>不得出现回路。</li>
+<li>不得出现双箭头或者不带箭头的活动。</li>
+<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
+<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
+<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
+<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
+<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
+<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
+<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
 </ol>
 </li>
-<li><p><strong>影响要素引入 x<sub>j</sub> （1~n）的基本原则</strong></p>
+<li><p><strong>项目工作时长的算法</strong></p>
 <ol>
-<li>对 y 有重要影响的要素归入 x<sub>j</sub>，其他归入 U<sub>j</sub>。</li>
-<li>易于定量的影响要素归入 x<sub>j</sub>，不易于定量的影响要素归入 U<sub>j</sub>。</li>
-<li>x<sub>j</sub> 的数量不宜太多，否则求解统计模型较困难。</li>
-</ol>
+<li><p>三点估算法</p>
+<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
 </li>
-<li><p><strong>结构化成本模型</strong></p>
-<p>结构化成本模型（ COCOMO ）主要有基本模型、中级模型和详细模型三种。</p>
-<p>中级模型适用于系统规划阶段作软件成本估算的模型，其求解方式如下列公式所示：<br>$$<br>C_{s} &#x3D; a · M_{s}<br>$$</p>
-<p>$$<br>T_{d} &#x3D; h(M_{s})^d<br>$$</p>
-<p>$$<br>M_{s} &#x3D; U · M_{0}<br>$$</p>
-<p>$$<br>M_{0} &#x3D; r · L^{k}<br>$$</p>
-<p>$$<br>U &#x3D; \prod_{j&#x3D;1}^{15} U_{j}<br>$$</p>
+<li><p>专家估算法</p>
+<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
 </li>
 </ol>
-<p><strong>中级 COCOMO 变量参数明细表如下。</strong></p>
-<table>
-<thead>
-<tr>
-<th align="center">序号</th>
-<th align="center">变量名称</th>
-<th align="center">经济含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">1</td>
-<td align="center">C<sub>s</sub></td>
-<td align="center">软件开发成本</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="center">a</td>
-<td align="center">软件开发阶段的工时费用率</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="center">M<sub>s</sub></td>
-<td align="center">软件开发阶段的修正工作量</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="center">M<sub>0</sub></td>
-<td align="center">软件开发阶段的基本工作量</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="center">L</td>
-<td align="center">软件开发规模</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="center">U</td>
-<td align="center">软件综合影响要素</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="center">U<sub>j</sub></td>
-<td align="center">对成本有一定影响的第 j 个影响要素</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="center">T<sub>d</sub></td>
-<td align="center">工期（开发周期）</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="center">r，k，h，d</td>
-<td align="center">形式参数</td>
-</tr>
-</tbody></table>
-<p><strong>中级 COCOMO 形式参数明细表如下。</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th rowspan="2">软件总体类型</th>
-            <th colspan="2">基本工作量 M<sub>0</sub></th>
-            <th colspan="2">开发工期 T<sub>d</sub></th>  
-        </tr>
-        <tr align="center">
-            <td>r</td>
-            <td>k</td>
-            <td>h</td>
-            <td>d</td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td>有机型</td>
-            <td>3.2</td>
-            <td>1.05</td>
-            <td>2.5</td>
-            <td>0.38</td>
-        </tr>
-        <tr align="center">
-            <td>嵌入型</td>
-            <td>2.8</td>
-            <td>1.20</td>
-            <td>2.5</td>
-            <td>0.32</td>
-        </tr>
-        <tr align="center">
-            <td>半独立型</td>
-            <td>3.0</td>
-            <td>1.12</td>
-            <td>2.5</td>
-            <td>0.35</td>
-        </tr>
-    </tbody>
-</table>
-
-
-<p><strong>中级 COCOMO 工作量影响因素等级明细表如下。</strong></p>
-<table>
-    <thead>
-        <tr align="center">
-            <th colspan="2">工作量影响要素 U</th>
-            <th>非常低</th>
-            <th>低</th>
-            <th>正常</th>
-            <th>高</th>
-            <th>非常高</th>
-            <th>超高</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr align="center">
-            <td rowspan="3">产品因素类</td>
-            <td>软件可靠性 U<sub>1</sub></td>
-            <td>0.75</td>
-            <td>0.88</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.40</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>数据库规模 U<sub>2</sub></td>
-            <td>-</td>
-            <td>0.94</td>
-            <td>1.00</td>
-            <td>1.08</td>
-            <td>1.16</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>产品复杂性 U<sub>3</sub></td>
-            <td>0.70</td>
-            <td>0.85</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.30</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="4">计算机因素类</td>
-            <td>执行时间限制 U<sub>4</sub></td>
-            <td>-</td>
-            <td>-</td>
-            <td>1.00</td>
-            <td>1.10</td>
-            <td>1.30</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td>主存储限制 U<sub>5</sub></td>
-            <td>-</td>
-            <td>-</td>
-            <td>1.00</td>
-            <td>1.06</td>
-            <td>1.21</td>
-            <td>1.65</td>
-        </tr>
-        <tr align="center">
-            <td>易变性 U<sub>6</sub></td>
-            <td>-</td>
-            <td>0.87</td>
-            <td>1.00</td>
-            <td>1.15</td>
-            <td>1.30</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>环境周转时间 U<sub>7</sub></td>
-            <td>-</td>
-            <td>0.87</td>
-            <td>1.00</td>
-            <td>1.07</td>
-            <td>1.15</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="5">人员因素类</td>
-            <td>分析员能力 U<sub>8</sub></td>
-            <td>1.46</td>
-            <td>1.19</td>
-            <td>1.00</td>
-            <td>0.86</td>
-            <td>0.71</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>应用领域实际经验 U<sub>9</sub></td>
-            <td>1.29</td>
-            <td>1.13</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.82</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>程序员能力 U<sub>10</sub></td>
-            <td>1.42</td>
-            <td>1.17</td>
-            <td>1.00</td>
-            <td>0.86</td>
-            <td>0.70</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>使用经验 U<sub>11</sub></td>
-            <td>1.21</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.90</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>程序语言使用经验 U<sub>12</sub></td>
-            <td>1.41</td>
-            <td>1.07</td>
-            <td>1.00</td>
-            <td>0.95</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td rowspan="3">项目因素类</td>
-            <td>现代程序设计技术 U<sub>13</sub></td>
-            <td>1.24</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.82</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>软件工具的使用 U<sub>14</sub></td>
-            <td>1.24</td>
-            <td>1.10</td>
-            <td>1.00</td>
-            <td>0.91</td>
-            <td>0.83</td>
-            <td>-</td>
-        </tr>
-        <tr align="center">
-            <td>开发进度限制 U<sub>15</sub></td>
-            <td>1.23</td>
-            <td>1.08</td>
-            <td>1.00</td>
-            <td>1.04</td>
-            <td>1.10</td>
-            <td>-</td>
-        </tr>
-    </tbody>
-</table>
-【例3.1】某软件企业中标了某嵌入型软件工程项目，预计 10k DSI 代码量，根据该软件的需求以及开发投入情况，用 COCOMO 求得该项目的综合影响要素 U 为 1.36，从该企业的信息数据库得知工时费用率 a = 9000 元/人·月，试对该软件的成本、工作量与工期做出估算。
-
-<p>解：根据题意以及嵌入型软件的形式参数值可得：<br>$$<br>M_0 &#x3D; r·L^k &#x3D; 2.8 × 10^{1.2} &#x3D; 44.38 （人·月）<br>$$</p>
-<p>$$<br>M_s &#x3D; U·M_0 &#x3D; 1.36 × 44.38 &#x3D; 60.4（人·月）<br>$$</p>
-<p>$$<br>T_d &#x3D; h(M_s)^d &#x3D; 2.5 × 60.4^{0.32} &#x3D; 9.29（个月）<br>$$</p>
-<p>$$<br>C_s &#x3D; a · M_s &#x3D; 9000 × 60.4 &#x3D; 54.36（万元）<br>$$</p>
-<h3 id="3-2-3-类比法"><a href="#3-2-3-类比法" class="headerlink" title="3.2.3 类比法"></a>3.2.3 类比法</h3><p>软件企业开发软件通常有两种情况：①全新开发方式；②目标软件与以往开发的某款或者某些软件有许多相同或类似的结构，涉及的开发人员变化也较少，则可采用类比法来估算目标软件的成本。</p>
-<p>假设某软件企业以往开发过一个类似的软件 S<sub>X</sub>，其软件规模为 L<sub>X</sub>；目标开发软件为 S<sub>Y</sub>,其软件规模为 L<sub>Y</sub>。由于目标开发软件的功能结构与原软件 S<sub>X</sub> 有很多类似之处，因此决定在 S<sub>X</sub> 的基础上改编成 S<sub>Y</sub>。</p>
-<p>故引入调整系数 AC，主要通过设计修改 DMC、代码修改 CMC，以及集成修改 IMC 三部分构成。</p>
-<p>调整系数 AC 可用下列公式表示：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC<br>$$</p>
-<p>式中 W<sub>j</sub>（j&#x3D;1，2，3）表示权重系数，其加权和必须等于 1。</p>
-<p>B.W.Boehm 建议权重系数 W<sub>1</sub>，W<sub>2</sub>，W<sub>3</sub> 分别取值为 0.4、0.3 和 0.3。也就是下列公式。<br>$$<br>AC &#x3D; 0.4 · DMC + 0.3 · CMC + 0.3 · IMC<br>$$<br>由此可得 S<sub>Y</sub> 软件的开发规模 L<sub>Y</sub> 可以用下列公式表示。<br>$$<br>L_{Y} &#x3D; L_{X} · AC &#x3D; L_{X} · (0.4 · DMC + 0.3 · CMC + 0.3 · IMC)<br>$$</p>
-<p>【例3.2】某软件公司曾开发过一种规模为 20k 代码量的软件 S<sub>X</sub>，现欲将其改编为嵌入型软件 S<sub>Y</sub>，经估算其设计、代码与集成修改的系数分别是 30%、40% 和 110%，工作量综合影响要素 U &#x3D; 1.2，工时费用率 a &#x3D; 8000 元&#x2F;人·月。试用类比法估算目标软件 S<sub>Y</sub> 的成本。</p>
-<p>解：根据题意可得：<br>$$<br>AC &#x3D; W_{1} · DMC + W_{2} · CMC + W_{3} · IMC &#x3D; 0.4 × 0.3 + 0.3 × 0.4 + 0.3 × 1.10 &#x3D; 0.57<br>$$</p>
-<p>$$<br>L_Y &#x3D; L_{X} · AC &#x3D; 20 kLOC × 0.57 &#x3D; 11.4 kLOC<br>$$</p>
-<p>由题意可知，该软件属于嵌入型软件，查表可知相对应的形式参数值：<br>$$<br>M_s &#x3D; U·M_0 &#x3D; U · r · L^k &#x3D; 1.2 × 2.8 × 11.4^{1.20} &#x3D; 62.32（人·月）<br>$$</p>
-<p>$$<br>C_s &#x3D; a·M_s &#x3D; 8000 × 62.32 &#x3D; 498560（元）<br>$$</p>
-<h3 id="3-2-4-设备的磨损与折旧"><a href="#3-2-4-设备的磨损与折旧" class="headerlink" title="3.2.4 设备的磨损与折旧"></a>3.2.4 设备的磨损与折旧</h3><ol>
-<li><p><strong>设备的磨损</strong></p>
+</li>
+</ol>
+<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
 <ol>
-<li><p>设备的<strong>有形磨损</strong></p>
-<p>有形磨损是指设备在生产使用或者闲置过程中，由于使用或者受自然环境的影响所产生的损耗。</p>
-<p>设备的有形磨损根据导致其磨损的不同原因可分为：</p>
-<ul>
-<li>第 Ⅰ 类有形磨损</li>
-<li>第 Ⅱ 类有形磨损</li>
-</ul>
-</li>
-<li><p>设备的<strong>无形磨损</strong></p>
-<p>无形磨损是指随着科技的进步等原因导致设备价值不断降低的现象。</p>
-<p>设备的无形磨损根据导致其磨损的不同原因可分为：</p>
-<ul>
-<li>第 Ⅰ 类无形磨损</li>
-<li>第 Ⅱ 类无形磨损</li>
-</ul>
-</li>
-<li><p>设备的<strong>综合磨损</strong></p>
-<p>综合磨损是指设备购置后既产生了<strong>有形磨损</strong>又产生了<strong>无形磨损</strong>。</p>
-<p>假设设备发生有形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>p</sub>；而设备产生无形磨损后，其剩余价值占原始价值的百分比可表示为 1-α<sub>q</sub>，及设备的综合磨损的计算公式如下：<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q)<br>$$<br>【例3.3】某 IT 企业原始购买价值为 23000 元的 A 电子设备在使用过程中发生磨损，需要修理，修理费用为 4000 元，若重置同类设备价值为 20000 元，若新旧设备生产率及单位产品消耗是相同的，试求该电子设备的综合磨损程度及剩余价值。</p>
-<p>解：由题意可知， K<sub>0</sub> &#x3D; 23000（元），R &#x3D; 4000（元），K<sub>1</sub> &#x3D; 20000（元）。</p>
-<p>A 电子设备的有形磨损程度为<br>$$<br>α_p &#x3D; \frac{R}{K_{1}} &#x3D; \frac{4000}{20000} &#x3D; 0.2<br>$$<br>A 电子设备的无形磨损程度为<br>$$<br>α_q &#x3D; 1 - \frac{K_{1}}{K_{0}} &#x3D; 1 - \frac{20000}{23000} &#x3D; 0.13<br>$$<br>A 电子设备的综合磨损程度为<br>$$<br>α &#x3D; 1 - (1-α_p)(1-α_q) &#x3D; 1-(1-0.2)(1-0.13) &#x3D; 0.304<br>$$<br>A 电子设备的剩余价值为<br>$$<br>K &#x3D; K_1 - R &#x3D; 20000 - 4000 &#x3D; 16000（元）<br>$$<br>故该电子设备的综合磨损程度是 30.4%，其剩余价值是 16000 元。</p>
-</li>
+<li>总时差最少的项目工作应确定为关键工作。</li>
+<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
+<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
 </ol>
-</li>
-<li><p><strong>设备的折旧</strong></p>
-<p>我国现行财会制度规定的固定资产折旧法主要有<strong>平均年限法</strong>和<strong>双倍余额递减法</strong>。</p>
-</li>
+<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
+<li><strong>通过时间参数确定关键线路</strong></li>
+<li><strong>通过标号法确定关键线路</strong></li>
 </ol>
-<h2 id="3-3-价值工程"><a href="#3-3-价值工程" class="headerlink" title="3.3 价值工程"></a>3.3 价值工程</h2><h3 id="3-3-1-价值工程的基本原理"><a href="#3-3-1-价值工程的基本原理" class="headerlink" title="3.3.1 价值工程的基本原理"></a>3.3.1 价值工程的基本原理</h3><p>价值工程设计的三个基本概念：<strong>价值（ Value ）</strong>、<strong>功能（ Function ）</strong>和<strong>全寿命周期成本（ Cost ）</strong>。</p>
+<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
+<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
 <ol>
-<li><p><strong>提高软件工程项目价值的途径</strong></p>
-<ol>
-<li>双向型</li>
-<li>节约型</li>
-<li>改进型</li>
-<li>牺牲型</li>
-<li>投资型</li>
+<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
+<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
+<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
+<li>选择缩短工作时长的关键工作。</li>
+<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
+<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
 </ol>
-<p>上述提高价值的方法中，1、2 属于降低成本，3、5 属于提高功能，1 是对功能与成本同时进行改善，是最积极、最理想的提高价值的方法。</p>
-</li>
-<li><p><strong>价值工程的主要特征</strong></p>
-<ol>
-<li>价值工程以用户的功能需求为出发点；</li>
-<li>价值工程以功能分析为核心，系统地研究功能和成本之间的关系；</li>
-<li>价值工程是致力于提高价值的创造性活动；</li>
-<li>价值工程是有计划、有组织地按照一定地工序来进行。</li>
-</ol>
-</li>
-</ol>
-<h3 id="3-3-2-价值工程的实施步骤与方法"><a href="#3-3-2-价值工程的实施步骤与方法" class="headerlink" title="3.3.2 价值工程的实施步骤与方法"></a>3.3.2 价值工程的实施步骤与方法</h3><ol>
-<li>百分比法</li>
-<li>ABC 分类法</li>
-<li>价值系数法</li>
-</ol>
-<h3 id="3-3-3-功能分析与评价"><a href="#3-3-3-功能分析与评价" class="headerlink" title="3.3.3 功能分析与评价"></a>3.3.3 功能分析与评价</h3><p>功能分析主要包括<strong>功能定义</strong>与<strong>功能整理</strong>两方面的内容。</p>
-<p>功能整理的步骤如下：</p>
-<ol>
-<li>分析软件产品的基本功能与辅助功能；</li>
-<li>明确功能的上下位与并列关系；</li>
-<li>排列功能系统图。</li>
-</ol>
-<h3 id="3-3-4-挣值管理"><a href="#3-3-4-挣值管理" class="headerlink" title="3.3.4 挣值管理"></a>3.3.4 挣值管理</h3><ol>
-<li><strong>挣值分析的基本概念</strong><ol>
-<li>计划价值</li>
-<li>实际成本</li>
-<li>挣值</li>
-<li>完工预算</li>
-</ol>
-</li>
-<li><strong>挣值分析的绩效指标</strong><ol>
-<li>成本偏差</li>
-<li>进度偏差</li>
-<li>进度绩效指标</li>
-<li>成本绩效指标</li>
-</ol>
-</li>
-<li><strong>挣值分析的预测指标</strong><ol>
-<li>完工尚需估算</li>
-<li>完工估算</li>
-<li>完工尚需绩效指标</li>
-</ol>
-</li>
-</ol>
-<h2 id="3-4-软件产品的定价与营销"><a href="#3-4-软件产品的定价与营销" class="headerlink" title="3.4 软件产品的定价与营销"></a>3.4 软件产品的定价与营销</h2><h3 id="3-4-1-软件产品的定价"><a href="#3-4-1-软件产品的定价" class="headerlink" title="3.4.1 软件产品的定价"></a>3.4.1 软件产品的定价</h3><p>软件企业的定价策略：</p>
-<ol>
-<li>捆绑定价策略</li>
-<li>撇脂和渗透定价策略<ul>
-<li>撇脂定价法</li>
-<li>渗透定价法</li>
-</ul>
-</li>
-<li>歧视定价策略</li>
-<li>免费使用定价策略</li>
-</ol>
-<h3 id="3-4-2-软件产品的营销"><a href="#3-4-2-软件产品的营销" class="headerlink" title="3.4.2 软件产品的营销"></a>3.4.2 软件产品的营销</h3><p>软件产品的促销策略确定：</p>
-<p>促销是促进营销的简称，是指采用人员或非人员的方式来帮助或说服客户购买某软件元产品／软件服务，或者让消费者对某个或者某些软件产品产生好感的一种活动。</p>
-<p>促销策略主要包括<strong>直接促销</strong>和<strong>间接促销</strong>。直接促销是指人员上门推销软件产品的活动；间接促销是指采用各种媒体广告、营销推广与公共关系宣传等方式进行推销软件产品的活动。</p>
-<p>软件作为一种特殊的无形产品，除了上述促销手段外，还有一些特殊的促销手段，如<strong>品牌促销</strong>、<strong>教育促销</strong>以及<strong>人员促销</strong>等。</p>
-<ol>
-<li><p>品牌促销</p>
-<p>软件产品／软件服务是一种高技术产品，一般用户在购买软件产品前往往都会心存疑虑。一个良好的软件产品形象能大大消除用户的购买疑虑，让用户产生安全感和信任感。因此，软件企业要大力提高品牌知名度，让客户对软件企业产生信任感，放心购买其产品。软件企业可以通过树立品牌形象，引入企业形象识别系统以及发布产品广告、企业形象广告，建立企业网站、媒体宣传等多种手段来扩大企业的品牌知名度。</p>
-</li>
-<li><p>教育促销</p>
-<p>软件的高科技特性会导致用户较难理解与掌握，软件企业需要利用各种场合来演示自己的产品，如通过软件博览会、展销会等，让目标用户与潜在用户了解该产品的主要功能。教育促销可通过向媒体发送免费的测试软件、认证培训、举办讲座等方式进行普及知识；利用展会进行产品展示等多种手段来扩大软件产品的宣传。</p>
-</li>
-<li><p>人员促销</p>
-<p>人员促销应注重沟通能力以及人际关系。软件企业通过专业的服务人员与用户实现有效的沟通，为客户做好完备的前期咨询工作。这种方式针对性强，让客户觉得自己备受重视，无效劳动少，因此促销成功的概率会比较高。人员促销也有利于软件企业了解市场，能够给软件企业营销决策提供有效的建议与意见。人员促销需要注意以下问题：</p>
-<ol>
-<li>挑选专业技术能力强、个人素质高的促销人员；</li>
-<li>软件企业要根据目标市场的特点、产品的特点等，对促销人员进行资源、促销区域、促销时间等进行合理分配；</li>
-<li>软件企业要对促销人员实施有效的管理与激励，以确保促销目标的实现。</li>
-</ol>
-</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第4章 软件工程项目评价方法与经济效果评价</title>
-    <url>/posts/a0080004.html</url>
-    <content><![CDATA[<h2 id="4-1-软件工程项目评价与决策方法"><a href="#4-1-软件工程项目评价与决策方法" class="headerlink" title="4.1 软件工程项目评价与决策方法"></a>4.1 软件工程项目评价与决策方法</h2><h3 id="4-1-1-关联矩阵法"><a href="#4-1-1-关联矩阵法" class="headerlink" title="4.1.1 关联矩阵法"></a>4.1.1 关联矩阵法</h3><p>关联矩阵（ Relational Matrix Analysis，RMA ）法主要在确定好评价对象及评价指标后，通过二分法确定每个评价指标的权重 W<sub>j</sub>，并根据评价主体给定的评价指标的评价尺度，确定方案的综合评定价值量（ V<sub>ij</sub> ）。</p>
-<h3 id="4-1-2-层次分析法"><a href="#4-1-2-层次分析法" class="headerlink" title="4.1.2 层次分析法"></a>4.1.2 层次分析法</h3><p>层次分析法的步骤如下：</p>
-<ol>
-<li>建立层次结构模型</li>
-<li>构造判断比较矩阵</li>
-<li>进行层次单排序</li>
-<li>进行一致性检验</li>
-</ol>
-<h3 id="4-1-3-平均值法"><a href="#4-1-3-平均值法" class="headerlink" title="4.1.3 平均值法"></a>4.1.3 平均值法</h3><p>平均值法是指计算每个待评价方案 A<sub>k</sub> 在不同综合评价方法求解结果中的平均“优序”数，并依据每个待评价方案的平均优序数大小来决定该方案的排序位置的评价方法。、</p>
-<p>【例4.4】设有 5 个待评方案，采用 4 种综合评价方法求解，其求解所得的排序结果如下表所示，试运用平均值法确定这 5 种方案的最终排序。</p>
-<table>
-<thead>
-<tr>
-<th align="center">方案</th>
-<th align="center">M<sub>1</sub></th>
-<th align="center">M<sub>2</sub></th>
-<th align="center">M<sub>3</sub></th>
-<th align="center">M<sub>4</sub></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">A<sub>1</sub></td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center">2</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="center">A<sub>2</sub></td>
-<td align="center">3</td>
-<td align="center">1</td>
-<td align="center">3</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">A<sub>3</sub></td>
-<td align="center">2</td>
-<td align="center">2</td>
-<td align="center">4</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">A<sub>4</sub></td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">1</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">A<sub>5</sub></td>
-<td align="center">5</td>
-<td align="center">4</td>
-<td align="center">5</td>
-<td align="center">1</td>
-</tr>
-</tbody></table>
-<p>解：根据题意和表数据可得：<br>$$<br>\bar{d_1} &#x3D; \frac{1+3+2+3}{4} &#x3D; 2.25<br>$$</p>
-<p>$$<br>\bar{d_2} &#x3D; \frac{3+1+3+5}{4} &#x3D; 3<br>$$</p>
-<p>$$<br>\bar{d_3} &#x3D; \frac{2+2+4+2}{4} &#x3D; 2.5<br>$$</p>
-<p>$$<br>\bar{d_4} &#x3D; \frac{4+5+1+4}{4} &#x3D; 3.5<br>$$</p>
-<p>$$<br>\bar{d_5} &#x3D; \frac{5+4+5+1}{4} &#x3D; 3.75<br>$$</p>
-<p>由于<br>$$<br>\bar{d_1}&lt;\bar{d_3}&lt;\bar{d_2}&lt;\bar{d_4}&lt;\bar{d_5}<br>$$<br>故有最终排序结果为<br>$$<br>A_1&gt;A_3&gt;A_2&gt;A_4&gt;A_5<br>$$</p>
-<h2 id="4-2-软件工程项目的现金流量"><a href="#4-2-软件工程项目的现金流量" class="headerlink" title="4.2 软件工程项目的现金流量"></a>4.2 软件工程项目的现金流量</h2><ol>
-<li>现金流入</li>
-<li>现金流出</li>
-<li>所得税前净现金流量</li>
-<li>累计所得税前净现金流量</li>
-<li>调整所得税</li>
-<li>所得税后净现金流量</li>
-<li>累计所得税后净现金流量</li>
-</ol>
-<h2 id="4-3-软件工程项目的经济效果评价"><a href="#4-3-软件工程项目的经济效果评价" class="headerlink" title="4.3 软件工程项目的经济效果评价"></a>4.3 软件工程项目的经济效果评价</h2><h3 id="4-3-1-独立方案项目评价"><a href="#4-3-1-独立方案项目评价" class="headerlink" title="4.3.1 独立方案项目评价"></a>4.3.1 独立方案项目评价</h3><p>所谓独立方案项目评价，是指<strong>对某一给定的软件工程项目投资方案从技术经济角度出发作出是否可行的判断或者评价。</strong></p>
-<p>主要采用以下两种方法进行评价。</p>
-<ol>
-<li><p>净现值法</p>
-<p>公式如下（无残值）：<br>$$<br>NPV &#x3D; \sum_{t&#x3D;0}^{N}\frac{B_t-C_t-K_t}{(1+i)^t}<br>$$<br>式中，NPV 表示软件项目工程的净现值；B<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的收益；C<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的成本或支出；K<sub>t</sub> 表示软件工程项目在寿命期内第 t 期的投资额；N 表示软件工程项目的使用年限；i 表示基准贴现率。</p>
-<ul>
-<li>若 NPV ＞ 0，则说明在基准贴现率 i 的水平下，该软件工程项目可盈利，从经济效果角度来看，该项目可投资。</li>
-<li>若 NPV &lt;&#x3D; 0，则说明在基准贴现率 i 的水平下，该软件工程项目仅仅能够收支平衡甚至亏损，从经济效果角度来看，该项目投资不可行。</li>
-</ul>
-</li>
-<li><p>内部收益率法</p>
-</li>
-</ol>
-<h3 id="4-3-2-多方案项目评价"><a href="#4-3-2-多方案项目评价" class="headerlink" title="4.3.2 多方案项目评价"></a>4.3.2 多方案项目评价</h3><ol>
-<li>净现值法</li>
-<li>净年值法</li>
-<li>研究期法</li>
-<li>多方案组合排序法</li>
-</ol>
+<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
+<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
+<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
+<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
+<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
 <hr>
 <p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
 ]]></content>
@@ -2290,86 +2901,6 @@
       </tags>
   </entry>
   <entry>
-    <title>第8章 软件测试</title>
-    <url>/posts/a0080008.html</url>
-    <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
-<h3 id="8-2-2-按测试实施组织划分"><a href="#8-2-2-按测试实施组织划分" class="headerlink" title="8.2.2 按测试实施组织划分"></a>8.2.2 按测试实施组织划分</h3><p>按照测试实施组织划分，软件测试可分为<strong>开发方测试</strong>、<strong>用户方测试</strong>与<strong>第三方测试</strong>。</p>
-<h3 id="8-2-3-按测试技术划分"><a href="#8-2-3-按测试技术划分" class="headerlink" title="8.2.3 按测试技术划分"></a>8.2.3 按测试技术划分</h3><p>按照测试技术划分，软件测试可分为<strong>黑盒测试</strong>、<strong>白盒测试</strong>与<strong>灰盒测试</strong>。</p>
-<h3 id="8-2-4-按测试执行方式划分"><a href="#8-2-4-按测试执行方式划分" class="headerlink" title="8.2.4 按测试执行方式划分"></a>8.2.4 按测试执行方式划分</h3><p>按照测试执行的方式划分，软件测试可分为<strong>静态测试</strong>和<strong>动态测试</strong>。</p>
-<h3 id="8-2-5-按测试对象类型划分"><a href="#8-2-5-按测试对象类型划分" class="headerlink" title="8.2.5 按测试对象类型划分"></a>8.2.5 按测试对象类型划分</h3><p>按照测试的对象类型划分，软件测试可分为<strong>功能测试</strong>、<strong>界面测试</strong>、<strong>流程测试</strong>、<strong>接口测试</strong>、<strong>安装测试</strong>、<strong>文档测试</strong>、<strong>源代码测试</strong>、<strong>数据库测试</strong>、<strong>网络测试</strong>以及<strong>性能测试</strong>等。</p>
-<h3 id="8-2-6-按质量属性划分"><a href="#8-2-6-按质量属性划分" class="headerlink" title="8.2.6 按质量属性划分"></a>8.2.6 按质量属性划分</h3><p>按照质量属性划分，软件测试可分为<strong>容错性测试</strong>、<strong>可靠性测试</strong>、<strong>兼容性测试</strong>、<strong>维护性测试</strong>、<strong>安全性测试</strong>和<strong>可移植性测试</strong>。</p>
-<h3 id="8-2-7-按测试地域划分"><a href="#8-2-7-按测试地域划分" class="headerlink" title="8.2.7 按测试地域划分"></a>8.2.7 按测试地域划分</h3><p>按照测试地域划分，软件测试可分为<strong>本地化测试</strong>与<strong>国际化测试</strong>两类。</p>
-<h2 id="8-3-常用软件测试技术"><a href="#8-3-常用软件测试技术" class="headerlink" title="8.3 常用软件测试技术"></a>8.3 常用软件测试技术</h2><p>常用的软件测试技术主要有<strong>黑盒测试法</strong>与<strong>白盒测试法</strong>。</p>
-<h3 id="8-3-1-黑盒测试法"><a href="#8-3-1-黑盒测试法" class="headerlink" title="8.3.1 黑盒测试法"></a>8.3.1 黑盒测试法</h3><p>黑盒测试的测试用例设计方法主要有<strong>测试区域确定法</strong>、<strong>组合覆盖法</strong>、<strong>逻辑推断法</strong>、<strong>业务路径覆盖法</strong>等。</p>
-<ol>
-<li><p><strong>测试区域确定法</strong></p>
-<p>测试区域确定法分为<strong>等价类划分法</strong>与<strong>边界值分析法</strong>。</p>
-</li>
-<li><p><strong>组合覆盖法</strong></p>
-<p>根据覆盖程度不同，组合覆盖法可分为<strong>全组合覆盖法</strong>、<strong>成对组合覆盖法</strong>以及<strong>正交实验设计法</strong>三类。</p>
-</li>
-<li><p><strong>逻辑推断法</strong></p>
-<p>逻辑推断法分为<strong>因果图法</strong>、<strong>判定表法</strong>和<strong>大纲法</strong>等。</p>
-</li>
-<li><p><strong>业务路径覆盖法</strong></p>
-<p>业务路径覆盖法主要分为<strong>场景分析法</strong>和<strong>功能图法</strong>。</p>
-</li>
-</ol>
-<h3 id="8-3-2-白盒测试法"><a href="#8-3-2-白盒测试法" class="headerlink" title="8.3.2 白盒测试法"></a>8.3.2 白盒测试法</h3><p>白盒测试（ White-box Testing ），又称为透明盒测试、结构测试、基于代码的测试或者逻辑驱动测试，主要分为<strong>静态白盒测试</strong>、<strong>动态白盒测试</strong>与<strong>其他白盒测试</strong>三种。</p>
-<p>白盒测试是一种测试用例设计方法，盒子是指被测试的软件，白盒是指清楚盒子内部的代码、注释以及看到内部的运作情况。</p>
-<p>白盒测试法需要全面了解程序的内部逻辑结构，对所有的逻辑路径进行测试，是一种典型的穷举路径测试。在使用白盒测试时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。</p>
-<p>白盒测试常用的工具：内存泄漏检查工具、性能测试工具以及代码覆盖率检查工具。采用白盒测试法需遵循以下原则。</p>
-<ol>
-<li><p>确保一个模块中的所有独立路径至少被测试一次。</p>
-</li>
-<li><p>所有逻辑值均需测试真和假两种情况。</p>
-</li>
-<li><p>检查程序的内部数据结构，确保其结构的有效性。</p>
-</li>
-<li><p>必须在上、下边界及可操作范围内运行所有循环。</p>
-</li>
-<li><p><strong>静态白盒测试法</strong></p>
-<p>静态白盒测试法是在不执行代码的前提条件下，有条理地审查软件设计、体系结构与代码，从而找出软件缺陷的过程。</p>
-<p>其优点是能尽早发现软件缺陷，为黑盒测试人员进行测试时设计测试用例提供思路。静态白盒测试主要有以下三种技术：</p>
-<ol>
-<li>代码检查法。</li>
-<li>静态结构分析法。</li>
-<li>静态质量度量法。</li>
-</ol>
-</li>
-<li><p><strong>动态白盒测试法</strong></p>
-<p>动态白盒测试又称为结构测试，是指利用查看代码功能与实现方式所得到的信息来确定需要或者不需要测试的内容，以及开展测试的方式。</p>
-<p>软件测试人员可根据查看并使用代码的内部结构，进而设计与执行测试。</p>
-<p>动态白盒测试不仅要查看代码，还要查看直接参数与控制软件，主要包括以下四个部分。</p>
-<ol>
-<li>直接测试底层的功能、过程、子程序以及库，即应用程序接口（ API ）。</li>
-<li>以完整的程序方式从顶层来测试软件，但要根据对软件运行的了解调整测试案例。</li>
-<li>从软件获得读取变量与状态信息的访问权，以便确定测试与预期结果是否相符，与此同时，还要强制软件以正常测试难以实现的方式运行。</li>
-<li>估算执行测试时”命中”的代码量与具体代码，然后调整测试，去掉多余的，补充遗漏的。</li>
-</ol>
-<p>动态白盒测试主要有以下三种技术：</p>
-<ol>
-<li>覆盖测试。</li>
-<li>控制结构测试。</li>
-<li>循环测试。</li>
-</ol>
-</li>
-<li><p><strong>其他白盒测试法</strong></p>
-<ol>
-<li>程序插桩。</li>
-<li>程序变异测试。</li>
-</ol>
-</li>
-</ol>
-<hr>
-<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第7章 软件工程项目的团队建设、风险管理及质量管理</title>
     <url>/posts/a0080007.html</url>
     <content><![CDATA[<h2 id="7-1-软件工程项目的团队建设"><a href="#7-1-软件工程项目的团队建设" class="headerlink" title="7.1 软件工程项目的团队建设"></a>7.1 软件工程项目的团队建设</h2><h3 id="7-1-1-软件工程项目团队的特点"><a href="#7-1-1-软件工程项目团队的特点" class="headerlink" title="7.1.1 软件工程项目团队的特点"></a>7.1.1 软件工程项目团队的特点</h3><p>软件工程项目团队的特点主要有：</p>
@@ -2476,525 +3007,184 @@
       </tags>
   </entry>
   <entry>
-    <title>《云计算：概念、技术与架构》</title>
-    <url>/posts/a0070000.html</url>
-    <content><![CDATA[<h2 id="章节目录"><a href="#章节目录" class="headerlink" title="章节目录"></a>章节目录</h2><h3 id="第3章-理解云计算"><a href="#第3章-理解云计算" class="headerlink" title="第3章 理解云计算"></a><a href="https://georgedi.top/posts/a0070003.html">第3章 理解云计算</a></h3><h3 id="第4章-基本概念与模型"><a href="#第4章-基本概念与模型" class="headerlink" title="第4章 基本概念与模型"></a><a href="https://georgedi.top/posts/a0070004.html">第4章 基本概念与模型</a></h3><h3 id="第9章-云管理机制"><a href="#第9章-云管理机制" class="headerlink" title="第9章 云管理机制"></a><a href="https://georgedi.top/posts/a0070009.html">第9章 云管理机制</a></h3><h3 id="第11章-基本云架构"><a href="#第11章-基本云架构" class="headerlink" title="第11章 基本云架构"></a><a href="https://georgedi.top/posts/a0070011.html">第11章 基本云架构</a></h3> <!-- [第5章 云使能技术](http://georgedi.top//posts/云使能技术/) 
- [第6章 基本云安全](http://georgedi.top/2023/05/06/基本云安全/) 
- [第7章 云基础设施机制](http://georgedi.top/2023/05/06/云基础设施机制/) 
- [第8章 特殊云机制](http://georgedi.top/2023/05/06/特殊云机制/)   -->
- <!--  
- [第12章 高级云架构](http://georgedi.top/2023/05/06/高级云架构/)  -->]]></content>
-      <categories>
-        <category>科班基础</category>
-      </categories>
+    <title>第8章 软件测试</title>
+    <url>/posts/a0080008.html</url>
+    <content><![CDATA[<h2 id="8-1-软件测试的模型"><a href="#8-1-软件测试的模型" class="headerlink" title="8.1 软件测试的模型"></a>8.1 软件测试的模型</h2><h3 id="8-1-1-软件测试-V-模型"><a href="#8-1-1-软件测试-V-模型" class="headerlink" title="8.1.1 软件测试 V 模型"></a>8.1.1 软件测试 V 模型</h3><h3 id="8-1-2-软件测试-W-模型"><a href="#8-1-2-软件测试-W-模型" class="headerlink" title="8.1.2 软件测试 W 模型"></a>8.1.2 软件测试 W 模型</h3><h3 id="8-1-3-软件测试-H-模型"><a href="#8-1-3-软件测试-H-模型" class="headerlink" title="8.1.3 软件测试 H 模型"></a>8.1.3 软件测试 H 模型</h3><h3 id="8-1-4-软件测试-X-模型"><a href="#8-1-4-软件测试-X-模型" class="headerlink" title="8.1.4 软件测试 X 模型"></a>8.1.4 软件测试 X 模型</h3><h3 id="8-1-5-前置测试模型"><a href="#8-1-5-前置测试模型" class="headerlink" title="8.1.5 前置测试模型"></a>8.1.5 前置测试模型</h3><h2 id="8-2-软件测试的类型"><a href="#8-2-软件测试的类型" class="headerlink" title="8.2 软件测试的类型"></a>8.2 软件测试的类型</h2><h3 id="8-2-1-按开发阶段划分"><a href="#8-2-1-按开发阶段划分" class="headerlink" title="8.2.1 按开发阶段划分"></a>8.2.1 按开发阶段划分</h3><p>按照开发阶段划分，软件测试可分为<strong>单元测试</strong>、<strong>集成测试</strong>、<strong>系统测试</strong>和<strong>验收测试</strong>。</p>
+<h3 id="8-2-2-按测试实施组织划分"><a href="#8-2-2-按测试实施组织划分" class="headerlink" title="8.2.2 按测试实施组织划分"></a>8.2.2 按测试实施组织划分</h3><p>按照测试实施组织划分，软件测试可分为<strong>开发方测试</strong>、<strong>用户方测试</strong>与<strong>第三方测试</strong>。</p>
+<h3 id="8-2-3-按测试技术划分"><a href="#8-2-3-按测试技术划分" class="headerlink" title="8.2.3 按测试技术划分"></a>8.2.3 按测试技术划分</h3><p>按照测试技术划分，软件测试可分为<strong>黑盒测试</strong>、<strong>白盒测试</strong>与<strong>灰盒测试</strong>。</p>
+<h3 id="8-2-4-按测试执行方式划分"><a href="#8-2-4-按测试执行方式划分" class="headerlink" title="8.2.4 按测试执行方式划分"></a>8.2.4 按测试执行方式划分</h3><p>按照测试执行的方式划分，软件测试可分为<strong>静态测试</strong>和<strong>动态测试</strong>。</p>
+<h3 id="8-2-5-按测试对象类型划分"><a href="#8-2-5-按测试对象类型划分" class="headerlink" title="8.2.5 按测试对象类型划分"></a>8.2.5 按测试对象类型划分</h3><p>按照测试的对象类型划分，软件测试可分为<strong>功能测试</strong>、<strong>界面测试</strong>、<strong>流程测试</strong>、<strong>接口测试</strong>、<strong>安装测试</strong>、<strong>文档测试</strong>、<strong>源代码测试</strong>、<strong>数据库测试</strong>、<strong>网络测试</strong>以及<strong>性能测试</strong>等。</p>
+<h3 id="8-2-6-按质量属性划分"><a href="#8-2-6-按质量属性划分" class="headerlink" title="8.2.6 按质量属性划分"></a>8.2.6 按质量属性划分</h3><p>按照质量属性划分，软件测试可分为<strong>容错性测试</strong>、<strong>可靠性测试</strong>、<strong>兼容性测试</strong>、<strong>维护性测试</strong>、<strong>安全性测试</strong>和<strong>可移植性测试</strong>。</p>
+<h3 id="8-2-7-按测试地域划分"><a href="#8-2-7-按测试地域划分" class="headerlink" title="8.2.7 按测试地域划分"></a>8.2.7 按测试地域划分</h3><p>按照测试地域划分，软件测试可分为<strong>本地化测试</strong>与<strong>国际化测试</strong>两类。</p>
+<h2 id="8-3-常用软件测试技术"><a href="#8-3-常用软件测试技术" class="headerlink" title="8.3 常用软件测试技术"></a>8.3 常用软件测试技术</h2><p>常用的软件测试技术主要有<strong>黑盒测试法</strong>与<strong>白盒测试法</strong>。</p>
+<h3 id="8-3-1-黑盒测试法"><a href="#8-3-1-黑盒测试法" class="headerlink" title="8.3.1 黑盒测试法"></a>8.3.1 黑盒测试法</h3><p>黑盒测试的测试用例设计方法主要有<strong>测试区域确定法</strong>、<strong>组合覆盖法</strong>、<strong>逻辑推断法</strong>、<strong>业务路径覆盖法</strong>等。</p>
+<ol>
+<li><p><strong>测试区域确定法</strong></p>
+<p>测试区域确定法分为<strong>等价类划分法</strong>与<strong>边界值分析法</strong>。</p>
+</li>
+<li><p><strong>组合覆盖法</strong></p>
+<p>根据覆盖程度不同，组合覆盖法可分为<strong>全组合覆盖法</strong>、<strong>成对组合覆盖法</strong>以及<strong>正交实验设计法</strong>三类。</p>
+</li>
+<li><p><strong>逻辑推断法</strong></p>
+<p>逻辑推断法分为<strong>因果图法</strong>、<strong>判定表法</strong>和<strong>大纲法</strong>等。</p>
+</li>
+<li><p><strong>业务路径覆盖法</strong></p>
+<p>业务路径覆盖法主要分为<strong>场景分析法</strong>和<strong>功能图法</strong>。</p>
+</li>
+</ol>
+<h3 id="8-3-2-白盒测试法"><a href="#8-3-2-白盒测试法" class="headerlink" title="8.3.2 白盒测试法"></a>8.3.2 白盒测试法</h3><p>白盒测试（ White-box Testing ），又称为透明盒测试、结构测试、基于代码的测试或者逻辑驱动测试，主要分为<strong>静态白盒测试</strong>、<strong>动态白盒测试</strong>与<strong>其他白盒测试</strong>三种。</p>
+<p>白盒测试是一种测试用例设计方法，盒子是指被测试的软件，白盒是指清楚盒子内部的代码、注释以及看到内部的运作情况。</p>
+<p>白盒测试法需要全面了解程序的内部逻辑结构，对所有的逻辑路径进行测试，是一种典型的穷举路径测试。在使用白盒测试时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。</p>
+<p>白盒测试常用的工具：内存泄漏检查工具、性能测试工具以及代码覆盖率检查工具。采用白盒测试法需遵循以下原则。</p>
+<ol>
+<li><p>确保一个模块中的所有独立路径至少被测试一次。</p>
+</li>
+<li><p>所有逻辑值均需测试真和假两种情况。</p>
+</li>
+<li><p>检查程序的内部数据结构，确保其结构的有效性。</p>
+</li>
+<li><p>必须在上、下边界及可操作范围内运行所有循环。</p>
+</li>
+<li><p><strong>静态白盒测试法</strong></p>
+<p>静态白盒测试法是在不执行代码的前提条件下，有条理地审查软件设计、体系结构与代码，从而找出软件缺陷的过程。</p>
+<p>其优点是能尽早发现软件缺陷，为黑盒测试人员进行测试时设计测试用例提供思路。静态白盒测试主要有以下三种技术：</p>
+<ol>
+<li>代码检查法。</li>
+<li>静态结构分析法。</li>
+<li>静态质量度量法。</li>
+</ol>
+</li>
+<li><p><strong>动态白盒测试法</strong></p>
+<p>动态白盒测试又称为结构测试，是指利用查看代码功能与实现方式所得到的信息来确定需要或者不需要测试的内容，以及开展测试的方式。</p>
+<p>软件测试人员可根据查看并使用代码的内部结构，进而设计与执行测试。</p>
+<p>动态白盒测试不仅要查看代码，还要查看直接参数与控制软件，主要包括以下四个部分。</p>
+<ol>
+<li>直接测试底层的功能、过程、子程序以及库，即应用程序接口（ API ）。</li>
+<li>以完整的程序方式从顶层来测试软件，但要根据对软件运行的了解调整测试案例。</li>
+<li>从软件获得读取变量与状态信息的访问权，以便确定测试与预期结果是否相符，与此同时，还要强制软件以正常测试难以实现的方式运行。</li>
+<li>估算执行测试时”命中”的代码量与具体代码，然后调整测试，去掉多余的，补充遗漏的。</li>
+</ol>
+<p>动态白盒测试主要有以下三种技术：</p>
+<ol>
+<li>覆盖测试。</li>
+<li>控制结构测试。</li>
+<li>循环测试。</li>
+</ol>
+</li>
+<li><p><strong>其他白盒测试法</strong></p>
+<ol>
+<li>程序插桩。</li>
+<li>程序变异测试。</li>
+</ol>
+</li>
+</ol>
+<hr>
+<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
+]]></content>
       <tags>
-        <tag>云计算</tag>
+        <tag>软件工程</tag>
+        <tag>经济学</tag>
       </tags>
   </entry>
   <entry>
-    <title>第11章 基本云架构</title>
-    <url>/posts/a0070011.html</url>
-    <content><![CDATA[<h2 id="负载分布架构"><a href="#负载分布架构" class="headerlink" title="负载分布架构"></a>负载分布架构</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>负载分布架构（Workload Distribution Architecture）通过增加一个或多个相同的 IT 资源可用进行 IT 资源<strong>水平扩展</strong>，而提供运行时逻辑的<strong>负载均衡器</strong>能够在可用的 IT 资源上均匀分配工作负载。</li>
-<li>IT resources can be <strong>horizontally scaled</strong> via the addition of one or more identical IT resources, and a <strong>load balancer</strong> that provides runtime logic capable of evenly distributing the workload among the available IT resources.</li>
-</ul>
-<h3 id="核心机制"><a href="#核心机制" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="负载均衡器-Load-Balancer"><a href="#负载均衡器-Load-Balancer" class="headerlink" title="负载均衡器 Load Balancer"></a>负载均衡器 Load Balancer</h4><ul>
-<li>在一定程度上依靠复杂的<strong>负载均衡算法</strong>和<strong>运行时逻辑</strong>，减少 IT 资源的<strong>过度使用</strong>和<strong>使用率不足</strong>的情况。</li>
-<li>reduces both IT resource <strong>over-utilization</strong> and <strong>under-utilization</strong> dependent upon the sophistication of the <strong>load  balancing algorithms</strong> and <strong>runtime logic</strong>.</li>
-<li>这种基本架构模型<strong>可以应用于任何 IT 资源</strong>。负载分布常常可以用来支持<strong>分布式虚拟服务器、云存储设备和云服务</strong>。</li>
-<li>This fundamental architectural model <strong>can be applied to any IT resource</strong>. Workload distribution commonly carried out in support of <strong>distributed virtual servers, cloud storage devices, and cloud services</strong>.</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/11.1.png" alt="负载分布架构" style="zoom:67%;" />
-
-<h3 id="特殊变化"><a href="#特殊变化" class="headerlink" title="特殊变化"></a>特殊变化</h3><p>结合负载均衡的各个方面，应用于特殊 IT 资源的负载均衡系统通常会形成这种架构的特殊变化：</p>
+    <title>第2章 变量与运算符</title>
+    <url>/posts/e0010002.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
+<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
+<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
+<p>Java分为三个体系：</p>
 <ul>
-<li>服务负载均衡架构 the service load balancing architecture</li>
-<li>负载均衡的虚拟服务器架构 the load balanced virtual server architecture</li>
-<li>负载均衡的虚拟交换机架构 the load balanced virtual switches architecture</li>
+<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
+<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
+<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
 </ul>
-<h3 id="其他机制"><a href="#其他机制" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
-<li>审核监控器 Audit Monitor</li>
-<li>云使用监控器 Cloud Usage Monitor</li>
-<li>虚拟机监控器 Hypervisor</li>
-<li>逻辑网络边界 Logical Network Perimeter</li>
-<li>资源集群 Resource Cluster</li>
-<li>资源复制 Resource Replication</li>
+<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
+<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
+<ul>
+<li>J2EE 更名为 JavaEE</li>
+<li>J2SE 更名为 JavaSE</li>
+<li>J2ME 更名为 JavaME</li>
 </ul>
-<h2 id="资源池架构"><a href="#资源池架构" class="headerlink" title="资源池架构"></a>资源池架构</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>资源池架构（Resource Pooling Architecture）以使用一个或者多个资源池为基础，其中<strong>相同的 IT 资源</strong>由一个系统进行分组和维护，以自动确保它们<strong>保持同步</strong>。</li>
-<li>A resource pooling architecture is based on the use of one or more resource pools, in which <strong>identical IT resources</strong> are grouped and maintained by a system that automatically ensures that they <strong>remain  synchronized</strong>.</li>
-</ul>
-<h3 id="常见的资源池"><a href="#常见的资源池" class="headerlink" title="常见的资源池"></a>常见的资源池</h3><ul>
-<li><p>物理服务器池</p>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.4.png" alt="物理服务器池"></p>
+<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
+<li><p>Java 语言是<strong>简单的</strong>：</p>
+<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
+<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
+<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
 </li>
-<li><p>虚拟服务器池</p>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.5.png" alt="虚拟服务器池"></p>
+<li><p>Java 语言是<strong>面向对象的</strong>：</p>
+<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
+<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
+<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
 </li>
-<li><p>存储池</p>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.6.png" alt="存储池"></p>
+<li><p>Java语言是<strong>分布式的</strong>：</p>
+<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
+<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
 </li>
-<li><p>网络池</p>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.7.png" alt="网络池"></p>
+<li><p>Java 语言是<strong>健壮的</strong>：</p>
+<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
+<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
 </li>
-<li><p>CPU 池</p>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.8.png" alt="CPU 池"></p>
+<li><p>Java 语言是<strong>安全的</strong>：</p>
+<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
 </li>
-<li><p>内存池</p>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.9.png" alt="内存池"></p>
+<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
+<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>这种途径适合于异构的网络环境和软件的分发。</p>
 </li>
-</ul>
-<h3 id="资源池集合"><a href="#资源池集合" class="headerlink" title="资源池集合"></a>资源池集合</h3><ul>
-<li>可以将单个的池集合为一个更大的池，在这个更大的资源池中，每个单独的池成为了子资源池。</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/11.10.png" alt="资源池集合" style="zoom:67%;" />
-
-<h3 id="同级资源池（用户相互隔离）"><a href="#同级资源池（用户相互隔离）" class="headerlink" title="同级资源池（用户相互隔离）"></a>同级资源池（用户相互隔离）</h3><img src="http://cdn.georgedi.top//_note/cloud/11.11.png" alt="同级资源池" style="zoom:67%;" />
-
-<h3 id="嵌套资源池（IT-资源类型相同，数量可不同）"><a href="#嵌套资源池（IT-资源类型相同，数量可不同）" class="headerlink" title="嵌套资源池（IT 资源类型相同，数量可不同）"></a>嵌套资源池（IT 资源类型相同，数量可不同）</h3><img src="http://cdn.georgedi.top//_note/cloud/11.12.png" alt="嵌套资源池" style="zoom:67%;" />
-
-<h3 id="其他机制-1"><a href="#其他机制-1" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
-<li>审核监控器 Audit Monitor</li>
-<li>云使用监控器 Cloud Usage Monitor</li>
-<li>虚拟机监控器 Hypervisor</li>
-<li>逻辑网络边界 Logical Network Perimeter</li>
-<li>按使用付费监控器 Pay-Per-Use Monitor</li>
-<li>远程管理系统 Remote Administration System</li>
-<li>资源管理系统 Resource Management Ststem</li>
-<li>资源复制 Resource Replication</li>
-</ul>
-<h2 id="动态可扩展架构"><a href="#动态可扩展架构" class="headerlink" title="动态可扩展架构"></a>动态可扩展架构</h2><h3 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>动态可扩展架构（Dynamic Scalability Architecture）是一个架构模型，它基于<strong>预先定义扩展条件</strong>的系统，触发这些条件会导致从资源池中<strong>动态分配 IT 资源</strong>。</li>
-<li>The dynamic scalability architecture is an architectural model based on a system of <strong>predefined scaling conditions</strong> that trigger the <strong>dynamic allocation of IT resources</strong> from resource pools.</li>
-</ul>
-<h3 id="核心机制-1"><a href="#核心机制-1" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="自动扩展监听器-Automated-Scaling-Listener"><a href="#自动扩展监听器-Automated-Scaling-Listener" class="headerlink" title="自动扩展监听器 Automated Scaling Listener"></a>自动扩展监听器 Automated Scaling Listener</h4><ul>
-<li>自动扩展监听器配置了<strong>负载阈值</strong>，以决定何时为工作负载的处理<strong>添加新 IT 资源</strong>。</li>
-<li>The automated scaling listener is configured with <strong>workload thresholds</strong> that dictate when <strong>new IT resources need to be added</strong> to the workload processing.</li>
-<li>动态可扩展架构可以应用于<strong>一系列 IT 资源</strong>，包括虚拟服务器和云存储设备。</li>
-<li>The dynamic scalability architecture can be applied to <strong>a range of IT resources</strong>, including virtual servers and cloud storage devices.</li>
-</ul>
-<h4 id="资源复制-Resource-Replication"><a href="#资源复制-Resource-Replication" class="headerlink" title="资源复制 Resource Replication"></a>资源复制 Resource Replication</h4><h3 id="常用的动态扩展类型"><a href="#常用的动态扩展类型" class="headerlink" title="常用的动态扩展类型"></a>常用的动态扩展类型</h3><ul>
-<li>动态水平扩展（Dynamic Horizontal Scaling）<ul>
-<li><strong>向内或向外扩展</strong> IT 资源实例，以便处理<strong>工作负载的变化</strong>。</li>
-<li>IT resource instances are <strong>scaled out and in</strong> to handle <strong>fluctuating workloads</strong>.</li>
-</ul>
+<li><p>Java 语言是<strong>可移植的</strong>：</p>
+<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
+<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
 </li>
-<li>动态垂直扩展（Dynamic Vertical Scaling）<ul>
-<li>当需要调整<strong>单个 IT 资源</strong>的处理容量时，<strong>向上或向下扩展</strong> IT 资源实例。</li>
-<li>IT resource instances are <strong>scaled up and down</strong> when there is a need to adjust the processing capacity of a <strong>single IT resource</strong>.</li>
-</ul>
+<li><p>Java 语言是<strong>解释型的</strong>：</p>
+<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
+<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
 </li>
-<li>动态重定位（Dynamic Relocation）<ul>
-<li>将 IT 资源<strong>重放置</strong>到<strong>更大容量</strong>的主机上。</li>
-<li>The IT resource is <strong>relocated</strong> to a host with <strong>more capacity</strong>.</li>
-</ul>
+<li><p>Java 是<strong>高性能的</strong>：</p>
+<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
+</li>
+<li><p>Java 语言是<strong>多线程的</strong>：</p>
+<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
+</li>
+<li><p>Java 语言是<strong>动态的</strong>：</p>
+<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
 </li>
 </ul>
-<h3 id="动态水平扩展的过程"><a href="#动态水平扩展的过程" class="headerlink" title="动态水平扩展的过程"></a>动态水平扩展的过程</h3><ol>
-<li><p>监听</p>
-<img src="http://cdn.georgedi.top//_note/cloud/11.13.png" alt="动态水平扩展的过程1" style="zoom:67%;" />
-
-<p>① Cloud service consumers are sending requests to a cloud service.</p>
-<p>② The automated scaling listener monitors the cloud service to determine if predefined capacity thresholds are being exceeded.</p>
-</li>
-<li><p>判断</p>
-<img src="http://cdn.georgedi.top//_note/cloud/11.14.png" alt="动态水平扩展的过程2" style="zoom:67%;" />
-
-<p>③ The number of requests coming from cloud service consumers increases.</p>
-<p>④ The workload exceeds the performance thresholds. The automated scaling listener determines the next course of action based on a predefined scaling policy.</p>
-<p>⑤ If the cloud service implementation is deemed eligible for additional scaling, the automated scaling listener initiates the scaling process.</p>
-</li>
-<li><p>报告</p>
-<img src="http://cdn.georgedi.top//_note/cloud/11.15.png" alt="动态水平扩展的过程3" style="zoom:67%;" />
-
-<p>⑥ The automated scaling listener sends a signal to the resource replication mechanism.</p>
-<p>⑦ which creates more instances of the cloud service.</p>
-<p>⑧ Now that the increased workload has been accommodated, the automated scaling listener resumes monitoring and detracting and adding IT resources, as required.</p>
-</li>
-</ol>
-<h3 id="其他机制-2"><a href="#其他机制-2" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
-<li>云使用监控器 Cloud Usage Monitor</li>
-<li>虚拟机监控器 Hypervisor</li>
-<li>按使用付费监控器 Pay-Per-Use Monitor</li>
+<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
+<li>1995 年 5 月 23 日，Java 语言诞生</li>
+<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
+<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
+<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
+<li>1997 年 2 月 18 日，JDK1.1 发布</li>
+<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
+<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
+<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
+<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
+<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
+<li>2000 年 5 月 8 日，JDK1.3 发布</li>
+<li>2000 年 5 月 29 日，JDK1.4 发布</li>
+<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
+<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
+<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
+<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
+<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
+<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
+<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
+<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
+<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
+<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
+<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
+<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
+<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
+<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
 </ul>
-<h2 id="弹性资源容量架构"><a href="#弹性资源容量架构" class="headerlink" title="弹性资源容量架构"></a>弹性资源容量架构</h2><h3 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>弹性资源容量架构（Elastic Resource Capacity Architecture）主要与<strong>虚拟服务器的动态供给</strong>相关，利用<strong>分配和回收 CPU 与 RAM 资源</strong>的系统，<strong>立即响应</strong>托管 IT 资源的<strong>处理请求变化</strong>。</li>
-<li>The elastic resource capacity architecture is primarily related to the <strong>dynamic provisioning of virtual servers</strong>, using a system that <strong>allocates and reclaims CPUs and RAM</strong> in <strong>immediate response</strong> to the <strong>fluctuating processing requirements</strong> of hosted IT resources</li>
-</ul>
-<h3 id="核心机制-2"><a href="#核心机制-2" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="自动扩展监听器-Automated-Scaling-Listener-1"><a href="#自动扩展监听器-Automated-Scaling-Listener-1" class="headerlink" title="自动扩展监听器 Automated Scaling Listener"></a>自动扩展监听器 Automated Scaling Listener</h4><ol>
-<li><p>监听</p>
-<img src="http://cdn.georgedi.top//_note/cloud/11.16.png" alt="弹性资源容量架构1" style="zoom:67%;" />
-
-<p>① Cloud service consumers are actively sending requests to a cloud service,</p>
-<p>② which are monitored by an automated scaling listener.</p>
-<p>③ An intelligent automation engine script is deployed with workflow logic</p>
-<p>④ that is capable of notifying the resource pool using allocation requests.</p>
-</li>
-<li><p>报告</p>
-<img src="http://cdn.georgedi.top//_note/cloud/11.17.png" alt="弹性资源容量架构2" style="zoom:67%;" />
-
-<p>⑤ Cloud service consumer requests increase,</p>
-<p>⑥ causing the automated scaling listener to signal the intelligent automation engine to execute the script.</p>
-<p>⑦ The script runs the workflow logic that signals the hypervisor to allocate more IT resources from the resource pools.</p>
-<p>⑧ The hypervisor allocates additional CPU and RAM to the virtual server, enabling the increased workload to be handled.</p>
-</li>
-</ol>
-<h3 id="其他机制-3"><a href="#其他机制-3" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
-<li>云使用监控器 Cloud Usage Monitor</li>
-<li>按使用付费监控器 Pay-Per-Use Monitor</li>
-<li>资源复制 Resource Replication</li>
-</ul>
-<h2 id="服务负载均衡架构"><a href="#服务负载均衡架构" class="headerlink" title="服务负载均衡架构"></a>服务负载均衡架构</h2><h3 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>服务负载均衡架构（Service Load Balancing Architecture）可以被认为是<strong>负载分布架构的一个特殊变种</strong>，它是专门针对<strong>扩展云服务</strong>实现的。</li>
-<li>The service load balancing architecture can be considered <strong>a specialized variation of the workload distribution architecture</strong> that is geared specifically for <strong>scaling cloud service</strong> implementations.</li>
-</ul>
-<h3 id="核心机制-3"><a href="#核心机制-3" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="负载均衡器-Load-Balancer-1"><a href="#负载均衡器-Load-Balancer-1" class="headerlink" title="负载均衡器 Load Balancer"></a>负载均衡器 Load Balancer</h4><ul>
-<li><strong>云服务实现的副本</strong>被组织为一个<strong>资源池</strong>，而负载均衡器则作为<strong>外部或内置组件</strong>（下图1），允许托管服务器自行平衡工作负载。</li>
-<li><strong>The duplicate cloud service implementations</strong> are organized into a <strong>resource pool</strong>, while the load balancer is positioned as either an <strong>external or built-in component</strong>  to allow the host servers to balance the workloads themselves.</li>
-<li>负载均衡器在位置上可以<strong>独立于云设备及其主机服务器</strong>（下图2），也可以成为应用程序或服务器环境的<strong>内置组件</strong>。</li>
-<li>The load balancer can be positioned either <strong>independent of the cloud services and their host servers</strong>, or <strong>built-in as part</strong> of the application or server’s environment.</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/11.2.png" alt="独立的负载均衡器" style="zoom:67%;" />
-
-<img src="http://cdn.georgedi.top//_note/cloud/11.3.png" alt="内置于云服务的负载均衡器" style="zoom:67%;" />
-
-<h3 id="其他机制-4"><a href="#其他机制-4" class="headerlink" title="其他机制"></a>其他机制</h3><ul>
-<li>云使用监控器 Cloud Usage Monitor</li>
-<li>资源集群 Resource Cluster</li>
-<li>资源复制 Resource Replication</li>
-</ul>
-<h2 id="云爆发架构"><a href="#云爆发架构" class="headerlink" title="云爆发架构"></a>云爆发架构</h2><h3 id="定义-5"><a href="#定义-5" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>云爆发架构（Cloud Bursting Architecture）建立了一种<strong>动态扩展</strong>的形式，只要达到预先设置的容量阈值，就从企业内部的 IT 资源扩展或“<strong>爆发</strong>”到云中。</li>
-<li>The cloud bursting architecture establishes a form of <strong>dynamic scaling</strong> that scales or “<strong>bursts out</strong>” on-premise IT resources into a cloud whenever predefined capacity thresholds have been reached.</li>
-</ul>
-<h3 id="核心机制-4"><a href="#核心机制-4" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="自动扩展监听器-Automated-Scaling-Listener-2"><a href="#自动扩展监听器-Automated-Scaling-Listener-2" class="headerlink" title="自动扩展监听器 Automated Scaling Listener"></a>自动扩展监听器 Automated Scaling Listener</h4><ul>
-<li>自动扩展监听器决定何时将请求<strong>重定向到基于云的 IT 资源</strong>。</li>
-<li>The automated scaling listener determines when to <strong>redirect requests to cloud-based IT resources</strong>.</li>
-</ul>
-<h4 id="资源复制-Resource-Replication-1"><a href="#资源复制-Resource-Replication-1" class="headerlink" title="资源复制 Resource Replication"></a>资源复制 Resource Replication</h4><ul>
-<li>资源复制机制<strong>维持企业内部和基于云的 IT 资源之间</strong>的状态信息的<strong>同步</strong>。</li>
-<li>Resource replication is used to <strong>maintain synchronicity between on-premise and cloud-based IT resources</strong> in relation to state information.</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/11.18.png" alt="云爆发架构" style="zoom:67%;" />
-
-<h2 id="弹性磁盘供给架构"><a href="#弹性磁盘供给架构" class="headerlink" title="弹性磁盘供给架构"></a>弹性磁盘供给架构</h2><h3 id="定义-6"><a href="#定义-6" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>弹性磁盘供给架构（Elastic Disk Provisioning Architecture）建立了一个<strong>动态存储供给系统</strong>，它确保按照<strong>云用户实际使用的存储量</strong>进行精确计费。</li>
-<li>The elastic disk provisioning architecture establishes a <strong>dynamic storage provisioning system</strong> that ensures that <strong>the cloud consumer</strong> is granularly billed for <strong>the exact amount of storage</strong> that it actually uses.</li>
-<li>该系统采用<strong>自动精简供给技术</strong>实现存储空间的自动分配，并进一步支持<strong>运行时使用监控</strong>来收集<strong>准确的使用数据</strong>以便计费。</li>
-<li>This system uses <strong>thin-provisioning technology</strong> for the dynamic allocation of storage space, and is further supported by <strong>runtime usage monitoring</strong> to collect <strong>accurate usage data</strong> for billing purposes.</li>
-</ul>
-<h2 id="冗余存储架构"><a href="#冗余存储架构" class="headerlink" title="冗余存储架构"></a>冗余存储架构</h2><h3 id="定义-7"><a href="#定义-7" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>冗余存储架构（Redundant Storage Architecture）引入了<strong>复制的辅云存储设备</strong>作为故障系统的一部分，它要与主云存储设备中的<strong>数据保持同步</strong>。</li>
-<li>The redundant storage architecture introduces a <strong>secondary duplicate cloud storage device</strong> as part of a failover system that <strong>synchronizes its data</strong> with the data in the primary cloud storage device.</li>
-</ul>
-<h3 id="核心机制-5"><a href="#核心机制-5" class="headerlink" title="核心机制"></a>核心机制</h3><h4 id="逻辑单元号-Logical-Unit-Number（LUN）"><a href="#逻辑单元号-Logical-Unit-Number（LUN）" class="headerlink" title="逻辑单元号 Logical Unit Number（LUN）"></a>逻辑单元号 Logical Unit Number（LUN）</h4><ul>
-<li>逻辑单元号（LUN）是一个逻辑驱动器，它代表物理服务驱动器的一个分区。</li>
-<li>A logical unit number (LUN) is a logical drive that represents a partition of a physical drive.</li>
-</ul>
-<p><img src="http://cdn.georgedi.top//_note/cloud/11.20.png" alt="逻辑单元号"></p>
-<h4 id="存储设备网关-Storage-Service-Gateway"><a href="#存储设备网关-Storage-Service-Gateway" class="headerlink" title="存储设备网关 Storage Service Gateway"></a>存储设备网关 Storage Service Gateway</h4><ul>
-<li>当主设备失败时,存储服务网关将云消费请求<strong>向次要设备转移</strong>。</li>
-<li>A storage service gateway diverts cloud consumer requests <strong>to the secondary device</strong> whenever the primary device fails.</li>
-<li>存储设备网关是一个组件，是连接到云存储设备的<strong>外部接口</strong>。</li>
-<li>The storage service gateway is a component that acts as the <strong>external interface</strong> to cloud storage services.</li>
-</ul>
-<hr>
-<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第3章 理解云计算</title>
-    <url>/posts/a0070003.html</url>
-    <content><![CDATA[<h2 id="起源与影响"><a href="#起源与影响" class="headerlink" title="起源与影响"></a>起源与影响</h2><h3 id="简要历史"><a href="#简要历史" class="headerlink" title="简要历史"></a>简要历史</h3><ul>
-<li><strong>1961年，John McCarthy 公开提出“效用计算”（utility computing）。</strong></li>
-<li>1969年， Leonard Kleinrock 在 ARPANET 项目中表示“计算机应用的扩展”（spread of computer utilities）。</li>
-<li>20世纪90年代中期，普通大众开始以各种形式使用基于 Internet 的计算机应用（internet-based computer utilities）。</li>
-<li>20世纪90年代后期，Salesforce.com 率先在企业中引入“远程提供服务”的概念（remotely provisioned services）。</li>
-<li>2002年，Amazon.com 启用 Amazon Web 服务（Amazon Web Service，AWS）平台。</li>
-<li><strong>2006年，“云计算”（cloud computing）这一术语出现在商业领域。</strong></li>
-<li>2009年，Google 应用引擎（Google App Engine）成为了另一个里程碑。</li>
-</ul>
-<img src="https://s1.ax1x.com/2023/06/11/pCV0cQ0.png" alt="云计算历史" style="zoom: 50%;" />
-
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
-<li><p><strong>Gartner （高德纳咨询公司）定义：</strong></p>
-<p>一种能通过 Internet 技术将可扩展性和弹性的IT能力作为服务交付给外部用户的计算方式。</p>
-<p>A style of computing in which scalable and elastic IT-enabled capabilities are delivered as a service to external customers using Internet technologies.</p>
-</li>
-<li><p><strong>Forrester Research （弗雷斯特研究公司）定义：</strong></p>
-<p>一种标准化的 IT 性能（服务、软件或者基础设施），按使用付费和自助服务方式，通过Internet技术进行交付。</p>
-<p>A standardized IT capability (services, software, or infrastructure) delivered via Internet technologies in a pay-per-use, self-service way.</p>
-</li>
-<li><p><strong>美国国家标准与技术研究院（NIST）制定（2011年9月 修订版）：</strong></p>
-<p>云计算是一种模型，可以实现<strong>随时随地、便携地、按需地</strong>从可配置计算资源共享<strong>池</strong>中获取所需的资源（例如，网络、服务器、存储、应用程序及服务），资源可以<strong>快速供给和释放</strong>，只需提供很少的管理工作，或与服务提供者进行很少的交互。这种云模型由五个基本特征、三种服务模型和四种部署模型构成。</p>
-<p>Cloud computing is a model for enabling <strong>ubiquitous</strong>, <strong>convenient</strong>, <strong>on-demand</strong> network access to a shared <strong>pool</strong> of configurable computing resources (e.g. networks, servers, storage, applications, and services) that can be <strong>rapidly provisioned and released</strong> with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.</p>
-</li>
-<li><p><strong>※云计算的六个基本特征：</strong></p>
-<ol>
-<li>On-demand usage 按需使用</li>
-<li>Ubiquitous access 随处访问</li>
-<li>Measured usage 可测量的使用</li>
-<li>Resource pool 资源池</li>
-<li>Elasticity 弹性</li>
-<li>Resiliency 可恢复性</li>
-</ol>
-</li>
-<li><p><strong>本书给出了云计算更为简洁的定义：</strong></p>
-<p>云计算是<strong>分布式计算</strong>的一种特殊形式，它引入<strong>效用模型</strong>来<strong>远程</strong>供给<strong>可扩展</strong>和<strong>可测量</strong>的资源。</p>
-<p>Cloud computing is a specialized form of <strong>distributed computing</strong> that introduces <strong>utilization models</strong> for <strong>remotely</strong> provisioning <strong>scalable</strong> and <strong>measured</strong> resources.</p>
-</li>
-</ul>
-<h2 id="基本概念与术语"><a href="#基本概念与术语" class="headerlink" title="基本概念与术语"></a>基本概念与术语</h2><h3 id="云"><a href="#云" class="headerlink" title="云"></a>云</h3><ul>
-<li><p>云是指<strong>一个独特的 IT 环境</strong>，设计目的是为了<strong>远程供给可扩展和可测量的 IT 资源</strong>。</p>
-<p>A cloud refers to <strong>a distinct IT environment</strong> that is designed for the purpose of <strong>remotely provisioning scalable and measured IT resources</strong>.</p>
-</li>
-</ul>
-<h3 id="IT-资源"><a href="#IT-资源" class="headerlink" title="IT 资源"></a>IT 资源</h3><ul>
-<li><p>IT 资源是指一个与 IT 相关的<strong>物理的或虚拟的</strong>事物，它既可以是<strong>基于软件</strong>的（虚拟服务器或定制软件程序），也可以是<strong>基于硬件</strong>的（物理服务器或网络设备）。</p>
-<p>An IT resource is a <strong>physical or virtual</strong> IT-related artifact that can be either <strong>software-based</strong>, such as a virtual server or a custom software program, or <strong>hardware-based</strong>, such as a physical server or a network device.</p>
-<img src="https://s1.ax1x.com/2023/06/11/pCV0WeU.png" alt="IT资源" style="zoom:50%;" /></li>
-</ul>
-<h3 id="云用户与云提供者"><a href="#云用户与云提供者" class="headerlink" title="云用户与云提供者"></a>云用户与云提供者</h3><ul>
-<li><p>提供基于云的 IT 资源的一方称为<strong>云提供者</strong>。</p>
-<p>The party that provides cloud-based IT resources is the <strong>cloud provider</strong>.</p>
-</li>
-<li><p>使用基于云的 IT 资源的一方称为<strong>云用户</strong>。</p>
-<p>The party that uses cloud-based IT resources is the <strong>cloud consumer</strong>.</p>
-</li>
-</ul>
-<h3 id="可扩展性"><a href="#可扩展性" class="headerlink" title="可扩展性"></a>可扩展性</h3><ul>
-<li><p><strong>可扩展性</strong>是指 IT 资源可以处理增加或减少的使用需求的能力。</p>
-<p>From an IT resource perspective, <strong>scaling</strong> represents the ability of the IT resource to handle increased or decreased usage demands.</p>
-</li>
-<li><p>可扩展性有两种类型：</p>
-<ol>
-<li><strong>Horizontal Scaling</strong> – scaling out and scaling in 水平扩展</li>
-<li><strong>Vertical Scaling</strong> – scaling up and scaling down 垂直扩展</li>
-</ol>
-</li>
-</ul>
-<h3 id="云服务"><a href="#云服务" class="headerlink" title="云服务"></a>云服务</h3><ul>
-<li><p><strong>云服务</strong>是指任何可以通过云远程访问的 IT 资源。</p>
-<p>A <strong>cloud service</strong> is any IT resource that is made remotely accessible via a cloud.</p>
-</li>
-</ul>
-<h3 id="云服务用户"><a href="#云服务用户" class="headerlink" title="云服务用户"></a>云服务用户</h3><ul>
-<li><p><strong>云服务用户</strong>是一个临时的运行时角色，由访问云服务的软件程序担任。</p>
-<p>The <strong>cloud service consumer</strong> is a temporary runtime role assumed by a software program when it accesses a cloud service.</p>
-</li>
-</ul>
-<hr>
-<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第4章 基本概念与模型</title>
-    <url>/posts/a0070004.html</url>
-    <content><![CDATA[<h2 id="角色与边界"><a href="#角色与边界" class="headerlink" title="角色与边界"></a>角色与边界</h2><h3 id="云提供者"><a href="#云提供者" class="headerlink" title="云提供者"></a>云提供者</h3><ul>
-<li><p>提供基于云的 IT 资源的<strong>组织机构</strong>。</p>
-<p><strong>The organization</strong> that provides cloud-based IT resources.</p>
-</li>
-</ul>
-<h3 id="云用户"><a href="#云用户" class="headerlink" title="云用户"></a>云用户</h3><ul>
-<li><p><strong>云用户</strong>是组织机构（或者人），他们与云提供者签订正式的合同或者约定来使用云提供者提供的可用的 IT 资源。具体来说，云用户使用云服务用户来访问云服务。</p>
-<p><strong>Cloud consumer</strong> is an organization (or a human) that has a formal contract or arrangement with a cloud provider to use IT resources made available by the cloud provider. Specifically, the cloud consumer uses a cloud service consumer to access a cloud service.</p>
-</li>
-</ul>
-<h3 id="云服务拥有者"><a href="#云服务拥有者" class="headerlink" title="云服务拥有者"></a>云服务拥有者</h3><ul>
-<li><p>在法律上<strong>拥有</strong>云服务的个人或者组织。</p>
-<p>The person or organization that legally <strong>owns</strong> a cloud service.</p>
-</li>
-</ul>
-<h3 id="云资源管理者"><a href="#云资源管理者" class="headerlink" title="云资源管理者"></a>云资源管理者</h3><ul>
-<li><p>负责管理基于云的 IT 资源（包括云服务）。</p>
-<p>Person or organization responsible for administering a cloud-based IT resource (including cloud services).</p>
-</li>
-</ul>
-<h3 id="其他角色"><a href="#其他角色" class="headerlink" title="其他角色"></a>其他角色</h3><ul>
-<li>Cloud Auditor 云审计–对云环境进行独立评估的第三方（通常通过认证的）。</li>
-<li>Cloud Broker 云代理–承担管理和协商云用户和云提供者之间云服务使用的责任。</li>
-<li>Cloud Carrier 云运营商–负责提供云用户和云提供者之间的线路级连接（这个角色通常由网络和电信提供商担任）。</li>
-</ul>
-<h3 id="组织边界"><a href="#组织边界" class="headerlink" title="组织边界"></a>组织边界</h3><ul>
-<li><p>代表一个组织拥有和管理的 IT 资源的<strong>物理范围</strong>。</p>
-<p>Represents the <strong>physical perimeter</strong> that surrounds a set of IT resources that are owned and governed by an organization.</p>
-</li>
-</ul>
-<h3 id="信任边界"><a href="#信任边界" class="headerlink" title="信任边界"></a>信任边界</h3><ul>
-<li><p>一个<strong>逻辑范围</strong>，包括一个组织信任的 IT 资源。</p>
-<p>A <strong>logical perimeter</strong> that typically spans beyond physical boundaries to represent the extent to which IT resources are trusted.</p>
-</li>
-</ul>
-<h2 id="云特性"><a href="#云特性" class="headerlink" title="云特性"></a>云特性</h2><ol>
-<li>按需使用 On-demand usage</li>
-<li>随处访问 Ubiquitous access</li>
-<li>多租户（和资源池）Multitenacy （and resource pool）</li>
-<li>弹性 Elasticity</li>
-<li>可测量的使用 Measured usage</li>
-<li>可恢复性 Resiliency（NIST 云计算定义不包括此性质）</li>
-</ol>
-<h2 id="云交付模型"><a href="#云交付模型" class="headerlink" title="云交付模型"></a>云交付模型</h2><h3 id="基础设施作为服务（IaaS）"><a href="#基础设施作为服务（IaaS）" class="headerlink" title="基础设施作为服务（IaaS）"></a>基础设施作为服务（IaaS）</h3><ul>
-<li>The IaaS delivery model represents a self-contained IT environment comprised of infrastructure-centric IT resources that can be accessed and managed via cloud service-based interfaces and tools.</li>
-<li>This environment can include hardware, network, connectivity，operating systems，and other “raw” （原始的）IT resources.</li>
-<li>The general purpose of an IaaS environment is to provide cloud consumers with a high level of control and responsibility over its configuration（配置） and utilization（使用）.</li>
-<li>The IT resources provided by IaaS are generally not pre-configured（未配置 ）, placing the administrative responsibility directly upon the cloud consumer.</li>
-<li>This model is therefore used by cloud consumers that require a high level of control （高控制权）over the cloud-based environment they intend to create.</li>
-</ul>
-<h3 id="平台作为服务（PaaS）"><a href="#平台作为服务（PaaS）" class="headerlink" title="平台作为服务（PaaS）"></a>平台作为服务（PaaS）</h3><ul>
-<li><p>The PaaS delivery model represents a pre-defined “ready-to-use（就绪可用）” environment typically comprised of already deployed（部署） and configured（配置） IT resources.</p>
-<p>PaaS 交付模型是预先定义好的“就绪可用”的环境，一般由已经部署好和配置好的 IT 资源组成。</p>
-</li>
-</ul>
-<h3 id="软件作为服务（SaaS）"><a href="#软件作为服务（SaaS）" class="headerlink" title="软件作为服务（SaaS）"></a>软件作为服务（SaaS）</h3><ul>
-<li><p>A software program positioned as a shared cloud service and made available as a “product” or generic utility（通用工具） represents the typical profile of a SaaS offering.</p>
-<p>SaaS 通常是把软件程序定位成共享的云服务，作为“产品”或通用的工具进行提供。</p>
-</li>
-<li><p>Be typically used to make a reusable（可重用的） cloud service widely available （often commercially） to a range of cloud consumers.</p>
-</li>
-</ul>
-<h3 id="云交付模型比较"><a href="#云交付模型比较" class="headerlink" title="云交付模型比较"></a>云交付模型比较</h3><p>A comparison of typical cloud delivery model control levels.</p>
-<table>
-<thead>
-<tr>
-<th align="center">Cloud Delivery Model</th>
-<th align="center">Typical Level of Control Granted to Cloud Consumer</th>
-<th align="center">Typical Funcitionality Made Available to Cloud Consumer</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">SaaS</td>
-<td align="center">usage and usage-related configuration</td>
-<td align="center">access to front-end user-interface</td>
-</tr>
-<tr>
-<td align="center">PaaS</td>
-<td align="center">limited administrative</td>
-<td align="center">moderate level of administrative control over IT resources relevant to cloud consumer’s usage of platform</td>
-</tr>
-<tr>
-<td align="center">IaaS</td>
-<td align="center">full administrative</td>
-<td align="center">full access to virtualized infrastructure-related IT resources and, possibly, to underlying physical IT resources</td>
-</tr>
-</tbody></table>
-<h2 id="云部署模型"><a href="#云部署模型" class="headerlink" title="云部署模型"></a>云部署模型</h2><h3 id="公有云"><a href="#公有云" class="headerlink" title="公有云"></a>公有云</h3><ul>
-<li>A publicly accessible cloud environment owned by a third-party cloud provider.</li>
-<li>The cloud provider is responsible for the creation and on-going （不间断的） maintenance of the public cloud and its IT resources.</li>
-</ul>
-<h3 id="社区云"><a href="#社区云" class="headerlink" title="社区云"></a>社区云</h3><ul>
-<li>A community cloud is similar to a public cloud except that its access is limited to a specific community of cloud consumers.</li>
-<li>Membership in the community does not necessarily guarantee access to or control of all the cloud’s IT resources. Parties outside the community are generally not granted access unless allowed by the community.</li>
-</ul>
-<h3 id="私有云"><a href="#私有云" class="headerlink" title="私有云"></a>私有云</h3><ul>
-<li>A private cloud is owned by a single organization.<ul>
-<li>a separate(单独的) organizational department typically assumes the responsibility for provisioning the cloud (and therefore assumes the cloud provider role)</li>
-<li>departments requiring access to the private cloud assume the cloud consumer role</li>
-</ul>
-</li>
-</ul>
-<h3 id="混合云"><a href="#混合云" class="headerlink" title="混合云"></a>混合云</h3><ul>
-<li>A hybrid cloud is a cloud environment comprised of two or more different cloud deployment models.</li>
-</ul>
-<hr>
-<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>云计算</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第9章 云管理机制</title>
-    <url>/posts/a0070009.html</url>
-    <content><![CDATA[<h2 id="远程管理系统"><a href="#远程管理系统" class="headerlink" title="远程管理系统"></a>远程管理系统</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>远程管理系统机制向<strong>外部云资源管理者</strong>提供<strong>工具和用户界面</strong>来<strong>配置和管理</strong>基于云的 IT 资源。</li>
-<li>The remote administration system mechanism provides <strong>tools and user-interfaces</strong> for <strong>external cloud resource administrators</strong> to <strong>configure and administer</strong>  cloud-based IT resources.</li>
-</ul>
-<p><img src="http://cdn.georgedi.top//_note/cloud/9.1.png" alt="远程管理系统"></p>
-<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><ul>
-<li>远程管理系统能够建立一个<strong>入口</strong>以便访问各种底层系统的<strong>控制与管理功能</strong>。</li>
-<li>The remote administration system can establish a <strong>portal</strong> for access to <strong>administration and management features</strong> of various underlying systems.</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/9.2.png" alt="远程管理系统的功能" style="zoom: 67%;" />
-
-<h3 id="入口类型"><a href="#入口类型" class="headerlink" title="入口类型"></a>入口类型</h3><ul>
-<li>远程管理系统提供的<strong>工具和 API</strong> 一般被云提供者用来<strong>开发和定制在线入口</strong>，这些入口向云用户提供各种管理控制。</li>
-<li><strong>The tools and APIs</strong> provided by a remote administration system are generally used by the cloud provider to <strong>develop and customize online portals</strong> that provide cloud consumers with a variety of administrative controls.</li>
-</ul>
-<ol>
-<li><strong>使用与管理入口（Usage And Administration Portal）</strong><ul>
-<li>一种<strong>通用入口</strong>，<strong>集中管理</strong>不同的基于云的 IT 资源，并<strong>提供 IT 资源使用报告</strong>。</li>
-<li>A <strong>general purpose portal</strong> that <strong>centralizes management controls</strong> to different cloud-based IT resources and can further <strong>provide IT resource usage reports</strong>.</li>
-</ul>
-</li>
-<li><strong>自助服务入口（Self-Service Portal）</strong> <ul>
-<li>该入口本质上是一个<strong>购买门户</strong>，它允许云用户搜索云提供者提供的<strong>最新云服务和 IT 资源（通常是租赁的）列表</strong>。然后云用户向云提供者<strong>提交其选项</strong>进行资源调配。</li>
-<li>This is essentially a <strong>shopping portal</strong> that allows cloud consumers to search an <strong>up-to-date list of cloud services and IT resources</strong> that are available from a cloud provider (usually for lease). The cloud consumer <strong>submits its chosen items</strong> to the cloud provider for provisioning.</li>
-</ul>
-</li>
-</ol>
-<h3 id="可执行的任务"><a href="#可执行的任务" class="headerlink" title="可执行的任务"></a>可执行的任务</h3><ul>
-<li>配置与建立云服务 configuring and setting up cloud services</li>
-<li>为按需云服务提供和释放 IT 资源 provisioning and releasing IT resource for on-demand cloud services</li>
-<li>监控云服务的状态、使用和性能 monitoring cloud service status, usage, and performance                         </li>
-<li>监控 QoS 和 SLA 的实行 monitoring QoS and SLA fulfillment</li>
-<li>管理租赁成本与使用费用 managing leasing costs and usage fees</li>
-<li>管理用户账户、安全凭证、授权和访问控制 managing user accounts, security credentials, authorization, and access control</li>
-<li>跟踪对租赁服务内部与外部的访问 tracking internal and external access to leased services                                          </li>
-<li>规划与评估 IT 资源供给 planning and assessing IT resource provisioning</li>
-<li>容量规划  capacity planning</li>
-</ul>
-<h2 id="资源管理系统"><a href="#资源管理系统" class="headerlink" title="资源管理系统"></a>资源管理系统</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>资源管理系统机制帮助<strong>协调 IT 资源</strong>，以便响应云用户和云提供者执行的管理操作。</li>
-<li>The resource management system mechanism helps <strong>coordinate IT resources</strong> in response to management actions performed by both cloud consumers and cloud providers</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/9.3.png" alt="资源管理系统" style="zoom:67%;" />
-
-<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><ul>
-<li>资源管理系统包含一个 <strong>VIM 平台</strong>和一个<strong>虚拟机映像库</strong>。VIM 也可能有额外的库，包括专门用来存放操作数据的。</li>
-<li>A resource management system encompassing a <strong>VIM platform</strong> and a <strong>virtual machine image repository</strong>. The VIM may have additional repositories, including one dedicated to storing operational data.</li>
-</ul>
-<h3 id="可执行的任务-1"><a href="#可执行的任务-1" class="headerlink" title="可执行的任务"></a>可执行的任务</h3><ul>
-<li>管理用来创建预构建实例的虚拟 IT 资源模板 managing virtual IT resource templates that are used to create pre-built instances</li>
-<li>分配和释放虚拟 IT 资源 allocating and releasing virtual IT resource</li>
-<li>协调 IT 资源 coordinating IT resources</li>
-<li>在云服务实例的生命周期内，强制执行使用策略与安全规定 enforcing usage and security policies throughout the lifecycle of cloud service instances</li>
-<li>监控 IT 资源的操作条件 monitoring operational conditions of IT resources</li>
-</ul>
-<h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.4.png" alt="资源管理系统的工作流程" style="zoom:67%;" />
-
-<h2 id="SLA-管理系统"><a href="#SLA-管理系统" class="headerlink" title="SLA 管理系统"></a>SLA 管理系统</h2><h3 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>SLA 管理系统机制代表的是<strong>一系列商品化的可用云管理产品</strong>，这些产品提供的功能包括：<strong>SLA 数据的管理、收集、存储、报告以及运行时通知</strong>。</li>
-<li>The SLA management system mechanism represents <strong>a range of commercially available cloud management products</strong> that provide features pertaining to the <strong>administration, collection, storage, reporting, and runtime notification of SLA data</strong>.</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/9.5.png" alt="SLA 管理系统" style="zoom:67%;" />
-
-<h3 id="工作流程-1"><a href="#工作流程-1" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.6.png" alt="SLA 管理系统的工作流程" style="zoom:67%;" />
-
-<h2 id="计费管理系统"><a href="#计费管理系统" class="headerlink" title="计费管理系统"></a>计费管理系统</h2><h3 id="定义-3"><a href="#定义-3" class="headerlink" title="定义"></a>定义</h3><ul>
-<li>计费管理系统机制<strong>专门用于收集和处理使用数据</strong>，它涉及<strong>云提供者的结算和云用户的计费</strong>。</li>
-<li>The billing management system mechanism is <strong>dedicated to the collection and processing of usage data</strong> as it pertains to <strong>cloud provider accounting and cloud consumer billing</strong>.</li>
-</ul>
-<img src="http://cdn.georgedi.top//_note/cloud/9.7.png" alt="计费管理系统" style="zoom:67%;" />
-
-<h3 id="不同定价规则"><a href="#不同定价规则" class="headerlink" title="不同定价规则"></a>不同定价规则</h3><ul>
-<li>定价模型可以是<strong>传统的按使用付费模式</strong>，也可以是<strong>固定费率或按分配付费模式</strong>，还可以是<strong>它们的组合</strong>。</li>
-<li>Pricing models  can vary from the <strong>traditional pay-per-use models</strong>, to <strong>flat-rate or pay-per-allocation modes</strong>, or <strong>combinations thereof</strong>.</li>
-<li>计费是根据<strong>使用前支付和使用后支付</strong>来安排的。后者支付类型又分为<strong>预定义限值和无限制使用</strong>。</li>
-<li>Billing arrangements be based on <strong>pre-usage and post-usage payments</strong>. The later type can include <strong>pre-defined limits or unlimited usage</strong>.</li>
-</ul>
-<h3 id="工作流程-2"><a href="#工作流程-2" class="headerlink" title="工作流程"></a>工作流程</h3><img src="http://cdn.georgedi.top//_note/cloud/9.8.png" alt="计费管理系统的工作流程" style="zoom:67%;" />
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p><a href="https://georgedi.top/posts/a0070000.html">返回目录</a></p>
+<p><a href="https://georgedi.top/posts/e0010000.html">返回目录</a></p>
 ]]></content>
       <tags>
-        <tag>云计算</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -3002,7 +3192,7 @@
     <url>/posts/e0010000.html</url>
     <content><![CDATA[<h2 id="Java-入门：基本语法篇"><a href="#Java-入门：基本语法篇" class="headerlink" title="Java 入门：基本语法篇"></a>Java 入门：基本语法篇</h2><h3 id="第1章-Java-语言概述"><a href="#第1章-Java-语言概述" class="headerlink" title="第1章 Java 语言概述"></a><a href="https://georgedi.top/posts/e0010001.html">第1章 Java 语言概述</a></h3><h3 id="第2章-变量与运算符"><a href="#第2章-变量与运算符" class="headerlink" title="第2章 变量与运算符"></a><a href="https://georgedi.top/posts/e0010002.html">第2章 变量与运算符</a></h3><h3 id="第3章-流程控制语句"><a href="#第3章-流程控制语句" class="headerlink" title="第3章 流程控制语句"></a><a href="https://georgedi.top/posts/e0010003.html">第3章 流程控制语句</a></h3><h3 id="第4章-数组"><a href="#第4章-数组" class="headerlink" title="第4章 数组"></a><a href="https://georgedi.top/posts/e0010004.html">第4章 数组</a></h3><h2 id="Java-进阶：面向对象篇"><a href="#Java-进阶：面向对象篇" class="headerlink" title="Java 进阶：面向对象篇"></a>Java 进阶：面向对象篇</h2><h3 id="第5章-面向对象编程基础"><a href="#第5章-面向对象编程基础" class="headerlink" title="第5章 面向对象编程基础"></a><a href="https://georgedi.top/posts/e0010005.html">第5章 面向对象编程基础</a></h3><h3 id="第6章-面向对象编程进阶"><a href="#第6章-面向对象编程进阶" class="headerlink" title="第6章 面向对象编程进阶"></a><a href="https://georgedi.top/posts/e0010006.html">第6章 面向对象编程进阶</a></h3><h3 id="第7章-面向对象编程高级"><a href="#第7章-面向对象编程高级" class="headerlink" title="第7章 面向对象编程高级"></a><a href="https://georgedi.top/posts/e0010007.html">第7章 面向对象编程高级</a></h3><h2 id="Java-高级：高级应用篇"><a href="#Java-高级：高级应用篇" class="headerlink" title="Java 高级：高级应用篇"></a>Java 高级：高级应用篇</h2><h3 id="第8章-异常处理"><a href="#第8章-异常处理" class="headerlink" title="第8章 异常处理"></a><a href="https://georgedi.top/posts/e0010008.html">第8章 异常处理</a></h3><h3 id="第9章-多线程"><a href="#第9章-多线程" class="headerlink" title="第9章 多线程"></a><a href="https://georgedi.top/posts/e0010009.html">第9章 多线程</a></h3><h3 id="第10章-常用类"><a href="#第10章-常用类" class="headerlink" title="第10章 常用类"></a><a href="https://georgedi.top/posts/e0010010.html">第10章 常用类</a></h3><h3 id="第11章-基础-API"><a href="#第11章-基础-API" class="headerlink" title="第11章 基础 API"></a><a href="https://georgedi.top/posts/e0010011.html">第11章 基础 API</a></h3><h3 id="第12章-集合框架"><a href="#第12章-集合框架" class="headerlink" title="第12章 集合框架"></a><a href="https://georgedi.top/posts/e0010012.html">第12章 集合框架</a></h3><h3 id="第13章-泛型"><a href="#第13章-泛型" class="headerlink" title="第13章 泛型"></a><a href="https://georgedi.top/posts/e0010013.html">第13章 泛型</a></h3><h3 id="第14章-数据结构与集合源码"><a href="#第14章-数据结构与集合源码" class="headerlink" title="第14章 数据结构与集合源码"></a><a href="https://georgedi.top/posts/e0010014.html">第14章 数据结构与集合源码</a></h3><h3 id="第15章-File-类与-IO-流"><a href="#第15章-File-类与-IO-流" class="headerlink" title="第15章 File 类与 IO 流"></a><a href="https://georgedi.top/posts/e0010015.html">第15章 File 类与 IO 流</a></h3><h3 id="第16章-网络编程"><a href="#第16章-网络编程" class="headerlink" title="第16章 网络编程"></a><a href="https://georgedi.top/posts/e0010016.html">第16章 网络编程</a></h3><h3 id="第17章-反射机制"><a href="#第17章-反射机制" class="headerlink" title="第17章 反射机制"></a><a href="https://georgedi.top/posts/e0010017.html">第17章 反射机制</a></h3><h2 id="Java-番外篇"><a href="#Java-番外篇" class="headerlink" title="Java 番外篇"></a>Java 番外篇</h2><h3 id="Java番外一：JDK-的安装与环境配置"><a href="#Java番外一：JDK-的安装与环境配置" class="headerlink" title="Java番外一：JDK 的安装与环境配置"></a><a href="https://georgedi.top/posts/e0010018.html">Java番外一：JDK 的安装与环境配置</a></h3><h3 id="Java番外二：JDK-8-17-新特性"><a href="#Java番外二：JDK-8-17-新特性" class="headerlink" title="Java番外二：JDK 8-17 新特性"></a><a href="https://georgedi.top/posts/e0010019.html">Java番外二：JDK 8-17 新特性</a></h3>]]></content>
       <categories>
-        <category>后端技术</category>
+        <category>后端语言</category>
       </categories>
       <tags>
         <tag>Java</tag>
@@ -3110,196 +3300,6 @@
 <li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
 <li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
 </ul>
-<hr>
-<p><a href="https://georgedi.top/posts/e0010000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第6章 软件工程项目进度计划的制订</title>
-    <url>/posts/a0080006.html</url>
-    <content><![CDATA[<h2 id="6-1-进度的基本概念"><a href="#6-1-进度的基本概念" class="headerlink" title="6.1 进度的基本概念"></a>6.1 进度的基本概念</h2><p>进度是指工作等进行的速度或进展的程度。对软件工程项目进行进度管理是为了确保项目根据需求能按期完成。</p>
-<h3 id="6-1-1-软件工程项目的工作分解结构"><a href="#6-1-1-软件工程项目的工作分解结构" class="headerlink" title="6.1.1 软件工程项目的工作分解结构"></a>6.1.1 软件工程项目的工作分解结构</h3><p>工作分解结构（ Work Breakdown Structure，WBS ）以可交付成果为导向，把项目工作（或活动）分解为较小的、易于管理和控制的单元。</p>
-<p>WBS 主要是对实现目标以及可交付成果进行的所有工作范围的层级分解。</p>
-<p>软件工程项目管理人员在创建 WBS 时应注意下列四个要点：</p>
-<ol>
-<li>项目的某项工作应且只在 WBS 中的一个地方出现。</li>
-<li>WBS 种某项工作的内容应是其下一层及所有 WBS 项的总和。</li>
-<li>WBS 必须与项目实际工作中的执行方式一样。</li>
-<li>同一层次的 WBS 应为相同性质，每个 WBS 工作单元都要有负责人。</li>
-</ol>
-<p>WBS 的创建步骤如下：</p>
-<ol>
-<li>识别可交付成果及相关工作。</li>
-<li>确定 WBS 的分解方式和编排结构。</li>
-<li>创建 WBS。</li>
-<li>验证 WBS 的合理性及正确性。</li>
-<li>建立 WBS 编码系统。</li>
-</ol>
-<h3 id="6-1-2-软件工程项目的进度网络计划图"><a href="#6-1-2-软件工程项目的进度网络计划图" class="headerlink" title="6.1.2 软件工程项目的进度网络计划图"></a>6.1.2 软件工程项目的进度网络计划图</h3><p>先行工作 A 与后继工作 B 主要包括以下四种依赖关系：</p>
-<ol>
-<li><p>完成对开始</p>
-</li>
-<li><p>开始对开始</p>
-</li>
-<li><p>完成对完成</p>
-</li>
-<li><p>开始对完成</p>
-</li>
-<li><p><strong>双代号网络计划图的绘制规则</strong></p>
-<ol>
-<li>网络计划图应正确表达各项目工作之间已定的逻辑关系。</li>
-<li>不得出现回路。</li>
-<li>不得出现双箭头或者不带箭头的活动。</li>
-<li>不得出现没有箭头节点或没有箭尾节点的箭线。</li>
-<li>当起点节点有多条向外箭线或终点节点有多条内向箭线时，对起点节点和终点节点可使用母线法绘图。</li>
-<li>绘制网络计划图的箭线时不宜有交叉，当交叉不可避免时，可用过桥法、断线法或指向法。</li>
-<li>网络计划图种必须只有一个起点节点（编号为 ① ）；在不分期完成任务的网络计划图中，必须只有一个终点节点；其他所有节点均为中间节点。</li>
-<li>不允许出现相同编号的工作（任务&#x2F;活动）或者节点。</li>
-<li>绘制的箭线应主要以水平线为主，竖线和斜线为辅，不应画成曲线。</li>
-<li>绘制网络计划图时应该条理清晰、布局合理，尽量把关键路线安排在中心醒目的位置。</li>
-</ol>
-</li>
-<li><p><strong>项目工作时长的算法</strong></p>
-<ol>
-<li><p>三点估算法</p>
-<p>用 t<sub>e</sub> 表示工作时长，t<sub>0</sub> 表示最乐观完成时间，t<sub>p</sub> 表示最悲观完成时间，t<sub>m</sub> 表示最可能完成时间，则<br>$$<br>t_e &#x3D; \frac{t_0+4t_m+t_p}{6}<br>$$</p>
-</li>
-<li><p>专家估算法</p>
-<p>公式如下：<br>$$<br>t_e &#x3D; \frac{1}{n}\sum_{i&#x3D;1}^{n}t_i<br>$$</p>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="6-2-软件工程项目进度分析"><a href="#6-2-软件工程项目进度分析" class="headerlink" title="6.2 软件工程项目进度分析"></a>6.2 软件工程项目进度分析</h2><h3 id="6-2-1-关键工作及关键线路"><a href="#6-2-1-关键工作及关键线路" class="headerlink" title="6.2.1 关键工作及关键线路"></a>6.2.1 关键工作及关键线路</h3><p>关键工作及关键线路的确定一般需要符合如下规定：</p>
-<ol>
-<li>总时差最少的项目工作应确定为关键工作。</li>
-<li>在网络计划图中，关键线路一般用粗线、双线或者彩色线标注出来。</li>
-<li>一般情况下，一个网络计划图中至少会有一条关键线路，最多只能有有线条关键线路。</li>
-</ol>
-<h3 id="6-2-2-关键线路求解"><a href="#6-2-2-关键线路求解" class="headerlink" title="6.2.2 关键线路求解"></a>6.2.2 关键线路求解</h3><ol>
-<li><strong>通过时间参数确定关键线路</strong></li>
-<li><strong>通过标号法确定关键线路</strong></li>
-</ol>
-<h2 id="6-3-网络计划优化"><a href="#6-3-网络计划优化" class="headerlink" title="6.3 网络计划优化"></a>6.3 网络计划优化</h2><h3 id="6-3-1-工期优化"><a href="#6-3-1-工期优化" class="headerlink" title="6.3.1 工期优化"></a>6.3.1 工期优化</h3><p>如果软件工程项目的计算工期 T<sub>p</sub> ，大于要求工期 T<sub>r</sub>，则可以通过压缩关键工作的工作时长来优化工期。</p>
-<p>软件工程项目工期优化的计算应按照以下步骤进行：</p>
-<ol>
-<li>计算并找出初始网络计划的计算工期 T<sub>p</sub>、关键工作和关键线路。、</li>
-<li>按要求工期 T<sub>r</sub> 计算应缩短的总工作时长。</li>
-<li>确定软件工程项目中各个关键工作能缩短的工作时长。</li>
-<li>选择缩短工作时长的关键工作。</li>
-<li>当重新计算的工期仍然超过项目要求的工期时，则需重复步骤 1~4，直至满足项目的要求或不能再压缩了为止。</li>
-<li>当项目的所有关键工作的工作时长都已达到其能缩短的极限，而计算工期 T<sub>p</sub>，仍然不能满足项目的工期要求时，应对原软件工程项目计划的技术方案、组织方案进行调整，或者对项目要求工期 T<sub>r</sub>，进行重新审定。</li>
-</ol>
-<h3 id="6-3-2-资源优化"><a href="#6-3-2-资源优化" class="headerlink" title="6.3.2 资源优化"></a>6.3.2 资源优化</h3><p>网络计划主要有“<strong>资源有限，工期最短</strong>”和“<strong>工期固定，资源均衡</strong>”两种资源优化方式。</p>
-<p>软件工程项目的网络计划资源优化主要使用“<strong>工期固定，资源均衡</strong>”的优化方式。</p>
-<p>“工期固定，资源均衡”的优化是在保持项目工期不变的情况下，使资源分布尽量均衡，即在资源需用量的动态曲线上，尽可能不出现短时期的高峰和低谷，促使每个时段的资源需用量接近于平均值。</p>
-<p>可使用“<strong>削高峰法</strong>”来进行“工期固定，资源均衡”的优化。</p>
-<h3 id="6-3-3-工期—费用优化"><a href="#6-3-3-工期—费用优化" class="headerlink" title="6.3.3 工期—费用优化"></a>6.3.3 工期—费用优化</h3><p>工期—费用优化是<strong>通过对不同工期时的软件工程项目总费用的比较分析，从而寻求出项目总费用最低时的最优工期。</strong></p>
-<hr>
-<p><a href="https://georgedi.top/posts/a0080000.html">返回目录</a></p>
-]]></content>
-      <tags>
-        <tag>软件工程</tag>
-        <tag>经济学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第2章 变量与运算符</title>
-    <url>/posts/e0010002.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。</p>
-<p>由 James Gosling 和同事们共同研发，并在 1995 年正式推出。</p>
-<p>后来 Sun 公司被 Oracle （甲骨文）公司收购，Java 也随之成为 Oracle 公司的产品。</p>
-<p>Java分为三个体系：</p>
-<ul>
-<li>JavaSE（J2SE）（Java2 Platform Standard Edition，Java 平台标准版）</li>
-<li>JavaEE（J2EE）（Java 2 Platform，Enterprise Edition，Java 平台企业版）</li>
-<li>JavaME（J2ME）（Java 2 Platform Micro Edition，Java 平台微型版）</li>
-</ul>
-<p>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。</p>
-<p>此时，Java 的各种版本已经更名，取消数字 “2”：</p>
-<ul>
-<li>J2EE 更名为 JavaEE</li>
-<li>J2SE 更名为 JavaSE</li>
-<li>J2ME 更名为 JavaME</li>
-</ul>
-<h2 id="主要特性"><a href="#主要特性" class="headerlink" title="主要特性"></a>主要特性</h2><ul>
-<li><p>Java 语言是<strong>简单的</strong>：</p>
-<p>Java 语言的语法与 C 语言和 C++ 语言很接近，使得大多数程序员很容易学习和使用。</p>
-<p>另一方面，Java 丢弃了 C++ 中很少使用的、很难理解的、令人迷惑的那些特性，如操作符重载、多继承、自动的强制类型转换。</p>
-<p>特别地，Java 语言不使用指针，而是引用。并提供了自动分配和回收内存空间，使得程序员不必为内存管理而担忧。</p>
-</li>
-<li><p>Java 语言是<strong>面向对象的</strong>：</p>
-<p>Java 语言提供类、接口和继承等面向对象的特性，为了简单起见，只支持类之间的单继承，但支持接口之间的多继承，并支持类与接口之间的实现机制（关键字为 implements）。</p>
-<p>Java 语言全面支持动态绑定，而 C++ 语言只对虚函数使用动态绑定。</p>
-<p>总之，Java 语言是一个纯的面向对象程序设计语言。</p>
-</li>
-<li><p>Java语言是<strong>分布式的</strong>：</p>
-<p>Java 语言支持 Internet 应用的开发，在基本的 Java 应用编程接口中有一个网络应用编程接口（java net），它提供了用于网络应用编程的类库，包括 URL、URLConnection、Socket、ServerSocket 等。</p>
-<p>Java 的 RMI（远程方法激活）机制也是开发分布式应用的重要手段。</p>
-</li>
-<li><p>Java 语言是<strong>健壮的</strong>：</p>
-<p>Java 的强类型机制、异常处理、垃圾的自动收集等是 Java 程序健壮性的重要保证。对指针的丢弃是 Java 的明智选择。</p>
-<p>Java 的安全检查机制使得 Java 更具健壮性。</p>
-</li>
-<li><p>Java 语言是<strong>安全的</strong>：</p>
-<p>Java 通常被用在网络环境中，为此，Java 提供了一个安全机制以防恶意代码的攻击。除了 Java 语言具有的许多安全特性以外，Java 对通过网络下载的类具有一个安全防范机制（类 ClassLoader），如分配不同的名字空间以防替代本地的同名类、字节代码检查，并提供安全管理机制（类 SecurityManager）让 Java 应用设置安全哨兵。</p>
-</li>
-<li><p>Java 语言是<strong>体系结构中立的</strong>：</p>
-<p>Java 程序（后缀为 .java 的文件）在 Java 平台上被编译为体系结构中立的字节码格式（后缀为 .class 的文件），然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>这种途径适合于异构的网络环境和软件的分发。</p>
-</li>
-<li><p>Java 语言是<strong>可移植的</strong>：</p>
-<p>这种可移植性来源于体系结构中立性，另外，Java 还严格规定了各个基本数据类型的长度。</p>
-<p>Java 系统本身也具有很强的可移植性，Java 编译器是用 Java 实现的，Java 的运行环境是用 ANSI C 实现的。</p>
-</li>
-<li><p>Java 语言是<strong>解释型的</strong>：</p>
-<p>如前所述，Java 程序在 Java 平台上被编译为字节码格式，然后可以在实现这个 Java 平台的任何系统中运行。</p>
-<p>在运行时，Java 平台中的 Java 解释器对这些字节码进行解释执行，执行过程中需要的类在联接阶段被载入到运行环境中。</p>
-</li>
-<li><p>Java 是<strong>高性能的</strong>：</p>
-<p>与那些解释型的高级脚本语言相比，Java 的确是高性能的。事实上，Java 的运行速度随着 JIT（Just-In-Time）编译器技术的发展越来越接近于 C++。</p>
-</li>
-<li><p>Java 语言是<strong>多线程的</strong>：</p>
-<p>在 Java 语言中，线程是一种特殊的对象，它必须由 Thread 类或其子（孙）类来创建。通常有两种方法来创建线程：其一，使用型构为 Thread（Runnable）的构造子类将一个实现了 Runnable 接口的对象包装成一个线程，其二，从 Thread 类派生出子类并重写 run 方法，使用该子类创建的对象即为线程。值得注意的是 Thread 类已经实现了 Runnable 接口，因此，任何一个线程均有它的 run 方法，而 run 方法中包含了线程所要运行的代码。线程的活动由一组方法来控制。Java 语言支持多个线程的同时执行，并提供多线程之间的同步机制（关键字为 synchronized）。</p>
-</li>
-<li><p>Java 语言是<strong>动态的</strong>：</p>
-<p>Java 语言的设计目标之一是适应于动态变化的环境。Java 程序需要的类能够动态地被载入到运行环境，也可以通过网络来载入所需要的类。这也有利于软件的升级。另外，Java 中的类有一个运行时刻的表示，能进行运行时刻的类型检查。</p>
-</li>
-</ul>
-<h2 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h2><ul>
-<li>1995 年 5 月 23 日，Java 语言诞生</li>
-<li>1996 年 1 月，第一个 JDK-JDK1.0 诞生</li>
-<li>1996 年 4 月，10 个最主要的操作系统供应商申明将在其产品中嵌入 JAVA 技术</li>
-<li>1996 年 9 月，约 8.3 万个网页应用了 JAVA 技术来制作</li>
-<li>1997 年 2 月 18 日，JDK1.1 发布</li>
-<li>1997 年 4 月 2 日，JavaOne 会议召开，参与者逾一万人，创当时全球同类会议规模之纪录</li>
-<li>1997 年 9 月，JavaDeveloperConnection 社区成员超过十万</li>
-<li>1998 年 2 月，JDK1.1 被下载超过 2,000,000 次</li>
-<li>1998 年 12 月 8 日，JAVA2 企业平台 J2EE 发布</li>
-<li>1999 年 6 月，SUN 公司发布 Java 的三个版本：JavaSE、JavaEE 和 JavaME</li>
-<li>2000 年 5 月 8 日，JDK1.3 发布</li>
-<li>2000 年 5 月 29 日，JDK1.4 发布</li>
-<li>2001 年 6 月 5 日，NOKIA 宣布，到 2003 年将出售 1 亿部支持 Java 的手机</li>
-<li>2001 年 9 月 24 日，J2EE1.3 发布</li>
-<li>2002 年 2 月 26 日，J2SE1.4 发布，自此 Java 的计算能力有了大幅提升</li>
-<li>2004 年 9 月 30 日，J2SE1.5 发布，成为 Java 语言发展史上的又一里程碑。为了表示该版本的重要性，J2SE1.5 更名为 JavaSE 5.0</li>
-<li>2005 年 6 月，JavaOne 大会召开，SUN 公司公开 JavaSE 6。此时，Java 的各种版本已经更名，取消数字 “2”</li>
-<li>2006 年 12 月，SUN 公司发布 JRE6.0</li>
-<li><strong>2009 年 4 月 20 日，甲骨文 74 亿美元收购 Sun，取得 Java 的版权</strong></li>
-<li>2010 年 11 月，由于甲骨文对于 Java 社区的不友善，因此 Apache 扬言将退出 JCP</li>
-<li>2011 年 7 月 28 日，甲骨文发布 Java7.0 的正式版</li>
-<li>2014 年 3 月 18 日，Oracle 公司发表 JavaSE 8</li>
-<li>2017 年 9 月 21 日，Oracle 公司发表 JavaSE 9</li>
-<li>2018 年 3 月 21 日，Oracle 公司发表 JavaSE 10</li>
-<li>2018 年 9 月 25 日，JavaSE 11 发布</li>
-<li>2019 年 3 月 20 日，JavaSE 12 发布</li>
-</ul>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><p>以下是 Java 代码实现控制台输出“Hello World”。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <hr>
 <p><a href="https://georgedi.top/posts/e0010000.html">返回目录</a></p>
 ]]></content>
