@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Tomcat 学习笔记</title>
+      <link href="/posts/34000/"/>
+      <url>/posts/34000/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tomcat </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JDK 安装教程</title>
+      <link href="/posts/31001/"/>
+      <url>/posts/31001/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载与安装-JDK"><a href="#下载与安装-JDK" class="headerlink" title="下载与安装 JDK"></a>下载与安装 JDK</h2><h3 id="下载-JDK"><a href="#下载-JDK" class="headerlink" title="下载 JDK"></a>下载 JDK</h3><p>JDK 官方下载地址：<a href="http://www.oracle.com/technetwork/java/javase/downloads">http://www.oracle.com/technetwork/java/javase/downloads</a></p><p>版本推荐：JDK 17</p><p>推荐理由：</p><ul><li>JDK 17 是 LTS（长期支持版）。而且是将前面几个过渡版（JDK 9-JDK 16）去其糟粕，取其精华的版本；</li><li>JDK 17 性能提升不少，比如重写了底层 NIO，至少提升 10% 的性能；</li><li>大多数第三方框架和库都已经支持，并且可能出现的问题基本上都可以找到解决方法；</li><li>Spring Boot 3.0 需要 JDK 的最低版本就是 JDK 17，如果你想用 Spring Boot 开发应用，你需要将正在使用的 Java 8 或 Java 11 升级到 Java 17。</li></ul><h3 id="安装-JDK"><a href="#安装-JDK" class="headerlink" title="安装 JDK"></a>安装 JDK</h3><ol><li><p>运行 jdk-17_windows-x64_bin.exe 进入 JDK 安装程序，点击“下一步”。</p><p><img src="https://pic.imgdb.cn/item/64ba9fad1ddac507ccdb7605.png" alt="1-1 运行安装程序"></p></li><li><p>选择目标文件夹，这一步可跳过，但建议安装到 D 盘（例如 <code>D:\Java\jdk-17.0.8\</code>）。</p><ul><li>点击“更改”。</li></ul><p><img src="https://pic.imgdb.cn/item/64ba9fae1ddac507ccdb7cbd.png" alt="1-2 选择目标文件夹"></p><ul><li>更改文件夹路径为 <code>D:\Java\jdk-17.0.8\</code>，点击“确定”。</li></ul><p><img src="https://pic.imgdb.cn/item/64ba9faf1ddac507ccdb8005.png" alt="1-3 安装到 D 盘"></p><ul><li>设置好目标文件夹后，点击“下一步”。</li></ul><p><img src="https://pic.imgdb.cn/item/64ba9fb01ddac507ccdb83cd.png" alt="1-4 设置好目标文件夹"></p></li><li><p>耐心等待安装程序完成。</p><p><img src="https://pic.imgdb.cn/item/64ba9fb11ddac507ccdb8796.png" alt="1-5 等待安装程序完成"></p></li><li><p>点击“关闭”，完成 JDK 17 的安装。</p><p><img src="https://pic.imgdb.cn/item/64ba9fb21ddac507ccdb8c9a.png" alt="1-6 JDK 安装完成"></p></li></ol><p>@tab 配置环境变量</p><ol><li><p>右键“此电脑”，点击“属性”进入系统信息。</p><p><img src="https://pic.imgdb.cn/item/64baaaf81ddac507cc07d05e.png" alt="1-7 右键此电脑，点击属性"></p></li><li><p>在系统信息中点击“高级系统设置”。</p><p><img src="https://pic.imgdb.cn/item/64baaaf81ddac507cc07d074.png" alt="1-8 点击高级系统设置"></p></li><li><p>在系统属性的高级选项卡中，点击“环境变量…”。</p><p><img src="https://pic.imgdb.cn/item/64baaaf81ddac507cc07d0f7.png" alt="1-9 点击环境变量"></p></li><li><p>在系统变量中新建一个变量名为 <code>JAVA_HOME</code>，变量值为 <code>D:\Java\jdk-17.0.8</code> 的系统变量。</p><p><img src="https://pic.imgdb.cn/item/64baaaf91ddac507cc07d2ca.png" alt="1-10 新建系统变量 JAVA_HOME"></p></li><li><p>双击系统变量 Path，新建一个名为 <code>%JAVA_HOME%\bin</code> 的环境变量，并将其上移到顶部，但不要放到最顶部。</p><p><img src="https://pic.imgdb.cn/item/64baaaf91ddac507cc07d376.png" alt="1-11 编辑 Path"></p></li></ol><p>至此，JDK 的下载、安装及环境变量配置完成，可以通过在命令行终端中输入以下命令进行检验：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Java -version</span><br></pre></td></tr></table></figure><p>出现以下结果说明 JDK 17.0.8 安装成功！</p><p><img src="https://pic.imgdb.cn/item/64baad3e1ddac507cc11d6b6.png" alt="1-12 检验 JDK"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java 学习笔记</title>
+      <link href="/posts/31000/"/>
+      <url>/posts/31000/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ol><li><a href="/posts/31001/">JDK 安装教程</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GeoBlog 阅读指南</title>
+      <link href="/posts/10000/"/>
+      <url>/posts/10000/</url>
+      
+        <content type="html"><![CDATA[<h2 id="分类指南"><a href="#分类指南" class="headerlink" title="分类指南"></a>分类指南</h2><p>欢迎来到我的个人博客！这里是一个汇集了各种技术文章的地方。我为了方便大家查找和阅读，将文章按照以下分类进行了归类：</p><ol><li>阅读指南：这些文章将指导你如何使用本博客以及如何获取最佳阅读体验。</li><li>前端技术：这里涵盖了与前端开发相关的各种技术和趋势，包括HTML、CSS、JavaScript等。</li><li>后端技术：这个分类包含了与后端开发相关的技术和工具，比如Java、JSP、MySQL等。</li><li>开发技能：在这里，你将找到提高开发技能和编程能力的文章，包括代码优化、项目管理等方面的内容。</li><li>个人项目：此分类下包括了我个人开发的项目介绍和经验分享。</li></ol><p>每个大类下又会有多个子类&#x2F;标签，以进一步细分文章的内容。通过以下编码，你可以更方便地查找和阅读感兴趣的文章：</p><ul><li>阅读指南: 1xxxx</li><li>前端技术: 2xxxx</li><li>后端技术: 3xxxx</li><li>开发技能: 4xxxx</li><li>个人项目: 5xxxx</li></ul><h2 id="文章编码"><a href="#文章编码" class="headerlink" title="文章编码"></a>文章编码</h2><h3 id="阅读指南"><a href="#阅读指南" class="headerlink" title="阅读指南"></a>阅读指南</h3><p>本文：10000</p><h3 id="前端技术"><a href="#前端技术" class="headerlink" title="前端技术"></a>前端技术</h3><table><thead><tr><th>分类</th><th>编码</th></tr></thead><tbody><tr><td>HTML</td><td>21xxx</td></tr><tr><td>CSS</td><td>22xxx</td></tr><tr><td>JS</td><td>23xxx</td></tr></tbody></table><h3 id="后端技术"><a href="#后端技术" class="headerlink" title="后端技术"></a>后端技术</h3><table><thead><tr><th>分类</th><th>编码</th></tr></thead><tbody><tr><td>Java</td><td>31xxx</td></tr><tr><td>MySQL</td><td>32xxx</td></tr><tr><td>JSP</td><td>33xxx</td></tr><tr><td>Tomcat</td><td>34xxx</td></tr></tbody></table><h3 id="开发技能"><a href="#开发技能" class="headerlink" title="开发技能"></a>开发技能</h3><table><thead><tr><th>分类</th><th>编码</th></tr></thead><tbody><tr><td>Maven</td><td>41xxx</td></tr><tr><td>Git</td><td>42xxx</td></tr></tbody></table><h3 id="个人项目"><a href="#个人项目" class="headerlink" title="个人项目"></a>个人项目</h3><p>待补充</p><p>我希望这个博客能为你带来有价值的知识和帮助，如果有任何问题或建议，请随时与我交流。祝愉快阅读！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 阅读指南 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读指南 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
