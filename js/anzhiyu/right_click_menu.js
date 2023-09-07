@@ -67,7 +67,7 @@ var oncontextmenuFunction = function (event) {
     const $rightMenuCopyLink = document.querySelector("#menu-copylink");
     const $rightMenuCopyImg = document.querySelector("#menu-copyimg");
     const $rightMenuDownloadImg = document.querySelector("#menu-downloadimg");
-    const $rightMenuSearch = document.querySelector("#menu-search");
+    // const $rightMenuSearch = document.querySelector("#menu-search");
     const $rightMenuSearchBaidu = document.querySelector("#menu-searchBaidu");
     const $rightMenuMusicToggle = document.querySelector("#menu-music-toggle");
     const $rightMenuMusicBack = document.querySelector("#menu-music-back");
@@ -88,13 +88,13 @@ var oncontextmenuFunction = function (event) {
       pluginMode = true;
       $rightMenuCopyText.style.display = "block";
       $rightMenuCommentText.style.display = "block";
-      $rightMenuSearch.style.display = "block";
+      // $rightMenuSearch.style.display = "block";
       $rightMenuSearchBaidu.style.display = "block";
     } else {
       $rightMenuCopyText.style.display = "none";
       $rightMenuCommentText.style.display = "none";
       $rightMenuSearchBaidu.style.display = "none";
-      $rightMenuSearch.style.display = "none";
+      // $rightMenuSearch.style.display = "none";
     }
 
     //检查是否右键点击了链接a标签

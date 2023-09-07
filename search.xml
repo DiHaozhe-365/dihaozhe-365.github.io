@@ -37,11 +37,24 @@
       </categories>
       
       
-        <tags>
-            
-            <tag> Tomcat </tag>
-            
-        </tags>
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML 学习笔记</title>
+      <link href="/posts/21000/"/>
+      <url>/posts/21000/</url>
+      
+        <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端技术 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -81,12 +94,6 @@
       </categories>
       
       
-        <tags>
-            
-            <tag> Java </tag>
-            
-        </tags>
-      
     </entry>
     
     
@@ -105,12 +112,6 @@
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 阅读指南 </tag>
-            
-        </tags>
       
     </entry>
     
