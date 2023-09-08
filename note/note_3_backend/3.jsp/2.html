@@ -1,0 +1,691 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>第二章 JSP 语法 | 邸浩哲Geo</title><meta name="keywords" content="邸浩哲, 博客, 分享, 生活, 科技"><meta name="author" content="邸浩哲Geo"><meta name="copyright" content="邸浩哲Geo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#18171d"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="第二章 JSP 语法"><meta name="application-name" content="第二章 JSP 语法"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#18171d"><meta property="og:type" content="website"><meta property="og:title" content="第二章 JSP 语法"><meta property="og:url" content="http://dihaozhe.com/note/note_3_backend/3.jsp/2.html"><meta property="og:site_name" content="邸浩哲Geo"><meta property="og:description" content="2.1 JSP 页面的基本结构在传统的 HTML 页面文件中加入 Java 程序片和 JSP 标记就构成了一个 JSP 页面。一个 JSP 页面可由 5 种元素组合而成：  普通的 HTML 标记和 JavaScript 标记； JSP 标记，如指令标记、动作标记； 变量和方法的声明； Java 程"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"><meta property="article:author" content="邸浩哲Geo"><meta property="article:tag" content="邸浩哲, 博客, 分享, 生活, 科技"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"><meta name="description" content="2.1 JSP 页面的基本结构在传统的 HTML 页面文件中加入 Java 程序片和 JSP 标记就构成了一个 JSP 页面。一个 JSP 页面可由 5 种元素组合而成：  普通的 HTML 标记和 JavaScript 标记； JSP 标记，如指令标记、动作标记； 变量和方法的声明； Java 程"><link rel="shortcut icon" href="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp"><link rel="canonical" href="http://dihaozhe.com/note/note_3_backend/3.jsp/2"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"邸浩哲Geo","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: undefined,
+  LA51: {"enable":true,"ck":"3FpeCk9AnAHhM8vm","LingQueMonitorID":"3FpeORNir8WHNOiM"},
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://dihaozhe.zeabur.app',
+  commentBarrageConfig:{"enable":true,"maxBarrage":1,"barrageTime":4000,"accessToken":"","mailMd5":""},
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":"https://friends.anheyu.com/"},
+  navMusic: true,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["🤖️ 数码科技爱好者","🔍 分享与热心帮助","🏠 智能家居小能手","🔨 设计开发一条龙","🤝 专修交互与设计","🧱 团队小组发动机"]},
+  algolia: {"appId":"55GLTQ5T7S","apiKey":"6289356dfa814c630ee23c43df7fd008","indexName":"hexo","hits":{"per_page":6},"languages":{"input_placeholder":"输入关键词后按下回车查找","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 邸浩哲Geo","link":"链接: ","source":"来源: 邸浩哲Geo","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#3b70fc","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '邸浩哲Geo',
+  title: '第二章 JSP 语法',
+  postAI: '',
+  pageFillDescription: '2.1 JSP 页面的基本结构, 2.2 声明变量和定义方法, 2.3 Java 程序片, 2.4 Java 表达式, 2.5 JSP 中的注释, 2.6 JSP 指令标记, page 指令标记, include 指令标记, 2.7 JSP 动作标记, include 动作标记, param 动作标记, forward 动作标记, useBean 动作标记页面的基本结构在传统的页面文件中加入程序片和标记就构成了一个页面一个页面可由种元素组合而成普通的标记和标记标记如指令标记动作标记变量和方法的声明程序片表达式当服务器上的一个页面被第一次请求执行时服务器首先将页面文件转译成一个文件再将这个文件编译生成字节码文件然后通过执行字节码文件响应用户的请求当多个用户请求一个页面时服务器为每个用户启动一个线程该线程负责执行常驻内存的字节码文件来响应相应用户的请求这些线程由服务器来管理将的使用权在各个线程之间快速切换以保证每个线程都有机会执行字节码文件这个字节码文件的任务就是把页面中普通的标记和标记交给用户端浏览器执行显示标记方法的定义程序片由服务器负责处理和执行将需要显示的结果发送给用户端浏览器表达式由服务器负责计算并将结果转化为字符串然后交给用户端浏览器负责显示声明变量和定义方法在和标记符号之间声明变量和定义方法和标记符号的内容习惯上放在页面指令之后之前也可以写在与之间声明变量和之间声明的变量在整个页面内都有效与和标记符在页面种所在的书写位置无关但习惯上把和标记符写在页面的前面服务器将页面转译成文件时将和标记符之间声明的变量作为类的成员变量这些变量占有的内存空间直到服务器关闭才释放当多个用户请求一个页面时服务器为每个用户启动一个线程这些线程由服务器来管理这些线程共享页面的成员变量因此任何一个用户对页面成员变量操作的结果都会影响到其他用户下面代码利用成员变量被所有用户共享这一性质实现了一个简单的计数器您是第个访问本页面的用户定义方法和类可以在和标记符号之间定义方法可以在程序片中调用该方法方法内声明的变量只在该方法内有效当方法被调用时方法内声明的变量被分配内存方法被调用完毕即可释放这些变量所占的内存可以在和标记符号之间定义类可以在程序片中使用该类创建对象程序片可以在和标记符号之间插入程序片一个页面可以有许多程序片这些程序片将被按顺序执行在程序片中声明的变量称作页面的局部变量局部变量的有效范围与其声明的位置有关即局部变量在页面后继的所有程序片以及表达式部分内都有效服务器将页面转译成文件时将各个程序片的这些变量作为类中某个方法的变量即局部变量程序片可以写在之前也可以写在和之间或之后当多个用户请求一个页面时服务器为每个用户启动一个线程该线程负责执行字节码文件响应用户的请求服务器使用多线程来处理程序片特点如下操作页面的成员变量程序片中操作的成员变量是各个线程用户共享的变量任何一个线程对页面成员变量操作的结果都会影响到其他线程调用页面的方法程序片中可以出现方法调用语句所调用的方法必须是页面曾定义的方法操作局部变量当一个线程享用资源时服务器让该线程执行程序片这时程序片中的局部变量被分配内存空间当轮到另一个线程享用资源时服务器让该线程再次执行程序片那么程序片中的局部变量会再次分配内存空间也就是说程序片已经被执行了两次分别运行在不同的线程中即运行在不同的时间片内运行在不同线程中的程序片的局部变量互不干扰即一个用户改变程序片中的局部变量的值不会影响其他用户的程序片中的局部变量当一个线程将程序片执行完毕运行在该线程中的程序片的局部变量释放所占的内存程序片执行特点如下图所示根据程序片的上述特点对于某些特殊情形必须给予特别注意比如如果一个用户在执行程序片时调用页面的方法操作成员变量可能不希望其他用户也调用该方法操作成员变量以免对其产生不利的影响成员变量被所有的用户共享那么就应该将操作成员变量的方法用关键字修饰当一个线程在执行程序片期间调用方法时其他线程在其程序片中调用这个方法时就必须等待直到正在调用方法的线程调用执行完该方法在下面的代码中通过方法操作一个成员变量来实现一个简单的计数器宋体被用户共享的修饰的方法您是第个访问本站的用户一个页面中的程序片会按其在页面中的顺序被执行而且某个程序片中声明的局部变量在其后继的所有程序片以及表达式部分内都有效利用程序片的这个性质有时候可以将一个程序片分割成几个程序片然后在这些程序片之间再插入其他标记元素在程序片中插入中的标记的技巧对于灵活显示数据是非常重要的通常的格式是中的标记程序片中的标记程序片中的标记表达式可以在和标记符号之间插入一个可求值的表达式注意不可插入语句是一个完整的符号和之间不要有空格表达式的值由服务器负责计算并将计算结果用字符串形式发送到用户端显示表达式可以写在之前也可以写在和之间或之后需要注意的是在页面中表达式的值被表示成一个字符串的形式即服务器将表达式的结果转换成字符串然后发送给用户的浏览器因此在编写页面时要把表达式按普通的文本来使用中的注释注释可以增强页面的可读性使页面易于维护页面中的注释可分以下几种注释在标记符号和之间加入注释内容注释内容引擎把注释交给用户因此用户通过浏览器查看页面源文件时能够看到注释注释在标记符号和之间加入注释内容注释内容服务器忽略注释即在编译页面时忽略注释注释在程序片表达式等代码中在后加入注释内容注释内容指令标记指令标记指令用来定义整个页面的一些属性和这些属性的值属性值用单引号或双引号括起来可以使用多个指令分别为每个属性指定值如属性属性的值属性属性的值属性属性的值也可以用一个指令指定多个属性的值如属性属性的值属性属性的值属性属性的值指令的作用对整个页面有效与其书写的位置无关习惯上把指令写在页面的最前面指令标记可以为等属性指定值属性当用户请求一个页面时服务器负责解释执行页面并将某些信息发送到用户的浏览器以便用户浏览这些信息服务器同时负责通知用户的浏览器使用怎样的方法来处理所接收到的信息这就要求页面必须设置响应的类型即设置属性的值属性值确定页面响应的类型属性值的一般形式是类型比如如果我们希望用户的浏览器启用解析器来解析执行所接收到的信息即所谓的网页形式就可以如下设置属性的值如果希望用户的浏览器启用本地的应用程序来解析执行收到的信息就可以如下设置属性的值如果不使用指令为指定一个值那么属性的默认值是页面使用指令只能为指定一个值不允许两次使用指令给属性指定不同的属性值下列用法是错误的用指令为指定一个值的同时也可以为的附加属性指定一个值默认值是例如的附加属性的值是通知用户浏览器用怎样的编码解析收到的字符当页面用指令指定设置的值是时浏览器会将编码切换成但是如果页面用指定了的页面本身的编码例如那么的值和的页面编码保持一致即目前的浏览器都支持编码所以一般不需要再指定的值使其和的页面编码保持一致即可可以使用指令为属性指定的值有如果用户的浏览器不支持某种类型那么用户的浏览器就无法用相应的手段处理所接收到的信息比如使用指令设置属性的值是如果用户浏览器所驻留的计算机没有安装应用程序那么浏览器就无法处理所接收到的信息属性属性的默认值是需要注意的是和的附加属性的值的意义不同属性值是定义页面使用的编码即是告诉服务器的解析器用怎样的编码解析页面中的字符比如当页面指定的编码是时保存页面应当将编码选择为原因是服务器根据页面产生成文件时服务器的解析器是按照编码来解析页面中的字符数据页面本质上是一个文档产生对应文件如果保存页面时不小心将编码选择为其他编码不是那么服务器的解析器产生的对应文件中的某些字符串就可能有乱码现象而这些字符串又发送到了客户端浏览器所以用户浏览器显示信息就出现了乱码现象比如需要客户浏览器显示的非字符就可能呈现乱码状态另外页面使用指令只能为指定一个值不允许两次使用指令给属性指定不同的或相同的属性值属性属性定义页面使用的脚本语言该属性的值目前只能取为属性指定值的格式是属性的默认值是即如果在页面中没有使用指令指定该属性的值的那么页面默认有如下的指令属性该属性的作用是为页面引入运行环境提供的包中的类这样就可以在页面的程序片部分变量及方法定义部分以及表达式部分使用包中的类可以为该属性指定多个值该属性的值可以是某包中的所有类或一个具体的类例如这样引擎把页面转译成的文件中会有如下的语句属性属性用于设置是否需要使用内置的对象的属性值可以是或属性默认的属性值是属性内置输出流对象负责将服务器的某些信息或运行结果发送到用户端显示属性用来指定设置的缓冲区的大小或不使用缓冲区属性的默认值是属性可以取值即设置不使用缓冲区属性属性指定的缓冲区被填满时缓冲区是否自动刷新的属性值可以是或属性默认的属性值是当属性取值时如果的缓冲区填满就会出现缓存溢出异常当的值是时的值就不能设置成属性属性用来设置访问页面是否是线程安全的的属性值可取或当属性值设置为时页面能同时响应多个用户的请求当属性值设置成时页面同一时刻只能响应一个用户的请求其他用户须排队等待属性的默认值是当属性值为时的使用权在各个线程间快速切换也就是说即使一个用户的线程没有执行完毕的使用权也可能要切换给其他的线程如此轮流直到各个线程执行完毕当使用指令将属性值设置成时该页面同一时刻只能响应一个用户的请求其他用户须排队等待也就是说要保证一个线程将页面执行完毕才会把使用权切换给其他线程属性属性的属性值是一个字符串其目的是为页面准备一个常用但可能要经常修改的字符串例如可以在页面中使用方法获取属性的属性值当页面被转译成文件时转译成的类是的一个子类所以在页面中可以使用类的方法指令标记如果需要在页面内某处整体嵌入一个文件就可以考虑使用指令标记其语法格式如下文件的指令标记的作用是在页面出现该指令的位置处静态嵌入一个文件该文件的编码必须和当前页面一致比如二者都是编码被嵌入的文件必须是可以访问或可以使用的使用指令可以实现代码的复用比如每个页面上都可能都需要一个导航条以便用户在各个页面之间方便地切换那么每个页面都可以使用指令在页面的适当位置整体嵌入一个相同的文件需要特别注意的是允许被嵌入的文件使用指令指定属性的值但指定的值必须和嵌入该文件的页面中的指令指定的属性的值相同动作标记动作标记是一种特殊的标记它影响运行时的功能动作标记动作标记语法格式是文件的或文件的子标记需要注意的是当动作标记不需要子标记时必须使用第一种形式动作标记告诉页面动态包含一个文件即页面运行时才将文件加入与静态嵌入文件的指令标记不同当服务器根据页面生成文件时不把页面中动作指令所包含的文件与原页面合并为一个新的页面而是告诉解释器这个文件在运行时才包含进来如果包含的文件是普通的文本文件就将文件的内容发送到用户端由用户端的浏览器负责显示如果包含的文件是文件服务器就执行这个文件然后将执行的结果发送到用户端并由用户端的浏览器负责显示这些结果动作标记标记以名字值对的形式为其他标记提供附加信息标记不能独立使用须作为标记的子标记来使用动作标记语法格式是参数名参数值当该标记与动作标记一起使用时可以将标记中参数的值传递到动作标记要加载的文件中去被加载的文件可以使用服务器提供的内置对象获取动作标记的子标记中给出的参数的值因此动作标记通过使用子标记来处理加载的文件比指令标记更为灵活动作标记动作标记语法格式是要转向的页面或要转向的页面子标记该指令的作用是从该指令处停止当前页面的执行而转向执行属性指定的页面需要注意的是当动作标记不需要子标记时必须使用第一种形式动作标记标记用来创建并使用一个是非常重要的一个动作标记公司倡导使用存储数据页面显示中的数据而负责管理中的数据上一章下一章返回',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-09-08 20:53:22',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dihaozhe.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">邸浩哲Geo</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文库</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 文章总览</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 全部分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 学习</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 笔记仓库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-shoe-prints faa-tada" style="font-size: 0.9em;"></i><span> 到此一游</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-bullhorn faa-tada" style="font-size: 0.9em;"></i><span> 即刻短文</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-keyboard faa-tada" style="font-size: 0.9em;"></i><span> 装备推荐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://pic.imgdb.cn/item/64f98092661c6c8e544e84e6.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98092661c6c8e544e84e6.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.imgdb.cn/item/64f980fb661c6c8e544ee38d.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f980fb661c6c8e544ee38d.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/JDK/" style="font-size: 1.05rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 1.05rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 1.05rem;">安装教程<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout hide-aside" id="content-inner"><div id="page"><h1 class="page-title">第二章 JSP 语法</h1><div id="article-container"><h2 id="2-1-JSP-页面的基本结构"><a href="#2-1-JSP-页面的基本结构" class="headerlink" title="2.1 JSP 页面的基本结构"></a>2.1 JSP 页面的基本结构</h2><p>在传统的 HTML 页面文件中加入 Java 程序片和 JSP 标记就构成了一个 JSP 页面。一个 JSP 页面可由 5 种元素组合而成：</p>
+<ol>
+<li>普通的 HTML 标记和 JavaScript 标记；</li>
+<li>JSP 标记，如指令标记、动作标记；</li>
+<li>变量和方法的声明；</li>
+<li>Java 程序片；</li>
+<li>Java 表达式。</li>
+</ol>
+<p>当 Tomcat 服务器上的一个 JSP 页面被第一次请求执行时，Tomcat 服务器首先将 JSP 页面文件转译成一个 Java 文件，再将这个 Java 文件编译生成字节码文件，然后通过执行字节码文件响应用户的请求。当多个用户请求一个 JSP 页面时，Tomcat 服务器为每个用户启动一个线程，该线程负责执行常驻内存的字节码文件来响应相应用户的请求。这些线程由 Tomcat 服务器来管理，将 CPU 的使用权在各个线程之间快速切换，以保证每个线程都有机会执行字节码文件。这个字节码文件的任务就是：</p>
+<ul>
+<li>把 JSP 页面中普通的 HTML 标记和 JavaScript 标记交给用户端浏览器执行显示。</li>
+<li>JSP 标记、方法的定义、Java 程序片由服务器负责处理和执行，将需要显示的结果发送给用户端浏览器。</li>
+<li>Java 表达式由服务器负责计算，并将结果转化为字符串，然后交给用户端浏览器负责显示。</li>
+</ul>
+<h2 id="2-2-声明变量和定义方法"><a href="#2-2-声明变量和定义方法" class="headerlink" title="2.2 声明变量和定义方法"></a>2.2 声明变量和定义方法</h2><p>在 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符号之间声明变量和定义方法。<code>&lt;%!</code> 和 <code>%&gt;</code> 标记符号的内容习惯上放在 JSP 页面指令之后，<code>&lt;html&gt;</code> 之前，也可以写在 <code>&lt;html&gt;</code> 与 <code>&lt;/html&gt;</code> 之间。</p>
+<p><strong>声明变量</strong></p>
+<p><code>&lt;%!</code> 和 <code>%&gt;</code> 之间声明的变量在整个 JSP 页面内都有效，与 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符在 JSP 页面种所在的书写位置无关，但习惯上把 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符写在 JSP 页面的前面。Tomcat 服务器将 JSP 页面转译成 Java 文件时，将 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符之间声明的变量作为类的成员变量，这些变量占有的内存空间直到 Tomcat 服务器关闭才释放。当多个用户请求一个 JSP 页面时，Tomcat 服务器为每个用户启动一个线程，这些线程由 Tomcat 服务器来管理，这些线程共享 JSP 页面的成员变量，因此任何一个用户对 JSP 页面成员变量操作的结果，都会影响到其他用户。</p>
+<p>下面代码，利用成员变量被所有用户共享这一性质，实现了一个简单的计数器。</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html&quot;</span> %&gt;</span><br><span class="line">&lt;%@ page pageEncoding=<span class="string">&quot;utf-8&quot;</span> %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;%!</span><br><span class="line">            <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        %&gt;</span><br><span class="line">        &lt;%</span><br><span class="line">            i++;</span><br><span class="line">        %&gt;</span><br><span class="line">        &lt;p&gt;</span><br><span class="line">            您是第&lt;%=i%&gt;个访问本页面的用户。</span><br><span class="line">        &lt;/p&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>定义方法和类</strong></p>
+<p>可以在 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符号之间定义方法，可以在 Java 程序片中调用该方法。方法内声明的变量只在该方法内有效，当方法被调用时，方法内声明的变量被分配内存，方法被调用完毕即可释放这些变量所占的内存。</p>
+<p>可以在 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符号之间定义类，可以在 Java 程序片中使用该类创建对象。</p>
+<h2 id="2-3-Java-程序片"><a href="#2-3-Java-程序片" class="headerlink" title="2.3 Java 程序片"></a>2.3 Java 程序片</h2><p>可以在 <code>&lt;%!</code> 和 <code>%&gt;</code> 标记符号之间插入 Java 程序片。一个 JSP 页面可以有许多程序片，这些程序片将被 Tomcat 按顺序执行。在程序片中声明的变量称作 JSP 页面的局部变量。局部变量的有效范围与其声明的位置有关，即局部变量在 JSP 页面后继的所有程序片以及表达式部分内都有效。Tomcat 服务器将 JSP 页面转译成 Java 文件时，将各个程序片的这些变量作为类中某个方法的变量，即局部变量。</p>
+<p>Java 程序片可以写在 <code>&lt;html&gt;</code> 之前，也可以写在 <code>&lt;html&gt;</code> 和 <code>&lt;/html&gt;</code> 之间或 <code>&lt;/html&gt;</code> 之后。</p>
+<p>当多个用户请求一个 JSP 页面时，Tomcat 服务器为每个用户启动一个线程，该线程负责执行字节码文件响应用户的请求。Tomcat 服务器使用多线程来处理程序片，特点如下：</p>
+<ul>
+<li>操作 JSP 页面的成员变量。Java 程序片中操作的成员变量是各个线程（用户）共享的变量，任何一个线程对 JSP 页面成员变量操作的结果，都会影响到其他线程。</li>
+<li>调用 JSP 页面的方法。Java 程序片中可以出现方法调用语句，所调用的方法必须是 JSP 页面曾定义的方法。</li>
+<li>操作局部变量。当一个线程享用 CPU 资源时，Tomcat 服务器让该线程执行 Java 程序片，这时，Java 程序片中的局部变量被分配内存空间，当轮到另一个线程享用 CPU 资源时，Tomcat 服务器让该线程再次执行 Java 程序片，那么，Java 程序片中的局部变量会再次分配内存空间。也就是说，Java 程序片已经被执行了两次，分别运行在不同的线程中，即运行在不同的时间片内。运行在不同线程中的 Java 程序片的局部变量互不干扰，即一个用户改变 Java 程序片中的局部变量的值不会影响其他用户的 Java 程序片中的局部变量。当一个线程将 Java 程序片执行完毕，运行在该线程中的 Java 程序片的局部变量释放所占的内存。</li>
+</ul>
+<p>Java 程序片执行特点如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64bdf1241ddac507cc5f3780.png" alt="2-1 程序片的执行"></p>
+<p>根据 Java 程序片的上述特点，对于某些特殊情形必须给予特别注意。比如，如果一个用户在执行 Java 程序片时调用 JSP 页面的方法操作成员变量，可能不希望其他用户也调用该方法操作成员变量，以免对其产生不利的影响（成员变量被所有的用户共享），那么就应该将操作成员变量的方法用 <code>synchronized</code> 关键字修饰。当一个线程在执行 Java 程序片期间调用 synchronized 方法时，其他线程在其 Java 程序片中调用这个 synchronized 方法时就必须等待，直到正在调用 synchronized 方法的线程调用执行完该方法。</p>
+<p>在下面的代码中，通过 synchronized 方法操作一个成员变量来实现一个简单的计数器。<br><strong>synchronizedCount.jsp</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html&quot;</span> %&gt;</span><br><span class="line">&lt;%@ page pageEncoding=<span class="string">&quot;utf-8&quot;</span> %&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">    &lt;body&gt;</span><br><span class="line">        &lt;p style=<span class="string">&quot;font-family:宋体;font-size:36;color:blue&quot;</span>&gt;</span><br><span class="line">        &lt;%! </span><br><span class="line">            <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;  <span class="comment">//被用户共享的 count </span></span><br><span class="line">            <span class="comment">//synchronized 修饰的方法</span></span><br><span class="line">            <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title function_">setCount</span><span class="params">()</span> &#123;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">        %&gt;</span><br><span class="line">        &lt;%</span><br><span class="line">            setCount();</span><br><span class="line">            out.println(<span class="string">&quot;您是第&quot;</span> + count + <span class="string">&quot;个访问本站的用户&quot;</span>);</span><br><span class="line">        %&gt;</span><br><span class="line">        &lt;/p&gt;</span><br><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p>一个 JSP 页面中的 Java 程序片会按其在页面中的顺序被执行，而且某个 Java 程序片中声明的局部变量在其后继的所有 Java 程序片以及表达式部分内都有效。利用 Java 程序片的这个性质，有时候可以将一个 Java 程序片分割成几个 Java 程序片，然后在这些 Java 程序片之间再插入其他标记元素。在程序片中插入 HTML 中的标记的技巧对于灵活显示数据是非常重要的。通常的格式是：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HTML 中的标记</span><br><span class="line">&lt;%</span><br><span class="line">    Java 程序片</span><br><span class="line">%&gt;</span><br><span class="line">HTML 中的标记</span><br><span class="line">&lt;%</span><br><span class="line">    Java 程序片</span><br><span class="line">%&gt;</span><br><span class="line">HTML 中的标记</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4-Java-表达式"><a href="#2-4-Java-表达式" class="headerlink" title="2.4 Java 表达式"></a>2.4 Java 表达式</h2><p>可以在 <code>&lt;%=</code> 和 <code>%&gt;</code> 标记符号之间插入一个可求值的表达式（注意：不可插入语句，<code>&lt;%=</code> 是一个完整的符号，<code>&lt;%</code> 和 <code>=</code> 之间不要有空格）。表达式的值由服务器负责计算，并将计算结果用字符串形式发送到用户端显示。</p>
+<p>Java 表达式可以写在 <code>&lt;html&gt;</code> 之前，也可以写在 <code>&lt;html&gt;</code> 和 <code>&lt;/html&gt;</code> 之间或 <code>&lt;/html&gt;</code> 之后。</p>
+<p>需要注意的是，在 JSP 页面中，表达式的值被表示成一个字符串的形式，即 Tomcat 服务器将表达式的结果转换成字符串，然后发送给用户的浏览器。因此，在编写 JSP 页面时，要把 Java 表达式按普通的文本来使用。 </p>
+<h2 id="2-5-JSP-中的注释"><a href="#2-5-JSP-中的注释" class="headerlink" title="2.5 JSP 中的注释"></a>2.5 JSP 中的注释</h2><p>注释可以增强 JSP 页面的可读性，使 JSP 页面易于维护。JSP 页面中的注释可分以下几种。</p>
+<p><strong>HTML 注释</strong></p>
+<p>在标记符号 <code>&lt;!--</code> 和 <code>--&gt;</code> 之间加入注释内容：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 注释内容 --&gt;</span><br></pre></td></tr></table></figure>
+
+<p>JSP 引擎把 HTML 注释交给用户，因此用户通过浏览器查看 JSP 页面源文件时，能够看到 HTML 注释。</p>
+<p><strong>JSP 注释</strong></p>
+<p>在标记符号 <code>&lt;%--</code> 和 <code>--%&gt;</code> 之间加入注释内容：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%-- 注释内容 --%&gt;</span><br></pre></td></tr></table></figure>
+
+<p>Tomcat 服务器忽略 JSP 注释，即在编译 JSP 页面时忽略 JSP 注释。</p>
+<p><strong>Java 注释</strong></p>
+<p>在 Java 程序片、Java 表达式等 Java 代码中，在 <code>//</code> 后加入注释内容。</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;%</span><br><span class="line">	<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; <span class="comment">// 注释内容</span></span><br><span class="line">%&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-6-JSP-指令标记"><a href="#2-6-JSP-指令标记" class="headerlink" title="2.6 JSP 指令标记"></a>2.6 JSP 指令标记</h2><h3 id="page-指令标记"><a href="#page-指令标记" class="headerlink" title="page 指令标记"></a>page 指令标记</h3><p><code>page</code> 指令用来定义整个 JSP 页面的一些属性和这些属性的值，属性值用单引号或双引号括起来。</p>
+<p>可以使用多个 <code>page</code> 指令分别为每个属性指定值，如：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page 属性<span class="number">1</span>=<span class="string">&quot;属性1的值&quot;</span> %&gt;</span><br><span class="line">&lt;%@ page 属性<span class="number">2</span>=<span class="string">&quot;属性2的值&quot;</span> %&gt;</span><br><span class="line">...</span><br><span class="line">&lt;%@ page 属性n=<span class="string">&quot;属性n的值&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>也可以用一个 <code>page</code> 指令指定多个属性的值，如：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page 属性<span class="number">1</span>=<span class="string">&quot;属性1的值&quot;</span> 属性<span class="number">2</span>=<span class="string">&quot;属性2的值&quot;</span> ... 属性n=<span class="string">&quot;属性n的值&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>page</code> 指令的作用对整个 JSP 页面有效，与其书写的位置无关。习惯上把 <code>page</code> 指令写在 JSP 页面的最前面。</p>
+<p><code>page</code> 指令标记可以为 <code>contentType</code>、<code>import</code>、<code>language</code>、<code>session</code>、<code>buffer</code>、<code>autoFlush</code>、<code>isThreadSafe</code>、<code>pageEncoding</code>、<code>info</code> 等属性指定值：</p>
+<p><strong>contentType 属性</strong></p>
+<p>当用户请求一个 JSP 页面时，Tomcat 服务器负责解释执行 JSP 页面，并将某些信息发送到用户的浏览器，以便用户浏览这些信息。Tomcat 服务器同时负责通知用户的浏览器使用怎样的方法来处理所接收到的信息。这就要求 JSP 页面必须设置响应的 MIME（Multipurpose Internet Mail Extention）类型，即设置 <code>contentType</code> 属性的值。<code>contentType</code> 属性值确定 JSP 页面响应的 MIME 类型。属性值的一般形式是：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;MIME 类型&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>比如，如果我们希望用户的浏览器启用 HTML 解析器来解析执行所接收到的信息（即所谓的网页形式），就可以如下设置 <code>contentType</code> 属性的值：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果希望用户的浏览器启用本地的 MS-Word 应用程序来解析执行收到的信息，就可以如下设置 <code>contentType</code> 属性的值：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">&quot;application/msword&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果不使用 <code>page</code> 指令为 <code>contentType</code> 指定一个值，那么 <code>contentType</code>  属性的默认值是<code>&quot;text/html&quot;</code>。JSP 页面使用 <code>page</code> 指令只能为 <code>contentType</code> 指定一个值，不允许两次使用 <code>page</code> 指令给 <code>contentType</code> 属性指定不同的属性值，下列用法是错误的：</p>
+<p>用 <code>page</code> 指令为 <code>contentType</code> 指定一个值的同时，也可以为 <code>contentType</code> 的附加属性 <code>charset</code> 指定一个值（默认值是 iso-8859-1），例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page contentType=&quot;text/html;charset=gb2312&quot; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>contentType</code> 的附加属性 <code>charset</code> 的值是通知用户浏览器用怎样的编码解析收到的字符，当 JSP 页面用 <code>page</code> 指令指定设置 <code>charset</code> 的值是 GB2312 时，浏览器会将编码切换成 GB2312。但是，如果 JSP 页面用 <code>page</code> 指定了 JSP 的页面本身的编码，例如：<code>&lt;%@ page pageEncoding =&quot;UTF-8&quot; %&gt;</code>，那么 <code>charset</code> 的值和 JSP 的页面编码保持一致，即 UTF-8（目前的浏览器都支持 UTF-8 编码，所以一般不需要再指定 <code>charset</code> 的值，使其和 JSP 的页面编码保持一致即可）。</p>
+<p>可以使用 <code>page</code> 指令为 <code>contentType</code> 属性指定的值有：</p>
+<ul>
+<li>text&#x2F;html</li>
+<li>text&#x2F;plain</li>
+<li>image&#x2F;gif</li>
+<li>image&#x2F;x-xbitmap</li>
+<li>image&#x2F;jpeg</li>
+<li>image&#x2F;pjpeg</li>
+<li>application&#x2F;x-shockwave-flash</li>
+<li>application&#x2F;vnd</li>
+<li>ms-powerpoint</li>
+<li>application&#x2F;vnd</li>
+<li>ms-excel</li>
+<li>application&#x2F;msword</li>
+</ul>
+<p>如果用户的浏览器不支持某种 MIME 类型，那么用户的浏览器就无法用相应的手段处理所接收到的信息。比如，使用 <code>page</code> 指令设置 <code>contentType</code> 属性的值是<code>&quot;application/msword &quot;</code>，如果用户浏览器所驻留的计算机没有安装 MS-Word 应用程序，那么浏览器就无法处理所接收到的信息。</p>
+<p><strong>pageEncoding 属性</strong></p>
+<p><code>pageEncoding</code> 属性的默认值是 UTF-8。需要注意的是，和 <code>contentType</code> 的附加属性 <code>charset</code> 的值的意义不同，<code>pageEncoding</code> 属性值是定义 JSP 页面使用的编码，即是告诉 Tomcat 服务器的解析器用怎样的编码解析 JSP 页面中的字符，比如当 JSP 页面指定的编码是 UTF-8 时：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page pageEncoding=<span class="string">&quot;utf-8&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>保存 JSP 页面应当将“编码”选择为<code>&quot;UTF-8&quot;</code>，原因是，Tomcat 服务器根据 JSP 页面产生成 Java 文件时，Tomcat 服务器的解析器是按照 UTF-8 编码来解析 JSP 页面中的字符数据（JSP 页面本质上是一个 XML 文档）产生对应 Java 文件。如果保存 JSP 页面时，不小心将编码选择为其他编码（不是 UTF-8），那么 Tomcat 服务器的解析器产生的对应 Java 文件中的某些字符串就可能有乱码现象，而这些字符串又发送到了客户端浏览器，所以用户浏览器显示信息就出现了乱码现象（比如需要客户浏览器显示的非 ASCII 字符就可能呈现乱码状态）。</p>
+<p>另外， JSP 页面使用 <code>page</code> 指令只能为 <code>pageEncoding</code> 指定一个值，不允许两次使用 <code>page</code> 指令给 <code>pageEncoding</code> 属性指定不同的或相同的属性值。</p>
+<p><strong>language 属性</strong></p>
+<p><code>language</code> 属性定义 JSP 页面使用的脚本语言，该属性的值目前只能取 java。</p>
+<p>为 <code>language</code> 属性指定值的格式是：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">&quot;java&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>language</code> 属性的默认值是 java，即如果在 JSP 页面中没有使用 <code>page</code> 指令指定该属性的值的，那么，JSP 页面默认有如下的 <code>page</code> 指令：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page language=<span class="string">&quot;java&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>import 属性</strong></p>
+<p>该属性的作用是为 JSP 页面引入 Java 运行环境提供的包中的类，这样就可以在 JSP 页面的程序片部分、变量及方法定义部分以及表达式部分使用包中的类。可以为该属性指定多个值，该属性的值可以是某包中的所有类或一个具体的类，例如：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page <span class="keyword">import</span>=<span class="string">&quot;java.io.*&quot;</span>,<span class="string">&quot;java.time.LocalDate&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样 JSP 引擎把 JSP 页面转译成的 Java 文件中会有如下的 <code>import</code> 语句：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"><span class="keyword">import</span> java.time.LocalDate;</span><br></pre></td></tr></table></figure>
+
+<p><strong>session 属性</strong></p>
+<p><code>session</code> 属性用于设置是否需要使用内置的 session 对象。<code>session</code> 的属性值可以是 true 或 false。<code>session</code> 属性默认的属性值是 true。</p>
+<p><strong>buffer 属性</strong></p>
+<p>内置输出流对象 out 负责将服务器的某些信息或运行结果发送到用户端显示。<code>buffer</code> 属性用来指定 out 设置的缓冲区的大小或不使用缓冲区。</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page buffer=<span class="string">&quot;24kb&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>buffer</code> 属性的默认值是 8kb。<code>buffer</code> 属性可以取值<code>&quot;none&quot;</code>，即设置 out 不使用缓冲区。</p>
+<p><strong>autoFlush 属性</strong></p>
+<p><code>autoFlush</code> 属性指定 out 的缓冲区被填满时，缓冲区是否自动刷新。</p>
+<p><code>autoFlush</code> 的属性值可以是 true 或 false。<code>autoFlush</code> 属性默认的属性值是 true。	</p>
+<p>当 <code>autoFlush</code> 属性取值 false 时，如果 out 的缓冲区填满，就会出现缓存溢出异常。</p>
+<p>当 <code>buffer</code> 的值是<code>&quot;none&quot;</code>时，<code>autoFlush</code> 的值就不能设置成 false。</p>
+<p><strong>isThreadSafe 属性</strong></p>
+<p><code>isThreadSafe</code> 属性用来设置访问 JSP 页面是否是线程安全的。<code>isThreadSafe</code> 的属性值可取 true 或 false。当 <code>isThreadSafe</code> 属性值设置为 true 时，JSP 页面能同时响应多个用户的请求；当 <code>isThreadSafe</code> 属性值设置成 false 时，JSP 页面同一时刻只能响应一个用户的请求，其他用户须排队等待。<code>isThreadSafe</code> 属性的默认值是 true。</p>
+<p>当 <code>isThreadSafe</code> 属性值为 true 时，CPU 的使用权在各个线程间快速切换。也就是说，即使一个用户的线程没有执行完毕，CPU 的使用权也可能要切换给其他的线程，如此轮流，直到各个线程执行完毕；当 JSP 使用 <code>page</code> 指令将 <code>isThreadSafe</code> 属性值设置成 false 时，该 JSP 页面同一时刻只能响应一个用户的请求，其他用户须排队等待。也就是说，CPU 要保证一个线程将 JSP 页面执行完毕才会把 CPU 使用权切换给其他线程。</p>
+<p><strong>info 属性</strong></p>
+<p><code>info</code> 属性的属性值是一个字符串，其目的是为 JSP 页面准备一个常用但可能要经常修改的字符串。例如：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ page info=<span class="string">&quot;we are students&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>可以在 JSP 页面中使用方法：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getServletInfo();</span><br></pre></td></tr></table></figure>
+
+<p>获取 <code>info</code> 属性的属性值。</p>
+<p>当 JSP 页面被转译成 Java 文件时，转译成的类是 Servlet 的一个子类，所以在 JSP 页面中可以使用 Servlet 类的方法：<code>getServletInfo()</code>。</p>
+<h3 id="include-指令标记"><a href="#include-指令标记" class="headerlink" title="include 指令标记"></a>include 指令标记</h3><p>如果需要在 JSP 页面内某处整体嵌入一个文件，就可以考虑使用 <code>include</code> 指令标记，其语法格式如下：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ include file=<span class="string">&quot;文件的 URL&quot;</span> %&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>include</code> 指令标记的作用是在 JSP 页面出现该指令的位置处，静态嵌入一个文件，该文件的编码必须和当前 JSP 页面一致，比如二者都是 UTF-8编码。被嵌入的文件必须是可以访问或可以使用的。</p>
+<p>使用 <code>include</code> 指令可以实现代码的复用。比如，每个 JSP 页面上都可能都需要一个导航条，以便用户在各个 JSP 页面之间方便地切换，那么每个 JSP 页面都可以使用 <code>include</code> 指令在页面的适当位置整体嵌入一个相同的文件。</p>
+<p>需要特别注意的是，允许被嵌入的文件使用 <code>page</code> 指令指定 <code>contentType</code> 属性的值，但指定的值必须和嵌入该文件的 JSP 页面中的 <code>page</code> 指令指定的 <code>contentType</code> 属性的值相同。</p>
+<h2 id="2-7-JSP-动作标记"><a href="#2-7-JSP-动作标记" class="headerlink" title="2.7 JSP 动作标记"></a>2.7 JSP 动作标记</h2><p>动作标记是一种特殊的标记，它影响 JSP 运行时的功能。</p>
+<h3 id="include-动作标记"><a href="#include-动作标记" class="headerlink" title="include 动作标记"></a>include 动作标记</h3><p><code>include</code> 动作标记语法格式是：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:include page=<span class="string">&quot;文件的 URL&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:include page=<span class="string">&quot;文件的 URL&quot;</span>&gt;</span><br><span class="line">    param 子标记</span><br><span class="line">&lt;/jsp:include&gt;</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，当 <code>include</code> 动作标记不需要 <code>param</code> 子标记时，必须使用第一种形式。</p>
+<p><code>include</code> 动作标记告诉 JSP 页面动态包含一个文件，即 JSP 页面运行时才将文件加入。与静态嵌入文件的 <code>include</code> 指令标记不同，当 Tomcat 服务器根据 JSP 页面生成 Java 文件时，不把 JSP 页面中动作指令 <code>include</code> 所包含的文件与原 JSP 页面合并为一个新的 JSP 页面，而是告诉 Java 解释器，这个文件在 JSP 运行时才包含进来。如果包含的文件是普通的文本文件，就将文件的内容发送到用户端，由用户端的浏览器负责显示；如果包含的文件是 JSP 文件，Tomcat 服务器就执行这个文件，然后将执行的结果发送到用户端，并由用户端的浏览器负责显示这些结果。</p>
+<h3 id="param-动作标记"><a href="#param-动作标记" class="headerlink" title="param 动作标记"></a>param 动作标记</h3><p><code>param</code> 标记以“名字—值”对的形式为其他标记提供附加信息，<code>param</code> 标记不能独立使用，须作为 <code>jsp:include</code>、<code>jsp:forward</code> 标记的子标记来使用。</p>
+<p><code>param</code> 动作标记语法格式是：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:param name=<span class="string">&quot;参数名&quot;</span> value=<span class="string">&quot;参数值&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当该标记与 <code>jsp:include</code> 动作标记一起使用时，可以将 <code>param</code> 标记中参数的值传递到 <code>include</code> 动作标记要加载的文件中去，被加载的 JSP 文件可以使用 Tomcat 服务器提供的 request 内置对象获取 <code>include</code> 动作标记的 <code>param</code> 子标记中 <code>name</code> 给出的参数的值。因此 <code>include</code> 动作标记通过使用 <code>param</code> 子标记来处理加载的文件，比 <code>include</code> 指令标记更为灵活。</p>
+<h3 id="forward-动作标记"><a href="#forward-动作标记" class="headerlink" title="forward 动作标记"></a>forward 动作标记</h3><p><code>forward</code> 动作标记语法格式是：</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:forward page=<span class="string">&quot;要转向的页面&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或</p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:forward page=<span class="string">&quot;要转向的页面&quot;</span>&gt;</span><br><span class="line">    param 子标记</span><br><span class="line">&lt;/jsp:forward&gt;</span><br></pre></td></tr></table></figure>
+
+<p>该指令的作用是：从该指令处停止当前页面的执行，而转向执行 <code>page</code> 属性指定的 JSP 页面。</p>
+<p>需要注意的是，当 <code>forward</code> 动作标记不需要 <code>param</code> 子标记时，必须使用第一种形式。</p>
+<h3 id="useBean-动作标记"><a href="#useBean-动作标记" class="headerlink" title="useBean 动作标记"></a>useBean 动作标记</h3><p><code>useBean</code> 标记用来创建并使用一个 JavaBean，是非常重要的一个动作标记。</p>
+<p>Sun 公司倡导使用 JavaBean 存储数据，JSP 页面显示 JavaBean 中的数据，而 servlet 负责管理 JavaBean 中的数据。</p>
+<hr>
+<p><a href="./1">上一章</a></p>
+<p><a href="./3">下一章</a></p>
+<p><a href="./index">返回</a></p>
+</div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:dihaozhe@outlook.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/dihaozhe-365" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" href="tencent://message/?uin=1839279043&amp;Site=&amp;Menu=yes" title="QQ"><i class="anzhiyufont anzhiyu-icon-qq"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/629900379" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAGDgnLwA_rPyo8wJ-uBXtGfaMMmcqp9j3z9lygqF4ZS4" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a><a class="deal_link" href="/copyright" title="CC"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la 统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la 统计</a><a class="footer-item" title="聚合图床" target="_blank" rel="noopener" href="https://www.superbed.cn/">聚合图床</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">文库</div><div class="footer-links"><a class="footer-item" title="文章总览" href="/archives/">文章总览</a><a class="footer-item" title="全部分类" href="/categories/">全部分类</a><a class="footer-item" title="全部标签" href="/tags/">全部标签</a></div></div><div class="footer-group"><div class="footer-title">学习</div><div class="footer-links"><a class="footer-item" title="笔记仓库" href="/note/">笔记仓库</a></div></div><div class="footer-group"><div class="footer-title">生活</div><div class="footer-links"><a class="footer-item" title="到此一游" href="/comments/">到此一游</a><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="装备推荐" href="/equipment/">装备推荐</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies 协议" href="/cookies/">Cookies 协议</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div></div><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/footer/邸浩哲-上班摸鱼中.svg" alt="距离月入25k也就还差一个大佬带我~" title="距离月入25k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By 邸浩哲Geo </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="冀ICP备-2023021272号">冀ICP备-2023021272号</a><a class="footer-bar-link cc" href="/copyright" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">1</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dihaozhe.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文库</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 文章总览</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 全部分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 学习</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 笔记仓库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-shoe-prints faa-tada" style="font-size: 0.9em;"></i><span> 到此一游</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-bullhorn faa-tada" style="font-size: 0.9em;"></i><span> 即刻短文</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-keyboard faa-tada" style="font-size: 0.9em;"></i><span> 装备推荐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/JDK/" style="font-size: 0.88rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 0.88rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 0.88rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 0.88rem;">安装教程<sup>2</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="9013145695" server="tencent" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/9013145695&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.4/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("07/07/2023 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎访问邸浩哲Geo!`,
+    `热爱可抵岁月漫长`,
+    `
+      ───────────────────────────────────────────────────────────────────────────────
+      ─██████████████─██████████████─██████████████────────████████████───██████████─
+      ─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██────────██░░░░░░░░████─██░░░░░░██─
+      ─██░░██████████─██░░██████████─██░░██████░░██────────██░░████░░░░██─████░░████─
+      ─██░░██─────────██░░██████████─██░░██──██░░██────────██░░██──██░░██───██░░██───
+      ─██░░██──██████─██░░░░░░░░░░██─██░░██──██░░██────────██░░██──██░░██───██░░██───
+      ─██░░██──██░░██─██░░██████████─██░░██──██░░██────────██░░██──██░░██───██░░██───
+      ─██░░██████░░██─██░░██████████─██░░██████░░██─██████─██░░████░░░░██─████░░████─
+      ─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░██─██░░░░░░░░████─██░░░░░░██─
+      ─██████████████─██████████████─██████████████─██████─████████████───██████████─
+      ───────────────────────────────────────────────────────────────────────────────
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 邸浩哲Geo V1.6.5",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      "color:#3b70fc",
+      "",
+      "color:#3b70fc",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 邸浩哲 %c 你正在访问 邸浩哲Geo 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("07/07/2023 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      img.src = "/img/footer/邸浩哲-下班啦.svg";
+      img.title = "下班了就该开开心心的玩耍，嘿嘿~";
+      img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
+
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><script src="https://cdn.cbd.int/algoliasearch@4.18.0/dist/algoliasearch-lite.umd.js"></script><script src="https://cdn.cbd.int/instantsearch.js@4.56.5/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="anzhiyu"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://dihaozhe.zeabur.app',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script>var visitorMail = "visitor@dihaozhe.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>

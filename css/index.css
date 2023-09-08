@@ -8153,6 +8153,163 @@ body:has(#console.show) #nav-music {
     top: -90px;
   }
 }
+. note-categories-title {
+  margin: 1rem 0;
+  line-height: 1;
+}
+.note-item .note-item-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+.note-item .note-item-content .note-item-content-item {
+  width: calc(25% - 12px);
+  border-radius: 12px;
+  border: var(--style-border-always);
+  overflow: hidden;
+  margin: 8px 6px;
+  background: var(--anzhiyu-card-bg);
+  -webkit-box-shadow: var(--anzhiyu-shadow-border);
+  box-shadow: var(--anzhiyu-shadow-border);
+  min-height: 400px;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .note-item .note-item-content .note-item-content-item {
+    width: calc(50% - 12px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .note-item .note-item-content .note-item-content-item {
+    width: 100%;
+  }
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-info {
+  padding: 8px 16px 16px 16px;
+  margin-top: 12px;
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: fit-content;
+  cursor: pointer;
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-name:hover {
+  color: var(--anzhiyu-main);
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-specification {
+  font-size: 12px;
+  color: var(--anzhiyu-secondtext);
+  line-height: 16px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-description {
+  line-height: 20px;
+  color: var(--anzhiyu-secondtext);
+  height: 60px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+.note-item .note-item-content .note-item-content-item a.note-item-content-item-link {
+  font-size: 12px;
+  background: var(--anzhiyu-gray-op);
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.note-item .note-item-content .note-item-content-item a.note-item-content-item-link:hover {
+  background: var(--anzhiyu-main);
+  color: var(--anzhiyu-white);
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-cover {
+  width: 100%;
+  height: 200px;
+  background: var(--anzhiyu-secondbg);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.note-item .note-item-content .note-item-content-item img.note-item-content-item-image {
+  object-fit: contain;
+  height: 80%;
+  width: 260px;
+}
+.note-item .note-item-content .note-item-content-item .note-item-content-item-toolbar {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  padding: 0 16px;
+}
+body[data-type="note"] #web_bg {
+  background: var(--anzhiyu-background);
+}
+body[data-type="note"] #page {
+  border: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background: 0 0 !important;
+}
+body[data-type="note"] #page .page-title {
+  display: none;
+}
 .reward #con {
   width: 350px;
   height: 85px;
