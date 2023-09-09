@@ -53,12 +53,12 @@
   configTitle: '邸浩哲Geo',
   title: '第五章 JSP 与 JavaBean',
   postAI: '',
-  pageFillDescription: '5.1 编写和使用 JavaBean, 编写 JavaBean, 保存 bean 的字节码, 创建与使用 bean, 使用 bean, bean 的加载原理, bean 的有效范围和生存周期, 5.2 获取和修改 bean 的属性, getProperty 动作标记, setProperty 动作标记, 5.3 bean 的辅助类按照公司的定义是一个可重复使用的软件组件实际上是一种类通过封装属性和方法成为具有某种功能或者处理某个业务的对象简称由于是基于语言的因此不依赖平台具有以下特点可以实现代码的重复利用易编写易维护易使用可以在任何安装了运行环境的平台上的使用不需要重新编译页面可以将数据的处理过程指派给一个或几个来完成即页面调用这些完成数据的处理并将有关处理结果存放到中然后页面负责显示中的数据使用程序片或某些指令标记显示中的数据即页面的主要工作是显示数据不负责数据的逻辑业务处理编写和使用编写编写就是编写一个的类所以只要会写类就能编写一个这个类创建的一个对象称为一个简称分配给的变量成员变量也称的属性为了能让使用的应用程序构建工具比如服务器使用动作标记知道的属性和方法在类的命名上需要遵守以下规则如果类的成员变量也称的属性的名字是那么为了获取或更改的属性的值类中必须提供两个方法用来获取属性用来修改属性也就是方法的名字用或为前缀后缀是将属性成员变量名字的首字母大写的字符序列类中定义的方法的访问权限都必须是的类中必须有一个构造方法是无参数的下面我们编写一个创建的类并说明在中怎样使用这个类创建一个要求创建的类带有包名即源文件须使用语句给出包名例如或者保存的字节码为了使页面使用服务器必须使用相应的字节码文件创建一个对象即创建一个为了让服务器能找到字节码文件字节码文件必须保存在特定的目录中即目录下根据包名对应的路径在目录下再建立相应的子目录将创建的字节码文件复制到中为了调试程序方便可以直接按照的包名将的源文件保存在目录中然后编译其中的文件创建与使用使用使用动作标记加载使用语法格式是的名字创建的类有效范围或者的名字创建的类有效范围的加载原理当页面使用动作标记加载一个时服务器首先根据动作标记中给出的名字以及给出的使用范围生命周期在服务器管理的内置对象中查找是否含有这样的对象如果这样的对象存在服务器就复制这个对象给页面就是常说的服务器分配这样的给页面如果在中没有查找到动作标记要求的就根据指定的类创建一个并将所创建的添加到中通过服务器创建的过程可以看出首次创建一个新的需要用相应类的字节码文件创建对象当某些页面再需要同样的时服务器直接将中已经有的分配给页面从而提高页面的使用效率如果修改了字节码文件必须重新启动服务器才能使用新的字节码文件的有效范围和生存周期的取值范围给出了的生命周期存活时间即取值决定了服务器分配给用户的的有效范围和生命周期因此需要理解取值的具体意义下面就动作标记中取值的不同情况进行说明取值为的称为的有效范围是用户访问的当前页面存活时间直到当前页面执行完毕服务器分配给每个页面的是互不相同的也就是说尽管每个页面的的功能相同但它们占有不同的内存空间的有效范围是当前页面当页面执行完毕服务器取消分配的即释放所占有的内存空间需要注意的是不同用户浏览器的也是互不相同的也就是说当两个用户同时访问同一个页面时一个用户对自己的属性的改变不会影响到另一个用户取值为的称为的有效范围是用户访问的服务目录下的各个页面存活时间是用户的会话期间直到用户的会话消失对象达到了最大生存时间或用户关闭自己的浏览器以及服务器关闭如果用户访问服务目录多个页面那么每个页面相同的是同一个占有相同的内存空间因此用户在某个页面更改了这个的属性值其他页面的这个的属性值也将发生同样的变化当用户的会话消失服务器取消所分配的即释放所占有的内存空间需要注意的是不同用户浏览器的是互不相同的占有不同的内存空间也就是说当两个用户同时访问同一个服务目录一个用户对自己属性的改变不会影响到另一个用户一个用户在不同服务目录的互不相同注意当使用时要保证用户端支持取值为的称为的有效范围是用户请求的当前页面存活时间是从用户的请求产生到请求结束服务器分配给每个页面的是互不相同的服务器对请求作出响应之后取消分配给这个页面的简单地说只在当前页面有效直到响应结束存活时间略长于的存活时间原因是服务器认为页面执行完毕后响应才算结束需要注意的是不同用户的的也是互不相同的也就是说当两个用户同时请求同一个页面时一个用户对自己属性的改变不会影响到另一个用户取值为的称为的有效范围是当前服务目录下的各个页面存活时间直到服务器关闭服务器为访问服务目录的所有用户分配一个共享的即不同用户的也都是相同的一个也就是说任何一个用户对自己属性的改变都会影响到其他用户不同服务目录的互不相同获取和修改的属性使用动作标记获得一个后在程序片或表达式中就可以调用方法产生行为这种情况下不要求创建的类遵守和等规则获取或修改的属性还可以使用动作标记这种情况下要求创建的类遵守和等规则当页面使用标记获取或修改属性时必须保证有相应的和方法即对方法名字的命名有特殊的要求动作标记使用动作标记可以获得的属性值并将这个值用串的形式发送给用户的浏览器使用动作标记之前必须使用动作标记获得相应的动作标记的语法格式是的的属性或者的的属性其中取值是的用来指定要获取哪个的属性的值取值是该的一个属性的名字动作标记使用动作标记可以设置的属性值使用动作标记之前必须使用动作标记获得相应的动作标记可以通过两种方式设置属性值将属性值设置为一个表达式的值或字符序列的的属性的的属性字符序列给出的值的类型要和的属性的类型一致通过表单的参数值来设置的相应属性值用表单的所有参数值设置相对应属性值的使用格式如下的在标记的上述用法中不具体指定属性值将对应表单中哪个参数指定的值系统会自动根据名字进行匹配对应但要求属性的名字必须在表单中有名称相同的参数名字相对应服务器会自动将参数的字符串值转换为相对应的属性值用表单的某个参数的值设置的某个属性值的使用格式如下的名字属性名参数名在标记的上述用法具体指定了属性值将对应表单中哪个参数名指定的值这种设置的属性值的方法不要求给出的属性的名字和给出的参数名一致即不要求属性的名字必须和表单中某个参数名字相同当把字符序列设置为的属性值时这个字符序列会自动被转化为的属性类型的辅助类在写一个创建的类时除了需要用语句引入提供的类可能还需要自己编写一些其他的类只要将这样类的包名和类的包名一致即可上一章下一章返回',
+  pageFillDescription: '5.1 编写和使用 JavaBean, 编写 JavaBean, 保存 bean 的字节码, 创建与使用 bean, 使用 bean, bean 的加载原理, bean 的有效范围和生存周期, 5.2 获取和修改 bean 的属性, getProperty 动作标记, setProperty 动作标记, 5.3 bean 的辅助类, 习题 5按照公司的定义是一个可重复使用的软件组件实际上是一种类通过封装属性和方法成为具有某种功能或者处理某个业务的对象简称由于是基于语言的因此不依赖平台具有以下特点可以实现代码的重复利用易编写易维护易使用可以在任何安装了运行环境的平台上的使用不需要重新编译页面可以将数据的处理过程指派给一个或几个来完成即页面调用这些完成数据的处理并将有关处理结果存放到中然后页面负责显示中的数据使用程序片或某些指令标记显示中的数据即页面的主要工作是显示数据不负责数据的逻辑业务处理编写和使用编写编写就是编写一个的类所以只要会写类就能编写一个这个类创建的一个对象称为一个简称分配给的变量成员变量也称的属性为了能让使用的应用程序构建工具比如服务器使用动作标记知道的属性和方法在类的命名上需要遵守以下规则如果类的成员变量也称的属性的名字是那么为了获取或更改的属性的值类中必须提供两个方法用来获取属性用来修改属性也就是方法的名字用或为前缀后缀是将属性成员变量名字的首字母大写的字符序列类中定义的方法的访问权限都必须是的类中必须有一个构造方法是无参数的下面我们编写一个创建的类并说明在中怎样使用这个类创建一个要求创建的类带有包名即源文件须使用语句给出包名例如或者保存的字节码为了使页面使用服务器必须使用相应的字节码文件创建一个对象即创建一个为了让服务器能找到字节码文件字节码文件必须保存在特定的目录中即目录下根据包名对应的路径在目录下再建立相应的子目录将创建的字节码文件复制到中为了调试程序方便可以直接按照的包名将的源文件保存在目录中然后编译其中的文件创建与使用使用使用动作标记加载使用语法格式是的名字创建的类有效范围或者的名字创建的类有效范围的加载原理当页面使用动作标记加载一个时服务器首先根据动作标记中给出的名字以及给出的使用范围生命周期在服务器管理的内置对象中查找是否含有这样的对象如果这样的对象存在服务器就复制这个对象给页面就是常说的服务器分配这样的给页面如果在中没有查找到动作标记要求的就根据指定的类创建一个并将所创建的添加到中通过服务器创建的过程可以看出首次创建一个新的需要用相应类的字节码文件创建对象当某些页面再需要同样的时服务器直接将中已经有的分配给页面从而提高页面的使用效率如果修改了字节码文件必须重新启动服务器才能使用新的字节码文件的有效范围和生存周期的取值范围给出了的生命周期存活时间即取值决定了服务器分配给用户的的有效范围和生命周期因此需要理解取值的具体意义下面就动作标记中取值的不同情况进行说明取值为的称为的有效范围是用户访问的当前页面存活时间直到当前页面执行完毕服务器分配给每个页面的是互不相同的也就是说尽管每个页面的的功能相同但它们占有不同的内存空间的有效范围是当前页面当页面执行完毕服务器取消分配的即释放所占有的内存空间需要注意的是不同用户浏览器的也是互不相同的也就是说当两个用户同时访问同一个页面时一个用户对自己的属性的改变不会影响到另一个用户取值为的称为的有效范围是用户访问的服务目录下的各个页面存活时间是用户的会话期间直到用户的会话消失对象达到了最大生存时间或用户关闭自己的浏览器以及服务器关闭如果用户访问服务目录多个页面那么每个页面相同的是同一个占有相同的内存空间因此用户在某个页面更改了这个的属性值其他页面的这个的属性值也将发生同样的变化当用户的会话消失服务器取消所分配的即释放所占有的内存空间需要注意的是不同用户浏览器的是互不相同的占有不同的内存空间也就是说当两个用户同时访问同一个服务目录一个用户对自己属性的改变不会影响到另一个用户一个用户在不同服务目录的互不相同注意当使用时要保证用户端支持取值为的称为的有效范围是用户请求的当前页面存活时间是从用户的请求产生到请求结束服务器分配给每个页面的是互不相同的服务器对请求作出响应之后取消分配给这个页面的简单地说只在当前页面有效直到响应结束存活时间略长于的存活时间原因是服务器认为页面执行完毕后响应才算结束需要注意的是不同用户的的也是互不相同的也就是说当两个用户同时请求同一个页面时一个用户对自己属性的改变不会影响到另一个用户取值为的称为的有效范围是当前服务目录下的各个页面存活时间直到服务器关闭服务器为访问服务目录的所有用户分配一个共享的即不同用户的也都是相同的一个也就是说任何一个用户对自己属性的改变都会影响到其他用户不同服务目录的互不相同获取和修改的属性使用动作标记获得一个后在程序片或表达式中就可以调用方法产生行为这种情况下不要求创建的类遵守和等规则获取或修改的属性还可以使用动作标记这种情况下要求创建的类遵守和等规则当页面使用标记获取或修改属性时必须保证有相应的和方法即对方法名字的命名有特殊的要求动作标记使用动作标记可以获得的属性值并将这个值用串的形式发送给用户的浏览器使用动作标记之前必须使用动作标记获得相应的动作标记的语法格式是的的属性或者的的属性其中取值是的用来指定要获取哪个的属性的值取值是该的一个属性的名字动作标记使用动作标记可以设置的属性值使用动作标记之前必须使用动作标记获得相应的动作标记可以通过两种方式设置属性值将属性值设置为一个表达式的值或字符序列的的属性的的属性字符序列给出的值的类型要和的属性的类型一致通过表单的参数值来设置的相应属性值用表单的所有参数值设置相对应属性值的使用格式如下的在标记的上述用法中不具体指定属性值将对应表单中哪个参数指定的值系统会自动根据名字进行匹配对应但要求属性的名字必须在表单中有名称相同的参数名字相对应服务器会自动将参数的字符串值转换为相对应的属性值用表单的某个参数的值设置的某个属性值的使用格式如下的名字属性名参数名在标记的上述用法具体指定了属性值将对应表单中哪个参数名指定的值这种设置的属性值的方法不要求给出的属性的名字和给出的参数名一致即不要求属性的名字必须和表单中某个参数名字相同当把字符序列设置为的属性值时这个字符序列会自动被转化为的属性类型的辅助类在写一个创建的类时除了需要用语句引入提供的类可能还需要自己编写一些其他的类只要将这样类的包名和类的包名一致即可习题假设服务目录中的页面要使用一个该的包名为请说明应当怎样保存的字节码文件答将创建的字节码文件保存在中假设服务目录是是的一个子目录页面保存在中并准备使用一个该的包名为下列哪个叙述是正确的创建的字节码文件保存在中创建的字节码文件保存在中创建的字节码文件保存在中创建的字节码文件保存在中是创建的类下列哪个标记是正确创建的标记假设创建的类有一个型的属性下列哪个方法是设置该属性值的正确方法假设页面使用标记创建了一个名字为的该有一个类型名字为的属性如果创建的类没有提供方法页面是否允许使用如下标记获取的属性值答允许上一章下一章返回',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-09-08 20:54:56',
+  postUpdate: '2023-09-09 20:06:13',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -275,6 +275,54 @@ if (true) {
 </li>
 </ol>
 <h2 id="5-3-bean-的辅助类"><a href="#5-3-bean-的辅助类" class="headerlink" title="5.3 bean 的辅助类"></a>5.3 bean 的辅助类</h2><p>在写一个创建 bean 的类时，除了需要用 import 语句引入 JDK 提供的类，可能还需要自己编写一些其他的类，只要将这样类的包名和 bean 类的包名一致即可。</p>
+<h2 id="习题-5"><a href="#习题-5" class="headerlink" title="习题 5"></a>习题 5</h2><ol>
+<li><p><strong>假设 Web 服务目录 mymoon 中的 JSP 页面要使用一个 bean，该 bean 的包名为 <code>blue.sky</code>。请说明，应当怎样保存 bean 的字节码文件。</strong></p>
+<p>答：将创建 bean 的字节码文件保存在 <code>\mymoon\WEB-INF\classes\blue\sky</code> 中。</p>
+</li>
+<li><p><strong>假设 Web 服务目录是 mymoon，star 是 mymoon 的一个子目录，JSP 页面 <code>a.jsp</code> 保存在 star 中，并准备使用一个 bean，该 bean 的包名为 <code>tom.jiafei</code>。下列哪个叙述是正确的？</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> A. 创建 bean 的字节码文件保存在 <code>\mymoon\WEB-INF\classes\tom\jiafei</code> 中</li>
+<li><input disabled="" type="checkbox"> B. 创建 bean 的字节码文件保存在 <code>\mymoon\star\WEB-INF\classes\tom\jiafei</code> 中</li>
+<li><input disabled="" type="checkbox"> C. 创建 bean 的字节码文件保存在 <code>\WEB-INF\star\classes\tom\jiafei</code> 中</li>
+<li><input disabled="" type="checkbox"> D. 创建 bean 的字节码文件保存在 <code>\mymoon\WEB-INF\classes\start\tom\jiafei</code> 中</li>
+</ul>
+</li>
+<li><p><strong><code>tom.jiafei.Circle</code> 是创建 bean 的类，下列哪个标记是正确创建 session bean 的标记？</strong></p>
+<ul>
+<li><input disabled="" type="checkbox"> A. <code>&lt;jsp:useBean id=&quot;circle&quot; class=&quot;tom.jiafei.Circle&quot; scope=&quot;page&quot;/&gt;</code></li>
+<li><input disabled="" type="checkbox"> B. <code>&lt;jsp:useBean id=&quot;circle&quot; class=&quot;tom.jiafei.Circle&quot; scope=&quot;request&quot;/&gt;</code></li>
+<li><input checked="" disabled="" type="checkbox"> C. <code>&lt;jsp:useBean id=&quot;circle&quot; class=&quot;tom.jiafei.Circle&quot; scope =&quot;session&quot;/&gt;</code></li>
+<li><input disabled="" type="checkbox"> D. <code>&lt;jsp:useBean id=&quot;circle&quot; type=&quot;tom.jiafei.Circle&quot; scope =&quot;session&quot;/&gt;</code></li>
+</ul>
+</li>
+<li><p><strong>假设创建 bean 的类有一个 int 型的属性 <code>number</code>，下列哪个方法是设置该属性值的正确方法？</strong></p>
+<ul>
+<li><p><input checked="" disabled="" type="checkbox"> 
+A. </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setNumber</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    number = n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+B. </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> <span class="title function_">setNumber</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    number = n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+C. </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">SetNumber</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    number = n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+D. </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">Setnumber</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">    number = n;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p><strong>假设 JSP 页面使用标记</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:useBean id=<span class="string">&quot;moon&quot;</span> class=<span class="string">&quot;tom.jiafei.AAA&quot;</span> scope=<span class="string">&quot;page&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>创建了一个名字为 moon 的 bean，该 bean 有一个 String 类型、名字为 <code>number</code> 的属性。如果创建 moon 的 Java 类 AAA 没有提供 <code>public String getNumber()</code> 方法，JSP 页面是否允许使用如下 <code>getProperty</code> 标记获取 moon 的 <code>number</code> 属性值？</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;jsp:getProperty name=<span class="string">&quot;moon&quot;</span> property=<span class="string">&quot;number&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>答：允许。</p>
+</li>
+</ol>
 <hr>
 <p><a href="./4">上一章</a></p>
 <p><a href="./6">下一章</a></p>
