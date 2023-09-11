@@ -1641,9 +1641,9 @@ document.addEventListener("DOMContentLoaded", function () {
             case 68:
               rightSideFn.darkmode();
               break;
-            case 70:
-              pjax.loadUrl("/fcircle/");
-              break;
+            // case 70:
+            //   pjax.loadUrl("/fcircle/");
+            //   break;
             case 76:
               pjax.loadUrl("/link/");
               break;
