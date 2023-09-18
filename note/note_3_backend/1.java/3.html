@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>第 3 章 运算符、表达式和语句 | 邸浩哲Geo</title><meta name="keywords" content="邸浩哲, 博客, 分享, 生活, 科技"><meta name="author" content="邸浩哲Geo"><meta name="copyright" content="邸浩哲Geo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#18171d"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="第 3 章 运算符、表达式和语句"><meta name="application-name" content="第 3 章 运算符、表达式和语句"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#18171d"><meta property="og:type" content="website"><meta property="og:title" content="第 3 章 运算符、表达式和语句"><meta property="og:url" content="http://dihaozhe.com/note/note_3_backend/1.java/3.html"><meta property="og:site_name" content="邸浩哲Geo"><meta property="og:description" content="3.1 运算符与表达式3.2 语句概述3.3 if 条件分支语句3.4 switch 开关语句3.5 循环语句3.6 break 和 continue 语句3.7 for 语句与数组3.8 应用举例 返回目录  上一章  下一章"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"><meta property="article:author" content="邸浩哲Geo"><meta property="article:tag" content="邸浩哲, 博客, 分享, 生活, 科技"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"><meta name="description" content="3.1 运算符与表达式3.2 语句概述3.3 if 条件分支语句3.4 switch 开关语句3.5 循环语句3.6 break 和 continue 语句3.7 for 语句与数组3.8 应用举例 返回目录  上一章  下一章"><link rel="shortcut icon" href="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp"><link rel="canonical" href="http://dihaozhe.com/note/note_3_backend/1.java/3"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>第 3 章 运算符、表达式和语句 | 邸浩哲Geo</title><meta name="keywords" content="邸浩哲, 博客, 分享, 生活, 科技"><meta name="author" content="邸浩哲Geo"><meta name="copyright" content="邸浩哲Geo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#18171d"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="第 3 章 运算符、表达式和语句"><meta name="application-name" content="第 3 章 运算符、表达式和语句"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#18171d"><meta property="og:type" content="website"><meta property="og:title" content="第 3 章 运算符、表达式和语句"><meta property="og:url" content="http://dihaozhe.com/note/note_3_backend/1.java/3.html"><meta property="og:site_name" content="邸浩哲Geo"><meta property="og:description" content="3.1 运算符（Operator）定义：运算符是一种特殊的符号，用以表示数据的运算、赋值和比较等。 分类：  按照功能分为：算术运算符、赋值运算符、比较（关系）运算符、逻辑运算符、位运算符、条件运算符、Lambda 运算符。     分类 运算符    算术运算符（7 个） +、-、*、&amp;#x2F;、%、++"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"><meta property="article:author" content="邸浩哲Geo"><meta property="article:tag" content="邸浩哲, 博客, 分享, 生活, 科技"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg"><meta name="description" content="3.1 运算符（Operator）定义：运算符是一种特殊的符号，用以表示数据的运算、赋值和比较等。 分类：  按照功能分为：算术运算符、赋值运算符、比较（关系）运算符、逻辑运算符、位运算符、条件运算符、Lambda 运算符。     分类 运算符    算术运算符（7 个） +、-、*、&amp;#x2F;、%、++"><link rel="shortcut icon" href="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp"><link rel="canonical" href="http://dihaozhe.com/note/note_3_backend/1.java/3"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
   linkPageTop: {"enable":true,"title":"与博主们无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（博客首页地址）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n"},
-  postHeadAiDescription: {"enable":true,"gptName":"邸浩哲Geo","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  postHeadAiDescription: {"enable":true,"gptName":"邸浩哲Geo","mode":"tianli","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"13cdf7208b778fc7b4bb","Referer":"https://dihaozhe.com"},
   diytitle: undefined,
   LA51: {"enable":true,"ck":"3FpeCk9AnAHhM8vm","LingQueMonitorID":"3FpeORNir8WHNOiM"},
   greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
@@ -53,12 +53,12 @@
   configTitle: '邸浩哲Geo',
   title: '第 3 章 运算符、表达式和语句',
   postAI: '',
-  pageFillDescription: '3.1 运算符与表达式, 3.2 语句概述, 3.3 if 条件分支语句, 3.4 switch 开关语句, 3.5 循环语句, 3.6 break 和 continue 语句, 3.7 for 语句与数组, 3.8 应用举例运算符与表达式语句概述条件分支语句开关语句循环语句和语句语句与数组应用举例返回目录上一章下一章',
+  pageFillDescription: '3.1 运算符（Operator）, 基本语法, 3.2 流程控制简介, 3.3 顺序结构, 3.4 分支结构, if-else 条件判断结构, switch-case 选择结构, if-else 语句与 switch-case 语句比较, 3.5 循环结构, for 循环, while 循环, do-while 循环, 对比三种循环结构, 无限循环, 嵌套循环, 3.6 关键字 break 和 continue, break 和 continue 的说明, 3.7 获取随机数运算符定义运算符是一种特殊的符号用以表示数据的运算赋值和比较等分类按照功能分为算术运算符赋值运算符比较关系运算符逻辑运算符位运算符条件运算符运算符分类运算符算术运算符个赋值运算符个等比较关系运算符个逻辑运算符个位运算符个条件运算符个条件表达式结果结果运算符个按照操作数个数分为一元运算符单目运算符二元运算符双目运算符三元运算符三目运算符分类运算符一元运算符单目运算符二元运算符双目运算符除了一元和三元运算符剩下的都是二元运算符三元运算符三目运算符条件表达式结果结果算术运算符赋值运算符比较关系运算符逻辑运算符位运算符条件运算符运算符运算示例结果正号负号加减乘除取模取余自增前先运算后取值自增后先取值后运算自减前先运算后取值自减后先取值后运算字符串连接基本语法符号当两侧数据类型不一致时可以使用自动类型转换或使用强制类型转换原则进行处理支持连续赋值其他赋值运算符赋值运算符符号解释将符号左边的值和右边的值进行相加操作最后将结果赋值给左边的变量将符号左边的值和右边的值进行相减操作最后将结果赋值给左边的变量将符号左边的值和右边的值进行相乘操作最后将结果赋值给左边的变量将符号左边的值和右边的值进行相除操作最后将结果赋值给左边的变量将符号左边的值和右边的值进行取余操作最后将结果赋值给左边的变量运算符运算示例结果相等于不等于小于大于小于等于大于等于检查是否是类的对象比较运算符的结果都是型也就是要么是要么是只适用于基本数据类型除类型之外适用于基本数据类型和引用数据类型比较运算符不能误写成逻辑运算符操作的都是类型的变量或常量而且运算得结果也是类型的值运算符说明和表示且关系当符号左右两边布尔值都是时结果才能为否则为和表示或关系当符号两边布尔值有一边为时结果为当两边都为时结果为表示非关系当变量布尔值为时结果为当变量布尔值为时结果为当符号左右两边布尔值不同时结果为当两边布尔值相同时结果为逻辑运算符用于连接布尔型表达式在中不可以写成应该写成区分和相同点如果符号左边是则二者都执行符号右边的操作不同点如果符号左边是则继续执行符号右边的操作如果符号左边是则不再继续执行符号右边的操作建议开发中推荐使用区分和相同点如果符号左边是则二者都执行符号右边的操作不同点如果符号左边是则继续执行符号右边的操作如果符号左边是则不再继续执行符号右边的操作建议开发中推荐使用位运算符的运算过程都是基于二进制的补码运算条件运算符格式条件表达式表达式表达式说明条件表达式是类型的结果根据的值选择表达式或表达式如果运算后的结果赋给新的变量要求表达式和表达式为同种或兼容的类型凡是可以使用条件运算符的地方都可以改写为结构反之不成立开发中如果既可以使用条件运算符又可以使用推荐使用条件运算符因为执行效率稍高流程控制简介流程控制语句是用来控制程序中各语句执行顺序的语句可以把语句组合成能完成一定功能的小逻辑模块程序设计中规定的种流程结构即顺序结构程序从上到下逐行地执行中间没有任何判断和跳转分支结构根据条件选择性地执行某段代码有和两种分支语句循环结构根据循环条件重复性的执行某段代码有三种循环语句提供了循环方便遍历集合数组元素顺序结构顺序结构就是程序从上到下逐行地执行表达式语句都是顺序执行的并且上一行对某个变量的修改对下一行会产生影响中定义变量时采用合法的前向引用分支结构条件判断结构单分支条件判断双分支条件判断多分支条件判断基本语法条件表达式语句块条件表达式必须是布尔表达式关系表达式或逻辑表达式或布尔变量判断条件表达式结果是还是如果是就执行语句块如果是就不执行语句块基本语法条件表达式语句块语句块判断条件表达式结果是还是如果是就执行语句块如果是就执行语句块基本语法条件表达式语句块条件表达式语句块条件表达式语句块语句块一旦条件表达式为则进入执行相应的语句块执行完对应的语句块之后就跳出当前结构如果没有任何关系表达式为就执行语句块然后结束当前多分支选择结构基本语法表达式常量值语句块常量值语句块常量值语句块语句块根据中表达式的值依次匹配各个如果表达式的值等于某个中的常量值则执行对应中的语句块执行完此的执行语句以后情况如果遇到则执行并跳出当前的结构情况如果没有遇到则会继续执行当前之后的其它中的执行语句上述情况也叫做穿透直到遇到关键字或执行完所有的及的执行语句跳出当前的结构使用注意点表达式中表达式的值必须是下述几种类型之一枚举子句中的值必须是常量不能是变量名或不确定的表达式值或范围同一个语句所有子句中的常量值互不相同语句用来在执行完一个分支后使程序跳出语句块如果没有程序会顺序执行到结尾子句是可选的同时位置也是灵活的当没有匹配的时执行语句语句与语句比较结论凡是使用的结构都可以转换为结构反之不成立开发经验如果既可以使用又可以使用建议使用因为效率稍高语句优势语句的条件是一个布尔类型值条件表达式为则进入分支可以用于范围的判断也可以用于等值的判断使用范围更广语句的条件是一个常量值枚举只能判断某个变量或表达式的结果是否等于某个常量值使用范围小语句优势当条件是判断某个变量或表达式是否等于某个固定的常量值时使用和都可以习惯上使用更多因为效率稍高当条件是区间范围的判断时只能使用语句使用可以利用穿透性同时执行多个分支而没有穿透性循环结构循环语句具有在某些条件满足的情况下反复执行特定代码的功能循环结构分类循环循环循环循环结构四要素初始化部分循环条件部分循环体部分迭代部分循环基本语法初始化部分循环条件部分迭代部分循环体部分执行过程说明循环中的两个不能多也不能少初始化部分可以声明多个变量但必须是同一个类型用逗号分隔循环条件部分为类型表达式当值为时退出循环可以有多个变量更新用逗号分隔循环基本语法初始化部分循环条件部分循环体部分迭代部分执行过程说明循环条件中循环条件必须是类型注意不要忘记声明迭代部分否则循环将不能结束变成死循环循环和循环可以相互转换二者没有性能上的差别实际开发中根据具体结构的情况选择哪个格式更合适美观循环与循环的区别初始化条件部分的作用域不同循环基本语法初始化部分循环体部分迭代部分循环条件部分执行过程说明结尾循环条件中循环条件必须是类型最后有一个分号结构的循环体语句是至少会执行一次这个和和是不一样的循环的三个结构三者是可以相互转换的对比三种循环结构三种循环结构都具有四个要素循环变量的初始化条件循环条件循环体语句块循环变量的修改的迭代表达式从循环次数角度分析循环至少执行一次循环体语句和循环先判断循环条件语句是否成立然后决定是否执行循环体如何选择遍历有明显的循环次数范围的需求选择循环遍历没有明显的循环次数范围的需求选择循环如果循环体语句块至少执行一次可以考虑使用循环本质上三种循环之间完全可以互相转换都能实现循环的功能无限循环基本语法循环体或者循环体开发中有时并不确定需要循环多少次需要根据循环体内部某些条件来控制循环的结束使用如果此循环结构不能终止则构成了死循环开发中要避免出现死循环嵌套循环所谓嵌套循环是指一个循环结构的循环体是另一个循环结构比如循环里面还有一个循环就是嵌套循环其中均可以作为外层循环或内层循环实质上嵌套循环就是把内层循环当成外层循环的循环体只有当内层循环的循环条件为时才会完全跳出内层循环才可结束外层的当次循环开始下一次的外层循环设外层循环次数为次内层为次则内层循环体实际上需要执行次技巧从二维图形的角度看外层循环控制行数内层循环控制列数开发经验实际开发中我们最多见到的嵌套循环是两层一般不会出现超过三层的嵌套循环如果将要出现一定要停下来重新梳理业务逻辑重新思考算法的实现控制在三层以内否则代码的可读性会很差关键字和和的说明适用范围在循环结构中使用的作用相同点选择结构三种循环结构一旦执行就结束或跳出当前循环结构此关键字的后面不能声明语句三种循环结构一旦执行就结束或跳出当次循环结构此关键字的后面不能声明语句此外很多语言都有语句语句可以随意将控制转移到程序中的任意一条语句上然后执行它但使程序容易出错中的和是不同于的获取随机数如何产生一个指定范围的随机整数类的的调用会返回一个范围的一个型值如何获取范围内的随机整数呢举例返回目录上一章下一章',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-09-14 15:57:37',
+  postUpdate: '2023-09-18 21:41:44',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -201,7 +201,551 @@ setTimeout(function(){preloader.endLoading();},10000)
 if (true) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dihaozhe.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp" alt="博客"/><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="http://star-di.com:8080/BasedOnWebProgramming_war_exploded/" title="JSP 程序设计"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65016a12661c6c8e546c4a0e.webp" alt="JSP 程序设计"/><span class="back-menu-item-text">JSP 程序设计</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">邸浩哲Geo</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文库</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 文章总览</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 全部分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 学习</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 笔记仓库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=9013145695&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 社交</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友情链接</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-shoe-prints faa-tada" style="font-size: 0.9em;"></i><span> 到此一游</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-bullhorn faa-tada" style="font-size: 0.9em;"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-keyboard faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button" title="随机前往一个文章"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button" title="搜索文章🔍"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索文章🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" title="打开中控台" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://pic.imgdb.cn/item/64f98092661c6c8e544e84e6.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98092661c6c8e544e84e6.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.imgdb.cn/item/64f980fb661c6c8e544ee38d.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f980fb661c6c8e544ee38d.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/JDK/" style="font-size: 1.05rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 1.05rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 1.05rem;">安装教程<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="page"><h1 class="page-title">第 3 章 运算符、表达式和语句</h1><div id="article-container"><h2 id="3-1-运算符与表达式"><a href="#3-1-运算符与表达式" class="headerlink" title="3.1 运算符与表达式"></a>3.1 运算符与表达式</h2><h2 id="3-2-语句概述"><a href="#3-2-语句概述" class="headerlink" title="3.2 语句概述"></a>3.2 语句概述</h2><h2 id="3-3-if-条件分支语句"><a href="#3-3-if-条件分支语句" class="headerlink" title="3.3 if 条件分支语句"></a>3.3 if 条件分支语句</h2><h2 id="3-4-switch-开关语句"><a href="#3-4-switch-开关语句" class="headerlink" title="3.4 switch 开关语句"></a>3.4 switch 开关语句</h2><h2 id="3-5-循环语句"><a href="#3-5-循环语句" class="headerlink" title="3.5 循环语句"></a>3.5 循环语句</h2><h2 id="3-6-break-和-continue-语句"><a href="#3-6-break-和-continue-语句" class="headerlink" title="3.6 break 和 continue 语句"></a>3.6 break 和 continue 语句</h2><h2 id="3-7-for-语句与数组"><a href="#3-7-for-语句与数组" class="headerlink" title="3.7 for 语句与数组"></a>3.7 for 语句与数组</h2><h2 id="3-8-应用举例"><a href="#3-8-应用举例" class="headerlink" title="3.8 应用举例"></a>3.8 应用举例</h2><hr>
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dihaozhe.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp" alt="博客"/><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="http://star-di.com:8080/BasedOnWebProgramming_war_exploded/" title="JSP 程序设计"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65016a12661c6c8e546c4a0e.webp" alt="JSP 程序设计"/><span class="back-menu-item-text">JSP 程序设计</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">邸浩哲Geo</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文库</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 文章总览</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 全部分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 学习</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 笔记仓库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=9013145695&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 社交</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友情链接</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-shoe-prints faa-tada" style="font-size: 0.9em;"></i><span> 到此一游</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-bullhorn faa-tada" style="font-size: 0.9em;"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-keyboard faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button" title="随机前往一个文章"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button" title="搜索文章🔍"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索文章🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" title="打开中控台" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://pic.imgdb.cn/item/64f98092661c6c8e544e84e6.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98092661c6c8e544e84e6.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://pic.imgdb.cn/item/64f980fb661c6c8e544ee38d.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f980fb661c6c8e544ee38d.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/IDEA/" style="font-size: 1.05rem;">IDEA<sup>1</sup></a><a href="/tags/IDEA-%E6%8F%92%E4%BB%B6/" style="font-size: 1.05rem;">IDEA 插件<sup>1</sup></a><a href="/tags/JDK/" style="font-size: 1.05rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 1.05rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 1.05rem;">安装教程<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="page"><h1 class="page-title">第 3 章 运算符、表达式和语句</h1><div id="article-container"><h2 id="3-1-运算符（Operator）"><a href="#3-1-运算符（Operator）" class="headerlink" title="3.1 运算符（Operator）"></a>3.1 运算符（Operator）</h2><p>定义：运算符是一种特殊的符号，用以表示数据的运算、赋值和比较等。</p>
+<p>分类：</p>
+<ul>
+<li>按照<strong>功能</strong>分为：算术运算符、赋值运算符、比较（关系）运算符、逻辑运算符、位运算符、条件运算符、Lambda 运算符。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">算术运算符（7 个）</td>
+<td align="center"><code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>、<code>%</code>、<code>++</code>、<code>--</code></td>
+</tr>
+<tr>
+<td align="center">赋值运算符（12 个）</td>
+<td align="center"><code>=</code>、<code>+=</code>、<code>-=</code>、<code>*=</code>、<code>/=</code>、<code>%=</code>、<code>&gt;&gt;=</code>、<code>&lt;&lt;=</code>、<code>&gt;&gt;&gt;=</code>、<code>&amp;=</code>、<code>|=</code>、<code>^=</code> 等</td>
+</tr>
+<tr>
+<td align="center">比较（关系）运算符（6 个）</td>
+<td align="center"><code>&gt;</code>、<code>&gt;=</code>、<code>&lt;</code>、<code>&lt;=</code>、<code>==</code>、<code>!=</code></td>
+</tr>
+<tr>
+<td align="center">逻辑运算符（6 个）</td>
+<td align="center"><code>&amp;</code>、<code>|</code>、<code>^</code>、<code>!</code>、<code>&amp;&amp;</code>、<code>||</code></td>
+</tr>
+<tr>
+<td align="center">位运算符（7 个）</td>
+<td align="center"><code>&amp;</code>、<code>|</code>、<code>^</code>、<code>~</code>、<code>&lt;&lt;</code>、<code>&gt;&gt;</code>、<code>&gt;&gt;&gt;</code></td>
+</tr>
+<tr>
+<td align="center">条件运算符（1 个）</td>
+<td align="center"><code>(条件表达式)?结果 1:结果 2</code></td>
+</tr>
+<tr>
+<td align="center">Lambda 运算符（1 个）</td>
+<td align="center"><code>-&gt;</code></td>
+</tr>
+</tbody></table>
+<ul>
+<li>按照<strong>操作数个数</strong>分为：一元运算符（单目运算符）、二元运算符（双目运算符）、三元运算符 （三目运算符）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">分类</th>
+<th align="center">运算符</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一元运算符（单目运算符）</td>
+<td align="center"><code>+</code>、<code>-</code>、<code>++</code>、<code>--</code>、<code>!</code>、<code>~</code></td>
+</tr>
+<tr>
+<td align="center">二元运算符（双目运算符）</td>
+<td align="center">除了一元和三元运算符剩下的都是二元运算符</td>
+</tr>
+<tr>
+<td align="center">三元运算符 （三目运算符）</td>
+<td align="center"><code>(条件表达式)?结果 1:结果 2</code></td>
+</tr>
+</tbody></table>
+<div class="tabs" id="运算符"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="运算符-1">算术运算符</button><button type="button" class="tab " data-href="运算符-2">赋值运算符</button><button type="button" class="tab " data-href="运算符-3">比较（关系）运算符</button><button type="button" class="tab " data-href="运算符-4">逻辑运算符</button><button type="button" class="tab " data-href="运算符-5">位运算符</button><button type="button" class="tab " data-href="运算符-6">条件运算符</button></ul><div class="tab-contents"><div class="tab-item-content active" id="运算符-1"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>运算</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>+</code></td>
+<td>正号</td>
+<td>+5</td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>负号</td>
+<td>b&#x3D;5; -b;</td>
+<td>-5</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>加</td>
+<td>5+5</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>减</td>
+<td>5-5</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>乘</td>
+<td>5*5</td>
+<td>25</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>除</td>
+<td>5&#x2F;5</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>取模（取余）</td>
+<td>7%5</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>++</code><br><code>++</code></td>
+<td>自增（前）：先运算后取值<br>自增（后）：先取值后运算</td>
+<td>a&#x3D;2; b&#x3D;++a;<br>a&#x3D;2; b&#x3D;a++;</td>
+<td>a&#x3D;3; b&#x3D;3;<br>a&#x3D;3; b&#x3D;2;</td>
+</tr>
+<tr>
+<td><code>--</code><br><code>--</code></td>
+<td>自减（前）：先运算后取值<br/>自减（后）：先取值后运算</td>
+<td>a&#x3D;2; b&#x3D;–a;<br/>a&#x3D;2; b&#x3D;a–;</td>
+<td>a&#x3D;1; b&#x3D;1;<br>a&#x3D;1; b&#x3D;2;</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>字符串连接</td>
+<td>a&#x3D;”George”; b&#x3D;”Di”; a+b;</td>
+<td>“GeorgeDi”</td>
+</tr>
+</tbody></table></div><div class="tab-item-content" id="运算符-2"><h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><ul>
+<li><p>符号：<code>=</code></p>
+<ul>
+<li>当 <code>=</code> 两侧数据类型不一致时，可以使用自动类型转换或使用强制类型转换原则进行处理。</li>
+<li>支持<strong>连续赋值</strong>。</li>
+</ul>
+</li>
+<li><p>其他赋值运算符：<code>+=</code>、<code>-=</code>、<code>*=</code>、<code>/=</code>、<code>%=</code>。</p>
+<table>
+<thead>
+<tr>
+<th align="center">赋值运算符</th>
+<th align="center">符号解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>+=</code></td>
+<td align="center">将符号<strong>左边的值</strong>和<strong>右边的值</strong>进行<strong>相加</strong>操作，最后将结果赋值给<strong>左边的变量</strong></td>
+</tr>
+<tr>
+<td align="center"><code>-=</code></td>
+<td align="center">将符号<strong>左边的值</strong>和<strong>右边的值</strong>进行<strong>相减</strong>操作，最后将结果赋值给<strong>左边的变量</strong></td>
+</tr>
+<tr>
+<td align="center"><code>*=</code></td>
+<td align="center">将符号<strong>左边的值</strong>和<strong>右边的值</strong>进行<strong>相乘</strong>操作，最后将结果赋值给<strong>左边的变量</strong></td>
+</tr>
+<tr>
+<td align="center"><code>/=</code></td>
+<td align="center">将符号<strong>左边的值</strong>和<strong>右边的值</strong>进行<strong>相除</strong>操作，最后将结果赋值给<strong>左边的变量</strong></td>
+</tr>
+<tr>
+<td align="center"><code>%=</code></td>
+<td align="center">将符号<strong>左边的值</strong>和<strong>右边的值</strong>进行<strong>取余</strong>操作，最后将结果赋值给<strong>左边的变量</strong></td>
+</tr>
+</tbody></table>
+</li>
+</ul></div><div class="tab-item-content" id="运算符-3"><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>运算</th>
+<th>示例</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>==</code></td>
+<td>相等于</td>
+<td>4&#x3D;&#x3D;3</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>不等于</td>
+<td>4!&#x3D;3</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>小于</td>
+<td>4&lt;3</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>大于</td>
+<td>4&gt;3</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>小于等于</td>
+<td>4&lt;&#x3D;3</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>大于等于</td>
+<td>4&gt;&#x3D;3</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>instanceof</code></td>
+<td>检查是否是类的对象</td>
+<td>“Hello” instanceof String</td>
+<td><code>true</code></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>比较运算符的结果都是 <code>boolean</code> 型，也就是要么是 <code>true</code>，要么是 <code>false</code>。</p>
+</li>
+<li><p><code>&lt;</code>、<code>&gt;=</code>、<code>&lt;=</code>：只适用于基本数据类型（除 <code>boolean</code> 类型之外）。</p>
+</li>
+<li><p><code>==</code>、<code>!=</code>：适用于基本数据类型和引用数据类型。</p>
+</li>
+<li><p>比较运算符 <code>==</code> 不能误写成 <code>=</code>。</p>
+</li>
+</ul></div><div class="tab-item-content" id="运算符-4"><table>
+<thead>
+<tr>
+<th align="center">a</th>
+<th align="center">b</th>
+<th align="center">a&amp;b</th>
+<th align="center">a&amp;&amp;b</th>
+<th align="center">a|b</th>
+<th align="center">a||b</th>
+<th align="center">!a</th>
+<th align="center">a^b</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+</tr>
+<tr>
+<td align="center"><code>true</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>true</code></td>
+</tr>
+<tr>
+<td align="center"><code>false</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>true</code></td>
+</tr>
+<tr>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>false</code></td>
+<td align="center"><code>true</code></td>
+<td align="center"><code>false</code></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>逻辑运算符，操作的都是 <code>boolean</code> 类型的变量或常量，而且运算得结果也是 <code>boolean</code> 类型的值。</p>
+</li>
+<li><p>运算符说明：</p>
+<ul>
+<li><code>&amp;</code> 和 <code>&amp;&amp;</code>：表示“且”关系，当符号左右两边布尔值都是 <code>true</code> 时，结果才能为 <code>true</code>。否则，为 <code>false</code>。</li>
+<li><code>|</code> 和 <code>||</code> ：表示“或”关系，当符号两边布尔值有一边为 <code>true</code> 时，结果为 <code>true</code>。当两边都为 <code>false</code> 时，结果为 <code>false</code>。</li>
+<li><code>!</code>：表示“非”关系，当变量布尔值为 <code>true</code> 时，结果为 <code>false</code>。当变量布尔值为 <code>false</code> 时，结果为 <code>true</code>。</li>
+<li><code>^</code>：当符号左右两边布尔值不同时，结果为 <code>true</code>。当两边布尔值相同时，结果为 <code>false</code>。</li>
+</ul>
+</li>
+<li><p>逻辑运算符用于连接布尔型表达式，在 Java 中不可以写成 <code>3&lt;x&lt;6</code>，应该写成 <code>x&gt;3&amp;x&lt;6</code>。</p>
+</li>
+<li><p>区分 <code>&amp;</code> 和 <code>&amp;&amp;</code>：</p>
+<ul>
+<li><p>相同点：如果符号左边是 <code>true</code>，则二者都执行符号右边的操作。</p>
+</li>
+<li><p>不同点：</p>
+<ul>
+<li><code>&amp;</code>： 如果符号左边是 <code>false</code>，则继续执行符号右边的操作；</li>
+<li><code>&amp;&amp;</code> ：如果符号左边是 <code>false</code>，则不再继续执行符号右边的操作。</li>
+</ul>
+</li>
+<li><p>建议：开发中，推荐使用 <code>&amp;&amp;</code>。</p>
+</li>
+</ul>
+</li>
+<li><p>区分 <code>|</code> 和 <code>||</code>：</p>
+<ul>
+<li><p>相同点：如果符号左边是false，则二者都执行符号右边的操作。</p>
+</li>
+<li><p>不同点：</p>
+<ul>
+<li><p><code>|</code>： 如果符号左边是 <code>true</code>，则继续执行符号右边的操作；</p>
+</li>
+<li><p><code>||</code>：如果符号左边是 <code>true</code>，则不再继续执行符号右边的操作。</p>
+</li>
+</ul>
+</li>
+<li><p>建议：开发中，推荐使用 <code>||</code>。</p>
+</li>
+</ul>
+</li>
+</ul></div><div class="tab-item-content" id="运算符-5"><p>位运算符的运算过程都是基于二进制的补码运算。</p>
+<p><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/784.html">http://c.biancheng.net/view/784.html</a></p></div><div class="tab-item-content" id="运算符-6"><ul>
+<li>条件运算符格式：</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(条件表达式) ? 表达式<span class="number">1</span> : 表达式<span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>说明：条件表达式是 <code>boolean</code> 类型的结果，根据 <code>boolean</code> 的值选择表达式 1 或表达式 2。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64cdf3c71ddac507cc058db3.png" alt="2-3 条件运算符"></p>
+</li>
+<li><p>如果运算后的结果赋给新的变量，要求表达式 1 和表达式 2 为同种或兼容的类型。</p>
+</li>
+<li><p>凡是可以使用条件运算符的地方，都可以改写为 if-else 结构。反之，不成立。</p>
+</li>
+<li><p>开发中，如果既可以使用条件运算符，又可以使用 if-else，推荐使用条件运算符。因为执行效率稍高。</p>
+</li>
+</ul></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div>
+
+<h2 id="3-2-流程控制简介"><a href="#3-2-流程控制简介" class="headerlink" title="3.2 流程控制简介"></a>3.2 流程控制简介</h2><p>流程控制语句是用来控制程序中各语句执行顺序的语句，可以把语句组合成能完成一定功能的小逻辑模块。</p>
+<p>程序设计中规定的 3 种流程结构，即：</p>
+<ol>
+<li><p><strong>顺序结构</strong></p>
+<p>程序从上到下逐行地执行，中间没有任何判断和跳转。</p>
+</li>
+<li><p><strong>分支结构</strong></p>
+<p>根据条件，选择性地执行某段代码。</p>
+<p>有 if-else 和 switch-case 两种分支语句。</p>
+</li>
+<li><p><strong>循环结构</strong></p>
+<p>根据循环条件，重复性的执行某段代码。</p>
+<p>有 for、while、do-while 三种循环语句。</p>
+</li>
+</ol>
+<div class="note info modern"><p>JDK 5.0 提供了 foreach 循环，方便遍历集合、数组元素。</p>
+</div>
+
+<h2 id="3-3-顺序结构"><a href="#3-3-顺序结构" class="headerlink" title="3.3 顺序结构"></a>3.3 顺序结构</h2><p>顺序结构就是程序<strong>从上到下逐行</strong>地执行。表达式语句都是顺序执行的。并且上一行对某个变量的修改对下一行会产生影响。</p>
+<p>Java 中定义变量时采用合法的<strong>前向引用</strong>。</p>
+<h2 id="3-4-分支结构"><a href="#3-4-分支结构" class="headerlink" title="3.4 分支结构"></a>3.4 分支结构</h2><h3 id="if-else-条件判断结构"><a href="#if-else-条件判断结构" class="headerlink" title="if-else 条件判断结构"></a>if-else 条件判断结构</h3><div class="tabs" id="if-else-条件判断结构"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="if-else-条件判断结构-1">单分支条件判断：if</button><button type="button" class="tab " data-href="if-else-条件判断结构-2">双分支条件判断：if-else</button><button type="button" class="tab " data-href="if-else-条件判断结构-3">多分支条件判断：if-else if-else</button></ul><div class="tab-contents"><div class="tab-item-content active" id="if-else-条件判断结构-1"><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件表达式) &#123;</span><br><span class="line">    语句块;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>条件表达式必须是布尔表达式（关系表达式或逻辑表达式）或布尔变量。</p>
+<p>判断条件表达式结果是 true 还是 false：</p>
+<ul>
+<li>如果是 true 就执行语句块。</li>
+<li>如果是 false 就不执行语句块。</li>
+</ul></div><div class="tab-item-content" id="if-else-条件判断结构-2"><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件表达式) &#123;</span><br><span class="line">    语句块<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    语句块<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>判断条件表达式结果是 true 还是 false：</p>
+<ul>
+<li>如果是 true 就执行语句块 1。</li>
+<li>如果是 false 就执行语句块 2。</li>
+</ul></div><div class="tab-item-content" id="if-else-条件判断结构-3"><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件表达式<span class="number">1</span>) &#123;</span><br><span class="line">    语句块<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (条件表达式<span class="number">2</span>) &#123;</span><br><span class="line">    语句块<span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span> (条件表达式n) &#123;</span><br><span class="line">    语句块n;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    语句块n+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>一旦条件表达式为 true，则进入执行相应的语句块。执行完对应的语句块之后，就跳出当前结构。</p>
+<p>如果没有任何关系表达式为 true，就执行语句块 n + 1，然后结束当前多分支。</p></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div>
+
+<h3 id="switch-case-选择结构"><a href="#switch-case-选择结构" class="headerlink" title="switch-case 选择结构"></a>switch-case 选择结构</h3><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (表达式) &#123;</span><br><span class="line">    <span class="keyword">case</span> 常量值<span class="number">1</span>:</span><br><span class="line">        语句块<span class="number">1</span>;</span><br><span class="line">        [<span class="keyword">break</span>;]</span><br><span class="line">    <span class="keyword">case</span> 常量值<span class="number">2</span>:</span><br><span class="line">        语句块<span class="number">2</span>;</span><br><span class="line">        [<span class="keyword">break</span>;]</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">case</span> 常量值n:</span><br><span class="line">        语句块n;</span><br><span class="line">        [<span class="keyword">break</span>;]</span><br><span class="line">    [<span class="keyword">default</span>:</span><br><span class="line">        语句块n+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">break</span>;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>根据 switch 中表达式的值，依次匹配各个 case。如果表达式的值等于某个 case 中的常量值，则执行对应 case 中的语句块。</p>
+</li>
+<li><p>执行完此 case 的执行语句以后，</p>
+<ul>
+<li><p>情况 1：如果遇到 break，则执行 break 并跳出当前的 switch-case 结构。</p>
+</li>
+<li><p>情况 2：如果没有遇到 break，则会继续执行当前 case 之后的其它 case 中的执行语句。</p>
+</li>
+</ul>
+</li>
+</ol>
+<div class="note info modern"><p>上述情况 2 也叫做 case 穿透，直到遇到 break 关键字或执行完所有的 case 及 default 的执行语句，跳出当前的 switch-case 结构。</p>
+</div>
+
+<p><strong>使用注意点：</strong></p>
+<ul>
+<li>switch (表达式) 中表达式的值必须是下述几种类型之一：<ul>
+<li>byte</li>
+<li>short</li>
+<li>char</li>
+<li>int</li>
+<li>枚举（jdk 5.0）</li>
+<li>String（jdk 7.0）</li>
+</ul>
+</li>
+<li>case 子句中的值必须是常量，不能是变量名或不确定的表达式值或范围。</li>
+<li>同一个 switch 语句，所有 case 子句中的常量值互不相同。</li>
+<li>break 语句用来在执行完一个 case 分支后使程序跳出 switch 语句块。如果没有 break，程序会顺序执行到 switch 结尾。</li>
+<li>default 子句是可选的。同时，位置也是灵活的。当没有匹配的 case 时，执行 default 语句。</li>
+</ul>
+<h3 id="if-else-语句与-switch-case-语句比较"><a href="#if-else-语句与-switch-case-语句比较" class="headerlink" title="if-else 语句与 switch-case 语句比较"></a>if-else 语句与 switch-case 语句比较</h3><p>结论：凡是使用 switch-case 的结构都可以转换为 if-else 结构。反之，不成立。</p>
+<p>开发经验：如果既可以使用 switch-case，又可以使用 if-else，建议使用 switch-case。因为效率稍高。</p>
+<p><strong>if-else 语句优势</strong></p>
+<ul>
+<li><p>if 语句的条件是一个布尔类型值，if 条件表达式为 true 则进入分支，可以用于范围的判断，也可以用于等值的判断，<strong>使用范围更广</strong>。</p>
+</li>
+<li><p>switch 语句的条件是一个常量值（byte，short，int，char，枚举，String），只能判断某个变量或表达式的结果是否等于某个常量值，<strong>使用范围小</strong>。</p>
+</li>
+</ul>
+<p><strong>switch 语句优势</strong></p>
+<ul>
+<li>当条件是判断某个变量或表达式是否等于某个固定的常量值时，使用 if 和 switch 都可以，习惯上使用 switch 更多。因为<strong>效率稍高</strong>。当条件是区间范围的判断时，只能使用 if 语句。</li>
+<li>使用 switch 可以利用<strong>穿透性</strong>，同时执行多个分支，而 if-else 没有穿透性。</li>
+</ul>
+<h2 id="3-5-循环结构"><a href="#3-5-循环结构" class="headerlink" title="3.5 循环结构"></a>3.5 循环结构</h2><p>循环语句具有在<strong>某些条件</strong>满足的情况下，<strong>反复执行</strong>特定代码的功能。</p>
+<p>循环结构分类：</p>
+<ul>
+<li>for 循环</li>
+<li>while 循环</li>
+<li>do-while 循环</li>
+</ul>
+<p>循环结构四要素：</p>
+<ol>
+<li>初始化部分</li>
+<li>循环条件部分</li>
+<li>循环体部分</li>
+<li>迭代部分</li>
+</ol>
+<h3 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h3><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (①初始化部分; ②循环条件部分; ④迭代部分) &#123;</span><br><span class="line">    ③循环体部分;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行过程：① - ② - ③ - ④ - ② - ③ - ④ - ② - ③ - ④ - …… - ②</p>
+<p>说明：</p>
+<ul>
+<li>for 循环中的两个 <code>;</code> 不能多也不能少。</li>
+<li>① 初始化部分可以声明多个变量，但必须是同一个类型，用逗号分隔。</li>
+<li>② 循环条件部分为 boolean 类型表达式，当值为 false 时，退出循环。</li>
+<li>④ 可以有多个变量更新，用逗号分隔。</li>
+</ul>
+<h3 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h3><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">①初始化部分;</span><br><span class="line"><span class="keyword">while</span> (②循环条件部分) &#123;</span><br><span class="line">    ③循环体部分;</span><br><span class="line">    ④迭代部分;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行过程：① - ② - ③ - ④ - ② - ③ - ④ - ② - ③ - ④ - …… - ②</p>
+<p>说明：</p>
+<ul>
+<li>while (循环条件) 中循环条件必须是 boolean 类型。</li>
+<li>注意不要忘记声明 ④ 迭代部分。否则，循环将不能结束，变成死循环。</li>
+<li>for 循环和 while 循环可以相互转换。二者没有性能上的差别。实际开发中，根据具体结构的情况，选择哪个格式更合适、美观。</li>
+<li>for 循环与 while 循环的区别：初始化条件部分的作用域不同。</li>
+</ul>
+<h3 id="do-while-循环"><a href="#do-while-循环" class="headerlink" title="do-while 循环"></a>do-while 循环</h3><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">①初始化部分;</span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    ③循环体部分;</span><br><span class="line">    ④迭代部分;</span><br><span class="line">&#125; <span class="keyword">while</span> (②循环条件部分);</span><br></pre></td></tr></table></figure>
+
+<p>执行过程：① - ③ - ④ - ② - ③ - ④ - ② - ③ - ④ - …… - ②</p>
+<p>说明：</p>
+<ul>
+<li>结尾 while (循环条件) 中循环条件必须是 boolean 类型。</li>
+<li>do {} while (); 最后有一个分号。</li>
+<li>do-while 结构的循环体语句是至少会执行一次，这个和 for 和 while 是不一样的。</li>
+<li>循环的三个结构 for、while、do-while 三者是可以相互转换的。</li>
+</ul>
+<h3 id="对比三种循环结构"><a href="#对比三种循环结构" class="headerlink" title="对比三种循环结构"></a>对比三种循环结构</h3><p><strong>三种循环结构都具有四个要素</strong></p>
+<ul>
+<li>循环变量的初始化条件</li>
+<li>循环条件</li>
+<li>循环体语句块</li>
+<li>循环变量的修改的迭代表达式</li>
+</ul>
+<p><strong>从循环次数角度分析</strong></p>
+<ul>
+<li>do-while 循环至少执行一次循环体语句。</li>
+<li>for 和 while 循环先判断循环条件语句是否成立，然后决定是否执行循环体。</li>
+</ul>
+<p><strong>如何选择</strong></p>
+<ul>
+<li>遍历有明显的循环次数（范围）的需求，选择 for 循环。</li>
+<li>遍历没有明显的循环次数（范围）的需求，选择 while 循环。</li>
+<li>如果循环体语句块至少执行一次，可以考虑使用 do-while 循环。</li>
+</ul>
+<p><strong>本质上：三种循环之间完全可以互相转换，都能实现循环的功能。</strong></p>
+<h3 id="无限循环"><a href="#无限循环" class="headerlink" title="无限循环"></a>无限循环</h3><p>基本语法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    循环体;</span><br><span class="line">&#125;</span><br><span class="line">或者</span><br><span class="line"><span class="keyword">for</span> (;;) &#123;</span><br><span class="line">    循环体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>开发中，有时并不确定需要循环多少次，需要根据循环体内部某些条件，来控制循环的结束（使用 break）。</p>
+<p>如果此循环结构不能终止，则构成了死循环！开发中要避免出现死循环。</p>
+<h3 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h3><p>所谓嵌套循环，是指一个循环结构 A 的循环体是另一个循环结构 B。比如，for 循环里面还有一个 for 循环，就是嵌套循环。其中，for、while、do-while 均可以作为外层循环或内层循环。</p>
+<p>实质上，嵌套循环就是把内层循环当成外层循环的循环体。只有当内层循环的循环条件为 false 时，才会完全跳出内层循环，才可结束外层的当次循环，开始下一次的外层循环。</p>
+<p>设外层循环次数为 m 次，内层为 n 次，则内层循环体实际上需要执行 m*n 次。</p>
+<p>技巧：从二维图形的角度看，外层循环控制<strong>行数</strong>，内层循环控制<strong>列数</strong>。</p>
+<p>开发经验：实际开发中，我们最多见到的嵌套循环是两层。一般不会出现超过三层的嵌套循环。如果将要出现，一定要停下来重新梳理业务逻辑，重新思考算法的实现，控制在三层以内。否则，代码的可读性会很差。</p>
+<h2 id="3-6-关键字-break-和-continue"><a href="#3-6-关键字-break-和-continue" class="headerlink" title="3.6 关键字 break 和 continue"></a>3.6 关键字 break 和 continue</h2><h3 id="break-和-continue-的说明"><a href="#break-和-continue-的说明" class="headerlink" title="break 和 continue 的说明"></a>break 和 continue 的说明</h3><table>
+<thead>
+<tr>
+<th></th>
+<th>适用范围</th>
+<th>在循环结构中使用的作用</th>
+<th>相同点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>break</td>
+<td>switch-case 选择结构<br>三种循环结构</td>
+<td>一旦执行，就结束（或跳出）当前循环结构</td>
+<td>此关键字的后面，不能声明语句</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>三种循环结构</td>
+<td>一旦执行，就结束（或跳出）当次循环结构</td>
+<td>此关键字的后面，不能声明语句</td>
+</tr>
+</tbody></table>
+<p>此外，很多语言都有 goto 语句，goto 语句可以随意将控制转移到程序中的任意一条语句上，然后执行它，但使程序容易出错。Java 中的 break 和 continue 是不同于 goto 的。</p>
+<h2 id="3-7-获取随机数"><a href="#3-7-获取随机数" class="headerlink" title="3.7 获取随机数"></a>3.7 获取随机数</h2><p>如何产生一个指定范围的随机整数？</p>
+<ol>
+<li><p>Math 类的 <code>random()</code> 的调用，会返回一个 [0,1) 范围的一个 <code>double</code> 型值。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">double</span> <span class="variable">x</span> <span class="operator">=</span> Math.random() * <span class="number">100</span>; <span class="comment">// x ∈ [0,100)</span></span><br><span class="line"><span class="type">int</span> <span class="variable">y</span> <span class="operator">=</span> (<span class="type">int</span>) (Math.random() * <span class="number">100</span>); <span class="comment">// y ∈ [0,99]</span></span><br><span class="line"><span class="type">int</span> <span class="variable">z</span> <span class="operator">=</span> (<span class="type">int</span>) (Math.random() * <span class="number">100</span>) + <span class="number">5</span>; <span class="comment">// z ∈ [5,104]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如何获取 <code>[a,b]</code> 范围内的随机整数呢？<code>(int)(Math.random()*(b-a+1))+a</code></p>
+</li>
+<li><p>举例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MathRandomTest</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">double</span> <span class="variable">value</span> <span class="operator">=</span> Math.random();</span><br><span class="line">        System.out.println(value);</span><br><span class="line">        <span class="comment">// [1,6]</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> (<span class="type">int</span>) (Math.random() * <span class="number">6</span>) + <span class="number">1</span>;</span><br><span class="line">        System.out.println(number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
 <a class="btn-anzhiyu " href="/note/note_3_backend/1.java/index" 
   title="返回目录"><span>返回目录</span></a>
 
@@ -210,7 +754,7 @@ if (true) {
 
 <a class="btn-anzhiyu " href="/note/note_3_backend/1.java/4" 
   title="下一章"><span>下一章</span></a>
-</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8403.webp" ait="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">邸浩哲Geo</h1><div class="author-info__desc">热爱可抵岁月漫长</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="mailto:dihaozhe@outlook.com" target="_blank" title="Email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="social-icon faa-parent animated-hover" href="https://github.com/dihaozhe-365" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://pic.imgdb.cn/item/64f98092661c6c8e544e84cd.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://pic.imgdb.cn/item/64f98092661c6c8e544e84d9.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E8%BF%90%E7%AE%97%E7%AC%A6%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">3.1 运算符与表达式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E8%AF%AD%E5%8F%A5%E6%A6%82%E8%BF%B0"><span class="toc-number">2.</span> <span class="toc-text">3.2 语句概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-if-%E6%9D%A1%E4%BB%B6%E5%88%86%E6%94%AF%E8%AF%AD%E5%8F%A5"><span class="toc-number">3.</span> <span class="toc-text">3.3 if 条件分支语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-switch-%E5%BC%80%E5%85%B3%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.</span> <span class="toc-text">3.4 switch 开关语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-number">5.</span> <span class="toc-text">3.5 循环语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-break-%E5%92%8C-continue-%E8%AF%AD%E5%8F%A5"><span class="toc-number">6.</span> <span class="toc-text">3.6 break 和 continue 语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-for-%E8%AF%AD%E5%8F%A5%E4%B8%8E%E6%95%B0%E7%BB%84"><span class="toc-number">7.</span> <span class="toc-text">3.7 for 语句与数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8-%E5%BA%94%E7%94%A8%E4%B8%BE%E4%BE%8B"><span class="toc-number">8.</span> <span class="toc-text">3.8 应用举例</span></a></li></ol></div></div><div class="card-widget"><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/JDK/" style="font-size: 1.05rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 1.05rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 1.05rem;">安装教程<sup>2</sup></a></div></div><hr/><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr/><div class="card-webinfo"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-file-lines"></i><div class="item-name">文章总数 :</div></div><div class="item-count">2</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-stopwatch"></i><div class="item-name">建站天数 :</div></div><div class="item-count" id="runtimeshow" data-publishDate="2023-07-06T16:00:00.000Z"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-font"></i><div class="item-name">全站字数 :</div></div><div class="item-count">997</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-universal-access"></i><div class="item-name">总访客数 :</div></div><div class="item-count" id="busuanzi_value_site_uv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-square-poll-vertical"></i><div class="item-name">总访问量 :</div></div><div class="item-count" id="busuanzi_value_site_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:dihaozhe@outlook.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/dihaozhe-365" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" href="tencent://message/?uin=1839279043&amp;Site=&amp;Menu=yes" title="QQ"><i class="anzhiyufont anzhiyu-icon-qq"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/629900379" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAGDgnLwA_rPyo8wJ-uBXtGfaMMmcqp9j3z9lygqF4ZS4" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a><a class="deal_link" href="/copyright" title="CC"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la 统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la 统计</a><a class="footer-item" title="聚合图床" target="_blank" rel="noopener" href="https://www.superbed.cn/">聚合图床</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">文库</div><div class="footer-links"><a class="footer-item" title="文章总览" href="/archives/">文章总览</a><a class="footer-item" title="全部分类" href="/categories/">全部分类</a><a class="footer-item" title="全部标签" href="/tags/">全部标签</a></div></div><div class="footer-group"><div class="footer-title">学习</div><div class="footer-links"><a class="footer-item" title="笔记仓库" href="/note/">笔记仓库</a></div></div><div class="footer-group"><div class="footer-title">生活</div><div class="footer-links"><a class="footer-item" title="音乐馆" href="/music/">音乐馆</a></div></div><div class="footer-group"><div class="footer-title">社交</div><div class="footer-links"><a class="footer-item" title="友情链接" href="/link/">友情链接</a><a class="footer-item" title="到此一游" href="/comments/">到此一游</a><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a></div></div><div class="footer-group"><div class="footer-title">站长</div><div class="footer-links"><a class="footer-item" title="我的装备" href="/equipment/">我的装备</a><a class="footer-item" title="关于本人" href="/about/">关于本人</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies 协议" href="/cookies/">Cookies 协议</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div></div><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/footer/邸浩哲-上班摸鱼中.svg" alt="距离月入 25 k也就还差一个大佬带我~" title="距离月入 25 k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By 邸浩哲Geo </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="冀ICP备-2023021272号">冀ICP备-2023021272号</a><a class="footer-bar-link cc" href="/copyright" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">1</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dihaozhe.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp" alt="博客"/><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="http://star-di.com:8080/BasedOnWebProgramming_war_exploded/" title="JSP 程序设计"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65016a12661c6c8e546c4a0e.webp" alt="JSP 程序设计"/><span class="back-menu-item-text">JSP 程序设计</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文库</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 文章总览</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 全部分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 学习</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 笔记仓库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=9013145695&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 社交</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友情链接</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-shoe-prints faa-tada" style="font-size: 0.9em;"></i><span> 到此一游</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-bullhorn faa-tada" style="font-size: 0.9em;"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-keyboard faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/JDK/" style="font-size: 0.88rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 0.88rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 0.88rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 0.88rem;">安装教程<sup>2</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="9013145695" server="tencent" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/9013145695&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8403.webp" ait="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">邸浩哲Geo</h1><div class="author-info__desc">热爱可抵岁月漫长</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="mailto:dihaozhe@outlook.com" target="_blank" title="Email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="social-icon faa-parent animated-hover" href="https://github.com/dihaozhe-365" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a></div></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://pic.imgdb.cn/item/64f98092661c6c8e544e84cd.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://pic.imgdb.cn/item/64f98092661c6c8e544e84d9.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%88Operator%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">3.1 运算符（Operator）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.0.1.</span> <span class="toc-text">基本语法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E7%AE%80%E4%BB%8B"><span class="toc-number">2.</span> <span class="toc-text">3.2 流程控制简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84"><span class="toc-number">3.</span> <span class="toc-text">3.3 顺序结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84"><span class="toc-number">4.</span> <span class="toc-text">3.4 分支结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#if-else-%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD%E7%BB%93%E6%9E%84"><span class="toc-number">4.1.</span> <span class="toc-text">if-else 条件判断结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch-case-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84"><span class="toc-number">4.2.</span> <span class="toc-text">switch-case 选择结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#if-else-%E8%AF%AD%E5%8F%A5%E4%B8%8E-switch-case-%E8%AF%AD%E5%8F%A5%E6%AF%94%E8%BE%83"><span class="toc-number">4.3.</span> <span class="toc-text">if-else 语句与 switch-case 语句比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">5.</span> <span class="toc-text">3.5 循环结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#for-%E5%BE%AA%E7%8E%AF"><span class="toc-number">5.1.</span> <span class="toc-text">for 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#while-%E5%BE%AA%E7%8E%AF"><span class="toc-number">5.2.</span> <span class="toc-text">while 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#do-while-%E5%BE%AA%E7%8E%AF"><span class="toc-number">5.3.</span> <span class="toc-text">do-while 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%89%E7%A7%8D%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84"><span class="toc-number">5.4.</span> <span class="toc-text">对比三种循环结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF"><span class="toc-number">5.5.</span> <span class="toc-text">无限循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E5%BE%AA%E7%8E%AF"><span class="toc-number">5.6.</span> <span class="toc-text">嵌套循环</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-%E5%85%B3%E9%94%AE%E5%AD%97-break-%E5%92%8C-continue"><span class="toc-number">6.</span> <span class="toc-text">3.6 关键字 break 和 continue</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#break-%E5%92%8C-continue-%E7%9A%84%E8%AF%B4%E6%98%8E"><span class="toc-number">6.1.</span> <span class="toc-text">break 和 continue 的说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-%E8%8E%B7%E5%8F%96%E9%9A%8F%E6%9C%BA%E6%95%B0"><span class="toc-number">7.</span> <span class="toc-text">3.7 获取随机数</span></a></li></ol></div></div><div class="card-widget"><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/IDEA/" style="font-size: 1.05rem;">IDEA<sup>1</sup></a><a href="/tags/IDEA-%E6%8F%92%E4%BB%B6/" style="font-size: 1.05rem;">IDEA 插件<sup>1</sup></a><a href="/tags/JDK/" style="font-size: 1.05rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 1.05rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 1.05rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 1.05rem;">安装教程<sup>2</sup></a></div></div><hr/><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/><div class="card-webinfo"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-file-lines"></i><div class="item-name">文章总数 :</div></div><div class="item-count">3</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-stopwatch"></i><div class="item-name">建站天数 :</div></div><div class="item-count" id="runtimeshow" data-publishDate="2023-07-06T16:00:00.000Z"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-font"></i><div class="item-name">全站字数 :</div></div><div class="item-count">2.5k</div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-universal-access"></i><div class="item-name">总访客数 :</div></div><div class="item-count" id="busuanzi_value_site_uv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div><div class="webinfo-item"><div class="webinfo-item-title"><i class="anzhiyufont anzhiyu-icon-square-poll-vertical"></i><div class="item-name">总访问量 :</div></div><div class="item-count" id="busuanzi_value_site_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></div></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:dihaozhe@outlook.com" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/dihaozhe-365" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" href="tencent://message/?uin=1839279043&amp;Site=&amp;Menu=yes" title="QQ"><i class="anzhiyufont anzhiyu-icon-qq"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f97fcf661c6c8e544e533e.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/629900379" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a><a class="deal_link" target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAGDgnLwA_rPyo8wJ-uBXtGfaMMmcqp9j3z9lygqF4ZS4" title="抖音"><i class="anzhiyufont anzhiyu-icon-tiktok"></i></a><a class="deal_link" href="/copyright" title="CC"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la 统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la 统计</a><a class="footer-item" title="聚合图床" target="_blank" rel="noopener" href="https://www.superbed.cn/">聚合图床</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">文库</div><div class="footer-links"><a class="footer-item" title="文章总览" href="/archives/">文章总览</a><a class="footer-item" title="全部分类" href="/categories/">全部分类</a><a class="footer-item" title="全部标签" href="/tags/">全部标签</a></div></div><div class="footer-group"><div class="footer-title">学习</div><div class="footer-links"><a class="footer-item" title="笔记仓库" href="/note/">笔记仓库</a></div></div><div class="footer-group"><div class="footer-title">生活</div><div class="footer-links"><a class="footer-item" title="音乐馆" href="/music/">音乐馆</a></div></div><div class="footer-group"><div class="footer-title">社交</div><div class="footer-links"><a class="footer-item" title="友情链接" href="/link/">友情链接</a><a class="footer-item" title="到此一游" href="/comments/">到此一游</a><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a></div></div><div class="footer-group"><div class="footer-title">站长</div><div class="footer-links"><a class="footer-item" title="我的装备" href="/equipment/">我的装备</a><a class="footer-item" title="关于本人" href="/about/">关于本人</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies 协议" href="/cookies/">Cookies 协议</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div></div><div id="workboard"><img class="workSituationImg boardsign" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/footer/邸浩哲-上班摸鱼中.svg" alt="距离月入 25 k也就还差一个大佬带我~" title="距离月入 25 k也就还差一个大佬带我~"/><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By 邸浩哲Geo </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="冀ICP备-2023021272号">冀ICP备-2023021272号</a><a class="footer-bar-link cc" href="/copyright" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">2</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网站</div><div class="back-menu-list"><a class="back-menu-item" href="https://dihaozhe.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/64f98091661c6c8e544e8413.webp" alt="博客"/><span class="back-menu-item-text">博客</span></a><a class="back-menu-item" target="_blank" rel="noopener" href="http://star-di.com:8080/BasedOnWebProgramming_war_exploded/" title="JSP 程序设计"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic.imgdb.cn/item/65016a12661c6c8e546c4a0e.webp" alt="JSP 程序设计"/><span class="back-menu-item-text">JSP 程序设计</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文库</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 文章总览</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 全部分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 全部标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 学习</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/note/"><i class="anzhiyufont anzhiyu-icon-book faa-tada" style="font-size: 0.9em;"></i><span> 笔记仓库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 生活</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=9013145695&amp;server=tencent"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐馆</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 社交</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友情链接</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-shoe-prints faa-tada" style="font-size: 0.9em;"></i><span> 到此一游</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-bullhorn faa-tada" style="font-size: 0.9em;"></i><span> 即刻短文</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-keyboard faa-tada" style="font-size: 0.9em;"></i><span> 我的装备</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/IDEA/" style="font-size: 0.88rem;">IDEA<sup>1</sup></a><a href="/tags/IDEA-%E6%8F%92%E4%BB%B6/" style="font-size: 0.88rem;">IDEA 插件<sup>1</sup></a><a href="/tags/JDK/" style="font-size: 0.88rem;">JDK<sup>1</sup></a><a href="/tags/Java/" style="font-size: 0.88rem;">Java<sup>1</sup></a><a href="/tags/Tomcat/" style="font-size: 0.88rem;">Tomcat<sup>1</sup></a><a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" style="font-size: 0.88rem;">安装教程<sup>2</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="switch-commentBarrage" href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕"><i class="anzhiyufont anzhiyu-icon-danmu"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="9013145695" server="tencent" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/9013145695&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
   "CONFIG": {
     "modules": "0124",
     "background": "2",
